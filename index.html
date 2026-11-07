@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sports Edge</title>
+<style>
+:root{--bg:#0b0f17;--card:#121826;--line:#1f2937;--txt:#e5e7eb;--mut:#8b95a7;--acc:#22c55e;--blue:#38bdf8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;border-bottom:1px solid var(--line);flex-wrap:wrap;gap:10px}
+.logo{font-weight:700;font-size:20px;letter-spacing:.5px}
+.logo span{color:var(--acc)}
+.lang button{background:var(--card);color:var(--mut);border:1px solid var(--line);padding:6px 12px;cursor:pointer;font-weight:600}
+.lang button.on{color:var(--bg);background:var(--acc);border-color:var(--acc)}
+main{max-width:1000px;margin:0 auto;padding:24px}
+h2{font-size:15px;text-transform:uppercase;letter-spacing:1px;color:var(--mut);margin:28px 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.card .n{font-size:26px;font-weight:700}
+.card .l{color:var(--mut);font-size:13px}
+.match{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:10px}
+.teams{display:flex;justify-content:space-between;font-weight:600;margin-bottom:8px}
+.bar{display:flex;height:10px;border-radius:5px;overflow:hidden;background:var(--line)}
+.bar i{display:block}
+.pcts{display:flex;justify-content:space-between;font-size:13px;color:var(--mut);margin-top:6px}
+.why{font-size:13px;color:var(--mut);margin-top:6px}
+.empty{color:var(--mut);padding:20px;text-align:center;border:1px dashed var(--line);border-radius:10px}
+footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top:1px solid var(--line);margin-top:30px}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">SPORTS<span>EDGE</span></div>
+  <div class="lang">
+    <button id="b-es" onclick="setLang('es')">ES</button><button id="b-en" onclick="setLang('en')">EN</button>
+  </div>
+</header>
+<main>
+  <h2 data-t="track">Historial verificable</h2>
+  <div class="grid" id="stats"></div>
+
+  <h2 data-t="today">Predicciones</h2>
+  <div id="preds"></div>
+</main>
+<footer data-t="foot"></footer>
+
+<script>
+var T = {
+  es:{track:"Historial verificable",today:"Predicciones",nodata:"Sin datos",
+      nopreds:"Todavía no hay predicciones. El motor las publicará cuando haya datos reales.",
+      hit:"Acierto",total:"Predicciones registradas",brier:"Calibración (Brier)",upd:"Última actualización",
+      foot:"Solo para mayores de 18 años. Las probabilidades son estimaciones estadísticas, no garantizan resultados. Juega con responsabilidad."},
+  en:{track:"Verified track record",today:"Predictions",nodata:"No data",
+      nopreds:"No predictions yet. The engine will publish them once real data is available.",
+      hit:"Hit rate",total:"Recorded predictions",brier:"Calibration (Brier)",upd:"Last update",
+      foot:"18+ only. Probabilities are statistical estimates and do not guarantee results. Please gamble responsibly."}
+};
+var lang = localStorage.getItem("lang") || (navigator.language.indexOf("es")==0 ? "es" : "en");
+var DATA = {pred:null, stats:null};
+
+function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
+function t(k){ return T[lang][k]; }
+function pct(x){ return (typeof x==="number") ? (x*100).toFixed(0)+"%" : t("nodata"); }
+
+function render(){
+  document.documentElement.lang = lang;
+  document.getElementById("b-es").className = lang==="es" ? "on" : "";
+  document.getElementById("b-en").className = lang==="en" ? "on" : "";
+  var els = document.querySelectorAll("[data-t]");
+  for(var i=0;i<els.length;i++){ els[i].textContent = t(els[i].getAttribute("data-t")); }
+
+  var s = DATA.stats || {};
+  var cards = [
+    [t("total"), (typeof s.total==="number") ? s.total : t("nodata")],
+    [t("hit"), pct(s.acierto)],
+    [t("brier"), (typeof s.brier==="number") ? s.brier.toFixed(3) : t("nodata")],
+    [t("upd"), s.actualizado || t("nodata")]
+  ];
+  var h = "";
+  for(var c=0;c<cards.length;c++){ h += '<div class="card"><div class="n">'+cards[c][1]+'</div><div class="l">'+cards[c][0]+'</div></div>'; }
+  document.getElementById("stats").innerHTML = h;
+
+  var list = (DATA.pred && DATA.pred.predicciones) || [];
+  var box = document.getElementById("preds");
+  if(!list.length){ box.innerHTML = '<div class="empty">'+t("nopreds")+'</div>'; return; }
+  var out = "";
+  for(var j=0;j<list.length;j++){
+    var p = list[j];
+    out += '<div class="match"><div class="teams"><span>'+p.local+'</span><span>'+p.visitante+'</span></div>'
+      + '<div class="bar"><i style="width:'+(p.p_local*100)+'%;background:var(--acc)"></i>'
+      + '<i style="width:'+(p.p_empate*100)+'%;background:var(--mut)"></i>'
+      + '<i style="width:'+(p.p_visitante*100)+'%;background:var(--blue)"></i></div>'
+      + '<div class="pcts"><span>'+pct(p.p_local)+'</span><span>'+pct(p.p_empate)+'</span><span>'+pct(p.p_visitante)+'</span></div>'
+      + '<div class="why">'+(lang==="es" ? p.razon_es : p.razon_en)+'</div></div>';
+  }
+  box.innerHTML = out;
+}
+
+function load(file, key){
+  return fetch("data/"+file+"?v="+Date.now()).then(function(r){return r.json()}).then(function(j){DATA[key]=j}).catch(function(){DATA[key]=null});
+}
+Promise.all([load("predicciones.json","pred"), load("estadisticas.json","stats")]).then(render);
+render();
+</script>
+</body>
+</html>
