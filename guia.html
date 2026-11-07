@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sports Edge · Guía</title>
+<style>
+:root{--bg:#0b0f17;--card:#121826;--card2:#0f1522;--line:#1f2937;--txt:#e5e7eb;--mut:#8b95a7;--acc:#22c55e;--blue:#38bdf8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 24px;border-bottom:1px solid var(--line);flex-wrap:wrap;gap:10px}
+.logo{font-weight:700;font-size:20px;letter-spacing:.5px;color:var(--txt);text-decoration:none}
+.logo span{color:var(--acc)}
+.right{display:flex;align-items:center;gap:14px}
+.right a{color:var(--blue);text-decoration:none;font-weight:600;font-size:14px}
+.lang button{background:var(--card);color:var(--mut);border:1px solid var(--line);padding:6px 12px;cursor:pointer;font-weight:600}
+.lang button.on{color:var(--bg);background:var(--acc);border-color:var(--acc)}
+main{max-width:860px;margin:0 auto;padding:24px 20px}
+h1{font-size:26px;margin:10px 0 6px}
+.lead{color:var(--mut);margin-bottom:10px}
+h2{font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--blue);margin:30px 0 12px}
+.it{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:10px}
+.it b{display:block;color:var(--txt);margin-bottom:2px}
+.it span{color:var(--mut);font-size:14px}
+.warn{border-color:#7c5a10}
+footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top:1px solid var(--line);margin-top:30px}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html">SPORTS<span>EDGE</span></a>
+  <div class="right">
+    <a href="index.html" id="back"></a>
+    <div class="lang"><button id="b-es" onclick="setLang('es')">ES</button><button id="b-en" onclick="setLang('en')">EN</button></div>
+  </div>
+</header>
+<main>
+  <h1 id="h1"></h1>
+  <div class="lead" id="lead"></div>
+  <div id="body"></div>
+</main>
+<footer id="foot"></footer>
+
+<script>
+var T = {
+es:{
+ back:"← Volver a las predicciones", title:"Cómo funciona Sports Edge",
+ lead:"Todo lo que ves está calculado con estadísticas reales. Si algo no se puede calcular de forma fiable, aparece como Sin datos.",
+ foot:"Solo para mayores de 18 años. Las probabilidades son estimaciones estadísticas y no garantizan resultados. Juega con responsabilidad.",
+ secs:[
+ ["Cómo se hace cada predicción",[
+  ["1. Datos reales","Cada día el motor descarga los resultados oficiales de la temporada en curso de Premier League, LaLiga, Serie A, Bundesliga y Ligue 1."],
+  ["2. Fuerza de cada equipo","Con esos resultados calcula cuánto marca y cuánto encaja cada equipo, comparado con la media de su liga. Los equipos con menos de 5 partidos no se predicen."],
+  ["3. Modelo de Poisson","Es un modelo matemático clásico para contar goles. Con los goles esperados de cada equipo calcula la probabilidad de cada marcador posible, y de ahí salen todos los mercados."],
+  ["4. Se guarda antes del partido","Cada predicción queda registrada con su fecha antes de que empiece el partido y no se modifica nunca. Cuando termina, se anota el resultado real."]
+ ]],
+ ["Qué significa cada cosa",[
+  ["1 · X · 2","1 = gana el equipo local, X = empate, 2 = gana el visitante. El número grande es la probabilidad estimada; el más probable aparece con borde verde."],
+  ["Cuota justa (número pequeño)","Es 1 dividido entre la probabilidad. Si damos 50 %, la cuota justa es 2,00. Es la cuota sin margen de la casa de apuestas: si una casa paga más que la cuota justa, ahí podría haber valor."],
+  ["Doble oportunidad (1X, 12, X2)","Probabilidad de que ocurra cualquiera de las dos opciones. 1X = gana local o empata. 12 = no hay empate. X2 = gana visitante o empata."],
+  ["+2,5 / Más de 2,5 goles","Probabilidad de que entre los dos equipos se marquen 3 goles o más."],
+  ["Ambos marcan","Probabilidad de que los dos equipos marquen al menos un gol."],
+  ["Primera parte","Probabilidad de ir ganando, empatando o perdiendo al descanso, y de que haya algún gol antes del descanso. Se usa el reparto real de goles entre primera y segunda parte en esa liga."],
+  ["Goles esperados","Media de goles que el modelo espera de cada equipo en ese partido. No son los xG de tiros de las webs profesionales: es el resultado de nuestro modelo con goles reales."],
+  ["Probabilidad de que marque un jugador","Se calcula con el porcentaje de goles del equipo que ha marcado ese jugador esta temporada, aplicado a los goles esperados del partido. Solo aparecen jugadores con 2 goles o más. Es una aproximación: no tiene en cuenta si juega, lesiones ni penaltis."],
+  ["Marcador probable","El resultado exacto con más probabilidad. Aun así, su probabilidad suele ser baja (entre 8 % y 15 %), porque hay muchos marcadores posibles."]
+ ]],
+ ["Cómo medimos si acertamos",[
+  ["Acierto","Porcentaje de partidos en los que el resultado más probable (1, X o 2) fue el que ocurrió. Solo cuentan partidos con predicción guardada antes de jugarse."],
+  ["Calibración (Brier)","Mide si las probabilidades son honestas. Si decimos 70 % muchas veces, debería ocurrir cerca del 70 %. Cuanto más bajo, mejor. Repartir 33 % a cada opción da 0,667, así que un modelo útil debe quedar por debajo. Hacen falta cientos de partidos para sacar conclusiones fiables."],
+  ["Sin datos","El motor no tiene información suficiente para calcularlo de forma fiable. Preferimos no mostrar nada antes que inventarlo."],
+  ["Próximamente","Deporte aún sin motor propio. Se activará solo cuando tenga datos reales y verificables."]
+ ]],
+ ["Límites que conviene conocer",[
+  ["Ninguna predicción es una garantía","Un 70 % significa que de cada 10 partidos así, se espera que ocurran 7, no que vaya a ocurrir este. El fútbol tiene mucha variabilidad."],
+  ["No usamos información privada","No sabemos alineaciones, lesiones de última hora ni el estado de ánimo de un equipo. El modelo solo usa resultados pasados."],
+  ["Todavía no hay análisis de valor","Cuando conectemos cuotas reales de casas de apuestas, compararemos cada cuota con nuestra cuota justa y mostraremos dónde hay diferencia. Hasta entonces no se muestra."]
+ ]]
+ ]},
+en:{
+ back:"← Back to predictions", title:"How Sports Edge works",
+ lead:"Everything you see is calculated from real statistics. If something cannot be calculated reliably, it shows as No data.",
+ foot:"18+ only. Probabilities are statistical estimates and do not guarantee results. Please gamble responsibly.",
+ secs:[
+ ["How each prediction is made",[
+  ["1. Real data","Every day the engine downloads the official results of the current season for the Premier League, LaLiga, Serie A, Bundesliga and Ligue 1."],
+  ["2. Team strength","From those results it works out how much each team scores and concedes compared with its league average. Teams with fewer than 5 matches are not predicted."],
+  ["3. Poisson model","A classic mathematical model for counting goals. Using each team's expected goals it calculates the probability of every possible score, and all markets are derived from that."],
+  ["4. Saved before kick-off","Each prediction is recorded with its date before the match starts and is never edited. When the match ends, the real result is added."]
+ ]],
+ ["What each thing means",[
+  ["1 · X · 2","1 = home win, X = draw, 2 = away win. The large number is the estimated probability; the most likely one has a green border."],
+  ["Fair odds (small number)","It is 1 divided by the probability. If we say 50%, fair odds are 2.00. These are odds without the bookmaker's margin: if a bookmaker pays more than the fair odds, there may be value."],
+  ["Double chance (1X, 12, X2)","Probability that either of two outcomes happens. 1X = home win or draw. 12 = no draw. X2 = away win or draw."],
+  ["O2.5 / Over 2.5 goals","Probability that the two teams score 3 goals or more in total."],
+  ["Both teams score","Probability that both teams score at least one goal."],
+  ["First half","Probability of leading, drawing or trailing at half-time, and of at least one goal before the break. It uses the real split of goals between halves in that league."],
+  ["Expected goals","The average goals the model expects from each team in that match. These are not shot-based xG as on professional sites: they come from our model using real goals."],
+  ["Player scoring probability","Based on the share of the team's goals that player has scored this season, applied to the match's expected goals. Only players with 2 or more goals appear. It is an approximation: it ignores whether he plays, injuries and penalties."],
+  ["Most likely score","The exact score with the highest probability. Its probability is still usually low (8% to 15%) because there are many possible scores."]
+ ]],
+ ["How we measure whether we are right",[
+  ["Hit rate","Share of matches where the most likely result (1, X or 2) actually happened. Only matches with a prediction saved before kick-off count."],
+  ["Calibration (Brier)","Measures whether probabilities are honest. If we say 70% many times, it should happen close to 70% of the time. Lower is better. Giving 33% to each outcome scores 0.667, so a useful model must score below that. Hundreds of matches are needed for reliable conclusions."],
+  ["No data","The engine does not have enough information to calculate it reliably. We prefer to show nothing rather than invent it."],
+  ["Coming soon","A sport without its own engine yet. It goes live only when it has real, verifiable data."]
+ ]],
+ ["Limits worth knowing",[
+  ["No prediction is a guarantee","70% means that out of 10 such matches, about 7 are expected to happen, not that this one will. Football has a lot of variance."],
+  ["No private information","We do not know line-ups, late injuries or team morale. The model only uses past results."],
+  ["No value analysis yet","Once we connect real bookmaker odds, we will compare each price with our fair odds and show where they differ. Until then it is not shown."]
+ ]]
+ ]}
+};
+var lang="es";
+try{ lang = localStorage.getItem("lang") || (navigator.language.indexOf("es")==0 ? "es" : "en"); }catch(e){}
+function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
+function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+function render(){
+  var d=T[lang];
+  document.documentElement.lang=lang;
+  document.getElementById("b-es").className=lang==="es"?"on":"";
+  document.getElementById("b-en").className=lang==="en"?"on":"";
+  document.getElementById("back").textContent=d.back;
+  document.getElementById("h1").textContent=d.title;
+  document.getElementById("lead").textContent=d.lead;
+  document.getElementById("foot").textContent=d.foot;
+  var o="";
+  for(var i=0;i<d.secs.length;i++){
+    o+="<h2>"+esc(d.secs[i][0])+"</h2>";
+    var its=d.secs[i][1];
+    for(var j=0;j<its.length;j++){
+      o+='<div class="it'+(i===3?" warn":"")+'"><b>'+esc(its[j][0])+"</b><span>"+esc(its[j][1])+"</span></div>";
+    }
+  }
+  document.getElementById("body").innerHTML=o;
+}
+render();
+</script>
+</body>
+</html>
