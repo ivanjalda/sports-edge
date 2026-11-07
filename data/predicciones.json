@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-07 12:58 UTC",
+ "actualizado": "2026-11-07 13:28 UTC",
  "predicciones": [
   {
    "id": 564744,
@@ -16,8 +16,8 @@
    "xg_local": 1.65,
    "xg_visitante": 1.46,
    "n_partidos": 11,
-   "razon_es": "Goles esperados: 1.65 - 1.46. Modelo de Poisson con los resultados reales de liga de esta temporada (11 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.65 - 1.46. Poisson model built from real league results this season (at least 11 matches per team)."
+   "razon_es": "Goles esperados: 1.65 - 1.46. Modelo de Poisson con los resultados reales de liga de esta temporada (11 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.65 - 1.46. Poisson model built from real league results this season (at least 11 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 558532,
@@ -34,8 +34,46 @@
    "xg_local": 1.83,
    "xg_visitante": 1.22,
    "n_partidos": 10,
-   "razon_es": "Goles esperados: 1.83 - 1.22. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.83 - 1.22. Poisson model built from real league results this season (at least 10 matches per team)."
+   "mercados": {
+    "over15": 0.8082,
+    "over25": 0.5879,
+    "over35": 0.364,
+    "btts": 0.5917,
+    "marcador": "1-1",
+    "p_marcador": 0.1057,
+    "ht_local": 0.3902,
+    "ht_empate": 0.3841,
+    "ht_visitante": 0.2257,
+    "ht_gol": 0.743
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Che Adams",
+      "g": 4,
+      "p": 0.4072
+     },
+     {
+      "n": "Sandro Kulenović",
+      "g": 2,
+      "p": 0.23
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Tiago Gabriel",
+      "g": 2,
+      "p": 0.1989
+     },
+     {
+      "n": "Lassana Coulibaly",
+      "g": 2,
+      "p": 0.1989
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.83 - 1.22. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.83 - 1.22. Poisson model built from real league results this season (at least 10 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 558534,
@@ -52,8 +90,46 @@
    "xg_local": 1.03,
    "xg_visitante": 2.04,
    "n_partidos": 10,
-   "razon_es": "Goles esperados: 1.03 - 2.04. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.03 - 2.04. Poisson model built from real league results this season (at least 10 matches per team)."
+   "mercados": {
+    "over15": 0.8111,
+    "over25": 0.5923,
+    "over35": 0.3684,
+    "btts": 0.5594,
+    "marcador": "1-2",
+    "p_marcador": 0.0995,
+    "ht_local": 0.1788,
+    "ht_empate": 0.3725,
+    "ht_visitante": 0.4486,
+    "ht_gol": 0.7453
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Daniel Maldini",
+      "g": 5,
+      "p": 0.4357
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Antonio Raimondo",
+      "g": 8,
+      "p": 0.4934
+     },
+     {
+      "n": "Giacomo Calò",
+      "g": 5,
+      "p": 0.3462
+     },
+     {
+      "n": "Giorgi Kvernadze",
+      "g": 3,
+      "p": 0.2251
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.03 - 2.04. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.03 - 2.04. Poisson model built from real league results this season (at least 10 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 565848,
@@ -70,8 +146,56 @@
    "xg_local": 3.08,
    "xg_visitante": 1.39,
    "n_partidos": 8,
-   "razon_es": "Goles esperados: 3.08 - 1.39. Modelo de Poisson con los resultados reales de liga de esta temporada (8 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 3.08 - 1.39. Poisson model built from real league results this season (at least 8 matches per team)."
+   "mercados": {
+    "over15": 0.9374,
+    "over25": 0.823,
+    "over35": 0.6525,
+    "btts": 0.7164,
+    "marcador": "3-1",
+    "p_marcador": 0.0775,
+    "ht_local": 0.5264,
+    "ht_empate": 0.3062,
+    "ht_visitante": 0.1674,
+    "ht_gol": 0.8286
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Antonio Nusa",
+      "g": 4,
+      "p": 0.4288
+     },
+     {
+      "n": "Christopher Nkunku",
+      "g": 4,
+      "p": 0.4288
+     },
+     {
+      "n": "Romulo Cruz",
+      "g": 4,
+      "p": 0.4288
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Michael Gregoritsch",
+      "g": 5,
+      "p": 0.3203
+     },
+     {
+      "n": "Robin Fellhauer",
+      "g": 3,
+      "p": 0.2068
+     },
+     {
+      "n": "Rodrigo Ribeiro",
+      "g": 2,
+      "p": 0.1431
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 3.08 - 1.39. Modelo de Poisson con los resultados reales de liga de esta temporada (8 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 3.08 - 1.39. Poisson model built from real league results this season (at least 8 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 565850,
@@ -88,8 +212,56 @@
    "xg_local": 2.33,
    "xg_visitante": 0.93,
    "n_partidos": 8,
-   "razon_es": "Goles esperados: 2.33 - 0.93. Modelo de Poisson con los resultados reales de liga de esta temporada (8 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 2.33 - 0.93. Poisson model built from real league results this season (at least 8 matches per team)."
+   "mercados": {
+    "over15": 0.8365,
+    "over25": 0.6325,
+    "over35": 0.4108,
+    "btts": 0.5465,
+    "marcador": "2-0",
+    "p_marcador": 0.1042,
+    "ht_local": 0.4793,
+    "ht_empate": 0.3777,
+    "ht_visitante": 0.143,
+    "ht_gol": 0.7237
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Sehrou Guirassy",
+      "g": 3,
+      "p": 0.393
+     },
+     {
+      "n": "Fábio Silva",
+      "g": 3,
+      "p": 0.393
+     },
+     {
+      "n": "Felix Kalu Nmecha",
+      "g": 2,
+      "p": 0.2831
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Maurice Krattenmacher",
+      "g": 4,
+      "p": 0.2075
+     },
+     {
+      "n": "Lukas Petkov",
+      "g": 2,
+      "p": 0.1097
+     },
+     {
+      "n": "Cole Campbell",
+      "g": 2,
+      "p": 0.1097
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 2.33 - 0.93. Modelo de Poisson con los resultados reales de liga de esta temporada (8 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 2.33 - 0.93. Poisson model built from real league results this season (at least 8 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 565851,
@@ -106,8 +278,56 @@
    "xg_local": 1.74,
    "xg_visitante": 2.53,
    "n_partidos": 8,
-   "razon_es": "Goles esperados: 1.74 - 2.53. Modelo de Poisson con los resultados reales de liga de esta temporada (8 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.74 - 2.53. Poisson model built from real league results this season (at least 8 matches per team)."
+   "mercados": {
+    "over15": 0.9263,
+    "over25": 0.7988,
+    "over35": 0.6174,
+    "btts": 0.7588,
+    "marcador": "1-2",
+    "p_marcador": 0.0779,
+    "ht_local": 0.245,
+    "ht_empate": 0.3361,
+    "ht_visitante": 0.4189,
+    "ht_gol": 0.8145
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Phillip Tietz",
+      "g": 5,
+      "p": 0.4006
+     },
+     {
+      "n": "Anthony Caci",
+      "g": 3,
+      "p": 0.2644
+     },
+     {
+      "n": "Sheraldo Becker",
+      "g": 2,
+      "p": 0.1851
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Michael Olise",
+      "g": 6,
+      "p": 0.4301
+     },
+     {
+      "n": "Luis Díaz",
+      "g": 4,
+      "p": 0.3126
+     },
+     {
+      "n": "Harry Kane",
+      "g": 4,
+      "p": 0.3126
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.74 - 2.53. Modelo de Poisson con los resultados reales de liga de esta temporada (8 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.74 - 2.53. Poisson model built from real league results this season (at least 8 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 565853,
@@ -124,8 +344,51 @@
    "xg_local": 1.57,
    "xg_visitante": 0.99,
    "n_partidos": 8,
-   "razon_es": "Goles esperados: 1.57 - 0.99. Modelo de Poisson con los resultados reales de liga de esta temporada (8 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.57 - 0.99. Poisson model built from real league results this season (at least 8 matches per team)."
+   "mercados": {
+    "over15": 0.7248,
+    "over25": 0.4715,
+    "over35": 0.2553,
+    "btts": 0.4977,
+    "marcador": "1-0",
+    "p_marcador": 0.1214,
+    "ht_local": 0.3477,
+    "ht_empate": 0.4578,
+    "ht_visitante": 0.1945,
+    "ht_gol": 0.6358
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Stefano Marino",
+      "g": 2,
+      "p": 0.4075
+     },
+     {
+      "n": "Steffen Tigges",
+      "g": 2,
+      "p": 0.4075
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Younes Ebnoutalib",
+      "g": 6,
+      "p": 0.3668
+     },
+     {
+      "n": "Jonathan Burkardt",
+      "g": 3,
+      "p": 0.2042
+     },
+     {
+      "n": "Can Uzun",
+      "g": 2,
+      "p": 0.1413
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.57 - 0.99. Modelo de Poisson con los resultados reales de liga de esta temporada (8 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.57 - 0.99. Poisson model built from real league results this season (at least 8 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 560640,
@@ -142,8 +405,51 @@
    "xg_local": 1.46,
    "xg_visitante": 0.66,
    "n_partidos": 9,
-   "razon_es": "Goles esperados: 1.46 - 0.66. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.46 - 0.66. Poisson model built from real league results this season (at least 9 matches per team)."
+   "mercados": {
+    "over15": 0.6255,
+    "over25": 0.3558,
+    "over35": 0.1652,
+    "btts": 0.3709,
+    "marcador": "1-0",
+    "p_marcador": 0.1752,
+    "ht_local": 0.3688,
+    "ht_empate": 0.4907,
+    "ht_visitante": 0.1405,
+    "ht_gol": 0.5797
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Kai Havertz",
+      "g": 3,
+      "p": 0.2686
+     },
+     {
+      "n": "Bukayo Saka",
+      "g": 3,
+      "p": 0.2686
+     },
+     {
+      "n": "Martin Ødegaard",
+      "g": 2,
+      "p": 0.1883
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Mohamed Belloumi",
+      "g": 3,
+      "p": 0.1647
+     },
+     {
+      "n": "Oliver McBurnie",
+      "g": 2,
+      "p": 0.1131
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.46 - 0.66. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.46 - 0.66. Poisson model built from real league results this season (at least 9 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 560633,
@@ -160,8 +466,46 @@
    "xg_local": 1.44,
    "xg_visitante": 1.1,
    "n_partidos": 9,
-   "razon_es": "Goles esperados: 1.44 - 1.10. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.44 - 1.10. Poisson model built from real league results this season (at least 9 matches per team)."
+   "mercados": {
+    "over15": 0.7208,
+    "over25": 0.4664,
+    "over35": 0.251,
+    "btts": 0.5091,
+    "marcador": "1-1",
+    "p_marcador": 0.1249,
+    "ht_local": 0.3192,
+    "ht_empate": 0.4541,
+    "ht_visitante": 0.2267,
+    "ht_gol": 0.6461
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Joshua King",
+      "g": 2,
+      "p": 0.2739
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Anthony Elanga",
+      "g": 2,
+      "p": 0.1675
+     },
+     {
+      "n": "Joe Willock",
+      "g": 2,
+      "p": 0.1675
+     },
+     {
+      "n": "Harvey Barnes",
+      "g": 2,
+      "p": 0.1675
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.44 - 1.10. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.44 - 1.10. Poisson model built from real league results this season (at least 9 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 564745,
@@ -178,8 +522,46 @@
    "xg_local": 1.28,
    "xg_visitante": 1.08,
    "n_partidos": 11,
-   "razon_es": "Goles esperados: 1.28 - 1.08. Modelo de Poisson con los resultados reales de liga de esta temporada (11 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.28 - 1.08. Poisson model built from real league results this season (at least 11 matches per team)."
+   "mercados": {
+    "over15": 0.6827,
+    "over25": 0.4198,
+    "over35": 0.213,
+    "btts": 0.4768,
+    "marcador": "1-1",
+    "p_marcador": 0.1305,
+    "ht_local": 0.3023,
+    "ht_empate": 0.4541,
+    "ht_visitante": 0.2436,
+    "ht_gol": 0.6477
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Roberto Fernández",
+      "g": 6,
+      "p": 0.4461
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Pierre-Emerick Aubameyang",
+      "g": 5,
+      "p": 0.3023
+     },
+     {
+      "n": "Mario Soriano",
+      "g": 2,
+      "p": 0.1341
+     },
+     {
+      "n": "Nsongo Tonfack",
+      "g": 2,
+      "p": 0.1341
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.28 - 1.08. Modelo de Poisson con los resultados reales de liga de esta temporada (11 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.28 - 1.08. Poisson model built from real league results this season (at least 11 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 558535,
@@ -196,8 +578,46 @@
    "xg_local": 0.91,
    "xg_visitante": 1.37,
    "n_partidos": 10,
-   "razon_es": "Goles esperados: 0.91 - 1.37. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 0.91 - 1.37. Poisson model built from real league results this season (at least 10 matches per team)."
+   "mercados": {
+    "over15": 0.6645,
+    "over25": 0.3987,
+    "over35": 0.1966,
+    "btts": 0.4457,
+    "marcador": "0-1",
+    "p_marcador": 0.1401,
+    "ht_local": 0.2028,
+    "ht_empate": 0.4574,
+    "ht_visitante": 0.3398,
+    "ht_gol": 0.6379
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Simone Lontani",
+      "g": 3,
+      "p": 0.2891
+     },
+     {
+      "n": "José Romero",
+      "g": 2,
+      "p": 0.2035
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Federico Bernardeschi",
+      "g": 3,
+      "p": 0.2544
+     },
+     {
+      "n": "Samuel Mbangula",
+      "g": 3,
+      "p": 0.2544
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 0.91 - 1.37. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 0.91 - 1.37. Poisson model built from real league results this season (at least 10 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 560641,
@@ -214,8 +634,46 @@
    "xg_local": 0.86,
    "xg_visitante": 1.71,
    "n_partidos": 9,
-   "razon_es": "Goles esperados: 0.86 - 1.71. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 0.86 - 1.71. Poisson model built from real league results this season (at least 9 matches per team)."
+   "mercados": {
+    "over15": 0.7268,
+    "over25": 0.474,
+    "over35": 0.2575,
+    "btts": 0.4725,
+    "marcador": "0-1",
+    "p_marcador": 0.1309,
+    "ht_local": 0.1651,
+    "ht_empate": 0.441,
+    "ht_visitante": 0.3939,
+    "ht_gol": 0.6504
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Dan Ndoye",
+      "g": 2,
+      "p": 0.2492
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Erling Haaland",
+      "g": 9,
+      "p": 0.5368
+     },
+     {
+      "n": "Rayan Cherki",
+      "g": 4,
+      "p": 0.2897
+     },
+     {
+      "n": "Antoine Semenyo",
+      "g": 2,
+      "p": 0.1572
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 0.86 - 1.71. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 0.86 - 1.71. Poisson model built from real league results this season (at least 9 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 564739,
@@ -232,8 +690,46 @@
    "xg_local": 0.98,
    "xg_visitante": 1.54,
    "n_partidos": 10,
-   "razon_es": "Goles esperados: 0.98 - 1.54. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 0.98 - 1.54. Poisson model built from real league results this season (at least 10 matches per team)."
+   "mercados": {
+    "over15": 0.7168,
+    "over25": 0.4613,
+    "over35": 0.2467,
+    "btts": 0.4908,
+    "marcador": "0-1",
+    "p_marcador": 0.1239,
+    "ht_local": 0.2035,
+    "ht_empate": 0.4324,
+    "ht_visitante": 0.3641,
+    "ht_gol": 0.6718
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Ante Budimir",
+      "g": 8,
+      "p": 0.5097
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Álex Berenguer",
+      "g": 4,
+      "p": 0.356
+     },
+     {
+      "n": "Iñaki Williams",
+      "g": 3,
+      "p": 0.2811
+     },
+     {
+      "n": "Aitor Paredes Casamichana",
+      "g": 2,
+      "p": 0.1975
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 0.98 - 1.54. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 0.98 - 1.54. Poisson model built from real league results this season (at least 10 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 565849,
@@ -250,8 +746,56 @@
    "xg_local": 2.13,
    "xg_visitante": 1.64,
    "n_partidos": 8,
-   "razon_es": "Goles esperados: 2.13 - 1.64. Modelo de Poisson con los resultados reales de liga de esta temporada (8 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 2.13 - 1.64. Poisson model built from real league results this season (at least 8 matches per team)."
+   "mercados": {
+    "over15": 0.89,
+    "over25": 0.7262,
+    "over35": 0.5204,
+    "btts": 0.7102,
+    "marcador": "2-1",
+    "p_marcador": 0.0858,
+    "ht_local": 0.3735,
+    "ht_empate": 0.3666,
+    "ht_visitante": 0.26,
+    "ht_gol": 0.774
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Ermedin Demirovic",
+      "g": 5,
+      "p": 0.5327
+     },
+     {
+      "n": "Josha Vagnoman",
+      "g": 2,
+      "p": 0.2623
+     },
+     {
+      "n": "Bilal El Khannouss",
+      "g": 2,
+      "p": 0.2623
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Niclas Füllkrug",
+      "g": 9,
+      "p": 0.5803
+     },
+     {
+      "n": "Eren Dinkci",
+      "g": 2,
+      "p": 0.1755
+     },
+     {
+      "n": "Marco Grüll",
+      "g": 2,
+      "p": 0.1755
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 2.13 - 1.64. Modelo de Poisson con los resultados reales de liga de esta temporada (8 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 2.13 - 1.64. Poisson model built from real league results this season (at least 8 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 559637,
@@ -268,8 +812,51 @@
    "xg_local": 1.35,
    "xg_visitante": 2.18,
    "n_partidos": 9,
-   "razon_es": "Goles esperados: 1.35 - 2.18. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.35 - 2.18. Poisson model built from real league results this season (at least 9 matches per team)."
+   "mercados": {
+    "over15": 0.8672,
+    "over25": 0.6847,
+    "over35": 0.4698,
+    "btts": 0.657,
+    "marcador": "1-2",
+    "p_marcador": 0.094,
+    "ht_local": 0.2159,
+    "ht_empate": 0.3679,
+    "ht_visitante": 0.4162,
+    "ht_gol": 0.7631
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Cameron Archer",
+      "g": 6,
+      "p": 0.4637
+     },
+     {
+      "n": "Daniel Namaso",
+      "g": 3,
+      "p": 0.2677
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Lassine Sinayoko",
+      "g": 8,
+      "p": 0.6638
+     },
+     {
+      "n": "Pablo Pagis",
+      "g": 2,
+      "p": 0.2385
+     },
+     {
+      "n": "Maxime López",
+      "g": 2,
+      "p": 0.2385
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.35 - 2.18. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.35 - 2.18. Poisson model built from real league results this season (at least 9 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 558531,
@@ -286,8 +873,56 @@
    "xg_local": 3.65,
    "xg_visitante": 1.15,
    "n_partidos": 10,
-   "razon_es": "Goles esperados: 3.65 - 1.15. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 3.65 - 1.15. Poisson model built from real league results this season (at least 10 matches per team)."
+   "mercados": {
+    "over15": 0.9522,
+    "over25": 0.8573,
+    "over35": 0.7054,
+    "btts": 0.6656,
+    "marcador": "3-1",
+    "p_marcador": 0.0768,
+    "ht_local": 0.6484,
+    "ht_empate": 0.2385,
+    "ht_visitante": 0.1132,
+    "ht_gol": 0.8821
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Donyell Malen",
+      "g": 8,
+      "p": 0.6476
+     },
+     {
+      "n": "Niccolo Pisilli",
+      "g": 3,
+      "p": 0.3237
+     },
+     {
+      "n": "Matias Soule",
+      "g": 3,
+      "p": 0.3237
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Vasilije Adzic",
+      "g": 3,
+      "p": 0.194
+     },
+     {
+      "n": "Cas Odenthal",
+      "g": 2,
+      "p": 0.1339
+     },
+     {
+      "n": "Domenico Berardi",
+      "g": 2,
+      "p": 0.1339
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 3.65 - 1.15. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 3.65 - 1.15. Poisson model built from real league results this season (at least 10 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 564741,
@@ -304,8 +939,46 @@
    "xg_local": 0.75,
    "xg_visitante": 2.01,
    "n_partidos": 11,
-   "razon_es": "Goles esperados: 0.75 - 2.01. Modelo de Poisson con los resultados reales de liga de esta temporada (11 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 0.75 - 2.01. Poisson model built from real league results this season (at least 11 matches per team)."
+   "mercados": {
+    "over15": 0.762,
+    "over25": 0.521,
+    "over35": 0.2992,
+    "btts": 0.4569,
+    "marcador": "0-2",
+    "p_marcador": 0.1279,
+    "ht_local": 0.133,
+    "ht_empate": 0.3888,
+    "ht_visitante": 0.4782,
+    "ht_gol": 0.7048
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Umar Sadiq",
+      "g": 2,
+      "p": 0.171
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Kylian Mbappé",
+      "g": 12,
+      "p": 0.5774
+     },
+     {
+      "n": "Jude Bellingham",
+      "g": 4,
+      "p": 0.2496
+     },
+     {
+      "n": "Yan Diomandé",
+      "g": 3,
+      "p": 0.1937
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 0.75 - 2.01. Modelo de Poisson con los resultados reales de liga de esta temporada (11 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 0.75 - 2.01. Poisson model built from real league results this season (at least 11 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 559635,
@@ -322,8 +995,40 @@
    "xg_local": 2.62,
    "xg_visitante": 0.71,
    "n_partidos": 9,
-   "razon_es": "Goles esperados: 2.62 - 0.71. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 2.62 - 0.71. Poisson model built from real league results this season (at least 9 matches per team)."
+   "mercados": {
+    "over15": 0.845,
+    "over25": 0.6465,
+    "over35": 0.4262,
+    "btts": 0.4713,
+    "marcador": "2-0",
+    "p_marcador": 0.1229,
+    "ht_local": 0.5573,
+    "ht_empate": 0.343,
+    "ht_visitante": 0.0997,
+    "ht_gol": 0.743
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Ferrán Torres",
+      "g": 4,
+      "p": 0.3929
+     },
+     {
+      "n": "Marquinhos",
+      "g": 3,
+      "p": 0.3122
+     },
+     {
+      "n": "Achraf Hakimi",
+      "g": 3,
+      "p": 0.3122
+     }
+    ],
+    "visitante": []
+   },
+   "razon_es": "Goles esperados: 2.62 - 0.71. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 2.62 - 0.71. Poisson model built from real league results this season (at least 9 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 558533,
@@ -340,8 +1045,56 @@
    "xg_local": 1.1,
    "xg_visitante": 1.85,
    "n_partidos": 10,
-   "razon_es": "Goles esperados: 1.10 - 1.85. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.10 - 1.85. Poisson model built from real league results this season (at least 10 matches per team)."
+   "mercados": {
+    "over15": 0.7933,
+    "over25": 0.5655,
+    "over35": 0.3416,
+    "btts": 0.5622,
+    "marcador": "1-1",
+    "p_marcador": 0.1065,
+    "ht_local": 0.2035,
+    "ht_empate": 0.3887,
+    "ht_visitante": 0.4078,
+    "ht_gol": 0.7313
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Kevin De Bruyne",
+      "g": 4,
+      "p": 0.228
+     },
+     {
+      "n": "Rasmus Højlund",
+      "g": 3,
+      "p": 0.1764
+     },
+     {
+      "n": "Matteo Politano",
+      "g": 2,
+      "p": 0.1214
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Tijjani Noslin",
+      "g": 4,
+      "p": 0.2653
+     },
+     {
+      "n": "Gustav Isaksen",
+      "g": 4,
+      "p": 0.2653
+     },
+     {
+      "n": "Davide Frattesi",
+      "g": 3,
+      "p": 0.2065
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.10 - 1.85. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.10 - 1.85. Poisson model built from real league results this season (at least 10 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 564738,
@@ -358,8 +1111,51 @@
    "xg_local": 1.41,
    "xg_visitante": 1.48,
    "n_partidos": 11,
-   "razon_es": "Goles esperados: 1.41 - 1.48. Modelo de Poisson con los resultados reales de liga de esta temporada (11 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.41 - 1.48. Poisson model built from real league results this season (at least 11 matches per team)."
+   "mercados": {
+    "over15": 0.7838,
+    "over25": 0.5517,
+    "over35": 0.3281,
+    "btts": 0.5838,
+    "marcador": "1-1",
+    "p_marcador": 0.116,
+    "ht_local": 0.2881,
+    "ht_empate": 0.4045,
+    "ht_visitante": 0.3074,
+    "ht_gol": 0.7213
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Fer Niño",
+      "g": 6,
+      "p": 0.4535
+     },
+     {
+      "n": "Germán Valera",
+      "g": 2,
+      "p": 0.1824
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Abdessamad Ezzalzouli",
+      "g": 3,
+      "p": 0.2186
+     },
+     {
+      "n": "Rodrigo Riquelme",
+      "g": 2,
+      "p": 0.1516
+     },
+     {
+      "n": "Bartra",
+      "g": 2,
+      "p": 0.1516
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.41 - 1.48. Modelo de Poisson con los resultados reales de liga de esta temporada (11 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.41 - 1.48. Poisson model built from real league results this season (at least 11 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 560635,
@@ -376,8 +1172,41 @@
    "xg_local": 1.01,
    "xg_visitante": 1.67,
    "n_partidos": 9,
-   "razon_es": "Goles esperados: 1.01 - 1.67. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.01 - 1.67. Poisson model built from real league results this season (at least 9 matches per team)."
+   "mercados": {
+    "over15": 0.7477,
+    "over25": 0.5015,
+    "over35": 0.2815,
+    "btts": 0.5161,
+    "marcador": "1-1",
+    "p_marcador": 0.1156,
+    "ht_local": 0.1944,
+    "ht_empate": 0.4354,
+    "ht_visitante": 0.3702,
+    "ht_gol": 0.6658
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Tyrick Mitchell",
+      "g": 2,
+      "p": 0.201
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Alexander Isak",
+      "g": 6,
+      "p": 0.5978
+     },
+     {
+      "n": "Víctor Muñoz",
+      "g": 2,
+      "p": 0.2619
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.01 - 1.67. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.01 - 1.67. Poisson model built from real league results this season (at least 9 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 560636,
@@ -394,8 +1223,51 @@
    "xg_local": 1.24,
    "xg_visitante": 2.11,
    "n_partidos": 9,
-   "razon_es": "Goles esperados: 1.24 - 2.11. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.24 - 2.11. Poisson model built from real league results this season (at least 9 matches per team)."
+   "mercados": {
+    "over15": 0.8474,
+    "over25": 0.6505,
+    "over35": 0.4307,
+    "btts": 0.6245,
+    "marcador": "1-2",
+    "p_marcador": 0.0968,
+    "ht_local": 0.2039,
+    "ht_empate": 0.3781,
+    "ht_visitante": 0.418,
+    "ht_gol": 0.7459
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Brian Brobbey",
+      "g": 3,
+      "p": 0.4122
+     },
+     {
+      "n": "Enzo Le Fée",
+      "g": 2,
+      "p": 0.2983
+     }
+    ],
+    "visitante": [
+     {
+      "n": "João Pedro",
+      "g": 5,
+      "p": 0.4261
+     },
+     {
+      "n": "Morgan Rogers",
+      "g": 5,
+      "p": 0.4261
+     },
+     {
+      "n": "Cole Palmer",
+      "g": 3,
+      "p": 0.2833
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.24 - 2.11. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.24 - 2.11. Poisson model built from real league results this season (at least 9 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 560637,
@@ -412,8 +1284,51 @@
    "xg_local": 1.74,
    "xg_visitante": 1.75,
    "n_partidos": 9,
-   "razon_es": "Goles esperados: 1.74 - 1.75. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.74 - 1.75. Poisson model built from real league results this season (at least 9 matches per team)."
+   "mercados": {
+    "over15": 0.8631,
+    "over25": 0.6773,
+    "over35": 0.4612,
+    "btts": 0.6812,
+    "marcador": "1-1",
+    "p_marcador": 0.0929,
+    "ht_local": 0.3094,
+    "ht_empate": 0.3787,
+    "ht_visitante": 0.3119,
+    "ht_gol": 0.76
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Emersonn",
+      "g": 2,
+      "p": 0.2201
+     },
+     {
+      "n": "Leif Davis",
+      "g": 2,
+      "p": 0.2201
+     },
+     {
+      "n": "Zian Flemming",
+      "g": 2,
+      "p": 0.2201
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Marcus Tavernier",
+      "g": 5,
+      "p": 0.4647
+     },
+     {
+      "n": "Evanilson",
+      "g": 4,
+      "p": 0.3935
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.74 - 1.75. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.74 - 1.75. Poisson model built from real league results this season (at least 9 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 560638,
@@ -430,8 +1345,56 @@
    "xg_local": 2.07,
    "xg_visitante": 1.02,
    "n_partidos": 9,
-   "razon_es": "Goles esperados: 2.07 - 1.02. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 2.07 - 1.02. Poisson model built from real league results this season (at least 9 matches per team)."
+   "mercados": {
+    "over15": 0.8139,
+    "over25": 0.5967,
+    "over35": 0.3729,
+    "btts": 0.5587,
+    "marcador": "2-1",
+    "p_marcador": 0.0994,
+    "ht_local": 0.4367,
+    "ht_empate": 0.3916,
+    "ht_visitante": 0.1717,
+    "ht_gol": 0.7173
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Jack Hinshelwood",
+      "g": 3,
+      "p": 0.228
+     },
+     {
+      "n": "Pascal Groß",
+      "g": 3,
+      "p": 0.228
+     },
+     {
+      "n": "Charalampos Kostoulas",
+      "g": 3,
+      "p": 0.228
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Kevin Schade",
+      "g": 3,
+      "p": 0.1741
+     },
+     {
+      "n": "Keane Lewis-Potter",
+      "g": 2,
+      "p": 0.1197
+     },
+     {
+      "n": "Vitaly Janelt",
+      "g": 2,
+      "p": 0.1197
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 2.07 - 1.02. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 2.07 - 1.02. Poisson model built from real league results this season (at least 9 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 558536,
@@ -448,8 +1411,51 @@
    "xg_local": 0.98,
    "xg_visitante": 1.75,
    "n_partidos": 10,
-   "razon_es": "Goles esperados: 0.98 - 1.75. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 0.98 - 1.75. Poisson model built from real league results this season (at least 10 matches per team)."
+   "mercados": {
+    "over15": 0.7567,
+    "over25": 0.5137,
+    "over35": 0.2925,
+    "btts": 0.5161,
+    "marcador": "0-1",
+    "p_marcador": 0.1141,
+    "ht_local": 0.1893,
+    "ht_empate": 0.4061,
+    "ht_visitante": 0.4046,
+    "ht_gol": 0.7036
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Milutin Osmajić",
+      "g": 4,
+      "p": 0.3243
+     },
+     {
+      "n": "Junior Messias",
+      "g": 2,
+      "p": 0.178
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Adrien Rabiot",
+      "g": 5,
+      "p": 0.3408
+     },
+     {
+      "n": "Alphadjo Cisse",
+      "g": 4,
+      "p": 0.2835
+     },
+     {
+      "n": "Diego Moreira",
+      "g": 4,
+      "p": 0.2835
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 0.98 - 1.75. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 0.98 - 1.75. Poisson model built from real league results this season (at least 10 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 558538,
@@ -466,8 +1472,46 @@
    "xg_local": 2.02,
    "xg_visitante": 2.13,
    "n_partidos": 10,
-   "razon_es": "Goles esperados: 2.02 - 2.13. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 2.02 - 2.13. Poisson model built from real league results this season (at least 10 matches per team)."
+   "mercados": {
+    "over15": 0.9188,
+    "over25": 0.7831,
+    "over35": 0.5953,
+    "btts": 0.7643,
+    "marcador": "2-2",
+    "p_marcador": 0.073,
+    "ht_local": 0.325,
+    "ht_empate": 0.3234,
+    "ht_visitante": 0.3515,
+    "ht_gol": 0.8426
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Gustavo Varela",
+      "g": 9,
+      "p": 0.6568
+     },
+     {
+      "n": "Jay Robinson",
+      "g": 2,
+      "p": 0.2115
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Nikola Krstović",
+      "g": 6,
+      "p": 0.5501
+     },
+     {
+      "n": "Éderson",
+      "g": 2,
+      "p": 0.2338
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 2.02 - 2.13. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 2.02 - 2.13. Poisson model built from real league results this season (at least 10 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 559636,
@@ -484,8 +1528,56 @@
    "xg_local": 1.38,
    "xg_visitante": 1.54,
    "n_partidos": 9,
-   "razon_es": "Goles esperados: 1.38 - 1.54. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.38 - 1.54. Poisson model built from real league results this season (at least 9 matches per team)."
+   "mercados": {
+    "over15": 0.7886,
+    "over25": 0.5586,
+    "over35": 0.3349,
+    "btts": 0.588,
+    "marcador": "1-1",
+    "p_marcador": 0.1146,
+    "ht_local": 0.2686,
+    "ht_empate": 0.4212,
+    "ht_visitante": 0.3102,
+    "ht_gol": 0.6962
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Esteban Lepaul",
+      "g": 7,
+      "p": 0.3831
+     },
+     {
+      "n": "Sebastian Szymański",
+      "g": 4,
+      "p": 0.2412
+     },
+     {
+      "n": "Boulaye Dia",
+      "g": 4,
+      "p": 0.2412
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Olivier Giroud",
+      "g": 3,
+      "p": 0.3195
+     },
+     {
+      "n": "Tiago Santos",
+      "g": 2,
+      "p": 0.2264
+     },
+     {
+      "n": "Dilane Bakwa",
+      "g": 2,
+      "p": 0.2264
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.38 - 1.54. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.38 - 1.54. Poisson model built from real league results this season (at least 9 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 565855,
@@ -502,8 +1594,51 @@
    "xg_local": 1.78,
    "xg_visitante": 1.47,
    "n_partidos": 8,
-   "razon_es": "Goles esperados: 1.78 - 1.47. Modelo de Poisson con los resultados reales de liga de esta temporada (8 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.78 - 1.47. Poisson model built from real league results this season (at least 8 matches per team)."
+   "mercados": {
+    "over15": 0.8352,
+    "over25": 0.6304,
+    "over35": 0.4086,
+    "btts": 0.6402,
+    "marcador": "1-1",
+    "p_marcador": 0.1015,
+    "ht_local": 0.3367,
+    "ht_empate": 0.4024,
+    "ht_visitante": 0.2609,
+    "ht_gol": 0.7226
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Said El Mala",
+      "g": 2,
+      "p": 0.3267
+     },
+     {
+      "n": "Thijs Dallinga",
+      "g": 2,
+      "p": 0.3267
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Patrik Schick",
+      "g": 7,
+      "p": 0.4354
+     },
+     {
+      "n": "Ibrahim Maza",
+      "g": 3,
+      "p": 0.2173
+     },
+     {
+      "n": "Christian Kofane",
+      "g": 2,
+      "p": 0.1507
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.78 - 1.47. Modelo de Poisson con los resultados reales de liga de esta temporada (8 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.78 - 1.47. Poisson model built from real league results this season (at least 8 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 564743,
@@ -520,8 +1655,51 @@
    "xg_local": 2.44,
    "xg_visitante": 1.51,
    "n_partidos": 10,
-   "razon_es": "Goles esperados: 2.44 - 1.51. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 2.44 - 1.51. Poisson model built from real league results this season (at least 10 matches per team)."
+   "mercados": {
+    "over15": 0.9047,
+    "over25": 0.7545,
+    "over35": 0.5567,
+    "btts": 0.7112,
+    "marcador": "2-1",
+    "p_marcador": 0.0866,
+    "ht_local": 0.4504,
+    "ht_empate": 0.3245,
+    "ht_visitante": 0.225,
+    "ht_gol": 0.8256
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Luka Sučić",
+      "g": 4,
+      "p": 0.3861
+     },
+     {
+      "n": "Orri Oskarsson",
+      "g": 3,
+      "p": 0.3065
+     },
+     {
+      "n": "Ander Barrenetxea",
+      "g": 2,
+      "p": 0.2165
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Sergio Camello",
+      "g": 7,
+      "p": 0.5057
+     },
+     {
+      "n": "Álvaro García",
+      "g": 3,
+      "p": 0.2607
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 2.44 - 1.51. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 2.44 - 1.51. Poisson model built from real league results this season (at least 10 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 559631,
@@ -538,8 +1716,46 @@
    "xg_local": 1.21,
    "xg_visitante": 1.48,
    "n_partidos": 9,
-   "razon_es": "Goles esperados: 1.21 - 1.48. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.21 - 1.48. Poisson model built from real league results this season (at least 9 matches per team)."
+   "mercados": {
+    "over15": 0.7495,
+    "over25": 0.5039,
+    "over35": 0.2837,
+    "btts": 0.542,
+    "marcador": "1-1",
+    "p_marcador": 0.1216,
+    "ht_local": 0.2436,
+    "ht_empate": 0.4408,
+    "ht_visitante": 0.3156,
+    "ht_gol": 0.6663
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Louis Mafouta",
+      "g": 4,
+      "p": 0.356
+     },
+     {
+      "n": "Adil Bourabaa",
+      "g": 3,
+      "p": 0.2811
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Paris Brunner",
+      "g": 4,
+      "p": 0.3894
+     },
+     {
+      "n": "Edan Diop",
+      "g": 2,
+      "p": 0.2186
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.21 - 1.48. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.21 - 1.48. Poisson model built from real league results this season (at least 9 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 559632,
@@ -556,8 +1772,56 @@
    "xg_local": 1.27,
    "xg_visitante": 1.29,
    "n_partidos": 9,
-   "razon_es": "Goles esperados: 1.27 - 1.29. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.27 - 1.29. Poisson model built from real league results this season (at least 9 matches per team)."
+   "mercados": {
+    "over15": 0.7248,
+    "over25": 0.4715,
+    "over35": 0.2553,
+    "btts": 0.5212,
+    "marcador": "1-1",
+    "p_marcador": 0.1266,
+    "ht_local": 0.27,
+    "ht_empate": 0.4546,
+    "ht_visitante": 0.2754,
+    "ht_gol": 0.6481
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Kamory Doumbia",
+      "g": 4,
+      "p": 0.272
+     },
+     {
+      "n": "Ludovic Ajorque",
+      "g": 4,
+      "p": 0.272
+     },
+     {
+      "n": "Pathé Mboup",
+      "g": 2,
+      "p": 0.1468
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Ernest Nuamah",
+      "g": 4,
+      "p": 0.2911
+     },
+     {
+      "n": "Zachary Athekame",
+      "g": 2,
+      "p": 0.158
+     },
+     {
+      "n": "Corentin Tolisso",
+      "g": 2,
+      "p": 0.158
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.27 - 1.29. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.27 - 1.29. Poisson model built from real league results this season (at least 9 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 559633,
@@ -574,8 +1838,40 @@
    "xg_local": 0.93,
    "xg_visitante": 1.16,
    "n_partidos": 9,
-   "razon_es": "Goles esperados: 0.93 - 1.16. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 0.93 - 1.16. Poisson model built from real league results this season (at least 9 matches per team)."
+   "mercados": {
+    "over15": 0.6178,
+    "over25": 0.3477,
+    "over35": 0.1595,
+    "btts": 0.4156,
+    "marcador": "0-1",
+    "p_marcador": 0.1435,
+    "ht_local": 0.2137,
+    "ht_empate": 0.5063,
+    "ht_visitante": 0.28,
+    "ht_gol": 0.5737
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Josh Maja",
+      "g": 4,
+      "p": 0.3386
+     },
+     {
+      "n": "Mbwana Samatta",
+      "g": 2,
+      "p": 0.1867
+     },
+     {
+      "n": "Rayan Fofana",
+      "g": 2,
+      "p": 0.1867
+     }
+    ],
+    "visitante": []
+   },
+   "razon_es": "Goles esperados: 0.93 - 1.16. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 0.93 - 1.16. Poisson model built from real league results this season (at least 9 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 559634,
@@ -592,8 +1888,51 @@
    "xg_local": 1.2,
    "xg_visitante": 1.49,
    "n_partidos": 9,
-   "razon_es": "Goles esperados: 1.20 - 1.49. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.20 - 1.49. Poisson model built from real league results this season (at least 9 matches per team)."
+   "mercados": {
+    "over15": 0.7495,
+    "over25": 0.5039,
+    "over35": 0.2837,
+    "btts": 0.5413,
+    "marcador": "1-1",
+    "p_marcador": 0.1214,
+    "ht_local": 0.241,
+    "ht_empate": 0.4407,
+    "ht_visitante": 0.3183,
+    "ht_gol": 0.6663
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Amine El Ouazzani",
+      "g": 2,
+      "p": 0.2341
+     },
+     {
+      "n": "Prosper Peter",
+      "g": 2,
+      "p": 0.2341
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Sepe Elye Wahi",
+      "g": 6,
+      "p": 0.4973
+     },
+     {
+      "n": "Mohammed Amoura",
+      "g": 2,
+      "p": 0.2049
+     },
+     {
+      "n": "Jonathan Clauss",
+      "g": 2,
+      "p": 0.2049
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.20 - 1.49. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.20 - 1.49. Poisson model built from real league results this season (at least 9 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 560639,
@@ -610,8 +1949,46 @@
    "xg_local": 1.39,
    "xg_visitante": 1.21,
    "n_partidos": 9,
-   "razon_es": "Goles esperados: 1.39 - 1.21. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.39 - 1.21. Poisson model built from real league results this season (at least 9 matches per team)."
+   "mercados": {
+    "over15": 0.7326,
+    "over25": 0.4816,
+    "over35": 0.264,
+    "btts": 0.527,
+    "marcador": "1-1",
+    "p_marcador": 0.1249,
+    "ht_local": 0.2995,
+    "ht_empate": 0.4495,
+    "ht_visitante": 0.2509,
+    "ht_gol": 0.6546
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Bryan Mbeumo",
+      "g": 4,
+      "p": 0.4265
+     },
+     {
+      "n": "Bruno Fernandes",
+      "g": 3,
+      "p": 0.341
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Nicolas Jackson",
+      "g": 5,
+      "p": 0.4539
+     },
+     {
+      "n": "Johan Manzambi",
+      "g": 2,
+      "p": 0.2149
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.39 - 1.21. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.39 - 1.21. Poisson model built from real league results this season (at least 9 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 565854,
@@ -628,8 +2005,46 @@
    "xg_local": 3.14,
    "xg_visitante": 0.74,
    "n_partidos": 8,
-   "razon_es": "Goles esperados: 3.14 - 0.74. Modelo de Poisson con los resultados reales de liga de esta temporada (8 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 3.14 - 0.74. Poisson model built from real league results this season (at least 8 matches per team)."
+   "mercados": {
+    "over15": 0.8992,
+    "over25": 0.7437,
+    "over35": 0.5425,
+    "btts": 0.5002,
+    "marcador": "3-0",
+    "p_marcador": 0.1066,
+    "ht_local": 0.6113,
+    "ht_empate": 0.302,
+    "ht_visitante": 0.0867,
+    "ht_gol": 0.7836
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Yuito Suzuki",
+      "g": 4,
+      "p": 0.5023
+     },
+     {
+      "n": "Igor Matanovic",
+      "g": 4,
+      "p": 0.5023
+     },
+     {
+      "n": "Maximilian Eggestein",
+      "g": 3,
+      "p": 0.4075
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Tim Skarke",
+      "g": 2,
+      "p": 0.1906
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 3.14 - 0.74. Modelo de Poisson con los resultados reales de liga de esta temporada (8 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 3.14 - 0.74. Poisson model built from real league results this season (at least 8 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 558530,
@@ -646,8 +2061,56 @@
    "xg_local": 1.52,
    "xg_visitante": 1.48,
    "n_partidos": 10,
-   "razon_es": "Goles esperados: 1.52 - 1.48. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.52 - 1.48. Poisson model built from real league results this season (at least 10 matches per team)."
+   "mercados": {
+    "over15": 0.8009,
+    "over25": 0.5768,
+    "over35": 0.3528,
+    "btts": 0.6034,
+    "marcador": "1-1",
+    "p_marcador": 0.112,
+    "ht_local": 0.3085,
+    "ht_empate": 0.3939,
+    "ht_visitante": 0.2976,
+    "ht_gol": 0.7372
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Marcus Thuram-Ulien",
+      "g": 5,
+      "p": 0.2535
+     },
+     {
+      "n": "Lautaro Martínez",
+      "g": 4,
+      "p": 0.2085
+     },
+     {
+      "n": "Hakan Çalhanoğlu",
+      "g": 3,
+      "p": 0.1609
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Anastasios Douvikas",
+      "g": 5,
+      "p": 0.3371
+     },
+     {
+      "n": "Martin Baturina",
+      "g": 3,
+      "p": 0.2186
+     },
+     {
+      "n": "Nico Paz",
+      "g": 3,
+      "p": 0.2186
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.52 - 1.48. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.52 - 1.48. Poisson model built from real league results this season (at least 10 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 564742,
@@ -664,8 +2127,51 @@
    "xg_local": 1.46,
    "xg_visitante": 0.9,
    "n_partidos": 11,
-   "razon_es": "Goles esperados: 1.46 - 0.90. Modelo de Poisson con los resultados reales de liga de esta temporada (11 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.46 - 0.90. Poisson model built from real league results this season (at least 11 matches per team)."
+   "mercados": {
+    "over15": 0.6827,
+    "over25": 0.4198,
+    "over35": 0.213,
+    "btts": 0.4556,
+    "marcador": "1-0",
+    "p_marcador": 0.1379,
+    "ht_local": 0.3576,
+    "ht_empate": 0.4487,
+    "ht_visitante": 0.1937,
+    "ht_gol": 0.6477
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Ferran Jutglà",
+      "g": 2,
+      "p": 0.2532
+     },
+     {
+      "n": "Pablo Duran",
+      "g": 2,
+      "p": 0.2532
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Brugui",
+      "g": 5,
+      "p": 0.2452
+     },
+     {
+      "n": "Iván Romero",
+      "g": 3,
+      "p": 0.1553
+     },
+     {
+      "n": "Adrián de la Fuente",
+      "g": 2,
+      "p": 0.1064
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.46 - 0.90. Modelo de Poisson con los resultados reales de liga de esta temporada (11 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.46 - 0.90. Poisson model built from real league results this season (at least 11 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 564747,
@@ -682,8 +2188,51 @@
    "xg_local": 1.56,
    "xg_visitante": 0.76,
    "n_partidos": 11,
-   "razon_es": "Goles esperados: 1.56 - 0.76. Modelo de Poisson con los resultados reales de liga de esta temporada (11 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.56 - 0.76. Poisson model built from real league results this season (at least 11 matches per team)."
+   "mercados": {
+    "over15": 0.6737,
+    "over25": 0.4093,
+    "over35": 0.2047,
+    "btts": 0.4205,
+    "marcador": "1-0",
+    "p_marcador": 0.1533,
+    "ht_local": 0.394,
+    "ht_empate": 0.4466,
+    "ht_visitante": 0.1594,
+    "ht_gol": 0.6414
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Pape Gueye",
+      "g": 3,
+      "p": 0.268
+     },
+     {
+      "n": "Georges Mikautadze",
+      "g": 3,
+      "p": 0.268
+     },
+     {
+      "n": "Nicolas Pépé",
+      "g": 2,
+      "p": 0.1878
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Martin Satriano",
+      "g": 3,
+      "p": 0.248
+     },
+     {
+      "n": "Enes Ünal",
+      "g": 2,
+      "p": 0.173
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.56 - 0.76. Modelo de Poisson con los resultados reales de liga de esta temporada (11 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.56 - 0.76. Poisson model built from real league results this season (at least 11 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 565856,
@@ -700,8 +2249,40 @@
    "xg_local": 1.62,
    "xg_visitante": 0.78,
    "n_partidos": 8,
-   "razon_es": "Goles esperados: 1.62 - 0.78. Modelo de Poisson con los resultados reales de liga de esta temporada (8 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.62 - 0.78. Poisson model built from real league results this season (at least 8 matches per team)."
+   "mercados": {
+    "over15": 0.6916,
+    "over25": 0.4303,
+    "over35": 0.2213,
+    "btts": 0.4344,
+    "marcador": "1-0",
+    "p_marcador": 0.147,
+    "ht_local": 0.3786,
+    "ht_empate": 0.4681,
+    "ht_visitante": 0.1533,
+    "ht_gol": 0.612
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Adam Daghim",
+      "g": 2,
+      "p": 0.2066
+     },
+     {
+      "n": "Adam Hložek",
+      "g": 2,
+      "p": 0.2066
+     },
+     {
+      "n": "Bambase Conte",
+      "g": 2,
+      "p": 0.2066
+     }
+    ],
+    "visitante": []
+   },
+   "razon_es": "Goles esperados: 1.62 - 0.78. Modelo de Poisson con los resultados reales de liga de esta temporada (8 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.62 - 0.78. Poisson model built from real league results this season (at least 8 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 558529,
@@ -718,8 +2299,51 @@
    "xg_local": 1.15,
    "xg_visitante": 1.78,
    "n_partidos": 10,
-   "razon_es": "Goles esperados: 1.15 - 1.78. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.15 - 1.78. Poisson model built from real league results this season (at least 10 matches per team)."
+   "mercados": {
+    "over15": 0.7901,
+    "over25": 0.5609,
+    "over35": 0.3371,
+    "btts": 0.5681,
+    "marcador": "1-1",
+    "p_marcador": 0.1093,
+    "ht_local": 0.2174,
+    "ht_empate": 0.3929,
+    "ht_visitante": 0.3897,
+    "ht_gol": 0.7289
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Franco Mastantuono",
+      "g": 4,
+      "p": 0.2641
+     },
+     {
+      "n": "Mateo Pellegrino",
+      "g": 3,
+      "p": 0.2055
+     },
+     {
+      "n": "Álex Jiménez",
+      "g": 2,
+      "p": 0.1422
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Bremer",
+      "g": 2,
+      "p": 0.2396
+     },
+     {
+      "n": "Edon Zhegrova",
+      "g": 2,
+      "p": 0.2396
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.15 - 1.78. Modelo de Poisson con los resultados reales de liga de esta temporada (10 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.15 - 1.78. Poisson model built from real league results this season (at least 10 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 559630,
@@ -736,8 +2360,56 @@
    "xg_local": 1.85,
    "xg_visitante": 1.69,
    "n_partidos": 9,
-   "razon_es": "Goles esperados: 1.85 - 1.69. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.85 - 1.69. Poisson model built from real league results this season (at least 9 matches per team)."
+   "mercados": {
+    "over15": 0.8683,
+    "over25": 0.6865,
+    "over35": 0.472,
+    "btts": 0.6873,
+    "marcador": "1-1",
+    "p_marcador": 0.0907,
+    "ht_local": 0.3316,
+    "ht_empate": 0.3756,
+    "ht_visitante": 0.2928,
+    "ht_gol": 0.7641
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Florian Thauvin",
+      "g": 4,
+      "p": 0.3703
+     },
+     {
+      "n": "Franjo Ivanovic",
+      "g": 2,
+      "p": 0.2065
+     },
+     {
+      "n": "Matthieu Udol",
+      "g": 2,
+      "p": 0.2065
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Amine Gouiri",
+      "g": 6,
+      "p": 0.3977
+     },
+     {
+      "n": "Amine Harit",
+      "g": 3,
+      "p": 0.2239
+     },
+     {
+      "n": "Himad Abdelli",
+      "g": 3,
+      "p": 0.2239
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.85 - 1.69. Modelo de Poisson con los resultados reales de liga de esta temporada (9 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.85 - 1.69. Poisson model built from real league results this season (at least 9 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   },
   {
    "id": 564746,
@@ -754,8 +2426,56 @@
    "xg_local": 1.7,
    "xg_visitante": 1.87,
    "n_partidos": 11,
-   "razon_es": "Goles esperados: 1.70 - 1.87. Modelo de Poisson con los resultados reales de liga de esta temporada (11 partidos por equipo como minimo).",
-   "razon_en": "Expected goals: 1.70 - 1.87. Poisson model built from real league results this season (at least 11 matches per team)."
+   "mercados": {
+    "over15": 0.8713,
+    "over25": 0.6919,
+    "over35": 0.4784,
+    "btts": 0.6913,
+    "marcador": "1-1",
+    "p_marcador": 0.0895,
+    "ht_local": 0.3004,
+    "ht_empate": 0.3559,
+    "ht_visitante": 0.3437,
+    "ht_gol": 0.7937
+   },
+   "goleadores": {
+    "local": [
+     {
+      "n": "Álex Baena",
+      "g": 5,
+      "p": 0.3205
+     },
+     {
+      "n": "Alejandro Grimaldo",
+      "g": 4,
+      "p": 0.2659
+     },
+     {
+      "n": "Giuliano Simeone",
+      "g": 3,
+      "p": 0.2069
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Raphinha",
+      "g": 15,
+      "p": 0.4565
+     },
+     {
+      "n": "Lamine Yamal",
+      "g": 10,
+      "p": 0.334
+     },
+     {
+      "n": "Fermín López",
+      "g": 5,
+      "p": 0.1839
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.70 - 1.87. Modelo de Poisson con los resultados reales de liga de esta temporada (11 partidos por equipo como minimo). Probabilidad de gol de cada jugador: su porcentaje de goles del equipo por los goles esperados del partido.",
+   "razon_en": "Expected goals: 1.70 - 1.87. Poisson model built from real league results this season (at least 11 matches per team). Player scoring probability: his share of the team's goals times the match's expected goals."
   }
  ]
 }
