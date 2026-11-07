@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sports Edge</title>
 <style>
-:root{--bg:#0b0f17;--card:#121826;--line:#1f2937;--txt:#e5e7eb;--mut:#8b95a7;--acc:#22c55e;--blue:#38bdf8}
+:root{--bg:#0b0f17;--card:#121826;--line:#1f2937;--txt:#e5e7eb;--mut:#8b95a7;--acc:#22c55e;--blue:#38bdf8;--red:#ef4444}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5}
 header{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;border-bottom:1px solid var(--line);flex-wrap:wrap;gap:10px}
@@ -20,12 +20,21 @@ h2{font-size:15px;text-transform:uppercase;letter-spacing:1px;color:var(--mut);m
 .card .n{font-size:26px;font-weight:700}
 .card .l{color:var(--mut);font-size:13px}
 .match{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:10px}
-.teams{display:flex;justify-content:space-between;font-weight:600;margin-bottom:8px}
+.meta{display:flex;justify-content:space-between;font-size:12px;color:var(--mut);margin-bottom:6px;gap:8px;flex-wrap:wrap}
+.teams{display:flex;justify-content:space-between;font-weight:600;margin-bottom:8px;gap:8px}
 .bar{display:flex;height:10px;border-radius:5px;overflow:hidden;background:var(--line)}
 .bar i{display:block}
 .pcts{display:flex;justify-content:space-between;font-size:13px;color:var(--mut);margin-top:6px}
+.pcts b{color:var(--txt)}
+.pick{font-size:13px;margin-top:8px}
+.pick span{color:var(--acc);font-weight:600}
 .why{font-size:13px;color:var(--mut);margin-top:6px}
 .empty{color:var(--mut);padding:20px;text-align:center;border:1px dashed var(--line);border-radius:10px}
+.hrow{display:grid;grid-template-columns:90px 1fr 70px 110px 30px;gap:8px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin-bottom:8px;font-size:14px}
+.hrow .d{color:var(--mut);font-size:12px}
+.ok{color:var(--acc);font-weight:700}
+.ko{color:var(--red);font-weight:700}
+@media(max-width:640px){.hrow{grid-template-columns:1fr 60px 30px}.hrow .d,.hrow .pk{display:none}}
 footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top:1px solid var(--line);margin-top:30px}
 </style>
 </head>
@@ -37,31 +46,55 @@ footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top
   </div>
 </header>
 <main>
-  <h2 data-t="track">Historial verificable</h2>
+  <h2 data-t="track"></h2>
   <div class="grid" id="stats"></div>
 
-  <h2 data-t="today">Predicciones</h2>
+  <h2 data-t="today"></h2>
   <div id="preds"></div>
+
+  <h2 data-t="hist"></h2>
+  <div id="hist"></div>
 </main>
 <footer data-t="foot"></footer>
 
 <script>
 var T = {
-  es:{track:"Historial verificable",today:"Predicciones",nodata:"Sin datos",
+  es:{track:"Historial verificable",today:"Próximas predicciones",hist:"Últimos resultados",nodata:"Sin datos",
       nopreds:"Todavía no hay predicciones. El motor las publicará cuando haya datos reales.",
+      nohist:"Aún no hay partidos jugados con predicción guardada. Aparecerán aquí automáticamente.",
       hit:"Acierto",total:"Predicciones registradas",brier:"Calibración (Brier)",upd:"Última actualización",
+      draw:"Empate",best:"Más probable",res:"resueltas",
       foot:"Solo para mayores de 18 años. Las probabilidades son estimaciones estadísticas, no garantizan resultados. Juega con responsabilidad."},
-  en:{track:"Verified track record",today:"Predictions",nodata:"No data",
+  en:{track:"Verified track record",today:"Upcoming predictions",hist:"Latest results",nodata:"No data",
       nopreds:"No predictions yet. The engine will publish them once real data is available.",
+      nohist:"No finished matches with a saved prediction yet. They will appear here automatically.",
       hit:"Hit rate",total:"Recorded predictions",brier:"Calibration (Brier)",upd:"Last update",
+      draw:"Draw",best:"Most likely",res:"settled",
       foot:"18+ only. Probabilities are statistical estimates and do not guarantee results. Please gamble responsibly."}
 };
-var lang = localStorage.getItem("lang") || (navigator.language.indexOf("es")==0 ? "es" : "en");
-var DATA = {pred:null, stats:null};
+var lang = "es";
+try{ lang = localStorage.getItem("lang") || (navigator.language.indexOf("es")==0 ? "es" : "en"); }catch(e){}
+var DATA = {pred:null, stats:null, hist:null};
 
 function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
 function t(k){ return T[lang][k]; }
 function pct(x){ return (typeof x==="number") ? (x*100).toFixed(0)+"%" : t("nodata"); }
+function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+function fdate(iso){
+  try{ return new Date(iso).toLocaleString(lang==="es"?"es-ES":"en-GB",{weekday:"short",day:"2-digit",month:"short",hour:"2-digit",minute:"2-digit"}); }
+  catch(e){ return ""; }
+}
+function fshort(iso){
+  try{ return new Date(iso).toLocaleDateString(lang==="es"?"es-ES":"en-GB",{day:"2-digit",month:"short"}); }
+  catch(e){ return ""; }
+}
+function bestKey(p){
+  var m = {"1":p.p_local,"X":p.p_empate,"2":p.p_visitante}, k="1";
+  if(m["X"]>m[k]) k="X";
+  if(m["2"]>m[k]) k="2";
+  return k;
+}
+function pickName(p,k){ return k==="1" ? p.local : (k==="2" ? p.visitante : t("draw")); }
 
 function render(){
   document.documentElement.lang = lang;
@@ -71,36 +104,61 @@ function render(){
   for(var i=0;i<els.length;i++){ els[i].textContent = t(els[i].getAttribute("data-t")); }
 
   var s = DATA.stats || {};
+  var hitLabel = t("hit") + ((typeof s.resueltas==="number" && s.resueltas>0) ? " ("+s.resueltas+" "+t("res")+")" : "");
   var cards = [
     [t("total"), (typeof s.total==="number") ? s.total : t("nodata")],
-    [t("hit"), pct(s.acierto)],
+    [hitLabel, pct(s.acierto)],
     [t("brier"), (typeof s.brier==="number") ? s.brier.toFixed(3) : t("nodata")],
     [t("upd"), s.actualizado || t("nodata")]
   ];
   var h = "";
-  for(var c=0;c<cards.length;c++){ h += '<div class="card"><div class="n">'+cards[c][1]+'</div><div class="l">'+cards[c][0]+'</div></div>'; }
+  for(var c=0;c<cards.length;c++){ h += '<div class="card"><div class="n">'+esc(cards[c][1])+'</div><div class="l">'+esc(cards[c][0])+'</div></div>'; }
   document.getElementById("stats").innerHTML = h;
 
   var list = (DATA.pred && DATA.pred.predicciones) || [];
   var box = document.getElementById("preds");
-  if(!list.length){ box.innerHTML = '<div class="empty">'+t("nopreds")+'</div>'; return; }
-  var out = "";
-  for(var j=0;j<list.length;j++){
-    var p = list[j];
-    out += '<div class="match"><div class="teams"><span>'+p.local+'</span><span>'+p.visitante+'</span></div>'
-      + '<div class="bar"><i style="width:'+(p.p_local*100)+'%;background:var(--acc)"></i>'
-      + '<i style="width:'+(p.p_empate*100)+'%;background:var(--mut)"></i>'
-      + '<i style="width:'+(p.p_visitante*100)+'%;background:var(--blue)"></i></div>'
-      + '<div class="pcts"><span>'+pct(p.p_local)+'</span><span>'+pct(p.p_empate)+'</span><span>'+pct(p.p_visitante)+'</span></div>'
-      + '<div class="why">'+(lang==="es" ? p.razon_es : p.razon_en)+'</div></div>';
+  if(!list.length){ box.innerHTML = '<div class="empty">'+t("nopreds")+'</div>'; }
+  else {
+    var out = "";
+    for(var j=0;j<list.length;j++){
+      var p = list[j], k = bestKey(p);
+      out += '<div class="match"><div class="meta"><span>'+esc(p.liga)+'</span><span>'+esc(fdate(p.fecha))+'</span></div>'
+        + '<div class="teams"><span>'+esc(p.local)+'</span><span>'+esc(p.visitante)+'</span></div>'
+        + '<div class="bar"><i style="width:'+(p.p_local*100)+'%;background:var(--acc)"></i>'
+        + '<i style="width:'+(p.p_empate*100)+'%;background:var(--mut)"></i>'
+        + '<i style="width:'+(p.p_visitante*100)+'%;background:var(--blue)"></i></div>'
+        + '<div class="pcts"><span>'+(k==="1"?'<b>'+pct(p.p_local)+'</b>':pct(p.p_local))+'</span>'
+        + '<span>'+(k==="X"?'<b>'+pct(p.p_empate)+'</b>':pct(p.p_empate))+'</span>'
+        + '<span>'+(k==="2"?'<b>'+pct(p.p_visitante)+'</b>':pct(p.p_visitante))+'</span></div>'
+        + '<div class="pick">'+t("best")+': <span>'+esc(pickName(p,k))+'</span></div>'
+        + '<div class="why">'+esc(lang==="es" ? p.razon_es : p.razon_en)+'</div></div>';
+    }
+    box.innerHTML = out;
   }
-  box.innerHTML = out;
+
+  var all = (DATA.hist && DATA.hist.predicciones) || [];
+  var done = [];
+  for(var a=0;a<all.length;a++){ if(all[a].resultado){ done.push(all[a]); } }
+  done.sort(function(x,y){ return x.fecha < y.fecha ? 1 : -1; });
+  done = done.slice(0,30);
+  var hb = document.getElementById("hist");
+  if(!done.length){ hb.innerHTML = '<div class="empty">'+t("nohist")+'</div>'; return; }
+  var ho = "";
+  for(var d=0;d<done.length;d++){
+    var q = done[d], kk = bestKey(q), good = (kk===q.resultado);
+    ho += '<div class="hrow"><span class="d">'+esc(fshort(q.fecha))+'</span>'
+      + '<span>'+esc(q.local)+' - '+esc(q.visitante)+'</span>'
+      + '<span><b>'+esc(q.marcador)+'</b></span>'
+      + '<span class="d pk">'+esc(pickName(q,kk))+'</span>'
+      + '<span class="'+(good?'ok':'ko')+'">'+(good?'✓':'✗')+'</span></div>';
+  }
+  hb.innerHTML = ho;
 }
 
 function load(file, key){
-  return fetch("data/"+file+"?v="+Date.now()).then(function(r){return r.json()}).then(function(j){DATA[key]=j}).catch(function(){DATA[key]=null});
+  return fetch("data/"+file+"?v="+Date.now()).then(function(r){return r.json();}).then(function(j){DATA[key]=j;}).catch(function(){DATA[key]=null;});
 }
-Promise.all([load("predicciones.json","pred"), load("estadisticas.json","stats")]).then(render);
+Promise.all([load("predicciones.json","pred"), load("estadisticas.json","stats"), load("historial.json","hist")]).then(render);
 render();
 </script>
 </body>
