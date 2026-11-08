@@ -20,6 +20,13 @@ jobs:
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
         run: python3 scripts/engine.py
 
+      - name: Cuotas y valor
+        continue-on-error: true
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          ODDS_FETCH: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '0 7 * * *' }}
+        run: python3 scripts/odds.py
+
       - name: Guardar datos
         run: |
           git config user.name "github-actions[bot]"
