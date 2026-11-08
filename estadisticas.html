@@ -18,7 +18,16 @@ header{display:flex;justify-content:space-between;align-items:center;padding:14p
 main{max-width:1000px;margin:0 auto;padding:22px 20px}
 h1{font-size:26px;margin:6px 0}
 .lead{color:var(--mut);font-size:14px;margin-bottom:6px}
-h2{font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--blue);margin:30px 0 6px}
+.sports{display:flex;gap:8px;overflow-x:auto;padding:10px 0 8px}
+.sp{flex:0 0 auto;background:var(--card);color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:8px 14px;cursor:pointer;font-weight:600;font-size:14px;text-align:center;min-width:92px}
+.sp .ic{display:block;font-size:20px}
+.sp.on{border-color:var(--acc);box-shadow:inset 0 -3px 0 var(--acc)}
+.sp.off{color:var(--mut)}
+.sp small{display:block;font-size:10px;color:var(--blue);font-weight:500;text-transform:uppercase;letter-spacing:.5px}
+.subtabs{display:flex;gap:8px;overflow-x:auto;padding:8px 0;border-bottom:1px solid var(--line);margin-bottom:6px}
+.st{flex:0 0 auto;background:transparent;color:var(--mut);border:1px solid var(--line);padding:7px 14px;border-radius:20px;cursor:pointer;font-size:13px;font-weight:600}
+.st.on{background:var(--acc);color:var(--bg);border-color:var(--acc)}
+h2{font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--blue);margin:26px 0 6px}
 .note{color:var(--mut);font-size:13px;margin-bottom:12px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
@@ -26,6 +35,10 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--blue);
 .card .n.g{color:var(--acc)}
 .card .l{color:var(--mut);font-size:12px}
 .card .s{color:var(--mut);font-size:11px;margin-top:2px}
+.hero{background:var(--card);border:1px solid var(--acc);border-radius:12px;padding:16px 18px;margin:16px 0}
+.hero .big{font-size:34px;font-weight:800;color:var(--acc)}
+.hero .tx{color:var(--txt);font-size:14px}
+.hero .sm{color:var(--mut);font-size:12px;margin-top:4px}
 table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:14px}
 th,td{padding:8px 12px;text-align:center;border-bottom:1px solid var(--line)}
 th{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;background:var(--card2)}
@@ -37,12 +50,17 @@ tr:last-child td{border-bottom:0}
 .bp{background:var(--blue)}
 .br{background:var(--acc)}
 .leg{font-size:11px;color:var(--mut);margin-top:6px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:6px 0 10px}
+.chip{flex:0 0 auto;background:var(--card);color:var(--mut);border:1px solid var(--line);padding:5px 12px;border-radius:20px;cursor:pointer;font-size:12px;font-weight:600}
+.chip.on{background:var(--blue);color:var(--bg);border-color:var(--blue)}
 .ex{display:grid;grid-template-columns:70px 110px 1fr 56px 150px 28px;gap:8px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin-bottom:6px;font-size:13px}
 .ex .d{color:var(--mut);font-size:12px}
 .ok{color:var(--acc);font-weight:700}
 .ko{color:var(--red);font-weight:700}
 .empty{color:var(--mut);padding:18px;text-align:center;border:1px dashed var(--line);border-radius:10px;font-size:14px}
-.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:13px;color:var(--mut);margin-top:10px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:13px;color:var(--mut);margin-top:14px}
+.soon{background:var(--card);border:1px dashed var(--line);border-radius:12px;padding:40px 20px;text-align:center;color:var(--mut);margin-top:16px}
+.soon b{display:block;color:var(--txt);font-size:18px;margin-bottom:8px}
 @media(max-width:720px){.ex{grid-template-columns:1fr 50px 24px}.ex .d,.ex .lg,.ex .pk{display:none}th,td{padding:6px 6px;font-size:12px}}
 footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top:1px solid var(--line);margin-top:30px}
 </style>
@@ -55,63 +73,165 @@ footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top
     <div class="lang"><button id="b-es" onclick="setLang('es')">ES</button><button id="b-en" onclick="setLang('en')">EN</button></div>
   </div>
 </header>
-<main id="m"></main>
+<main>
+  <h1 id="h1"></h1>
+  <div class="lead" id="lead"></div>
+  <div class="sports" id="sports"></div>
+  <div id="m"></div>
+</main>
 <footer id="foot"></footer>
 
 <script>
+var SPORTS=[
+ {id:"futbol",es:"Fútbol",en:"Football",ic:"⚽",on:true},
+ {id:"tenis",es:"Tenis",en:"Tennis",ic:"🎾",on:false},
+ {id:"baloncesto",es:"Baloncesto",en:"Basketball",ic:"🏀",on:false},
+ {id:"voleibol",es:"Voleibol",en:"Volleyball",ic:"🏐",on:false},
+ {id:"hockey",es:"Hockey",en:"Hockey",ic:"🏒",on:false},
+ {id:"boxeo",es:"Boxeo",en:"Boxing",ic:"🥊",on:false},
+ {id:"mma",es:"MMA",en:"MMA",ic:"🥋",on:false},
+ {id:"caballos",es:"Caballos",en:"Horse racing",ic:"🏇",on:false}
+];
+var SECS=["resumen","confianza","ligas","ejemplos","directo"];
 var T={
 es:{nodata:"Sin datos",l1:"← Predicciones",l2:"Guía",title:"Zona de estadísticas",
- lead:"Aquí puedes comprobar si el motor funciona. Todo se calcula con resultados reales y se actualiza solo.",
+ lead:"Aquí puedes comprobar si el motor funciona. Todo se calcula con resultados reales y se actualiza solo. Cada deporte tiene su propia sección.",
+ soon:"Próximamente",soon1:"Este deporte tendrá aquí sus propias estadísticas cuando su motor funcione con datos reales y verificables.",
+ soon2:"No mezclamos deportes ni mostramos cifras inventadas.",
+ s_resumen:"Resumen",s_confianza:"Confianza y calibración",s_ligas:"Por liga",s_ejemplos:"Ejemplos",s_directo:"En directo",
  h_bt:"Backtest: cómo habría funcionado esta temporada",
  n_bt:"Para cada partido ya jugado, el motor predice usando solo los partidos anteriores a esa fecha, como si estuviéramos ese día, y compara con el resultado real. Es el mismo modelo de las predicciones en directo.",
+ upd:"Actualizado",
  matches:"Partidos evaluados",hit:"Acierto 1X2",ic:"Intervalo 95 %",brier:"Calibración (Brier)",bz:"azar: 0,667 · menos es mejor",
  home:"Siempre elegir al local",home_s:"referencia sencilla",o25:"Acierto en +2,5 goles",btts:"Acierto en ambos marcan",
+ hero1:"Cuando el motor da",hero2:"o más a su favorito, ha acertado",hero3:"partidos · intervalo 95 %",
  h_tr:"Cuando el motor está más seguro",n_tr:"Acierto real en los partidos donde la probabilidad del resultado favorito supera cada umbral.",
  th_min:"Confianza mínima",th_n:"Partidos",th_conf:"Confianza media prometida",th_real:"Acierto real",
  h_cal:"Calibración: lo que prometemos frente a lo que ocurre",n_cal:"Si las probabilidades son honestas, las dos barras serán parecidas. Se cuentan las tres opciones (1, X y 2) de todos los partidos.",
- th_rng:"Rango",th_prom:"Prometido",th_bars:"Prometido (azul) / Real (verde)",
- h_lg:"Por liga",th_lg:"Liga",th_hit:"Acierto",th_br:"Brier",
+ th_rng:"Rango",th_prom:"Prometido",th_bars:"Prometido (azul) / Real (verde)",leg:"Azul = probabilidad prometida · Verde = frecuencia real",
+ h_lg:"Resultados por liga",n_lg:"El mismo backtest, separado por competición.",th_lg:"Liga",th_hit:"Acierto",th_br:"Brier",
  h_ex:"Últimos partidos evaluados",n_ex:"Ejemplos reales: la predicción que habría hecho el motor antes del partido y lo que ocurrió.",
- pick:"Elegido",
- h_live:"Récord en directo",n_live:"Predicciones guardadas antes del partido y que nunca se modifican. Va creciendo cada día.",
+ all:"Todas",pick:"Elegido",draw:"Empate",
+ h_live:"Récord en directo",n_live:"Predicciones guardadas antes del partido y que nunca se modifican. Va creciendo cada día, y es la prueba más exigente.",
  l_tot:"Predicciones guardadas",l_res:"Resueltas",l_hit:"Acierto",l_brier:"Calibración (Brier)",l_roi:"ROI simulado de valor",l_bets:"apuestas",
- draw:"Empate",upd:"Actualizado",
- leg:"Azul = probabilidad prometida · Verde = frecuencia real",
- method:"Método: los parámetros del modelo se fijaron antes de ver estos datos y no se han ajustado para mejorar los números. Con pocos partidos hay mucho margen de error, por eso se muestra el intervalo de confianza. Cualquier mejora futura del modelo tendrá que superar estos números antes de usarse.",
+ method:"Método: los parámetros del modelo se fijaron antes de ver estos datos. Las variantes se prueban en un laboratorio aparte, eligiendo con unos partidos y confirmando con otros, y solo entran en el motor si mejoran en los partidos de confirmación. Con pocos partidos hay mucho margen de error, por eso se muestra el intervalo de confianza.",
  empty:"Todavía no hay datos de backtest. Se generan al ejecutar el motor.",
  foot:"Solo para mayores de 18 años. Los resultados pasados no garantizan resultados futuros. Juega con responsabilidad."},
 en:{nodata:"No data",l1:"← Predictions",l2:"Guide",title:"Statistics",
- lead:"Here you can check whether the engine works. Everything is calculated from real results and updates by itself.",
+ lead:"Here you can check whether the engine works. Everything is calculated from real results and updates by itself. Each sport has its own section.",
+ soon:"Coming soon",soon1:"This sport will have its own statistics here once its engine runs on real, verifiable data.",
+ soon2:"We never mix sports or show made-up figures.",
+ s_resumen:"Summary",s_confianza:"Confidence and calibration",s_ligas:"By league",s_ejemplos:"Examples",s_directo:"Live record",
  h_bt:"Backtest: how it would have performed this season",
  n_bt:"For every match already played, the engine predicts using only matches before that date, as if we were there that day, and compares with the real result. It is the same model as the live predictions.",
+ upd:"Updated",
  matches:"Matches evaluated",hit:"1X2 hit rate",ic:"95% interval",brier:"Calibration (Brier)",bz:"chance: 0.667 · lower is better",
  home:"Always pick the home team",home_s:"simple benchmark",o25:"Over 2.5 goals hit rate",btts:"Both teams score hit rate",
+ hero1:"When the engine gives its favourite",hero2:"or more, it has been right",hero3:"matches · 95% interval",
  h_tr:"When the engine is most confident",n_tr:"Real hit rate in matches where the favourite outcome's probability exceeds each threshold.",
  th_min:"Minimum confidence",th_n:"Matches",th_conf:"Average confidence promised",th_real:"Real hit rate",
  h_cal:"Calibration: what we promise versus what happens",n_cal:"If probabilities are honest, the two bars will be similar. All three outcomes (1, X and 2) of every match are counted.",
- th_rng:"Range",th_prom:"Promised",th_bars:"Promised (blue) / Real (green)",
- h_lg:"By league",th_lg:"League",th_hit:"Hit rate",th_br:"Brier",
+ th_rng:"Range",th_prom:"Promised",th_bars:"Promised (blue) / Real (green)",leg:"Blue = promised probability · Green = real frequency",
+ h_lg:"Results by league",n_lg:"The same backtest, split by competition.",th_lg:"League",th_hit:"Hit rate",th_br:"Brier",
  h_ex:"Latest evaluated matches",n_ex:"Real examples: the prediction the engine would have made before the match and what happened.",
- pick:"Pick",
- h_live:"Live record",n_live:"Predictions saved before the match and never edited. It grows every day.",
+ all:"All",pick:"Pick",draw:"Draw",
+ h_live:"Live record",n_live:"Predictions saved before the match and never edited. It grows every day, and it is the toughest test.",
  l_tot:"Saved predictions",l_res:"Settled",l_hit:"Hit rate",l_brier:"Calibration (Brier)",l_roi:"Simulated value ROI",l_bets:"bets",
- draw:"Draw",upd:"Updated",
- leg:"Blue = promised probability · Green = real frequency",
- method:"Method: the model's parameters were fixed before seeing this data and have not been tuned to improve the numbers. With few matches there is a wide margin of error, which is why the confidence interval is shown. Any future model improvement will have to beat these numbers before it is used.",
+ method:"Method: the model's parameters were fixed before seeing this data. Variants are tested in a separate lab, choosing with some matches and confirming with others, and they only enter the engine if they improve on the confirmation matches. With few matches there is a wide margin of error, which is why the confidence interval is shown.",
  empty:"No backtest data yet. It is generated when the engine runs.",
  foot:"18+ only. Past results do not guarantee future results. Please gamble responsibly."}
 };
-var lang="es";
+var lang="es", sport="futbol", sec="resumen", exLiga="all";
 try{ lang=localStorage.getItem("lang")||(navigator.language.indexOf("es")==0?"es":"en"); }catch(e){}
+try{
+  var hs=(location.hash||"").replace("#","").split("-");
+  for(var i=0;i<SPORTS.length;i++){ if(SPORTS[i].id===hs[0]) sport=hs[0]; }
+  if(SECS.indexOf(hs[1])>=0) sec=hs[1];
+}catch(e){}
 var D={bt:null,st:null,va:null};
+
 function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
+function go(s,x){ sport=s; sec=x||"resumen"; try{ location.hash=s+"-"+sec; }catch(e){} render(); }
+function setEx(l){ exLiga=l; render(); }
 function t(k){ return T[lang][k]; }
 function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
 function num(x){ return typeof x==="number" && isFinite(x); }
 function dec(v,n){ var s=v.toFixed(n); return lang==="es"?s.replace(".",","):s; }
 function pc(x,d){ return num(x)?dec(x*100,d||0)+"%":t("nodata"); }
+function rng(ic){ return ic?pc(ic[0])+" – "+pc(ic[1]):t("nodata"); }
 function fshort(iso){ try{ return new Date(iso).toLocaleDateString(lang==="es"?"es-ES":"en-GB",{day:"2-digit",month:"short"}); }catch(e){ return ""; } }
 function card(l,v,s,g){ return '<div class="card"><div class="n'+(g?' g':'')+'">'+esc(v)+'</div><div class="l">'+esc(l)+'</div>'+(s?'<div class="s">'+esc(s)+'</div>':'')+'</div>'; }
+
+function secResumen(b){
+  var tot=b&&b.total;
+  var o='<h2>'+t("h_bt")+'</h2><div class="note">'+t("n_bt")+(b?' · '+t("upd")+': '+esc(b.actualizado):'')+'</div>';
+  if(!tot) return o+'<div class="empty">'+t("empty")+'</div>';
+  var hero=null, tr=b.tramos||[];
+  for(var i=0;i<tr.length;i++){ if(Math.abs(tr[i].min-0.55)<0.001 && tr[i].n>0 && num(tr[i].acierto)) hero=tr[i]; }
+  if(hero){
+    o+='<div class="hero"><div class="tx">'+t("hero1")+' '+pc(hero.min)+' '+t("hero2")+'</div><div class="big">'+pc(hero.acierto,1)+'</div><div class="sm">'+hero.n+' '+t("hero3")+': '+rng(hero.ic)+'</div></div>';
+  }
+  o+='<div class="grid">'
+    +card(t("matches"),String(tot.n))
+    +card(t("hit"),pc(tot.acierto,1),tot.aciertos+" / "+tot.n,true)
+    +card(t("ic"),rng(tot.ic))
+    +card(t("brier"),dec(tot.brier,3),t("bz"))
+    +card(t("home"),pc(tot.siempre_local,1),t("home_s"))
+    +card(t("o25"),pc(tot.over25,1))
+    +card(t("btts"),pc(tot.btts,1))+'</div>';
+  return o+'<div class="box">'+t("method")+'</div>';
+}
+
+function secConfianza(b){
+  if(!b||!b.total) return '<div class="empty">'+t("empty")+'</div>';
+  var o='<h2>'+t("h_tr")+'</h2><div class="note">'+t("n_tr")+'</div><table><tr><th>'+t("th_min")+'</th><th>'+t("th_n")+'</th><th>'+t("th_conf")+'</th><th>'+t("th_real")+'</th><th>'+t("ic")+'</th></tr>';
+  var tr=b.tramos||[];
+  for(var i=0;i<tr.length;i++){ var r=tr[i];
+    o+='<tr><td>≥ '+pc(r.min)+'</td><td>'+r.n+'</td><td>'+pc(r.conf,1)+'</td><td><b>'+pc(r.acierto,1)+'</b></td><td>'+rng(r.ic)+'</td></tr>'; }
+  o+='</table><h2>'+t("h_cal")+'</h2><div class="note">'+t("n_cal")+'</div><table><tr><th>'+t("th_rng")+'</th><th>'+t("th_n")+'</th><th>'+t("th_prom")+'</th><th>'+t("th_real")+'</th><th>'+t("th_bars")+'</th></tr>';
+  var cb=b.calibracion||[];
+  for(var c=0;c<cb.length;c++){ var k=cb[c]; if(!k.n) continue;
+    o+='<tr><td>'+k.desde+'–'+k.hasta+'%</td><td>'+k.n+'</td><td>'+pc(k.prometido,1)+'</td><td><b>'+pc(k.real,1)+'</b></td><td><div class="bars"><div class="bar"><i class="bp" style="width:'+(k.prometido*100)+'%"></i></div><div class="bar"><i class="br" style="width:'+(k.real*100)+'%"></i></div></div></td></tr>'; }
+  return o+'</table><div class="leg">'+t("leg")+'</div>';
+}
+
+function secLigas(b){
+  if(!b||!b.ligas) return '<div class="empty">'+t("empty")+'</div>';
+  var o='<h2>'+t("h_lg")+'</h2><div class="note">'+t("n_lg")+'</div><table><tr><th>'+t("th_lg")+'</th><th>'+t("th_n")+'</th><th>'+t("th_hit")+'</th><th>'+t("ic")+'</th><th>'+t("th_br")+'</th></tr>';
+  var any=false;
+  for(var name in b.ligas){ var L=b.ligas[name]; if(!L) continue; any=true;
+    o+='<tr><td>'+esc(name)+'</td><td>'+L.n+'</td><td><b>'+pc(L.acierto,1)+'</b></td><td>'+rng(L.ic)+'</td><td>'+dec(L.brier,3)+'</td></tr>'; }
+  if(!any) return '<div class="empty">'+t("empty")+'</div>';
+  return o+'</table>';
+}
+
+function secEjemplos(b){
+  if(!b||!b.ejemplos||!b.ejemplos.length) return '<div class="empty">'+t("empty")+'</div>';
+  var ex=b.ejemplos, ligas=[];
+  for(var i=0;i<ex.length;i++){ if(ligas.indexOf(ex[i].liga)<0) ligas.push(ex[i].liga); }
+  if(exLiga!=="all" && ligas.indexOf(exLiga)<0) exLiga="all";
+  var o='<h2>'+t("h_ex")+'</h2><div class="note">'+t("n_ex")+'</div><div class="chips"><button class="chip '+(exLiga==="all"?"on":"")+'" onclick="setEx(\'all\')">'+t("all")+'</button>';
+  for(var l=0;l<ligas.length;l++){ o+='<button class="chip '+(exLiga===ligas[l]?"on":"")+'" onclick="setEx(\''+ligas[l]+'\')">'+esc(ligas[l])+'</button>'; }
+  o+='</div>';
+  for(var e=0;e<ex.length;e++){
+    var x=ex[e]; if(exLiga!=="all" && x.liga!==exLiga) continue;
+    var good=(x.pick===x.res);
+    var pn=x.pick==="1"?x.local:(x.pick==="2"?x.visitante:t("draw"));
+    o+='<div class="ex"><span class="d">'+esc(fshort(x.fecha))+'</span><span class="d lg">'+esc(x.liga)+'</span><span>'+esc(x.local)+' - '+esc(x.visitante)+'</span><span><b>'+esc(x.marcador)+'</b></span><span class="d pk">'+t("pick")+': '+esc(pn)+' ('+pc(x.pp)+')</span><span class="'+(good?"ok":"ko")+'">'+(good?"✓":"✗")+'</span></div>';
+  }
+  return o;
+}
+
+function secDirecto(){
+  var s=D.st||{}, v=D.va||{};
+  return '<h2>'+t("h_live")+'</h2><div class="note">'+t("n_live")+'</div><div class="grid">'
+    +card(t("l_tot"),num(s.total)?String(s.total):t("nodata"))
+    +card(t("l_res"),num(s.resueltas)?String(s.resueltas):t("nodata"))
+    +card(t("l_hit"),pc(s.acierto,1))
+    +card(t("l_brier"),num(s.brier)?dec(s.brier,3):t("nodata"))
+    +card(t("l_roi"),num(v.roi)?((v.roi>=0?"+":"")+dec(v.roi*100,1)+"%"):t("nodata"),num(v.apuestas)?v.apuestas+" "+t("l_bets"):"")
+    +'</div>';
+}
 
 function render(){
   document.documentElement.lang=lang;
@@ -119,62 +239,32 @@ function render(){
   document.getElementById("b-en").className=lang==="en"?"on":"";
   document.getElementById("l1").textContent=t("l1");
   document.getElementById("l2").textContent=t("l2");
+  document.getElementById("h1").textContent=t("title");
+  document.getElementById("lead").textContent=t("lead");
   document.getElementById("foot").textContent=t("foot");
-  var o='<h1>'+t("title")+'</h1><div class="lead">'+t("lead")+'</div>';
-  var b=D.bt, tot=b&&b.total;
 
-  o+='<h2>'+t("h_bt")+'</h2><div class="note">'+t("n_bt")+(b?' · '+t("upd")+': '+esc(b.actualizado):'')+'</div>';
-  if(!tot){ o+='<div class="empty">'+t("empty")+'</div>'; }
-  else{
-    var ic=tot.ic?pc(tot.ic[0])+" – "+pc(tot.ic[1]):t("nodata");
-    o+='<div class="grid">'
-      +card(t("matches"),String(tot.n))
-      +card(t("hit"),pc(tot.acierto,1),tot.aciertos+" / "+tot.n,true)
-      +card(t("ic"),ic)
-      +card(t("brier"),dec(tot.brier,3),t("bz"))
-      +card(t("home"),pc(tot.siempre_local,1),t("home_s"))
-      +card(t("o25"),pc(tot.over25,1))
-      +card(t("btts"),pc(tot.btts,1))+'</div>';
-
-    o+='<h2>'+t("h_tr")+'</h2><div class="note">'+t("n_tr")+'</div><table><tr><th>'+t("th_min")+'</th><th>'+t("th_n")+'</th><th>'+t("th_conf")+'</th><th>'+t("th_real")+'</th><th>'+t("ic")+'</th></tr>';
-    for(var i=0;i<(b.tramos||[]).length;i++){
-      var r=b.tramos[i];
-      o+='<tr><td>≥ '+pc(r.min)+'</td><td>'+r.n+'</td><td>'+pc(r.conf,1)+'</td><td><b>'+pc(r.acierto,1)+'</b></td><td>'+(r.ic?pc(r.ic[0])+" – "+pc(r.ic[1]):t("nodata"))+'</td></tr>';
-    }
-    o+='</table>';
-
-    o+='<h2>'+t("h_cal")+'</h2><div class="note">'+t("n_cal")+'</div><table><tr><th>'+t("th_rng")+'</th><th>'+t("th_n")+'</th><th>'+t("th_prom")+'</th><th>'+t("th_real")+'</th><th>'+t("th_bars")+'</th></tr>';
-    for(var c=0;c<(b.calibracion||[]).length;c++){
-      var k=b.calibracion[c];
-      if(!k.n) continue;
-      o+='<tr><td>'+k.desde+'–'+k.hasta+'%</td><td>'+k.n+'</td><td>'+pc(k.prometido,1)+'</td><td><b>'+pc(k.real,1)+'</b></td><td><div class="bars"><div class="bar"><i class="bp" style="width:'+(k.prometido*100)+'%"></i></div><div class="bar"><i class="br" style="width:'+(k.real*100)+'%"></i></div></div></td></tr>';
-    }
-    o+='</table><div class="leg">'+t("leg")+'</div>';
-
-    o+='<h2>'+t("h_lg")+'</h2><table><tr><th>'+t("th_lg")+'</th><th>'+t("th_n")+'</th><th>'+t("th_hit")+'</th><th>'+t("th_br")+'</th></tr>';
-    var lg=b.ligas||{};
-    for(var name in lg){ var L=lg[name]; if(!L) continue;
-      o+='<tr><td>'+esc(name)+'</td><td>'+L.n+'</td><td><b>'+pc(L.acierto,1)+'</b></td><td>'+dec(L.brier,3)+'</td></tr>'; }
-    o+='</table>';
-
-    o+='<h2>'+t("h_ex")+'</h2><div class="note">'+t("n_ex")+'</div>';
-    var ex=b.ejemplos||[];
-    for(var e=0;e<ex.length;e++){
-      var x=ex[e], good=(x.pick===x.res);
-      var pn=x.pick==="1"?x.local:(x.pick==="2"?x.visitante:t("draw"));
-      o+='<div class="ex"><span class="d">'+esc(fshort(x.fecha))+'</span><span class="d lg">'+esc(x.liga)+'</span><span>'+esc(x.local)+' - '+esc(x.visitante)+'</span><span><b>'+esc(x.marcador)+'</b></span><span class="d pk">'+t("pick")+': '+esc(pn)+' ('+pc(x.pp)+')</span><span class="'+(good?"ok":"ko")+'">'+(good?"✓":"✗")+'</span></div>';
-    }
+  var sb="", def=null;
+  for(var i=0;i<SPORTS.length;i++){
+    var d=SPORTS[i]; if(d.id===sport) def=d;
+    sb+='<div class="sp '+(d.id===sport?"on ":"")+(d.on?"":"off")+'" onclick="go(\''+d.id+'\')"><span class="ic">'+d.ic+'</span>'+esc(d[lang])+(d.on?'':'<small>'+t("soon")+'</small>')+'</div>';
   }
+  document.getElementById("sports").innerHTML=sb;
 
-  var s=D.st||{}, v=D.va||{};
-  o+='<h2>'+t("h_live")+'</h2><div class="note">'+t("n_live")+'</div><div class="grid">'
-    +card(t("l_tot"),num(s.total)?String(s.total):t("nodata"))
-    +card(t("l_res"),num(s.resueltas)?String(s.resueltas):t("nodata"))
-    +card(t("l_hit"),pc(s.acierto,1))
-    +card(t("l_brier"),num(s.brier)?dec(s.brier,3):t("nodata"))
-    +card(t("l_roi"),num(v.roi)?((v.roi>=0?"+":"")+dec(v.roi*100,1)+"%"):t("nodata"),num(v.apuestas)?v.apuestas+" "+t("l_bets"):"")
-    +'</div><div class="box">'+t("method")+'</div>';
-  document.getElementById("m").innerHTML=o;
+  var box=document.getElementById("m");
+  if(!def||!def.on){
+    box.innerHTML='<div class="soon"><b>'+esc(def?def[lang]:"")+' · '+t("soon")+'</b>'+t("soon1")+'<br>'+t("soon2")+'</div>';
+    return;
+  }
+  var tabs='<div class="subtabs">';
+  for(var j=0;j<SECS.length;j++){ tabs+='<button class="st '+(SECS[j]===sec?"on":"")+'" onclick="go(\''+sport+'\',\''+SECS[j]+'\')">'+t("s_"+SECS[j])+'</button>'; }
+  tabs+='</div>';
+  var body="";
+  if(sec==="resumen") body=secResumen(D.bt);
+  else if(sec==="confianza") body=secConfianza(D.bt);
+  else if(sec==="ligas") body=secLigas(D.bt);
+  else if(sec==="ejemplos") body=secEjemplos(D.bt);
+  else body=secDirecto();
+  box.innerHTML=tabs+body;
 }
 function load(f,k){ return fetch("data/"+f+"?v="+Date.now()).then(function(r){return r.json();}).then(function(j){D[k]=j;}).catch(function(){D[k]=null;}); }
 Promise.all([load("backtest.json","bt"),load("estadisticas.json","st"),load("valor.json","va")]).then(render);
