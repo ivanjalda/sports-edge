@@ -20,6 +20,12 @@ jobs:
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
         run: python3 scripts/engine.py
 
+      - name: Backtest
+        continue-on-error: true
+        env:
+          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+        run: python3 scripts/backtest.py
+
       - name: Cuotas y valor
         continue-on-error: true
         env:
