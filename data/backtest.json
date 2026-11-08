@@ -1,0 +1,445 @@
+{
+ "actualizado": "2026-11-08 17:07 UTC",
+ "total": {
+  "n": 243,
+  "aciertos": 127,
+  "acierto": 0.5226,
+  "ic": [
+   0.46,
+   0.5846
+  ],
+  "brier": 0.5894,
+  "brier_azar": 0.6667,
+  "siempre_local": 0.4856,
+  "over25": 0.5967,
+  "btts": 0.5514
+ },
+ "ligas": {
+  "Premier League": {
+   "n": 49,
+   "aciertos": 23,
+   "acierto": 0.4694,
+   "ic": [
+    0.337,
+    0.6062
+   ],
+   "brier": 0.64,
+   "brier_azar": 0.6667,
+   "siempre_local": 0.4898,
+   "over25": 0.5714,
+   "btts": 0.4082
+  },
+  "LaLiga": {
+   "n": 64,
+   "aciertos": 33,
+   "acierto": 0.5156,
+   "ic": [
+    0.3958,
+    0.6337
+   ],
+   "brier": 0.5914,
+   "brier_azar": 0.6667,
+   "siempre_local": 0.4219,
+   "over25": 0.5938,
+   "btts": 0.5469
+  },
+  "Serie A": {
+   "n": 58,
+   "aciertos": 34,
+   "acierto": 0.5862,
+   "ic": [
+    0.458,
+    0.7037
+   ],
+   "brier": 0.5366,
+   "brier_azar": 0.6667,
+   "siempre_local": 0.4828,
+   "over25": 0.569,
+   "btts": 0.569
+  },
+  "Bundesliga": {
+   "n": 33,
+   "aciertos": 16,
+   "acierto": 0.4848,
+   "ic": [
+    0.325,
+    0.6478
+   ],
+   "brier": 0.6282,
+   "brier_azar": 0.6667,
+   "siempre_local": 0.4848,
+   "over25": 0.6364,
+   "btts": 0.6061
+  },
+  "Ligue 1": {
+   "n": 39,
+   "aciertos": 21,
+   "acierto": 0.5385,
+   "ic": [
+    0.3857,
+    0.6843
+   ],
+   "brier": 0.5682,
+   "brier_azar": 0.6667,
+   "siempre_local": 0.5897,
+   "over25": 0.641,
+   "btts": 0.6667
+  }
+ },
+ "tramos": [
+  {
+   "min": 0.45,
+   "n": 167,
+   "conf": 0.5807,
+   "acierto": 0.5749,
+   "ic": [
+    0.499,
+    0.6473
+   ]
+  },
+  {
+   "min": 0.55,
+   "n": 87,
+   "conf": 0.6544,
+   "acierto": 0.6782,
+   "ic": [
+    0.5743,
+    0.767
+   ]
+  },
+  {
+   "min": 0.65,
+   "n": 35,
+   "conf": 0.7356,
+   "acierto": 0.7429,
+   "ic": [
+    0.5793,
+    0.8584
+   ]
+  }
+ ],
+ "calibracion": [
+  {
+   "desde": 0,
+   "hasta": 10,
+   "n": 18,
+   "prometido": 0.079,
+   "real": 0.1111
+  },
+  {
+   "desde": 10,
+   "hasta": 20,
+   "n": 104,
+   "prometido": 0.1647,
+   "real": 0.1827
+  },
+  {
+   "desde": 20,
+   "hasta": 30,
+   "n": 280,
+   "prometido": 0.2444,
+   "real": 0.2429
+  },
+  {
+   "desde": 30,
+   "hasta": 40,
+   "n": 114,
+   "prometido": 0.3471,
+   "real": 0.3421
+  },
+  {
+   "desde": 40,
+   "hasta": 50,
+   "n": 87,
+   "prometido": 0.4474,
+   "real": 0.4828
+  },
+  {
+   "desde": 50,
+   "hasta": 60,
+   "n": 66,
+   "prometido": 0.548,
+   "real": 0.4697
+  },
+  {
+   "desde": 60,
+   "hasta": 70,
+   "n": 41,
+   "prometido": 0.6456,
+   "real": 0.6341
+  },
+  {
+   "desde": 70,
+   "hasta": 80,
+   "n": 14,
+   "prometido": 0.7635,
+   "real": 0.8571
+  },
+  {
+   "desde": 80,
+   "hasta": 90,
+   "n": 5,
+   "prometido": 0.8376,
+   "real": 0.8
+  },
+  {
+   "desde": 90,
+   "hasta": 100,
+   "n": 0,
+   "prometido": null,
+   "real": null
+  }
+ ],
+ "ejemplos": [
+  {
+   "liga": "Serie A",
+   "fecha": "2026-11-08T14:00:00Z",
+   "local": "AC Monza",
+   "visitante": "Atalanta BC",
+   "marcador": "0-1",
+   "pick": "2",
+   "pp": 0.4138,
+   "res": "2"
+  },
+  {
+   "liga": "Serie A",
+   "fecha": "2026-11-08T14:00:00Z",
+   "local": "Genoa CFC",
+   "visitante": "AC Milan",
+   "marcador": "1-2",
+   "pick": "2",
+   "pp": 0.5496,
+   "res": "2"
+  },
+  {
+   "liga": "Premier League",
+   "fecha": "2026-11-08T14:00:00Z",
+   "local": "Brighton & Hove Albion FC",
+   "visitante": "Brentford FC",
+   "marcador": "2-0",
+   "pick": "1",
+   "pp": 0.6233,
+   "res": "1"
+  },
+  {
+   "liga": "Premier League",
+   "fecha": "2026-11-08T14:00:00Z",
+   "local": "Ipswich Town FC",
+   "visitante": "AFC Bournemouth",
+   "marcador": "1-2",
+   "pick": "1",
+   "pp": 0.3958,
+   "res": "2"
+  },
+  {
+   "liga": "Premier League",
+   "fecha": "2026-11-08T14:00:00Z",
+   "local": "Sunderland AFC",
+   "visitante": "Chelsea FC",
+   "marcador": "1-0",
+   "pick": "2",
+   "pp": 0.5664,
+   "res": "1"
+  },
+  {
+   "liga": "Premier League",
+   "fecha": "2026-11-08T14:00:00Z",
+   "local": "Crystal Palace FC",
+   "visitante": "Liverpool FC",
+   "marcador": "1-3",
+   "pick": "2",
+   "pp": 0.5207,
+   "res": "2"
+  },
+  {
+   "liga": "LaLiga",
+   "fecha": "2026-11-08T13:00:00Z",
+   "local": "Elche CF",
+   "visitante": "Real Betis Balompié",
+   "marcador": "0-2",
+   "pick": "2",
+   "pp": 0.4022,
+   "res": "2"
+  },
+  {
+   "liga": "Serie A",
+   "fecha": "2026-11-08T11:30:00Z",
+   "local": "SSC Napoli",
+   "visitante": "SS Lazio",
+   "marcador": "1-1",
+   "pick": "2",
+   "pp": 0.5435,
+   "res": "X"
+  },
+  {
+   "liga": "Ligue 1",
+   "fecha": "2026-11-07T20:05:00Z",
+   "local": "Paris Saint-Germain FC",
+   "visitante": "ES Troyes AC",
+   "marcador": "1-0",
+   "pick": "1",
+   "pp": 0.7803,
+   "res": "1"
+  },
+  {
+   "liga": "LaLiga",
+   "fecha": "2026-11-07T20:00:00Z",
+   "local": "Valencia CF",
+   "visitante": "Real Madrid CF",
+   "marcador": "0-3",
+   "pick": "2",
+   "pp": 0.6741,
+   "res": "2"
+  },
+  {
+   "liga": "Serie A",
+   "fecha": "2026-11-07T19:45:00Z",
+   "local": "AS Roma",
+   "visitante": "US Sassuolo Calcio",
+   "marcador": "3-0",
+   "pick": "1",
+   "pp": 0.8253,
+   "res": "1"
+  },
+  {
+   "liga": "Ligue 1",
+   "fecha": "2026-11-07T18:00:00Z",
+   "local": "AJ Auxerre",
+   "visitante": "Paris FC",
+   "marcador": "0-1",
+   "pick": "2",
+   "pp": 0.5636,
+   "res": "2"
+  },
+  {
+   "liga": "Bundesliga",
+   "fecha": "2026-11-07T17:30:00Z",
+   "local": "VfB Stuttgart",
+   "visitante": "SV Werder Bremen",
+   "marcador": "1-0",
+   "pick": "1",
+   "pp": 0.4912,
+   "res": "1"
+  },
+  {
+   "liga": "LaLiga",
+   "fecha": "2026-11-07T17:30:00Z",
+   "local": "CA Osasuna",
+   "visitante": "Athletic Club",
+   "marcador": "1-1",
+   "pick": "2",
+   "pp": 0.5078,
+   "res": "X"
+  },
+  {
+   "liga": "Premier League",
+   "fecha": "2026-11-07T17:30:00Z",
+   "local": "Nottingham Forest FC",
+   "visitante": "Manchester City FC",
+   "marcador": "3-1",
+   "pick": "2",
+   "pp": 0.5728,
+   "res": "1"
+  },
+  {
+   "liga": "Serie A",
+   "fecha": "2026-11-07T17:00:00Z",
+   "local": "Parma Calcio 1913",
+   "visitante": "Bologna FC 1909",
+   "marcador": "1-2",
+   "pick": "2",
+   "pp": 0.4727,
+   "res": "2"
+  },
+  {
+   "liga": "LaLiga",
+   "fecha": "2026-11-07T15:15:00Z",
+   "local": "RCD Espanyol de Barcelona",
+   "visitante": "RC Deportivo La Coruña",
+   "marcador": "0-0",
+   "pick": "1",
+   "pp": 0.4074,
+   "res": "X"
+  },
+  {
+   "liga": "Premier League",
+   "fecha": "2026-11-07T15:00:00Z",
+   "local": "Fulham FC",
+   "visitante": "Newcastle United FC",
+   "marcador": "1-1",
+   "pick": "1",
+   "pp": 0.4497,
+   "res": "X"
+  },
+  {
+   "liga": "Premier League",
+   "fecha": "2026-11-07T15:00:00Z",
+   "local": "Arsenal FC",
+   "visitante": "Hull City AFC",
+   "marcador": "1-0",
+   "pick": "1",
+   "pp": 0.5681,
+   "res": "1"
+  },
+  {
+   "liga": "Bundesliga",
+   "fecha": "2026-11-07T14:30:00Z",
+   "local": "SC Paderborn 07",
+   "visitante": "Eintracht Frankfurt",
+   "marcador": "2-2",
+   "pick": "1",
+   "pp": 0.5082,
+   "res": "X"
+  },
+  {
+   "liga": "Bundesliga",
+   "fecha": "2026-11-07T14:30:00Z",
+   "local": "1. FSV Mainz 05",
+   "visitante": "FC Bayern München",
+   "marcador": "1-2",
+   "pick": "2",
+   "pp": 0.5508,
+   "res": "2"
+  },
+  {
+   "liga": "Bundesliga",
+   "fecha": "2026-11-07T14:30:00Z",
+   "local": "Borussia Dortmund",
+   "visitante": "SV 07 Elversberg",
+   "marcador": "2-1",
+   "pick": "1",
+   "pp": 0.6881,
+   "res": "1"
+  },
+  {
+   "liga": "Bundesliga",
+   "fecha": "2026-11-07T14:30:00Z",
+   "local": "RB Leipzig",
+   "visitante": "FC Augsburg",
+   "marcador": "5-2",
+   "pick": "1",
+   "pp": 0.7116,
+   "res": "1"
+  },
+  {
+   "liga": "Serie A",
+   "fecha": "2026-11-07T14:00:00Z",
+   "local": "Cagliari Calcio",
+   "visitante": "Frosinone Calcio",
+   "marcador": "1-0",
+   "pick": "2",
+   "pp": 0.6072,
+   "res": "1"
+  },
+  {
+   "liga": "Serie A",
+   "fecha": "2026-11-07T14:00:00Z",
+   "local": "Torino FC",
+   "visitante": "US Lecce",
+   "marcador": "1-1",
+   "pick": "1",
+   "pp": 0.5164,
+   "res": "X"
+  }
+ ]
+}
