@@ -11,10 +11,11 @@ body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple
 header{display:flex;justify-content:space-between;align-items:center;padding:14px 24px;border-bottom:1px solid var(--line);flex-wrap:wrap;gap:10px}
 .logo{font-weight:700;font-size:20px;letter-spacing:.5px}
 .logo span{color:var(--acc)}
+.right{display:flex;align-items:center;gap:14px}
+.gl{color:var(--blue);text-decoration:none;font-weight:600;font-size:14px}
 .lang button{background:var(--card);color:var(--mut);border:1px solid var(--line);padding:6px 12px;cursor:pointer;font-weight:600}
 .lang button.on{color:var(--bg);background:var(--acc);border-color:var(--acc)}
 main{max-width:1100px;margin:0 auto;padding:18px 20px}
-h2{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--mut);margin:20px 0 10px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
 .card .n{font-size:20px;font-weight:700}
@@ -34,14 +35,14 @@ h2{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--mut);m
 .lgh{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;cursor:pointer;background:var(--card2)}
 .lgh b{font-size:15px}
 .lgh span{color:var(--mut);font-size:12px}
-.lgb{display:block}
+.legend{font-size:11px;color:var(--mut);padding:8px 14px;border-bottom:1px solid var(--line)}
 .cols,.row{display:grid;grid-template-columns:56px minmax(150px,1.6fr) repeat(3,minmax(54px,.7fr)) repeat(3,minmax(54px,.7fr)) minmax(54px,.7fr) minmax(54px,.7fr) 34px;gap:6px;align-items:center;padding:8px 14px}
 .cols{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid var(--line);text-align:center}
-.cols div:nth-child(2){text-align:left}
+.cols div[title]{cursor:help}
 .row{border-bottom:1px solid var(--line);font-size:14px}
-.row:last-child{border-bottom:0}
 .tm{color:var(--mut);font-size:12px}
 .nm{line-height:1.35}
+.vb{display:inline-block;background:var(--acc);color:var(--bg);font-size:10px;font-weight:700;padding:1px 6px;border-radius:4px;margin-left:6px;vertical-align:middle}
 .cell{text-align:center;background:var(--card2);border:1px solid var(--line);border-radius:6px;padding:4px 2px}
 .cell .p{font-weight:700;font-size:14px}
 .cell .o{font-size:11px;color:var(--mut)}
@@ -55,12 +56,22 @@ h2{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--mut);m
 .mk{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
 .mk .v{font-size:15px;font-weight:700}
 .mk .l{font-size:11px;color:var(--mut)}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px}
+.vc{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:12px}
+.vc.vv{border-color:var(--acc)}
+.vn{font-weight:700;font-size:13px;margin-bottom:4px}
+.vl{color:var(--mut)}
+.vl b{color:var(--txt)}
+.vl b.ok{color:var(--acc)}
+.vl b.ko{color:var(--red)}
+.vnote{font-size:11px;color:var(--mut);margin-top:8px}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .pl{display:flex;justify-content:space-between;font-size:13px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 10px;margin-bottom:6px}
 .pl b{color:var(--acc)}
 .tn{font-size:12px;color:var(--mut);margin-bottom:6px}
 .why{font-size:12px;color:var(--mut);margin-top:12px}
-.day{font-size:12px;color:var(--blue);font-weight:600;padding:8px 14px;background:var(--bg)}.day::first-letter{text-transform:uppercase}
+.day{font-size:12px;color:var(--blue);font-weight:600;padding:8px 14px;background:var(--bg)}
+.day::first-letter{text-transform:uppercase}
 .empty{color:var(--mut);padding:16px;text-align:center;font-size:14px}
 .rh{padding:10px 14px 4px;font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.8px;border-top:1px solid var(--line)}
 .hrow{display:grid;grid-template-columns:60px 1fr 60px 130px 28px;gap:8px;align-items:center;padding:8px 14px;border-top:1px solid var(--line);font-size:14px}
@@ -79,7 +90,10 @@ footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top
 <body>
 <header>
   <div class="logo">SPORTS<span>EDGE</span></div>
-  <div class="lang"><a href="guia.html" style="color:var(--blue);text-decoration:none;font-weight:600;margin-right:14px;font-size:14px">Guía / Guide</a><button id="b-es" onclick="setLang('es')">ES</button><button id="b-en" onclick="setLang('en')">EN</button></div>
+  <div class="right">
+    <a class="gl" href="guia.html">Guía / Guide</a>
+    <div class="lang"><button id="b-es" onclick="setLang('es')">ES</button><button id="b-en" onclick="setLang('en')">EN</button></div>
+  </div>
 </header>
 <main>
   <div class="grid" id="stats"></div>
@@ -104,37 +118,57 @@ var T = {
   es:{nodata:"Sin datos",soon:"Próximamente",
       soon1:"Este deporte se activará cuando tengamos datos reales y verificables.",
       soon2:"No mostramos predicciones inventadas: cada deporte se abre solo cuando su motor funciona de verdad.",
-      all:"Todas",upcoming:"Próximos partidos",hist:"Últimos resultados",
+      all:"Todas",hist:"Últimos resultados",
       nopreds:"No hay partidos analizados en esta liga ahora mismo.",
       nohist:"Aún no hay partidos jugados con predicción guardada.",
       hit:"Acierto",total:"Predicciones registradas",brier:"Calibración (Brier)",upd:"Última actualización",
-      draw:"Empate",best:"Más probable",res:"resueltas",
+      roi:"ROI de valor (simulado)",bets:"apuestas",
+      draw:"Empate",res:"resueltas",
       goals:"Goles y marcador",ht:"Primera parte",scorers:"Probabilidad de marcar",corners:"Córners",
       o15:"Más de 1,5 goles",o25:"Más de 2,5 goles",o35:"Más de 3,5 goles",btts:"Ambos marcan",score:"Marcador probable",
       htl:"1T: gana local",htx:"1T: empate",htv:"1T: gana visitante",htg:"Gol en 1ª parte",
       dc:"Doble oportunidad",fair:"Cuota justa",nodata2:"Sin datos de goleadores",
       c1:"1",cx:"X",c2:"2",c1x:"1X",c12:"12",cx2:"X2",co:"+2,5",cb:"Ambos",
+      tt1:"1 = gana el equipo local",ttx:"X = empate",tt2:"2 = gana el visitante",
+      tt1x:"1X = gana el local o empata",tt12:"12 = no hay empate (gana uno de los dos)",tt2x:"X2 = gana el visitante o empata",
+      tto:"+2,5 = se marcan 3 goles o más entre los dos equipos",ttb:"Ambos = los dos equipos marcan al menos un gol",
+      legend:"Número grande: probabilidad. Número pequeño: cuota justa (1 ÷ probabilidad). 1 = local · X = empate · 2 = visitante · 1X = local o empate · 12 = no hay empate · X2 = visitante o empate · +2,5 = 3 goles o más · Ambos = los dos marcan.",
       matches:"partidos",
+      vtitle:"Valor frente a cuotas reales",vnone:"Sin datos de cuotas para este partido",
+      vmodel:"Nuestra prob.",vmarket:"Mercado",vbest:"Mejor cuota",vev:"Ventaja",vbadge:"VALOR",
+      vnote:"Ventaja = nuestra probabilidad × mejor cuota − 1. Se marca VALOR solo si la ventaja es de al menos 5 %, nuestra probabilidad supera la del mercado y es de al menos 10 %. Es una estimación de nuestro modelo, no una garantía.",
+      vsrc:"Casas comparadas",vupd:"Cuotas de",
+      home:"Local",away:"Visitante",
       foot:"Solo para mayores de 18 años. Las probabilidades son estimaciones estadísticas y la cuota justa es 1 dividido entre la probabilidad. No garantizan resultados. Juega con responsabilidad."},
   en:{nodata:"No data",soon:"Coming soon",
       soon1:"This sport will go live once we have real, verifiable data.",
       soon2:"We never show made-up predictions: each sport opens only when its engine really works.",
-      all:"All",upcoming:"Upcoming matches",hist:"Latest results",
+      all:"All",hist:"Latest results",
       nopreds:"No analysed matches in this league right now.",
       nohist:"No finished matches with a saved prediction yet.",
       hit:"Hit rate",total:"Recorded predictions",brier:"Calibration (Brier)",upd:"Last update",
-      draw:"Draw",best:"Most likely",res:"settled",
+      roi:"Value ROI (simulated)",bets:"bets",
+      draw:"Draw",res:"settled",
       goals:"Goals and score",ht:"First half",scorers:"Anytime scorer probability",corners:"Corners",
       o15:"Over 1.5 goals",o25:"Over 2.5 goals",o35:"Over 3.5 goals",btts:"Both teams score",score:"Most likely score",
       htl:"HT: home leads",htx:"HT: draw",htv:"HT: away leads",htg:"Goal in 1st half",
       dc:"Double chance",fair:"Fair odds",nodata2:"No scorer data",
       c1:"1",cx:"X",c2:"2",c1x:"1X",c12:"12",cx2:"X2",co:"O2.5",cb:"BTTS",
+      tt1:"1 = home team wins",ttx:"X = draw",tt2:"2 = away team wins",
+      tt1x:"1X = home win or draw",tt12:"12 = no draw (either team wins)",tt2x:"X2 = away win or draw",
+      tto:"O2.5 = 3 or more goals in total",ttb:"BTTS = both teams score at least one goal",
+      legend:"Large number: probability. Small number: fair odds (1 ÷ probability). 1 = home · X = draw · 2 = away · 1X = home or draw · 12 = no draw · X2 = away or draw · O2.5 = 3+ goals · BTTS = both teams score.",
       matches:"matches",
+      vtitle:"Value against real odds",vnone:"No odds data for this match",
+      vmodel:"Our prob.",vmarket:"Market",vbest:"Best odds",vev:"Edge",vbadge:"VALUE",
+      vnote:"Edge = our probability × best odds − 1. VALUE is shown only if the edge is at least 5%, our probability is above the market's and at least 10%. It is an estimate from our model, not a guarantee.",
+      vsrc:"Bookmakers compared",vupd:"Odds from",
+      home:"Home",away:"Away",
       foot:"18+ only. Probabilities are statistical estimates and fair odds are 1 divided by the probability. They do not guarantee results. Please gamble responsibly."}
 };
 var lang="es";
 try{ lang = localStorage.getItem("lang") || (navigator.language.indexOf("es")==0 ? "es" : "en"); }catch(e){}
-var DATA={pred:null,stats:null,hist:null};
+var DATA={pred:null,stats:null,hist:null,cuotas:null,valor:null};
 var sport="futbol", cur="all";
 
 function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
@@ -143,8 +177,9 @@ function setLeague(n){ cur=n; render(); }
 function t(k){ return T[lang][k]; }
 function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
 function num(x){ return (typeof x==="number" && isFinite(x)); }
+function dec(v,n){ var s=v.toFixed(n); return lang==="es" ? s.replace(".",",") : s; }
 function pct(x){ return num(x) ? (x*100).toFixed(0)+"%" : t("nodata"); }
-function odd(x){ if(!num(x) || x<=0) return "-"; var v=(1/x).toFixed(2); return lang==="es" ? v.replace(".",",") : v; }
+function odd(x){ if(!num(x) || x<=0) return "-"; return dec(1/x,2); }
 function loc(){ return lang==="es"?"es-ES":"en-GB"; }
 function ftime(iso){ try{ return new Date(iso).toLocaleTimeString(loc(),{hour:"2-digit",minute:"2-digit"}); }catch(e){ return ""; } }
 function fday(iso){ try{ return new Date(iso).toLocaleDateString(loc(),{weekday:"long",day:"numeric",month:"long"}); }catch(e){ return ""; } }
@@ -166,9 +201,36 @@ function players(list){
 }
 function tog(id){ var e=document.getElementById(id); if(e) e.style.display=(e.style.display==="block")?"none":"block"; }
 
+function cuota(p){
+  var c = DATA.cuotas && DATA.cuotas.partidos ? DATA.cuotas.partidos[String(p.id)] : null;
+  if(!c || !c.mejor || !c.ev || !c.mercado) return null;
+  return c;
+}
+
+function valorBlock(p){
+  var o='<div class="sub">'+t("vtitle")+'</div>';
+  var c=cuota(p);
+  if(!c){ return o+'<div class="mks">'+mk(t("vtitle"),t("vnone"))+'</div>'; }
+  var keys=["1","X","2"];
+  var names={"1":t("home")+": "+p.local,"X":t("draw"),"2":t("away")+": "+p.visitante};
+  var probs={"1":p.p_local,"X":p.p_empate,"2":p.p_visitante};
+  o+='<div class="vgrid">';
+  for(var i=0;i<keys.length;i++){
+    var k=keys[i], ev=c.ev[k], isv=(c.valor||[]).indexOf(k)>=0, mj=c.mejor[k];
+    o+='<div class="vc'+(isv?' vv':'')+'"><div class="vn">'+esc(names[k])+(isv?'<span class="vb">'+t("vbadge")+'</span>':'')+'</div>'
+      +'<div class="vl">'+t("vmodel")+': <b>'+pct(probs[k])+'</b></div>'
+      +'<div class="vl">'+t("vmarket")+': <b>'+pct(c.mercado[k])+'</b></div>'
+      +'<div class="vl">'+t("vbest")+': <b>'+dec(mj.c,2)+'</b> ('+esc(mj.casa)+')</div>'
+      +'<div class="vl">'+t("vev")+': <b class="'+(ev>=0?'ok':'ko')+'">'+(ev>=0?'+':'')+dec(ev*100,1)+'%</b></div></div>';
+  }
+  o+='</div><div class="vnote">'+t("vnote")+'<br>'+t("vsrc")+': '+c.casas+' · '+t("vupd")+' '+esc(c.actualizado||"")+'</div>';
+  return o;
+}
+
 function detail(p){
   var m=p.mercados||{}, g=p.goleadores||null;
-  var o='<div class="sub">'+t("dc")+'</div><div class="mks">'
+  var o=valorBlock(p);
+  o+='<div class="sub">'+t("dc")+'</div><div class="mks">'
     + mkp("1X",p.p_local+p.p_empate) + mkp("12",p.p_local+p.p_visitante) + mkp("X2",p.p_empate+p.p_visitante) + '</div>';
   o+='<div class="sub">'+t("goals")+'</div><div class="mks">'
     + mkp(t("o15"),m.over15) + mkp(t("o25"),m.over25) + mkp(t("o35"),m.over35) + mkp(t("btts"),m.btts)
@@ -183,9 +245,10 @@ function detail(p){
 }
 
 function colsHead(){
-  return '<div class="cols"><div></div><div></div><div>'+t("c1")+'</div><div>'+t("cx")+'</div><div>'+t("c2")+'</div>'
-    +'<div class="x">'+t("c1x")+'</div><div class="x">'+t("c12")+'</div><div class="x">'+t("cx2")+'</div>'
-    +'<div class="x">'+t("co")+'</div><div class="x">'+t("cb")+'</div><div></div></div>';
+  return '<div class="cols"><div></div><div></div>'
+    +'<div title="'+esc(t("tt1"))+'">'+t("c1")+'</div><div title="'+esc(t("ttx"))+'">'+t("cx")+'</div><div title="'+esc(t("tt2"))+'">'+t("c2")+'</div>'
+    +'<div class="x" title="'+esc(t("tt1x"))+'">'+t("c1x")+'</div><div class="x" title="'+esc(t("tt12"))+'">'+t("c12")+'</div><div class="x" title="'+esc(t("tt2x"))+'">'+t("cx2")+'</div>'
+    +'<div class="x" title="'+esc(t("tto"))+'">'+t("co")+'</div><div class="x" title="'+esc(t("ttb"))+'">'+t("cb")+'</div><div></div></div>';
 }
 
 function leagueBlock(liga, all, hs, idx){
@@ -193,16 +256,17 @@ function leagueBlock(liga, all, hs, idx){
   var done=[]; for(var a=0;a<hs.length;a++){ if(hs[a].resultado && hs[a].liga===liga) done.push(hs[a]); }
   done.sort(function(x,y){ return x.fecha<y.fecha?1:-1; }); done=done.slice(0,10);
   var o='<div class="lg"><div class="lgh" onclick="tog(\'lg'+idx+'\')"><b>'+esc(liga)+'</b><span>'+list.length+' '+t("matches")+' ▾</span></div>';
-  o+='<div class="lgb" id="lg'+idx+'" style="display:block">';
+  o+='<div id="lg'+idx+'" style="display:block">';
   if(!list.length){ o+='<div class="empty">'+t("nopreds")+'</div>'; }
   else {
-    o+=colsHead();
+    o+='<div class="legend">'+t("legend")+'</div>'+colsHead();
     var last="";
     for(var k=0;k<list.length;k++){
-      var p=list[k], bk=bestKey(p), m=p.mercados||{}, day=fday(p.fecha);
+      var p=list[k], bk=bestKey(p), m=p.mercados||{}, day=fday(p.fecha), c=cuota(p);
+      var badge=(c && c.valor && c.valor.length) ? '<span class="vb">'+t("vbadge")+'</span>' : '';
       if(day!==last){ o+='<div class="day">'+esc(day)+'</div>'; last=day; }
       o+='<div class="row"><div class="tm">'+esc(ftime(p.fecha))+'</div>'
-        +'<div class="nm">'+esc(p.local)+'<br>'+esc(p.visitante)+'</div>'
+        +'<div class="nm">'+esc(p.local)+badge+'<br>'+esc(p.visitante)+'</div>'
         +cell(p.p_local,bk==="1")+cell(p.p_empate,bk==="X")+cell(p.p_visitante,bk==="2")
         +cellx(p.p_local+p.p_empate)+cellx(p.p_local+p.p_visitante)+cellx(p.p_empate+p.p_visitante)
         +cellx(m.over25)+cellx(m.btts)
@@ -226,13 +290,15 @@ function render(){
   document.getElementById("b-en").className=lang==="en"?"on":"";
   document.getElementById("foot").textContent=t("foot");
 
-  var s=DATA.stats||{};
+  var s=DATA.stats||{}, v=DATA.valor||{};
   var hl=t("hit")+((num(s.resueltas)&&s.resueltas>0)?" ("+s.resueltas+" "+t("res")+")":"");
-  var cards=[[t("total"),num(s.total)?s.total:t("nodata")],[hl,pct(s.acierto)],[t("brier"),num(s.brier)?s.brier.toFixed(3):t("nodata")],[t("upd"),s.actualizado||t("nodata")]];
+  var roiTxt=num(v.roi) ? ((v.roi>=0?"+":"")+dec(v.roi*100,1)+"%") : t("nodata");
+  var roiLbl=t("roi")+((num(v.apuestas)&&v.apuestas>0)?" ("+v.apuestas+" "+t("bets")+")":"");
+  var cards=[[t("total"),num(s.total)?s.total:t("nodata")],[hl,pct(s.acierto)],[t("brier"),num(s.brier)?s.brier.toFixed(3):t("nodata")],[roiLbl,roiTxt],[t("upd"),s.actualizado||t("nodata")]];
   var h=""; for(var c=0;c<cards.length;c++){ h+='<div class="card"><div class="n">'+esc(cards[c][1])+'</div><div class="l">'+esc(cards[c][0])+'</div></div>'; }
   document.getElementById("stats").innerHTML=h;
 
-  var sb=""; 
+  var sb="";
   for(var i=0;i<DEPORTES.length;i++){
     var d=DEPORTES[i];
     sb+='<div class="sp '+(d.id===sport?"on ":"")+(d.on?"":"off")+'" onclick="setSport(\''+d.id+'\')"><span class="ic">'+d.ic+'</span>'+esc(d[lang])+(d.on?'':'<small>'+t("soon")+'</small>')+'</div>';
@@ -264,7 +330,7 @@ function render(){
 function load(file,key){
   return fetch("data/"+file+"?v="+Date.now()).then(function(r){return r.json();}).then(function(j){DATA[key]=j;}).catch(function(){DATA[key]=null;});
 }
-Promise.all([load("predicciones.json","pred"),load("estadisticas.json","stats"),load("historial.json","hist")]).then(render);
+Promise.all([load("predicciones.json","pred"),load("estadisticas.json","stats"),load("historial.json","hist"),load("cuotas.json","cuotas"),load("valor.json","valor")]).then(render);
 render();
 </script>
 </body>
