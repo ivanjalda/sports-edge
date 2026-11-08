@@ -26,6 +26,13 @@ jobs:
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
         run: python3 scripts/backtest.py
 
+      - name: Laboratorio
+        if: github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        env:
+          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+        run: python3 scripts/laboratorio.py
+
       - name: Cuotas y valor
         continue-on-error: true
         env:
