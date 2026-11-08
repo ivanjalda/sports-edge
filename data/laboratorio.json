@@ -1,0 +1,263 @@
+{
+ "actualizado": "2026-11-08 17:35 UTC",
+ "variantes": [
+  {
+   "clave": [
+    120,
+    8,
+    -0.1
+   ],
+   "nombre": "peso reciente=120 dias, suavizado=8, bajos=si",
+   "n": 246,
+   "n_train": 147,
+   "train_brier": 0.6172,
+   "train_acierto": 0.4762,
+   "valid_brier": 0.5591,
+   "valid_acierto": 0.5455
+  },
+  {
+   "clave": [
+    120,
+    8,
+    0.0
+   ],
+   "nombre": "peso reciente=120 dias, suavizado=8, bajos=no",
+   "n": 246,
+   "n_train": 147,
+   "train_brier": 0.6173,
+   "train_acierto": 0.4762,
+   "valid_brier": 0.5533,
+   "valid_acierto": 0.5455
+  },
+  {
+   "clave": [
+    60,
+    8,
+    0.0
+   ],
+   "nombre": "peso reciente=60 dias, suavizado=8, bajos=no",
+   "n": 246,
+   "n_train": 147,
+   "train_brier": 0.6176,
+   "train_acierto": 0.4762,
+   "valid_brier": 0.5611,
+   "valid_acierto": 0.5657
+  },
+  {
+   "clave": [
+    60,
+    8,
+    -0.1
+   ],
+   "nombre": "peso reciente=60 dias, suavizado=8, bajos=si",
+   "n": 246,
+   "n_train": 147,
+   "train_brier": 0.6177,
+   "train_acierto": 0.4762,
+   "valid_brier": 0.567,
+   "valid_acierto": 0.5657
+  },
+  {
+   "clave": [
+    null,
+    8,
+    -0.1
+   ],
+   "nombre": "peso reciente=no dias, suavizado=8, bajos=si",
+   "n": 246,
+   "n_train": 147,
+   "train_brier": 0.6178,
+   "train_acierto": 0.4762,
+   "valid_brier": 0.5512,
+   "valid_acierto": 0.5859
+  },
+  {
+   "clave": [
+    null,
+    8,
+    0.0
+   ],
+   "nombre": "peso reciente=no dias, suavizado=8, bajos=no",
+   "n": 246,
+   "n_train": 147,
+   "train_brier": 0.618,
+   "train_acierto": 0.4762,
+   "valid_brier": 0.5456,
+   "valid_acierto": 0.5859
+  },
+  {
+   "clave": [
+    60,
+    4,
+    -0.1
+   ],
+   "nombre": "peso reciente=60 dias, suavizado=4, bajos=si",
+   "n": 246,
+   "n_train": 147,
+   "train_brier": 0.6185,
+   "train_acierto": 0.483,
+   "valid_brier": 0.5539,
+   "valid_acierto": 0.5657
+  },
+  {
+   "clave": [
+    60,
+    4,
+    0.0
+   ],
+   "nombre": "peso reciente=60 dias, suavizado=4, bajos=no",
+   "n": 246,
+   "n_train": 147,
+   "train_brier": 0.6187,
+   "train_acierto": 0.483,
+   "valid_brier": 0.5487,
+   "valid_acierto": 0.5657
+  },
+  {
+   "clave": [
+    120,
+    4,
+    -0.1
+   ],
+   "nombre": "peso reciente=120 dias, suavizado=4, bajos=si",
+   "n": 246,
+   "n_train": 147,
+   "train_brier": 0.6206,
+   "train_acierto": 0.4966,
+   "valid_brier": 0.5466,
+   "valid_acierto": 0.6061
+  },
+  {
+   "clave": [
+    120,
+    4,
+    0.0
+   ],
+   "nombre": "peso reciente=120 dias, suavizado=4, bajos=no",
+   "n": 246,
+   "n_train": 147,
+   "train_brier": 0.6209,
+   "train_acierto": 0.4966,
+   "valid_brier": 0.5415,
+   "valid_acierto": 0.6061
+  },
+  {
+   "clave": [
+    null,
+    4,
+    -0.1
+   ],
+   "nombre": "peso reciente=no dias, suavizado=4, bajos=si",
+   "n": 246,
+   "n_train": 147,
+   "train_brier": 0.6239,
+   "train_acierto": 0.4898,
+   "valid_brier": 0.54,
+   "valid_acierto": 0.596
+  },
+  {
+   "clave": [
+    null,
+    4,
+    0.0
+   ],
+   "nombre": "peso reciente=no dias, suavizado=4, bajos=no",
+   "n": 246,
+   "n_train": 147,
+   "train_brier": 0.6243,
+   "train_acierto": 0.4762,
+   "valid_brier": 0.5351,
+   "valid_acierto": 0.596
+  },
+  {
+   "clave": [
+    60,
+    2,
+    -0.1
+   ],
+   "nombre": "peso reciente=60 dias, suavizado=2, bajos=si",
+   "n": 246,
+   "n_train": 147,
+   "train_brier": 0.627,
+   "train_acierto": 0.4898,
+   "valid_brier": 0.5476,
+   "valid_acierto": 0.5859
+  },
+  {
+   "clave": [
+    60,
+    2,
+    0.0
+   ],
+   "nombre": "peso reciente=60 dias, suavizado=2, bajos=no",
+   "n": 246,
+   "n_train": 147,
+   "train_brier": 0.6273,
+   "train_acierto": 0.483,
+   "valid_brier": 0.5429,
+   "valid_acierto": 0.5859
+  },
+  {
+   "clave": [
+    120,
+    2,
+    -0.1
+   ],
+   "nombre": "peso reciente=120 dias, suavizado=2, bajos=si",
+   "n": 246,
+   "n_train": 147,
+   "train_brier": 0.6308,
+   "train_acierto": 0.4898,
+   "valid_brier": 0.5407,
+   "valid_acierto": 0.596
+  },
+  {
+   "clave": [
+    120,
+    2,
+    0.0
+   ],
+   "nombre": "peso reciente=120 dias, suavizado=2, bajos=no",
+   "n": 246,
+   "n_train": 147,
+   "train_brier": 0.6311,
+   "train_acierto": 0.483,
+   "valid_brier": 0.5361,
+   "valid_acierto": 0.6061
+  },
+  {
+   "clave": [
+    null,
+    2,
+    -0.1
+   ],
+   "nombre": "peso reciente=no dias, suavizado=2, bajos=si",
+   "n": 246,
+   "n_train": 147,
+   "train_brier": 0.6356,
+   "train_acierto": 0.483,
+   "valid_brier": 0.5349,
+   "valid_acierto": 0.6061
+  },
+  {
+   "clave": [
+    null,
+    2,
+    0.0
+   ],
+   "nombre": "peso reciente=no dias, suavizado=2, bajos=no",
+   "n": 246,
+   "n_train": 147,
+   "train_brier": 0.636,
+   "train_acierto": 0.4898,
+   "valid_brier": 0.5305,
+   "valid_acierto": 0.6061
+  }
+ ],
+ "base": [
+  null,
+  4,
+  0.0
+ ],
+ "mejor": "peso reciente=120 dias, suavizado=8, bajos=si"
+}

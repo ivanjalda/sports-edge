@@ -1,18 +1,18 @@
 {
- "actualizado": "2026-11-08 17:07 UTC",
+ "actualizado": "2026-11-08 17:34 UTC",
  "total": {
-  "n": 243,
-  "aciertos": 127,
-  "acierto": 0.5226,
+  "n": 246,
+  "aciertos": 129,
+  "acierto": 0.5244,
   "ic": [
-   0.46,
-   0.5846
+   0.4621,
+   0.5859
   ],
-  "brier": 0.5894,
+  "brier": 0.5884,
   "brier_azar": 0.6667,
-  "siempre_local": 0.4856,
-  "over25": 0.5967,
-  "btts": 0.5514
+  "siempre_local": 0.4837,
+  "over25": 0.5976,
+  "btts": 0.5528
  },
  "ligas": {
   "Premier League": {
@@ -30,18 +30,18 @@
    "btts": 0.4082
   },
   "LaLiga": {
-   "n": 64,
-   "aciertos": 33,
-   "acierto": 0.5156,
+   "n": 65,
+   "aciertos": 34,
+   "acierto": 0.5231,
    "ic": [
-    0.3958,
-    0.6337
+    0.4038,
+    0.6398
    ],
-   "brier": 0.5914,
+   "brier": 0.5867,
    "brier_azar": 0.6667,
-   "siempre_local": 0.4219,
-   "over25": 0.5938,
-   "btts": 0.5469
+   "siempre_local": 0.4308,
+   "over25": 0.5846,
+   "btts": 0.5385
   },
   "Serie A": {
    "n": 58,
@@ -58,53 +58,53 @@
    "btts": 0.569
   },
   "Bundesliga": {
-   "n": 33,
+   "n": 34,
    "aciertos": 16,
-   "acierto": 0.4848,
+   "acierto": 0.4706,
    "ic": [
-    0.325,
-    0.6478
+    0.3145,
+    0.6326
    ],
-   "brier": 0.6282,
+   "brier": 0.6308,
    "brier_azar": 0.6667,
-   "siempre_local": 0.4848,
-   "over25": 0.6364,
-   "btts": 0.6061
+   "siempre_local": 0.4706,
+   "over25": 0.6471,
+   "btts": 0.6176
   },
   "Ligue 1": {
-   "n": 39,
-   "aciertos": 21,
-   "acierto": 0.5385,
+   "n": 40,
+   "aciertos": 22,
+   "acierto": 0.55,
    "ic": [
-    0.3857,
-    0.6843
+    0.3983,
+    0.6929
    ],
-   "brier": 0.5682,
+   "brier": 0.567,
    "brier_azar": 0.6667,
-   "siempre_local": 0.5897,
-   "over25": 0.641,
-   "btts": 0.6667
+   "siempre_local": 0.575,
+   "over25": 0.65,
+   "btts": 0.675
   }
  },
  "tramos": [
   {
    "min": 0.45,
-   "n": 167,
-   "conf": 0.5807,
-   "acierto": 0.5749,
+   "n": 169,
+   "conf": 0.5798,
+   "acierto": 0.574,
    "ic": [
-    0.499,
-    0.6473
+    0.4986,
+    0.6461
    ]
   },
   {
    "min": 0.55,
-   "n": 87,
-   "conf": 0.6544,
-   "acierto": 0.6782,
+   "n": 88,
+   "conf": 0.6534,
+   "acierto": 0.6818,
    "ic": [
-    0.5743,
-    0.767
+    0.5787,
+    0.7698
    ]
   },
   {
@@ -129,37 +129,37 @@
   {
    "desde": 10,
    "hasta": 20,
-   "n": 104,
-   "prometido": 0.1647,
-   "real": 0.1827
+   "n": 105,
+   "prometido": 0.165,
+   "real": 0.181
   },
   {
    "desde": 20,
    "hasta": 30,
-   "n": 280,
-   "prometido": 0.2444,
-   "real": 0.2429
+   "n": 283,
+   "prometido": 0.2443,
+   "real": 0.2403
   },
   {
    "desde": 30,
    "hasta": 40,
-   "n": 114,
-   "prometido": 0.3471,
-   "real": 0.3421
+   "n": 116,
+   "prometido": 0.3469,
+   "real": 0.3448
   },
   {
    "desde": 40,
    "hasta": 50,
-   "n": 87,
-   "prometido": 0.4474,
-   "real": 0.4828
+   "n": 89,
+   "prometido": 0.4471,
+   "real": 0.4831
   },
   {
    "desde": 50,
    "hasta": 60,
-   "n": 66,
-   "prometido": 0.548,
-   "real": 0.4697
+   "n": 67,
+   "prometido": 0.5483,
+   "real": 0.4776
   },
   {
    "desde": 60,
@@ -191,6 +191,36 @@
   }
  ],
  "ejemplos": [
+  {
+   "liga": "LaLiga",
+   "fecha": "2026-11-08T15:15:00Z",
+   "local": "Real Sociedad de Fútbol",
+   "visitante": "Rayo Vallecano de Madrid",
+   "marcador": "1-0",
+   "pick": "1",
+   "pp": 0.5667,
+   "res": "1"
+  },
+  {
+   "liga": "Bundesliga",
+   "fecha": "2026-11-08T14:30:00Z",
+   "local": "1. FC Köln",
+   "visitante": "Bayer 04 Leverkusen",
+   "marcador": "1-2",
+   "pick": "1",
+   "pp": 0.4504,
+   "res": "2"
+  },
+  {
+   "liga": "Ligue 1",
+   "fecha": "2026-11-08T14:00:00Z",
+   "local": "Stade Rennais FC 1901",
+   "visitante": "Lille OSC",
+   "marcador": "1-2",
+   "pick": "2",
+   "pp": 0.4135,
+   "res": "2"
+  },
   {
    "liga": "Serie A",
    "fecha": "2026-11-08T14:00:00Z",
@@ -410,36 +440,6 @@
    "pick": "1",
    "pp": 0.6881,
    "res": "1"
-  },
-  {
-   "liga": "Bundesliga",
-   "fecha": "2026-11-07T14:30:00Z",
-   "local": "RB Leipzig",
-   "visitante": "FC Augsburg",
-   "marcador": "5-2",
-   "pick": "1",
-   "pp": 0.7116,
-   "res": "1"
-  },
-  {
-   "liga": "Serie A",
-   "fecha": "2026-11-07T14:00:00Z",
-   "local": "Cagliari Calcio",
-   "visitante": "Frosinone Calcio",
-   "marcador": "1-0",
-   "pick": "2",
-   "pp": 0.6072,
-   "res": "1"
-  },
-  {
-   "liga": "Serie A",
-   "fecha": "2026-11-07T14:00:00Z",
-   "local": "Torino FC",
-   "visitante": "US Lecce",
-   "marcador": "1-1",
-   "pick": "1",
-   "pp": 0.5164,
-   "res": "X"
   }
  ]
 }
