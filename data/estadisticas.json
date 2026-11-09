@@ -1,34 +1,34 @@
 {
- "actualizado": "2026-11-08 17:32 UTC",
+ "actualizado": "2026-11-09 01:51 UTC",
  "total": 42,
- "resueltas": 29,
- "acierto": 0.6207,
- "brier": 0.5264,
+ "resueltas": 42,
+ "acierto": 0.5952,
+ "brier": 0.5385,
  "ligas": {
   "Premier League": {
    "total": 8,
-   "resueltas": 7,
-   "acierto": 0.5714
+   "resueltas": 8,
+   "acierto": 0.5
   },
   "LaLiga": {
    "total": 9,
-   "resueltas": 6,
-   "acierto": 0.5
+   "resueltas": 9,
+   "acierto": 0.5556
   },
   "Serie A": {
    "total": 9,
-   "resueltas": 7,
-   "acierto": 0.5714
+   "resueltas": 9,
+   "acierto": 0.5556
   },
   "Bundesliga": {
    "total": 8,
-   "resueltas": 6,
-   "acierto": 0.6667
+   "resueltas": 8,
+   "acierto": 0.75
   },
   "Ligue 1": {
    "total": 8,
-   "resueltas": 3,
-   "acierto": 1.0
+   "resueltas": 8,
+   "acierto": 0.625
   }
  }
 }
