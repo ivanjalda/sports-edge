@@ -84,7 +84,7 @@ footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top
 <script>
 var SPORTS=[
  {id:"futbol",es:"Fútbol",en:"Football",ic:"⚽",on:true},
- {id:"tenis",es:"Tenis",en:"Tennis",ic:"🎾",on:false},
+ {id:"tenis",es:"Tenis",en:"Tennis",ic:"🎾",on:true},
  {id:"baloncesto",es:"Baloncesto",en:"Basketball",ic:"🏀",on:false},
  {id:"voleibol",es:"Voleibol",en:"Volleyball",ic:"🏐",on:false},
  {id:"hockey",es:"Hockey",en:"Hockey",ic:"🏒",on:false},
@@ -151,7 +151,7 @@ try{
 var D={bt:null,st:null,va:null};
 
 function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
-function go(s,x){ sport=s; sec=x||"resumen"; try{ location.hash=s+"-"+sec; }catch(e){} render(); }
+function go(s,x){ if(s==="tenis"){ location.href="tenis.html#stats"; return; } sport=s; sec=x||"resumen"; try{ location.hash=s+"-"+sec; }catch(e){} render(); }
 function setEx(l){ exLiga=l; render(); }
 function t(k){ return T[lang][k]; }
 function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
