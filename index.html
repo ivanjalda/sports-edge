@@ -106,7 +106,7 @@ footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top
 var LIGAS = ["Premier League","LaLiga","Serie A","Bundesliga","Ligue 1"];
 var DEPORTES = [
   {id:"futbol",es:"Fútbol",en:"Football",ic:"⚽",on:true},
-  {id:"tenis",es:"Tenis",en:"Tennis",ic:"🎾",on:false},
+  {id:"tenis",es:"Tenis",en:"Tennis",ic:"🎾",on:true},
   {id:"baloncesto",es:"Baloncesto",en:"Basketball",ic:"🏀",on:false},
   {id:"voleibol",es:"Voleibol",en:"Volleyball",ic:"🏐",on:false},
   {id:"hockey",es:"Hockey",en:"Hockey",ic:"🏒",on:false},
@@ -172,7 +172,7 @@ var DATA={pred:null,stats:null,hist:null,cuotas:null,valor:null};
 var sport="futbol", cur="all";
 
 function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
-function setSport(s){ sport=s; render(); }
+function setSport(s){ if(s==="tenis"){ location.href="tenis.html"; return; } sport=s; render(); }
 function setLeague(n){ cur=n; render(); }
 function t(k){ return T[lang][k]; }
 function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
