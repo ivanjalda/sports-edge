@@ -135,7 +135,7 @@ def leer_eventos(datos):
 
 
 def pedir_rango(ruta, d1, d2, extra=""):
-    datos, _ = get_json(ESPN % (ruta, d1.strftime("%Y%m%d") + "-" + d2.strftime("%Y%m%d"), extra))
+    datos, _ = get_json(ESPN % (ruta, d1.strftime("%Y%m%d") + "-" + d2.strftime("%Y%m%d"), extra), timeout=20)
     return leer_eventos(datos)
 
 
@@ -189,30 +189,41 @@ def descargar_euro(cfg, primera, ahora):
 
 
 def descargar(ruta, desde, hasta, extra=""):
-    """Descarga partidos entre dos fechas en bloques de 7 dias. Si un bloque falla,
-    lo intenta dia a dia."""
+    """Descarga partidos entre dos fechas en bloques de 7 dias.
+    Seguridad: si fallan 3 bloques seguidos o se superan 5 minutos, se para y sigue con lo que tenga."""
     juegos = {}
     errores = 0
+    seguidos = 0
+    llegado = None
+    inicio = time.time()
+    bloques = 0
     d = desde
     while d <= hasta:
+        if time.time() - inicio > 300:
+            print("Aviso: descarga cortada por tiempo (5 min). Se continua en la proxima ejecucion.")
+            break
         fin = min(d + timedelta(days=6), hasta)
         try:
             lista = pedir_rango(ruta, d, fin, extra)
             for g in lista:
                 juegos[g["id"]] = g
-        except Exception:
-            dd = d
-            while dd <= fin:
-                try:
-                    for g in pedir_dia(ruta, dd, extra):
-                        juegos[g["id"]] = g
-                except Exception:
-                    errores += 1
-                dd += timedelta(days=1)
-                time.sleep(0.2)
+            seguidos = 0
+            llegado = fin
+        except Exception as e:
+            errores += 1
+            seguidos += 1
+            if errores == 1:
+                print("Aviso: fallo al leer %s - %s (%s)" % (d.strftime("%Y-%m-%d"), fin.strftime("%Y-%m-%d"), e))
+            if seguidos >= 3:
+                print("Aviso: 3 fallos seguidos. Se para la descarga de esta liga.")
+                break
+        bloques += 1
+        if bloques % 26 == 0:
+            print("  ... leido hasta %s (%d partidos, %d s)" % (fin.strftime("%Y-%m-%d"), len(juegos),
+                                                              int(time.time() - inicio)))
         d = fin + timedelta(days=1)
         time.sleep(0.2)
-    return list(juegos.values()), errores
+    return list(juegos.values()), errores, llegado
 
 
 # ---------------------------------------------------------------- modelo Elo
@@ -488,9 +499,20 @@ def procesar(clave, cfg, ahora, stamp, restantes):
         nuevos, errores = descargar_euro(cfg, not juegos, ahora)
         origen = "Euroleague (oficial)"
     else:
-        desde = ahora - timedelta(days=12) if juegos else \
-            datetime.strptime(cfg["inicio"], "%Y%m%d").replace(tzinfo=timezone.utc)
-        nuevos, errores = descargar(cfg["ruta"], desde, ahora + timedelta(days=3), cfg.get("extra", ""))
+        # Si la descarga historica quedo a medias, se continua desde donde se quedo
+        hecho = cache.get("historico_hasta")
+        if juegos and hecho and hecho >= (ahora - timedelta(days=12)).strftime("%Y-%m-%d"):
+            desde = ahora - timedelta(days=12)
+        elif juegos and hecho:
+            desde = datetime.strptime(hecho, "%Y-%m-%d").replace(tzinfo=timezone.utc) + timedelta(days=1)
+            print("Se continua la descarga historica desde %s" % desde.strftime("%Y-%m-%d"))
+        elif juegos:
+            desde = ahora - timedelta(days=12)
+        else:
+            desde = datetime.strptime(cfg["inicio"], "%Y%m%d").replace(tzinfo=timezone.utc)
+        nuevos, errores, llegado = descargar(cfg["ruta"], desde, ahora + timedelta(days=3), cfg.get("extra", ""))
+        if llegado:
+            cache["historico_hasta"] = max(cache.get("historico_hasta") or "", llegado.strftime("%Y-%m-%d"))
         origen = "ESPN"
     print("Partidos leidos de %s: %d (bloques con error: %d)" % (origen, len(nuevos), errores))
     proximos = []
@@ -505,7 +527,7 @@ def procesar(clave, cfg, ahora, stamp, restantes):
         print("ERROR: solo hay %d partidos terminados. No se cambia nada en %s." % (len(juegos), cfg["nombre"]))
         return restantes
     with open(os.path.join(DATA, "equipos_%s_resultados.json" % clave), "w", encoding="utf-8") as f:
-        json.dump({"actualizado": stamp, "juegos": juegos}, f, ensure_ascii=False, separators=(",", ":"))
+        json.dump({"actualizado": stamp, "historico_hasta": cache.get("historico_hasta"), "juegos": juegos}, f, ensure_ascii=False, separators=(",", ":"))
 
     cuenta = {}
     for g in juegos.values():
