@@ -49,10 +49,11 @@ jobs:
 
       - name: Baloncesto y hockey
         continue-on-error: true
+        timeout-minutes: 45
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           ODDS_FETCH: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '0 7 * * *' }}
-        run: python3 scripts/equipos.py
+        run: python3 -u scripts/equipos.py
 
       - name: Guardar datos
         run: |
