@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 """Sports Edge - Motor comun para deportes de equipo sin empate (solo libreria estandar).
-Ligas: NBA (baloncesto) y NHL (hockey). Para anadir otra liga basta con anadirla a LIGAS.
+Baloncesto: NBA, Euroliga, Eurocup, NCAA masculina, WNBA. Hockey: NHL, NCAA masculina.
+Para anadir otra liga basta con anadirla a LIGAS.
 
-Datos de resultados y calendario: marcadores publicos de ESPN (site.api.espn.com).
+Datos de resultados y calendario: marcadores publicos de ESPN y API oficial de Euroleague.
 Cuotas: The Odds API (opcional; sin cuotas se publican igualmente las probabilidades).
 Modelo: Elo con ventaja de campo, margen de victoria y regresion a la media entre temporadas.
 Los parametros se fijan de antemano (valores publicados por FiveThirtyEight) y no se ajustan
@@ -21,7 +22,7 @@ from datetime import datetime, timezone, timedelta
 DATA = "data"
 KEY = os.environ.get("ODDS_API_KEY", "").strip()
 LLAMAR = os.environ.get("ODDS_FETCH", "true").strip().lower() == "true"
-ESPN = "https://site.api.espn.com/apis/site/v2/sports/%s/scoreboard?dates=%s&limit=1000"
+ESPN = "https://site.api.espn.com/apis/site/v2/sports/%s/scoreboard?dates=%s&limit=1000%s"
 ODDS = "https://api.the-odds-api.com/v4/sports"
 UA = "Mozilla/5.0 (compatible; sports-edge/1.0; +https://ivanjalda.github.io/sports-edge/)"
 
@@ -30,17 +31,31 @@ UMBRAL_VALOR = 0.05
 PROB_MIN = 0.10
 MIN_CREDITOS = 25
 HORAS_PRED = 48        # se guardan predicciones de partidos que empiezan en las proximas 48 h
-MAX_DIAS_SIN_DATOS = 10
-MIN_PARTIDOS_EQUIPO = 20   # equipos con menos partidos (p. ej. All-Star) se descartan
 
+# fuente: "espn" (marcadores ESPN) o "euro" (API oficial de Euroleague Basketball)
+# odds: clave de The Odds API, o None para no gastar creditos en esa liga
+# min_eq: partidos minimos de un equipo para entrar (descarta partidos de exhibicion)
+# max_dias: dias sin resultados nuevos a partir de los cuales no se guardan predicciones
+BALONCESTO = {"k": 20.0, "hca": 100.0, "revertir": 0.75, "mov": "nba"}
+HOCKEY = {"k": 6.0, "hca": 50.0, "revertir": 0.70, "mov": "nhl"}
 LIGAS = {
-    "nba": {"nombre": "NBA", "ruta": "basketball/nba", "odds": "basketball_nba",
-            "inicio": "20221001", "eval": "20241001",
-            "k": 20.0, "hca": 100.0, "revertir": 0.75, "mov": "nba"},
-    "nhl": {"nombre": "NHL", "ruta": "hockey/nhl", "odds": "icehockey_nhl",
-            "inicio": "20221001", "eval": "20241001",
-            "k": 6.0, "hca": 50.0, "revertir": 0.70, "mov": "nhl"},
+    "nba": dict(BALONCESTO, nombre="NBA", fuente="espn", ruta="basketball/nba", extra="",
+                odds="basketball_nba", inicio="20221001", eval="20241001", min_eq=20, max_dias=10),
+    "euroliga": dict(BALONCESTO, nombre="Euroliga", fuente="euro", comp="E",
+                     odds="basketball_euroleague", inicio="2022", eval="20241001", min_eq=5, max_dias=21),
+    "eurocup": dict(BALONCESTO, nombre="Eurocup", fuente="euro", comp="U",
+                    odds=None, inicio="2022", eval="20241001", min_eq=5, max_dias=21),
+    "ncaab": dict(BALONCESTO, nombre="NCAA", fuente="espn", ruta="basketball/mens-college-basketball",
+                  extra="&groups=50", odds=None, inicio="20231101", eval="20241101", min_eq=10, max_dias=10),
+    "wnba": dict(BALONCESTO, nombre="WNBA", fuente="espn", ruta="basketball/wnba", extra="",
+                 odds=None, inicio="20220501", eval="20240501", min_eq=20, max_dias=10),
+    "nhl": dict(HOCKEY, nombre="NHL", fuente="espn", ruta="hockey/nhl", extra="",
+                odds="icehockey_nhl", inicio="20221001", eval="20241001", min_eq=20, max_dias=10),
+    "ncaah": dict(HOCKEY, nombre="NCAA", fuente="espn", ruta="hockey/mens-college-hockey", extra="",
+                  odds=None, inicio="20221001", eval="20241001", min_eq=10, max_dias=12),
 }
+EURO = "https://api-live.euroleague.net/v2/competitions/%s/seasons/%s%d/games"
+FASE_EURO = {"RS": 2, "PI": 5, "PO": 3, "FF": 3}
 
 
 # ---------------------------------------------------------------- utilidades
@@ -119,17 +134,61 @@ def leer_eventos(datos):
     return out
 
 
-def pedir_rango(ruta, d1, d2):
-    datos, _ = get_json(ESPN % (ruta, d1.strftime("%Y%m%d") + "-" + d2.strftime("%Y%m%d")))
+def pedir_rango(ruta, d1, d2, extra=""):
+    datos, _ = get_json(ESPN % (ruta, d1.strftime("%Y%m%d") + "-" + d2.strftime("%Y%m%d"), extra))
     return leer_eventos(datos)
 
 
-def pedir_dia(ruta, d):
-    datos, _ = get_json(ESPN % (ruta, d.strftime("%Y%m%d")))
+def pedir_dia(ruta, d, extra=""):
+    datos, _ = get_json(ESPN % (ruta, d.strftime("%Y%m%d"), extra))
     return leer_eventos(datos)
 
 
-def descargar(ruta, desde, hasta):
+def leer_euro(datos, anio):
+    """Convierte la respuesta de la API oficial de Euroleague en una lista de partidos."""
+    out = []
+    for g in (datos or {}).get("data", []) or []:
+        try:
+            fase = ((g.get("phaseType") or {}).get("code") or "").upper()
+            fecha = g.get("utcDate") or g.get("date")
+            loc, vis = g.get("local") or {}, g.get("road") or {}
+            sl, sv = loc.get("score"), vis.get("score")
+            out.append({
+                "id": str(g.get("identifier") or g.get("id")),
+                "fecha": iso(parse_iso(fecha)),
+                "temporada": anio + 1,
+                "tipo": FASE_EURO.get(fase, 2),
+                "terminado": bool(g.get("played")),
+                "neutral": fase == "FF",
+                "local": (loc.get("club") or {}).get("name"),
+                "visitante": (vis.get("club") or {}).get("name"),
+                "pl": int(sl) if sl not in (None, "") else None,
+                "pv": int(sv) if sv not in (None, "") else None,
+            })
+        except Exception:
+            continue
+    return out
+
+
+def descargar_euro(cfg, primera, ahora):
+    """Temporadas desde cfg['inicio'] la primera vez; despues solo la temporada en curso."""
+    actual = ahora.year if ahora.month >= 8 else ahora.year - 1
+    anios = range(int(cfg["inicio"]), actual + 1) if primera else [actual]
+    juegos, errores = [], 0
+    for a in anios:
+        try:
+            datos, _ = get_json(EURO % (cfg["comp"], cfg["comp"], a), timeout=90)
+            lista = leer_euro(datos, a)
+            print("Temporada %d-%s: %d partidos" % (a, str(a + 1)[2:], len(lista)))
+            juegos.extend(lista)
+        except Exception as e:
+            errores += 1
+            print("Aviso: temporada %d no disponible (%s)" % (a, e))
+        time.sleep(0.3)
+    return juegos, errores
+
+
+def descargar(ruta, desde, hasta, extra=""):
     """Descarga partidos entre dos fechas en bloques de 7 dias. Si un bloque falla,
     lo intenta dia a dia."""
     juegos = {}
@@ -138,14 +197,14 @@ def descargar(ruta, desde, hasta):
     while d <= hasta:
         fin = min(d + timedelta(days=6), hasta)
         try:
-            lista = pedir_rango(ruta, d, fin)
+            lista = pedir_rango(ruta, d, fin, extra)
             for g in lista:
                 juegos[g["id"]] = g
         except Exception:
             dd = d
             while dd <= fin:
                 try:
-                    for g in pedir_dia(ruta, dd):
+                    for g in pedir_dia(ruta, dd, extra):
                         juegos[g["id"]] = g
                 except Exception:
                     errores += 1
@@ -423,14 +482,17 @@ def procesar(clave, cfg, ahora, stamp, restantes):
     print("---- %s" % cfg["nombre"])
     cache = leer_json("equipos_%s_resultados.json" % clave, {"juegos": {}})
     juegos = cache.get("juegos", {})
-    if juegos:
-        desde = ahora - timedelta(days=12)
-    else:
-        desde = datetime.strptime(cfg["inicio"], "%Y%m%d").replace(tzinfo=timezone.utc)
+    if not juegos:
         print("Primera ejecucion: se descarga el historico desde %s" % cfg["inicio"])
-    hasta = ahora + timedelta(days=3)
-    nuevos, errores = descargar(cfg["ruta"], desde, hasta)
-    print("Partidos leidos de ESPN: %d (bloques con error: %d)" % (len(nuevos), errores))
+    if cfg["fuente"] == "euro":
+        nuevos, errores = descargar_euro(cfg, not juegos, ahora)
+        origen = "Euroleague (oficial)"
+    else:
+        desde = ahora - timedelta(days=12) if juegos else \
+            datetime.strptime(cfg["inicio"], "%Y%m%d").replace(tzinfo=timezone.utc)
+        nuevos, errores = descargar(cfg["ruta"], desde, ahora + timedelta(days=3), cfg.get("extra", ""))
+        origen = "ESPN"
+    print("Partidos leidos de %s: %d (bloques con error: %d)" % (origen, len(nuevos), errores))
     proximos = []
     for g in nuevos:
         if g["tipo"] not in (2, 3, 5):   # 2 regular, 3 playoff, 5 play-in
@@ -439,7 +501,7 @@ def procesar(clave, cfg, ahora, stamp, restantes):
             juegos[g["id"]] = g
         elif not g["terminado"]:
             proximos.append(g)
-    if len(juegos) < 300:
+    if len(juegos) < 150:
         print("ERROR: solo hay %d partidos terminados. No se cambia nada en %s." % (len(juegos), cfg["nombre"]))
         return restantes
     with open(os.path.join(DATA, "equipos_%s_resultados.json" % clave), "w", encoding="utf-8") as f:
@@ -449,7 +511,7 @@ def procesar(clave, cfg, ahora, stamp, restantes):
     for g in juegos.values():
         cuenta[g["local"]] = cuenta.get(g["local"], 0) + 1
         cuenta[g["visitante"]] = cuenta.get(g["visitante"], 0) + 1
-    validos = set(e for e, n in cuenta.items() if n >= MIN_PARTIDOS_EQUIPO)
+    validos = set(e for e, n in cuenta.items() if n >= cfg["min_eq"])
     lista_j = sorted([g for g in juegos.values() if g["local"] in validos and g["visitante"] in validos],
                      key=lambda g: g["fecha"])
     ultima = lista_j[-1]["fecha"]
@@ -470,7 +532,7 @@ def procesar(clave, cfg, ahora, stamp, restantes):
     lista = hist.get("predicciones", [])
     por_id = {p["id"]: p for p in lista}
     nuevas = 0
-    publicar = dias <= MAX_DIAS_SIN_DATOS
+    publicar = dias <= cfg["max_dias"]
     if not publicar and proximos:
         print("Aviso: el ultimo resultado tiene %d dias. No se guardan predicciones nuevas." % dias)
     for g in sorted(proximos, key=lambda x: x["fecha"]):
@@ -495,7 +557,7 @@ def procesar(clave, cfg, ahora, stamp, restantes):
 
     # Cuotas solo si hay partidos pendientes en las proximas 48 h
     pend = [p for p in lista if p.get("resultado") is None and parse_iso(p["fecha"]) > ahora]
-    if pend and LLAMAR and KEY:
+    if pend and LLAMAR and KEY and cfg["odds"]:
         if restantes is not None and restantes < MIN_CREDITOS:
             print("Aviso: quedan %d creditos. No se piden cuotas de %s." % (restantes, cfg["nombre"]))
         else:
@@ -533,6 +595,8 @@ def procesar(clave, cfg, ahora, stamp, restantes):
     hist["actualizado"] = stamp
     guardar_json("equipos_%s_historial.json" % clave, hist)
 
+    futuros = sorted(g["fecha"] for g in proximos)
+    proximo = futuros[0] if futuros else None
     visibles = sorted([p for p in lista if p.get("resultado") is None and
                        parse_iso(p["fecha"]) > ahora - timedelta(hours=4)], key=lambda x: x["fecha"])
     recientes = sorted([p for p in lista if p.get("resultado")], key=lambda x: x["fecha"], reverse=True)[:20]
@@ -543,7 +607,9 @@ def procesar(clave, cfg, ahora, stamp, restantes):
         ranking.append({"equipo": e, "elo": round(elo.get(e)), "g": b[0], "p": b[1]})
     guardar_json("equipos_%s.json" % clave, {
         "actualizado": stamp, "liga": cfg["nombre"], "datos_hasta": ultima, "dias_desde_datos": dias,
-        "fuente": {"nombre": "ESPN", "url": "https://www.espn.com"},
+        "fuente": ({"nombre": "Euroleague Basketball", "url": "https://www.euroleaguebasketball.net"}
+                   if cfg["fuente"] == "euro" else {"nombre": "ESPN", "url": "https://www.espn.com"}),
+        "con_cuotas": bool(cfg["odds"]), "proximo": proximo,
         "predicciones": visibles, "recientes": recientes, "directo": stats_directo(lista),
         "ranking": ranking})
     print("%s: %d predicciones nuevas, %d resultados anotados, %d proximos publicados" %
