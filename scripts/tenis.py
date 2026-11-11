@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Sports Edge - Motor de tenis (solo libreria estandar).
-Elo general + Elo por superficie con resultados reales (Jeff Sackmann, CC BY-NC-SA 4.0).
+Elo general + Elo por superficie con resultados reales (TennisMyLife; respaldo: archivo de Jeff Sackmann).
 Partidos proximos y cuotas: The Odds API."""
 import csv
 import io
@@ -40,7 +40,8 @@ SUP_TORNEO = [("aus_open", "Hard"), ("french_open", "Clay"), ("wimbledon", "Gras
               ("cincinnati", "Hard"), ("dubai", "Hard"), ("hamburg", "Clay"), ("indian_wells", "Hard"),
               ("italian", "Clay"), ("madrid", "Clay"), ("miami", "Hard"), ("monte_carlo", "Clay"),
               ("munich", "Clay"), ("paris", "Hard"), ("qatar", "Hard"), ("shanghai", "Hard"),
-              ("canadian", "Hard"), ("wuhan", "Hard"), ("beijing", "Hard"), ("china_open", "Hard")]
+              ("canadian", "Hard"), ("wuhan", "Hard"), ("beijing", "Hard"), ("china_open", "Hard"),
+              ("atp_finals", "Hard"), ("wta_finals", "Hard")]
 
 
 def leer_json(nombre, defecto):
@@ -476,11 +477,13 @@ def main():
     ahora = datetime.now(timezone.utc)
     stamp = ahora.strftime("%Y-%m-%d %H:%M UTC")
     rows = []
+    fuentes = {}
     for tour in ("atp", "wta"):
-        for a in ANIOS:
-            txt = tenis_fuente.descargar(tour, a)
-            if txt:
-                rows.extend(parsear(txt, tour))
+        textos, clave = tenis_fuente.cargar(tour, ANIOS)
+        for txt in textos:
+            rows.extend(parsear(txt, tour))
+        if clave:
+            fuentes[tour.upper()] = tenis_fuente.FUENTES_INFO[clave]
     print("Partidos de tenis cargados: %d" % len(rows))
     if len(rows) < 1000:
         print("ERROR: datos insuficientes. No se cambia nada.")
@@ -497,7 +500,7 @@ def main():
     tot = resumen(ev)
     guardar_json("tenis_backtest.json", {
         "actualizado": stamp, "desde": EVAL_DESDE, "datos_hasta": ultima, "dias_desde_datos": dias,
-        "total": tot, "tramos": tramos(ev), "calibracion": calibracion(ev),
+        "fuentes": fuentes, "total": tot, "tramos": tramos(ev), "calibracion": calibracion(ev),
         "superficies": agrupar(ev, lambda x: x[1]),
         "circuitos": agrupar(ev, lambda x: x[0]["tour"].upper()),
         "ejemplos": ejemplos(ev)})
@@ -532,7 +535,7 @@ def main():
         visibles.append(p)
     visibles.sort(key=lambda x: x["fecha"])
     guardar_json("tenis.json", {
-        "actualizado": stamp, "datos_hasta": ultima, "dias_desde_datos": dias,
+        "actualizado": stamp, "datos_hasta": ultima, "dias_desde_datos": dias, "fuentes": fuentes,
         "torneos": torneos if consultado else previo.get("torneos", []),
         "sin_datos": sin_datos if consultado else previo.get("sin_datos", []),
         "predicciones": visibles, "directo": stats_directo(lista)})
