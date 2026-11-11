@@ -1,14 +1,14 @@
 {
- "actualizado": "2026-11-11 04:17 UTC",
+ "actualizado": "2026-11-11 14:57 UTC",
  "liga": "NCAA",
- "datos_hasta": "2026-11-11T02:00:00Z",
+ "datos_hasta": "2026-11-11T03:00:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
- "proximo": "2023-11-09T00:00:00Z",
+ "proximo": "2026-11-11T16:30:00Z",
  "predicciones": [
   {
    "id": "401919759",
@@ -1870,6 +1870,12 @@
    "p": 0
   },
   {
+   "equipo": "Kansas Jayhawks",
+   "elo": 1683,
+   "g": 3,
+   "p": 0
+  },
+  {
    "equipo": "Louisville Cardinals",
    "elo": 1681,
    "g": 2,
@@ -1921,12 +1927,6 @@
    "equipo": "Akron Zips",
    "elo": 1671,
    "g": 1,
-   "p": 0
-  },
-  {
-   "equipo": "Kansas Jayhawks",
-   "elo": 1668,
-   "g": 2,
    "p": 0
   },
   {
@@ -1984,12 +1984,6 @@
    "p": 0
   },
   {
-   "equipo": "Kentucky Wildcats",
-   "elo": 1638,
-   "g": 2,
-   "p": 0
-  },
-  {
    "equipo": "South Florida Bulls",
    "elo": 1636,
    "g": 1,
@@ -2020,6 +2014,12 @@
    "p": 0
   },
   {
+   "equipo": "TCU Horned Frogs",
+   "elo": 1625,
+   "g": 3,
+   "p": 0
+  },
+  {
    "equipo": "Yale Bulldogs",
    "elo": 1625,
    "g": 1,
@@ -2032,10 +2032,10 @@
    "p": 0
   },
   {
-   "equipo": "TCU Horned Frogs",
-   "elo": 1624,
+   "equipo": "Kentucky Wildcats",
+   "elo": 1623,
    "g": 2,
-   "p": 0
+   "p": 1
   },
   {
    "equipo": "Texas Longhorns",
@@ -2278,12 +2278,6 @@
    "p": 0
   },
   {
-   "equipo": "Creighton Bluejays",
-   "elo": 1568,
-   "g": 2,
-   "p": 0
-  },
-  {
    "equipo": "Davidson Wildcats",
    "elo": 1568,
    "g": 3,
@@ -2374,6 +2368,12 @@
    "p": 3
   },
   {
+   "equipo": "Creighton Bluejays",
+   "elo": 1561,
+   "g": 2,
+   "p": 1
+  },
+  {
    "equipo": "Oklahoma State Cowboys",
    "elo": 1559,
    "g": 2,
@@ -2420,6 +2420,12 @@
    "elo": 1553,
    "g": 1,
    "p": 2
+  },
+  {
+   "equipo": "San Francisco Dons",
+   "elo": 1553,
+   "g": 3,
+   "p": 0
   },
   {
    "equipo": "Seattle U Redhawks",
@@ -2480,12 +2486,6 @@
    "elo": 1549,
    "g": 0,
    "p": 1
-  },
-  {
-   "equipo": "San Francisco Dons",
-   "elo": 1549,
-   "g": 2,
-   "p": 0
   },
   {
    "equipo": "California Baptist Lancers",
@@ -2920,12 +2920,6 @@
    "p": 2
   },
   {
-   "equipo": "Montana Grizzlies",
-   "elo": 1498,
-   "g": 0,
-   "p": 1
-  },
-  {
    "equipo": "Cal State Fullerton Titans",
    "elo": 1497,
    "g": 1,
@@ -2950,6 +2944,12 @@
    "p": 1
   },
   {
+   "equipo": "Montana Grizzlies",
+   "elo": 1494,
+   "g": 0,
+   "p": 2
+  },
+  {
    "equipo": "Western Carolina Catamounts",
    "elo": 1494,
    "g": 1,
@@ -2963,6 +2963,12 @@
   },
   {
    "equipo": "Fordham Rams",
+   "elo": 1493,
+   "g": 2,
+   "p": 1
+  },
+  {
+   "equipo": "Kansas State Wildcats",
    "elo": 1493,
    "g": 2,
    "p": 1
@@ -3038,12 +3044,6 @@
    "elo": 1485,
    "g": 0,
    "p": 2
-  },
-  {
-   "equipo": "Kansas State Wildcats",
-   "elo": 1485,
-   "g": 1,
-   "p": 1
   },
   {
    "equipo": "Charlotte 49ers",
@@ -3358,6 +3358,12 @@
    "p": 0
   },
   {
+   "equipo": "Fresno State Bulldogs",
+   "elo": 1445,
+   "g": 1,
+   "p": 1
+  },
+  {
    "equipo": "East Carolina Pirates",
    "elo": 1444,
    "g": 1,
@@ -3386,12 +3392,6 @@
    "elo": 1443,
    "g": 0,
    "p": 2
-  },
-  {
-   "equipo": "Fresno State Bulldogs",
-   "elo": 1442,
-   "g": 0,
-   "p": 1
   },
   {
    "equipo": "Lehigh Mountain Hawks",
@@ -3718,15 +3718,15 @@
    "p": 1
   },
   {
-   "equipo": "Georgia State Panthers",
-   "elo": 1400,
-   "g": 0,
-   "p": 2
-  },
-  {
    "equipo": "Bryant Bulldogs",
    "elo": 1399,
    "g": 1,
+   "p": 3
+  },
+  {
+   "equipo": "Georgia State Panthers",
+   "elo": 1397,
+   "g": 0,
    "p": 3
   },
   {
@@ -3994,16 +3994,16 @@
    "p": 3
   },
   {
-   "equipo": "UL Monroe Warhawks",
+   "equipo": "VMI Keydets",
    "elo": 1324,
    "g": 1,
    "p": 2
   },
   {
-   "equipo": "VMI Keydets",
-   "elo": 1324,
+   "equipo": "UL Monroe Warhawks",
+   "elo": 1323,
    "g": 1,
-   "p": 2
+   "p": 3
   },
   {
    "equipo": "Rider Broncs",

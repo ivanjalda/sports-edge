@@ -1,26 +1,26 @@
 {
- "actualizado": "2026-11-11 04:17 UTC",
+ "actualizado": "2026-11-11 14:57 UTC",
  "liga": "NHL",
  "desde": "20241001",
- "datos_hasta": "2026-11-11T01:00:00Z",
+ "datos_hasta": "2026-11-11T03:00:00Z",
  "total": {
-  "n": 3075,
+  "n": 3076,
   "aciertos": 1732,
-  "acierto": 0.5633,
+  "acierto": 0.5631,
   "ic": [
-   0.5457,
-   0.5807
+   0.5455,
+   0.5805
   ],
   "brier": 0.2423
  },
  "base_local": {
-  "n": 3075,
-  "acierto": 0.5444
+  "n": 3076,
+  "acierto": 0.5442
  },
  "base_balance": {
-  "n": 2724,
-  "acierto": 0.5573,
-  "nuestro": 0.565
+  "n": 2725,
+  "acierto": 0.5574,
+  "nuestro": 0.5648
  },
  "tramos": [
   {
@@ -58,9 +58,9 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 1939,
+   "n": 1940,
    "prometido": 0.5493,
-   "real": 0.5224
+   "real": 0.5222
   },
   {
    "desde": 60,
@@ -113,24 +113,24 @@
    "brier": 0.2497
   },
   "2027": {
-   "n": 283,
+   "n": 284,
    "aciertos": 175,
-   "acierto": 0.6184,
+   "acierto": 0.6162,
    "ic": [
-    0.5605,
-    0.673
+    0.5584,
+    0.6708
    ],
-   "brier": 0.2314
+   "brier": 0.2316
   }
  },
  "fases": {
   "regular": {
-   "n": 2907,
+   "n": 2908,
    "aciertos": 1642,
-   "acierto": 0.5648,
+   "acierto": 0.5646,
    "ic": [
-    0.5467,
-    0.5828
+    0.5466,
+    0.5826
    ],
    "brier": 0.2424
   },
@@ -147,12 +147,12 @@
  },
  "elige": {
   "local": {
-   "n": 2513,
+   "n": 2514,
    "aciertos": 1422,
-   "acierto": 0.5659,
+   "acierto": 0.5656,
    "ic": [
-    0.5464,
-    0.5851
+    0.5462,
+    0.5849
    ],
    "brier": 0.2421
   },
@@ -168,6 +168,15 @@
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-11T03:00:00Z",
+   "local": "Los Angeles Kings",
+   "visitante": "Nashville Predators",
+   "marcador": "0-3",
+   "fav": "Los Angeles Kings",
+   "pp": 0.5497,
+   "ok": false
+  },
   {
    "fecha": "2026-11-11T01:00:00Z",
    "local": "St. Louis Blues",
@@ -383,15 +392,6 @@
    "fav": "Montreal Canadiens",
    "pp": 0.5029,
    "ok": true
-  },
-  {
-   "fecha": "2026-11-07T22:00:00Z",
-   "local": "Seattle Kraken",
-   "visitante": "New York Rangers",
-   "marcador": "3-4",
-   "fav": "Seattle Kraken",
-   "pp": 0.543,
-   "ok": false
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-11 04:16 UTC",
+ "actualizado": "2026-11-11 14:57 UTC",
  "datos_hasta": 20261108,
  "dias_desde_datos": 3,
  "fuentes": {
@@ -39,25 +39,25 @@
    "cuota": {
     "mejor": {
      "1": {
-      "c": 2.36,
+      "c": 2.34,
       "casa": "Betfair"
      },
      "2": {
-      "c": 1.72,
+      "c": 1.73,
       "casa": "Betfair"
      }
     },
     "mercado": {
-     "1": 0.4262,
-     "2": 0.5738
+     "1": 0.4295,
+     "2": 0.5705
     },
     "casas": 19,
     "ev": {
-     "1": 0.0035,
-     "2": -0.0113
+     "1": -0.005,
+     "2": -0.0056
     },
     "valor": [],
-    "actualizado": "2026-11-11 04:16 UTC"
+    "actualizado": "2026-11-11 14:57 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-11 01:56 UTC",
@@ -90,23 +90,23 @@
       "casa": "Betfair"
      },
      "2": {
-      "c": 2.02,
+      "c": 2.04,
       "casa": "Betfair"
      }
     },
     "mercado": {
-     "1": 0.5041,
-     "2": 0.4959
+     "1": 0.5051,
+     "2": 0.4949
     },
     "casas": 19,
     "ev": {
      "1": 0.3958,
-     "2": -0.4259
+     "2": -0.4202
     },
     "valor": [
      "1"
     ],
-    "actualizado": "2026-11-11 04:16 UTC"
+    "actualizado": "2026-11-11 14:57 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-11 01:56 UTC",
@@ -137,27 +137,27 @@
    "cuota": {
     "mejor": {
      "2": {
-      "c": 1.22,
-      "casa": "GTbets"
+      "c": 1.37,
+      "casa": "Betfair"
      },
      "1": {
-      "c": 5.09,
-      "casa": "1xBet"
+      "c": 3.75,
+      "casa": "Winamax (DE)"
      }
     },
     "mercado": {
-     "1": 0.2109,
-     "2": 0.7891
+     "1": 0.2726,
+     "2": 0.7274
     },
-    "casas": 12,
+    "casas": 17,
     "ev": {
-     "1": 0.4512,
-     "2": -0.1278
+     "1": 0.0691,
+     "2": -0.0206
     },
     "valor": [
      "1"
     ],
-    "actualizado": "2026-11-11 04:16 UTC"
+    "actualizado": "2026-11-11 14:57 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-11 04:09 UTC",
@@ -167,10 +167,61 @@
     "1": 5.04,
     "2": 1.22
    }
+  },
+  {
+   "id": "7d0fa680caf6f5718ca51b421754252d",
+   "torneo": "WTA Finals",
+   "tour": "WTA",
+   "sup": "Hard",
+   "fecha": "2026-11-12T21:30:00Z",
+   "j1": "Jessica Pegula",
+   "j2": "Linda Noskova",
+   "id1": "wta:202468",
+   "id2": "wta:222328",
+   "p1": 0.6071,
+   "p2": 0.3929,
+   "n1": 433,
+   "n2": 213,
+   "creada": "2026-11-11 14:57 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "1": {
+      "c": 2.12,
+      "casa": "Betfair"
+     },
+     "2": {
+      "c": 1.89,
+      "casa": "1xBet"
+     }
+    },
+    "mercado": {
+     "1": 0.4855,
+     "2": 0.5145
+    },
+    "casas": 17,
+    "ev": {
+     "1": 0.2871,
+     "2": -0.2574
+    },
+    "valor": [
+     "1"
+    ],
+    "actualizado": "2026-11-11 14:57 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-11 14:57 UTC",
+    "valor": [
+     "1"
+    ],
+    "1": 2.12,
+    "2": 1.89
+   }
   }
  ],
  "directo": {
-  "total": 3,
+  "total": 4,
   "resueltas": 0,
   "acierto": null,
   "brier": null,

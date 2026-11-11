@@ -1,36 +1,36 @@
 {
- "actualizado": "2026-11-11 04:17 UTC",
+ "actualizado": "2026-11-11 14:57 UTC",
  "liga": "NBA",
  "desde": "20241001",
- "datos_hasta": "2026-11-11T01:00:00Z",
+ "datos_hasta": "2026-11-11T04:00:00Z",
  "total": {
-  "n": 2799,
-  "aciertos": 1847,
-  "acierto": 0.6599,
+  "n": 2803,
+  "aciertos": 1850,
+  "acierto": 0.66,
   "ic": [
-   0.6421,
-   0.6772
+   0.6423,
+   0.6773
   ],
   "brier": 0.2147
  },
  "base_local": {
-  "n": 2799,
-  "acierto": 0.5484
+  "n": 2803,
+  "acierto": 0.5483
  },
  "base_balance": {
-  "n": 2512,
-  "acierto": 0.662,
-  "nuestro": 0.6628
+  "n": 2516,
+  "acierto": 0.6622,
+  "nuestro": 0.663
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 2051,
-   "conf": 0.748,
-   "acierto": 0.7006,
+   "n": 2053,
+   "conf": 0.7479,
+   "acierto": 0.7009,
    "ic": [
-    0.6805,
-    0.7201
+    0.6808,
+    0.7203
    ]
   },
   {
@@ -58,16 +58,16 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 748,
-   "prometido": 0.5499,
-   "real": 0.5481
+   "n": 750,
+   "prometido": 0.55,
+   "real": 0.548
   },
   {
    "desde": 60,
    "hasta": 70,
-   "n": 748,
+   "n": 750,
    "prometido": 0.6508,
-   "real": 0.607
+   "real": 0.608
   },
   {
    "desde": 70,
@@ -113,24 +113,24 @@
    "brier": 0.211
   },
   "2027": {
-   "n": 156,
-   "aciertos": 100,
-   "acierto": 0.641,
+   "n": 160,
+   "aciertos": 103,
+   "acierto": 0.6438,
    "ic": [
-    0.5632,
-    0.7121
+    0.567,
+    0.7138
    ],
-   "brier": 0.215
+   "brier": 0.2143
   }
  },
  "fases": {
   "regular": {
-   "n": 2630,
-   "aciertos": 1740,
-   "acierto": 0.6616,
+   "n": 2634,
+   "aciertos": 1743,
+   "acierto": 0.6617,
    "ic": [
-    0.6433,
-    0.6794
+    0.6434,
+    0.6796
    ],
    "brier": 0.2135
   },
@@ -147,27 +147,63 @@
  },
  "elige": {
   "local": {
-   "n": 2027,
-   "aciertos": 1305,
-   "acierto": 0.6438,
+   "n": 2028,
+   "aciertos": 1306,
+   "acierto": 0.644,
    "ic": [
-    0.6227,
-    0.6644
+    0.6229,
+    0.6645
    ],
    "brier": 0.2192
   },
   "visitante": {
-   "n": 772,
-   "aciertos": 542,
-   "acierto": 0.7021,
+   "n": 775,
+   "aciertos": 544,
+   "acierto": 0.7019,
    "ic": [
-    0.6689,
-    0.7333
+    0.6688,
+    0.7331
    ],
-   "brier": 0.2028
+   "brier": 0.2029
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-11T04:00:00Z",
+   "local": "Portland Trail Blazers",
+   "visitante": "Oklahoma City Thunder",
+   "marcador": "123-103",
+   "fav": "Oklahoma City Thunder",
+   "pp": 0.5701,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-11T03:00:00Z",
+   "local": "Sacramento Kings",
+   "visitante": "Orlando Magic",
+   "marcador": "100-107",
+   "fav": "Orlando Magic",
+   "pp": 0.584,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-11T02:00:00Z",
+   "local": "Utah Jazz",
+   "visitante": "Miami Heat",
+   "marcador": "109-115",
+   "fav": "Miami Heat",
+   "pp": 0.6441,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-11T02:00:00Z",
+   "local": "Phoenix Suns",
+   "visitante": "LA Clippers",
+   "marcador": "133-110",
+   "fav": "Phoenix Suns",
+   "pp": 0.6462,
+   "ok": true
+  },
   {
    "fecha": "2026-11-11T01:00:00Z",
    "local": "Philadelphia 76ers",
@@ -355,42 +391,6 @@
    "marcador": "114-75",
    "fav": "Oklahoma City Thunder",
    "pp": 0.9345,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-08T01:00:00Z",
-   "local": "Cleveland Cavaliers",
-   "visitante": "New York Knicks",
-   "marcador": "97-109",
-   "fav": "New York Knicks",
-   "pp": 0.5076,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-08T00:30:00Z",
-   "local": "Atlanta Hawks",
-   "visitante": "Brooklyn Nets",
-   "marcador": "124-121",
-   "fav": "Atlanta Hawks",
-   "pp": 0.8771,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-07T22:00:00Z",
-   "local": "Indiana Pacers",
-   "visitante": "Denver Nuggets",
-   "marcador": "102-114",
-   "fav": "Denver Nuggets",
-   "pp": 0.7731,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-07T03:00:00Z",
-   "local": "Sacramento Kings",
-   "visitante": "San Antonio Spurs",
-   "marcador": "109-124",
-   "fav": "San Antonio Spurs",
-   "pp": 0.8097,
    "ok": true
   }
  ]
