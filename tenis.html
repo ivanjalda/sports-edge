@@ -111,7 +111,7 @@ es:{nodata:"Sin datos",l1:"← Fútbol",l2:"Guía",l3:"Estadísticas",title:"Ten
  h_live:"Récord en directo",n_live:"Predicciones guardadas antes del partido y que nunca se modifican.",
  l_tot:"Guardadas",l_res:"Resueltas",l_hit:"Acierto",l_brier:"Calibración (Brier)",l_roi:"ROI simulado de valor",l_bets:"apuestas",
  method:"Método: los parámetros (ritmo de aprendizaje, peso de la superficie, mínimo de 10 partidos por jugador) se fijaron antes de ver los resultados y no se han ajustado para mejorar las cifras. No se usan lesiones, cansancio ni cuotas como entrada.",
- foot:"Solo para mayores de 18 años. Los resultados pasados no garantizan resultados futuros. Juega con responsabilidad. Datos históricos: Jeff Sackmann / Tennis Abstract, licencia CC BY-NC-SA 4.0.",
+ foot:"Solo para mayores de 18 años. Los resultados pasados no garantizan resultados futuros. Juega con responsabilidad. Datos de resultados —",
  empty:"Todavía no hay datos. Se generan al ejecutar el motor."},
 en:{nodata:"No data",l1:"← Football",l2:"Guide",l3:"Statistics",title:"Tennis",
  lead:"Win probability from an Elo model (overall and by surface) built on real ATP and WTA results.",
@@ -135,7 +135,7 @@ en:{nodata:"No data",l1:"← Football",l2:"Guide",l3:"Statistics",title:"Tennis"
  h_live:"Live record",n_live:"Predictions saved before the match and never edited.",
  l_tot:"Saved",l_res:"Settled",l_hit:"Hit rate",l_brier:"Calibration (Brier)",l_roi:"Simulated value ROI",l_bets:"bets",
  method:"Method: the parameters (learning rate, surface weight, minimum of 10 matches per player) were fixed before seeing the results and have not been tuned to improve the figures. Injuries, fatigue and odds are not used as inputs.",
- foot:"18+ only. Past results do not guarantee future results. Please gamble responsibly. Historical data: Jeff Sackmann / Tennis Abstract, CC BY-NC-SA 4.0 licence.",
+ foot:"18+ only. Past results do not guarantee future results. Please gamble responsibly. Results data —",
  empty:"No data yet. It is generated when the engine runs."}
 };
 var lang="es", tab="pred";
@@ -246,7 +246,12 @@ function render(){
   document.getElementById("l3").textContent=t("l3");
   document.getElementById("h1").textContent="🎾 "+t("title");
   document.getElementById("lead").textContent=t("lead");
-  document.getElementById("foot").innerHTML=esc(t("foot"))+' <a href="https://github.com/JeffSackmann" target="_blank" rel="noopener">github.com/JeffSackmann</a>';
+  var fu=(D.t&&D.t.fuentes)||(D.b&&D.b.fuentes)||{}, vis={}, fl=[];
+  for(var fk in fu){ var F=fu[fk]; if(!F||!F.url) continue;
+    if(vis[F.url]){ vis[F.url].c.push(fk); continue; }
+    vis[F.url]={F:F,c:[fk]}; fl.push(vis[F.url]); }
+  var fh=fl.map(function(x){ return esc(x.c.join("/"))+': <a href="'+esc(x.F.url)+'" target="_blank" rel="noopener">'+esc(x.F.nombre)+'</a> ('+esc(x.F.licencia)+')'; }).join(' · ');
+  document.getElementById("foot").innerHTML=esc(t("foot"))+(fh?' '+fh:'');
   document.getElementById("t-pred").textContent=t("t_pred");
   document.getElementById("t-stats").textContent=t("t_stats");
   document.getElementById("t-pred").className="tb"+(tab==="pred"?" on":"");
