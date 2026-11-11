@@ -22,7 +22,11 @@ from datetime import datetime, timezone, timedelta
 DATA = "data"
 KEY = os.environ.get("ODDS_API_KEY", "").strip()
 LLAMAR = os.environ.get("ODDS_FETCH", "true").strip().lower() == "true"
-ESPN = "https://site.api.espn.com/apis/site/v2/sports/%s/scoreboard?dates=%s&limit=1000%s"
+ESPN = "https://site.api.espn.com/apis/site/v2/sports/%s/scoreboard?%s%s"
+# Formas de pedir los datos a ESPN, de la mas rapida a la mas lenta. Se usa la primera que funcione.
+FORMAS = [("rango", "dates={a}-{b}&limit=1000"), ("rango", "dates={a}-{b}&limit=300"), ("rango", "dates={a}-{b}"),
+          ("dia", "dates={a}&limit=300"), ("dia", "dates={a}")]
+_forma = {}
 ODDS = "https://api.the-odds-api.com/v4/sports"
 UA = "Mozilla/5.0 (compatible; sports-edge/1.0; +https://ivanjalda.github.io/sports-edge/)"
 
@@ -40,19 +44,24 @@ BALONCESTO = {"k": 20.0, "hca": 100.0, "revertir": 0.75, "mov": "nba"}
 HOCKEY = {"k": 6.0, "hca": 50.0, "revertir": 0.70, "mov": "nhl"}
 LIGAS = {
     "nba": dict(BALONCESTO, nombre="NBA", fuente="espn", ruta="basketball/nba", extra="",
-                odds="basketball_nba", inicio="20221001", eval="20241001", min_eq=20, max_dias=10),
+                odds="basketball_nba", inicio="20231001", eval="20241001", min_eq=20, max_dias=10,
+                meses=(10, 11, 12, 1, 2, 3, 4, 5, 6)),
     "euroliga": dict(BALONCESTO, nombre="Euroliga", fuente="euro", comp="E",
                      odds="basketball_euroleague", inicio="2022", eval="20241001", min_eq=5, max_dias=21),
     "eurocup": dict(BALONCESTO, nombre="Eurocup", fuente="euro", comp="U",
                     odds=None, inicio="2022", eval="20241001", min_eq=5, max_dias=21),
     "ncaab": dict(BALONCESTO, nombre="NCAA", fuente="espn", ruta="basketball/mens-college-basketball",
-                  extra="&groups=50", odds=None, inicio="20231101", eval="20241101", min_eq=10, max_dias=10),
+                  extra="&groups=50", odds=None, inicio="20231101", eval="20241101", min_eq=10, max_dias=10,
+                  meses=(11, 12, 1, 2, 3, 4)),
     "wnba": dict(BALONCESTO, nombre="WNBA", fuente="espn", ruta="basketball/wnba", extra="",
-                 odds=None, inicio="20220501", eval="20240501", min_eq=20, max_dias=10),
+                 odds=None, inicio="20230501", eval="20240501", min_eq=20, max_dias=10,
+                 meses=(5, 6, 7, 8, 9, 10)),
     "nhl": dict(HOCKEY, nombre="NHL", fuente="espn", ruta="hockey/nhl", extra="",
-                odds="icehockey_nhl", inicio="20221001", eval="20241001", min_eq=20, max_dias=10),
+                odds="icehockey_nhl", inicio="20231001", eval="20241001", min_eq=20, max_dias=10,
+                meses=(10, 11, 12, 1, 2, 3, 4, 5, 6)),
     "ncaah": dict(HOCKEY, nombre="NCAA", fuente="espn", ruta="hockey/mens-college-hockey", extra="",
-                  odds=None, inicio="20221001", eval="20241001", min_eq=10, max_dias=12),
+                  odds=None, inicio="20231001", eval="20241001", min_eq=10, max_dias=12,
+                  meses=(10, 11, 12, 1, 2, 3, 4)),
 }
 EURO = "https://api-live.euroleague.net/v2/competitions/%s/seasons/%s%d/games"
 FASE_EURO = {"RS": 2, "PI": 5, "PO": 3, "FF": 3}
@@ -134,14 +143,38 @@ def leer_eventos(datos):
     return out
 
 
-def pedir_rango(ruta, d1, d2, extra=""):
-    datos, _ = get_json(ESPN % (ruta, d1.strftime("%Y%m%d") + "-" + d2.strftime("%Y%m%d"), extra), timeout=20)
-    return leer_eventos(datos)
+def _pedir(ruta, forma, d1, d2, extra, meses):
+    tipo, patron = FORMAS[forma]
+    if tipo == "rango":
+        q = patron.format(a=d1.strftime("%Y%m%d"), b=d2.strftime("%Y%m%d"))
+        datos, _ = get_json(ESPN % (ruta, q, extra), timeout=20)
+        return leer_eventos(datos)
+    out = []
+    d = d1
+    while d <= d2:
+        if not meses or d.month in meses:
+            datos, _ = get_json(ESPN % (ruta, patron.format(a=d.strftime("%Y%m%d")), extra), timeout=20)
+            out.extend(leer_eventos(datos))
+            time.sleep(0.1)
+        d += timedelta(days=1)
+    return out
 
 
-def pedir_dia(ruta, d, extra=""):
-    datos, _ = get_json(ESPN % (ruta, d.strftime("%Y%m%d"), extra))
-    return leer_eventos(datos)
+def pedir_bloque(ruta, d1, d2, extra="", meses=None):
+    """La primera vez prueba las distintas formas hasta encontrar una que ESPN acepte."""
+    if ruta in _forma:
+        return _pedir(ruta, _forma[ruta], d1, d2, extra, meses)
+    ultimo = None
+    for i in range(len(FORMAS)):
+        try:
+            res = _pedir(ruta, i, d1, d2, extra, meses)
+            _forma[ruta] = i
+            print("Forma de lectura de ESPN que funciona: %s (%s)" % (FORMAS[i][0], FORMAS[i][1]))
+            return res
+        except Exception as e:
+            ultimo = e
+            print("  forma %d no aceptada (%s)" % (i + 1, e))
+    raise ultimo
 
 
 def leer_euro(datos, anio):
@@ -188,7 +221,7 @@ def descargar_euro(cfg, primera, ahora):
     return juegos, errores
 
 
-def descargar(ruta, desde, hasta, extra=""):
+def descargar(ruta, desde, hasta, extra="", meses=None):
     """Descarga partidos entre dos fechas en bloques de 7 dias.
     Seguridad: si fallan 3 bloques seguidos o se superan 5 minutos, se para y sigue con lo que tenga."""
     juegos = {}
@@ -204,7 +237,7 @@ def descargar(ruta, desde, hasta, extra=""):
             break
         fin = min(d + timedelta(days=6), hasta)
         try:
-            lista = pedir_rango(ruta, d, fin, extra)
+            lista = pedir_bloque(ruta, d, fin, extra, meses)
             for g in lista:
                 juegos[g["id"]] = g
             seguidos = 0
@@ -510,7 +543,8 @@ def procesar(clave, cfg, ahora, stamp, restantes):
             desde = ahora - timedelta(days=12)
         else:
             desde = datetime.strptime(cfg["inicio"], "%Y%m%d").replace(tzinfo=timezone.utc)
-        nuevos, errores, llegado = descargar(cfg["ruta"], desde, ahora + timedelta(days=3), cfg.get("extra", ""))
+        nuevos, errores, llegado = descargar(cfg["ruta"], desde, ahora + timedelta(days=3), cfg.get("extra", ""),
+                                             cfg.get("meses"))
         if llegado:
             cache["historico_hasta"] = max(cache.get("historico_hasta") or "", llegado.strftime("%Y-%m-%d"))
         origen = "ESPN"
