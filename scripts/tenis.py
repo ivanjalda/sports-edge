@@ -9,7 +9,7 @@ import math
 import os
 import re
 import sys
-import unicodedata 
+import unicodedata
 import tenis_fuente
 import urllib.error
 import urllib.request
@@ -511,7 +511,8 @@ def main():
         print("Aviso: los resultados llevan %d dias sin actualizarse. No se publican predicciones nuevas." % dias)
         sin_datos, torneos, consultado = [], None, False
     else:
-        sin_datos, torneos, consultado = captar(elo, idx, lista, ahora, stamp)    liq = liquidar(lista, rows, ahora)
+        sin_datos, torneos, consultado = captar(elo, idx, lista, ahora, stamp)
+    liq = liquidar(lista, rows, ahora)
     if liq:
         print("Resultados de tenis anotados: %d" % liq)
     hist["predicciones"] = lista
