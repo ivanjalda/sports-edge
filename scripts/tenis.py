@@ -9,7 +9,8 @@ import math
 import os
 import re
 import sys
-import unicodedata
+import unicodedata 
+import tenis_fuente
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone, timedelta
@@ -477,7 +478,7 @@ def main():
     rows = []
     for tour in ("atp", "wta"):
         for a in ANIOS:
-            txt = descargar(tour, a)
+            txt = tenis_fuente.descargar(tour, a)
             if txt:
                 rows.extend(parsear(txt, tour))
     print("Partidos de tenis cargados: %d" % len(rows))
@@ -506,8 +507,11 @@ def main():
     hist = leer_json("tenis_historial.json", {"predicciones": []})
     lista = hist.get("predicciones", [])
     idx = indexar(elo)
-    sin_datos, torneos, consultado = captar(elo, idx, lista, ahora, stamp)
-    liq = liquidar(lista, rows, ahora)
+    if dias > 60:
+        print("Aviso: los resultados llevan %d dias sin actualizarse. No se publican predicciones nuevas." % dias)
+        sin_datos, torneos, consultado = [], None, False
+    else:
+        sin_datos, torneos, consultado = captar(elo, idx, lista, ahora, stamp)    liq = liquidar(lista, rows, ahora)
     if liq:
         print("Resultados de tenis anotados: %d" % liq)
     hist["predicciones"] = lista
