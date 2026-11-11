@@ -151,7 +151,7 @@ try{
 var D={bt:null,st:null,va:null};
 
 function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
-function go(s,x){ if(s==="tenis"){ location.href="tenis.html#stats"; return; } sport=s; sec=x||"resumen"; try{ location.hash=s+"-"+sec; }catch(e){} render(); }
+function go(s,x){ if(s==="tenis"){ location.href="tenis.html#stats"; return; } if(s==="baloncesto"){ location.href="equipos.html?liga=nba#stats"; return; } if(s==="hockey"){ location.href="equipos.html?liga=nhl#stats"; return; } sport=s; sec=x||"resumen"; try{ location.hash=s+"-"+sec; }catch(e){} render(); }
 function setEx(l){ exLiga=l; render(); }
 function t(k){ return T[lang][k]; }
 function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
