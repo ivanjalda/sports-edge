@@ -1,0 +1,397 @@
+{
+ "actualizado": "2026-11-11 04:09 UTC",
+ "liga": "Euroliga",
+ "desde": "20241001",
+ "datos_hasta": "2026-11-06T19:45:00Z",
+ "total": {
+  "n": 832,
+  "aciertos": 530,
+  "acierto": 0.637,
+  "ic": [
+   0.6038,
+   0.669
+  ],
+  "brier": 0.2204
+ },
+ "base_local": {
+  "n": 832,
+  "acierto": 0.6154
+ },
+ "base_balance": {
+  "n": 619,
+  "acierto": 0.5945,
+  "nuestro": 0.6559
+ },
+ "tramos": [
+  {
+   "min": 0.6,
+   "n": 560,
+   "conf": 0.7057,
+   "acierto": 0.6893,
+   "ic": [
+    0.6498,
+    0.7262
+   ]
+  },
+  {
+   "min": 0.7,
+   "n": 280,
+   "conf": 0.7648,
+   "acierto": 0.7643,
+   "ic": [
+    0.7112,
+    0.8102
+   ]
+  },
+  {
+   "min": 0.8,
+   "n": 57,
+   "conf": 0.8416,
+   "acierto": 0.9298,
+   "ic": [
+    0.833,
+    0.9724
+   ]
+  }
+ ],
+ "calibracion": [
+  {
+   "desde": 50,
+   "hasta": 60,
+   "n": 272,
+   "prometido": 0.5498,
+   "real": 0.5294
+  },
+  {
+   "desde": 60,
+   "hasta": 70,
+   "n": 280,
+   "prometido": 0.6465,
+   "real": 0.6143
+  },
+  {
+   "desde": 70,
+   "hasta": 80,
+   "n": 223,
+   "prometido": 0.7452,
+   "real": 0.722
+  },
+  {
+   "desde": 80,
+   "hasta": 90,
+   "n": 55,
+   "prometido": 0.8389,
+   "real": 0.9273
+  },
+  {
+   "desde": 90,
+   "hasta": 100,
+   "n": 2,
+   "prometido": 0.9181,
+   "real": 1.0
+  }
+ ],
+ "temporadas": {
+  "2025": {
+   "n": 330,
+   "aciertos": 212,
+   "acierto": 0.6424,
+   "ic": [
+    0.5893,
+    0.6922
+   ],
+   "brier": 0.2164
+  },
+  "2026": {
+   "n": 402,
+   "aciertos": 259,
+   "acierto": 0.6443,
+   "ic": [
+    0.5963,
+    0.6895
+   ],
+   "brier": 0.2203
+  },
+  "2027": {
+   "n": 100,
+   "aciertos": 59,
+   "acierto": 0.59,
+   "ic": [
+    0.492,
+    0.6813
+   ],
+   "brier": 0.2343
+  }
+ },
+ "fases": {
+  "regular": {
+   "n": 792,
+   "aciertos": 502,
+   "acierto": 0.6338,
+   "ic": [
+    0.5997,
+    0.6667
+   ],
+   "brier": 0.2211
+  },
+  "playoff": {
+   "n": 40,
+   "aciertos": 28,
+   "acierto": 0.7,
+   "ic": [
+    0.5457,
+    0.8193
+   ],
+   "brier": 0.2065
+  }
+ },
+ "elige": {
+  "local": {
+   "n": 708,
+   "aciertos": 459,
+   "acierto": 0.6483,
+   "ic": [
+    0.6124,
+    0.6826
+   ],
+   "brier": 0.2188
+  },
+  "visitante": {
+   "n": 124,
+   "aciertos": 71,
+   "acierto": 0.5726,
+   "ic": [
+    0.4846,
+    0.6562
+   ],
+   "brier": 0.23
+  }
+ },
+ "ejemplos": [
+  {
+   "fecha": "2026-11-06T19:45:00Z",
+   "local": "Partizan Mozzart Bet Belgrade",
+   "visitante": "Maccabi Rapyd Tel Aviv",
+   "marcador": "88-67",
+   "fav": "Partizan Mozzart Bet Belgrade",
+   "pp": 0.6893,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-06T19:30:00Z",
+   "local": "Virtus Bologna",
+   "visitante": "Dubai Basketball",
+   "marcador": "75-93",
+   "fav": "Dubai Basketball",
+   "pp": 0.5158,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-06T19:15:00Z",
+   "local": "Olympiacos Piraeus",
+   "visitante": "Crvena Zvezda Meridianbet Belgrade",
+   "marcador": "57-62",
+   "fav": "Olympiacos Piraeus",
+   "pp": 0.7875,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-06T17:00:00Z",
+   "local": "Besiktas Istanbul",
+   "visitante": "Zalgiris Kaunas",
+   "marcador": "67-83",
+   "fav": "Besiktas Istanbul",
+   "pp": 0.5768,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-05T19:30:00Z",
+   "local": "Armani Olimpia Milan",
+   "visitante": "Valencia Basket",
+   "marcador": "73-84",
+   "fav": "Valencia Basket",
+   "pp": 0.5649,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-05T19:00:00Z",
+   "local": "LDLC ASVEL Villeurbanne",
+   "visitante": "FC Bayern Munich",
+   "marcador": "95-99",
+   "fav": "LDLC ASVEL Villeurbanne",
+   "pp": 0.5696,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-05T18:45:00Z",
+   "local": "Hapoel IBI Tel Aviv",
+   "visitante": "FC Barcelona",
+   "marcador": "90-93",
+   "fav": "Hapoel IBI Tel Aviv",
+   "pp": 0.6496,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-05T18:00:00Z",
+   "local": "Fenerbahce Tarfin Istanbul",
+   "visitante": "Kosner Baskonia Vitoria-Gasteiz",
+   "marcador": "84-65",
+   "fav": "Fenerbahce Tarfin Istanbul",
+   "pp": 0.802,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-05T17:15:00Z",
+   "local": "Anadolu Efes Istanbul",
+   "visitante": "Paris Basketball",
+   "marcador": "90-95",
+   "fav": "Anadolu Efes Istanbul",
+   "pp": 0.6674,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-04T19:45:00Z",
+   "local": "Real Madrid",
+   "visitante": "Panathinaikos AKTOR Athens",
+   "marcador": "112-115",
+   "fav": "Real Madrid",
+   "pp": 0.715,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-30T19:30:00Z",
+   "local": "FC Barcelona",
+   "visitante": "Valencia Basket",
+   "marcador": "98-94",
+   "fav": "FC Barcelona",
+   "pp": 0.573,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-30T19:30:00Z",
+   "local": "Virtus Bologna",
+   "visitante": "Besiktas Istanbul",
+   "marcador": "101-103",
+   "fav": "Virtus Bologna",
+   "pp": 0.5587,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-30T19:15:00Z",
+   "local": "Olympiacos Piraeus",
+   "visitante": "Armani Olimpia Milan",
+   "marcador": "84-78",
+   "fav": "Olympiacos Piraeus",
+   "pp": 0.8753,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-30T19:00:00Z",
+   "local": "LDLC ASVEL Villeurbanne",
+   "visitante": "Kosner Baskonia Vitoria-Gasteiz",
+   "marcador": "94-79",
+   "fav": "LDLC ASVEL Villeurbanne",
+   "pp": 0.6116,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-30T18:00:00Z",
+   "local": "Zalgiris Kaunas",
+   "visitante": "Partizan Mozzart Bet Belgrade",
+   "marcador": "87-80",
+   "fav": "Zalgiris Kaunas",
+   "pp": 0.7111,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-30T17:30:00Z",
+   "local": "Anadolu Efes Istanbul",
+   "visitante": "Panathinaikos AKTOR Athens",
+   "marcador": "83-68",
+   "fav": "Panathinaikos AKTOR Athens",
+   "pp": 0.5037,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-30T16:00:00Z",
+   "local": "Dubai Basketball",
+   "visitante": "Hapoel IBI Tel Aviv",
+   "marcador": "97-83",
+   "fav": "Dubai Basketball",
+   "pp": 0.5867,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-29T19:45:00Z",
+   "local": "Real Madrid",
+   "visitante": "Fenerbahce Tarfin Istanbul",
+   "marcador": "95-76",
+   "fav": "Real Madrid",
+   "pp": 0.74,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-29T19:05:00Z",
+   "local": "Maccabi Rapyd Tel Aviv",
+   "visitante": "Paris Basketball",
+   "marcador": "94-99",
+   "fav": "Maccabi Rapyd Tel Aviv",
+   "pp": 0.618,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-29T19:00:00Z",
+   "local": "Crvena Zvezda Meridianbet Belgrade",
+   "visitante": "FC Bayern Munich",
+   "marcador": "103-73",
+   "fav": "Crvena Zvezda Meridianbet Belgrade",
+   "pp": 0.7559,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-28T19:30:00Z",
+   "local": "Virtus Bologna",
+   "visitante": "Zalgiris Kaunas",
+   "marcador": "74-91",
+   "fav": "Virtus Bologna",
+   "pp": 0.5368,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-28T19:00:00Z",
+   "local": "LDLC ASVEL Villeurbanne",
+   "visitante": "Partizan Mozzart Bet Belgrade",
+   "marcador": "82-75",
+   "fav": "Partizan Mozzart Bet Belgrade",
+   "pp": 0.5286,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-28T18:00:00Z",
+   "local": "Hapoel IBI Tel Aviv",
+   "visitante": "Anadolu Efes Istanbul",
+   "marcador": "118-88",
+   "fav": "Hapoel IBI Tel Aviv",
+   "pp": 0.7187,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-28T17:30:00Z",
+   "local": "Besiktas Istanbul",
+   "visitante": "Olympiacos Piraeus",
+   "marcador": "73-81",
+   "fav": "Olympiacos Piraeus",
+   "pp": 0.6102,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-27T20:00:00Z",
+   "local": "Kosner Baskonia Vitoria-Gasteiz",
+   "visitante": "Real Madrid",
+   "marcador": "86-104",
+   "fav": "Real Madrid",
+   "pp": 0.6425,
+   "ok": true
+  }
+ ]
+}

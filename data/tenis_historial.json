@@ -29,8 +29,8 @@
      }
     },
     "mercado": {
-     "1": 0.427,
-     "2": 0.573
+     "1": 0.4262,
+     "2": 0.5738
     },
     "casas": 19,
     "ev": {
@@ -38,7 +38,7 @@
      "2": -0.0113
     },
     "valor": [],
-    "actualizado": "2026-11-11 03:15 UTC"
+    "actualizado": "2026-11-11 04:09 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-11 01:56 UTC",
@@ -87,7 +87,7 @@
     "valor": [
      "1"
     ],
-    "actualizado": "2026-11-11 03:15 UTC"
+    "actualizado": "2026-11-11 04:09 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-11 01:56 UTC",
@@ -97,7 +97,58 @@
     "1": 1.95,
     "2": 2.02
    }
+  },
+  {
+   "id": "b8a1b5d0077794775db0a2ca6b15baf7",
+   "torneo": "WTA Finals",
+   "tour": "WTA",
+   "sup": "Hard",
+   "fecha": "2026-11-12T20:00:00Z",
+   "j1": "Marta Kostyuk",
+   "j2": "Coco Gauff",
+   "id1": "wta:216146",
+   "id2": "wta:221103",
+   "p1": 0.2851,
+   "p2": 0.7149,
+   "n1": 292,
+   "n2": 405,
+   "creada": "2026-11-11 04:09 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "2": {
+      "c": 1.22,
+      "casa": "GTbets"
+     },
+     "1": {
+      "c": 5.04,
+      "casa": "GTbets"
+     }
+    },
+    "mercado": {
+     "1": 0.2123,
+     "2": 0.7877
+    },
+    "casas": 11,
+    "ev": {
+     "1": 0.4369,
+     "2": -0.1278
+    },
+    "valor": [
+     "1"
+    ],
+    "actualizado": "2026-11-11 04:09 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-11 04:09 UTC",
+    "valor": [
+     "1"
+    ],
+    "1": 5.04,
+    "2": 1.22
+   }
   }
  ],
- "actualizado": "2026-11-11 03:15 UTC"
+ "actualizado": "2026-11-11 04:09 UTC"
 }
