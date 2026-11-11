@@ -1,0 +1,397 @@
+{
+ "actualizado": "2026-11-11 04:17 UTC",
+ "liga": "WNBA",
+ "desde": "20240501",
+ "datos_hasta": "2026-11-01T00:00:00Z",
+ "total": {
+  "n": 928,
+  "aciertos": 612,
+  "acierto": 0.6595,
+  "ic": [
+   0.6284,
+   0.6893
+  ],
+  "brier": 0.2159
+ },
+ "base_local": {
+  "n": 928,
+  "acierto": 0.5539
+ },
+ "base_balance": {
+  "n": 799,
+  "acierto": 0.6771,
+  "nuestro": 0.6646
+ },
+ "tramos": [
+  {
+   "min": 0.6,
+   "n": 653,
+   "conf": 0.7318,
+   "acierto": 0.7044,
+   "ic": [
+    0.6683,
+    0.7382
+   ]
+  },
+  {
+   "min": 0.7,
+   "n": 371,
+   "conf": 0.7943,
+   "acierto": 0.7547,
+   "ic": [
+    0.7085,
+    0.7957
+   ]
+  },
+  {
+   "min": 0.8,
+   "n": 164,
+   "conf": 0.8502,
+   "acierto": 0.8171,
+   "ic": [
+    0.7509,
+    0.8688
+   ]
+  }
+ ],
+ "calibracion": [
+  {
+   "desde": 50,
+   "hasta": 60,
+   "n": 275,
+   "prometido": 0.5511,
+   "real": 0.5527
+  },
+  {
+   "desde": 60,
+   "hasta": 70,
+   "n": 282,
+   "prometido": 0.6495,
+   "real": 0.6383
+  },
+  {
+   "desde": 70,
+   "hasta": 80,
+   "n": 207,
+   "prometido": 0.75,
+   "real": 0.7053
+  },
+  {
+   "desde": 80,
+   "hasta": 90,
+   "n": 152,
+   "prometido": 0.8451,
+   "real": 0.8289
+  },
+  {
+   "desde": 90,
+   "hasta": 100,
+   "n": 12,
+   "prometido": 0.916,
+   "real": 0.6667
+  }
+ ],
+ "temporadas": {
+  "2024": {
+   "n": 263,
+   "aciertos": 172,
+   "acierto": 0.654,
+   "ic": [
+    0.5947,
+    0.7089
+   ],
+   "brier": 0.2173
+  },
+  "2025": {
+   "n": 311,
+   "aciertos": 203,
+   "acierto": 0.6527,
+   "ic": [
+    0.5982,
+    0.7035
+   ],
+   "brier": 0.2181
+  },
+  "2026": {
+   "n": 354,
+   "aciertos": 237,
+   "acierto": 0.6695,
+   "ic": [
+    0.6189,
+    0.7164
+   ],
+   "brier": 0.213
+  }
+ },
+ "fases": {
+  "regular": {
+   "n": 859,
+   "aciertos": 564,
+   "acierto": 0.6566,
+   "ic": [
+    0.6242,
+    0.6876
+   ],
+   "brier": 0.2176
+  },
+  "playoff": {
+   "n": 69,
+   "aciertos": 48,
+   "acierto": 0.6957,
+   "ic": [
+    0.5792,
+    0.7915
+   ],
+   "brier": 0.1948
+  }
+ },
+ "elige": {
+  "local": {
+   "n": 702,
+   "aciertos": 450,
+   "acierto": 0.641,
+   "ic": [
+    0.6049,
+    0.6757
+   ],
+   "brier": 0.2178
+  },
+  "visitante": {
+   "n": 226,
+   "aciertos": 162,
+   "acierto": 0.7168,
+   "ic": [
+    0.6548,
+    0.7716
+   ],
+   "brier": 0.2103
+  }
+ },
+ "ejemplos": [
+  {
+   "fecha": "2026-11-01T00:00:00Z",
+   "local": "Golden State Valkyries",
+   "visitante": "Atlanta Dream",
+   "marcador": "68-63",
+   "fav": "Golden State Valkyries",
+   "pp": 0.6095,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-29T16:30:00Z",
+   "local": "Atlanta Dream",
+   "visitante": "Golden State Valkyries",
+   "marcador": "80-69",
+   "fav": "Atlanta Dream",
+   "pp": 0.6513,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-27T00:00:00Z",
+   "local": "Golden State Valkyries",
+   "visitante": "Atlanta Dream",
+   "marcador": "64-55",
+   "fav": "Golden State Valkyries",
+   "pp": 0.6092,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-24T17:00:00Z",
+   "local": "Atlanta Dream",
+   "visitante": "Golden State Valkyries",
+   "marcador": "62-67",
+   "fav": "Atlanta Dream",
+   "pp": 0.6975,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-22T00:00:00Z",
+   "local": "Atlanta Dream",
+   "visitante": "Golden State Valkyries",
+   "marcador": "97-71",
+   "fav": "Atlanta Dream",
+   "pp": 0.6677,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-20T00:00:00Z",
+   "local": "Golden State Valkyries",
+   "visitante": "Atlanta Dream",
+   "marcador": "65-79",
+   "fav": "Golden State Valkyries",
+   "pp": 0.6614,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-17T19:30:00Z",
+   "local": "Golden State Valkyries",
+   "visitante": "Atlanta Dream",
+   "marcador": "68-64",
+   "fav": "Golden State Valkyries",
+   "pp": 0.6509,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-10T01:30:00Z",
+   "local": "Las Vegas Aces",
+   "visitante": "Golden State Valkyries",
+   "marcador": "77-87",
+   "fav": "Las Vegas Aces",
+   "pp": 0.5669,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-09T23:30:00Z",
+   "local": "New York Liberty",
+   "visitante": "Atlanta Dream",
+   "marcador": "83-85",
+   "fav": "New York Liberty",
+   "pp": 0.5323,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-08T01:30:00Z",
+   "local": "Golden State Valkyries",
+   "visitante": "Las Vegas Aces",
+   "marcador": "83-81",
+   "fav": "Golden State Valkyries",
+   "pp": 0.7011,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-07T23:30:00Z",
+   "local": "Atlanta Dream",
+   "visitante": "New York Liberty",
+   "marcador": "101-98",
+   "fav": "Atlanta Dream",
+   "pp": 0.7293,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-04T20:00:00Z",
+   "local": "Golden State Valkyries",
+   "visitante": "Las Vegas Aces",
+   "marcador": "71-60",
+   "fav": "Golden State Valkyries",
+   "pp": 0.6858,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-04T18:00:00Z",
+   "local": "Atlanta Dream",
+   "visitante": "New York Liberty",
+   "marcador": "92-82",
+   "fav": "Atlanta Dream",
+   "pp": 0.7174,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-03T01:00:00Z",
+   "local": "Golden State Valkyries",
+   "visitante": "Dallas Wings",
+   "marcador": "77-73",
+   "fav": "Golden State Valkyries",
+   "pp": 0.768,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-02T01:00:00Z",
+   "local": "Las Vegas Aces",
+   "visitante": "Indiana Fever",
+   "marcador": "94-83",
+   "fav": "Las Vegas Aces",
+   "pp": 0.6443,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-01T01:00:00Z",
+   "local": "Dallas Wings",
+   "visitante": "Golden State Valkyries",
+   "marcador": "108-100",
+   "fav": "Golden State Valkyries",
+   "pp": 0.5402,
+   "ok": false
+  },
+  {
+   "fecha": "2026-09-30T23:00:00Z",
+   "local": "Washington Mystics",
+   "visitante": "Atlanta Dream",
+   "marcador": "75-93",
+   "fav": "Washington Mystics",
+   "pp": 0.5075,
+   "ok": false
+  },
+  {
+   "fecha": "2026-09-30T00:30:00Z",
+   "local": "New York Liberty",
+   "visitante": "Minnesota Lynx",
+   "marcador": "87-71",
+   "fav": "New York Liberty",
+   "pp": 0.5835,
+   "ok": true
+  },
+  {
+   "fecha": "2026-09-29T22:30:00Z",
+   "local": "Indiana Fever",
+   "visitante": "Las Vegas Aces",
+   "marcador": "99-89",
+   "fav": "Indiana Fever",
+   "pp": 0.6156,
+   "ok": true
+  },
+  {
+   "fecha": "2026-09-28T01:00:00Z",
+   "local": "Golden State Valkyries",
+   "visitante": "Dallas Wings",
+   "marcador": "104-80",
+   "fav": "Golden State Valkyries",
+   "pp": 0.7738,
+   "ok": true
+  },
+  {
+   "fecha": "2026-09-27T23:00:00Z",
+   "local": "Atlanta Dream",
+   "visitante": "Washington Mystics",
+   "marcador": "92-77",
+   "fav": "Atlanta Dream",
+   "pp": 0.741,
+   "ok": true
+  },
+  {
+   "fecha": "2026-09-27T20:00:00Z",
+   "local": "Las Vegas Aces",
+   "visitante": "Indiana Fever",
+   "marcador": "102-85",
+   "fav": "Las Vegas Aces",
+   "pp": 0.6381,
+   "ok": true
+  },
+  {
+   "fecha": "2026-09-27T18:00:00Z",
+   "local": "Minnesota Lynx",
+   "visitante": "New York Liberty",
+   "marcador": "75-91",
+   "fav": "Minnesota Lynx",
+   "pp": 0.7504,
+   "ok": false
+  },
+  {
+   "fecha": "2026-09-25T02:00:00Z",
+   "local": "Phoenix Mercury",
+   "visitante": "Las Vegas Aces",
+   "marcador": "82-100",
+   "fav": "Las Vegas Aces",
+   "pp": 0.5992,
+   "ok": true
+  },
+  {
+   "fecha": "2026-09-25T02:00:00Z",
+   "local": "Los Angeles Sparks",
+   "visitante": "Golden State Valkyries",
+   "marcador": "75-76",
+   "fav": "Golden State Valkyries",
+   "pp": 0.6911,
+   "ok": true
+  }
+ ]
+}
