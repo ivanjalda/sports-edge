@@ -45,7 +45,7 @@ jobs:
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           ODDS_FETCH: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '0 7 * * *' }}
-        run: python3 scripts/tenis.py
+        run: GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} python3 scripts/tenis.py
 
       - name: Guardar datos
         run: |
