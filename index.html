@@ -62,6 +62,17 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--blue);
 .how{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
 .hw{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;font-size:13px;color:var(--mut)}
 .hw b{display:block;color:var(--txt);font-size:15px;margin-bottom:4px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:2px 0 10px}
+.chip{flex:0 0 auto;background:var(--card);color:var(--mut);border:1px solid var(--line);padding:6px 12px;border-radius:20px;cursor:pointer;font-size:13px;font-weight:600}
+.chip.on{background:var(--acc);color:var(--bg);border-color:var(--acc)}
+.nw{display:grid;grid-template-columns:110px 1fr;gap:12px;align-items:baseline;padding:10px 14px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--txt)}
+.nw:last-child{border-bottom:0}
+.nw:hover{background:var(--card2)}
+.nw .s{font-size:11px;color:var(--mut);line-height:1.35}
+.nw .s b{display:block;color:var(--blue);font-size:12px}
+.nw .h{font-size:14px;line-height:1.4}
+.more{display:block;margin:10px auto 0;background:transparent;border:1px solid var(--line);color:var(--blue);padding:7px 16px;border-radius:20px;cursor:pointer;font-weight:600;font-size:13px}
+@media(max-width:720px){ .nw{grid-template-columns:1fr;gap:2px} }
 footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top:1px solid var(--line);margin-top:34px}
 @media(max-width:900px){
  .kpis{grid-template-columns:repeat(2,1fr)}
@@ -92,6 +103,10 @@ footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top
   <h2 id="h-val"></h2><div class="note" id="n-val"></div>
   <div id="val-list"></div>
 
+  <h2 id="h-news"></h2><div class="note" id="n-news"></div>
+  <div class="chips" id="news-chips"></div>
+  <div id="news-list"></div>
+
   <h2 id="h-sp"></h2><div class="note" id="n-sp"></div>
   <div class="sports" id="sports"></div>
 
@@ -108,7 +123,7 @@ var T={
 es:{h1:'Predicciones deportivas con <span>datos reales</span>',
  sub:"Calculamos la probabilidad de cada resultado con modelos propios alimentados solo con resultados reales, la comparamos con las cuotas de las casas de apuestas y publicamos cada acierto y cada fallo. Nada se borra ni se modifica.",
  k_comp:"competiciones analizadas",k_bt:"partidos usados para probar el modelo",k_next:"partidos con predicción próximamente",k_upd:"última actualización",
- h_top:"Los favoritos más claros",n_top:"Partidos de las próximas 48 horas en los que nuestro modelo da más probabilidad a un resultado. Pulsa para ver el análisis completo.",
+ h_top:"Los favoritos más claros",n_top:"Los partidos de las próximas 48 horas en los que nuestro modelo da más probabilidad a un resultado, con un máximo de 3 por deporte. Pulsa para ver el análisis completo.",
  h_val:"Apuestas de valor detectadas",n_val:"Partidos donde nuestra probabilidad multiplicada por la mejor cuota supera en un 5 % o más lo apostado. Es experimental: todavía no hay suficientes apuestas resueltas para saber si da beneficio.",
  noval:"Ahora mismo no hay ninguna apuesta de valor en las próximas 48 horas.",notop:"No hay partidos analizados en las próximas 48 horas.",
  h_sp:"Deportes",n_sp:"El acierto de las pruebas se mide sobre partidos ya jugados, prediciendo cada uno solo con la información anterior. La regla sencilla es elegir siempre al de casa (o al mejor clasificado en tenis).",
@@ -120,11 +135,14 @@ es:{h1:'Predicciones deportivas con <span>datos reales</span>',
  hw3:"Comparado con el mercado",hw3t:"Mostramos la mejor cuota disponible y en qué casa está, y la ventaja frente a nuestra probabilidad.",
  pick:"Pronóstico",vpick:"Valor en",vb:"VALOR",draw:"Empate",best:"mejor cuota",at:"en",nodata:"Sin datos",today:"Hoy",tomorrow:"Mañana",
  old:"Datos del tenis con más de 30 días.",
+ h_news:"Noticias de deportes",n_news:"Titulares de los principales medios deportivos, actualizados automáticamente cada día. Pulsa para leer la noticia completa en la web del medio.",
+ nonews:"Todavía no hay noticias. Se cargan con la próxima actualización del motor.",
+ n_all:"Todas",n_futbol:"Fútbol",n_tenis:"Tenis",n_baloncesto:"Baloncesto",n_hockey:"Hockey",n_general:"Otros deportes",more:"Ver más noticias",ago_h:"hace %d h",ago_m:"hace %d min",
  foot:"Solo para mayores de 18 años. Las probabilidades son estimaciones estadísticas y no garantizan resultados. Juega con responsabilidad."},
 en:{h1:'Sports predictions built on <span>real data</span>',
  sub:"We calculate the probability of every outcome with our own models fed only with real results, compare it with the bookmakers' odds and publish every hit and every miss. Nothing is deleted or edited.",
  k_comp:"competitions analysed",k_bt:"games used to test the model",k_next:"games with an upcoming prediction",k_upd:"last update",
- h_top:"The clearest favourites",n_top:"Games in the next 48 hours where our model gives the highest probability to one outcome. Tap to see the full analysis.",
+ h_top:"The clearest favourites",n_top:"Games in the next 48 hours where our model gives the highest probability to one outcome, up to 3 per sport. Tap to see the full analysis.",
  h_val:"Value bets detected",n_val:"Games where our probability times the best odds beats the stake by 5% or more. Experimental: there are not yet enough settled bets to know whether it makes a profit.",
  noval:"There are no value bets in the next 48 hours right now.",notop:"No analysed games in the next 48 hours.",
  h_sp:"Sports",n_sp:"Test accuracy is measured on games already played, predicting each one only with earlier information. The simple rule is always picking the home side (or the higher-ranked player in tennis).",
@@ -136,10 +154,13 @@ en:{h1:'Sports predictions built on <span>real data</span>',
  hw3:"Compared with the market",hw3t:"We show the best available odds, which bookmaker has them and the edge versus our probability.",
  pick:"Pick",vpick:"Value on",vb:"VALUE",draw:"Draw",best:"best odds",at:"at",nodata:"No data",today:"Today",tomorrow:"Tomorrow",
  old:"Tennis data older than 30 days.",
+ h_news:"Sports news",n_news:"Headlines from leading sports media, updated automatically every day. Tap to read the full story on the publisher's site.",
+ nonews:"No news yet. It loads with the next engine update.",
+ n_all:"All",n_futbol:"Football",n_tenis:"Tennis",n_baloncesto:"Basketball",n_hockey:"Hockey",n_general:"Other sports",more:"More news",ago_h:"%dh ago",ago_m:"%d min ago",
  foot:"18+ only. Probabilities are statistical estimates and do not guarantee results. Please gamble responsibly."}
 };
 var DEP={
- futbol:{es:"Fútbol",en:"Football",ic:"⚽",url:"futbol.html",cm_es:"Premier League · LaLiga · Serie A · Bundesliga · Ligue 1",cm_en:"Premier League · LaLiga · Serie A · Bundesliga · Ligue 1",n:5},
+ futbol:{es:"Fútbol",en:"Football",ic:"⚽",url:"futbol.html",cm_es:"Premier · LaLiga · Serie A · Bundesliga · Ligue 1 · Portugal · Países Bajos · Championship · Brasil",cm_en:"Premier · LaLiga · Serie A · Bundesliga · Ligue 1 · Portugal · Netherlands · Championship · Brazil",n:9},
  tenis:{es:"Tenis",en:"Tennis",ic:"🎾",url:"tenis.html",cm_es:"ATP · WTA (Grand Slam, 1000 y 500)",cm_en:"ATP · WTA (Grand Slams, 1000s and 500s)",n:2},
  baloncesto:{es:"Baloncesto",en:"Basketball",ic:"🏀",url:"equipos.html?dep=baloncesto",cm_es:"NBA · Euroliga · Eurocup · NCAA · WNBA",cm_en:"NBA · EuroLeague · EuroCup · NCAA · WNBA",n:5,ligas:["nba","euroliga","eurocup","ncaab","wnba"]},
  hockey:{es:"Hockey",en:"Hockey",ic:"🏒",url:"equipos.html?dep=hockey",cm_es:"NHL · NCAA",cm_en:"NHL · NCAA",n:2,ligas:["nhl","ncaah"]}
@@ -244,7 +265,7 @@ function render(){
   document.documentElement.lang=lang;
   if(window.navRender) navRender(lang,"home");
   document.getElementById("h1").innerHTML=t("h1");
-  ["sub","h-top","n-top","h-val","n-val","h-sp","n-sp","h-soon","n-soon","h-how"].forEach(function(id){
+  ["sub","h-top","n-top","h-val","n-val","h-news","n-news","h-sp","n-sp","h-soon","n-soon","h-how"].forEach(function(id){
     document.getElementById(id).textContent=t(id.replace("-","_")); });
   document.getElementById("foot").textContent=t("foot");
   var deps=["futbol","tenis","baloncesto","hockey"], R={}, totN=0, totUp=0, comp=0;
@@ -257,10 +278,13 @@ function render(){
     +'<div class="kpi"><b style="font-size:16px;padding:5px 0">'+esc(upd||t("nodata"))+'</b><span>'+t("k_upd")+'</span></div>';
   tickClocks();
   var px=proximos();
-  var top=px.slice().sort(function(a,b){ return b.prob-a.prob; }).slice(0,10);
+  var cnt={}, top=[];
+  px.slice().sort(function(a,b){ return b.prob-a.prob; }).forEach(function(x){ cnt[x.dep]=(cnt[x.dep]||0)+1; if(cnt[x.dep]<=3) top.push(x); });
+  top=top.slice(0,12);
   document.getElementById("top-list").innerHTML= top.length ? '<div class="list">'+top.map(function(x){return fila(x,false);}).join("")+'</div>' : '<div class="empty">'+t("notop")+'</div>';
   var val=px.filter(function(x){ return x.valor; }).sort(function(a,b){ return a.fecha<b.fecha?-1:1; }).slice(0,10);
   document.getElementById("val-list").innerHTML= val.length ? '<div class="list">'+val.map(function(x){return fila(x,true);}).join("")+'</div>' : '<div class="empty">'+t("noval")+'</div>';
+  renderNews();
   var sp="";
   deps.forEach(function(d){ var r=R[d], g=DEP[d];
     sp+='<a class="spc" href="'+g.url+'"><div class="top"><div><div class="nm">'+g.ic+' '+esc(g[lang])+'</div><div class="cm">'+esc(g["cm_"+lang])+'</div></div>'
@@ -274,9 +298,28 @@ function render(){
   document.getElementById("soon").innerHTML=SOON.map(function(s){ return '<div class="sn"><b>'+s.ic+'</b>'+esc(s[lang])+'</div>'; }).join("");
   document.getElementById("how").innerHTML=[1,2,3].map(function(i){ return '<div class="hw"><b>'+t("hw"+i)+'</b>'+t("hw"+i+"t")+'</div>'; }).join("");
 }
+var newsDep="todas", newsMax=12;
+function hace(iso){ var m=Math.round((Date.now()-Date.parse(iso))/60000); if(!(m>=0)) return "";
+  return m<60 ? t("ago_m").replace("%d",m) : t("ago_h").replace("%d",Math.round(m/60)); }
+function setNews(d){ newsDep=d; newsMax=12; renderNews(); }
+function moreNews(){ newsMax+=18; renderNews(); }
+function renderNews(){
+  var all=(D.news&&D.news[lang])||[], cats=["todas","futbol","tenis","baloncesto","hockey","general"], ch="";
+  cats.forEach(function(c){ var n=c==="todas"?all.length:all.filter(function(x){return x.dep===c;}).length;
+    if(c!=="todas"&&!n) return;
+    ch+='<button class="chip'+(newsDep===c?' on':'')+'" onclick="setNews(\''+c+'\')">'+(c==="todas"?t("n_all"):t("n_"+c))+' ('+n+')</button>'; });
+  document.getElementById("news-chips").innerHTML=all.length?ch:"";
+  var l=newsDep==="todas"?all:all.filter(function(x){return x.dep===newsDep;});
+  if(!l.length){ document.getElementById("news-list").innerHTML='<div class="empty">'+t("nonews")+'</div>'; return; }
+  var o='<div class="list">';
+  l.slice(0,newsMax).forEach(function(x){ if(!/^https?:\/\//.test(x.url)) return;
+    o+='<a class="nw" href="'+esc(x.url)+'" target="_blank" rel="noopener nofollow"><span class="s"><b>'+esc(x.fuente)+'</b>'+esc(hace(x.fecha))+'</span><span class="h">'+esc(x.t)+'</span></a>'; });
+  o+='</div>'+(l.length>newsMax?'<button class="more" onclick="moreNews()">'+t("more")+'</button>':'');
+  document.getElementById("news-list").innerHTML=o;
+}
 function load(f,k){ return fetch("data/"+f+"?v="+Date.now()).then(function(r){ if(!r.ok) throw 0; return r.json(); }).then(function(j){ D[k]=j; }).catch(function(){ D[k]=null; }); }
 var cargas=[load("predicciones.json","f_pred"),load("estadisticas.json","f_stats"),load("backtest.json","f_bt"),load("cuotas.json","f_cuotas"),
-            load("tenis.json","t"),load("tenis_backtest.json","t_bt")];
+            load("tenis.json","t"),load("tenis_backtest.json","t_bt"),load("noticias.json","news")];
 ["nba","euroliga","eurocup","ncaab","wnba","nhl","ncaah"].forEach(function(lg){
   cargas.push(load("equipos_"+lg+".json","e_"+lg)); cargas.push(load("equipos_"+lg+"_backtest.json","b_"+lg)); });
 render();
