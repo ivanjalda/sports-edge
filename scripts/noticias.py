@@ -26,12 +26,9 @@ FUENTES = {
                 "https://feeds.as.com/mrss-s/pages/as/site/as.com/portada"]),
         ("Marca", ["https://e00-marca.uecdn.es/rss/portada.xml"]),
         ("Mundo Deportivo", ["https://www.mundodeportivo.com/rss/home.xml"]),
-        ("Sport", ["https://www.sport.es/es/rss/last-news/news.xml"]),
-        ("ESPN Deportes", ["https://espndeportes.espn.com/rss/news"]),
     ],
     "en": [
         ("BBC Sport", ["https://feeds.bbci.co.uk/sport/rss.xml"]),
-        ("ESPN", ["https://www.espn.com/espn/rss/news"]),
         ("Sky Sports", ["https://www.skysports.com/rss/12040"]),
     ],
 }
