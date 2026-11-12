@@ -72,13 +72,7 @@ footer a{color:var(--blue)}
 </style>
 </head>
 <body>
-<header>
-  <a class="logo" href="index.html">SPORTS<span>EDGE</span></a>
-  <div class="right">
-    <a href="index.html" id="l1"></a><a href="estadisticas.html" id="l3"></a><a href="guia.html" id="l2"></a>
-    <div class="lang"><button id="b-es" onclick="setLang('es')">ES</button><button id="b-en" onclick="setLang('en')">EN</button></div>
-  </div>
-</header>
+<header id="top"></header>
 <main>
   <h1 id="h1"></h1>
   <div class="lead" id="lead"></div>
@@ -87,6 +81,7 @@ footer a{color:var(--blue)}
 </main>
 <footer id="foot"></footer>
 
+<script src="nav.js"></script>
 <script>
 var T={
 es:{nodata:"Sin datos",l1:"← Fútbol",l2:"Guía",l3:"Estadísticas",title:"Tenis",
@@ -238,12 +233,8 @@ function pStats(){
 }
 
 function render(){
+  if(window.navRender) navRender(lang,"tenis");
   document.documentElement.lang=lang;
-  document.getElementById("b-es").className=lang==="es"?"on":"";
-  document.getElementById("b-en").className=lang==="en"?"on":"";
-  document.getElementById("l1").textContent=t("l1");
-  document.getElementById("l2").textContent=t("l2");
-  document.getElementById("l3").textContent=t("l3");
   document.getElementById("h1").textContent="🎾 "+t("title");
   document.getElementById("lead").textContent=t("lead");
   var fu=(D.t&&D.t.fuentes)||(D.b&&D.b.fuentes)||{}, vis={}, fl=[];

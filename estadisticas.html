@@ -66,13 +66,7 @@ footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top
 </style>
 </head>
 <body>
-<header>
-  <a class="logo" href="index.html">SPORTS<span>EDGE</span></a>
-  <div class="right">
-    <a href="index.html" id="l1"></a><a href="guia.html" id="l2"></a>
-    <div class="lang"><button id="b-es" onclick="setLang('es')">ES</button><button id="b-en" onclick="setLang('en')">EN</button></div>
-  </div>
-</header>
+<header id="top"></header>
 <main>
   <h1 id="h1"></h1>
   <div class="lead" id="lead"></div>
@@ -81,13 +75,14 @@ footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top
 </main>
 <footer id="foot"></footer>
 
+<script src="nav.js"></script>
 <script>
 var SPORTS=[
  {id:"futbol",es:"Fútbol",en:"Football",ic:"⚽",on:true},
  {id:"tenis",es:"Tenis",en:"Tennis",ic:"🎾",on:true},
- {id:"baloncesto",es:"Baloncesto",en:"Basketball",ic:"🏀",on:false},
+ {id:"baloncesto",es:"Baloncesto",en:"Basketball",ic:"🏀",on:true},
  {id:"voleibol",es:"Voleibol",en:"Volleyball",ic:"🏐",on:false},
- {id:"hockey",es:"Hockey",en:"Hockey",ic:"🏒",on:false},
+ {id:"hockey",es:"Hockey",en:"Hockey",ic:"🏒",on:true},
  {id:"boxeo",es:"Boxeo",en:"Boxing",ic:"🥊",on:false},
  {id:"mma",es:"MMA",en:"MMA",ic:"🥋",on:false},
  {id:"caballos",es:"Caballos",en:"Horse racing",ic:"🏇",on:false}
@@ -151,7 +146,7 @@ try{
 var D={bt:null,st:null,va:null};
 
 function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
-function go(s,x){ if(s==="tenis"){ location.href="tenis.html#stats"; return; } if(s==="baloncesto"){ location.href="equipos.html?liga=nba#stats"; return; } if(s==="hockey"){ location.href="equipos.html?liga=nhl#stats"; return; } sport=s; sec=x||"resumen"; try{ location.hash=s+"-"+sec; }catch(e){} render(); }
+function go(s,x){ if(s==="tenis"){ location.href="tenis.html#stats"; return; } if(s==="baloncesto"){ location.href="equipos.html?dep=baloncesto#stats"; return; } if(s==="hockey"){ location.href="equipos.html?dep=hockey#stats"; return; } sport=s; sec=x||"resumen"; try{ location.hash=s+"-"+sec; }catch(e){} render(); }
 function setEx(l){ exLiga=l; render(); }
 function t(k){ return T[lang][k]; }
 function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
@@ -234,11 +229,8 @@ function secDirecto(){
 }
 
 function render(){
+  if(window.navRender) navRender(lang,"stats");
   document.documentElement.lang=lang;
-  document.getElementById("b-es").className=lang==="es"?"on":"";
-  document.getElementById("b-en").className=lang==="en"?"on":"";
-  document.getElementById("l1").textContent=t("l1");
-  document.getElementById("l2").textContent=t("l2");
   document.getElementById("h1").textContent=t("title");
   document.getElementById("lead").textContent=t("lead");
   document.getElementById("foot").textContent=t("foot");
