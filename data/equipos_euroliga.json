@@ -1,61 +1,15 @@
 {
- "actualizado": "2026-11-11 14:57 UTC",
+ "actualizado": "2026-11-12 03:18 UTC",
  "liga": "Euroliga",
- "datos_hasta": "2026-11-06T19:45:00Z",
- "dias_desde_datos": 4,
+ "datos_hasta": "2026-11-11T19:45:00Z",
+ "dias_desde_datos": 0,
  "fuente": {
   "nombre": "Euroleague Basketball",
   "url": "https://www.euroleaguebasketball.net"
  },
  "con_cuotas": true,
- "proximo": "2026-11-11T19:45:00Z",
+ "proximo": "2026-11-12T19:05:00Z",
  "predicciones": [
-  {
-   "id": "E2026_102",
-   "fecha": "2026-11-11T19:45:00Z",
-   "local": "Partizan Mozzart Bet Belgrade",
-   "visitante": "Kosner Baskonia Vitoria-Gasteiz",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7608,
-   "pv": 0.2392,
-   "elo_l": 1491,
-   "elo_v": 1390,
-   "bal_l": [
-    5,
-    5
-   ],
-   "bal_v": [
-    1,
-    9
-   ],
-   "creada": "2026-11-11 04:09 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "E2026_101",
-   "fecha": "2026-11-11T19:45:00Z",
-   "local": "Paris Basketball",
-   "visitante": "Fenerbahce Tarfin Istanbul",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5644,
-   "pv": 0.4356,
-   "elo_l": 1488,
-   "elo_v": 1543,
-   "bal_l": [
-    4,
-    6
-   ],
-   "bal_v": [
-    7,
-    3
-   ],
-   "creada": "2026-11-11 04:09 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "E2026_103",
    "fecha": "2026-11-12T19:05:00Z",
@@ -203,16 +157,135 @@
    "creada": "2026-11-11 04:09 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "E2026_109",
+   "fecha": "2026-11-13T17:30:00Z",
+   "local": "Anadolu Efes Istanbul",
+   "visitante": "Virtus Bologna",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7303,
+   "pv": 0.2697,
+   "elo_l": 1488,
+   "elo_v": 1415,
+   "bal_l": [
+    4,
+    6
+   ],
+   "bal_v": [
+    4,
+    6
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_110",
+   "fecha": "2026-11-13T19:15:00Z",
+   "local": "Panathinaikos AKTOR Athens",
+   "visitante": "FC Barcelona",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6698,
+   "pv": 0.3302,
+   "elo_l": 1583,
+   "elo_v": 1560,
+   "bal_l": [
+    8,
+    2
+   ],
+   "bal_v": [
+    7,
+    3
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_108",
+   "fecha": "2026-11-13T19:30:00Z",
+   "local": "LDLC ASVEL Villeurbanne",
+   "visitante": "Besiktas Istanbul",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5041,
+   "pv": 0.4959,
+   "elo_l": 1386,
+   "elo_v": 1483,
+   "bal_l": [
+    4,
+    6
+   ],
+   "bal_v": [
+    4,
+    6
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "recientes": [],
+ "recientes": [
+  {
+   "id": "E2026_102",
+   "fecha": "2026-11-11T19:45:00Z",
+   "local": "Partizan Mozzart Bet Belgrade",
+   "visitante": "Kosner Baskonia Vitoria-Gasteiz",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7608,
+   "pv": 0.2392,
+   "elo_l": 1491,
+   "elo_v": 1390,
+   "bal_l": [
+    5,
+    5
+   ],
+   "bal_v": [
+    1,
+    9
+   ],
+   "creada": "2026-11-11 04:09 UTC",
+   "resultado": "L",
+   "marcador": "80-66"
+  },
+  {
+   "id": "E2026_101",
+   "fecha": "2026-11-11T19:45:00Z",
+   "local": "Paris Basketball",
+   "visitante": "Fenerbahce Tarfin Istanbul",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5644,
+   "pv": 0.4356,
+   "elo_l": 1488,
+   "elo_v": 1543,
+   "bal_l": [
+    4,
+    6
+   ],
+   "bal_v": [
+    7,
+    3
+   ],
+   "creada": "2026-11-11 04:09 UTC",
+   "resultado": "L",
+   "marcador": "111-109"
+  }
+ ],
  "directo": {
-  "total": 7,
-  "resueltas": 0,
-  "aciertos": 0,
-  "acierto": null,
-  "ic": null,
-  "brier": null,
+  "total": 10,
+  "resueltas": 2,
+  "aciertos": 2,
+  "acierto": 1.0,
+  "ic": [
+   0.3424,
+   1.0
+  ],
+  "brier": 0.1235,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -280,9 +353,9 @@
   },
   {
    "equipo": "Fenerbahce Tarfin Istanbul",
-   "elo": 1543,
+   "elo": 1539,
    "g": 7,
-   "p": 3
+   "p": 4
   },
   {
    "equipo": "AS Monaco",
@@ -297,25 +370,25 @@
    "p": 0
   },
   {
+   "equipo": "Partizan Mozzart Bet Belgrade",
+   "elo": 1496,
+   "g": 6,
+   "p": 5
+  },
+  {
+   "equipo": "Paris Basketball",
+   "elo": 1492,
+   "g": 5,
+   "p": 6
+  },
+  {
    "equipo": "Baskonia Vitoria-Gasteiz",
    "elo": 1491,
    "g": 0,
    "p": 0
   },
   {
-   "equipo": "Partizan Mozzart Bet Belgrade",
-   "elo": 1491,
-   "g": 5,
-   "p": 5
-  },
-  {
    "equipo": "Anadolu Efes Istanbul",
-   "elo": 1488,
-   "g": 4,
-   "p": 6
-  },
-  {
-   "equipo": "Paris Basketball",
    "elo": 1488,
    "g": 4,
    "p": 6
@@ -375,16 +448,16 @@
    "p": 6
   },
   {
-   "equipo": "Kosner Baskonia Vitoria-Gasteiz",
-   "elo": 1390,
-   "g": 1,
-   "p": 9
-  },
-  {
    "equipo": "LDLC ASVEL Villeurbanne",
    "elo": 1386,
    "g": 4,
    "p": 6
+  },
+  {
+   "equipo": "Kosner Baskonia Vitoria-Gasteiz",
+   "elo": 1384,
+   "g": 1,
+   "p": 10
   },
   {
    "equipo": "ALBA Berlin",

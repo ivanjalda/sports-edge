@@ -20,8 +20,8 @@
     7
    ],
    "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "114-101",
    "cuota": {
     "mejor": {
      "L": {
@@ -76,8 +76,8 @@
     6
    ],
    "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "107-115",
    "cuota": {
     "mejor": {
      "V": {
@@ -132,8 +132,8 @@
     2
    ],
    "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "93-98",
    "cuota": {
     "mejor": {
      "V": {
@@ -651,7 +651,191 @@
    "creada": "2026-11-11 04:17 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401909296",
+   "fecha": "2026-11-14T00:00:00Z",
+   "local": "Indiana Pacers",
+   "visitante": "New York Knicks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.2113,
+   "pv": 0.7887,
+   "elo_l": 1362,
+   "elo_v": 1691,
+   "bal_l": [
+    4,
+    8
+   ],
+   "bal_v": [
+    6,
+    5
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909297",
+   "fecha": "2026-11-14T00:00:00Z",
+   "local": "Orlando Magic",
+   "visitante": "Milwaukee Bucks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8314,
+   "pv": 0.1686,
+   "elo_l": 1498,
+   "elo_v": 1321,
+   "bal_l": [
+    3,
+    7
+   ],
+   "bal_v": [
+    1,
+    10
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909298",
+   "fecha": "2026-11-14T01:00:00Z",
+   "local": "Miami Heat",
+   "visitante": "Cleveland Cavaliers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.52,
+   "pv": 0.48,
+   "elo_l": 1499,
+   "elo_v": 1585,
+   "bal_l": [
+    5,
+    6
+   ],
+   "bal_v": [
+    6,
+    6
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909299",
+   "fecha": "2026-11-14T01:00:00Z",
+   "local": "Chicago Bulls",
+   "visitante": "Atlanta Hawks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.374,
+   "pv": 0.626,
+   "elo_l": 1352,
+   "elo_v": 1542,
+   "bal_l": [
+    1,
+    8
+   ],
+   "bal_v": [
+    7,
+    5
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909300",
+   "fecha": "2026-11-14T01:00:00Z",
+   "local": "New Orleans Pelicans",
+   "visitante": "Memphis Grizzlies",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6138,
+   "pv": 0.3862,
+   "elo_l": 1409,
+   "elo_v": 1429,
+   "bal_l": [
+    4,
+    7
+   ],
+   "bal_v": [
+    7,
+    3
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909301",
+   "fecha": "2026-11-14T01:30:00Z",
+   "local": "Houston Rockets",
+   "visitante": "Utah Jazz",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.9234,
+   "pv": 0.0766,
+   "elo_l": 1618,
+   "elo_v": 1286,
+   "bal_l": [
+    8,
+    3
+   ],
+   "bal_v": [
+    1,
+    10
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909302",
+   "fecha": "2026-11-14T02:30:00Z",
+   "local": "San Antonio Spurs",
+   "visitante": "Golden State Warriors",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8431,
+   "pv": 0.1569,
+   "elo_l": 1727,
+   "elo_v": 1534,
+   "bal_l": [
+    9,
+    2
+   ],
+   "bal_v": [
+    8,
+    3
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909303",
+   "fecha": "2026-11-14T03:00:00Z",
+   "local": "Sacramento Kings",
+   "visitante": "Portland Trail Blazers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.3125,
+   "pv": 0.6875,
+   "elo_l": 1326,
+   "elo_v": 1563,
+   "bal_l": [
+    1,
+    10
+   ],
+   "bal_v": [
+    7,
+    3
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-11 14:57 UTC"
+ "actualizado": "2026-11-12 03:18 UTC"
 }

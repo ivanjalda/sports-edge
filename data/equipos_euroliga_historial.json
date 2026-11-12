@@ -20,8 +20,8 @@
     9
    ],
    "creada": "2026-11-11 04:09 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "80-66"
   },
   {
    "id": "E2026_101",
@@ -43,8 +43,8 @@
     3
    ],
    "creada": "2026-11-11 04:09 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "111-109"
   },
   {
    "id": "E2026_103",
@@ -193,7 +193,76 @@
    "creada": "2026-11-11 04:09 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "E2026_109",
+   "fecha": "2026-11-13T17:30:00Z",
+   "local": "Anadolu Efes Istanbul",
+   "visitante": "Virtus Bologna",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7303,
+   "pv": 0.2697,
+   "elo_l": 1488,
+   "elo_v": 1415,
+   "bal_l": [
+    4,
+    6
+   ],
+   "bal_v": [
+    4,
+    6
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_110",
+   "fecha": "2026-11-13T19:15:00Z",
+   "local": "Panathinaikos AKTOR Athens",
+   "visitante": "FC Barcelona",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6698,
+   "pv": 0.3302,
+   "elo_l": 1583,
+   "elo_v": 1560,
+   "bal_l": [
+    8,
+    2
+   ],
+   "bal_v": [
+    7,
+    3
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_108",
+   "fecha": "2026-11-13T19:30:00Z",
+   "local": "LDLC ASVEL Villeurbanne",
+   "visitante": "Besiktas Istanbul",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5041,
+   "pv": 0.4959,
+   "elo_l": 1386,
+   "elo_v": 1483,
+   "bal_l": [
+    4,
+    6
+   ],
+   "bal_v": [
+    4,
+    6
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-11 14:57 UTC"
+ "actualizado": "2026-11-12 03:18 UTC"
 }

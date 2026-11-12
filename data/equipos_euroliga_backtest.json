@@ -1,46 +1,46 @@
 {
- "actualizado": "2026-11-11 14:57 UTC",
+ "actualizado": "2026-11-12 03:18 UTC",
  "liga": "Euroliga",
  "desde": "20241001",
- "datos_hasta": "2026-11-06T19:45:00Z",
+ "datos_hasta": "2026-11-11T19:45:00Z",
  "total": {
-  "n": 832,
-  "aciertos": 530,
-  "acierto": 0.637,
+  "n": 834,
+  "aciertos": 532,
+  "acierto": 0.6379,
   "ic": [
-   0.6038,
-   0.669
+   0.6047,
+   0.6698
   ],
-  "brier": 0.2204
+  "brier": 0.2202
  },
  "base_local": {
-  "n": 832,
-  "acierto": 0.6154
+  "n": 834,
+  "acierto": 0.6163
  },
  "base_balance": {
-  "n": 619,
-  "acierto": 0.5945,
-  "nuestro": 0.6559
+  "n": 621,
+  "acierto": 0.5942,
+  "nuestro": 0.657
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 560,
-   "conf": 0.7057,
-   "acierto": 0.6893,
+   "n": 561,
+   "conf": 0.7058,
+   "acierto": 0.6898,
    "ic": [
-    0.6498,
-    0.7262
+    0.6504,
+    0.7267
    ]
   },
   {
    "min": 0.7,
-   "n": 280,
+   "n": 281,
    "conf": 0.7648,
-   "acierto": 0.7643,
+   "acierto": 0.7651,
    "ic": [
-    0.7112,
-    0.8102
+    0.7122,
+    0.8109
    ]
   },
   {
@@ -58,9 +58,9 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 272,
-   "prometido": 0.5498,
-   "real": 0.5294
+   "n": 273,
+   "prometido": 0.5499,
+   "real": 0.5311
   },
   {
    "desde": 60,
@@ -72,9 +72,9 @@
   {
    "desde": 70,
    "hasta": 80,
-   "n": 223,
+   "n": 224,
    "prometido": 0.7452,
-   "real": 0.722
+   "real": 0.7232
   },
   {
    "desde": 80,
@@ -113,26 +113,26 @@
    "brier": 0.2203
   },
   "2027": {
-   "n": 100,
-   "aciertos": 59,
-   "acierto": 0.59,
+   "n": 102,
+   "aciertos": 61,
+   "acierto": 0.598,
    "ic": [
-    0.492,
-    0.6813
+    0.501,
+    0.688
    ],
-   "brier": 0.2343
+   "brier": 0.2321
   }
  },
  "fases": {
   "regular": {
-   "n": 792,
-   "aciertos": 502,
-   "acierto": 0.6338,
+   "n": 794,
+   "aciertos": 504,
+   "acierto": 0.6348,
    "ic": [
-    0.5997,
-    0.6667
+    0.6007,
+    0.6675
    ],
-   "brier": 0.2211
+   "brier": 0.2209
   },
   "playoff": {
    "n": 40,
@@ -147,14 +147,14 @@
  },
  "elige": {
   "local": {
-   "n": 708,
-   "aciertos": 459,
-   "acierto": 0.6483,
+   "n": 710,
+   "aciertos": 461,
+   "acierto": 0.6493,
    "ic": [
-    0.6124,
-    0.6826
+    0.6135,
+    0.6835
    ],
-   "brier": 0.2188
+   "brier": 0.2185
   },
   "visitante": {
    "n": 124,
@@ -168,6 +168,24 @@
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-11T19:45:00Z",
+   "local": "Paris Basketball",
+   "visitante": "Fenerbahce Tarfin Istanbul",
+   "marcador": "111-109",
+   "fav": "Paris Basketball",
+   "pp": 0.5644,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-11T19:45:00Z",
+   "local": "Partizan Mozzart Bet Belgrade",
+   "visitante": "Kosner Baskonia Vitoria-Gasteiz",
+   "marcador": "80-66",
+   "fav": "Partizan Mozzart Bet Belgrade",
+   "pp": 0.7608,
+   "ok": true
+  },
   {
    "fecha": "2026-11-06T19:45:00Z",
    "local": "Partizan Mozzart Bet Belgrade",
@@ -373,24 +391,6 @@
    "marcador": "118-88",
    "fav": "Hapoel IBI Tel Aviv",
    "pp": 0.7187,
-   "ok": true
-  },
-  {
-   "fecha": "2026-10-28T17:30:00Z",
-   "local": "Besiktas Istanbul",
-   "visitante": "Olympiacos Piraeus",
-   "marcador": "73-81",
-   "fav": "Olympiacos Piraeus",
-   "pp": 0.6102,
-   "ok": true
-  },
-  {
-   "fecha": "2026-10-27T20:00:00Z",
-   "local": "Kosner Baskonia Vitoria-Gasteiz",
-   "visitante": "Real Madrid",
-   "marcador": "86-104",
-   "fav": "Real Madrid",
-   "pp": 0.6425,
    "ok": true
   }
  ]

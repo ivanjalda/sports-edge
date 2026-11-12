@@ -1,26 +1,26 @@
 {
- "actualizado": "2026-11-11 14:57 UTC",
+ "actualizado": "2026-11-12 03:18 UTC",
  "liga": "NHL",
  "desde": "20241001",
- "datos_hasta": "2026-11-11T03:00:00Z",
+ "datos_hasta": "2026-11-12T00:00:00Z",
  "total": {
-  "n": 3076,
+  "n": 3077,
   "aciertos": 1732,
-  "acierto": 0.5631,
+  "acierto": 0.5629,
   "ic": [
-   0.5455,
-   0.5805
+   0.5453,
+   0.5803
   ],
   "brier": 0.2423
  },
  "base_local": {
-  "n": 3076,
-  "acierto": 0.5442
+  "n": 3077,
+  "acierto": 0.544
  },
  "base_balance": {
-  "n": 2725,
-  "acierto": 0.5574,
-  "nuestro": 0.5648
+  "n": 2726,
+  "acierto": 0.5576,
+  "nuestro": 0.5646
  },
  "tramos": [
   {
@@ -58,9 +58,9 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 1940,
+   "n": 1941,
    "prometido": 0.5493,
-   "real": 0.5222
+   "real": 0.5219
   },
   {
    "desde": 60,
@@ -113,24 +113,24 @@
    "brier": 0.2497
   },
   "2027": {
-   "n": 284,
+   "n": 285,
    "aciertos": 175,
-   "acierto": 0.6162,
+   "acierto": 0.614,
    "ic": [
-    0.5584,
-    0.6708
+    0.5564,
+    0.6687
    ],
-   "brier": 0.2316
+   "brier": 0.2318
   }
  },
  "fases": {
   "regular": {
-   "n": 2908,
+   "n": 2909,
    "aciertos": 1642,
-   "acierto": 0.5646,
+   "acierto": 0.5645,
    "ic": [
-    0.5466,
-    0.5826
+    0.5464,
+    0.5824
    ],
    "brier": 0.2424
   },
@@ -147,12 +147,12 @@
  },
  "elige": {
   "local": {
-   "n": 2514,
+   "n": 2515,
    "aciertos": 1422,
-   "acierto": 0.5656,
+   "acierto": 0.5654,
    "ic": [
-    0.5462,
-    0.5849
+    0.5459,
+    0.5847
    ],
    "brier": 0.2421
   },
@@ -168,6 +168,15 @@
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-12T00:00:00Z",
+   "local": "Buffalo Sabres",
+   "visitante": "Tampa Bay Lightning",
+   "marcador": "3-8",
+   "fav": "Buffalo Sabres",
+   "pp": 0.5309,
+   "ok": false
+  },
   {
    "fecha": "2026-11-11T03:00:00Z",
    "local": "Los Angeles Kings",
@@ -382,15 +391,6 @@
    "marcador": "4-2",
    "fav": "Ottawa Senators",
    "pp": 0.5836,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-08T00:00:00Z",
-   "local": "Toronto Maple Leafs",
-   "visitante": "Montreal Canadiens",
-   "marcador": "2-4",
-   "fav": "Montreal Canadiens",
-   "pp": 0.5029,
    "ok": true
   }
  ]
