@@ -220,8 +220,12 @@ def main():
                 cs = sorted([x for x in ps if x["comp"] == cmp], key=lambda y: -y["prob"])
                 lin.append(u"<i>%s</i>" % e(cmp))
                 for x in sorted(cs[:MAX_POR_LIGA], key=lambda y: y["fecha"]):
-                    lin.append(u"%s %s – %s · <b>%s %s</b>%s" % (
-                        hora(x["fecha"]), e(x["a"]), e(x["b"]), e(x["pick"]), pc(x["prob"]), x["cuota"]))
+                    if x["prob"] < 0.55 and dep != "futbol":
+                        lin.append(u"%s %s – %s · ⚖ igualado (%s – %s)" % (
+                            hora(x["fecha"]), e(x["a"]), e(x["b"]), pc(x["prob"]), pc(1 - x["prob"])))
+                    else:
+                        lin.append(u"%s %s – %s · <b>%s %s</b>%s" % (
+                            hora(x["fecha"]), e(x["a"]), e(x["b"]), e(x["pick"]), pc(x["prob"]), x["cuota"]))
                     if dep == "futbol":
                         lin.append(u"   " + x["det"])
                 if len(cs) > MAX_POR_LIGA:
