@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-12 20:26 UTC",
+ "actualizado": "2026-11-12 20:52 UTC",
  "liga": "NCAA",
  "datos_hasta": "2026-11-12T04:00:00Z",
  "dias_desde_datos": 0,
@@ -2309,6 +2309,52 @@
    "creada": "2026-11-12 20:09 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401921689",
+   "fecha": "2026-11-14T20:30:00Z",
+   "local": "Gonzaga Bulldogs",
+   "visitante": "LSU Tigers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8511,
+   "pv": 0.1489,
+   "elo_l": 1751,
+   "elo_v": 1549,
+   "bal_l": [
+    2,
+    0
+   ],
+   "bal_v": [
+    3,
+    0
+   ],
+   "creada": "2026-11-12 20:52 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401911016",
+   "fecha": "2026-11-14T20:30:00Z",
+   "local": "Northern Kentucky Norse",
+   "visitante": "Central Michigan Chippewas",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7229,
+   "pv": 0.2771,
+   "elo_l": 1518,
+   "elo_v": 1451,
+   "bal_l": [
+    2,
+    2
+   ],
+   "bal_v": [
+    2,
+    0
+   ],
+   "creada": "2026-11-12 20:52 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
  "recientes": [
@@ -2774,7 +2820,7 @@
   }
  ],
  "directo": {
-  "total": 150,
+  "total": 152,
   "resueltas": 50,
   "aciertos": 36,
   "acierto": 0.72,
