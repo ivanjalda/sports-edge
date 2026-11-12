@@ -33,6 +33,8 @@ UA = "Mozilla/5.0 (compatible; sports-edge/1.0; +https://ivanjalda.github.io/spo
 MEDIA = 1505.0
 UMBRAL_VALOR = 0.05
 PROB_MIN = 0.10
+DIF_MAX_MERCADO = 0.15   # si el modelo se aleja mas de 15 puntos del mercado, no se marca VALOR
+VENTAJA_MIN_LIGA = 0.03  # la liga debe superar en 3 puntos a "siempre local" en el backtest
 MIN_CREDITOS = 25
 HORAS_PRED = 48        # se guardan predicciones de partidos que empiezan en las proximas 48 h
 
@@ -479,12 +481,16 @@ def procesar_cuotas(ev, invertido):
     return mejor, {k: round(sum(v) / len(v), 4) for k, v in cons.items()}, casas
 
 
-def evaluar(probs, mejor, mercado):
+def evaluar(probs, mejor, mercado, fiable=True):
+    """VALOR solo si: ventaja >= 5 %, prob >= 10 %, prob > mercado, la diferencia con el mercado
+    no pasa de 15 puntos (diferencias mayores suelen ser un error del modelo, no una oportunidad)
+    y la liga es 'fiable' (en el backtest supera claramente a elegir siempre al local)."""
     ev = {}
     valor = []
     for k in ("L", "V"):
         ev[k] = round(probs[k] * mejor[k]["c"] - 1, 4)
-        if ev[k] >= UMBRAL_VALOR and probs[k] >= PROB_MIN and probs[k] > mercado[k]:
+        if (fiable and ev[k] >= UMBRAL_VALOR and probs[k] >= PROB_MIN and probs[k] > mercado[k]
+                and probs[k] - mercado[k] <= DIF_MAX_MERCADO):
             valor.append(k)
     return ev, valor
 
@@ -577,6 +583,10 @@ def procesar(clave, cfg, ahora, stamp, restantes):
         print("ERROR: no hay partidos para evaluar en %s." % cfg["nombre"])
         return restantes
     bt = backtest(ev, cfg, stamp, ultima)
+    fiable = (bt["total"]["acierto"] - (bt["base_local"]["acierto"] or 1)) >= VENTAJA_MIN_LIGA
+    bt["valor_activo"] = fiable
+    if not fiable:
+        print("Aviso: en %s el modelo no supera claramente a 'siempre local'. No se marca VALOR." % cfg["nombre"])
     guardar_json("equipos_%s_backtest.json" % clave, bt)
     print("Backtest %s: %d partidos, acierto %.1f%% (siempre local %.1f%%), Brier %.3f (azar 0.250). "
           "Ultimo resultado: %s (hace %d dias)" %
@@ -628,7 +638,7 @@ def procesar(clave, cfg, ahora, stamp, restantes):
                     if not res:
                         continue
                     mejor, mercado, casas = res
-                    evl, valor = evaluar({"L": p["pl"], "V": p["pv"]}, mejor, mercado)
+                    evl, valor = evaluar({"L": p["pl"], "V": p["pv"]}, mejor, mercado, fiable)
                     p["cuota"] = {"mejor": mejor, "mercado": mercado, "casas": casas, "ev": evl,
                                   "valor": valor, "actualizado": stamp}
                     if "cuota_guardada" not in p:
