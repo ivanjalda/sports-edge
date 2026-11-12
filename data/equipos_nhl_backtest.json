@@ -1,36 +1,36 @@
 {
- "actualizado": "2026-11-12 15:49 UTC",
+ "actualizado": "2026-11-12 20:09 UTC",
  "liga": "NHL",
  "desde": "20241001",
- "datos_hasta": "2026-11-12T03:00:00Z",
+ "datos_hasta": "2026-11-12T17:00:00Z",
  "total": {
-  "n": 3082,
-  "aciertos": 1734,
-  "acierto": 0.5626,
+  "n": 3083,
+  "aciertos": 1735,
+  "acierto": 0.5628,
   "ic": [
-   0.545,
-   0.58
+   0.5452,
+   0.5802
   ],
   "brier": 0.2423
  },
  "base_local": {
-  "n": 3082,
-  "acierto": 0.5438
+  "n": 3083,
+  "acierto": 0.5436
  },
  "base_balance": {
-  "n": 2731,
-  "acierto": 0.5577,
-  "nuestro": 0.5643
+  "n": 2732,
+  "acierto": 0.5578,
+  "nuestro": 0.5644
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 1138,
-   "conf": 0.6509,
-   "acierto": 0.6336,
+   "n": 1139,
+   "conf": 0.651,
+   "acierto": 0.6339,
    "ic": [
-    0.6052,
-    0.6611
+    0.6055,
+    0.6614
    ]
   },
   {
@@ -65,9 +65,9 @@
   {
    "desde": 60,
    "hasta": 70,
-   "n": 1000,
+   "n": 1001,
    "prometido": 0.6402,
-   "real": 0.622
+   "real": 0.6224
   },
   {
    "desde": 70,
@@ -113,24 +113,24 @@
    "brier": 0.2497
   },
   "2027": {
-   "n": 290,
-   "aciertos": 177,
-   "acierto": 0.6103,
+   "n": 291,
+   "aciertos": 178,
+   "acierto": 0.6117,
    "ic": [
-    0.5531,
-    0.6647
+    0.5546,
+    0.6659
    ],
-   "brier": 0.2317
+   "brier": 0.2313
   }
  },
  "fases": {
   "regular": {
-   "n": 2914,
-   "aciertos": 1644,
-   "acierto": 0.5642,
+   "n": 2915,
+   "aciertos": 1645,
+   "acierto": 0.5643,
    "ic": [
-    0.5461,
-    0.5821
+    0.5462,
+    0.5822
    ],
    "brier": 0.2424
   },
@@ -157,17 +157,26 @@
    "brier": 0.2421
   },
   "visitante": {
-   "n": 562,
-   "aciertos": 310,
-   "acierto": 0.5516,
+   "n": 563,
+   "aciertos": 311,
+   "acierto": 0.5524,
    "ic": [
-    0.5103,
-    0.5922
+    0.5111,
+    0.593
    ],
-   "brier": 0.2433
+   "brier": 0.2431
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-12T17:00:00Z",
+   "local": "Seattle Kraken",
+   "visitante": "Carolina Hurricanes",
+   "marcador": "1-4",
+   "fav": "Carolina Hurricanes",
+   "pp": 0.6743,
+   "ok": true
+  },
   {
    "fecha": "2026-11-12T03:00:00Z",
    "local": "San Jose Sharks",
@@ -383,15 +392,7 @@
    "fav": "Los Angeles Kings",
    "pp": 0.569,
    "ok": false
-  },
-  {
-   "fecha": "2026-11-08T02:00:00Z",
-   "local": "Colorado Avalanche",
-   "visitante": "Detroit Red Wings",
-   "marcador": "4-0",
-   "fav": "Colorado Avalanche",
-   "pp": 0.6704,
-   "ok": true
   }
- ]
+ ],
+ "valor_activo": false
 }

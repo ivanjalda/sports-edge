@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-12 15:49 UTC",
+ "actualizado": "2026-11-12 20:09 UTC",
  "liga": "NCAA",
  "datos_hasta": "2026-11-11T00:00:00Z",
  "dias_desde_datos": 1,
@@ -630,11 +630,34 @@
    "creada": "2026-11-12 03:18 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401913578",
+   "fecha": "2026-11-14T20:00:00Z",
+   "local": "UConn Huskies",
+   "visitante": "Northeastern Huskies",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5709,
+   "pv": 0.4291,
+   "elo_l": 1526,
+   "elo_v": 1526,
+   "bal_l": [
+    4,
+    5
+   ],
+   "bal_v": [
+    4,
+    2
+   ],
+   "creada": "2026-11-12 20:09 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
  "recientes": [],
  "directo": {
-  "total": 27,
+  "total": 28,
   "resueltas": 0,
   "aciertos": 0,
   "acierto": null,
