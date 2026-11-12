@@ -18,6 +18,10 @@ LIGAS = {
     "SA": "Serie A",
     "BL1": "Bundesliga",
     "FL1": "Ligue 1",
+    "PPL": "Primeira Liga",
+    "DED": "Eredivisie",
+    "ELC": "Championship",
+    "BSA": "Brasileirão",
 }
 
 MIN_PARTIDOS = 5          # minimo de partidos por equipo para predecir

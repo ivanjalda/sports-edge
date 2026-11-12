@@ -16,7 +16,8 @@ except Exception:
 
 TOKEN = os.environ.get("TELEGRAM_TOKEN", "").strip()
 CHAT = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
-LIGAS = ["Premier League", "LaLiga", "Serie A", "Bundesliga", "Ligue 1"]
+LIGAS = ["Premier League", "LaLiga", "Serie A", "Bundesliga", "Ligue 1",
+         "Primeira Liga", "Eredivisie", "Championship", "Brasileirão"]
 
 
 def leer(nombre, defecto):

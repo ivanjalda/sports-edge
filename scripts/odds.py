@@ -22,7 +22,12 @@ DEPORTES = {
     "Serie A": "soccer_italy_serie_a",
     "Bundesliga": "soccer_germany_bundesliga",
     "Ligue 1": "soccer_france_ligue_one",
+    "Primeira Liga": "soccer_portugal_primeira_liga",
+    "Eredivisie": "soccer_netherlands_eredivisie",
+    "Championship": "soccer_efl_champ",
+    "Brasileirão": "soccer_brazil_campeonato",
 }
+HORAS_CUOTAS = 48     # solo se piden cuotas de ligas con partidos en las proximas 48 h (ahorra creditos)
 REGION = "eu"
 UMBRAL_VALOR = 0.05   # ventaja minima para marcar valor
 PROB_MIN = 0.10       # no se marcan apuestas muy improbables
@@ -209,7 +214,11 @@ def main():
         pedidas = 0
         for liga, dep in DEPORTES.items():
             ps = [p for p in preds if p.get("liga") == liga]
-            if not ps:
+            pronto = [p for p in ps if (parse(p["fecha"]) - datetime.now(timezone.utc)).total_seconds() < HORAS_CUOTAS * 3600]
+            if not pronto:
+                for p in ps:   # se conservan las cuotas que ya teniamos de esa liga
+                    if str(p.get("id")) in viejo:
+                        nuevo[str(p["id"])] = viejo[str(p["id"])]
                 continue
             pedidas += 1
             datos = None
