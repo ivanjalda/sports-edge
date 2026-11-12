@@ -100,17 +100,31 @@ def leer_feed(url):
         tag = it.tag.split("}")[-1]
         if tag not in ("item", "entry"):
             continue
-        tit = enl = fec = None
-        for ch in it:
+        tit = enl = fec = img = None
+        for ch in it.iter():
             n = ch.tag.split("}")[-1]
-            if n == "title":
+            if ch is it:
+                continue
+            if n == "title" and tit is None:
                 tit = limpiar(ch.text)
-            elif n == "link":
+            elif n == "link" and enl is None:
                 enl = (ch.text or "").strip() or ch.attrib.get("href", "")
             elif n in ("pubDate", "published", "updated", "date"):
                 fec = fec or ch.text
+            elif n in ("content", "thumbnail") and ch.attrib.get("url") and not img:
+                tipo = ch.attrib.get("type", "") + ch.attrib.get("medium", "")
+                if n == "thumbnail" or "image" in tipo or re.search(r"\.(jpe?g|png|webp)", ch.attrib["url"], re.I):
+                    img = ch.attrib["url"]
+            elif n == "enclosure" and "image" in ch.attrib.get("type", "") and not img:
+                img = ch.attrib.get("url")
+            elif n in ("description", "encoded") and not img and ch.text:
+                m = re.search(r'<img[^>]+src=["\']([^"\']+)', ch.text)
+                if m:
+                    img = m.group(1)
+        if img and not img.startswith("https://"):
+            img = None   # solo imagenes seguras (https)
         if tit and enl and enl.startswith(("http://", "https://")):
-            items.append((tit, enl, fecha_item(fec)))
+            items.append((tit, enl, fecha_item(fec), img))
     return items
 
 
@@ -140,7 +154,7 @@ def main():
             if not items:
                 continue
             n = 0
-            for tit, enl, fec in items:
+            for tit, enl, fec, img in items:
                 if fec is None or fec < ahora - timedelta(hours=HORAS) or fec > ahora + timedelta(hours=2):
                     continue
                 clave = norm(tit)[:80]
@@ -149,7 +163,7 @@ def main():
                 vistos.add(clave)
                 vistos.add(enl)
                 lista.append({"t": tit, "url": enl, "fuente": medio, "fecha": fec.strftime("%Y-%m-%dT%H:%M:%SZ"),
-                              "dep": clasificar(tit)})
+                              "dep": clasificar(tit), "img": img})
                 n += 1
                 if n >= MAX_POR_MEDIO:
                     break
