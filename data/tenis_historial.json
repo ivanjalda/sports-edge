@@ -122,23 +122,21 @@
       "casa": "Betfair"
      },
      "1": {
-      "c": 3.75,
-      "casa": "Winamax (DE)"
+      "c": 3.65,
+      "casa": "Betfair"
      }
     },
     "mercado": {
-     "1": 0.2726,
-     "2": 0.7274
+     "1": 0.2773,
+     "2": 0.7227
     },
-    "casas": 17,
+    "casas": 19,
     "ev": {
-     "1": 0.0691,
+     "1": 0.0406,
      "2": -0.0206
     },
-    "valor": [
-     "1"
-    ],
-    "actualizado": "2026-11-11 14:57 UTC"
+    "valor": [],
+    "actualizado": "2026-11-12 15:49 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-11 04:09 UTC",
@@ -173,23 +171,23 @@
       "casa": "Betfair"
      },
      "2": {
-      "c": 1.89,
-      "casa": "1xBet"
+      "c": 1.88,
+      "casa": "GTbets"
      }
     },
     "mercado": {
-     "1": 0.4855,
-     "2": 0.5145
+     "1": 0.4716,
+     "2": 0.5284
     },
-    "casas": 17,
+    "casas": 19,
     "ev": {
      "1": 0.2871,
-     "2": -0.2574
+     "2": -0.2613
     },
     "valor": [
      "1"
     ],
-    "actualizado": "2026-11-11 14:57 UTC"
+    "actualizado": "2026-11-12 15:49 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-11 14:57 UTC",
@@ -199,7 +197,109 @@
     "1": 2.12,
     "2": 1.89
    }
+  },
+  {
+   "id": "6b92a67eab021047017da9d42e1e1fae",
+   "torneo": "WTA Finals",
+   "tour": "WTA",
+   "sup": "Hard",
+   "fecha": "2026-11-13T20:00:00Z",
+   "j1": "Mirra Andreeva",
+   "j2": "Karolina Muchova",
+   "id1": "wta:259799",
+   "id2": "wta:214096",
+   "p1": 0.439,
+   "p2": 0.561,
+   "n1": 195,
+   "n2": 279,
+   "creada": "2026-11-12 15:49 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "2": {
+      "c": 3.1,
+      "casa": "Betfair"
+     },
+     "1": {
+      "c": 1.45,
+      "casa": "GTbets"
+     }
+    },
+    "mercado": {
+     "1": 0.6849,
+     "2": 0.3151
+    },
+    "casas": 18,
+    "ev": {
+     "1": -0.3635,
+     "2": 0.7391
+    },
+    "valor": [
+     "2"
+    ],
+    "actualizado": "2026-11-12 15:49 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-12 15:49 UTC",
+    "valor": [
+     "2"
+    ],
+    "1": 1.45,
+    "2": 3.1
+   }
+  },
+  {
+   "id": "29a6e4e35a3b385e9666473ad68f2084",
+   "torneo": "WTA Finals",
+   "tour": "WTA",
+   "sup": "Hard",
+   "fecha": "2026-11-13T21:30:00Z",
+   "j1": "Aryna Sabalenka",
+   "j2": "Elina Svitolina",
+   "id1": "wta:214544",
+   "id2": "wta:202494",
+   "p1": 0.7272,
+   "p2": 0.2728,
+   "n1": 558,
+   "n2": 416,
+   "creada": "2026-11-12 15:49 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "1": {
+      "c": 1.6,
+      "casa": "Betfair"
+     },
+     "2": {
+      "c": 2.64,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "1": 0.6239,
+     "2": 0.3761
+    },
+    "casas": 17,
+    "ev": {
+     "1": 0.1635,
+     "2": -0.2798
+    },
+    "valor": [
+     "1"
+    ],
+    "actualizado": "2026-11-12 15:49 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-12 15:49 UTC",
+    "valor": [
+     "1"
+    ],
+    "1": 1.6,
+    "2": 2.64
+   }
   }
  ],
- "actualizado": "2026-11-12 03:18 UTC"
+ "actualizado": "2026-11-12 15:49 UTC"
 }
