@@ -77,6 +77,11 @@ main{max-width:1100px;margin:0 auto;padding:18px 20px}
 .hrow{display:grid;grid-template-columns:60px 1fr 60px 130px 28px;gap:8px;align-items:center;padding:8px 14px;border-top:1px solid var(--line);font-size:14px}
 .hrow .d{color:var(--mut);font-size:12px}
 .ok{color:var(--acc);font-weight:700}
+.rtit{font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--blue);margin:34px 0 4px}
+.rnote{color:var(--mut);font-size:13px;margin-bottom:6px}
+details.rs summary{list-style:none}
+details.rs summary::-webkit-details-marker{display:none}
+details.rs[open] .lgh{border-bottom:1px solid var(--line)}
 .ko{color:var(--red);font-weight:700}
 @media(max-width:900px){
  .cols,.row{grid-template-columns:48px minmax(120px,1.6fr) repeat(3,minmax(46px,.7fr)) 34px}
@@ -116,6 +121,10 @@ var T = {
       soon1:"Este deporte se activará cuando tengamos datos reales y verificables.",
       soon2:"No mostramos predicciones inventadas: cada deporte se abre solo cuando su motor funciona de verdad.",
       all:"Todas",hist:"Últimos resultados",
+      noweek:"Ahora mismo no hay partidos de liga en los próximos 7 días (parón de selecciones o fin de temporada). Las predicciones aparecen solas unos días antes de cada jornada.",
+      noweek1:"Esta liga no juega en los próximos 7 días. Sus predicciones aparecerán solas unos días antes de la próxima jornada.",
+      h_res:"Cómo nos fue: resultados recientes",n_res:"Partidos ya jugados con la predicción que publicamos antes del partido. ✓ = el resultado que dimos como más probable fue el que ocurrió. ✗ = ocurrió otro. Pulsa una liga para ver el detalle.",
+      okof:"acertados de",pickh:"Nuestro pronóstico",
       nopreds:"No hay partidos analizados en esta liga ahora mismo.",
       nohist:"Aún no hay partidos jugados con predicción guardada.",
       hit:"Acierto",total:"Predicciones registradas",brier:"Calibración (Brier)",upd:"Última actualización",
@@ -137,7 +146,11 @@ var T = {
       vsrc:"Casas comparadas",vupd:"Cuotas de",
       home:"Local",away:"Visitante",
       foot:"Solo para mayores de 18 años. Las probabilidades son estimaciones estadísticas y la cuota justa es 1 dividido entre la probabilidad. No garantizan resultados. Juega con responsabilidad."},
-  en:{nodata:"No data",soon:"Coming soon",
+  en:{nodata:"No data",
+      noweek:"There are no league games in the next 7 days right now (international break or end of season). Predictions appear by themselves a few days before each matchday.",
+      noweek1:"This league does not play in the next 7 days. Its predictions will appear a few days before the next matchday.",
+      h_res:"How we did: recent results",n_res:"Games already played with the prediction we published before kick-off. ✓ = the outcome we rated most likely happened. ✗ = another outcome happened. Tap a league to see the detail.",
+      okof:"right out of",pickh:"Our pick",soon:"Coming soon",
       soon1:"This sport will go live once we have real, verifiable data.",
       soon2:"We never show made-up predictions: each sport opens only when its engine really works.",
       all:"All",hist:"Latest results",
@@ -248,13 +261,11 @@ function colsHead(){
     +'<div class="x" title="'+esc(t("tto"))+'">'+t("co")+'</div><div class="x" title="'+esc(t("ttb"))+'">'+t("cb")+'</div><div></div></div>';
 }
 
-function leagueBlock(liga, all, hs, idx){
+function leagueBlock(liga, all, idx){
   var list=[]; for(var j=0;j<all.length;j++){ if(all[j].liga===liga) list.push(all[j]); }
-  var done=[]; for(var a=0;a<hs.length;a++){ if(hs[a].resultado && hs[a].liga===liga) done.push(hs[a]); }
-  done.sort(function(x,y){ return x.fecha<y.fecha?1:-1; }); done=done.slice(0,10);
   var o='<div class="lg"><div class="lgh" onclick="tog(\'lg'+idx+'\')"><b>'+esc(liga)+'</b><span>'+list.length+' '+t("matches")+' ▾</span></div>';
   o+='<div id="lg'+idx+'" style="display:block">';
-  if(!list.length){ o+='<div class="empty">'+t("nopreds")+'</div>'; }
+  if(!list.length){ o+='<div class="empty">'+t("noweek1")+'</div>'; }
   else {
     o+='<div class="legend">'+t("legend")+'</div>'+colsHead();
     var last="";
@@ -271,20 +282,29 @@ function leagueBlock(liga, all, hs, idx){
         +'<div class="det" id="d'+p.id+'">'+detail(p)+'</div>';
     }
   }
-  o+='<div class="rh">'+t("hist")+'</div>';
-  if(!done.length){ o+='<div class="empty">'+t("nohist")+'</div>'; }
-  for(var d=0;d<done.length;d++){
-    var q=done[d], kk=bestKey(q), good=(kk===q.resultado);
-    o+='<div class="hrow"><span class="d">'+esc(fshort(q.fecha))+'</span><span>'+esc(q.local)+' - '+esc(q.visitante)+'</span><span><b>'+esc(q.marcador)+'</b></span><span class="d pk">'+esc(pickName(q,kk))+'</span><span class="'+(good?"ok":"ko")+'">'+(good?"✓":"✗")+'</span></div>';
-  }
-  o+='</div></div>';
-  return o;
+  return o+'</div></div>';
 }
-
+function resultsBlock(hs){
+  var o='<h2 class="rtit">'+t("h_res")+'</h2><div class="rnote">'+t("n_res")+'</div>', any=false;
+  for(var g=0;g<LIGAS.length;g++){
+    var liga=LIGAS[g]; if(cur!=="all" && cur!==liga) continue;
+    var done=[]; for(var a=0;a<hs.length;a++){ if(hs[a].resultado && hs[a].liga===liga) done.push(hs[a]); }
+    if(!done.length) continue; any=true;
+    done.sort(function(x,y){ return x.fecha<y.fecha?1:-1; }); done=done.slice(0,10);
+    var ok=0; done.forEach(function(q){ if(bestKey(q)===q.resultado) ok++; });
+    o+='<details class="lg rs"><summary class="lgh"><b>'+esc(liga)+'</b><span>'+ok+' '+t("okof")+' '+done.length+' ▾</span></summary>';
+    for(var d=0;d<done.length;d++){
+      var q=done[d], kk=bestKey(q), good=(kk===q.resultado);
+      o+='<div class="hrow"><span class="d">'+esc(fshort(q.fecha))+'</span><span>'+esc(q.local)+' - '+esc(q.visitante)+'</span><span><b>'+esc(q.marcador)+'</b></span><span class="d pk">'+t("pickh")+': '+esc(pickName(q,kk))+'</span><span class="'+(good?"ok":"ko")+'">'+(good?"✓":"✗")+'</span></div>';
+    }
+    o+='</details>';
+  }
+  return any?o:"";
+}
 function render(){
   if(window.navRender) navRender(lang,"futbol");
   document.getElementById("h1f").textContent=lang==="es"?"⚽ Fútbol":"⚽ Football";
-  document.getElementById("leadf").textContent=lang==="es"?"Probabilidades de 1X2, goles, primera parte y goleadores en las 5 grandes ligas europeas, calculadas con resultados reales y comparadas con las cuotas de las casas de apuestas.":"1X2, goals, first-half and scorer probabilities for Europe's big five leagues, built on real results and compared with bookmakers' odds.";
+  document.getElementById("leadf").textContent=lang==="es"?"Probabilidades de 1X2, goles, primera parte y goleadores en 9 ligas (las 5 grandes de Europa, Portugal, Países Bajos, Championship y Brasil), calculadas con resultados reales y comparadas con las cuotas de las casas de apuestas.":"1X2, goals, first-half and scorer probabilities for 9 leagues (Europe's big five, Portugal, the Netherlands, the Championship and Brazil), built on real results and compared with bookmakers' odds.";
   document.title=lang==="es"?"Sports Edge · Fútbol":"Sports Edge · Football";
   document.documentElement.lang=lang;
   document.getElementById("foot").textContent=t("foot");
@@ -318,11 +338,15 @@ function render(){
     var cnt=0; for(var z=0;z<all.length;z++){ if(all[z].liga===LIGAS[l]) cnt++; }
     ch+='<button class="chip '+(LIGAS[l]===cur?"on":"")+'" onclick="setLeague(\''+LIGAS[l]+'\')">'+LIGAS[l]+' ('+cnt+')</button>';
   }
-  var out='<div class="chips">'+ch+'</div>';
+  var out='<div class="chips">'+ch+'</div>', vis=0;
   for(var g=0;g<LIGAS.length;g++){
     if(cur!=="all" && cur!==LIGAS[g]) continue;
-    out+=leagueBlock(LIGAS[g],all,hs,g);
+    var n=0; for(var z2=0;z2<all.length;z2++){ if(all[z2].liga===LIGAS[g]) n++; }
+    if(cur==="all" && !n) continue;
+    out+=leagueBlock(LIGAS[g],all,g); vis++;
   }
+  if(!vis) out+='<div class="soon" style="padding:26px 20px"><b>⚽</b>'+t("noweek")+'</div>';
+  out+=resultsBlock(hs);
   box.innerHTML=out;
 }
 

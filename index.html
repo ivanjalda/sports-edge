@@ -103,9 +103,6 @@ footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top
   <h2 id="h-val"></h2><div class="note" id="n-val"></div>
   <div id="val-list"></div>
 
-  <h2 id="h-news"></h2><div class="note" id="n-news"></div>
-  <div class="chips" id="news-chips"></div>
-  <div id="news-list"></div>
 
   <h2 id="h-sp"></h2><div class="note" id="n-sp"></div>
   <div class="sports" id="sports"></div>
@@ -265,7 +262,7 @@ function render(){
   document.documentElement.lang=lang;
   if(window.navRender) navRender(lang,"home");
   document.getElementById("h1").innerHTML=t("h1");
-  ["sub","h-top","n-top","h-val","n-val","h-news","n-news","h-sp","n-sp","h-soon","n-soon","h-how"].forEach(function(id){
+  ["sub","h-top","n-top","h-val","n-val","h-sp","n-sp","h-soon","n-soon","h-how"].forEach(function(id){
     document.getElementById(id).textContent=t(id.replace("-","_")); });
   document.getElementById("foot").textContent=t("foot");
   var deps=["futbol","tenis","baloncesto","hockey"], R={}, totN=0, totUp=0, comp=0;
@@ -284,7 +281,6 @@ function render(){
   document.getElementById("top-list").innerHTML= top.length ? '<div class="list">'+top.map(function(x){return fila(x,false);}).join("")+'</div>' : '<div class="empty">'+t("notop")+'</div>';
   var val=px.filter(function(x){ return x.valor; }).sort(function(a,b){ return a.fecha<b.fecha?-1:1; }).slice(0,10);
   document.getElementById("val-list").innerHTML= val.length ? '<div class="list">'+val.map(function(x){return fila(x,true);}).join("")+'</div>' : '<div class="empty">'+t("noval")+'</div>';
-  renderNews();
   var sp="";
   deps.forEach(function(d){ var r=R[d], g=DEP[d];
     sp+='<a class="spc" href="'+g.url+'"><div class="top"><div><div class="nm">'+g.ic+' '+esc(g[lang])+'</div><div class="cm">'+esc(g["cm_"+lang])+'</div></div>'
