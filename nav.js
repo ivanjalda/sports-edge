@@ -24,15 +24,28 @@
     "#top nav a:hover{color:var(--txt)}"+
     "#top nav a.on{color:var(--txt);border-bottom-color:var(--acc)}"+
     "@media(max-width:720px){#top .se-row{padding:10px 16px 4px}#top nav{padding:0 10px}#top nav a{font-size:13px;padding:9px 9px}}";
+  css+=":root[data-theme=light]{--bg:#f5f7fb;--card:#ffffff;--card2:#eef1f6;--line:#dbe1ea;--txt:#0f172a;--mut:#556070;--acc:#15803d;--blue:#0369a1;--red:#dc2626;--amb:#b45309}"+
+    ":root[data-theme=light] body{background:var(--bg);color:var(--txt)}"+
+    "#top .se-r{display:flex;align-items:center;gap:10px}"+
+    "#top .se-th{background:var(--card);border:1px solid var(--line);color:var(--txt);height:32px;min-width:38px;border-radius:8px;cursor:pointer;font-size:16px;line-height:1}";
   var st=document.createElement("style"); st.textContent=css; document.head.appendChild(st);
+  function temaGuardado(){ try{ return localStorage.getItem("tema"); }catch(e){ return null; } }
+  function temaInicial(){ var g=temaGuardado(); if(g==="light"||g==="dark") return g;
+    try{ return window.matchMedia&&window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"; }catch(e){ return "dark"; } }
+  function aplicarTema(t){ if(t==="light") document.documentElement.setAttribute("data-theme","light"); else document.documentElement.removeAttribute("data-theme"); }
+  aplicarTema(temaInicial());
+  window.cambiarTema=function(){ var t=document.documentElement.getAttribute("data-theme")==="light"?"dark":"light";
+    aplicarTema(t); try{ localStorage.setItem("tema",t); }catch(e){} var b=document.getElementById("se-th"); if(b) b.textContent=t==="light"?"🌙":"☀️"; };
   window.navRender=function(lang,activo){
     var el=document.getElementById("top"); if(!el) return;
     var t=TX[lang]||TX.es, n="";
     for(var i=0;i<ITEMS.length;i++){ var it=ITEMS[i];
       n+='<a href="'+it[1]+'"'+(it[0]===activo?' class="on"':'')+'>'+it[2]+' '+t[it[0]]+'</a>'; }
     el.innerHTML='<div class="se-row"><a class="se-logo" href="index.html">SPORTS<span>EDGE</span></a>'
+      +'<div class="se-r"><button id="se-th" class="se-th" onclick="cambiarTema()" title="'+(lang==="es"?"Modo día / noche":"Light / dark mode")+'">'
+      +(document.documentElement.getAttribute("data-theme")==="light"?"🌙":"☀️")+'</button>'
       +'<div class="se-lang"><button class="'+(lang==="es"?"on":"")+'" onclick="setLang(\'es\')">ES</button>'
-      +'<button class="'+(lang==="en"?"on":"")+'" onclick="setLang(\'en\')">EN</button></div></div><nav>'+n+'</nav>';
+      +'<button class="'+(lang==="en"?"on":"")+'" onclick="setLang(\'en\')">EN</button></div></div></div><nav>'+n+'</nav>';
     var on=el.querySelector("nav a.on"), nv=el.querySelector("nav");
     if(on&&nv){ nv.scrollLeft=Math.max(0,on.offsetLeft-nv.clientWidth/2+on.clientWidth/2); }
   };
