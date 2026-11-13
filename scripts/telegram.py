@@ -27,7 +27,10 @@ EQUIPOS = [("baloncesto", u"\U0001F3C0", "Baloncesto", [("nba", "NBA"), ("euroli
            ("americano", u"\U0001F3C8", u"F\u00fatbol americano", [("nfl", "NFL"), ("ncaaf", "NCAA")]),
            ("mma", u"\U0001F94B", "MMA", [("ufc", "UFC")]),
            ("beisbol", u"\u26be", u"B\u00e9isbol", [("mlb", "MLB")]),
-           ("voleibol", u"\U0001F3D0", "Voleibol", [("voley", "NCAA femenina")])]
+           ("voleibol", u"\U0001F3D0", "Voleibol", [("voley", "NCAA femenina")]),
+           ("rugby", u"\U0001F3C9", "Rugby", [("rug_6n", "Seis Naciones"), ("rug_prem", "Premiership"), ("rug_top14", "Top 14"),
+                                              ("rug_urc", "United Rugby Championship"), ("rug_cc", "Champions Cup"),
+                                              ("rug_super", "Super Rugby")])]
 MAX_POR_LIGA = 6   # para que el mensaje no sea interminable (la lista completa esta en la web)
 
 
@@ -165,7 +168,7 @@ def record():
 
 
 NOMBRES = {"futbol": u"⚽ Fútbol", "tenis": u"\U0001F3BE Tenis", "baloncesto": u"\U0001F3C0 Baloncesto",
-           "hockey": u"\U0001F3D2 Hockey", "americano": u"\U0001F3C8 F\u00fatbol americano", "mma": u"\U0001F94B MMA", "beisbol": u"\u26be B\u00e9isbol", "voleibol": u"\U0001F3D0 Voleibol"}
+           "hockey": u"\U0001F3D2 Hockey", "americano": u"\U0001F3C8 F\u00fatbol americano", "mma": u"\U0001F94B MMA", "beisbol": u"\u26be B\u00e9isbol", "voleibol": u"\U0001F3D0 Voleibol", "rugby": u"\U0001F3C9 Rugby"}
 
 
 def main():
@@ -211,7 +214,7 @@ def main():
             bloques.append("\n".join(lin))
 
         # Detalle por deporte y competicion
-        for dep in ("futbol", "tenis", "baloncesto", "hockey", "americano", "mma", "beisbol", "voleibol"):
+        for dep in ("futbol", "tenis", "baloncesto", "hockey", "americano", "mma", "beisbol", "voleibol", "rugby"):
             ps = [x for x in px if x["dep"] == dep]
             if not ps:
                 continue
@@ -239,7 +242,7 @@ def main():
     rc = record()
     if rc:
         lin = [u"\U0001F3C6 <b>Récord público en directo</b>"]
-        for dep in ("futbol", "tenis", "baloncesto", "hockey", "americano", "mma", "beisbol", "voleibol"):
+        for dep in ("futbol", "tenis", "baloncesto", "hockey", "americano", "mma", "beisbol", "voleibol", "rugby"):
             if dep in rc:
                 lin.append(u"%s: %s de acierto en %d predicciones" % (NOMBRES[dep], pc(rc[dep][0]), rc[dep][1]))
         bloques.append("\n".join(lin))

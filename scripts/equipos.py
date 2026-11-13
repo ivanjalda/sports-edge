@@ -52,6 +52,10 @@ AMERICANO = {"k": 20.0, "hca": 48.0, "revertir": 0.67, "mov": "nfl"}
 LUCHA = {"k": 40.0, "hca": 0.0, "revertir": 1.0, "mov": "nhl"}
 BEISBOL = {"k": 4.0, "hca": 24.0, "revertir": 0.67, "mov": "nhl"}
 VOLEY = {"k": 20.0, "hca": 50.0, "revertir": 0.75, "mov": "nhl"}
+# Rugby: ESPN marca todas las fases con tipo 1, asi que se aceptan todos los tipos. Los empates (muy raros) no entrenan
+# el modelo y, si ocurren en un partido pronosticado, cuentan como fallo. max_dias es alto porque entre temporadas
+# (y entre ediciones del Seis Naciones) pasan meses sin partidos: los ultimos resultados reales siguen siendo validos.
+RUGBY = {"k": 20.0, "hca": 65.0, "revertir": 0.75, "mov": "nhl", "tipos": (1, 2, 3, 4, 5), "horas": 96}
 LIGAS = {
     "nba": dict(BALONCESTO, nombre="NBA", fuente="espn", ruta="basketball/nba", extra="",
                 odds="basketball_nba", inicio="20231001", eval="20241001", min_eq=20, max_dias=10,
@@ -84,6 +88,24 @@ LIGAS = {
     "voley": dict(VOLEY, nombre="NCAA", fuente="espn", ruta="volleyball/womens-college-volleyball", extra="",
                   odds=None, inicio="20230801", eval="20250801", min_eq=10, max_dias=10,
                   meses=(8, 9, 10, 11, 12)),
+    "rug_prem": dict(RUGBY, nombre="Premiership", fuente="espn", ruta="rugby/267979", extra="",
+                     odds=None, inicio="20220901", eval="20240901", min_eq=10, max_dias=120,
+                     meses=(9, 10, 11, 12, 1, 2, 3, 4, 5, 6)),
+    "rug_top14": dict(RUGBY, nombre="Top 14", fuente="espn", ruta="rugby/270559", extra="",
+                      odds=None, inicio="20220801", eval="20240801", min_eq=10, max_dias=120,
+                      meses=(8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6)),
+    "rug_urc": dict(RUGBY, nombre="United Rugby Championship", fuente="espn", ruta="rugby/270557", extra="",
+                    odds=None, inicio="20220901", eval="20240901", min_eq=10, max_dias=120,
+                    meses=(9, 10, 11, 12, 1, 2, 3, 4, 5, 6)),
+    "rug_cc": dict(RUGBY, nombre="Champions Cup", fuente="espn", ruta="rugby/271937", extra="",
+                   odds=None, inicio="20191201", eval="20231201", min_eq=4, max_dias=150,
+                   meses=(12, 1, 4, 5)),
+    "rug_super": dict(RUGBY, nombre="Super Rugby", fuente="espn", ruta="rugby/242041", extra="",
+                      odds=None, inicio="20220201", eval="20250201", min_eq=10, max_dias=270,
+                      meses=(2, 3, 4, 5, 6)),
+    "rug_6n": dict(RUGBY, nombre="Seis Naciones", fuente="espn", ruta="rugby/180659", extra="",
+                   odds="rugbyunion_six_nations", inicio="20150201", eval="20220201", min_eq=5, max_dias=400,
+                   min_juegos=100, meses=(2, 3)),
     "ncaah": dict(HOCKEY, nombre="NCAA", fuente="espn", ruta="hockey/mens-college-hockey", extra="",
                   odds=None, inicio="20231001", eval="20241001", min_eq=10, max_dias=12,
                   meses=(10, 11, 12, 1, 2, 3, 4)),
@@ -562,8 +584,9 @@ def stats_directo(lista):
     br = 0.0
     for p in res:
         w = p["resultado"] == "L"
-        hit += 1 if (p["pl"] > 0.5) == w else 0
-        br += (p["pl"] - (1.0 if w else 0.0)) ** 2
+        emp = p["resultado"] == "E"   # empate (rugby): cuenta como fallo
+        hit += 1 if (not emp and (p["pl"] > 0.5) == w) else 0
+        br += (p["pl"] - (0.5 if emp else (1.0 if w else 0.0))) ** 2
     ap = gan = 0
     ben = 0.0
     for p in res:
@@ -615,14 +638,17 @@ def procesar(clave, cfg, ahora, stamp, restantes):
         origen = "ESPN"
     print("Partidos leidos de %s: %d (bloques con error: %d)" % (origen, len(nuevos), errores))
     proximos = []
+    empates = {}
     for g in nuevos:
-        if g["tipo"] not in (2, 3, 5):   # 2 regular, 3 playoff, 5 play-in
+        if g["tipo"] not in cfg.get("tipos", (2, 3, 5)):   # 2 regular, 3 playoff, 5 play-in
             continue
         if g["terminado"] and g["pl"] is not None and g["pv"] is not None and g["pl"] != g["pv"]:
             juegos[g["id"]] = g
+        elif g["terminado"] and g["pl"] is not None and g["pl"] == g["pv"]:
+            empates[g["id"]] = g
         elif not g["terminado"]:
             proximos.append(g)
-    if len(juegos) < 150:
+    if len(juegos) < cfg.get("min_juegos", 150):
         print("ERROR: solo hay %d partidos terminados. No se cambia nada en %s." % (len(juegos), cfg["nombre"]))
         return restantes
     with open(os.path.join(DATA, "equipos_%s_resultados.json" % clave), "w", encoding="utf-8") as f:
@@ -720,9 +746,9 @@ def procesar(clave, cfg, ahora, stamp, restantes):
 
     liq = 0
     for p in lista:
-        if p.get("resultado") is None and p["id"] in juegos:
-            g = juegos[p["id"]]
-            p["resultado"] = "L" if g["pl"] > g["pv"] else "V"
+        if p.get("resultado") is None and (p["id"] in juegos or p["id"] in empates):
+            g = juegos.get(p["id"]) or empates[p["id"]]
+            p["resultado"] = "L" if g["pl"] > g["pv"] else ("V" if g["pl"] < g["pv"] else "E")
             p["marcador"] = "%d-%d" % (g["pl"], g["pv"])
             liq += 1
     hist["predicciones"] = lista

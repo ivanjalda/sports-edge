@@ -58,11 +58,18 @@ FUENTES = [
     ("americano", u"\U0001F3C8", "NCAA", "football/college-football", "&groups=80", "ncaaf"),
     ("beisbol", u"⚾", "MLB", "baseball/mlb", "", "mlb"),
     ("voleibol", u"\U0001F3D0", "NCAA femenina", "volleyball/womens-college-volleyball", "", "voley"),
+    ("rugby", u"\U0001F3C9", "Seis Naciones", "rugby/180659", "", "rug_6n"),
+    ("rugby", u"\U0001F3C9", "Premiership", "rugby/267979", "", "rug_prem"),
+    ("rugby", u"\U0001F3C9", "Top 14", "rugby/270559", "", "rug_top14"),
+    ("rugby", u"\U0001F3C9", "United Rugby Championship", "rugby/270557", "", "rug_urc"),
+    ("rugby", u"\U0001F3C9", "Champions Cup", "rugby/271937", "", "rug_cc"),
+    ("rugby", u"\U0001F3C9", "Super Rugby", "rugby/242041", "", "rug_super"),
 ]
 NOMBRES = {"futbol": u"⚽ Fútbol", "tenis": u"\U0001F3BE Tenis", "baloncesto": u"\U0001F3C0 Baloncesto",
            "hockey": u"\U0001F3D2 Hockey", "americano": u"\U0001F3C8 Fútbol americano", "mma": u"\U0001F94B MMA",
-           "beisbol": u"⚾ Béisbol", "voleibol": u"\U0001F3D0 Voleibol"}
-ORDEN = ["futbol", "tenis", "baloncesto", "hockey", "americano", "mma", "beisbol", "voleibol"]
+           "beisbol": u"⚾ Béisbol", "voleibol": u"\U0001F3D0 Voleibol",
+           "rugby": u"\U0001F3C9 Rugby"}
+ORDEN = ["futbol", "tenis", "baloncesto", "hockey", "americano", "mma", "beisbol", "voleibol", "rugby"]
 
 
 def leer(nombre, defecto):
