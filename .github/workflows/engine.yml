@@ -55,6 +55,11 @@ jobs:
           ODDS_FETCH: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '0 7 * * *' }}
         run: python3 -u scripts/equipos.py
 
+      - name: Carreras (Formula 1 y MotoGP)
+        continue-on-error: true
+        timeout-minutes: 25
+        run: python3 -u scripts/carreras.py
+
       - name: Noticias
         continue-on-error: true
         timeout-minutes: 5
