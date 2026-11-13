@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13 15:11 UTC",
+ "actualizado": "2026-11-13 19:24 UTC",
  "liga": "Eurocup",
  "desde": "20250930",
  "datos_hasta": "2026-11-12T19:00:00Z",
@@ -380,7 +380,9 @@
    "kmul": 1.4,
    "hmul": 0.6,
    "c_desc": 35.0,
-   "c_forma": 60.0
+   "c_forma": 60.0,
+   "c_micro": 0.0,
+   "c_sede": 0.0
   },
   "sd": 14.735,
   "motor": {
@@ -394,6 +396,13 @@
    "acierto": 0.6482,
    "brier": 0.2194,
    "logloss": 0.6293
+  },
+  "escalas": {
+   "temporada": true,
+   "ultimos10": true,
+   "ultimos3": false,
+   "casa_fuera": false,
+   "descanso": true
   },
   "local": {
    "n": 307,

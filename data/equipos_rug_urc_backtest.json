@@ -1,17 +1,17 @@
 {
- "actualizado": "2026-11-13 15:11 UTC",
+ "actualizado": "2026-11-13 19:24 UTC",
  "liga": "United Rugby Championship",
  "desde": "20250926",
  "datos_hasta": "2026-10-31T19:45:00Z",
  "total": {
   "n": 181,
-  "aciertos": 127,
-  "acierto": 0.7017,
+  "aciertos": 126,
+  "acierto": 0.6961,
   "ic": [
-   0.6314,
-   0.7636
+   0.6256,
+   0.7585
   ],
-  "brier": 0.1801
+  "brier": 0.1808
  },
  "base_local": {
   "n": 181,
@@ -20,37 +20,37 @@
  "base_balance": {
   "n": 94,
   "acierto": 0.5957,
-  "nuestro": 0.6809
+  "nuestro": 0.6596
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 130,
-   "conf": 0.7646,
-   "acierto": 0.7769,
+   "n": 138,
+   "conf": 0.7772,
+   "acierto": 0.7609,
    "ic": [
-    0.698,
-    0.84
+    0.6833,
+    0.8244
    ]
   },
   {
    "min": 0.7,
-   "n": 93,
-   "conf": 0.811,
-   "acierto": 0.8817,
+   "n": 99,
+   "conf": 0.8289,
+   "acierto": 0.8687,
    "ic": [
-    0.8005,
-    0.9327
+    0.7882,
+    0.9216
    ]
   },
   {
    "min": 0.8,
-   "n": 43,
-   "conf": 0.8788,
-   "acierto": 0.9302,
+   "n": 59,
+   "conf": 0.8798,
+   "acierto": 0.8983,
    "ic": [
-    0.8139,
-    0.976
+    0.7954,
+    0.9526
    ]
   }
  ],
@@ -58,49 +58,49 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 51,
-   "prometido": 0.5545,
-   "real": 0.5098
+   "n": 43,
+   "prometido": 0.5498,
+   "real": 0.4884
   },
   {
    "desde": 60,
    "hasta": 70,
-   "n": 37,
-   "prometido": 0.6479,
-   "real": 0.5135
+   "n": 39,
+   "prometido": 0.6461,
+   "real": 0.4872
   },
   {
    "desde": 70,
    "hasta": 80,
-   "n": 50,
-   "prometido": 0.7528,
-   "real": 0.84
+   "n": 40,
+   "prometido": 0.7537,
+   "real": 0.825
   },
   {
    "desde": 80,
    "hasta": 90,
-   "n": 30,
-   "prometido": 0.8567,
-   "real": 0.9333
+   "n": 37,
+   "prometido": 0.8485,
+   "real": 0.8649
   },
   {
    "desde": 90,
    "hasta": 100,
-   "n": 13,
-   "prometido": 0.9297,
-   "real": 0.9231
+   "n": 22,
+   "prometido": 0.9324,
+   "real": 0.9545
   }
  ],
  "temporadas": {
   "2026": {
    "n": 144,
-   "aciertos": 103,
-   "acierto": 0.7153,
+   "aciertos": 102,
+   "acierto": 0.7083,
    "ic": [
-    0.6367,
-    0.7826
+    0.6295,
+    0.7764
    ],
-   "brier": 0.1819
+   "brier": 0.1809
   },
   "2027": {
    "n": 37,
@@ -110,41 +110,41 @@
     0.4876,
     0.7817
    ],
-   "brier": 0.1727
+   "brier": 0.1806
   }
  },
  "fases": {
   "regular": {
    "n": 181,
-   "aciertos": 127,
-   "acierto": 0.7017,
+   "aciertos": 126,
+   "acierto": 0.6961,
    "ic": [
-    0.6314,
-    0.7636
+    0.6256,
+    0.7585
    ],
-   "brier": 0.1801
+   "brier": 0.1808
   }
  },
  "elige": {
   "local": {
-   "n": 125,
-   "aciertos": 98,
-   "acierto": 0.784,
+   "n": 128,
+   "aciertos": 99,
+   "acierto": 0.7734,
    "ic": [
-    0.704,
-    0.8471
+    0.6936,
+    0.8374
    ],
-   "brier": 0.1465
+   "brier": 0.1463
   },
   "visitante": {
-   "n": 56,
-   "aciertos": 29,
-   "acierto": 0.5179,
+   "n": 53,
+   "aciertos": 27,
+   "acierto": 0.5094,
    "ic": [
-    0.3901,
-    0.6433
+    0.3788,
+    0.6388
    ],
-   "brier": 0.2549
+   "brier": 0.2641
   }
  },
  "ejemplos": [
@@ -154,7 +154,7 @@
    "visitante": "Cardiff Blues",
    "marcador": "0-26",
    "fav": "Ospreys",
-   "pp": 0.636,
+   "pp": 0.6934,
    "ok": false
   },
   {
@@ -163,7 +163,7 @@
    "visitante": "Zebre",
    "marcador": "35-14",
    "fav": "Dragons",
-   "pp": 0.7812,
+   "pp": 0.8125,
    "ok": true
   },
   {
@@ -181,7 +181,7 @@
    "visitante": "Edinburgh",
    "marcador": "31-12",
    "fav": "Edinburgh",
-   "pp": 0.6175,
+   "pp": 0.6509,
    "ok": false
   },
   {
@@ -190,7 +190,7 @@
    "visitante": "Scarlets",
    "marcador": "54-26",
    "fav": "Bulls",
-   "pp": 0.931,
+   "pp": 0.9512,
    "ok": true
   },
   {
@@ -199,7 +199,7 @@
    "visitante": "Ulster",
    "marcador": "33-7",
    "fav": "Stormers",
-   "pp": 0.8532,
+   "pp": 0.879,
    "ok": true
   },
   {
@@ -208,7 +208,7 @@
    "visitante": "Lions",
    "marcador": "29-20",
    "fav": "Glasgow Warriors",
-   "pp": 0.8402,
+   "pp": 0.8948,
    "ok": true
   },
   {
@@ -217,7 +217,7 @@
    "visitante": "Leinster",
    "marcador": "5-50",
    "fav": "Leinster",
-   "pp": 0.5932,
+   "pp": 0.5764,
    "ok": true
   },
   {
@@ -235,7 +235,7 @@
    "visitante": "Munster",
    "marcador": "24-18",
    "fav": "Leinster",
-   "pp": 0.7859,
+   "pp": 0.8233,
    "ok": true
   },
   {
@@ -244,7 +244,7 @@
    "visitante": "Glasgow Warriors",
    "marcador": "20-24",
    "fav": "Glasgow Warriors",
-   "pp": 0.7238,
+   "pp": 0.7413,
    "ok": true
   },
   {
@@ -253,7 +253,7 @@
    "visitante": "Scarlets",
    "marcador": "52-40",
    "fav": "Stormers",
-   "pp": 0.9005,
+   "pp": 0.9235,
    "ok": true
   },
   {
@@ -262,7 +262,7 @@
    "visitante": "Ulster",
    "marcador": "34-26",
    "fav": "Bulls",
-   "pp": 0.8822,
+   "pp": 0.9191,
    "ok": true
   },
   {
@@ -271,7 +271,7 @@
    "visitante": "Lions",
    "marcador": "31-10",
    "fav": "Edinburgh",
-   "pp": 0.6686,
+   "pp": 0.7611,
    "ok": true
   },
   {
@@ -280,7 +280,7 @@
    "visitante": "Zebre",
    "marcador": "48-27",
    "fav": "Connacht",
-   "pp": 0.9112,
+   "pp": 0.9104,
    "ok": true
   },
   {
@@ -289,7 +289,7 @@
    "visitante": "Sharks",
    "marcador": "21-36",
    "fav": "Cardiff Blues",
-   "pp": 0.5462,
+   "pp": 0.6185,
    "ok": false
   },
   {
@@ -298,7 +298,7 @@
    "visitante": "Cardiff Blues",
    "marcador": "29-5",
    "fav": "Leinster",
-   "pp": 0.7209,
+   "pp": 0.7087,
    "ok": true
   },
   {
@@ -307,7 +307,7 @@
    "visitante": "Benetton Treviso",
    "marcador": "27-26",
    "fav": "Benetton Treviso",
-   "pp": 0.5003,
+   "pp": 0.5152,
    "ok": false
   },
   {
@@ -316,7 +316,7 @@
    "visitante": "Edinburgh",
    "marcador": "12-29",
    "fav": "Edinburgh",
-   "pp": 0.7973,
+   "pp": 0.8528,
    "ok": true
   },
   {
@@ -343,7 +343,7 @@
    "visitante": "Ospreys",
    "marcador": "31-38",
    "fav": "Dragons",
-   "pp": 0.6322,
+   "pp": 0.6953,
    "ok": false
   },
   {
@@ -352,7 +352,7 @@
    "visitante": "Connacht",
    "marcador": "36-19",
    "fav": "Glasgow Warriors",
-   "pp": 0.7763,
+   "pp": 0.7711,
    "ok": true
   },
   {
@@ -361,7 +361,7 @@
    "visitante": "Bulls",
    "marcador": "26-22",
    "fav": "Bulls",
-   "pp": 0.6987,
+   "pp": 0.7753,
    "ok": false
   },
   {
@@ -370,7 +370,7 @@
    "visitante": "Leinster",
    "marcador": "26-20",
    "fav": "Sharks",
-   "pp": 0.5623,
+   "pp": 0.6057,
    "ok": true
   }
  ],
@@ -380,20 +380,29 @@
    "kmul": 1.0,
    "hmul": 1.4,
    "c_desc": 0.0,
-   "c_forma": 60.0
+   "c_forma": 60.0,
+   "c_micro": 0.0,
+   "c_sede": 30.0
   },
   "sd": 17.386,
   "motor": {
    "n": 181,
-   "acierto": 0.7017,
-   "brier": 0.1801,
-   "logloss": 0.5333
+   "acierto": 0.6961,
+   "brier": 0.1808,
+   "logloss": 0.5335
   },
   "elo_basico": {
    "n": 181,
    "acierto": 0.6796,
    "brier": 0.1866,
    "logloss": 0.5517
+  },
+  "escalas": {
+   "temporada": true,
+   "ultimos10": true,
+   "ultimos3": false,
+   "casa_fuera": true,
+   "descanso": false
   },
   "local": {
    "n": 181,

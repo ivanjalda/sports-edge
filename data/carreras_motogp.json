@@ -1,0 +1,503 @@
+{
+ "serie": "motogp",
+ "nombre": "MotoGP",
+ "actualizado": "2026-11-13 19:25 UTC",
+ "proximo": {
+  "id": "mgp-2026-POR",
+  "nombre": "Grand Prix of Portugal",
+  "circuito": "Autódromo Internacional do Algarve",
+  "pais": "Portugal",
+  "fecha": "2026-11-15T13:00:00Z",
+  "clasif": "2026-11-14T11:15:00Z",
+  "sprint": true,
+  "tipo": "previa",
+  "pilotos": [
+   {
+    "id": "e7e4c72e-952e-4f64-8e8a-a47ff590fade",
+    "n": "Alex Marquez",
+    "eq": "BK8 Gresini Racing MotoGP",
+    "grid": null,
+    "fuerza": 103.0,
+    "pw": 0.2587,
+    "pp": 0.6025,
+    "p10": 0.8075
+   },
+   {
+    "id": "f55b433d-38b8-4d1d-bb3a-a709c82a0260",
+    "n": "Marc Marquez",
+    "eq": "Ducati Lenovo Team",
+    "grid": null,
+    "fuerza": 95.7,
+    "pw": 0.2055,
+    "pp": 0.5382,
+    "p10": 0.8017
+   },
+   {
+    "id": "9cb55304-0ac1-401c-beb6-1a4f445018a4",
+    "n": "Francesco Bagnaia",
+    "eq": "Ducati Lenovo Team",
+    "grid": null,
+    "fuerza": 86.7,
+    "pw": 0.1602,
+    "pp": 0.4552,
+    "p10": 0.797
+   },
+   {
+    "id": "fcdd5500-a769-4ff4-8b9e-080d1849ff42",
+    "n": "Fabio Quartararo",
+    "eq": "Monster Energy Yamaha MotoGP Team",
+    "grid": null,
+    "fuerza": 50.1,
+    "pw": 0.0492,
+    "pp": 0.1718,
+    "p10": 0.6965
+   },
+   {
+    "id": "487440af-cfa9-478a-903b-4e893ee18d3a",
+    "n": "Johann Zarco",
+    "eq": "CASTROL Honda LCR",
+    "grid": null,
+    "fuerza": 45.3,
+    "pw": 0.041,
+    "pp": 0.1468,
+    "p10": 0.651
+   },
+   {
+    "id": "6c33de41-f014-4f17-8dc9-e6f36e61026a",
+    "n": "Fabio Di Giannantonio",
+    "eq": "Pertamina Enduro VR46 Racing Team",
+    "grid": null,
+    "fuerza": 41.7,
+    "pw": 0.0355,
+    "pp": 0.133,
+    "p10": 0.6243
+   },
+   {
+    "id": "2614e0f6-7e02-4076-a746-50f43fe3143c",
+    "n": "Fermin Aldeguer",
+    "eq": "BK8 Gresini Racing MotoGP",
+    "grid": null,
+    "fuerza": 41.3,
+    "pw": 0.0348,
+    "pp": 0.132,
+    "p10": 0.6263
+   },
+   {
+    "id": "a6108385-dd4c-490d-b02e-542ed0275f79",
+    "n": "Pedro Acosta",
+    "eq": "Red Bull KTM Factory Racing",
+    "grid": null,
+    "fuerza": 39.8,
+    "pw": 0.0347,
+    "pp": 0.132,
+    "p10": 0.6033
+   },
+   {
+    "id": "a73f8ef2-784f-4f52-8511-1d315fd3a459",
+    "n": "Franco Morbidelli",
+    "eq": "Pertamina Enduro VR46 Racing Team",
+    "grid": null,
+    "fuerza": 38.1,
+    "pw": 0.0325,
+    "pp": 0.1212,
+    "p10": 0.5943
+   },
+   {
+    "id": "ba579548-f026-402b-a607-38db5317d33f",
+    "n": "Brad Binder",
+    "eq": "Red Bull KTM Factory Racing",
+    "grid": null,
+    "fuerza": 35.1,
+    "pw": 0.0287,
+    "pp": 0.1065,
+    "p10": 0.5798
+   },
+   {
+    "id": "66ee98b2-239c-487f-8913-aab8493ce280",
+    "n": "Maverick Viñales",
+    "eq": "Red Bull KTM Tech3",
+    "grid": null,
+    "fuerza": 30.1,
+    "pw": 0.0267,
+    "pp": 0.0938,
+    "p10": 0.5275
+   },
+   {
+    "id": "9a441928-d1af-452d-afce-fa028c044932",
+    "n": "Joan Mir",
+    "eq": "Honda HRC Castrol",
+    "grid": null,
+    "fuerza": 14.2,
+    "pw": 0.0145,
+    "pp": 0.0542,
+    "p10": 0.3833
+   },
+   {
+    "id": "eb47c439-e136-40ff-9534-5c612853f529",
+    "n": "Ai Ogura",
+    "eq": "Trackhouse MotoGP Team",
+    "grid": null,
+    "fuerza": 8.6,
+    "pw": 0.0142,
+    "pp": 0.0473,
+    "p10": 0.3378
+   },
+   {
+    "id": "ff225c9d-64a2-43ac-a70e-62cf385a85a1",
+    "n": "Enea Bastianini",
+    "eq": "Red Bull KTM Tech3",
+    "grid": null,
+    "fuerza": 11.0,
+    "pw": 0.0113,
+    "pp": 0.05,
+    "p10": 0.3567
+   },
+   {
+    "id": "6e940243-5167-4cc3-a343-a74337369b94",
+    "n": "Jack Miller",
+    "eq": "Prima Pramac Yamaha MotoGP",
+    "grid": null,
+    "fuerza": 5.0,
+    "pw": 0.0102,
+    "pp": 0.0435,
+    "p10": 0.3083
+   },
+   {
+    "id": "ab06dbae-7d6e-47c3-b63f-b7ac6b7d3bcd",
+    "n": "Marco Bezzecchi",
+    "eq": "Aprilia Racing",
+    "grid": null,
+    "fuerza": 6.6,
+    "pw": 0.0102,
+    "pp": 0.0433,
+    "p10": 0.3227
+   },
+   {
+    "id": "7b0687b0-90bd-4ad6-b157-8c66fb8a93cf",
+    "n": "Luca Marini",
+    "eq": "Honda HRC Castrol",
+    "grid": null,
+    "fuerza": 1.5,
+    "pw": 0.0093,
+    "pp": 0.0388,
+    "p10": 0.2712
+   },
+   {
+    "id": "1abd2de7-9046-4d0a-88e3-ad801dcc235b",
+    "n": "Miguel Oliveira",
+    "eq": "Prima Pramac Yamaha MotoGP",
+    "grid": null,
+    "fuerza": -6.6,
+    "pw": 0.0087,
+    "pp": 0.0308,
+    "p10": 0.2238
+   },
+   {
+    "id": "58448742-f520-466a-a1a1-bf3286cce9c3",
+    "n": "Raul Fernandez",
+    "eq": "Trackhouse MotoGP Team",
+    "grid": null,
+    "fuerza": -20.3,
+    "pw": 0.0055,
+    "pp": 0.0195,
+    "p10": 0.1432
+   },
+   {
+    "id": "56475aa3-f3d1-485a-b6db-ca1149e1b6fa",
+    "n": "Alex Rins",
+    "eq": "Monster Energy Yamaha MotoGP Team",
+    "grid": null,
+    "fuerza": -10.7,
+    "pw": 0.0042,
+    "pp": 0.0228,
+    "p10": 0.1945
+   },
+   {
+    "id": "201ae7a4-0dc7-4191-be71-d91ac0330090",
+    "n": "Takaaki Nakagami",
+    "eq": "Honda HRC Test Team",
+    "grid": null,
+    "fuerza": -25.4,
+    "pw": 0.0035,
+    "pp": 0.0143,
+    "p10": 0.1238
+   },
+   {
+    "id": "0c9405ff-e879-498c-964d-b39409361a6c",
+    "n": "Lorenzo Savadori",
+    "eq": "Aprilia Racing",
+    "grid": null,
+    "fuerza": -75.5,
+    "pw": 0.0012,
+    "pp": 0.0023,
+    "p10": 0.0253
+   }
+  ]
+ },
+ "abandono": 0.1952,
+ "motor": {
+  "k": 4.0,
+  "w": 0.5,
+  "t": 30.0,
+  "t_grid": 50.0,
+  "c_grid": 40.0,
+  "prueba_previa": {
+   "carreras": 26,
+   "favorito_gana": 0.3846,
+   "logloss": 1.6809,
+   "podio": 0.6154,
+   "pole_gana": 0.4231
+  },
+  "prueba_parrilla": {
+   "carreras": 26,
+   "favorito_gana": 0.3846,
+   "logloss": 1.4923,
+   "podio": 0.6538,
+   "pole_gana": 0.4231
+  },
+  "azar_logloss": 3.0997,
+  "temporadas_prueba": [
+   2024,
+   2025
+  ]
+ },
+ "fuerzas": [
+  {
+   "n": "Alex Marquez",
+   "eq": "BK8 Gresini Racing MotoGP",
+   "piloto": 85.7,
+   "total": 103.0
+  },
+  {
+   "n": "Marc Marquez",
+   "eq": "Ducati Lenovo Team",
+   "piloto": 88.6,
+   "total": 95.7
+  },
+  {
+   "n": "Francesco Bagnaia",
+   "eq": "Ducati Lenovo Team",
+   "piloto": 79.5,
+   "total": 86.7
+  },
+  {
+   "n": "Fabio Quartararo",
+   "eq": "Monster Energy Yamaha MotoGP Team",
+   "piloto": 52.4,
+   "total": 50.1
+  },
+  {
+   "n": "Johann Zarco",
+   "eq": "CASTROL Honda LCR",
+   "piloto": 39.5,
+   "total": 45.3
+  },
+  {
+   "n": "Fabio Di Giannantonio",
+   "eq": "Pertamina Enduro VR46 Racing Team",
+   "piloto": 38.8,
+   "total": 41.7
+  },
+  {
+   "n": "Fermin Aldeguer",
+   "eq": "BK8 Gresini Racing MotoGP",
+   "piloto": 24.0,
+   "total": 41.3
+  },
+  {
+   "n": "Pedro Acosta",
+   "eq": "Red Bull KTM Factory Racing",
+   "piloto": 42.0,
+   "total": 39.8
+  },
+  {
+   "n": "Franco Morbidelli",
+   "eq": "Pertamina Enduro VR46 Racing Team",
+   "piloto": 35.2,
+   "total": 38.1
+  },
+  {
+   "n": "Brad Binder",
+   "eq": "Red Bull KTM Factory Racing",
+   "piloto": 37.2,
+   "total": 35.1
+  },
+  {
+   "n": "Maverick Viñales",
+   "eq": "Red Bull KTM Tech3",
+   "piloto": 36.9,
+   "total": 30.1
+  },
+  {
+   "n": "Joan Mir",
+   "eq": "Honda HRC Castrol",
+   "piloto": 9.6,
+   "total": 14.2
+  },
+  {
+   "n": "Enea Bastianini",
+   "eq": "Red Bull KTM Tech3",
+   "piloto": 17.9,
+   "total": 11.0
+  },
+  {
+   "n": "Ai Ogura",
+   "eq": "Trackhouse MotoGP Team",
+   "piloto": 5.4,
+   "total": 8.6
+  },
+  {
+   "n": "Marco Bezzecchi",
+   "eq": "Aprilia Racing",
+   "piloto": 13.3,
+   "total": 6.6
+  },
+  {
+   "n": "Jack Miller",
+   "eq": "Prima Pramac Yamaha MotoGP",
+   "piloto": 10.7,
+   "total": 5.0
+  },
+  {
+   "n": "Luca Marini",
+   "eq": "Honda HRC Castrol",
+   "piloto": -3.1,
+   "total": 1.5
+  },
+  {
+   "n": "Miguel Oliveira",
+   "eq": "Prima Pramac Yamaha MotoGP",
+   "piloto": -0.9,
+   "total": -6.6
+  },
+  {
+   "n": "Alex Rins",
+   "eq": "Monster Energy Yamaha MotoGP Team",
+   "piloto": -8.4,
+   "total": -10.7
+  },
+  {
+   "n": "Raul Fernandez",
+   "eq": "Trackhouse MotoGP Team",
+   "piloto": -23.6,
+   "total": -20.3
+  },
+  {
+   "n": "Takaaki Nakagami",
+   "eq": "Honda HRC Test Team",
+   "piloto": -23.2,
+   "total": -25.4
+  },
+  {
+   "n": "Lorenzo Savadori",
+   "eq": "Aprilia Racing",
+   "piloto": -68.7,
+   "total": -75.5
+  }
+ ],
+ "equipos": [
+  {
+   "eq": "BK8 Gresini Racing MotoGP",
+   "f": 34.7
+  },
+  {
+   "eq": "Ducati Lenovo Team",
+   "f": 14.4
+  },
+  {
+   "eq": "CASTROL Honda LCR",
+   "f": 11.7
+  },
+  {
+   "eq": "Honda HRC Castrol",
+   "f": 9.2
+  },
+  {
+   "eq": "Trackhouse MotoGP Team",
+   "f": 6.5
+  },
+  {
+   "eq": "Pertamina Enduro VR46 Racing Team",
+   "f": 5.7
+  },
+  {
+   "eq": "Red Bull KTM Factory Racing",
+   "f": -4.3
+  },
+  {
+   "eq": "Honda HRC Test Team",
+   "f": -4.3
+  },
+  {
+   "eq": "Monster Energy Yamaha MotoGP Team",
+   "f": -4.6
+  },
+  {
+   "eq": "Prima Pramac Yamaha MotoGP",
+   "f": -11.4
+  },
+  {
+   "eq": "Aprilia Racing",
+   "f": -13.5
+  },
+  {
+   "eq": "Red Bull KTM Tech3",
+   "f": -13.7
+  }
+ ],
+ "directo": {
+  "carreras": 0
+ },
+ "recientes": [],
+ "ultimas": [
+  {
+   "nombre": "Grand Prix De France",
+   "fecha": "2025-05-11T14:10:00Z",
+   "ganador": "Johann Zarco",
+   "equipo": "CASTROL Honda LCR"
+  },
+  {
+   "nombre": "Grand Prix of Spain",
+   "fecha": "2025-04-27T14:00:00Z",
+   "ganador": "Alex Marquez",
+   "equipo": "BK8 Gresini Racing MotoGP"
+  },
+  {
+   "nombre": "Grand Prix of Qatar",
+   "fecha": "2025-04-13T20:00:00Z",
+   "ganador": "Marc Marquez",
+   "equipo": "Ducati Lenovo Team"
+  },
+  {
+   "nombre": "Grand Prix of The Americas",
+   "fecha": "2025-03-30T14:17:00Z",
+   "ganador": "Francesco Bagnaia",
+   "equipo": "Ducati Lenovo Team"
+  },
+  {
+   "nombre": "Gran Premio De La República Argentina",
+   "fecha": "2025-03-16T15:00:00Z",
+   "ganador": "Marc Marquez",
+   "equipo": "Ducati Lenovo Team"
+  },
+  {
+   "nombre": "Grand Prix of Thailand",
+   "fecha": "2025-03-02T15:00:00Z",
+   "ganador": "Marc Marquez",
+   "equipo": "Ducati Lenovo Team"
+  },
+  {
+   "nombre": "Solidarity Grand Prix of Barcelona",
+   "fecha": "2024-11-17T14:00:00Z",
+   "ganador": "Francesco Bagnaia",
+   "equipo": "Ducati Lenovo Team"
+  },
+  {
+   "nombre": "Malaysian Motorcycle Grand Prix",
+   "fecha": "2024-11-03T15:25:00Z",
+   "ganador": "Francesco Bagnaia",
+   "equipo": "Ducati Lenovo Team"
+  }
+ ],
+ "fuentes": "Resultados oficiales de motogp.com"
+}

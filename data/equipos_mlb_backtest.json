@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13 15:11 UTC",
+ "actualizado": "2026-11-13 19:24 UTC",
  "liga": "MLB",
  "desde": "20250318",
  "datos_hasta": "2026-10-29T00:00:00Z",
@@ -387,7 +387,9 @@
    "kmul": 0.7,
    "hmul": 0.6,
    "c_desc": 0.0,
-   "c_forma": 0.0
+   "c_forma": 0.0,
+   "c_micro": 0.0,
+   "c_sede": 0.0
   },
   "sd": 4.517,
   "motor": {
@@ -401,6 +403,13 @@
    "acierto": 0.5596,
    "brier": 0.2443,
    "logloss": 0.6816
+  },
+  "escalas": {
+   "temporada": true,
+   "ultimos10": false,
+   "ultimos3": false,
+   "casa_fuera": false,
+   "descanso": false
   },
   "local": {
    "n": 4946,

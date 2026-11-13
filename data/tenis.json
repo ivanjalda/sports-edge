@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13 15:11 UTC",
+ "actualizado": "2026-11-13 19:24 UTC",
  "datos_hasta": 20261108,
  "dias_desde_datos": 5,
  "fuentes": {
@@ -70,6 +70,53 @@
    }
   },
   {
+   "id": "7a3793ffa0858a51e84d1d912416a16c",
+   "torneo": "WTA Finals",
+   "tour": "WTA",
+   "sup": "Hard",
+   "fecha": "2026-11-13T20:00:00Z",
+   "j1": "Mirra Andreeva",
+   "j2": "Diana Shnaider",
+   "id1": "wta:259799",
+   "id2": "wta:223670",
+   "p1": 0.5282,
+   "p2": 0.4718,
+   "n1": 195,
+   "n2": 204,
+   "creada": "2026-11-13 19:24 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "2": {
+      "c": 3.4,
+      "casa": "Betfair"
+     },
+     "1": {
+      "c": 1.47,
+      "casa": "1xBet"
+     }
+    },
+    "mercado": {
+     "1": 0.6631,
+     "2": 0.3369
+    },
+    "casas": 12,
+    "ev": {
+     "1": -0.2235,
+     "2": 0.6041
+    },
+    "valor": [],
+    "actualizado": "2026-11-13 19:24 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 19:24 UTC",
+    "valor": [],
+    "1": 1.47,
+    "2": 3.4
+   }
+  },
+  {
    "id": "29a6e4e35a3b385e9666473ad68f2084",
    "torneo": "WTA Finals",
    "tour": "WTA",
@@ -89,25 +136,25 @@
    "cuota": {
     "mejor": {
      "1": {
-      "c": 1.52,
-      "casa": "GTbets"
+      "c": 1.5,
+      "casa": "Betfair"
      },
      "2": {
-      "c": 2.92,
-      "casa": "Betfair"
+      "c": 2.98,
+      "casa": "Matchbook"
      }
     },
     "mercado": {
-     "1": 0.6509,
-     "2": 0.3491
+     "1": 0.6597,
+     "2": 0.3403
     },
     "casas": 19,
     "ev": {
-     "1": 0.1053,
-     "2": -0.2034
+     "1": 0.0908,
+     "2": -0.1871
     },
     "valor": [],
-    "actualizado": "2026-11-13 15:11 UTC"
+    "actualizado": "2026-11-13 19:24 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-12 15:49 UTC",
@@ -116,6 +163,53 @@
     ],
     "1": 1.6,
     "2": 2.64
+   }
+  },
+  {
+   "id": "53d87628f7d7ae2c16b9b10ab1be03ab",
+   "torneo": "WTA Finals",
+   "tour": "WTA",
+   "sup": "Hard",
+   "fecha": "2026-11-14T15:00:00Z",
+   "j1": "Jessica Pegula",
+   "j2": "Mirra Andreeva",
+   "id1": "wta:202468",
+   "id2": "wta:259799",
+   "p1": 0.5998,
+   "p2": 0.4002,
+   "n1": 433,
+   "n2": 195,
+   "creada": "2026-11-13 19:24 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "1": {
+      "c": 2.6,
+      "casa": "Nordic Bet"
+     },
+     "2": {
+      "c": 1.56,
+      "casa": "1xBet"
+     }
+    },
+    "mercado": {
+     "1": 0.3696,
+     "2": 0.6304
+    },
+    "casas": 11,
+    "ev": {
+     "1": 0.5595,
+     "2": -0.3757
+    },
+    "valor": [],
+    "actualizado": "2026-11-13 19:24 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 19:24 UTC",
+    "valor": [],
+    "1": 2.6,
+    "2": 1.56
    }
   },
   {
@@ -138,8 +232,8 @@
    "cuota": {
     "mejor": {
      "1": {
-      "c": 1.44,
-      "casa": "BetAnything"
+      "c": 1.46,
+      "casa": "Pinnacle"
      },
      "2": {
       "c": 3.0,
@@ -147,16 +241,16 @@
      }
     },
     "mercado": {
-     "1": 0.6733,
-     "2": 0.3267
+     "1": 0.6714,
+     "2": 0.3286
     },
-    "casas": 7,
+    "casas": 9,
     "ev": {
-     "1": -0.0536,
+     "1": -0.0405,
      "2": 0.0284
     },
     "valor": [],
-    "actualizado": "2026-11-13 15:11 UTC"
+    "actualizado": "2026-11-13 19:24 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 15:11 UTC",
@@ -185,25 +279,25 @@
    "cuota": {
     "mejor": {
      "2": {
-      "c": 2.3,
-      "casa": "BetAnything"
+      "c": 2.46,
+      "casa": "BetOnline.ag"
      },
      "1": {
-      "c": 1.67,
-      "casa": "BetAnything"
+      "c": 1.62,
+      "casa": "Pinnacle"
      }
     },
     "mercado": {
-     "1": 0.57,
-     "2": 0.43
+     "1": 0.6033,
+     "2": 0.3967
     },
-    "casas": 7,
+    "casas": 9,
     "ev": {
-     "1": -0.1336,
-     "2": 0.1068
+     "1": -0.1595,
+     "2": 0.1838
     },
     "valor": [],
-    "actualizado": "2026-11-13 15:11 UTC"
+    "actualizado": "2026-11-13 19:24 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 15:11 UTC",
@@ -241,16 +335,16 @@
      }
     },
     "mercado": {
-     "1": 0.8378,
-     "2": 0.1622
+     "1": 0.8383,
+     "2": 0.1617
     },
-    "casas": 7,
+    "casas": 8,
     "ev": {
      "1": 0.0078,
      "2": -0.188
     },
     "valor": [],
-    "actualizado": "2026-11-13 15:11 UTC"
+    "actualizado": "2026-11-13 19:24 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 15:11 UTC",
@@ -279,25 +373,25 @@
    "cuota": {
     "mejor": {
      "1": {
-      "c": 1.23,
-      "casa": "Unibet (NL)"
+      "c": 1.24,
+      "casa": "BetAnything"
      },
      "2": {
       "c": 4.3,
-      "casa": "BetAnything"
+      "casa": "BetOnline.ag"
      }
     },
     "mercado": {
-     "1": 0.7714,
-     "2": 0.2286
+     "1": 0.7711,
+     "2": 0.2289
     },
-    "casas": 6,
+    "casas": 7,
     "ev": {
-     "1": -0.1362,
+     "1": -0.1291,
      "2": 0.2801
     },
     "valor": [],
-    "actualizado": "2026-11-13 15:11 UTC"
+    "actualizado": "2026-11-13 19:24 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 15:11 UTC",
@@ -308,7 +402,7 @@
   }
  ],
  "directo": {
-  "total": 10,
+  "total": 12,
   "resueltas": 0,
   "acierto": null,
   "brier": null,

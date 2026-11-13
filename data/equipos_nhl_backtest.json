@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13 15:11 UTC",
+ "actualizado": "2026-11-13 19:24 UTC",
  "liga": "NHL",
  "desde": "20251007",
  "datos_hasta": "2026-11-13T03:00:00Z",
@@ -390,7 +390,9 @@
    "kmul": 1.0,
    "hmul": 1.0,
    "c_desc": 20.0,
-   "c_forma": 0.0
+   "c_forma": 0.0,
+   "c_micro": 0.0,
+   "c_sede": 0.0
   },
   "sd": 2.608,
   "motor": {
@@ -404,6 +406,13 @@
    "acierto": 0.551,
    "brier": 0.2467,
    "logloss": 0.6864
+  },
+  "escalas": {
+   "temporada": true,
+   "ultimos10": false,
+   "ultimos3": false,
+   "casa_fuera": false,
+   "descanso": true
   },
   "local": {
    "n": 1695,

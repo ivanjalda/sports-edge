@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13 15:11 UTC",
+ "actualizado": "2026-11-13 19:24 UTC",
  "liga": "Euroliga",
  "desde": "20250930",
  "datos_hasta": "2026-11-12T20:00:00Z",
@@ -390,7 +390,9 @@
    "kmul": 1.0,
    "hmul": 1.0,
    "c_desc": 35.0,
-   "c_forma": 30.0
+   "c_forma": 30.0,
+   "c_micro": 0.0,
+   "c_sede": 0.0
   },
   "sd": 12.365,
   "motor": {
@@ -404,6 +406,13 @@
    "acierto": 0.6365,
    "brier": 0.2218,
    "logloss": 0.6333
+  },
+  "escalas": {
+   "temporada": true,
+   "ultimos10": true,
+   "ultimos3": false,
+   "casa_fuera": false,
+   "descanso": true
   },
   "local": {
    "n": 509,

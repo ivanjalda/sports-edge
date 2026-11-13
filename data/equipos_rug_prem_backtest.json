@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13 15:11 UTC",
+ "actualizado": "2026-11-13 19:24 UTC",
  "liga": "Premiership",
  "desde": "20250925",
  "datos_hasta": "2026-10-31T17:30:00Z",
@@ -380,7 +380,9 @@
    "kmul": 0.7,
    "hmul": 1.4,
    "c_desc": 0.0,
-   "c_forma": 60.0
+   "c_forma": 60.0,
+   "c_micro": 0.0,
+   "c_sede": 0.0
   },
   "sd": 20.046,
   "motor": {
@@ -394,6 +396,13 @@
    "acierto": 0.7094,
    "brier": 0.1996,
    "logloss": 0.5795
+  },
+  "escalas": {
+   "temporada": true,
+   "ultimos10": true,
+   "ultimos3": false,
+   "casa_fuera": false,
+   "descanso": false
   },
   "local": {
    "n": 117,

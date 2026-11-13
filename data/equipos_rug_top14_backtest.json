@@ -1,17 +1,17 @@
 {
- "actualizado": "2026-11-13 15:11 UTC",
+ "actualizado": "2026-11-13 19:24 UTC",
  "liga": "Top 14",
  "desde": "20250906",
  "datos_hasta": "2026-11-08T20:05:00Z",
  "total": {
   "n": 247,
-  "aciertos": 189,
-  "acierto": 0.7652,
+  "aciertos": 193,
+  "acierto": 0.7814,
   "ic": [
-   0.7085,
-   0.8137
+   0.7257,
+   0.8284
   ],
-  "brier": 0.1798
+  "brier": 0.166
  },
  "base_local": {
   "n": 247,
@@ -20,37 +20,37 @@
  "base_balance": {
   "n": 154,
   "acierto": 0.5909,
-  "nuestro": 0.7662
+  "nuestro": 0.7857
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 162,
-   "conf": 0.7016,
-   "acierto": 0.8395,
+   "n": 203,
+   "conf": 0.7652,
+   "acierto": 0.8128,
    "ic": [
-    0.7752,
-    0.8881
+    0.7535,
+    0.8605
    ]
   },
   {
    "min": 0.7,
-   "n": 67,
-   "conf": 0.7774,
-   "acierto": 0.9254,
+   "n": 149,
+   "conf": 0.8053,
+   "acierto": 0.8389,
    "ic": [
-    0.8369,
-    0.9677
+    0.7715,
+    0.8893
    ]
   },
   {
    "min": 0.8,
-   "n": 21,
-   "conf": 0.8421,
-   "acierto": 0.9524,
+   "n": 70,
+   "conf": 0.8711,
+   "acierto": 0.9143,
    "ic": [
-    0.7733,
-    0.9915
+    0.8253,
+    0.9601
    ]
   }
  ],
@@ -58,93 +58,93 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 85,
-   "prometido": 0.5524,
-   "real": 0.6235
+   "n": 44,
+   "prometido": 0.5473,
+   "real": 0.6364
   },
   {
    "desde": 60,
    "hasta": 70,
-   "n": 95,
-   "prometido": 0.6481,
-   "real": 0.7789
+   "n": 54,
+   "prometido": 0.6546,
+   "real": 0.7407
   },
   {
    "desde": 70,
    "hasta": 80,
-   "n": 46,
-   "prometido": 0.7479,
-   "real": 0.913
+   "n": 79,
+   "prometido": 0.747,
+   "real": 0.7722
   },
   {
    "desde": 80,
    "hasta": 90,
-   "n": 18,
-   "prometido": 0.828,
-   "real": 0.9444
+   "n": 50,
+   "prometido": 0.8489,
+   "real": 0.88
   },
   {
    "desde": 90,
    "hasta": 100,
-   "n": 3,
-   "prometido": 0.9264,
+   "n": 20,
+   "prometido": 0.9268,
    "real": 1.0
   }
  ],
  "temporadas": {
   "2026": {
    "n": 184,
-   "aciertos": 143,
-   "acierto": 0.7772,
+   "aciertos": 142,
+   "acierto": 0.7717,
    "ic": [
-    0.7117,
-    0.8313
+    0.7059,
+    0.8265
    ],
-   "brier": 0.1763
+   "brier": 0.1609
   },
   "2027": {
    "n": 63,
-   "aciertos": 46,
-   "acierto": 0.7302,
+   "aciertos": 51,
+   "acierto": 0.8095,
    "ic": [
-    0.6097,
-    0.8242
+    0.6959,
+    0.8875
    ],
-   "brier": 0.1902
+   "brier": 0.1807
   }
  },
  "fases": {
   "regular": {
    "n": 247,
-   "aciertos": 189,
-   "acierto": 0.7652,
+   "aciertos": 193,
+   "acierto": 0.7814,
    "ic": [
-    0.7085,
-    0.8137
+    0.7257,
+    0.8284
    ],
-   "brier": 0.1798
+   "brier": 0.166
   }
  },
  "elige": {
   "local": {
-   "n": 203,
-   "aciertos": 163,
-   "acierto": 0.803,
+   "n": 213,
+   "aciertos": 170,
+   "acierto": 0.7981,
    "ic": [
-    0.7428,
-    0.8518
+    0.7392,
+    0.8465
    ],
-   "brier": 0.1691
+   "brier": 0.1564
   },
   "visitante": {
-   "n": 44,
-   "aciertos": 26,
-   "acierto": 0.5909,
+   "n": 34,
+   "aciertos": 23,
+   "acierto": 0.6765,
    "ic": [
-    0.4441,
-    0.7231
+    0.5084,
+    0.8087
    ],
-   "brier": 0.2293
+   "brier": 0.226
   }
  },
  "ejemplos": [
@@ -154,7 +154,7 @@
    "visitante": "Bayonne",
    "marcador": "22-18",
    "fav": "La Rochelle",
-   "pp": 0.7073,
+   "pp": 0.7736,
    "ok": true
   },
   {
@@ -163,7 +163,7 @@
    "visitante": "Bordeaux Begles",
    "marcador": "23-14",
    "fav": "Bordeaux Begles",
-   "pp": 0.6518,
+   "pp": 0.6279,
    "ok": false
   },
   {
@@ -172,7 +172,7 @@
    "visitante": "Stade Francais Paris",
    "marcador": "43-23",
    "fav": "Toulon",
-   "pp": 0.5605,
+   "pp": 0.6836,
    "ok": true
   },
   {
@@ -181,7 +181,7 @@
    "visitante": "Perpignan",
    "marcador": "63-26",
    "fav": "Pau",
-   "pp": 0.8212,
+   "pp": 0.9159,
    "ok": true
   },
   {
@@ -190,7 +190,7 @@
    "visitante": "Lyon",
    "marcador": "21-19",
    "fav": "Montpellier Herault",
-   "pp": 0.737,
+   "pp": 0.8519,
    "ok": true
   },
   {
@@ -199,7 +199,7 @@
    "visitante": "Racing 92",
    "marcador": "28-30",
    "fav": "Castres Olympique",
-   "pp": 0.5662,
+   "pp": 0.6729,
    "ok": false
   },
   {
@@ -208,7 +208,7 @@
    "visitante": "Clermont Auvergne",
    "marcador": "28-18",
    "fav": "Stade Toulousain",
-   "pp": 0.7827,
+   "pp": 0.8735,
    "ok": true
   },
   {
@@ -216,9 +216,9 @@
    "local": "Pau",
    "visitante": "Stade Toulousain",
    "marcador": "34-14",
-   "fav": "Stade Toulousain",
-   "pp": 0.5013,
-   "ok": false
+   "fav": "Pau",
+   "pp": 0.6155,
+   "ok": true
   },
   {
    "fecha": "2026-11-01T14:00:00Z",
@@ -226,7 +226,7 @@
    "visitante": "Castres Olympique",
    "marcador": "69-10",
    "fav": "Montpellier Herault",
-   "pp": 0.7784,
+   "pp": 0.8704,
    "ok": true
   },
   {
@@ -235,7 +235,7 @@
    "visitante": "Toulon",
    "marcador": "24-25",
    "fav": "Perpignan",
-   "pp": 0.5277,
+   "pp": 0.6394,
    "ok": false
   },
   {
@@ -244,7 +244,7 @@
    "visitante": "La Rochelle",
    "marcador": "43-24",
    "fav": "Stade Francais Paris",
-   "pp": 0.6148,
+   "pp": 0.6777,
    "ok": true
   },
   {
@@ -253,7 +253,7 @@
    "visitante": "Vannes",
    "marcador": "48-25",
    "fav": "Lyon",
-   "pp": 0.7637,
+   "pp": 0.8242,
    "ok": true
   },
   {
@@ -262,7 +262,7 @@
    "visitante": "Bayonne",
    "marcador": "19-14",
    "fav": "Bordeaux Begles",
-   "pp": 0.7503,
+   "pp": 0.9018,
    "ok": true
   },
   {
@@ -271,7 +271,7 @@
    "visitante": "Racing 92",
    "marcador": "37-30",
    "fav": "Clermont Auvergne",
-   "pp": 0.6197,
+   "pp": 0.7454,
    "ok": true
   },
   {
@@ -280,7 +280,7 @@
    "visitante": "Bordeaux Begles",
    "marcador": "19-25",
    "fav": "La Rochelle",
-   "pp": 0.6389,
+   "pp": 0.7361,
    "ok": false
   },
   {
@@ -288,9 +288,9 @@
    "local": "Toulon",
    "visitante": "Pau",
    "marcador": "41-20",
-   "fav": "Pau",
-   "pp": 0.5418,
-   "ok": false
+   "fav": "Toulon",
+   "pp": 0.5373,
+   "ok": true
   },
   {
    "fecha": "2026-10-24T14:35:00Z",
@@ -298,7 +298,7 @@
    "visitante": "Perpignan",
    "marcador": "38-33",
    "fav": "Stade Toulousain",
-   "pp": 0.8665,
+   "pp": 0.9438,
    "ok": true
   },
   {
@@ -307,7 +307,7 @@
    "visitante": "Montpellier Herault",
    "marcador": "17-20",
    "fav": "Racing 92",
-   "pp": 0.5478,
+   "pp": 0.5917,
    "ok": false
   },
   {
@@ -315,9 +315,9 @@
    "local": "Castres Olympique",
    "visitante": "Stade Francais Paris",
    "marcador": "16-8",
-   "fav": "Stade Francais Paris",
-   "pp": 0.5212,
-   "ok": false
+   "fav": "Castres Olympique",
+   "pp": 0.5679,
+   "ok": true
   },
   {
    "fecha": "2026-10-24T14:35:00Z",
@@ -325,7 +325,7 @@
    "visitante": "Lyon",
    "marcador": "27-31",
    "fav": "Bayonne",
-   "pp": 0.634,
+   "pp": 0.714,
    "ok": false
   },
   {
@@ -333,9 +333,9 @@
    "local": "Vannes",
    "visitante": "Clermont Auvergne",
    "marcador": "27-26",
-   "fav": "Clermont Auvergne",
-   "pp": 0.5478,
-   "ok": false
+   "fav": "Vannes",
+   "pp": 0.5003,
+   "ok": true
   },
   {
    "fecha": "2026-10-11T19:05:00Z",
@@ -343,7 +343,7 @@
    "visitante": "Bayonne",
    "marcador": "45-34",
    "fav": "Stade Toulousain",
-   "pp": 0.8075,
+   "pp": 0.9196,
    "ok": true
   },
   {
@@ -352,7 +352,7 @@
    "visitante": "Bordeaux Begles",
    "marcador": "22-23",
    "fav": "Clermont Auvergne",
-   "pp": 0.5801,
+   "pp": 0.7442,
    "ok": false
   },
   {
@@ -361,7 +361,7 @@
    "visitante": "Racing 92",
    "marcador": "29-15",
    "fav": "Toulon",
-   "pp": 0.5143,
+   "pp": 0.6769,
    "ok": true
   },
   {
@@ -370,7 +370,7 @@
    "visitante": "Castres Olympique",
    "marcador": "35-26",
    "fav": "Pau",
-   "pp": 0.7862,
+   "pp": 0.905,
    "ok": true
   }
  ],
@@ -380,20 +380,29 @@
    "kmul": 0.7,
    "hmul": 1.4,
    "c_desc": 0.0,
-   "c_forma": 0.0
+   "c_forma": 0.0,
+   "c_micro": 0.0,
+   "c_sede": 60.0
   },
   "sd": 16.704,
   "motor": {
    "n": 247,
-   "acierto": 0.7652,
-   "brier": 0.1798,
-   "logloss": 0.5419
+   "acierto": 0.7814,
+   "brier": 0.166,
+   "logloss": 0.506
   },
   "elo_basico": {
    "n": 247,
    "acierto": 0.7247,
    "brier": 0.1881,
    "logloss": 0.5593
+  },
+  "escalas": {
+   "temporada": true,
+   "ultimos10": false,
+   "ultimos3": false,
+   "casa_fuera": true,
+   "descanso": false
   },
   "local": {
    "n": 247,
