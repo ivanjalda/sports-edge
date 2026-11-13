@@ -26,6 +26,8 @@ DEPORTES = {
     "Eredivisie": "soccer_netherlands_eredivisie",
     "Championship": "soccer_efl_champ",
     "Brasileirão": "soccer_brazil_campeonato",
+    "Liga Profesional": "soccer_argentina_primera_division",
+    "MLS": "soccer_usa_mls",
 }
 HORAS_CUOTAS = 48     # solo se piden cuotas de ligas con partidos en las proximas 48 h (ahorra creditos)
 REGION = "eu"

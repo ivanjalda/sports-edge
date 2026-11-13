@@ -8,6 +8,13 @@ import time
 import urllib.request
 from datetime import datetime, timezone, timedelta
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try:
+    import motor_futbol
+except Exception as _e:   # si falta el motor propio se sigue con el modelo anterior
+    motor_futbol = None
+    print("Aviso: motor propio no disponible (%s)" % _e)
+
 API = "https://api.football-data.org/v4"
 KEY = os.environ.get("FOOTBALL_DATA_KEY", "").strip()
 DATA = "data"
@@ -23,6 +30,10 @@ LIGAS = {
     "ELC": "Championship",
     "BSA": "Brasileirão",
 }
+# Ligas que no estan en football-data.org: calendario y resultados desde ESPN, prediccion con el motor propio
+LIGAS_ESPN = {"ARG": ("Liga Profesional", "soccer/arg.1"), "USA": ("MLS", "soccer/usa.1")}
+API_A_CSV = {"PL": "E0", "PD": "SP1", "SA": "I1", "BL1": "D1", "FL1": "F1", "PPL": "P1", "DED": "N1",
+             "ELC": "E1", "BSA": "BRA"}
 
 MIN_PARTIDOS = 5          # minimo de partidos por equipo para predecir
 PRIOR = 4                 # suaviza equipos con pocos partidos hacia la media
@@ -38,6 +49,12 @@ def ahora():
 
 def parse_fecha(s):
     return datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+
+
+def parse_iso(s):
+    s = str(s).replace("Z", "")
+    fmt = "%Y-%m-%dT%H:%M:%S" if len(s) >= 19 else "%Y-%m-%dT%H:%M"
+    return datetime.strptime(s[:19] if len(s) >= 19 else s[:16], fmt).replace(tzinfo=timezone.utc)
 
 
 def leer_json(nombre, defecto):
@@ -226,6 +243,16 @@ def main():
         sys.exit(1)
     os.makedirs(DATA, exist_ok=True)
 
+    MOT = None
+    if motor_futbol is not None:
+        try:
+            MOT = motor_futbol.preparar()
+        except Exception as e:
+            print("Aviso: el motor propio fallo (%s). Se usa el modelo anterior." % e)
+            MOT = None
+    usar_motor = bool(MOT and MOT.activo)
+    n_motor = n_base = 0
+
     hist = leer_json("historial.json", {"predicciones": []})
     lista = hist.get("predicciones", [])
     por_id = {p["id"]: p for p in lista}
@@ -264,6 +291,20 @@ def main():
                         resueltas += 1
 
         fz = calcular_fuerzas(terminados)
+        nombres = {}
+        clave_csv = API_A_CSV.get(codigo)
+        if usar_motor and clave_csv:
+            jugados = []
+            for m in ms:
+                ft = ((m.get("score") or {}).get("fullTime") or {})
+                if m.get("status") == "FINISHED" and ft.get("home") is not None:
+                    try:
+                        jugados.append((parse_fecha(m["utcDate"]), m["homeTeam"].get("name"), m["awayTeam"].get("name"),
+                                        ft["home"], ft["away"]))
+                    except Exception:
+                        pass
+            nombres = MOT.mapear(clave_csv, jugados)
+            print("%s: %d equipos emparejados con el historico del motor" % (nombre, len(nombres)))
 
         # Goleadores de la liga
         time.sleep(7)
@@ -297,30 +338,88 @@ def main():
                 continue
             proximos.append({"id": m["id"], "liga": nombre, "fecha": m["utcDate"],
                              "local": h.get("name"), "visitante": a.get("name")})
-            if fz is None:
-                continue
             p = por_id.get(m["id"])
+            if fz is None and not (p is None and nombres):
+                continue
             if p is None:
-                pred = predecir(fz, h["id"], a["id"])
+                pred = None
+                if nombres.get(h.get("name")) and nombres.get(a.get("name")):
+                    pred = MOT.predecir(clave_csv, nombres[h["name"]], nombres[a["name"]])
+                if pred is None and fz is not None:
+                    pred = predecir(fz, h["id"], a["id"])
+                    if pred is not None:
+                        pred["modelo"] = "base"
                 if pred is None:
                     continue  # Sin datos suficientes: no se inventa nada
+                if pred.get("modelo") == "SE":
+                    n_motor += 1
+                else:
+                    n_base += 1
                 reg = {"id": m["id"], "liga": nombre, "fecha": m["utcDate"],
                        "local": h.get("name"), "visitante": a.get("name"),
                        "creada": t_ahora.strftime("%Y-%m-%dT%H:%M:%SZ"),
                        "resultado": None, "marcador": None}
                 reg.update(pred)
-                if sc_ok:
+                if sc_ok and fz is not None:
                     anadir_goleadores(reg, fz, scorers, h["id"], a["id"])
                 lista.append(reg)
                 por_id[m["id"]] = reg
                 nuevas += 1
             elif p.get("resultado") is None:
                 # Partido aun no jugado: se completan mercados nuevos sin tocar el 1X2 guardado
-                if "mercados" not in p:
+                if "mercados" not in p and fz is not None:
                     p["mercados"] = mercados(p["xg_local"], p["xg_visitante"], fz[3])
                     ampliadas += 1
-                if sc_ok and "goleadores" not in p:
+                if sc_ok and "goleadores" not in p and fz is not None:
                     anadir_goleadores(p, fz, scorers, h["id"], a["id"])
+
+    # ---- Ligas desde ESPN (Argentina y MLS): solo con el motor propio
+    if usar_motor:
+        try:
+            import equipos as _eq
+            for clave, (nombre, ruta) in LIGAS_ESPN.items():
+                try:
+                    evs = _eq.pedir_bloque(ruta, t_ahora - timedelta(days=45), t_ahora + timedelta(days=DIAS))
+                except Exception as e:
+                    print("Aviso: %s no disponible en ESPN (%s)" % (nombre, e))
+                    continue
+                jugados = []
+                for g in evs:
+                    if g["terminado"] and g["pl"] is not None and g["pv"] is not None:
+                        jugados.append((parse_iso(g["fecha"]), g["local"], g["visitante"], g["pl"], g["pv"]))
+                        p = por_id.get("espn-" + g["id"])
+                        if p is not None and p.get("resultado") is None:
+                            p["resultado"] = signo(g["pl"], g["pv"])
+                            p["marcador"] = "%d-%d" % (g["pl"], g["pv"])
+                            resueltas += 1
+                nombres = MOT.mapear(clave, jugados)
+                print("%s: %d partidos leidos de ESPN, %d equipos emparejados" % (nombre, len(evs), len(nombres)))
+                for g in evs:
+                    if g["terminado"]:
+                        continue
+                    fecha = parse_iso(g["fecha"])
+                    if fecha <= t_ahora or fecha > limite:
+                        continue
+                    fiso = fecha.strftime("%Y-%m-%dT%H:%M:%SZ")
+                    proximos.append({"id": "espn-" + g["id"], "liga": nombre, "fecha": fiso,
+                                     "local": g["local"], "visitante": g["visitante"]})
+                    if ("espn-" + g["id"]) in por_id:
+                        continue
+                    hn, an = nombres.get(g["local"]), nombres.get(g["visitante"])
+                    pred = MOT.predecir(clave, hn, an) if hn and an else None
+                    if pred is None:
+                        continue
+                    reg = {"id": "espn-" + g["id"], "liga": nombre, "fecha": fiso, "local": g["local"],
+                           "visitante": g["visitante"], "creada": t_ahora.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                           "resultado": None, "marcador": None}
+                    reg.update(pred)
+                    lista.append(reg)
+                    por_id[reg["id"]] = reg
+                    nuevas += 1
+                    n_motor += 1
+        except Exception as e:
+            print("Aviso: ligas de ESPN no procesadas (%s)" % e)
+    print("Predicciones nuevas: %d con el motor propio, %d con el modelo anterior" % (n_motor, n_base))
 
     if errores == len(LIGAS):
         print("ERROR: no se pudo leer ninguna liga. No se cambia nada.")
@@ -339,6 +438,17 @@ def main():
         if parse_fecha(p["fecha"]) < t_ahora - timedelta(hours=3):
             continue
         q = dict(p)
+        if p.get("modelo") == "SE":
+            q["razon_es"] = ("Goles esperados: %.2f - %.2f. Motor propio Sports Edge: combina la fuerza en goles de cada "
+                             "equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su "
+                             "rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto." %
+                             (p["xg_local"], p["xg_visitante"]))
+            q["razon_en"] = ("Expected goals: %.2f - %.2f. Sports Edge's own engine: it blends each team's goal strength "
+                             "(weighted towards recent games), the quality of its chances (shots on target) and its Elo "
+                             "rating, tuned on past seasons and checked on games it had not seen." %
+                             (p["xg_local"], p["xg_visitante"]))
+            visibles.append(q)
+            continue
         q["razon_es"] = ("Goles esperados: %.2f - %.2f. Modelo de Poisson con los resultados reales de liga "
                          "de esta temporada (%d partidos por equipo como minimo). Probabilidad de gol de "
                          "cada jugador: su porcentaje de goles del equipo por los goles esperados del partido." %
@@ -357,7 +467,7 @@ def main():
     res = [p for p in lista if p.get("resultado") is not None]
     acierto, brier = metricas(res)
     ligas_st = {}
-    for nombre in LIGAS.values():
+    for nombre in list(LIGAS.values()) + [v[0] for v in LIGAS_ESPN.values()]:
         rs = [p for p in res if p["liga"] == nombre]
         ac, br = metricas(rs)
         ligas_st[nombre] = {"total": len([p for p in lista if p["liga"] == nombre]),

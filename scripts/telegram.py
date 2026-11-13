@@ -20,7 +20,7 @@ CHAT = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
 WEB = "https://ivanjalda.github.io/sports-edge/"
 HORAS = 24
 LIGAS_FUT = ["Premier League", "LaLiga", "Serie A", "Bundesliga", "Ligue 1",
-             "Primeira Liga", "Eredivisie", "Championship", "Brasileirão"]
+             "Primeira Liga", "Eredivisie", "Championship", "Brasileirão", "Liga Profesional", "MLS"]
 EQUIPOS = [("baloncesto", u"\U0001F3C0", "Baloncesto", [("nba", "NBA"), ("euroliga", "Euroliga"), ("eurocup", "Eurocup"),
                                                      ("ncaab", "NCAA"), ("wnba", "WNBA")]),
            ("hockey", u"\U0001F3D2", "Hockey", [("nhl", "NHL"), ("ncaah", "NCAA")])]
