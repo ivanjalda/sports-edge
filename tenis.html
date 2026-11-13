@@ -85,7 +85,7 @@ footer a{color:var(--blue)}
 <script>
 var T={
 es:{nodata:"Sin datos",l1:"← Fútbol",l2:"Guía",l3:"Estadísticas",title:"Tenis",
- lead:"Probabilidad de victoria con un modelo Elo (general y por superficie) calculado con resultados reales de ATP y WTA.",
+ lead:"Probabilidad de victoria con nuestro motor propio: fuerza de cada jugador (Elo general y por superficie), cansancio en el torneo y forma reciente, calculado con resultados reales de ATP y WTA.",
  t_pred:"Próximos partidos",t_stats:"Estadísticas",
  old1:"Los resultados más recientes que tenemos son del",old2:"Las predicciones pueden no reflejar la forma actual de los jugadores.",
  nomatch:"Ahora mismo no hay partidos próximos con cuotas en torneos cubiertos (Grand Slam, ATP 1000/500 y WTA 1000/500). Cuando empiece uno aparecerá aquí solo. El backtest de la pestaña Estadísticas sí está activo.",
@@ -102,6 +102,10 @@ es:{nodata:"Sin datos",l1:"← Fútbol",l2:"Guía",l3:"Estadísticas",title:"Ten
  h_cal:"Calibración: lo que prometemos frente a lo que ocurre",n_cal:"Se agrupan los partidos por la probabilidad que dimos al favorito.",
  th_rng:"Rango",th_prom:"Prometido",th_bars:"Prometido (azul) / Real (verde)",leg:"Azul = probabilidad prometida · Verde = frecuencia real",
  h_sup:"Por superficie",h_cir:"Por circuito",th_c:"Grupo",th_hit:"Acierto",th_br:"Brier",
+ h_mot:"Motor propio: prueba con partidos no vistos",n_mot:"El motor combina la fuerza de cada jugador (Elo general y por superficie), el cansancio (juegos que lleva disputados en el torneo) y la forma reciente (si en sus últimos 10 partidos rindió por encima o por debajo de lo esperado). Se ajusta con 2022-2024 y se mide con partidos posteriores que no ha visto.",
+ mt_us:"Motor propio",mt_elo:"Elo anterior",mt_on:"En uso: mejora al Elo anterior",mt_off:"No mejora al Elo anterior en la prueba, así que se usa el Elo anterior",
+ mt_set:"Ajustes elegidos",mt_sup:"peso de la superficie",mt_c:"cansancio",mt_f:"forma",
+ novalor:"VALOR desactivado: solo lo marcaremos cuando una regla haya demostrado ganar dinero con cuotas históricas reales.",
  h_ex:"Últimos partidos evaluados",n_ex:"La predicción que habría hecho el modelo antes del partido y lo que ocurrió. La fecha es la del inicio del torneo.",pick:"Elegido",
  h_live:"Récord en directo",n_live:"Predicciones guardadas antes del partido y que nunca se modifican.",
  l_tot:"Guardadas",l_res:"Resueltas",l_hit:"Acierto",l_brier:"Calibración (Brier)",l_roi:"ROI simulado de valor",l_bets:"apuestas",
@@ -109,7 +113,7 @@ es:{nodata:"Sin datos",l1:"← Fútbol",l2:"Guía",l3:"Estadísticas",title:"Ten
  foot:"Solo para mayores de 18 años. Los resultados pasados no garantizan resultados futuros. Juega con responsabilidad. Datos de resultados —",
  empty:"Todavía no hay datos. Se generan al ejecutar el motor."},
 en:{nodata:"No data",l1:"← Football",l2:"Guide",l3:"Statistics",title:"Tennis",
- lead:"Win probability from an Elo model (overall and by surface) built on real ATP and WTA results.",
+ lead:"Win probability from our own engine: each player's strength (overall and surface Elo), fatigue in the tournament and recent form, built on real ATP and WTA results.",
  t_pred:"Upcoming matches",t_stats:"Statistics",
  old1:"The latest results we have are from",old2:"Predictions may not reflect the players' current form.",
  nomatch:"There are no upcoming matches with odds in covered tournaments (Grand Slams, ATP 1000/500 and WTA 1000/500) right now. When one starts it will appear here by itself. The backtest in the Statistics tab is active.",
@@ -126,6 +130,10 @@ en:{nodata:"No data",l1:"← Football",l2:"Guide",l3:"Statistics",title:"Tennis"
  h_cal:"Calibration: what we promise versus what happens",n_cal:"Matches are grouped by the probability we gave the favourite.",
  th_rng:"Range",th_prom:"Promised",th_bars:"Promised (blue) / Real (green)",leg:"Blue = promised probability · Green = real frequency",
  h_sup:"By surface",h_cir:"By tour",th_c:"Group",th_hit:"Hit rate",th_br:"Brier",
+ h_mot:"Own engine: test on unseen matches",n_mot:"The engine combines each player's strength (overall and surface Elo), fatigue (games already played in the tournament) and recent form (whether they beat or fell short of expectations in their last 10 matches). It is tuned on 2022-2024 and measured on later matches it had not seen.",
+ mt_us:"Own engine",mt_elo:"Previous Elo",mt_on:"In use: beats the previous Elo",mt_off:"Does not beat the previous Elo in the test, so the previous Elo is used",
+ mt_set:"Chosen settings",mt_sup:"surface weight",mt_c:"fatigue",mt_f:"form",
+ novalor:"VALUE switched off: we will only flag it once a rule has proven to make money with real historical odds.",
  h_ex:"Latest evaluated matches",n_ex:"The prediction the model would have made before the match and what happened. The date is the tournament start.",pick:"Pick",
  h_live:"Live record",n_live:"Predictions saved before the match and never edited.",
  l_tot:"Saved",l_res:"Settled",l_hit:"Hit rate",l_brier:"Calibration (Brier)",l_roi:"Simulated value ROI",l_bets:"bets",
@@ -186,7 +194,7 @@ function pPred(){
       } else { o+='<div class="cq">'+t("nocuota")+'</div>'; }
       o+='</div>';
     }
-    o+='<div class="sd">'+t("vnote")+'</div>';
+    o+='<div class="sd">'+t("novalor")+'</div>';
   }
   if(d.sin_datos && d.sin_datos.length){ o+='<div class="sd">'+t("sd")+': '+esc(d.sin_datos.join(" · "))+'</div>'; }
   return o;
@@ -203,6 +211,13 @@ function pStats(){
   var b=D.b;
   if(!b||!b.total) return '<div class="empty">'+t("empty")+'</div>';
   var tot=b.total, o=oldWarn(b);
+  var MO=b.motor;
+  if(MO&&MO.motor&&MO.elo_basico){
+    var fl=function(n,x,me){ return '<tr'+(me?' style="color:var(--acc);font-weight:700"':'')+'><td>'+n+'</td><td>'+x.n+'</td><td><b>'+pc(x.acierto,1)+'</b></td><td>'+dec(x.brier,3)+'</td></tr>'; };
+    o+='<h2>'+t("h_mot")+'</h2><div class="note">'+t("n_mot")+'</div><div class="note" style="font-weight:700;color:'+(MO.activo?'var(--acc)':'var(--amb)')+'">'+(MO.activo?'✓ '+t("mt_on"):t("mt_off"))+'</div>'
+      +'<table><tr><th></th><th>'+t("th_n")+'</th><th>'+t("th_hit")+'</th><th>'+t("th_br")+'</th></tr>'+fl(t("mt_us"),MO.motor,true)+fl(t("mt_elo"),MO.elo_basico)+'</table>';
+    if(MO.activo&&MO.params){ o+='<div class="leg">'+t("mt_set")+': '+t("mt_sup")+' '+dec(MO.params.w_sup,1)+' · '+t("mt_c")+' '+MO.params.c_cans+' · '+t("mt_f")+' '+MO.params.c_forma+'</div>'; }
+  }
   o+='<h2>'+t("h_bt")+'</h2><div class="note">'+t("n_bt")+' · '+t("from")+': '+fint(b.desde)+' · '+t("upto")+': '+fint(b.datos_hasta)+'</div>';
   var hero=null, tr=b.tramos||[];
   for(var i=0;i<tr.length;i++){ if(Math.abs(tr[i].min-0.7)<0.001 && tr[i].n>0 && num(tr[i].acierto)) hero=tr[i]; }
