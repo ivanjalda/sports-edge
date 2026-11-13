@@ -1193,8 +1193,8 @@
     2
    ],
    "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "54-56"
   },
   {
    "id": "401921086",
@@ -1216,8 +1216,8 @@
     0
    ],
    "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "85-70"
   },
   {
    "id": "401917176",
@@ -4277,7 +4277,99 @@
    "creada": "2026-11-13 00:58 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401925079",
+   "fecha": "2026-11-15T01:00:00Z",
+   "local": "Little Rock Trojans",
+   "visitante": "Northwestern State Demons",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6809,
+   "pv": 0.3191,
+   "elo_l": 1435,
+   "elo_v": 1403,
+   "bal_l": [
+    0,
+    3
+   ],
+   "bal_v": [
+    0,
+    3
+   ],
+   "creada": "2026-11-13 01:24 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401925063",
+   "fecha": "2026-11-15T01:00:00Z",
+   "local": "Nicholls Colonels",
+   "visitante": "Louisiana Tech Bulldogs",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5372,
+   "pv": 0.4628,
+   "elo_l": 1453,
+   "elo_v": 1527,
+   "bal_l": [
+    0,
+    2
+   ],
+   "bal_v": [
+    1,
+    1
+   ],
+   "creada": "2026-11-13 01:24 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401911520",
+   "fecha": "2026-11-15T01:00:00Z",
+   "local": "Sacramento State Hornets",
+   "visitante": "UC Davis Aggies",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4611,
+   "pv": 0.5389,
+   "elo_l": 1375,
+   "elo_v": 1502,
+   "bal_l": [
+    0,
+    1
+   ],
+   "bal_v": [
+    1,
+    1
+   ],
+   "creada": "2026-11-13 01:24 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401911347",
+   "fecha": "2026-11-15T01:00:00Z",
+   "local": "Grand Canyon Lopes",
+   "visitante": "UL Monroe Warhawks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.9126,
+   "pv": 0.0874,
+   "elo_l": 1631,
+   "elo_v": 1323,
+   "bal_l": [
+    3,
+    0
+   ],
+   "bal_v": [
+    1,
+    3
+   ],
+   "creada": "2026-11-13 01:24 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-13 00:58 UTC"
+ "actualizado": "2026-11-13 01:24 UTC"
 }

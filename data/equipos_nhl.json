@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13 00:58 UTC",
+ "actualizado": "2026-11-13 01:24 UTC",
  "liga": "NHL",
  "datos_hasta": "2026-11-12T17:00:00Z",
  "dias_desde_datos": 0,
@@ -471,21 +471,21 @@
       "casa": "Unibet (SE)"
      },
      "L": {
-      "c": 2.81,
+      "c": 2.79,
       "casa": "1xBet"
      }
     },
     "mercado": {
-     "L": 0.4591,
-     "V": 0.5409
+     "L": 0.4587,
+     "V": 0.5413
     },
     "casas": 23,
     "ev": {
-     "L": 0.6388,
+     "L": 0.6271,
      "V": -0.0289
     },
     "valor": [],
-    "actualizado": "2026-11-13 00:58 UTC"
+    "actualizado": "2026-11-13 01:24 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-12 15:49 UTC",
@@ -539,7 +539,7 @@
      "V": 0.1821
     },
     "valor": [],
-    "actualizado": "2026-11-13 00:58 UTC"
+    "actualizado": "2026-11-13 01:24 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-12 15:49 UTC",
@@ -593,7 +593,7 @@
      "V": 0.0384
     },
     "valor": [],
-    "actualizado": "2026-11-13 00:58 UTC"
+    "actualizado": "2026-11-13 01:24 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-12 20:09 UTC",
@@ -636,8 +636,8 @@
      }
     },
     "mercado": {
-     "L": 0.6312,
-     "V": 0.3688
+     "L": 0.631,
+     "V": 0.369
     },
     "casas": 19,
     "ev": {
@@ -645,7 +645,7 @@
      "V": 0.311
     },
     "valor": [],
-    "actualizado": "2026-11-13 00:58 UTC"
+    "actualizado": "2026-11-13 01:24 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-12 20:09 UTC",
@@ -881,6 +881,29 @@
     9
    ],
    "creada": "2026-11-13 00:58 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892717",
+   "fecha": "2026-11-15T01:00:00Z",
+   "local": "Dallas Stars",
+   "visitante": "Buffalo Sabres",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5954,
+   "pv": 0.4046,
+   "elo_l": 1540,
+   "elo_v": 1523,
+   "bal_l": [
+    10,
+    7
+   ],
+   "bal_v": [
+    8,
+    10
+   ],
+   "creada": "2026-11-13 01:24 UTC",
    "resultado": null,
    "marcador": null
   }
@@ -1280,7 +1303,7 @@
   }
  ],
  "directo": {
-  "total": 29,
+  "total": 30,
   "resueltas": 7,
   "aciertos": 3,
   "acierto": 0.4286,

@@ -1,5 +1,5 @@
 {
- "ajustado": "2026-11-13 00:50 UTC",
+ "ajustado": "2026-11-13 01:17 UTC",
  "params": {
   "wa": 0.5,
   "wb": 0.25,
@@ -334,6 +334,36 @@
     -0.043
    ]
   },
+  "regla_valor": {
+   "ev": 0.03,
+   "dif": 0.03,
+   "pmin": 0.3,
+   "empate": true,
+   "activa": false,
+   "ligas": [
+    "Premier League",
+    "LaLiga",
+    "Serie A",
+    "Bundesliga",
+    "Ligue 1",
+    "Primeira Liga",
+    "Eredivisie",
+    "Championship"
+   ],
+   "entrena": {
+    "apuestas": 794,
+    "roi": -0.0118
+   },
+   "prueba": {
+    "apuestas": 333,
+    "roi": -0.0121,
+    "ganadas": 106,
+    "ic_roi": [
+     -0.1691,
+     0.1448
+    ]
+   }
+  },
   "segundos": 6
  },
  "ligas": [
@@ -349,5 +379,5 @@
   "Liga Profesional",
   "MLS"
  ],
- "actualizado": "2026-11-13 00:50 UTC"
+ "actualizado": "2026-11-13 01:17 UTC"
 }
