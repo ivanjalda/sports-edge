@@ -1,0 +1,38 @@
+name: Resultados Telegram
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+    - cron: "40 22 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: resultados-telegram
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enviar resultados (y balance por la noche)
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MODO: ${{ github.event.schedule == '40 22 * * *' && 'balance' || 'resultados' }}
+        run: python3 -u scripts/telegram_directo.py
+
+      - name: Guardar lo enviado
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/telegram_directo.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -m "Telegram: resultados enviados"
+          for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 10; done
+          exit 1
