@@ -1,26 +1,26 @@
 {
- "actualizado": "2026-11-13 04:21 UTC",
+ "actualizado": "2026-11-13 15:11 UTC",
  "liga": "NBA",
  "desde": "20251021",
- "datos_hasta": "2026-11-13T01:00:00Z",
+ "datos_hasta": "2026-11-13T02:00:00Z",
  "total": {
-  "n": 1495,
-  "aciertos": 1025,
-  "acierto": 0.6856,
+  "n": 1496,
+  "aciertos": 1026,
+  "acierto": 0.6858,
   "ic": [
-   0.6616,
-   0.7087
+   0.6619,
+   0.7088
   ],
-  "brier": 0.2064
+  "brier": 0.2063
  },
  "base_local": {
-  "n": 1495,
-  "acierto": 0.5498
+  "n": 1496,
+  "acierto": 0.5501
  },
  "base_balance": {
-  "n": 1314,
-  "acierto": 0.6758,
-  "nuestro": 0.6925
+  "n": 1315,
+  "acierto": 0.676,
+  "nuestro": 0.6928
  },
  "tramos": [
   {
@@ -58,9 +58,9 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 443,
-   "prometido": 0.5475,
-   "real": 0.5847
+   "n": 444,
+   "prometido": 0.5476,
+   "real": 0.5856
   },
   {
    "desde": 60,
@@ -103,24 +103,24 @@
    "brier": 0.2068
   },
   "2027": {
-   "n": 173,
-   "aciertos": 118,
-   "acierto": 0.6821,
+   "n": 174,
+   "aciertos": 119,
+   "acierto": 0.6839,
    "ic": [
-    0.6094,
-    0.7469
+    0.6115,
+    0.7484
    ],
-   "brier": 0.2027
+   "brier": 0.2026
   }
  },
  "fases": {
   "regular": {
-   "n": 1410,
-   "aciertos": 971,
-   "acierto": 0.6887,
+   "n": 1411,
+   "aciertos": 972,
+   "acierto": 0.6889,
    "ic": [
-    0.664,
-    0.7123
+    0.6642,
+    0.7125
    ],
    "brier": 0.2054
   },
@@ -137,12 +137,12 @@
  },
  "elige": {
   "local": {
-   "n": 948,
-   "aciertos": 650,
-   "acierto": 0.6857,
+   "n": 949,
+   "aciertos": 651,
+   "acierto": 0.686,
    "ic": [
-    0.6554,
-    0.7144
+    0.6558,
+    0.7147
    ],
    "brier": 0.2071
   },
@@ -158,6 +158,15 @@
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-13T02:00:00Z",
+   "local": "Phoenix Suns",
+   "visitante": "Charlotte Hornets",
+   "marcador": "101-96",
+   "fav": "Phoenix Suns",
+   "pp": 0.5705,
+   "ok": true
+  },
   {
    "fecha": "2026-11-13T01:00:00Z",
    "local": "Minnesota Timberwolves",
@@ -227,7 +236,7 @@
    "visitante": "Los Angeles Lakers",
    "marcador": "112-123",
    "fav": "Los Angeles Lakers",
-   "pp": 0.8139,
+   "pp": 0.814,
    "ok": true
   },
   {
@@ -373,15 +382,6 @@
    "fav": "Toronto Raptors",
    "pp": 0.7474,
    "ok": false
-  },
-  {
-   "fecha": "2026-11-10T00:00:00Z",
-   "local": "Detroit Pistons",
-   "visitante": "Washington Wizards",
-   "marcador": "122-111",
-   "fav": "Detroit Pistons",
-   "pp": 0.8966,
-   "ok": true
   }
  ],
  "motor": {
@@ -392,22 +392,22 @@
    "c_desc": 35.0,
    "c_forma": 30.0
   },
-  "sd": 16.086,
+  "sd": 16.084,
   "motor": {
-   "n": 1495,
-   "acierto": 0.6856,
-   "brier": 0.2064,
-   "logloss": 0.5997
+   "n": 1496,
+   "acierto": 0.6858,
+   "brier": 0.2063,
+   "logloss": 0.5996
   },
   "elo_basico": {
-   "n": 1495,
-   "acierto": 0.6716,
+   "n": 1496,
+   "acierto": 0.6718,
    "brier": 0.2111,
-   "logloss": 0.6119
+   "logloss": 0.6117
   },
   "local": {
-   "n": 1495,
-   "acierto": 0.5498
+   "n": 1496,
+   "acierto": 0.5501
   },
   "temporadas_prueba": [
    2026,

@@ -1,56 +1,56 @@
 {
- "actualizado": "2026-11-13 04:21 UTC",
+ "actualizado": "2026-11-13 15:11 UTC",
  "liga": "Premiership",
- "desde": "20240920",
- "datos_hasta": "2025-06-07T14:30:00Z",
+ "desde": "20250925",
+ "datos_hasta": "2026-10-31T17:30:00Z",
  "total": {
-  "n": 91,
-  "aciertos": 64,
-  "acierto": 0.7033,
+  "n": 117,
+  "aciertos": 80,
+  "acierto": 0.6838,
   "ic": [
-   0.6028,
-   0.7874
+   0.5948,
+   0.761
   ],
-  "brier": 0.1945
+  "brier": 0.1978
  },
  "base_local": {
-  "n": 91,
-  "acierto": 0.6703
+  "n": 117,
+  "acierto": 0.6581
  },
  "base_balance": {
-  "n": 59,
-  "acierto": 0.6102,
-  "nuestro": 0.678
+  "n": 63,
+  "acierto": 0.6825,
+  "nuestro": 0.6508
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 70,
-   "conf": 0.7574,
-   "acierto": 0.7286,
+   "n": 81,
+   "conf": 0.7601,
+   "acierto": 0.7284,
    "ic": [
-    0.6146,
-    0.8188
+    0.6228,
+    0.8133
    ]
   },
   {
    "min": 0.7,
-   "n": 47,
-   "conf": 0.8094,
-   "acierto": 0.8298,
+   "n": 50,
+   "conf": 0.8256,
+   "acierto": 0.82,
    "ic": [
-    0.6986,
-    0.9111
+    0.692,
+    0.9023
    ]
   },
   {
    "min": 0.8,
-   "n": 24,
-   "conf": 0.8725,
-   "acierto": 0.875,
+   "n": 30,
+   "conf": 0.8755,
+   "acierto": 0.8667,
    "ic": [
-    0.69,
-    0.9566
+    0.7032,
+    0.9469
    ]
   }
  ],
@@ -58,339 +58,350 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 21,
-   "prometido": 0.5343,
-   "real": 0.619
+   "n": 36,
+   "prometido": 0.5527,
+   "real": 0.5833
   },
   {
    "desde": 60,
    "hasta": 70,
-   "n": 23,
-   "prometido": 0.6512,
-   "real": 0.5217
+   "n": 31,
+   "prometido": 0.6545,
+   "real": 0.5806
   },
   {
    "desde": 70,
    "hasta": 80,
-   "n": 23,
-   "prometido": 0.7435,
-   "real": 0.7826
+   "n": 20,
+   "prometido": 0.7507,
+   "real": 0.75
   },
   {
    "desde": 80,
    "hasta": 90,
-   "n": 17,
+   "n": 20,
    "prometido": 0.8453,
-   "real": 0.8824
+   "real": 0.8
   },
   {
    "desde": 90,
    "hasta": 100,
-   "n": 7,
-   "prometido": 0.9387,
-   "real": 0.8571
+   "n": 10,
+   "prometido": 0.9359,
+   "real": 1.0
   }
  ],
  "temporadas": {
-  "2025": {
-   "n": 91,
+  "2026": {
+   "n": 92,
    "aciertos": 64,
-   "acierto": 0.7033,
+   "acierto": 0.6957,
    "ic": [
-    0.6028,
-    0.7874
+    0.5954,
+    0.7803
    ],
-   "brier": 0.1945
+   "brier": 0.1908
+  },
+  "2027": {
+   "n": 25,
+   "aciertos": 16,
+   "acierto": 0.64,
+   "ic": [
+    0.4452,
+    0.7975
+   ],
+   "brier": 0.2239
   }
  },
  "fases": {
   "regular": {
-   "n": 91,
-   "aciertos": 64,
-   "acierto": 0.7033,
+   "n": 117,
+   "aciertos": 80,
+   "acierto": 0.6838,
    "ic": [
-    0.6028,
-    0.7874
+    0.5948,
+    0.761
    ],
-   "brier": 0.1945
+   "brier": 0.1978
   }
  },
  "elige": {
   "local": {
-   "n": 62,
-   "aciertos": 48,
-   "acierto": 0.7742,
+   "n": 84,
+   "aciertos": 62,
+   "acierto": 0.7381,
    "ic": [
-    0.6559,
-    0.8604
+    0.6351,
+    0.8202
    ],
-   "brier": 0.172
+   "brier": 0.1808
   },
   "visitante": {
-   "n": 29,
-   "aciertos": 16,
-   "acierto": 0.5517,
+   "n": 33,
+   "aciertos": 18,
+   "acierto": 0.5455,
    "ic": [
-    0.3755,
-    0.7159
+    0.3799,
+    0.7016
    ],
-   "brier": 0.2426
+   "brier": 0.2411
   }
  },
  "ejemplos": [
   {
-   "fecha": "2025-06-07T14:30:00Z",
-   "local": "Leicester Tigers",
-   "visitante": "Sale Sharks",
-   "marcador": "21-16",
-   "fav": "Leicester Tigers",
-   "pp": 0.5677,
+   "fecha": "2026-10-31T17:30:00Z",
+   "local": "Northampton Saints",
+   "visitante": "Gloucester Rugby",
+   "marcador": "28-14",
+   "fav": "Northampton Saints",
+   "pp": 0.6839,
    "ok": true
   },
   {
-   "fecha": "2025-06-06T18:45:00Z",
+   "fecha": "2026-10-31T15:05:00Z",
    "local": "Bath Rugby",
-   "visitante": "Bristol Rugby",
-   "marcador": "34-20",
+   "visitante": "Sale Sharks",
+   "marcador": "36-28",
    "fav": "Bath Rugby",
-   "pp": 0.804,
+   "pp": 0.7748,
    "ok": true
   },
   {
-   "fecha": "2025-05-31T14:05:00Z",
+   "fecha": "2026-10-31T15:00:00Z",
    "local": "Saracens",
-   "visitante": "Bath Rugby",
-   "marcador": "36-26",
-   "fav": "Bath Rugby",
-   "pp": 0.6525,
+   "visitante": "Newcastle Falcons",
+   "marcador": "39-31",
+   "fav": "Saracens",
+   "pp": 0.8808,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-31T15:00:00Z",
+   "local": "Exeter Chiefs",
+   "visitante": "Harlequins",
+   "marcador": "28-31",
+   "fav": "Exeter Chiefs",
+   "pp": 0.7108,
    "ok": false
   },
   {
-   "fecha": "2025-05-31T14:05:00Z",
-   "local": "Leicester Tigers",
-   "visitante": "Newcastle Falcons",
-   "marcador": "42-20",
-   "fav": "Leicester Tigers",
-   "pp": 0.9606,
+   "fecha": "2026-10-30T19:45:00Z",
+   "local": "Bristol Rugby",
+   "visitante": "Leicester Tigers",
+   "marcador": "16-22",
+   "fav": "Bristol Rugby",
+   "pp": 0.5669,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-25T15:00:00Z",
+   "local": "Harlequins",
+   "visitante": "Saracens",
+   "marcador": "33-15",
+   "fav": "Saracens",
+   "pp": 0.6964,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-24T16:30:00Z",
+   "local": "Bristol Rugby",
+   "visitante": "Exeter Chiefs",
+   "marcador": "20-7",
+   "fav": "Bristol Rugby",
+   "pp": 0.7076,
    "ok": true
   },
   {
-   "fecha": "2025-05-31T14:05:00Z",
+   "fecha": "2026-10-24T14:05:00Z",
+   "local": "Leicester Tigers",
+   "visitante": "Northampton Saints",
+   "marcador": "28-7",
+   "fav": "Leicester Tigers",
+   "pp": 0.534,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-23T18:45:00Z",
+   "local": "Newcastle Falcons",
+   "visitante": "Sale Sharks",
+   "marcador": "17-3",
+   "fav": "Sale Sharks",
+   "pp": 0.6976,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-23T18:45:00Z",
    "local": "Gloucester Rugby",
+   "visitante": "Bath Rugby",
+   "marcador": "23-5",
+   "fav": "Gloucester Rugby",
+   "pp": 0.548,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-11T14:00:00Z",
+   "local": "Exeter Chiefs",
+   "visitante": "Newcastle Falcons",
+   "marcador": "34-28",
+   "fav": "Exeter Chiefs",
+   "pp": 0.8628,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-11T14:00:00Z",
+   "local": "Sale Sharks",
+   "visitante": "Harlequins",
+   "marcador": "28-24",
+   "fav": "Sale Sharks",
+   "pp": 0.7855,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-10T16:30:00Z",
+   "local": "Saracens",
+   "visitante": "Bristol Rugby",
+   "marcador": "30-7",
+   "fav": "Saracens",
+   "pp": 0.5581,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-10T14:05:00Z",
+   "local": "Northampton Saints",
+   "visitante": "Bath Rugby",
+   "marcador": "71-48",
+   "fav": "Northampton Saints",
+   "pp": 0.5824,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-09T18:45:00Z",
+   "local": "Leicester Tigers",
+   "visitante": "Gloucester Rugby",
+   "marcador": "38-31",
+   "fav": "Leicester Tigers",
+   "pp": 0.5939,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-04T14:00:00Z",
+   "local": "Saracens",
+   "visitante": "Sale Sharks",
+   "marcador": "17-21",
+   "fav": "Saracens",
+   "pp": 0.8039,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-03T18:45:00Z",
+   "local": "Newcastle Falcons",
+   "visitante": "Leicester Tigers",
+   "marcador": "19-24",
+   "fav": "Leicester Tigers",
+   "pp": 0.8194,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-03T16:30:00Z",
+   "local": "Gloucester Rugby",
+   "visitante": "Harlequins",
+   "marcador": "48-0",
+   "fav": "Gloucester Rugby",
+   "pp": 0.7964,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-03T14:05:00Z",
+   "local": "Bristol Rugby",
    "visitante": "Northampton Saints",
    "marcador": "41-26",
-   "fav": "Gloucester Rugby",
-   "pp": 0.6868,
-   "ok": true
-  },
-  {
-   "fecha": "2025-05-31T14:05:00Z",
-   "local": "Exeter Chiefs",
-   "visitante": "Sale Sharks",
-   "marcador": "26-30",
-   "fav": "Sale Sharks",
-   "pp": 0.7106,
-   "ok": true
-  },
-  {
-   "fecha": "2025-05-31T14:05:00Z",
-   "local": "Bristol Rugby",
-   "visitante": "Harlequins",
-   "marcador": "52-26",
-   "fav": "Bristol Rugby",
-   "pp": 0.6628,
-   "ok": true
-  },
-  {
-   "fecha": "2025-05-18T14:00:00Z",
-   "local": "Harlequins",
-   "visitante": "Exeter Chiefs",
-   "marcador": "24-22",
-   "fav": "Harlequins",
-   "pp": 0.7386,
-   "ok": true
-  },
-  {
-   "fecha": "2025-05-17T16:30:00Z",
-   "local": "Bath Rugby",
-   "visitante": "Leicester Tigers",
-   "marcador": "43-15",
-   "fav": "Bath Rugby",
-   "pp": 0.7361,
-   "ok": true
-  },
-  {
-   "fecha": "2025-05-17T14:05:00Z",
-   "local": "Northampton Saints",
-   "visitante": "Saracens",
-   "marcador": "28-24",
-   "fav": "Saracens",
-   "pp": 0.5012,
+   "fav": "Northampton Saints",
+   "pp": 0.5617,
    "ok": false
   },
   {
-   "fecha": "2025-05-16T18:45:00Z",
+   "fecha": "2026-10-02T18:45:00Z",
+   "local": "Bath Rugby",
+   "visitante": "Exeter Chiefs",
+   "marcador": "40-34",
+   "fav": "Bath Rugby",
+   "pp": 0.8538,
+   "ok": true
+  },
+  {
+   "fecha": "2026-09-27T14:00:00Z",
+   "local": "Leicester Tigers",
+   "visitante": "Saracens",
+   "marcador": "38-40",
+   "fav": "Leicester Tigers",
+   "pp": 0.642,
+   "ok": false
+  },
+  {
+   "fecha": "2026-09-26T16:30:00Z",
    "local": "Sale Sharks",
    "visitante": "Bristol Rugby",
-   "marcador": "41-27",
+   "marcador": "24-34",
    "fav": "Sale Sharks",
-   "pp": 0.7311,
-   "ok": true
-  },
-  {
-   "fecha": "2025-05-16T18:45:00Z",
-   "local": "Newcastle Falcons",
-   "visitante": "Gloucester Rugby",
-   "marcador": "12-26",
-   "fav": "Gloucester Rugby",
-   "pp": 0.8243,
-   "ok": true
-  },
-  {
-   "fecha": "2025-05-11T14:00:00Z",
-   "local": "Exeter Chiefs",
-   "visitante": "Northampton Saints",
-   "marcador": "42-14",
-   "fav": "Northampton Saints",
-   "pp": 0.5642,
+   "pp": 0.5535,
    "ok": false
   },
   {
-   "fecha": "2025-05-10T16:30:00Z",
-   "local": "Harlequins",
+   "fecha": "2026-09-26T14:05:00Z",
+   "local": "Exeter Chiefs",
    "visitante": "Gloucester Rugby",
-   "marcador": "38-19",
-   "fav": "Harlequins",
-   "pp": 0.5133,
-   "ok": true
+   "marcador": "24-45",
+   "fav": "Exeter Chiefs",
+   "pp": 0.748,
+   "ok": false
   },
   {
-   "fecha": "2025-05-10T14:05:00Z",
-   "local": "Bristol Rugby",
+   "fecha": "2026-09-25T18:45:00Z",
+   "local": "Harlequins",
    "visitante": "Bath Rugby",
-   "marcador": "36-14",
+   "marcador": "17-33",
    "fav": "Bath Rugby",
-   "pp": 0.7233,
-   "ok": false
-  },
-  {
-   "fecha": "2025-05-10T14:00:00Z",
-   "local": "Saracens",
-   "visitante": "Newcastle Falcons",
-   "marcador": "75-28",
-   "fav": "Saracens",
-   "pp": 0.9336,
+   "pp": 0.572,
    "ok": true
   },
   {
-   "fecha": "2025-05-09T18:45:00Z",
-   "local": "Leicester Tigers",
-   "visitante": "Sale Sharks",
-   "marcador": "44-34",
-   "fav": "Leicester Tigers",
-   "pp": 0.5662,
-   "ok": true
-  },
-  {
-   "fecha": "2025-04-27T14:00:00Z",
-   "local": "Gloucester Rugby",
-   "visitante": "Exeter Chiefs",
-   "marcador": "79-17",
-   "fav": "Gloucester Rugby",
-   "pp": 0.7646,
-   "ok": true
-  },
-  {
-   "fecha": "2025-04-26T16:30:00Z",
+   "fecha": "2026-09-25T18:45:00Z",
    "local": "Northampton Saints",
-   "visitante": "Bristol Rugby",
-   "marcador": "48-31",
-   "fav": "Northampton Saints",
-   "pp": 0.5442,
-   "ok": true
-  },
-  {
-   "fecha": "2025-04-26T14:05:00Z",
-   "local": "Leicester Tigers",
-   "visitante": "Harlequins",
-   "marcador": "40-7",
-   "fav": "Leicester Tigers",
-   "pp": 0.7331,
-   "ok": true
-  },
-  {
-   "fecha": "2025-04-26T14:00:00Z",
-   "local": "Bath Rugby",
    "visitante": "Newcastle Falcons",
-   "marcador": "55-19",
-   "fav": "Bath Rugby",
-   "pp": 0.9788,
+   "marcador": "59-26",
+   "fav": "Northampton Saints",
+   "pp": 0.9073,
    "ok": true
-  },
-  {
-   "fecha": "2025-04-25T18:45:00Z",
-   "local": "Sale Sharks",
-   "visitante": "Saracens",
-   "marcador": "25-7",
-   "fav": "Sale Sharks",
-   "pp": 0.7071,
-   "ok": true
-  },
-  {
-   "fecha": "2025-04-20T14:00:00Z",
-   "local": "Bristol Rugby",
-   "visitante": "Leicester Tigers",
-   "marcador": "19-36",
-   "fav": "Bristol Rugby",
-   "pp": 0.6764,
-   "ok": false
-  },
-  {
-   "fecha": "2025-04-19T16:30:00Z",
-   "local": "Saracens",
-   "visitante": "Gloucester Rugby",
-   "marcador": "36-14",
-   "fav": "Saracens",
-   "pp": 0.6267,
-   "ok": true
-  },
-  {
-   "fecha": "2025-04-19T14:05:00Z",
-   "local": "Harlequins",
-   "visitante": "Sale Sharks",
-   "marcador": "29-43",
-   "fav": "Harlequins",
-   "pp": 0.5395,
-   "ok": false
   }
  ],
  "motor": {
   "activo": true,
   "params": {
-   "kmul": 1.0,
+   "kmul": 0.7,
    "hmul": 1.4,
    "c_desc": 0.0,
    "c_forma": 60.0
   },
-  "sd": 19.031,
+  "sd": 20.046,
   "motor": {
-   "n": 91,
-   "acierto": 0.7033,
-   "brier": 0.1945,
-   "logloss": 0.5705
+   "n": 117,
+   "acierto": 0.6838,
+   "brier": 0.1978,
+   "logloss": 0.5733
   },
   "elo_basico": {
-   "n": 91,
-   "acierto": 0.6923,
-   "brier": 0.1972,
-   "logloss": 0.5765
+   "n": 117,
+   "acierto": 0.7094,
+   "brier": 0.1996,
+   "logloss": 0.5795
   },
   "local": {
-   "n": 91,
-   "acierto": 0.6703
+   "n": 117,
+   "acierto": 0.6581
   },
   "temporadas_prueba": [
-   2025
+   2026,
+   2027
   ]
  },
  "valor_activo": false

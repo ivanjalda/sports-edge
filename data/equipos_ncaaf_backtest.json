@@ -1,56 +1,56 @@
 {
- "actualizado": "2026-11-13 04:21 UTC",
+ "actualizado": "2026-11-13 15:11 UTC",
  "liga": "NCAA",
  "desde": "20250823",
- "datos_hasta": "2026-11-12T00:30:00Z",
+ "datos_hasta": "2026-11-13T02:00:00Z",
  "total": {
-  "n": 1444,
-  "aciertos": 1029,
-  "acierto": 0.7126,
+  "n": 1446,
+  "aciertos": 1030,
+  "acierto": 0.7123,
   "ic": [
-   0.6887,
-   0.7354
+   0.6884,
+   0.7351
   ],
-  "brier": 0.1865
+  "brier": 0.1864
  },
  "base_local": {
-  "n": 1444,
-  "acierto": 0.6143
+  "n": 1446,
+  "acierto": 0.6134
  },
  "base_balance": {
-  "n": 617,
-  "acierto": 0.6629,
-  "nuestro": 0.6953
+  "n": 619,
+  "acierto": 0.664,
+  "nuestro": 0.6947
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 1056,
-   "conf": 0.7659,
-   "acierto": 0.7727,
+   "n": 1057,
+   "conf": 0.766,
+   "acierto": 0.7729,
    "ic": [
-    0.7465,
-    0.797
+    0.7467,
+    0.7972
    ]
   },
   {
    "min": 0.7,
-   "n": 724,
+   "n": 725,
    "conf": 0.8184,
-   "acierto": 0.8287,
+   "acierto": 0.829,
    "ic": [
-    0.7996,
-    0.8544
+    0.7998,
+    0.8546
    ]
   },
   {
    "min": 0.8,
-   "n": 395,
-   "conf": 0.8761,
-   "acierto": 0.8835,
+   "n": 396,
+   "conf": 0.876,
+   "acierto": 0.8838,
    "ic": [
-    0.8482,
-    0.9115
+    0.8485,
+    0.9118
    ]
   }
  ],
@@ -58,9 +58,9 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 388,
-   "prometido": 0.5498,
-   "real": 0.549
+   "n": 389,
+   "prometido": 0.5497,
+   "real": 0.5476
   },
   {
    "desde": 60,
@@ -79,9 +79,9 @@
   {
    "desde": 80,
    "hasta": 90,
-   "n": 270,
-   "prometido": 0.8496,
-   "real": 0.8556
+   "n": 271,
+   "prometido": 0.8494,
+   "real": 0.8561
   },
   {
    "desde": 90,
@@ -103,24 +103,24 @@
    "brier": 0.1823
   },
   "2026": {
-   "n": 595,
-   "aciertos": 417,
-   "acierto": 0.7008,
+   "n": 597,
+   "aciertos": 418,
+   "acierto": 0.7002,
    "ic": [
-    0.6629,
-    0.7362
+    0.6622,
+    0.7355
    ],
-   "brier": 0.1924
+   "brier": 0.1922
   }
  },
  "fases": {
   "regular": {
-   "n": 1398,
-   "aciertos": 1001,
-   "acierto": 0.716,
+   "n": 1400,
+   "aciertos": 1002,
+   "acierto": 0.7157,
    "ic": [
-    0.6918,
-    0.739
+    0.6915,
+    0.7387
    ],
    "brier": 0.1852
   },
@@ -137,27 +137,45 @@
  },
  "elige": {
   "local": {
-   "n": 954,
+   "n": 955,
    "aciertos": 713,
-   "acierto": 0.7474,
+   "acierto": 0.7466,
    "ic": [
-    0.7189,
-    0.7739
+    0.7181,
+    0.7732
    ],
-   "brier": 0.1735
+   "brier": 0.1736
   },
   "visitante": {
-   "n": 490,
-   "aciertos": 316,
-   "acierto": 0.6449,
+   "n": 491,
+   "aciertos": 317,
+   "acierto": 0.6456,
    "ic": [
-    0.6015,
-    0.686
+    0.6023,
+    0.6867
    ],
-   "brier": 0.2118
+   "brier": 0.2114
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-13T02:00:00Z",
+   "local": "UL Monroe Warhawks",
+   "visitante": "Louisiana Ragin' Cajuns",
+   "marcador": "21-42",
+   "fav": "Louisiana Ragin' Cajuns",
+   "pp": 0.8084,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-13T01:00:00Z",
+   "local": "South Florida Bulls",
+   "visitante": "Memphis Tigers",
+   "marcador": "41-52",
+   "fav": "South Florida Bulls",
+   "pp": 0.5011,
+   "ok": false
+  },
   {
    "fecha": "2026-11-12T00:30:00Z",
    "local": "Toledo Rockets",
@@ -364,24 +382,6 @@
    "fav": "Boise State Broncos",
    "pp": 0.9169,
    "ok": true
-  },
-  {
-   "fecha": "2026-11-07T22:00:00Z",
-   "local": "Louisiana Ragin' Cajuns",
-   "visitante": "South Alabama Jaguars",
-   "marcador": "28-26",
-   "fav": "Louisiana Ragin' Cajuns",
-   "pp": 0.7052,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-07T21:15:00Z",
-   "local": "Wisconsin Badgers",
-   "visitante": "Rutgers Scarlet Knights",
-   "marcador": "31-10",
-   "fav": "Wisconsin Badgers",
-   "pp": 0.8703,
-   "ok": true
   }
  ],
  "motor": {
@@ -392,22 +392,22 @@
    "c_desc": 0.0,
    "c_forma": 60.0
   },
-  "sd": 20.723,
+  "sd": 20.724,
   "motor": {
-   "n": 1444,
-   "acierto": 0.7126,
-   "brier": 0.1865,
-   "logloss": 0.5522
+   "n": 1446,
+   "acierto": 0.7123,
+   "brier": 0.1864,
+   "logloss": 0.5521
   },
   "elo_basico": {
-   "n": 1444,
-   "acierto": 0.7057,
-   "brier": 0.1933,
+   "n": 1446,
+   "acierto": 0.7054,
+   "brier": 0.1932,
    "logloss": 0.5705
   },
   "local": {
-   "n": 1444,
-   "acierto": 0.6143
+   "n": 1446,
+   "acierto": 0.6134
   },
   "temporadas_prueba": [
    2025,

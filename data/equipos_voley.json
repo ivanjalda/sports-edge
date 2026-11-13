@@ -1,84 +1,15 @@
 {
- "actualizado": "2026-11-13 04:21 UTC",
+ "actualizado": "2026-11-13 15:11 UTC",
  "liga": "NCAA",
- "datos_hasta": "2026-11-13T02:00:00Z",
+ "datos_hasta": "2026-11-13T05:00:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
- "proximo": "2026-11-13T05:00:00Z",
+ "proximo": "2026-11-13T17:00:00Z",
  "predicciones": [
-  {
-   "id": "401888524",
-   "fecha": "2026-11-13T03:00:00Z",
-   "local": "Pepperdine Waves",
-   "visitante": "San Diego Toreros",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6836,
-   "pv": 0.3164,
-   "elo_l": 1773,
-   "elo_v": 1695,
-   "bal_l": [
-    20,
-    4
-   ],
-   "bal_v": [
-    14,
-    8
-   ],
-   "creada": "2026-11-13 02:59 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401891204",
-   "fecha": "2026-11-13T03:00:00Z",
-   "local": "Portland State Vikings",
-   "visitante": "Idaho State Bengals",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5592,
-   "pv": 0.4408,
-   "elo_l": 1508,
-   "elo_v": 1550,
-   "bal_l": [
-    13,
-    12
-   ],
-   "bal_v": [
-    17,
-    9
-   ],
-   "creada": "2026-11-13 02:59 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401901173",
-   "fecha": "2026-11-13T05:00:00Z",
-   "local": "Hawai'i Rainbow Warriors",
-   "visitante": "Air Force Falcons",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8846,
-   "pv": 0.1154,
-   "elo_l": 1685,
-   "elo_v": 1452,
-   "bal_l": [
-    21,
-    4
-   ],
-   "bal_v": [
-    10,
-    15
-   ],
-   "creada": "2026-11-13 02:59 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "401887929",
    "fecha": "2026-11-13T17:00:00Z",
@@ -4979,14 +4910,87 @@
    "marcador": null
   }
  ],
- "recientes": [],
+ "recientes": [
+  {
+   "id": "401901173",
+   "fecha": "2026-11-13T05:00:00Z",
+   "local": "Hawai'i Rainbow Warriors",
+   "visitante": "Air Force Falcons",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8846,
+   "pv": 0.1154,
+   "elo_l": 1685,
+   "elo_v": 1452,
+   "bal_l": [
+    21,
+    4
+   ],
+   "bal_v": [
+    10,
+    15
+   ],
+   "creada": "2026-11-13 02:59 UTC",
+   "resultado": "L",
+   "marcador": "3-1"
+  },
+  {
+   "id": "401888524",
+   "fecha": "2026-11-13T03:00:00Z",
+   "local": "Pepperdine Waves",
+   "visitante": "San Diego Toreros",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6836,
+   "pv": 0.3164,
+   "elo_l": 1773,
+   "elo_v": 1695,
+   "bal_l": [
+    20,
+    4
+   ],
+   "bal_v": [
+    14,
+    8
+   ],
+   "creada": "2026-11-13 02:59 UTC",
+   "resultado": "V",
+   "marcador": "2-3"
+  },
+  {
+   "id": "401891204",
+   "fecha": "2026-11-13T03:00:00Z",
+   "local": "Portland State Vikings",
+   "visitante": "Idaho State Bengals",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5592,
+   "pv": 0.4408,
+   "elo_l": 1508,
+   "elo_v": 1550,
+   "bal_l": [
+    13,
+    12
+   ],
+   "bal_v": [
+    17,
+    9
+   ],
+   "creada": "2026-11-13 02:59 UTC",
+   "resultado": "V",
+   "marcador": "2-3"
+  }
+ ],
  "directo": {
   "total": 216,
-  "resueltas": 0,
-  "aciertos": 0,
-  "acierto": null,
-  "ic": null,
-  "brier": null,
+  "resueltas": 3,
+  "aciertos": 1,
+  "acierto": 0.3333,
+  "ic": [
+   0.0615,
+   0.7923
+  ],
+  "brier": 0.2644,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -5125,12 +5129,6 @@
    "p": 5
   },
   {
-   "equipo": "Pepperdine Waves",
-   "elo": 1773,
-   "g": 20,
-   "p": 4
-  },
-  {
    "equipo": "Texas A&M Aggies",
    "elo": 1773,
    "g": 14,
@@ -5159,6 +5157,12 @@
    "elo": 1758,
    "g": 25,
    "p": 2
+  },
+  {
+   "equipo": "Pepperdine Waves",
+   "elo": 1757,
+   "g": 20,
+   "p": 5
   },
   {
    "equipo": "Baylor Bears",
@@ -5221,6 +5225,12 @@
    "p": 9
   },
   {
+   "equipo": "San Diego Toreros",
+   "elo": 1711,
+   "g": 15,
+   "p": 8
+  },
+  {
    "equipo": "Toledo Rockets",
    "elo": 1711,
    "g": 20,
@@ -5263,12 +5273,6 @@
    "p": 6
   },
   {
-   "equipo": "San Diego Toreros",
-   "elo": 1695,
-   "g": 14,
-   "p": 8
-  },
-  {
    "equipo": "Dayton Flyers",
    "elo": 1694,
    "g": 21,
@@ -5293,6 +5297,12 @@
    "p": 7
   },
   {
+   "equipo": "Hawai'i Rainbow Warriors",
+   "elo": 1690,
+   "g": 22,
+   "p": 4
+  },
+  {
    "equipo": "Charleston Cougars",
    "elo": 1689,
    "g": 22,
@@ -5303,12 +5313,6 @@
    "elo": 1687,
    "g": 14,
    "p": 10
-  },
-  {
-   "equipo": "Hawai'i Rainbow Warriors",
-   "elo": 1685,
-   "g": 21,
-   "p": 4
   },
   {
    "equipo": "Arkansas State Red Wolves",
@@ -5731,6 +5735,12 @@
    "p": 9
   },
   {
+   "equipo": "Idaho State Bengals",
+   "elo": 1561,
+   "g": 18,
+   "p": 9
+  },
+  {
    "equipo": "Towson Tigers",
    "elo": 1561,
    "g": 15,
@@ -5761,6 +5771,12 @@
    "p": 11
   },
   {
+   "equipo": "Utah State Aggies",
+   "elo": 1554,
+   "g": 7,
+   "p": 16
+  },
+  {
    "equipo": "Belmont Bruins",
    "elo": 1554,
    "g": 14,
@@ -5783,12 +5799,6 @@
    "elo": 1550,
    "g": 13,
    "p": 12
-  },
-  {
-   "equipo": "Idaho State Bengals",
-   "elo": 1550,
-   "g": 17,
-   "p": 9
   },
   {
    "equipo": "North Florida Ospreys",
@@ -5881,12 +5891,6 @@
    "p": 12
   },
   {
-   "equipo": "Utah State Aggies",
-   "elo": 1534,
-   "g": 6,
-   "p": 16
-  },
-  {
    "equipo": "SE Louisiana Lions",
    "elo": 1533,
    "g": 16,
@@ -5897,12 +5901,6 @@
    "elo": 1532,
    "g": 17,
    "p": 10
-  },
-  {
-   "equipo": "Washington State Cougars",
-   "elo": 1530,
-   "g": 10,
-   "p": 12
   },
   {
    "equipo": "Ohio Bobcats",
@@ -5933,12 +5931,6 @@
    "elo": 1519,
    "g": 13,
    "p": 13
-  },
-  {
-   "equipo": "UNLV Rebels",
-   "elo": 1519,
-   "g": 11,
-   "p": 14
   },
   {
    "equipo": "Youngstown State Penguins",
@@ -5995,6 +5987,12 @@
    "p": 9
   },
   {
+   "equipo": "Washington State Cougars",
+   "elo": 1510,
+   "g": 10,
+   "p": 13
+  },
+  {
    "equipo": "Arizona Wildcats",
    "elo": 1509,
    "g": 7,
@@ -6011,12 +6009,6 @@
    "elo": 1508,
    "g": 13,
    "p": 10
-  },
-  {
-   "equipo": "Portland State Vikings",
-   "elo": 1508,
-   "g": 13,
-   "p": 12
   },
   {
    "equipo": "Southern Miss Golden Eagles",
@@ -6061,6 +6053,12 @@
    "p": 12
   },
   {
+   "equipo": "UNLV Rebels",
+   "elo": 1502,
+   "g": 11,
+   "p": 15
+  },
+  {
    "equipo": "Valparaiso VALPARAISO",
    "elo": 1501,
    "g": 14,
@@ -6077,6 +6075,12 @@
    "elo": 1497,
    "g": 18,
    "p": 10
+  },
+  {
+   "equipo": "Portland State Vikings",
+   "elo": 1497,
+   "g": 13,
+   "p": 13
   },
   {
    "equipo": "Marist Red Foxes",
@@ -6325,12 +6329,6 @@
    "p": 11
   },
   {
-   "equipo": "Air Force Falcons",
-   "elo": 1452,
-   "g": 10,
-   "p": 15
-  },
-  {
    "equipo": "Memphis Tigers",
    "elo": 1450,
    "g": 10,
@@ -6343,10 +6341,22 @@
    "p": 17
   },
   {
+   "equipo": "New Mexico Lobos",
+   "elo": 1449,
+   "g": 10,
+   "p": 15
+  },
+  {
    "equipo": "William & Mary Tribe",
    "elo": 1447,
    "g": 9,
    "p": 14
+  },
+  {
+   "equipo": "Air Force Falcons",
+   "elo": 1447,
+   "g": 10,
+   "p": 16
   },
   {
    "equipo": "Virginia Tech Hokies",
@@ -6443,12 +6453,6 @@
    "elo": 1432,
    "g": 13,
    "p": 13
-  },
-  {
-   "equipo": "New Mexico Lobos",
-   "elo": 1432,
-   "g": 9,
-   "p": 15
   },
   {
    "equipo": "Morehead State Eagles",
