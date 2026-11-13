@@ -50,6 +50,8 @@ BALONCESTO = {"k": 20.0, "hca": 100.0, "revertir": 0.75, "mov": "nba"}
 HOCKEY = {"k": 6.0, "hca": 50.0, "revertir": 0.70, "mov": "nhl"}
 AMERICANO = {"k": 20.0, "hca": 48.0, "revertir": 0.67, "mov": "nfl"}
 LUCHA = {"k": 40.0, "hca": 0.0, "revertir": 1.0, "mov": "nhl"}
+BEISBOL = {"k": 4.0, "hca": 24.0, "revertir": 0.67, "mov": "nhl"}
+VOLEY = {"k": 20.0, "hca": 50.0, "revertir": 0.75, "mov": "nhl"}
 LIGAS = {
     "nba": dict(BALONCESTO, nombre="NBA", fuente="espn", ruta="basketball/nba", extra="",
                 odds="basketball_nba", inicio="20231001", eval="20241001", min_eq=20, max_dias=10,
@@ -67,15 +69,21 @@ LIGAS = {
     "nhl": dict(HOCKEY, nombre="NHL", fuente="espn", ruta="hockey/nhl", extra="",
                 odds="icehockey_nhl", inicio="20231001", eval="20241001", min_eq=20, max_dias=10,
                 meses=(10, 11, 12, 1, 2, 3, 4, 5, 6)),
-    "nfl": dict(AMERICANO, nombre="NFL", fuente="espn", ruta="football/nfl", extra="",
+    "nfl": dict(AMERICANO, horas=96, nombre="NFL", fuente="espn", ruta="football/nfl", extra="",
                 odds="americanfootball_nfl", inicio="20230901", eval="20240901", min_eq=10, max_dias=12,
                 meses=(9, 10, 11, 12, 1, 2)),
-    "ncaaf": dict(AMERICANO, nombre="NCAA", fuente="espn", ruta="football/college-football", extra="&groups=80",
+    "ncaaf": dict(AMERICANO, horas=96, nombre="NCAA", fuente="espn", ruta="football/college-football", extra="&groups=80",
                   odds=None, inicio="20230825", eval="20240825", min_eq=8, max_dias=12,
                   meses=(8, 9, 10, 11, 12, 1)),
-    "ufc": dict(LUCHA, nombre="UFC", fuente="espn", ruta="mma/ufc", extra="",
+    "ufc": dict(LUCHA, horas=96, nombre="UFC", fuente="espn", ruta="mma/ufc", extra="",
                 odds="mma_mixed_martial_arts", inicio="20220101", eval="20250101", min_eq=3, max_dias=30,
                 meses=None),
+    "mlb": dict(BEISBOL, nombre="MLB", fuente="espn", ruta="baseball/mlb", extra="",
+                odds="baseball_mlb", inicio="20230301", eval="20250301", min_eq=20, max_dias=10,
+                meses=(3, 4, 5, 6, 7, 8, 9, 10, 11)),
+    "voley": dict(VOLEY, nombre="NCAA", fuente="espn", ruta="volleyball/womens-college-volleyball", extra="",
+                  odds=None, inicio="20230801", eval="20250801", min_eq=10, max_dias=10,
+                  meses=(8, 9, 10, 11, 12)),
     "ncaah": dict(HOCKEY, nombre="NCAA", fuente="espn", ruta="hockey/mens-college-hockey", extra="",
                   odds=None, inicio="20231001", eval="20241001", min_eq=10, max_dias=12,
                   meses=(10, 11, 12, 1, 2, 3, 4)),
@@ -600,7 +608,7 @@ def procesar(clave, cfg, ahora, stamp, restantes):
             desde = ahora - timedelta(days=12)
         else:
             desde = datetime.strptime(cfg["inicio"], "%Y%m%d").replace(tzinfo=timezone.utc)
-        nuevos, errores, llegado = descargar(cfg["ruta"], desde, ahora + timedelta(days=3), cfg.get("extra", ""),
+        nuevos, errores, llegado = descargar(cfg["ruta"], desde, ahora + timedelta(days=5), cfg.get("extra", ""),
                                              cfg.get("meses"))
         if llegado:
             cache["historico_hasta"] = max(cache.get("historico_hasta") or "", llegado.strftime("%Y-%m-%d"))
@@ -665,7 +673,7 @@ def procesar(clave, cfg, ahora, stamp, restantes):
         if not publicar or g["id"] in por_id:
             continue
         ini = parse_iso(g["fecha"])
-        if ini <= ahora or ini > ahora + timedelta(hours=HORAS_PRED):
+        if ini <= ahora or ini > ahora + timedelta(hours=cfg.get("horas", HORAS_PRED)):
             continue
         if g["local"] not in validos or g["visitante"] not in validos:
             continue
@@ -721,7 +729,7 @@ def procesar(clave, cfg, ahora, stamp, restantes):
     hist["actualizado"] = stamp
     guardar_json("equipos_%s_historial.json" % clave, hist)
 
-    futuros = sorted(g["fecha"] for g in proximos)
+    futuros = sorted(g["fecha"] for g in proximos if parse_iso(g["fecha"]) > ahora)   # solo los que no han empezado
     proximo = futuros[0] if futuros else None
     visibles = sorted([p for p in lista if p.get("resultado") is None and
                        parse_iso(p["fecha"]) > ahora - timedelta(hours=4)], key=lambda x: x["fecha"])
