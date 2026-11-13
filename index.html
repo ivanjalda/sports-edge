@@ -26,7 +26,7 @@ a{color:var(--blue)}
 .ck small{display:block;font-size:10px;color:var(--blue);margin-top:1px}
 h2{font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--blue);margin:30px 0 4px}
 .note{color:var(--mut);font-size:13px;margin-bottom:12px}
-.sports{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.sports{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
 .spc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--txt);transition:border-color .15s}
 .spc:hover{border-color:var(--acc)}
 .spc .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
@@ -56,7 +56,7 @@ h2{font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--blue);
 .vb{display:inline-block;background:var(--acc);color:var(--bg);font-size:10px;font-weight:700;padding:1px 6px;border-radius:4px;margin-left:6px;vertical-align:middle}
 .empty{color:var(--mut);padding:18px;text-align:center;border:1px dashed var(--line);border-radius:12px;font-size:14px}
 .warn{font-size:12px;color:var(--amb);margin-top:8px}
-.soon{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.soon{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
 .sn{background:var(--card2);border:1px dashed var(--line);border-radius:12px;padding:12px;text-align:center;color:var(--mut);font-size:13px}
 .sn b{display:block;font-size:22px;margin-bottom:2px}
 .how{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
@@ -122,7 +122,7 @@ es:{h1:'Predicciones deportivas con <span>datos reales</span>',
  k_comp:"competiciones analizadas",k_bt:"partidos usados para probar el modelo",k_next:"partidos con predicción próximamente",k_upd:"última actualización",
  h_top:"Los favoritos más claros",n_top:"Los partidos de las próximas 48 horas en los que nuestro modelo da más probabilidad a un resultado, con un máximo de 3 por deporte. Pulsa para ver el análisis completo.",
  h_val:"Apuestas de valor detectadas",n_val:"Partidos donde nuestra probabilidad multiplicada por la mejor cuota supera en un 5 % o más lo apostado. Es experimental: todavía no hay suficientes apuestas resueltas para saber si da beneficio.",
- noval:"Ahora mismo no hay ninguna apuesta de valor en las próximas 48 horas.",notop:"No hay partidos analizados en las próximas 48 horas.",
+ noval:"Ahora mismo no marcamos ninguna apuesta de valor: ninguna regla ha demostrado todavía ganar dinero con cuotas históricas reales (en fútbol, el Laboratorio probó 96 reglas con miles de partidos y todas perdían). Cuando una lo demuestre, aparecerá aquí.",notop:"No hay partidos analizados en las próximas 48 horas.",
  h_sp:"Deportes",n_sp:"El acierto de las pruebas se mide sobre partidos ya jugados, prediciendo cada uno solo con la información anterior. La regla sencilla es elegir siempre al de casa (o al mejor clasificado en tenis).",
  bt:"acierto en pruebas",rule:"regla sencilla",live:"acierto en directo",games:"partidos",next:"próximos",none:"sin partidos próximos",go:"Ver",
  h_soon:"Próximamente",n_soon:"Solo abrimos un deporte cuando tenemos datos reales y verificables de sus resultados.",
@@ -141,7 +141,7 @@ en:{h1:'Sports predictions built on <span>real data</span>',
  k_comp:"competitions analysed",k_bt:"games used to test the model",k_next:"games with an upcoming prediction",k_upd:"last update",
  h_top:"The clearest favourites",n_top:"Games in the next 48 hours where our model gives the highest probability to one outcome, up to 3 per sport. Tap to see the full analysis.",
  h_val:"Value bets detected",n_val:"Games where our probability times the best odds beats the stake by 5% or more. Experimental: there are not yet enough settled bets to know whether it makes a profit.",
- noval:"There are no value bets in the next 48 hours right now.",notop:"No analysed games in the next 48 hours.",
+ noval:"We are not flagging any value bets right now: no rule has yet proven to make money with real historical odds (in football the Lab tested 96 rules on thousands of games and all of them lost). When one proves it, it will appear here.",notop:"No analysed games in the next 48 hours.",
  h_sp:"Sports",n_sp:"Test accuracy is measured on games already played, predicting each one only with earlier information. The simple rule is always picking the home side (or the higher-ranked player in tennis).",
  bt:"test accuracy",rule:"simple rule",live:"live accuracy",games:"games",next:"upcoming",none:"no upcoming games",go:"See",
  h_soon:"Coming soon",n_soon:"We only open a sport when we have real, verifiable results data for it.",
@@ -160,10 +160,11 @@ var DEP={
  futbol:{es:"Fútbol",en:"Football",ic:"⚽",url:"futbol.html",cm_es:"Premier · LaLiga · Serie A · Bundesliga · Ligue 1 · Portugal · Países Bajos · Championship · Brasil · Argentina · MLS",cm_en:"Premier · LaLiga · Serie A · Bundesliga · Ligue 1 · Portugal · Netherlands · Championship · Brazil · Argentina · MLS",n:11},
  tenis:{es:"Tenis",en:"Tennis",ic:"🎾",url:"tenis.html",cm_es:"ATP · WTA (Grand Slam, 1000 y 500)",cm_en:"ATP · WTA (Grand Slams, 1000s and 500s)",n:2},
  baloncesto:{es:"Baloncesto",en:"Basketball",ic:"🏀",url:"equipos.html?dep=baloncesto",cm_es:"NBA · Euroliga · Eurocup · NCAA · WNBA",cm_en:"NBA · EuroLeague · EuroCup · NCAA · WNBA",n:5,ligas:["nba","euroliga","eurocup","ncaab","wnba"]},
- hockey:{es:"Hockey",en:"Hockey",ic:"🏒",url:"equipos.html?dep=hockey",cm_es:"NHL · NCAA",cm_en:"NHL · NCAA",n:2,ligas:["nhl","ncaah"]}
+ hockey:{es:"Hockey",en:"Hockey",ic:"🏒",url:"equipos.html?dep=hockey",cm_es:"NHL · NCAA",cm_en:"NHL · NCAA",n:2,ligas:["nhl","ncaah"]},
+ americano:{es:"Fútbol americano",en:"American football",ic:"🏈",url:"equipos.html?dep=americano",cm_es:"NFL · NCAA",cm_en:"NFL · NCAA",n:2,ligas:["nfl","ncaaf"]}
 };
-var NOMBRE_LIGA={nba:"NBA",euroliga:"Euroliga",eurocup:"Eurocup",ncaab:"NCAA",wnba:"WNBA",nhl:"NHL",ncaah:"NCAA"};
-var SOON=[{ic:"🏐",es:"Voleibol",en:"Volleyball"},{ic:"🥊",es:"Boxeo",en:"Boxing"},{ic:"🥋",es:"MMA",en:"MMA"},{ic:"🏇",es:"Caballos",en:"Horse racing"}];
+var NOMBRE_LIGA={nba:"NBA",euroliga:"Euroliga",eurocup:"Eurocup",ncaab:"NCAA",wnba:"WNBA",nhl:"NHL",ncaah:"NCAA",nfl:"NFL",ncaaf:"NCAA"};
+var SOON=[{ic:"🥋",es:"MMA",en:"MMA"},{ic:"🥊",es:"Boxeo",en:"Boxing"},{ic:"🏐",es:"Voleibol",en:"Volleyball"},{ic:"🏇",es:"Caballos",en:"Horse racing"},{ic:"🐕",es:"Galgos",en:"Greyhounds"},{ic:"⚾",es:"Béisbol",en:"Baseball"}];
 var CLOCKS=[
  {tz:"Europe/Madrid",es:"Madrid",en:"Madrid",x_es:"LaLiga · Euroliga",x_en:"LaLiga · EuroLeague"},
  {tz:"Europe/London",es:"Londres",en:"London",x_es:"Premier · Wimbledon",x_en:"Premier · Wimbledon"},
@@ -208,7 +209,7 @@ function proximos(){
     out.push({dep:"tenis",comp:q.torneo,fecha:q.fecha,a:q.j1,b:q.j2,pick:k2==="1"?q.j1:q.j2,prob:Math.max(q.p1,q.p2),
       cuota:mj2?mj2.c:null,casa:mj2?mj2.casa:null,valor:!!(c2&&c2.valor&&c2.valor.length),vk:c2&&c2.valor,c:c2,
       pr:{"1":q.p1,"2":q.p2},nm:{"1":q.j1,"2":q.j2},url:"tenis.html"}); }
-  ["baloncesto","hockey"].forEach(function(dp){
+  ["baloncesto","hockey","americano"].forEach(function(dp){
     DEP[dp].ligas.forEach(function(lg){
       var d=D["e_"+lg]; if(!d||!d.predicciones) return;
       for(var m=0;m<d.predicciones.length;m++){ var r=d.predicciones[m]; if(!dentro(r.fecha)) continue;
@@ -265,7 +266,7 @@ function render(){
   ["sub","h-top","n-top","h-val","n-val","h-sp","n-sp","h-soon","n-soon","h-how"].forEach(function(id){
     document.getElementById(id).textContent=t(id.replace("-","_")); });
   document.getElementById("foot").textContent=t("foot");
-  var deps=["futbol","tenis","baloncesto","hockey"], R={}, totN=0, totUp=0, comp=0;
+  var deps=["futbol","tenis","baloncesto","hockey","americano"], R={}, totN=0, totUp=0, comp=0;
   deps.forEach(function(d){ R[d]=resumenDep(d); totN+=R[d].n||0; totUp+=R[d].up||0; comp+=DEP[d].n; });
   var upd=(D.f_stats&&D.f_stats.actualizado)||(D.t&&D.t.actualizado)||"";
   document.getElementById("kpis").innerHTML=
@@ -316,7 +317,7 @@ function renderNews(){
 function load(f,k){ return fetch("data/"+f+"?v="+Date.now()).then(function(r){ if(!r.ok) throw 0; return r.json(); }).then(function(j){ D[k]=j; }).catch(function(){ D[k]=null; }); }
 var cargas=[load("predicciones.json","f_pred"),load("estadisticas.json","f_stats"),load("backtest.json","f_bt"),load("cuotas.json","f_cuotas"),
             load("tenis.json","t"),load("tenis_backtest.json","t_bt"),load("noticias.json","news")];
-["nba","euroliga","eurocup","ncaab","wnba","nhl","ncaah"].forEach(function(lg){
+["nba","euroliga","eurocup","ncaab","wnba","nhl","ncaah","nfl","ncaaf"].forEach(function(lg){
   cargas.push(load("equipos_"+lg+".json","e_"+lg)); cargas.push(load("equipos_"+lg+"_backtest.json","b_"+lg)); });
 render();
 Promise.all(cargas).then(render);

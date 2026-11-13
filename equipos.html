@@ -89,6 +89,10 @@ tr:last-child td{border-bottom:0}
 .lbody .empty{border:0;padding:12px}
 .sum tr{cursor:pointer}
 .sum tr:hover td{background:var(--card2)}
+tr.me td{color:var(--acc);font-weight:700}
+.tagm{display:inline-block;font-size:12px;font-weight:700;padding:3px 10px;border-radius:20px;margin:0 0 8px}
+.tagm.on{color:var(--acc);border:1px solid var(--acc)}
+.tagm.off{color:var(--amb);border:1px solid var(--amb)}
 .tag{display:inline-block;font-size:10px;font-weight:700;padding:1px 6px;border-radius:4px;border:1px solid var(--line);color:var(--mut);margin-left:6px;vertical-align:middle}
 @media(max-width:720px){
  header{padding:12px 16px}main{padding:16px}
@@ -126,19 +130,26 @@ var LIGAS=[
   {id:"ncaab",dep:"baloncesto",es:"NCAA",en:"NCAA",d_es:"Universitaria EE. UU.",d_en:"US college"},
   {id:"wnba",dep:"baloncesto",es:"WNBA",en:"WNBA",d_es:"Femenina EE. UU.",d_en:"US women's"},
   {id:"nhl",dep:"hockey",es:"NHL",en:"NHL",d_es:"EE. UU. y Canadá",d_en:"USA and Canada"},
-  {id:"ncaah",dep:"hockey",es:"NCAA",en:"NCAA",d_es:"Universitaria EE. UU.",d_en:"US college"}
+  {id:"ncaah",dep:"hockey",es:"NCAA",en:"NCAA",d_es:"Universitaria EE. UU.",d_en:"US college"},
+  {id:"nfl",dep:"americano",es:"NFL",en:"NFL",d_es:"EE. UU.",d_en:"USA"},
+  {id:"ncaaf",dep:"americano",es:"NCAA",en:"NCAA",d_es:"Universitaria EE. UU.",d_en:"US college"}
 ];
-var ICON={baloncesto:"🏀",hockey:"🏒"};
+var ICON={baloncesto:"🏀",hockey:"🏒",americano:"🏈"};
 var T={
-es:{nodata:"Sin datos",all:"Todas",dep_baloncesto:"Baloncesto",dep_hockey:"Hockey",
- lead_baloncesto:"Probabilidad de victoria en NBA, Euroliga, Eurocup, NCAA y WNBA con un modelo Elo (fuerza de cada equipo, ventaja de jugar en casa y margen de victoria) calculado con resultados reales. No hay empate: la prórroga cuenta.",
- lead_hockey:"Probabilidad de victoria en NHL y NCAA con un modelo Elo (fuerza de cada equipo, ventaja de jugar en casa y margen de victoria) calculado con resultados reales. No hay empate: prórroga y penaltis cuentan.",
+es:{nodata:"Sin datos",all:"Todas",dep_baloncesto:"Baloncesto",dep_hockey:"Hockey",dep_americano:"Fútbol americano",
+ lead_americano:"Probabilidad de victoria en NFL y NCAA con nuestro motor propio: fuerza de cada equipo (Elo), ventaja de jugar en casa, descanso y forma reciente, calculado con resultados reales.",
+ h_mot:"Motor propio: prueba con partidos no vistos",n_mot:"El motor combina la fuerza de cada equipo (Elo), el descanso (días desde su último partido) y la forma reciente (últimos 10 partidos). Se ajusta con temporadas antiguas y se mide con las más recientes, prediciendo cada partido solo con lo que se sabía antes.",
+ mt_us:"Motor propio",mt_elo:"Elo básico",mt_home:"Siempre local",mt_on:"En uso: mejora al Elo básico",mt_off:"No mejora al Elo básico en la prueba, así que se usa el Elo básico",
+ mt_set:"Ajustes elegidos",mt_rest:"descanso",mt_form:"forma",mt_pts:"puntos",
+ novalor:"VALOR desactivado: solo lo marcaremos cuando una regla haya demostrado ganar dinero con cuotas históricas reales.",
+ lead_baloncesto:"Probabilidad de victoria en NBA, Euroliga, Eurocup, NCAA y WNBA con nuestro motor propio: fuerza de cada equipo (Elo), ventaja de jugar en casa, descanso y forma reciente, calculado con resultados reales. No hay empate: la prórroga cuenta.",
+ lead_hockey:"Probabilidad de victoria en NHL y NCAA con nuestro motor propio: fuerza de cada equipo (Elo), ventaja de jugar en casa, descanso y forma reciente, calculado con resultados reales. No hay empate: prórroga y penaltis cuentan.",
  games:"partidos",next:"Próximo partido",offseason:"Fuera de temporada. Volverá a aparecer cuando empiece la próxima.",
  nogames48:"Sin partidos en las próximas 48 horas.",seeall:"Ver liga completa →",
  h_sum:"Resumen por liga",n_sum:"Pulsa una liga para ver todas sus estadísticas.",
  th_liga:"Liga",th_bt:"Backtest",th_home:"Siempre local",th_live:"En directo",noodds:"sin cuotas",
  top10:"Los 10 equipos más fuertes",l1:"← Inicio",l2:"Guía",l3:"Estadísticas",
- lead:"Probabilidad de victoria con un modelo Elo (fuerza de cada equipo, ventaja de jugar en casa y margen de victoria) calculado con resultados reales. En estos deportes no hay empate: la prórroga cuenta.",
+ lead:"Probabilidad de victoria con nuestro motor propio: fuerza de cada equipo (Elo), ventaja de jugar en casa, descanso y forma reciente, calculado con resultados reales. En estos deportes no hay empate: la prórroga cuenta.",
  t_pred:"Próximos partidos",t_stats:"Estadísticas",t_rank:"Fuerza de los equipos",
  old1:"El último resultado que tenemos es del",old2:"Mientras los datos no estén al día no se guardan predicciones nuevas.",
  nomatch:"Ahora mismo no hay partidos en las próximas 48 horas. Cuando los haya aparecerán aquí solos.",
@@ -167,15 +178,20 @@ es:{nodata:"Sin datos",all:"Todas",dep_baloncesto:"Baloncesto",dep_hockey:"Hocke
  method:"Método: Elo con ventaja de campo, ajuste por margen de victoria y regresión hacia la media al empezar cada temporada. Los parámetros se fijaron antes de ver los resultados (valores publicados por FiveThirtyEight) y no se han ajustado para mejorar las cifras. No se usan lesiones, descansos ni cuotas como entrada.",
  foot:"Solo para mayores de 18 años. Los resultados pasados no garantizan resultados futuros. Juega con responsabilidad. Resultados y calendario:",
  empty:"Todavía no hay datos. Se generan al ejecutar el motor."},
-en:{nodata:"No data",all:"All",dep_baloncesto:"Basketball",dep_hockey:"Hockey",
- lead_baloncesto:"Win probability in the NBA, EuroLeague, EuroCup, NCAA and WNBA from an Elo model (team strength, home advantage and margin of victory) built on real results. No draws: overtime counts.",
- lead_hockey:"Win probability in the NHL and NCAA from an Elo model (team strength, home advantage and margin of victory) built on real results. No draws: overtime and shootouts count.",
+en:{nodata:"No data",all:"All",dep_baloncesto:"Basketball",dep_hockey:"Hockey",dep_americano:"American football",
+ lead_americano:"Win probability in the NFL and NCAA from our own engine: team strength (Elo), home advantage, rest and recent form, built on real results.",
+ h_mot:"Own engine: test on unseen games",n_mot:"The engine combines each team's strength (Elo), rest (days since its last game) and recent form (last 10 games). It is tuned on older seasons and measured on the most recent ones, predicting each game only with what was known beforehand.",
+ mt_us:"Own engine",mt_elo:"Basic Elo",mt_home:"Always home",mt_on:"In use: beats basic Elo",mt_off:"Does not beat basic Elo in the test, so basic Elo is used",
+ mt_set:"Chosen settings",mt_rest:"rest",mt_form:"form",mt_pts:"points",
+ novalor:"VALUE switched off: we will only flag it once a rule has proven to make money with real historical odds.",
+ lead_baloncesto:"Win probability in the NBA, EuroLeague, EuroCup, NCAA and WNBA from our own engine: team strength (Elo), home advantage, rest and recent form, built on real results. No draws: overtime counts.",
+ lead_hockey:"Win probability in the NHL and NCAA from our own engine: team strength (Elo), home advantage, rest and recent form, built on real results. No draws: overtime and shootouts count.",
  games:"games",next:"Next game",offseason:"Off-season. It will reappear when the next season starts.",
  nogames48:"No games in the next 48 hours.",seeall:"See full league →",
  h_sum:"Summary by league",n_sum:"Tap a league to see all its statistics.",
  th_liga:"League",th_bt:"Backtest",th_home:"Always home",th_live:"Live",noodds:"no odds",
  top10:"The 10 strongest teams",l1:"← Home",l2:"Guide",l3:"Statistics",
- lead:"Win probability from an Elo model (team strength, home advantage and margin of victory) built on real results. There are no draws in these sports: overtime counts.",
+ lead:"Win probability from our own engine: team strength (Elo), home advantage, rest and recent form, built on real results. There are no draws in these sports: overtime counts.",
  t_pred:"Upcoming games",t_stats:"Statistics",t_rank:"Team strength",
  old1:"The latest result we have is from",old2:"New predictions are not saved until the data is up to date.",
  nomatch:"There are no games in the next 48 hours right now. They will appear here by themselves.",
@@ -278,7 +294,7 @@ function pPredLiga(id){
   var d=D[id]&&D[id].t;
   if(!d) return '<div class="empty">'+t("empty")+'</div>';
   var o=oldWarn(d), list=d.predicciones||[];
-  o+= list.length ? listaDias(list,d.con_cuotas)+(d.con_cuotas===false?'':'<div class="sd">'+t("vnote")+'</div>') : '<div class="empty">'+sinPartidos(d)+'</div>';
+  o+= list.length ? listaDias(list,d.con_cuotas)+(d.con_cuotas===false?'':'<div class="sd">'+t("novalor")+'</div>') : '<div class="empty">'+sinPartidos(d)+'</div>';
   var r=d.recientes||[];
   if(r.length){
     o+='<h2>'+t("h_recent")+'</h2><div class="note">'+t("n_recent")+'</div>';
@@ -293,7 +309,7 @@ function pPredTodas(){
   for(var i=0;i<L.length;i++){ var x=L[i], d=D[x.id].t||{}, list=d.predicciones||[]; total+=list.length;
     o+='<div class="lbox"><div class="lhead"><div><b>'+esc(x[lang])+'</b> <span>· '+esc(x["d_"+lang])+(d.con_cuotas===false?' · '+t("noodds"):'')+'</span></div><span>'+list.length+' '+t("games")+' · <a'+ir(x.id)+'>'+t("seeall")+'</a></span></div><div class="lbody">'
       +(list.length?listaDias(list,d.con_cuotas):'<div class="empty">'+sinPartidos(d)+'</div>')+'</div></div>'; }
-  return o+(total?'<div class="sd">'+t("vnote")+'</div>':'');
+  return o+(total?'<div class="sd">'+t("novalor")+'</div>':'');
 }
 
 function groupTable(obj,nameFn,order){
@@ -312,6 +328,13 @@ function pStatsLiga(id){
     +card(t("l_hit"),pc(dr.acierto,1),dr.ic?t("ic")+": "+rng(dr.ic):"",num(dr.acierto)&&dr.acierto>0.5)
     +card(t("l_brier"),num(dr.brier)?dec(dr.brier,3):t("nodata"),t("bz"))
     +(dt&&dt.con_cuotas===false?'':card(t("l_roi"),num(dr.roi)?((dr.roi>=0?"+":"")+dec(dr.roi*100,1)+"%"):t("nodata"),num(dr.apuestas)?dr.apuestas+" "+t("l_bets"):""))+'</div>';
+  var MO=b.motor;
+  if(MO&&MO.motor&&MO.elo_basico){
+    var fl=function(n,x,me){ return x?'<tr'+(me?' class="me"':'')+'><td>'+n+'</td><td>'+x.n+'</td><td><b>'+pc(x.acierto,1)+'</b></td><td>'+(x.brier!=null?dec(x.brier,3):'-')+'</td></tr>':''; };
+    o+='<h2>'+t("h_mot")+'</h2><div class="note">'+t("n_mot")+'</div><div class="tagm '+(MO.activo?'on':'off')+'">'+(MO.activo?'✓ '+t("mt_on"):t("mt_off"))+'</div>'
+      +'<table><tr><th></th><th>'+t("th_n")+'</th><th>'+t("th_hit")+'</th><th>'+t("th_br")+'</th></tr>'+fl(t("mt_us"),MO.motor,true)+fl(t("mt_elo"),MO.elo_basico)+fl(t("mt_home"),MO.local)+'</table>';
+    if(MO.activo&&MO.params){ o+='<div class="leg">'+t("mt_set")+': '+t("mt_rest")+' '+MO.params.c_desc+' '+t("mt_pts")+' · '+t("mt_form")+' '+MO.params.c_forma+' '+t("mt_pts")+'</div>'; }
+  }
   o+='<h2>'+t("h_bt")+'</h2><div class="note">'+t("n_bt")+' · '+t("from")+': '+esc(b.desde.substr(6,2)+"/"+b.desde.substr(4,2)+"/"+b.desde.substr(0,4))+' · '+t("upto")+': '+esc(fdatel(b.datos_hasta))+'</div>';
   var hero=null, tr=b.tramos||[];
   for(var i=0;i<tr.length;i++){ if(Math.abs(tr[i].min-0.7)<0.001 && tr[i].n>0 && num(tr[i].acierto)) hero=tr[i]; }
