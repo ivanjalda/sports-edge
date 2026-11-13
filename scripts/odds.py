@@ -160,12 +160,12 @@ def procesar(ev):
 
 
 def valor_permitido():
-    """VALOR solo se marca si la simulacion con cuotas reales del motor propio dio beneficio.
-    Si dio perdidas, se muestran las cuotas y la ventaja, pero no se recomienda nada."""
+    """Regla de VALOR del Laboratorio del motor propio. Solo vale si gano dinero con cuotas reales
+    en temporadas que no habia visto. Si no, se muestran cuotas y ventaja pero no se recomienda nada."""
     try:
         with open(os.path.join("data", "motor_futbol.json"), encoding="utf-8") as f:
-            v = (json.load(f).get("prueba") or {}).get("valor") or {}
-        return v.get("roi") is not None and v["roi"] >= 0
+            r = (json.load(f).get("prueba") or {}).get("regla_valor") or {}
+        return r if r.get("activa") else False
     except Exception:
         return False
 
@@ -178,14 +178,18 @@ def evaluar(p, mejor, mercado):
     if VALOR_OK is None:
         VALOR_OK = valor_permitido()
         if not VALOR_OK:
-            print("Aviso: la simulacion con cuotas reales del motor dio perdidas. En futbol no se marca VALOR.")
+            print("Aviso: ninguna regla de VALOR gano dinero con cuotas reales en la prueba. En futbol no se marca VALOR.")
+        else:
+            print("Regla de VALOR activa (comprobada con cuotas reales): %s" % VALOR_OK)
     probs = {"1": p["p_local"], "X": p["p_empate"], "2": p["p_visitante"]}
     ev = {}
     valor = []
     for k in ("1", "X", "2"):
         ev[k] = round(probs[k] * mejor[k]["c"] - 1, 4)
-        if VALOR_OK and ev[k] >= UMBRAL_VALOR and probs[k] >= PROB_MIN and probs[k] > mercado[k] \
-                and probs[k] - mercado[k] <= 0.15:
+        r = VALOR_OK
+        if (r and p.get("liga") in r.get("ligas", []) and (k != "X" or r.get("empate"))
+                and ev[k] >= r["ev"] and probs[k] >= r["pmin"] and probs[k] > mercado[k]
+                and probs[k] - mercado[k] <= r["dif"]):
             valor.append(k)
     return ev, valor
 

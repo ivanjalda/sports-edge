@@ -514,6 +514,7 @@ def ajustar(hist, ahora):
     # PRUEBA con partidos no vistos
     viejo = {c: recorrer(ms, None, None, reset=True) for c, ms in datos.items()}
     informe = medir_prueba(datos, fase, sel, viejo, params)
+    informe["regla_valor"] = buscar_regla_valor(datos, fase, sel, params)
     informe["segundos"] = int(time.time() - t0)
     return params, informe
 
@@ -554,6 +555,71 @@ def medir_prueba(datos, fase, sel, viejo, params):
             "valor": {"apuestas": len(apuestas), "ganadas": sum(1 for a in apuestas if a[1] > 0),
                       "roi": round(ganancia / len(apuestas), 4) if apuestas else None,
                       "ic_roi": ic_roi([a[1] for a in apuestas])}}
+
+
+REGLAS_EV = [0.03, 0.05, 0.08, 0.12]
+REGLAS_DIF = [0.03, 0.05, 0.08, 0.15]
+REGLAS_PMIN = [0.10, 0.30, 0.45]
+MIN_APUESTAS_ENTRENA = 150
+MIN_APUESTAS_PRUEBA = 50
+
+
+def buscar_regla_valor(datos, fase, sel, params):
+    """Busca una regla de VALOR que gane dinero con las cuotas reales que habia ANTES de cada partido.
+    Solo ligas europeas (tienen cuotas previas al partido). Se elige con ENTRENAMIENTO y se confirma con PRUEBA."""
+    casos = {"entrena": [], "prueba": []}
+    for c, ms in datos.items():
+        if LIGAS[c]["tipo"] != "main":
+            continue
+        for m, p in zip(ms, sel[c]):
+            fs = fase[c].get(m["temp"])
+            if fs not in casos or not p.get("ok"):
+                continue
+            omax, oavg = m.get("o_pre_max"), m.get("o_pre_avg")
+            l = lambdas(p, params)
+            if not (omax and oavg and l):
+                continue
+            pm = prob_1x2(l[0], l[1], params["rho"])
+            casos[fs].append((pm, implicitas(oavg), omax, res_idx(m["gh"], m["ga"])))
+
+    def jugar(lista, r):
+        out = []
+        for pm, imp, om, k in lista:
+            for i in range(3):
+                if i == 1 and not r["empate"]:
+                    continue
+                if (pm[i] * om[i] - 1 >= r["ev"] and pm[i] >= r["pmin"] and pm[i] > imp[i]
+                        and pm[i] - imp[i] <= r["dif"]):
+                    out.append(om[i] - 1 if i == k else -1.0)
+        return out
+    mejor = None
+    for ev in REGLAS_EV:
+        for dif in REGLAS_DIF:
+            for pmin in REGLAS_PMIN:
+                for emp in (True, False):
+                    r = {"ev": ev, "dif": dif, "pmin": pmin, "empate": emp}
+                    b = jugar(casos["entrena"], r)
+                    if len(b) < MIN_APUESTAS_ENTRENA:
+                        continue
+                    roi = sum(b) / len(b)
+                    if mejor is None or roi > mejor[1]:
+                        mejor = (r, roi, len(b))
+    if mejor is None:
+        return {"activa": False, "motivo": "sin apuestas suficientes"}
+    r = mejor[0]
+    bp = jugar(casos["prueba"], r)
+    roi_p = (sum(bp) / len(bp)) if bp else None
+    activa = bool(mejor[1] > 0 and bp and len(bp) >= MIN_APUESTAS_PRUEBA and roi_p > 0)
+    out = dict(r)
+    out.update({"activa": activa, "ligas": [LIGAS[c]["nombre"] for c in LIGAS if LIGAS[c]["tipo"] == "main"],
+                "entrena": {"apuestas": mejor[2], "roi": round(mejor[1], 4)},
+                "prueba": {"apuestas": len(bp), "roi": round(roi_p, 4) if roi_p is not None else None,
+                           "ganadas": sum(1 for x in bp if x > 0), "ic_roi": ic_roi(bp)}})
+    log("Regla de VALOR: ventaja >= %d%%, diferencia con el mercado <= %d puntos, prob >= %d%%, empates %s | "
+        "entrenamiento %d apuestas ROI %.1f%% | PRUEBA %d apuestas ROI %s -> %s" %
+        (r["ev"] * 100, r["dif"] * 100, r["pmin"] * 100, "si" if r["empate"] else "no", mejor[2], mejor[1] * 100,
+         len(bp), ("%.1f%%" % (roi_p * 100)) if roi_p is not None else "-", "ACTIVA" if activa else "NO se activa"))
+    return out
 
 
 def resumen(filas):
@@ -659,7 +725,8 @@ def preparar(ahora=None, forzar=False):
             tzinfo=timezone.utc)).days >= DIAS_REAJUSTE
     except Exception:
         pass
-    if forzar or viejo or not previo.get("params"):
+    falta_regla = "regla_valor" not in (previo.get("prueba") or {})
+    if forzar or viejo or falta_regla or not previo.get("params"):
         log("Motor propio: ajustando con temporadas de entrenamiento y midiendo con las de prueba ...")
         params, informe = ajustar(M.hist, ahora)
         t = informe["total"]
