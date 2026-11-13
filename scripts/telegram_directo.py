@@ -16,6 +16,7 @@ import json
 import os
 import re
 import sys
+import time
 import unicodedata
 import urllib.parse
 import urllib.request
@@ -249,13 +250,9 @@ def resumen_dia(estado, dia):
     return porDep
 
 
-def main():
-    if not PRUEBA and (not TOKEN or not CHAT):
-        print("Telegram no configurado (faltan TELEGRAM_TOKEN o TELEGRAM_CHAT_ID). No se envia nada.")
-        return
-    ahora = datetime.now(timezone.utc)
+def ciclo(estado, ahora, balance):
+    """Una pasada: resultados nuevos (y balance si toca). Devuelve la lista de mensajes."""
     dia = ahora.astimezone(TZ).strftime("%Y-%m-%d")
-    estado = leer(ESTADO, {})
     estado.setdefault("enviados", {})
     primera = not estado["enviados"] and not estado.get("inicio")
 
@@ -277,13 +274,12 @@ def main():
         real = "1" if x["gl"] > x["gv"] else ("2" if x["gl"] < x["gv"] else "X")
         x.update({"k": k, "pick": nom, "prob": prob, "ok": real == kk})
         nuevos.append(x)
-    print("Partidos terminados leidos: %d (fallos de lectura: %d). Con pronostico y sin avisar: %d" %
-          (len(lista), fallos, len(nuevos)))
+    print("[%s] Partidos terminados leidos: %d (fallos de lectura: %d). Con pronostico y sin avisar: %d" %
+          (ahora.astimezone(TZ).strftime("%H:%M"), len(lista), fallos, len(nuevos)))
 
     bloques = []
     if nuevos:
         if primera:
-            # Primera vez: solo se apuntan, para no enviar de golpe todo lo de ayer
             print("Primera ejecucion: se apuntan %d partidos ya terminados sin enviarlos." % len(nuevos))
         else:
             bloques.append(bloque_resultados(nuevos))
@@ -298,7 +294,7 @@ def main():
         bloques.append(u"\U0001F4C8 Hoy llevamos <b>%d de %d</b> acertados (%s)\n\U0001F534 Partidos en directo: %sdirecto.html" %
                        (a, n, pc(a / float(n)) if n else "-", WEB))
 
-    if MODO == "balance" and estado.get("balance") != dia:
+    if balance and estado.get("balance") != dia:
         fechatxt = ahora.astimezone(TZ).strftime("%d/%m/%Y")
         if hoy:
             a = sum(v[0] for v in hoy.values())
@@ -314,24 +310,105 @@ def main():
             bloques.append("\n".join(lin))
         estado["balance"] = dia
 
-    # limpieza: solo se guardan los ultimos 4 dias
     limite = (ahora - timedelta(days=4)).astimezone(TZ).strftime("%Y-%m-%d")
     estado["enviados"] = {k: v for k, v in estado["enviados"].items() if v.get("dia", "") >= limite}
-    estado["actualizado"] = ahora.strftime("%Y-%m-%d %H:%M UTC")
+    return trocear(bloques)
 
-    mensajes = trocear(bloques)
+
+def mandar(mensajes):
     if PRUEBA:
         print("\n\n=====\n".join(mensajes) if mensajes else "(no hay nada que enviar)")
-        return
+        return True
     try:
         for m in mensajes:
             enviar(m)
+        print("Telegram: %d mensaje(s) enviado(s)." % len(mensajes))
+        return True
     except Exception as ex:
         print("ERROR enviando a Telegram: %s" % ex)
+        return False
+
+
+def main():
+    if not PRUEBA and (not TOKEN or not CHAT):
+        print("Telegram no configurado (faltan TELEGRAM_TOKEN o TELEGRAM_CHAT_ID). No se envia nada.")
+        return
+    ahora = datetime.now(timezone.utc)
+    estado = leer(ESTADO, {})
+    mensajes = ciclo(estado, ahora, MODO == "balance")
+    if not mandar(mensajes):
         sys.exit(1)
-    guardar(ESTADO, estado)
-    print("Telegram: %d mensaje(s) enviado(s)." % len(mensajes))
+    if not PRUEBA:
+        estado["actualizado"] = ahora.strftime("%Y-%m-%d %H:%M UTC")
+        guardar(ESTADO, estado)
+
+
+# ------------------------------------------------------------- modo vigilante (bucle)
+HORA_MANANA = (9, 30)    # pronosticos del dia (hora de Madrid)
+HORA_BALANCE = (23, 40)  # balance del dia (hora de Madrid)
+
+
+def git(*args):
+    import subprocess
+    r = subprocess.run(["git"] + list(args), capture_output=True, text=True)
+    if r.returncode != 0:
+        print("git %s -> %s" % (" ".join(args), (r.stderr or r.stdout).strip()[:300]))
+    return r.returncode == 0
+
+
+def subir(msg):
+    git("add", os.path.join(DATA, ESTADO))
+    if git("diff", "--cached", "--quiet"):
+        return
+    git("commit", "-q", "-m", msg)
+    for _ in range(3):
+        if git("pull", "-q", "--rebase") and git("push", "-q"):
+            return
+        time.sleep(15)
+
+
+def bucle():
+    """Vigila durante DURACION minutos: cada 10 minutos mira resultados; a las 9:30 manda los pronosticos
+    del dia y a las 23:40 el balance (hora de Madrid). Asi no dependemos de que GitHub lance a tiempo
+    las tareas programadas, que a veces se retrasan horas."""
+    import subprocess
+    fin = time.time() + 60 * float(os.environ.get("DURACION", "330"))
+    while True:
+        git("pull", "-q", "--rebase")
+        estado = leer(ESTADO, {})
+        ahora = datetime.now(timezone.utc)
+        loc = ahora.astimezone(TZ)
+        dia = loc.strftime("%Y-%m-%d")
+        if "manana" not in estado:
+            estado["manana"] = dia   # primera vez: hoy ya se enviaron los pronosticos con el sistema anterior
+        antes = json.dumps(estado, sort_keys=True)
+        try:
+            # 1) pronosticos del dia
+            if (loc.hour, loc.minute) >= HORA_MANANA and estado.get("manana") != dia:
+                r = subprocess.run([sys.executable, "-u", os.path.join("scripts", "telegram.py")])
+                if r.returncode == 0:
+                    estado["manana"] = dia
+            # 2) resultados y 3) balance
+            balance = (loc.hour, loc.minute) >= HORA_BALANCE
+            mensajes = ciclo(estado, ahora, balance)
+            if not mandar(mensajes):
+                estado = json.loads(antes)   # no se apunta nada si no se pudo enviar
+        except Exception as ex:
+            print("Aviso en el ciclo: %s" % ex)
+            estado = json.loads(antes)
+        if json.dumps(estado, sort_keys=True) != antes and not PRUEBA:
+            guardar(ESTADO, estado)
+            subir("Telegram: resultados enviados")
+        if time.time() + 600 > fin:
+            break
+        time.sleep(600)
+    print("Fin del turno de vigilancia.")
 
 
 if __name__ == "__main__":
-    main()
+    if not PRUEBA and (not TOKEN or not CHAT):
+        print("Telegram no configurado (faltan TELEGRAM_TOKEN o TELEGRAM_CHAT_ID). No se envia nada.")
+    elif MODO == "bucle":
+        bucle()
+    else:
+        main()

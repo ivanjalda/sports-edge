@@ -669,7 +669,7 @@ def procesar(clave, cfg, ahora, stamp, restantes):
     print("Motor propio %s: PRUEBA %d partidos no vistos | motor %.1f%% (logloss %.4f) | Elo basico %.1f%% (logloss %.4f) -> %s" %
           (cfg["nombre"], mm.get("n", 0), 100 * (mm.get("acierto") or 0), mm.get("logloss") or 0,
            100 * (mb.get("acierto") or 0), mb.get("logloss") or 0,
-           "SE USA el motor (descanso %s, forma %s)" % (params["c_desc"], params["c_forma"]) if inf_motor.get("activo")
+           "SE USA el motor (descanso %s, forma10 %s, racha3 %s, casa/fuera %s)" % (params["c_desc"], params["c_forma"], params.get("c_micro", 0), params.get("c_sede", 0)) if inf_motor.get("activo")
            else "se usa el Elo basico"))
     if not ev:
         print("ERROR: no hay partidos para evaluar en %s." % cfg["nombre"])

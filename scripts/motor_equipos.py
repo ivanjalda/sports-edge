@@ -4,7 +4,11 @@
 Piezas:
   1) Elo: fuerza de cada equipo segun contra quien jugo y por cuanto gano (con ventaja de campo).
   2) Descanso: dias desde el ultimo partido de cada equipo (jugar dos dias seguidos cansa).
-  3) Forma reciente: margen medio de los ultimos 10 partidos de cada equipo.
+  3) Forma a varias escalas (la idea "fractal": mirar el mismo rendimiento con distintas lupas):
+     - temporada completa -> el Elo;  ultimos 10 partidos -> forma;  ultimos 3 -> racha corta;
+     - como juega el local EN CASA (ultimos 5) frente a como juega el visitante FUERA (ultimos 5).
+     Cada escala solo entra si mejora la prediccion en partidos de ENTRENAMIENTO, y el motor entero
+     solo se usa si en la PRUEBA (partidos no vistos) mejora al Elo basico.
 Como se elige (sin trampas), igual que en futbol:
   - 1a temporada: calentar.  Temporadas intermedias: ENTRENAMIENTO (se eligen los ajustes).
   - 2 temporadas mas recientes: PRUEBA con partidos no vistos.
@@ -19,8 +23,13 @@ K_MUL = [0.7, 1.0, 1.4]
 H_MUL = [0.6, 1.0, 1.4]
 C_DESCANSO = [0.0, 10.0, 20.0, 35.0]   # puntos Elo por cada dia de descanso de diferencia (max 3)
 C_FORMA = [0.0, 15.0, 30.0, 60.0]      # puntos Elo por cada unidad de forma (margen normalizado)
-BASE = {"kmul": 1.0, "hmul": 1.0, "c_desc": 0.0, "c_forma": 0.0}
+C_MICRO = [0.0, 15.0, 30.0, 60.0]      # puntos Elo por unidad de racha corta (ultimos 3)
+C_SEDE = [0.0, 15.0, 30.0, 60.0]       # puntos Elo por unidad de forma en casa / fuera (ultimos 5)
+BASE = {"kmul": 1.0, "hmul": 1.0, "c_desc": 0.0, "c_forma": 0.0, "c_micro": 0.0, "c_sede": 0.0}
 VENTANA_FORMA = 10
+VENTANA_MICRO = 3
+VENTANA_SEDE = 5
+MEJORA_MINIMA = 0.001   # mejora minima de logloss en validacion para aceptar una escala nueva
 
 
 def fecha(s):
@@ -48,6 +57,9 @@ class Estado(object):
         self.temp = None
         self.ultimo = {}
         self.forma = {}
+        self.corto = {}
+        self.casa = {}
+        self.fuera = {}
 
     def get(self, e):
         return self.r.get(e, MEDIA)
@@ -57,7 +69,7 @@ class Estado(object):
             a = self.cfg["revertir"]
             for e in self.r:
                 self.r[e] = a * self.r[e] + (1 - a) * MEDIA
-            self.forma = {}
+            self.forma, self.corto, self.casa, self.fuera = {}, {}, {}, {}
         self.temp = t
 
     def rasgos(self, local, visit, neutral, f):
@@ -67,15 +79,18 @@ class Estado(object):
                 return 3.0
             return float(min(max((f.date() - u.date()).days, 0), 3))
 
-        def fm(e):
-            q = self.forma.get(e)
+        def fm(dic, e):
+            q = dic.get(e)
             return (sum(q) / len(q)) if q else 0.0
         return {"dr0": self.get(local) - self.get(visit), "hca": 0.0 if neutral else self.hca,
-                "d": desc(local) - desc(visit), "fo": fm(local) - fm(visit)}
+                "d": desc(local) - desc(visit), "fo": fm(self.forma, local) - fm(self.forma, visit),
+                "f3": fm(self.corto, local) - fm(self.corto, visit),
+                "se": 0.0 if neutral else fm(self.casa, local) - fm(self.fuera, visit)}
 
     def prob(self, x, p=None):
         p = p or self.p
-        dif = x["dr0"] + x["hca"] + p["c_desc"] * x["d"] + p["c_forma"] * x["fo"]
+        dif = (x["dr0"] + x["hca"] + p["c_desc"] * x["d"] + p["c_forma"] * x["fo"]
+               + p.get("c_micro", 0.0) * x["f3"] + p.get("c_sede", 0.0) * x["se"])
         return 1.0 / (1.0 + 10 ** (-dif / 400.0))
 
     def prob_partido(self, local, visit, neutral, f):
@@ -97,6 +112,11 @@ class Estado(object):
         m = (g["pl"] - g["pv"]) / self.sd
         self.forma.setdefault(l, deque(maxlen=VENTANA_FORMA)).append(m)
         self.forma.setdefault(v, deque(maxlen=VENTANA_FORMA)).append(-m)
+        self.corto.setdefault(l, deque(maxlen=VENTANA_MICRO)).append(m)
+        self.corto.setdefault(v, deque(maxlen=VENTANA_MICRO)).append(-m)
+        if not g["neutral"]:
+            self.casa.setdefault(l, deque(maxlen=VENTANA_SEDE)).append(m)
+            self.fuera.setdefault(v, deque(maxlen=VENTANA_SEDE)).append(-m)
 
 
 def fases(juegos):
@@ -156,13 +176,13 @@ def ajustar(juegos, cfg):
     base_filas = None
     for km in K_MUL:
         for hm in H_MUL:
-            pr0 = {"kmul": km, "hmul": hm, "c_desc": 0.0, "c_forma": 0.0}
+            pr0 = {"kmul": km, "hmul": hm, "c_desc": 0.0, "c_forma": 0.0, "c_micro": 0.0, "c_sede": 0.0}
             st, filas = pasada(juegos, cfg, pr0, sd)
             if km == 1.0 and hm == 1.0:
                 base_filas = filas
             for cd in C_DESCANSO:
                 for cf in C_FORMA:
-                    pr = {"kmul": km, "hmul": hm, "c_desc": cd, "c_forma": cf}
+                    pr = {"kmul": km, "hmul": hm, "c_desc": cd, "c_forma": cf, "c_micro": 0.0, "c_sede": 0.0}
                     s = n = 0
                     for x, w, f in zip(filas, res, fase):
                         if f != "entrena":
@@ -173,7 +193,34 @@ def ajustar(juegos, cfg):
                         mejor = (pr, s / n, filas)
     if mejor is None:
         return dict(BASE), {"activo": False, "motivo": "sin temporadas de entrenamiento"}
-    pr, _, filas = mejor
+    pr, mej_ll, filas = mejor
+    # Escalas cortas (racha de 3 y casa/fuera): se deciden con la ULTIMA temporada de entrenamiento
+    # (validacion) y solo entran si mejoran claramente; asi no se "aprende de memoria" el pasado.
+    t_ent = sorted(t for t, v in fs.items() if v == "entrena")
+    val = t_ent[-1] if t_ent else None
+    st_e = Estado(cfg, BASE, sd)
+
+    def ll_val(pp):
+        s = n = 0
+        for x, w, g in zip(filas, res, juegos):
+            if g["temporada"] != val:
+                continue
+            s += ll(st_e.prob(x, pp), w)
+            n += 1
+        return s / n if n else None
+    ref = ll_val(pr)
+    if ref is not None:
+        mejor_e = (dict(pr), ref)
+        for cm in C_MICRO:
+            for cs in C_SEDE:
+                if cm == 0 and cs == 0:
+                    continue
+                pr2 = dict(pr, c_micro=cm, c_sede=cs)
+                v = ll_val(pr2)
+                if v is not None and v < mejor_e[1]:
+                    mejor_e = (pr2, v)
+        if mejor_e[1] < ref - MEJORA_MINIMA:
+            pr = mejor_e[0]
     st_b = Estado(cfg, BASE, sd)
     prueba_m, prueba_b, prueba_l = [], [], []
     for x, xb, w, f in zip(filas, base_filas, res, fase):
@@ -184,7 +231,15 @@ def ajustar(juegos, cfg):
         prueba_l.append((1.0, w))
     mm, mb = medir(prueba_m), medir(prueba_b)
     activo = bool(mm and mb and mm["logloss"] < mb["logloss"])
+    if not activo and (pr["c_micro"] or pr["c_sede"]):
+        # si con las escalas cortas no supera al Elo basico, se prueba el motor sin ellas
+        pr_sin = dict(pr, c_micro=0.0, c_sede=0.0)
+        m2 = medir([(st_b.prob(x, pr_sin), w) for x, w, f in zip(filas, res, fase) if f == "prueba"])
+        if m2 and mb and m2["logloss"] < mb["logloss"]:
+            pr, mm, activo = pr_sin, m2, True
     inf = {"activo": activo, "params": pr, "sd": round(sd, 3), "motor": mm, "elo_basico": mb,
+           "escalas": {"temporada": True, "ultimos10": pr["c_forma"] > 0, "ultimos3": pr["c_micro"] > 0,
+                       "casa_fuera": pr["c_sede"] > 0, "descanso": pr["c_desc"] > 0},
            "local": {"n": len(prueba_l), "acierto": round(sum(1 for _, w in prueba_l if w) / float(len(prueba_l)), 4)}
            if prueba_l else None,
            "temporadas_prueba": sorted(t for t, v in fs.items() if v == "prueba")}
