@@ -80,6 +80,16 @@ main{max-width:1100px;margin:0 auto;padding:18px 20px}
 .rtit{font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--blue);margin:34px 0 4px}
 .rnote{color:var(--mut);font-size:13px;margin-bottom:6px}
 details.rs summary{list-style:none}
+.mt{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:14px;margin:8px 0}
+.mt th,.mt td{padding:8px 12px;text-align:center;border-bottom:1px solid var(--line)}
+.mt th{font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;background:var(--card2)}
+.mt td:first-child,.mt th:first-child{text-align:left}
+.mt tr.me td{color:var(--acc);font-weight:700}
+.mtag{display:inline-block;font-size:12px;font-weight:700;padding:3px 10px;border-radius:20px;margin:6px 0}
+.mtag.on{color:var(--acc);border:1px solid var(--acc)}
+.mtag.off{color:var(--amb,#f59e0b);border:1px solid var(--amb,#f59e0b)}
+.mval{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;font-size:14px;margin:8px 0}
+.mbadge{background:var(--card);border:1px solid var(--acc);border-radius:10px;padding:9px 14px;font-size:13px;margin:10px 0 6px}
 details.rs summary::-webkit-details-marker{display:none}
 details.rs[open] .lgh{border-bottom:1px solid var(--line)}
 .ko{color:var(--red);font-weight:700}
@@ -105,7 +115,7 @@ footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top
 
 <script src="nav.js"></script>
 <script>
-var LIGAS = ["Premier League","LaLiga","Serie A","Bundesliga","Ligue 1","Primeira Liga","Eredivisie","Championship","Brasileirão"];
+var LIGAS = ["Premier League","LaLiga","Serie A","Bundesliga","Ligue 1","Primeira Liga","Eredivisie","Championship","Brasileirão","Liga Profesional","MLS"];
 var DEPORTES = [
   {id:"futbol",es:"Fútbol",en:"Football",ic:"⚽",on:true},
   {id:"tenis",es:"Tenis",en:"Tennis",ic:"🎾",on:true},
@@ -125,6 +135,12 @@ var T = {
       noweek1:"Esta liga no juega en los próximos 7 días. Sus predicciones aparecerán solas unos días antes de la próxima jornada.",
       h_res:"Cómo nos fue: resultados recientes",n_res:"Partidos ya jugados con la predicción que publicamos antes del partido. ✓ = el resultado que dimos como más probable fue el que ocurrió. ✗ = ocurrió otro. Pulsa una liga para ver el detalle.",
       okof:"acertados de",pickh:"Nuestro pronóstico",
+      m_tit:"🧠 Motor Sports Edge: así acierta",m_badge:"Motor propio · probado con %n partidos que no había visto",
+      m_txt:"Nuestro motor combina tres medidas de cada equipo: sus goles (dando más peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo. Se ajusta con temporadas antiguas y se mide con las dos más recientes, prediciendo cada partido solo con lo que se sabía antes. Datos: football-data.co.uk.",
+      m_us:"Motor Sports Edge",m_old:"Modelo anterior",m_mk:"Casas de apuestas (cuota de cierre)",m_home:"Siempre local",
+      m_hit:"Acierto",m_br:"Calibración (Brier)",m_n:"Partidos",m_val:"Simulación de VALOR con cuotas reales",
+      m_val2:"apuestas · beneficio medio por apuesta",m_ic:"intervalo 95 %",m_lg:"Por liga",m_on:"En uso en las predicciones",m_off:"No se usa: en la prueba no mejoró al modelo anterior",
+      m_note:"Las casas de apuestas son la referencia más difícil: su cuota de cierre resume toda la información del mercado. Acercarse a ellas ya es muy buen nivel.",
       nopreds:"No hay partidos analizados en esta liga ahora mismo.",
       nohist:"Aún no hay partidos jugados con predicción guardada.",
       hit:"Acierto",total:"Predicciones registradas",brier:"Calibración (Brier)",upd:"Última actualización",
@@ -150,7 +166,13 @@ var T = {
       noweek:"There are no league games in the next 7 days right now (international break or end of season). Predictions appear by themselves a few days before each matchday.",
       noweek1:"This league does not play in the next 7 days. Its predictions will appear a few days before the next matchday.",
       h_res:"How we did: recent results",n_res:"Games already played with the prediction we published before kick-off. ✓ = the outcome we rated most likely happened. ✗ = another outcome happened. Tap a league to see the detail.",
-      okof:"right out of",pickh:"Our pick",soon:"Coming soon",
+      okof:"right out of",pickh:"Our pick",
+      m_tit:"🧠 Sports Edge engine: how accurate it is",m_badge:"Own engine · tested on %n games it had not seen",
+      m_txt:"Our engine blends three measures of each team: its goals (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating. It is tuned on older seasons and measured on the two most recent ones, predicting each game only with what was known beforehand. Data: football-data.co.uk.",
+      m_us:"Sports Edge engine",m_old:"Previous model",m_mk:"Bookmakers (closing odds)",m_home:"Always home",
+      m_hit:"Hit rate",m_br:"Calibration (Brier)",m_n:"Games",m_val:"VALUE simulation with real odds",
+      m_val2:"bets · average profit per bet",m_ic:"95% interval",m_lg:"By league",m_on:"In use for predictions",m_off:"Not used: it did not beat the previous model in the test",
+      m_note:"Bookmakers are the hardest benchmark: their closing odds sum up all the market's information. Getting close to them is already a very good level.",soon:"Coming soon",
       soon1:"This sport will go live once we have real, verifiable data.",
       soon2:"We never show made-up predictions: each sport opens only when its engine really works.",
       all:"All",hist:"Latest results",
@@ -284,6 +306,29 @@ function leagueBlock(liga, all, idx){
   }
   return o+'</div></div>';
 }
+function motorBlock(){
+  var M=DATA.motor; if(!M||!M.prueba||!M.prueba.total||!M.prueba.total.motor) return "";
+  var T=M.prueba.total, v=M.prueba.valor||{};
+  function fila(n,x,b){ if(!x) return ""; return '<tr'+(b?' class="me"':'')+'><td>'+n+'</td><td>'+x.n+'</td><td><b>'+dec(x.acierto*100,1)+'%</b></td><td>'+dec(x.brier,3)+'</td></tr>'; }
+  var o='<h2 class="rtit">'+t("m_tit")+'</h2><div class="rnote">'+t("m_txt")+'</div>'
+    +'<div class="mtag '+(M.activo?'on':'off')+'">'+(M.activo?'✓ '+t("m_on"):t("m_off"))+'</div>'
+    +'<table class="mt"><tr><th></th><th>'+t("m_n")+'</th><th>'+t("m_hit")+'</th><th>'+t("m_br")+'</th></tr>'
+    +fila(t("m_us"),T.motor,true)+fila(t("m_old"),T.anterior)+fila(t("m_mk"),T.mercado)+fila(t("m_home"),T.local)+'</table>'
+    +'<div class="rnote">'+t("m_note")+'</div>';
+  if(v.apuestas){ o+='<div class="mval"><b>'+t("m_val")+'</b><br>'+v.apuestas+' '+t("m_val2")+': <b class="'+(v.roi>=0?'ok':'ko')+'">'+(v.roi>=0?'+':'')+dec(v.roi*100,1)+'%</b>'
+      +(v.ic_roi?' ('+t("m_ic")+': '+dec(v.ic_roi[0]*100,1)+'% a '+dec(v.ic_roi[1]*100,1)+'%)':'')+'</div>'; }
+  var L=M.prueba.ligas||{}, lo='';
+  for(var k in L){ var x=L[k]; if(!x||!x.motor) continue;
+    lo+='<tr><td>'+esc(k)+'</td><td>'+x.motor.n+'</td><td><b>'+pct(x.motor.acierto)+'</b></td><td>'+(x.anterior?pct(x.anterior.acierto):'-')+'</td><td>'+(x.mercado?pct(x.mercado.acierto):'-')+'</td></tr>'; }
+  if(lo) o+='<details class="lg rs"><summary class="lgh"><b>'+t("m_lg")+'</b><span>▾</span></summary><table class="mt"><tr><th></th><th>'+t("m_n")+'</th><th>'+t("m_us")+'</th><th>'+t("m_old")+'</th><th>'+t("m_mk")+'</th></tr>'+lo+'</table></details>';
+  return o;
+}
+function motorBadge(){
+  var M=DATA.motor; if(!M||!M.activo||!M.prueba||!M.prueba.total||!M.prueba.total.motor) return "";
+  var T=M.prueba.total;
+  return '<div class="mbadge">🧠 '+t("m_badge").replace("%n",T.motor.n.toLocaleString(lang==="es"?"es-ES":"en-GB"))+': <b>'+dec(T.motor.acierto*100,1)+'%</b> '+t("m_hit").toLowerCase()
+    +(T.mercado?' · '+t("m_mk").split(" (")[0]+' '+dec(T.mercado.acierto*100,1)+'%':'')+'</div>';
+}
 function resultsBlock(hs){
   var o='<h2 class="rtit">'+t("h_res")+'</h2><div class="rnote">'+t("n_res")+'</div>', any=false;
   for(var g=0;g<LIGAS.length;g++){
@@ -304,7 +349,7 @@ function resultsBlock(hs){
 function render(){
   if(window.navRender) navRender(lang,"futbol");
   document.getElementById("h1f").textContent=lang==="es"?"⚽ Fútbol":"⚽ Football";
-  document.getElementById("leadf").textContent=lang==="es"?"Probabilidades de 1X2, goles, primera parte y goleadores en 9 ligas (las 5 grandes de Europa, Portugal, Países Bajos, Championship y Brasil), calculadas con resultados reales y comparadas con las cuotas de las casas de apuestas.":"1X2, goals, first-half and scorer probabilities for 9 leagues (Europe's big five, Portugal, the Netherlands, the Championship and Brazil), built on real results and compared with bookmakers' odds.";
+  document.getElementById("leadf").textContent=lang==="es"?"Probabilidades de 1X2, goles, primera parte y goleadores en 11 ligas (las 5 grandes de Europa, Portugal, Países Bajos, Championship, Brasil, Argentina y MLS), calculadas con nuestro motor propio a partir de resultados reales y comparadas con las cuotas de las casas de apuestas.":"1X2, goals, first-half and scorer probabilities for 11 leagues (Europe's big five, Portugal, the Netherlands, the Championship, Brazil, Argentina and MLS), built by our own engine from real results and compared with bookmakers' odds.";
   document.title=lang==="es"?"Sports Edge · Fútbol":"Sports Edge · Football";
   document.documentElement.lang=lang;
   document.getElementById("foot").textContent=t("foot");
@@ -338,7 +383,7 @@ function render(){
     var cnt=0; for(var z=0;z<all.length;z++){ if(all[z].liga===LIGAS[l]) cnt++; }
     ch+='<button class="chip '+(LIGAS[l]===cur?"on":"")+'" onclick="setLeague(\''+LIGAS[l]+'\')">'+LIGAS[l]+' ('+cnt+')</button>';
   }
-  var out='<div class="chips">'+ch+'</div>', vis=0;
+  var out=motorBadge()+'<div class="chips">'+ch+'</div>', vis=0;
   for(var g=0;g<LIGAS.length;g++){
     if(cur!=="all" && cur!==LIGAS[g]) continue;
     var n=0; for(var z2=0;z2<all.length;z2++){ if(all[z2].liga===LIGAS[g]) n++; }
@@ -346,6 +391,7 @@ function render(){
     out+=leagueBlock(LIGAS[g],all,g); vis++;
   }
   if(!vis) out+='<div class="soon" style="padding:26px 20px"><b>⚽</b>'+t("noweek")+'</div>';
+  out+=motorBlock();
   out+=resultsBlock(hs);
   box.innerHTML=out;
 }
@@ -353,7 +399,7 @@ function render(){
 function load(file,key){
   return fetch("data/"+file+"?v="+Date.now()).then(function(r){return r.json();}).then(function(j){DATA[key]=j;}).catch(function(){DATA[key]=null;});
 }
-Promise.all([load("predicciones.json","pred"),load("estadisticas.json","stats"),load("historial.json","hist"),load("cuotas.json","cuotas"),load("valor.json","valor")]).then(render);
+Promise.all([load("motor_futbol.json","motor"),load("predicciones.json","pred"),load("estadisticas.json","stats"),load("historial.json","hist"),load("cuotas.json","cuotas"),load("valor.json","valor")]).then(render);
 render();
 </script>
 </body>
