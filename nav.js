@@ -4,13 +4,13 @@
    dentro de su render(). Los botones ES/EN llaman a setLang() de cada pagina. */
 (function(){
   var TX={
-    es:{home:"Inicio",futbol:"Fútbol",tenis:"Tenis",baloncesto:"Baloncesto",hockey:"Hockey",americano:"Fútbol americano",mma:"MMA",beisbol:"Béisbol",voleibol:"Voleibol",stats:"Estadísticas",guia:"Guía",
+    es:{home:"Inicio",futbol:"Fútbol",tenis:"Tenis",baloncesto:"Baloncesto",hockey:"Hockey",americano:"Fútbol americano",mma:"MMA",beisbol:"Béisbol",voleibol:"Voleibol",directo:"En directo",stats:"Estadísticas",guia:"Guía",
         news:"Noticias",newsof:"Noticias de",more:"Más noticias",ago_h:"hace %d h",ago_m:"hace %d min",tema:"Modo día / noche"},
-    en:{home:"Home",futbol:"Football",tenis:"Tennis",baloncesto:"Basketball",hockey:"Hockey",americano:"American football",mma:"MMA",beisbol:"Baseball",voleibol:"Volleyball",stats:"Statistics",guia:"Guide",
+    en:{home:"Home",futbol:"Football",tenis:"Tennis",baloncesto:"Basketball",hockey:"Hockey",americano:"American football",mma:"MMA",beisbol:"Baseball",voleibol:"Volleyball",directo:"Live",stats:"Statistics",guia:"Guide",
         news:"News",newsof:"News:",more:"More news",ago_h:"%dh ago",ago_m:"%d min ago",tema:"Light / dark mode"}
   };
   var ITEMS=[
-    ["home","index.html","🏠"],["futbol","futbol.html","⚽"],["tenis","tenis.html","🎾"],
+    ["home","index.html","🏠"],["directo","directo.html","🔴"],["futbol","futbol.html","⚽"],["tenis","tenis.html","🎾"],
     ["baloncesto","equipos.html?dep=baloncesto","🏀"],["hockey","equipos.html?dep=hockey","🏒"],["americano","equipos.html?dep=americano","🏈"],["mma","equipos.html?dep=mma","🥋"],["beisbol","equipos.html?dep=beisbol","⚾"],["voleibol","equipos.html?dep=voleibol","🏐"],
     ["stats","estadisticas.html","📊"],["guia","guia.html","📘"]
   ];
