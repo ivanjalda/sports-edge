@@ -1,26 +1,26 @@
 {
- "actualizado": "2026-11-13 02:27 UTC",
+ "actualizado": "2026-11-13 02:41 UTC",
  "liga": "NHL",
  "desde": "20251007",
- "datos_hasta": "2026-11-12T17:00:00Z",
+ "datos_hasta": "2026-11-13T00:00:00Z",
  "total": {
-  "n": 1685,
-  "aciertos": 929,
-  "acierto": 0.5513,
+  "n": 1689,
+  "aciertos": 931,
+  "acierto": 0.5512,
   "ic": [
-   0.5275,
-   0.5749
+   0.5274,
+   0.5748
   ],
   "brier": 0.2462
  },
  "base_local": {
-  "n": 1685,
-  "acierto": 0.5258
+  "n": 1689,
+  "acierto": 0.5252
  },
  "base_balance": {
-  "n": 1456,
-  "acierto": 0.5536,
-  "nuestro": 0.5495
+  "n": 1460,
+  "acierto": 0.5541,
+  "nuestro": 0.5493
  },
  "tramos": [
   {
@@ -58,7 +58,7 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 1034,
+   "n": 1038,
    "prometido": 0.5492,
    "real": 0.5145
   },
@@ -103,24 +103,24 @@
    "brier": 0.2492
   },
   "2027": {
-   "n": 291,
-   "aciertos": 181,
-   "acierto": 0.622,
+   "n": 295,
+   "aciertos": 183,
+   "acierto": 0.6203,
    "ic": [
-    0.565,
-    0.6758
+    0.5637,
+    0.6738
    ],
-   "brier": 0.2315
+   "brier": 0.2318
   }
  },
  "fases": {
   "regular": {
-   "n": 1603,
-   "aciertos": 886,
-   "acierto": 0.5527,
+   "n": 1607,
+   "aciertos": 888,
+   "acierto": 0.5526,
    "ic": [
-    0.5283,
-    0.5769
+    0.5282,
+    0.5767
    ],
    "brier": 0.2461
   },
@@ -137,27 +137,63 @@
  },
  "elige": {
   "local": {
-   "n": 1406,
-   "aciertos": 768,
-   "acierto": 0.5462,
+   "n": 1409,
+   "aciertos": 769,
+   "acierto": 0.5458,
    "ic": [
-    0.5201,
-    0.5721
+    0.5197,
+    0.5716
    ],
    "brier": 0.2472
   },
   "visitante": {
-   "n": 279,
-   "aciertos": 161,
-   "acierto": 0.5771,
+   "n": 280,
+   "aciertos": 162,
+   "acierto": 0.5786,
    "ic": [
-    0.5184,
-    0.6336
+    0.5201,
+    0.635
    ],
-   "brier": 0.2411
+   "brier": 0.2409
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-13T00:00:00Z",
+   "local": "Columbus Blue Jackets",
+   "visitante": "Tampa Bay Lightning",
+   "marcador": "1-3",
+   "fav": "Columbus Blue Jackets",
+   "pp": 0.5016,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-13T00:00:00Z",
+   "local": "New Jersey Devils",
+   "visitante": "Washington Capitals",
+   "marcador": "5-2",
+   "fav": "New Jersey Devils",
+   "pp": 0.5594,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-13T00:00:00Z",
+   "local": "Toronto Maple Leafs",
+   "visitante": "Minnesota Wild",
+   "marcador": "2-5",
+   "fav": "Minnesota Wild",
+   "pp": 0.5508,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-13T00:00:00Z",
+   "local": "Boston Bruins",
+   "visitante": "Montreal Canadiens",
+   "marcador": "2-5",
+   "fav": "Boston Bruins",
+   "pp": 0.5975,
+   "ok": false
+  },
   {
    "fecha": "2026-11-12T17:00:00Z",
    "local": "Seattle Kraken",
@@ -346,42 +382,6 @@
    "fav": "Winnipeg Jets",
    "pp": 0.5139,
    "ok": true
-  },
-  {
-   "fecha": "2026-11-08T20:30:00Z",
-   "local": "Buffalo Sabres",
-   "visitante": "Vegas Golden Knights",
-   "marcador": "1-4",
-   "fav": "Buffalo Sabres",
-   "pp": 0.5405,
-   "ok": false
-  },
-  {
-   "fecha": "2026-11-08T18:00:00Z",
-   "local": "Boston Bruins",
-   "visitante": "Florida Panthers",
-   "marcador": "4-1",
-   "fav": "Boston Bruins",
-   "pp": 0.6306,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-08T03:00:00Z",
-   "local": "Edmonton Oilers",
-   "visitante": "Vancouver Canucks",
-   "marcador": "4-2",
-   "fav": "Edmonton Oilers",
-   "pp": 0.7442,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-08T02:00:00Z",
-   "local": "Los Angeles Kings",
-   "visitante": "Pittsburgh Penguins",
-   "marcador": "2-5",
-   "fav": "Los Angeles Kings",
-   "pp": 0.597,
-   "ok": false
   }
  ],
  "motor": {
@@ -394,20 +394,20 @@
   },
   "sd": 2.608,
   "motor": {
-   "n": 1685,
-   "acierto": 0.5513,
+   "n": 1689,
+   "acierto": 0.5512,
    "brier": 0.2462,
    "logloss": 0.6854
   },
   "elo_basico": {
-   "n": 1685,
-   "acierto": 0.5513,
+   "n": 1689,
+   "acierto": 0.5518,
    "brier": 0.2465,
    "logloss": 0.6861
   },
   "local": {
-   "n": 1685,
-   "acierto": 0.5258
+   "n": 1689,
+   "acierto": 0.5252
   },
   "temporadas_prueba": [
    2026,

@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-11-13 02:27 UTC",
+ "actualizado": "2026-11-13 02:41 UTC",
  "liga": "NBA",
- "datos_hasta": "2026-11-12T03:00:00Z",
+ "datos_hasta": "2026-11-13T00:00:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
@@ -10,62 +10,6 @@
  "con_cuotas": true,
  "proximo": "2026-11-13T00:00:00Z",
  "predicciones": [
-  {
-   "id": "401909976",
-   "fecha": "2026-11-13T00:00:00Z",
-   "local": "Philadelphia 76ers",
-   "visitante": "Toronto Raptors",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6861,
-   "pv": 0.3139,
-   "elo_l": 1561,
-   "elo_v": 1526,
-   "bal_l": [
-    9,
-    3
-   ],
-   "bal_v": [
-    5,
-    5
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "L": {
-      "c": 1.4,
-      "casa": "Matchbook"
-     },
-     "V": {
-      "c": 3.4,
-      "casa": "Matchbook"
-     }
-    },
-    "mercado": {
-     "L": 0.6969,
-     "V": 0.3031
-    },
-    "casas": 25,
-    "ev": {
-     "L": -0.0395,
-     "V": 0.0673
-    },
-    "valor": [
-     "V"
-    ],
-    "actualizado": "2026-11-12 20:52 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-12 15:49 UTC",
-    "valor": [
-     "V"
-    ],
-    "L": 1.33,
-    "V": 3.95
-   }
-  },
   {
    "id": "401909977",
    "fecha": "2026-11-13T00:00:00Z",
@@ -260,16 +204,16 @@
      }
     },
     "mercado": {
-     "L": 0.3109,
-     "V": 0.6891
+     "L": 0.3069,
+     "V": 0.6931
     },
-    "casas": 20,
+    "casas": 21,
     "ev": {
      "L": -0.3027,
      "V": 0.1121
     },
     "valor": [],
-    "actualizado": "2026-11-13 02:27 UTC"
+    "actualizado": "2026-11-13 02:41 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 00:58 UTC",
@@ -305,25 +249,25 @@
    "cuota": {
     "mejor": {
      "V": {
-      "c": 4.2,
+      "c": 4.1,
       "casa": "Betfair"
      },
      "L": {
-      "c": 1.29,
-      "casa": "Unibet (NL)"
+      "c": 1.3,
+      "casa": "Betfair"
      }
     },
     "mercado": {
-     "L": 0.7499,
-     "V": 0.2501
+     "L": 0.7501,
+     "V": 0.2499
     },
-    "casas": 20,
+    "casas": 21,
     "ev": {
-     "L": 0.0725,
-     "V": -0.2919
+     "L": 0.0808,
+     "V": -0.3087
     },
     "valor": [],
-    "actualizado": "2026-11-13 02:27 UTC"
+    "actualizado": "2026-11-13 02:41 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 00:58 UTC",
@@ -363,21 +307,21 @@
       "casa": "1xBet"
      },
      "L": {
-      "c": 1.77,
+      "c": 1.78,
       "casa": "Betfair"
      }
     },
     "mercado": {
-     "L": 0.5537,
-     "V": 0.4463
+     "L": 0.5535,
+     "V": 0.4465
     },
-    "casas": 20,
+    "casas": 21,
     "ev": {
-     "L": -0.0796,
+     "L": -0.0744,
      "V": 0.08
     },
     "valor": [],
-    "actualizado": "2026-11-13 02:27 UTC"
+    "actualizado": "2026-11-13 02:41 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 00:58 UTC",
@@ -420,16 +364,16 @@
      }
     },
     "mercado": {
-     "L": 0.3114,
-     "V": 0.6886
+     "L": 0.311,
+     "V": 0.689
     },
-    "casas": 20,
+    "casas": 21,
     "ev": {
      "L": 0.2155,
      "V": -0.1111
     },
     "valor": [],
-    "actualizado": "2026-11-13 02:27 UTC"
+    "actualizado": "2026-11-13 02:41 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 00:58 UTC",
@@ -474,16 +418,16 @@
      }
     },
     "mercado": {
-     "L": 0.4077,
-     "V": 0.5923
+     "L": 0.408,
+     "V": 0.592
     },
-    "casas": 20,
+    "casas": 21,
     "ev": {
      "L": 0.4915,
      "V": -0.3628
     },
     "valor": [],
-    "actualizado": "2026-11-13 02:27 UTC"
+    "actualizado": "2026-11-13 02:41 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 00:58 UTC",
@@ -521,21 +465,21 @@
       "casa": "Betfair"
      },
      "V": {
-      "c": 11.0,
+      "c": 11.5,
       "casa": "Betfair"
      }
     },
     "mercado": {
-     "L": 0.8896,
-     "V": 0.1104
+     "L": 0.8902,
+     "V": 0.1098
     },
-    "casas": 20,
+    "casas": 21,
     "ev": {
      "L": -0.0027,
-     "V": -0.1574
+     "V": -0.1191
     },
     "valor": [],
-    "actualizado": "2026-11-13 02:27 UTC"
+    "actualizado": "2026-11-13 02:41 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 00:58 UTC",
@@ -573,21 +517,21 @@
       "casa": "1xBet"
      },
      "L": {
-      "c": 1.13,
-      "casa": "Unibet (NL)"
+      "c": 1.14,
+      "casa": "Betfair"
      }
     },
     "mercado": {
-     "L": 0.8225,
-     "V": 0.1775
+     "L": 0.8433,
+     "V": 0.1567
     },
     "casas": 19,
     "ev": {
-     "L": -0.0473,
+     "L": -0.0389,
      "V": 0.3337
     },
     "valor": [],
-    "actualizado": "2026-11-13 02:27 UTC"
+    "actualizado": "2026-11-13 02:41 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 00:58 UTC",
@@ -621,8 +565,8 @@
    "cuota": {
     "mejor": {
      "V": {
-      "c": 1.19,
-      "casa": "Unibet (SE)"
+      "c": 1.22,
+      "casa": "Betfair"
      },
      "L": {
       "c": 6.95,
@@ -630,16 +574,16 @@
      }
     },
     "mercado": {
-     "L": 0.2153,
-     "V": 0.7847
+     "L": 0.1959,
+     "V": 0.8041
     },
-    "casas": 18,
+    "casas": 19,
     "ev": {
      "L": 1.1719,
-     "V": -0.1819
+     "V": -0.1613
     },
     "valor": [],
-    "actualizado": "2026-11-13 02:27 UTC"
+    "actualizado": "2026-11-13 02:41 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 00:58 UTC",
@@ -680,20 +624,20 @@
      },
      "V": {
       "c": 1.35,
-      "casa": "Betfair"
+      "casa": "Pinnacle"
      }
     },
     "mercado": {
-     "L": 0.2908,
-     "V": 0.7092
+     "L": 0.2907,
+     "V": 0.7093
     },
-    "casas": 18,
+    "casas": 19,
     "ev": {
      "L": 0.3288,
      "V": -0.1483
     },
     "valor": [],
-    "actualizado": "2026-11-13 02:27 UTC"
+    "actualizado": "2026-11-13 02:41 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 00:58 UTC",
@@ -821,6 +765,62 @@
   }
  ],
  "recientes": [
+  {
+   "id": "401909976",
+   "fecha": "2026-11-13T00:00:00Z",
+   "local": "Philadelphia 76ers",
+   "visitante": "Toronto Raptors",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6861,
+   "pv": 0.3139,
+   "elo_l": 1561,
+   "elo_v": 1526,
+   "bal_l": [
+    9,
+    3
+   ],
+   "bal_v": [
+    5,
+    5
+   ],
+   "creada": "2026-11-11 04:17 UTC",
+   "resultado": "L",
+   "marcador": "123-112",
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.4,
+      "casa": "Matchbook"
+     },
+     "V": {
+      "c": 3.4,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.6969,
+     "V": 0.3031
+    },
+    "casas": 25,
+    "ev": {
+     "L": -0.0395,
+     "V": 0.0673
+    },
+    "valor": [
+     "V"
+    ],
+    "actualizado": "2026-11-12 20:52 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-12 15:49 UTC",
+    "valor": [
+     "V"
+    ],
+    "L": 1.33,
+    "V": 3.95
+   }
+  },
   {
    "id": "401909975",
    "fecha": "2026-11-12T03:00:00Z",
@@ -1384,17 +1384,17 @@
  ],
  "directo": {
   "total": 28,
-  "resueltas": 10,
-  "aciertos": 7,
-  "acierto": 0.7,
+  "resueltas": 11,
+  "aciertos": 8,
+  "acierto": 0.7273,
   "ic": [
-   0.3968,
-   0.8922
+   0.4343,
+   0.9025
   ],
-  "brier": 0.232,
-  "apuestas": 10,
+  "brier": 0.2199,
+  "apuestas": 11,
   "ganadas": 3,
-  "roi": -0.521
+  "roi": -0.5645
  },
  "ranking": [
   {
@@ -1465,8 +1465,8 @@
   },
   {
    "equipo": "Philadelphia 76ers",
-   "elo": 1541,
-   "g": 9,
+   "elo": 1547,
+   "g": 10,
    "p": 3
   },
   {
@@ -1483,9 +1483,9 @@
   },
   {
    "equipo": "Toronto Raptors",
-   "elo": 1523,
+   "elo": 1517,
    "g": 5,
-   "p": 6
+   "p": 7
   },
   {
    "equipo": "Phoenix Suns",

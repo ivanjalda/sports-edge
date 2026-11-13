@@ -1,0 +1,405 @@
+{
+ "actualizado": "2026-11-13 02:41 UTC",
+ "liga": "UFC",
+ "desde": "20250111",
+ "datos_hasta": "2026-11-08T01:00:00Z",
+ "total": {
+  "n": 846,
+  "aciertos": 522,
+  "acierto": 0.617,
+  "ic": [
+   0.5838,
+   0.6492
+  ],
+  "brier": 0.2381
+ },
+ "base_local": {
+  "n": 846,
+  "acierto": 0.5615
+ },
+ "base_balance": {
+  "n": 0,
+  "acierto": null,
+  "nuestro": null
+ },
+ "tramos": [
+  {
+   "min": 0.6,
+   "n": 174,
+   "conf": 0.6359,
+   "acierto": 0.6782,
+   "ic": [
+    0.6055,
+    0.7431
+   ]
+  },
+  {
+   "min": 0.7,
+   "n": 7,
+   "conf": 0.7221,
+   "acierto": 0.7143,
+   "ic": [
+    0.3589,
+    0.9178
+   ]
+  },
+  {
+   "min": 0.8,
+   "n": 0,
+   "conf": null,
+   "acierto": null,
+   "ic": null
+  }
+ ],
+ "calibracion": [
+  {
+   "desde": 50,
+   "hasta": 60,
+   "n": 672,
+   "prometido": 0.5445,
+   "real": 0.6012
+  },
+  {
+   "desde": 60,
+   "hasta": 70,
+   "n": 167,
+   "prometido": 0.6323,
+   "real": 0.6766
+  },
+  {
+   "desde": 70,
+   "hasta": 80,
+   "n": 7,
+   "prometido": 0.7221,
+   "real": 0.7143
+  },
+  {
+   "desde": 80,
+   "hasta": 90,
+   "n": 0,
+   "prometido": null,
+   "real": null
+  },
+  {
+   "desde": 90,
+   "hasta": 100,
+   "n": 0,
+   "prometido": null,
+   "real": null
+  }
+ ],
+ "temporadas": {
+  "2025": {
+   "n": 475,
+   "aciertos": 298,
+   "acierto": 0.6274,
+   "ic": [
+    0.583,
+    0.6697
+   ],
+   "brier": 0.2369
+  },
+  "2026": {
+   "n": 371,
+   "aciertos": 224,
+   "acierto": 0.6038,
+   "ic": [
+    0.5532,
+    0.6522
+   ],
+   "brier": 0.2397
+  }
+ },
+ "fases": {
+  "regular": {
+   "n": 846,
+   "aciertos": 522,
+   "acierto": 0.617,
+   "ic": [
+    0.5838,
+    0.6492
+   ],
+   "brier": 0.2381
+  }
+ },
+ "elige": {
+  "local": {
+   "n": 433,
+   "aciertos": 292,
+   "acierto": 0.6744,
+   "ic": [
+    0.6289,
+    0.7168
+   ],
+   "brier": 0.2316
+  },
+  "visitante": {
+   "n": 413,
+   "aciertos": 230,
+   "acierto": 0.5569,
+   "ic": [
+    0.5087,
+    0.6041
+   ],
+   "brier": 0.2449
+  }
+ },
+ "ejemplos": [
+  {
+   "fecha": "2026-11-08T01:00:00Z",
+   "local": "Waldo Cortes Acosta",
+   "visitante": "Johnny Walker",
+   "marcador": "0-1",
+   "fav": "Waldo Cortes Acosta",
+   "pp": 0.559,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-08T01:00:00Z",
+   "local": "Tatiana Suarez",
+   "visitante": "Virna Jandiroba",
+   "marcador": "1-0",
+   "fav": "Virna Jandiroba",
+   "pp": 0.5438,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-08T01:00:00Z",
+   "local": "Davey Grant",
+   "visitante": "Elijah Smith",
+   "marcador": "0-1",
+   "fav": "Elijah Smith",
+   "pp": 0.5981,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-08T01:00:00Z",
+   "local": "Billy Elekana",
+   "visitante": "Lucas Fernando",
+   "marcador": "0-1",
+   "fav": "Billy Elekana",
+   "pp": 0.5629,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-07T22:00:00Z",
+   "local": "Karine Silva",
+   "visitante": "Gabriella Fernandes",
+   "marcador": "1-0",
+   "fav": "Karine Silva",
+   "pp": 0.5251,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-07T22:00:00Z",
+   "local": "Jose Delano",
+   "visitante": "Murtazali Magomedov",
+   "marcador": "0-1",
+   "fav": "Murtazali Magomedov",
+   "pp": 0.5501,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-07T22:00:00Z",
+   "local": "Mantas Kondratavičius",
+   "visitante": "Andre Petroski",
+   "marcador": "0-1",
+   "fav": "Mantas Kondratavičius",
+   "pp": 0.5831,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-07T22:00:00Z",
+   "local": "Seokhyeon Ko",
+   "visitante": "Wellington Turman",
+   "marcador": "1-0",
+   "fav": "Seokhyeon Ko",
+   "pp": 0.5993,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-01T00:00:00Z",
+   "local": "Renato Moicano",
+   "visitante": "Tom Nolan",
+   "marcador": "0-1",
+   "fav": "Tom Nolan",
+   "pp": 0.5238,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-01T00:00:00Z",
+   "local": "Randy Brown",
+   "visitante": "Jacobe Smith",
+   "marcador": "0-1",
+   "fav": "Jacobe Smith",
+   "pp": 0.5616,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-01T00:00:00Z",
+   "local": "Ode' Osbourne",
+   "visitante": "Cody Durden",
+   "marcador": "0-1",
+   "fav": "Cody Durden",
+   "pp": 0.5031,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-01T00:00:00Z",
+   "local": "Yana Santos",
+   "visitante": "Luana Santos",
+   "marcador": "0-1",
+   "fav": "Luana Santos",
+   "pp": 0.6108,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-31T21:00:00Z",
+   "local": "Julian Erosa",
+   "visitante": "JeongYeong Lee",
+   "marcador": "1-0",
+   "fav": "JeongYeong Lee",
+   "pp": 0.5158,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-31T21:00:00Z",
+   "local": "Zach Reese",
+   "visitante": "Mickey Gall",
+   "marcador": "1-0",
+   "fav": "Zach Reese",
+   "pp": 0.5586,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-31T21:00:00Z",
+   "local": "Talita Alencar",
+   "visitante": "Piera Rodriguez",
+   "marcador": "0-1",
+   "fav": "Talita Alencar",
+   "pp": 0.5129,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-24T18:00:00Z",
+   "local": "Alexander Volkanovski",
+   "visitante": "Movsar Evloev",
+   "marcador": "1-0",
+   "fav": "Movsar Evloev",
+   "pp": 0.5925,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-24T18:00:00Z",
+   "local": "Petr Yan",
+   "visitante": "Merab Dvalishvili",
+   "marcador": "1-0",
+   "fav": "Merab Dvalishvili",
+   "pp": 0.5752,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-24T18:00:00Z",
+   "local": "Lone'er Kavanagh",
+   "visitante": "Ramazan Temirov",
+   "marcador": "1-0",
+   "fav": "Ramazan Temirov",
+   "pp": 0.5963,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-24T18:00:00Z",
+   "local": "Alexander Volkov",
+   "visitante": "Rizvan Kuniev",
+   "marcador": "1-0",
+   "fav": "Alexander Volkov",
+   "pp": 0.6218,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-24T18:00:00Z",
+   "local": "Aaron Pico",
+   "visitante": "Losene Keita",
+   "marcador": "1-0",
+   "fav": "Aaron Pico",
+   "pp": 0.518,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-24T16:00:00Z",
+   "local": "Azamat Murzakanov",
+   "visitante": "Dominick Reyes",
+   "marcador": "0-1",
+   "fav": "Dominick Reyes",
+   "pp": 0.5002,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-24T16:00:00Z",
+   "local": "Nikita Krylov",
+   "visitante": "Abdul-Rakhman Yakhyaev",
+   "marcador": "0-1",
+   "fav": "Abdul-Rakhman Yakhyaev",
+   "pp": 0.6111,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-24T16:00:00Z",
+   "local": "Abus Magomedov",
+   "visitante": "Cam Rowston",
+   "marcador": "1-0",
+   "fav": "Abus Magomedov",
+   "pp": 0.5092,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-24T16:00:00Z",
+   "local": "Grant Dawson",
+   "visitante": "Nurullo Aliev",
+   "marcador": "1-0",
+   "fav": "Grant Dawson",
+   "pp": 0.5615,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-24T14:00:00Z",
+   "local": "Bolaji Oki",
+   "visitante": "Daniel Santos",
+   "marcador": "0-1",
+   "fav": "Daniel Santos",
+   "pp": 0.5974,
+   "ok": true
+  }
+ ],
+ "motor": {
+  "activo": true,
+  "params": {
+   "kmul": 1.4,
+   "hmul": 0.6,
+   "c_desc": 0.0,
+   "c_forma": 15.0
+  },
+  "sd": 0.992,
+  "motor": {
+   "n": 846,
+   "acierto": 0.617,
+   "brier": 0.2381,
+   "logloss": 0.669
+  },
+  "elo_basico": {
+   "n": 846,
+   "acierto": 0.6194,
+   "brier": 0.2406,
+   "logloss": 0.6741
+  },
+  "local": {
+   "n": 846,
+   "acierto": 0.5615
+  },
+  "temporadas_prueba": [
+   2025,
+   2026
+  ]
+ },
+ "valor_activo": false
+}
