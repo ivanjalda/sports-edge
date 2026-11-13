@@ -159,13 +159,33 @@ def procesar(ev):
     return mejor, mercado, casas
 
 
+def valor_permitido():
+    """VALOR solo se marca si la simulacion con cuotas reales del motor propio dio beneficio.
+    Si dio perdidas, se muestran las cuotas y la ventaja, pero no se recomienda nada."""
+    try:
+        with open(os.path.join("data", "motor_futbol.json"), encoding="utf-8") as f:
+            v = (json.load(f).get("prueba") or {}).get("valor") or {}
+        return v.get("roi") is not None and v["roi"] >= 0
+    except Exception:
+        return False
+
+
+VALOR_OK = None
+
+
 def evaluar(p, mejor, mercado):
+    global VALOR_OK
+    if VALOR_OK is None:
+        VALOR_OK = valor_permitido()
+        if not VALOR_OK:
+            print("Aviso: la simulacion con cuotas reales del motor dio perdidas. En futbol no se marca VALOR.")
     probs = {"1": p["p_local"], "X": p["p_empate"], "2": p["p_visitante"]}
     ev = {}
     valor = []
     for k in ("1", "X", "2"):
         ev[k] = round(probs[k] * mejor[k]["c"] - 1, 4)
-        if ev[k] >= UMBRAL_VALOR and probs[k] >= PROB_MIN and probs[k] > mercado[k]:
+        if VALOR_OK and ev[k] >= UMBRAL_VALOR and probs[k] >= PROB_MIN and probs[k] > mercado[k] \
+                and probs[k] - mercado[k] <= 0.15:
             valor.append(k)
     return ev, valor
 
