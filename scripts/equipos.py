@@ -49,6 +49,7 @@ HORAS_PRED = 48        # se guardan predicciones de partidos que empiezan en las
 BALONCESTO = {"k": 20.0, "hca": 100.0, "revertir": 0.75, "mov": "nba"}
 HOCKEY = {"k": 6.0, "hca": 50.0, "revertir": 0.70, "mov": "nhl"}
 AMERICANO = {"k": 20.0, "hca": 48.0, "revertir": 0.67, "mov": "nfl"}
+LUCHA = {"k": 40.0, "hca": 0.0, "revertir": 1.0, "mov": "nhl"}
 LIGAS = {
     "nba": dict(BALONCESTO, nombre="NBA", fuente="espn", ruta="basketball/nba", extra="",
                 odds="basketball_nba", inicio="20231001", eval="20241001", min_eq=20, max_dias=10,
@@ -72,6 +73,9 @@ LIGAS = {
     "ncaaf": dict(AMERICANO, nombre="NCAA", fuente="espn", ruta="football/college-football", extra="&groups=80",
                   odds=None, inicio="20230825", eval="20240825", min_eq=8, max_dias=12,
                   meses=(8, 9, 10, 11, 12, 1)),
+    "ufc": dict(LUCHA, nombre="UFC", fuente="espn", ruta="mma/ufc", extra="",
+                odds="mma_mixed_martial_arts", inicio="20220101", eval="20250101", min_eq=3, max_dias=30,
+                meses=None),
     "ncaah": dict(HOCKEY, nombre="NCAA", fuente="espn", ruta="hockey/mens-college-hockey", extra="",
                   odds=None, inicio="20231001", eval="20241001", min_eq=10, max_dias=12,
                   meses=(10, 11, 12, 1, 2, 3, 4)),
@@ -131,6 +135,10 @@ def leer_eventos(datos):
     """Convierte la respuesta de ESPN en una lista de partidos."""
     out = []
     for ev in (datos or {}).get("events", []) or []:
+        comps = ev.get("competitions") or []
+        if comps and not any(c.get("homeAway") for c in (comps[0].get("competitors") or [])):
+            out.extend(leer_combates(ev, comps))   # deportes individuales (MMA): cada combate es un partido
+            continue
         try:
             comp = (ev.get("competitions") or [])[0]
             eq = {c.get("homeAway"): c for c in comp.get("competitors", [])}
@@ -150,6 +158,38 @@ def leer_eventos(datos):
                 "visitante": (a.get("team") or {}).get("displayName"),
                 "pl": int(float(h.get("score"))) if h.get("score") not in (None, "") else None,
                 "pv": int(float(a.get("score"))) if a.get("score") not in (None, "") else None,
+            })
+        except Exception:
+            continue
+    return out
+
+
+def leer_combates(ev, comps):
+    """MMA: cada combate de la velada. Ganador = 1, perdedor = 0. Empates y sin decision se descartan."""
+    out = []
+    for comp in comps:
+        try:
+            cs = sorted(comp.get("competitors") or [], key=lambda c: c.get("order", 0))
+            if len(cs) != 2:
+                continue
+            nom = []
+            for c in cs:
+                a = c.get("athlete") or c.get("team") or {}
+                nom.append(a.get("displayName") or a.get("fullName"))
+            if not all(nom):
+                continue
+            est = ((comp.get("status") or ev.get("status") or {}).get("type") or {})
+            fin = bool(est.get("completed"))
+            w = [bool(c.get("winner")) for c in cs]
+            if fin and w.count(True) != 1:
+                continue
+            out.append({
+                "id": str(comp.get("id") or ev.get("id")),
+                "fecha": iso(parse_iso(comp.get("date") or ev.get("date"))),
+                "temporada": parse_iso(comp.get("date") or ev.get("date")).year,
+                "tipo": 2, "terminado": fin, "neutral": True,
+                "local": nom[0], "visitante": nom[1],
+                "pl": (1 if w[0] else 0) if fin else None, "pv": (1 if w[1] else 0) if fin else None,
             })
         except Exception:
             continue
