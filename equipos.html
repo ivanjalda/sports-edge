@@ -133,15 +133,19 @@ var LIGAS=[
   {id:"ncaah",dep:"hockey",es:"NCAA",en:"NCAA",d_es:"Universitaria EE. UU.",d_en:"US college"},
   {id:"nfl",dep:"americano",es:"NFL",en:"NFL",d_es:"EE. UU.",d_en:"USA"},
   {id:"ncaaf",dep:"americano",es:"NCAA",en:"NCAA",d_es:"Universitaria EE. UU.",d_en:"US college"},
-  {id:"ufc",dep:"mma",es:"UFC",en:"UFC",d_es:"Artes marciales mixtas",d_en:"Mixed martial arts"}
+  {id:"ufc",dep:"mma",es:"UFC",en:"UFC",d_es:"Artes marciales mixtas",d_en:"Mixed martial arts"},
+  {id:"mlb",dep:"beisbol",es:"MLB",en:"MLB",d_es:"EE. UU. y Canadá",d_en:"USA and Canada"},
+  {id:"voley",dep:"voleibol",es:"NCAA femenina",en:"NCAA women's",d_es:"Universitaria EE. UU.",d_en:"US college"}
 ];
-var ICON={baloncesto:"🏀",hockey:"🏒",americano:"🏈",mma:"🥋"};
+var ICON={baloncesto:"🏀",hockey:"🏒",americano:"🏈",mma:"🥋",beisbol:"⚾",voleibol:"🏐"};
 var MMA_TX={es:{home:"Rincón 1",away:"Rincón 2",rec:"Este año",th_team:"Luchador",t_rank:"Fuerza de los luchadores",h_rank:"Fuerza actual de los luchadores",
   n_rank:"Rating Elo después de su último combate. 1505 es la media; 100 puntos más equivalen a ganar cerca del 64 % de los combates contra ese rival.",th_rec:"Balance del año"},
  en:{home:"Corner 1",away:"Corner 2",rec:"This year",th_team:"Fighter",t_rank:"Fighter strength",h_rank:"Current fighter strength",
   n_rank:"Elo rating after their latest fight. 1505 is the average; 100 points more means winning about 64% of fights against that opponent.",th_rec:"Record this year"}};
 var T={
-es:{nodata:"Sin datos",all:"Todas",dep_baloncesto:"Baloncesto",dep_hockey:"Hockey",dep_americano:"Fútbol americano",dep_mma:"MMA",
+es:{nodata:"Sin datos",all:"Todas",dep_baloncesto:"Baloncesto",dep_hockey:"Hockey",dep_americano:"Fútbol americano",dep_mma:"MMA",dep_beisbol:"Béisbol",dep_voleibol:"Voleibol",
+ lead_beisbol:"Probabilidad de victoria en la MLB con nuestro motor propio: fuerza de cada equipo (Elo), ventaja de jugar en casa, descanso y forma reciente, calculado con resultados reales.",
+ lead_voleibol:"Probabilidad de victoria en el voleibol universitario femenino de EE. UU. (NCAA) con nuestro motor propio: fuerza de cada equipo (Elo), ventaja de jugar en casa, descanso y forma reciente, calculado con resultados reales.",
  lead_mma:"Probabilidad de victoria en los combates de la UFC con nuestro motor propio: fuerza de cada luchador (Elo según contra quién ganó o perdió) y su forma reciente, calculado con resultados reales.",
  lead_americano:"Probabilidad de victoria en NFL y NCAA con nuestro motor propio: fuerza de cada equipo (Elo), ventaja de jugar en casa, descanso y forma reciente, calculado con resultados reales.",
  h_mot:"Motor propio: prueba con partidos no vistos",n_mot:"El motor combina la fuerza de cada equipo (Elo), el descanso (días desde su último partido) y la forma reciente (últimos 10 partidos). Se ajusta con temporadas antiguas y se mide con las más recientes, prediciendo cada partido solo con lo que se sabía antes.",
@@ -184,7 +188,9 @@ es:{nodata:"Sin datos",all:"Todas",dep_baloncesto:"Baloncesto",dep_hockey:"Hocke
  method:"Método: Elo con ventaja de campo, ajuste por margen de victoria y regresión hacia la media al empezar cada temporada. Los parámetros se fijaron antes de ver los resultados (valores publicados por FiveThirtyEight) y no se han ajustado para mejorar las cifras. No se usan lesiones, descansos ni cuotas como entrada.",
  foot:"Solo para mayores de 18 años. Los resultados pasados no garantizan resultados futuros. Juega con responsabilidad. Resultados y calendario:",
  empty:"Todavía no hay datos. Se generan al ejecutar el motor."},
-en:{nodata:"No data",all:"All",dep_baloncesto:"Basketball",dep_hockey:"Hockey",dep_americano:"American football",dep_mma:"MMA",
+en:{nodata:"No data",all:"All",dep_baloncesto:"Basketball",dep_hockey:"Hockey",dep_americano:"American football",dep_mma:"MMA",dep_beisbol:"Baseball",dep_voleibol:"Volleyball",
+ lead_beisbol:"Win probability in MLB from our own engine: team strength (Elo), home advantage, rest and recent form, built on real results.",
+ lead_voleibol:"Win probability in US women's college volleyball (NCAA) from our own engine: team strength (Elo), home advantage, rest and recent form, built on real results.",
  lead_mma:"Win probability in UFC fights from our own engine: each fighter's strength (Elo based on whom they beat or lost to) and recent form, built on real results.",
  lead_americano:"Win probability in the NFL and NCAA from our own engine: team strength (Elo), home advantage, rest and recent form, built on real results.",
  h_mot:"Own engine: test on unseen games",n_mot:"The engine combines each team's strength (Elo), rest (days since its last game) and recent form (last 10 games). It is tuned on older seasons and measured on the most recent ones, predicting each game only with what was known beforehand.",
