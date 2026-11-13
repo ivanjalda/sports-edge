@@ -93,8 +93,13 @@
     var t=TX[ultimo.lang]||TX.es, all=NEWS[ultimo.lang]||NEWS.es||[], act=ultimo.act;
     var dep=DEPS[act]?act:null, lista=all;
     if(dep){ var propias=all.filter(function(x){return x.dep===dep;}); lista=propias.concat(all.filter(function(x){return x.dep!==dep;})); }
-    var conImg=lista.filter(function(x){return x.img;}), sinImg=lista.filter(function(x){return !x.img;});
-    var orden=conImg.concat(sinImg);
+    /* se alternan los medios (AS, Marca, Mundo Deportivo...) para que salgan todos, no solo uno */
+    function alternar(l){ var g={}, fs=[], out=[];
+      l.forEach(function(x){ if(!g[x.fuente]){ g[x.fuente]=[]; fs.push(x.fuente); } g[x.fuente].push(x); });
+      for(var i=0; out.length<l.length; i++){ fs.forEach(function(f){ if(g[f][i]) out.push(g[f][i]); }); }
+      return out; }
+    var orden=dep ? alternar(lista.filter(function(x){return x.dep===dep;})).concat(alternar(lista.filter(function(x){return x.dep!==dep;})))
+                  : alternar(lista);
     var r=document.getElementById("se-right"), l=document.getElementById("se-left");
     var titulo=dep?(t.newsof+" "+t[dep].toLowerCase()):t.news;
     if(l){
