@@ -140,6 +140,8 @@ var T = {
       m_us:"Motor Sports Edge",m_old:"Modelo anterior",m_mk:"Casas de apuestas (cuota de cierre)",m_home:"Siempre local",
       m_hit:"Acierto",m_br:"Calibración (Brier)",m_n:"Partidos",m_val:"Simulación de VALOR con cuotas reales",
       m_val2:"apuestas · beneficio medio por apuesta",m_ic:"intervalo 95 %",m_lg:"Por liga",m_on:"En uso en las predicciones",m_off:"No se usa: en la prueba no mejoró al modelo anterior",
+      r_tit:"Regla de VALOR más exigente (buscada por el Laboratorio)",r_txt:"Ventaja de al menos %e %, como máximo %d puntos por encima de las casas y probabilidad de al menos %p %.",
+      r_tr:"Temporadas de ajuste",r_pr:"Temporadas de prueba (no vistas)",r_on:"Activa: ganó dinero con cuotas reales en partidos no vistos",r_off:"No activa: no ganó dinero en partidos no vistos, así que no marcamos VALOR",
       m_note:"Las casas de apuestas son la referencia más difícil: su cuota de cierre resume toda la información del mercado. Acercarse a ellas ya es muy buen nivel.",
       nopreds:"No hay partidos analizados en esta liga ahora mismo.",
       nohist:"Aún no hay partidos jugados con predicción guardada.",
@@ -172,6 +174,8 @@ var T = {
       m_us:"Sports Edge engine",m_old:"Previous model",m_mk:"Bookmakers (closing odds)",m_home:"Always home",
       m_hit:"Hit rate",m_br:"Calibration (Brier)",m_n:"Games",m_val:"VALUE simulation with real odds",
       m_val2:"bets · average profit per bet",m_ic:"95% interval",m_lg:"By league",m_on:"In use for predictions",m_off:"Not used: it did not beat the previous model in the test",
+      r_tit:"Stricter VALUE rule (found by the Lab)",r_txt:"Edge of at least %e%, at most %d points above the bookmakers and probability of at least %p%.",
+      r_tr:"Tuning seasons",r_pr:"Test seasons (unseen)",r_on:"Active: it made money with real odds on unseen games",r_off:"Not active: it did not make money on unseen games, so we do not flag VALUE",
       m_note:"Bookmakers are the hardest benchmark: their closing odds sum up all the market's information. Getting close to them is already a very good level.",soon:"Coming soon",
       soon1:"This sport will go live once we have real, verifiable data.",
       soon2:"We never show made-up predictions: each sport opens only when its engine really works.",
@@ -317,6 +321,11 @@ function motorBlock(){
     +'<div class="rnote">'+t("m_note")+'</div>';
   if(v.apuestas){ o+='<div class="mval"><b>'+t("m_val")+'</b><br>'+v.apuestas+' '+t("m_val2")+': <b class="'+(v.roi>=0?'ok':'ko')+'">'+(v.roi>=0?'+':'')+dec(v.roi*100,1)+'%</b>'
       +(v.ic_roi?' ('+t("m_ic")+': '+dec(v.ic_roi[0]*100,1)+'% a '+dec(v.ic_roi[1]*100,1)+'%)':'')+'</div>'; }
+  var R=M.prueba.regla_valor;
+  if(R&&R.prueba){ o+='<div class="mval"><b>'+t("r_tit")+'</b><br>'+t("r_txt").replace("%e",Math.round(R.ev*100)).replace("%d",Math.round(R.dif*100)).replace("%p",Math.round(R.pmin*100))
+      +'<br>'+t("r_tr")+': '+R.entrena.apuestas+' · '+(R.entrena.roi>=0?'+':'')+dec(R.entrena.roi*100,1)+'% &nbsp;|&nbsp; '+t("r_pr")+': '+R.prueba.apuestas+' · '
+      +(R.prueba.roi==null?'-':'<b class="'+(R.prueba.roi>=0?'ok':'ko')+'">'+(R.prueba.roi>=0?'+':'')+dec(R.prueba.roi*100,1)+'%</b>')
+      +'<br><span class="mtag '+(R.activa?'on':'off')+'">'+(R.activa?'✓ '+t("r_on"):t("r_off"))+'</span></div>'; }
   var L=M.prueba.ligas||{}, lo='';
   for(var k in L){ var x=L[k]; if(!x||!x.motor) continue;
     lo+='<tr><td>'+esc(k)+'</td><td>'+x.motor.n+'</td><td><b>'+pct(x.motor.acierto)+'</b></td><td>'+(x.anterior?pct(x.anterior.acierto):'-')+'</td><td>'+(x.mercado?pct(x.mercado.acierto):'-')+'</td></tr>'; }
