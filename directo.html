@@ -96,7 +96,13 @@ var FUENTES=[
  {dep:"americano",ic:"🏈",ruta:"football/nfl",liga:"NFL",pred:"nfl",per:"cuarto"},
  {dep:"americano",ic:"🏈",ruta:"football/college-football",extra:"groups=80&limit=300",liga:"NCAA",pred:"ncaaf",per:"cuarto"},
  {dep:"beisbol",ic:"⚾",ruta:"baseball/mlb",liga:"MLB",pred:"mlb",per:"entrada"},
- {dep:"voleibol",ic:"🏐",ruta:"volleyball/womens-college-volleyball",extra:"limit=300",liga:"NCAA femenina",pred:"voley",per:"set"}
+ {dep:"voleibol",ic:"🏐",ruta:"volleyball/womens-college-volleyball",extra:"limit=300",liga:"NCAA femenina",pred:"voley",per:"set"},
+ {dep:"rugby",ic:"🏉",ruta:"rugby/180659",liga:"Seis Naciones",pred:"rug_6n",per:"fut"},
+ {dep:"rugby",ic:"🏉",ruta:"rugby/267979",liga:"Premiership",pred:"rug_prem",per:"fut"},
+ {dep:"rugby",ic:"🏉",ruta:"rugby/270559",liga:"Top 14",pred:"rug_top14",per:"fut"},
+ {dep:"rugby",ic:"🏉",ruta:"rugby/270557",liga:"United Rugby Championship",pred:"rug_urc",per:"fut"},
+ {dep:"rugby",ic:"🏉",ruta:"rugby/271937",liga:"Champions Cup",pred:"rug_cc",per:"fut"},
+ {dep:"rugby",ic:"🏉",ruta:"rugby/242041",liga:"Super Rugby",pred:"rug_super",per:"fut"}
 ];
 var T={
 es:{h1:"🔴 En directo",lead:"Marcadores de hoy que se actualizan solos cada minuto, junto a la predicción que publicamos antes de cada partido. Así puedes comprobar en tiempo real si acertamos.",
@@ -111,7 +117,7 @@ es:{h1:"🔴 En directo",lead:"Marcadores de hoy que se actualizan solos cada mi
  elo:"Fuerza (Elo)",rec:"Balance",odds:"Mejor cuota",at:"en",
  per:{cuarto:"º cuarto",parte:"ª parte",periodo:"º periodo",entrada:"ª entrada",set:"Set "},endof:"Fin del ",top:"Alta ",bot:"Baja ",
  warn:"Marcadores: ESPN. Pueden llevar unos segundos de retraso. Solo para mayores de 18 años. Juega con responsabilidad.",
- dep:{futbol:"Fútbol",baloncesto:"Baloncesto",hockey:"Hockey",americano:"Fútbol americano",beisbol:"Béisbol",voleibol:"Voleibol"}},
+ dep:{futbol:"Fútbol",baloncesto:"Baloncesto",hockey:"Hockey",americano:"Fútbol americano",beisbol:"Béisbol",voleibol:"Voleibol",rugby:"Rugby"}},
 en:{h1:"🔴 Live",lead:"Today's scores, refreshing by themselves every minute, next to the prediction we published before each game. Check in real time whether we are right.",
  upd:"Updated",ago:"%ss ago",live:"In play now",later:"Later today",fin:"Finished today",all:"All",onlyp:"⭐ Only with our pick",
  none:"There are no games in our sports today right now.",nolive:"No game is in play right now.",
@@ -123,7 +129,7 @@ en:{h1:"🔴 Live",lead:"Today's scores, refreshing by themselves every minute, 
  home:"Home",away:"Away",xg:"Expected goals",ms:"Most likely score",o25:"Over 2.5 goals",btts:"Both teams score",
  elo:"Strength (Elo)",rec:"Record",odds:"Best odds",at:"at",per:null,endof:"",top:"",bot:"",
  warn:"Scores: ESPN. They may be a few seconds behind. 18+ only. Please gamble responsibly.",
- dep:{futbol:"Football",baloncesto:"Basketball",hockey:"Hockey",americano:"American football",beisbol:"Baseball",voleibol:"Volleyball"}}
+ dep:{futbol:"Football",baloncesto:"Basketball",hockey:"Hockey",americano:"American football",beisbol:"Baseball",voleibol:"Volleyball",rugby:"Rugby"}}
 };
 var lang="es", filtro="todos", soloP=false, EV=[], PRED={}, CUOTAS={}, ultima=null, fallos=0;
 try{ lang=localStorage.getItem("lang")||(navigator.language.indexOf("es")==0?"es":"en"); }catch(e){}
@@ -165,7 +171,7 @@ function cargarPred(){
   function j(u){ return fetch("data/"+u+"?v="+Date.now()).then(function(r){ if(!r.ok) throw 0; return r.json(); }); }
   var ps=[j("historial.json").then(function(d){ PRED.futbol=(d.predicciones||[]); }).catch(function(){}),
           j("cuotas.json").then(function(d){ CUOTAS=d.partidos||{}; }).catch(function(){})];
-  ["nba","wnba","ncaab","nhl","nfl","ncaaf","mlb","voley"].forEach(function(lg){
+  ["nba","wnba","ncaab","nhl","nfl","ncaaf","mlb","voley","rug_6n","rug_prem","rug_top14","rug_urc","rug_cc","rug_super"].forEach(function(lg){
     ps.push(j("equipos_"+lg+"_historial.json").then(function(d){ PRED[lg]=(d.predicciones||[]); }).catch(function(){}));
   });
   return Promise.all(ps);
