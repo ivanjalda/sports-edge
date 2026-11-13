@@ -69,8 +69,8 @@ FUENTES = [
 NOMBRES = {"futbol": u"⚽ Fútbol", "tenis": u"\U0001F3BE Tenis", "baloncesto": u"\U0001F3C0 Baloncesto",
            "hockey": u"\U0001F3D2 Hockey", "americano": u"\U0001F3C8 Fútbol americano", "mma": u"\U0001F94B MMA",
            "beisbol": u"⚾ Béisbol", "voleibol": u"\U0001F3D0 Voleibol",
-           "rugby": u"\U0001F3C9 Rugby"}
-ORDEN = ["futbol", "tenis", "baloncesto", "hockey", "americano", "mma", "beisbol", "voleibol", "rugby"]
+           "rugby": u"\U0001F3C9 Rugby", "motor": u"\U0001F3C1 Motor"}
+ORDEN = ["futbol", "tenis", "baloncesto", "hockey", "americano", "mma", "beisbol", "voleibol", "rugby", "motor"]
 
 
 def leer(nombre, defecto):
@@ -278,6 +278,30 @@ def ciclo(estado, ahora, balance):
           (ahora.astimezone(TZ).strftime("%H:%M"), len(lista), fallos, len(nuevos)))
 
     bloques = []
+    # Carreras (F1 y MotoGP): resultado de la ultima carrera frente a nuestro favorito
+    for serie, ic, nomb in (("f1", u"\U0001F3CE", u"Fórmula 1"), ("motogp", u"\U0001F3CD", u"MotoGP")):
+        hist = leer("carreras_%s_historial.json" % serie, {}).get("predicciones", [])
+        por = {}
+        for p in hist:
+            if p.get("resultado") and (p["id"] not in por or p["tipo"] == "parrilla"):
+                por[p["id"]] = p
+        for p in por.values():
+            k = "car:" + p["id"]
+            if k in estado["enviados"]:
+                continue
+            try:
+                reciente = (ahora - fecha(p["fecha"])).total_seconds() < 3 * 86400
+            except Exception:
+                reciente = False
+            r = p["resultado"]
+            estado["enviados"][k] = {"dia": dia, "dep": "motor", "ok": bool(r["acierto"])}
+            if not reciente or primera:
+                continue
+            bloques.append(u"%s <b>%s · %s</b>\n\U0001F3C6 Ganó <b>%s</b>%s\n%s Nuestro favorito: %s (%s de ganar)%s" % (
+                ic, nomb, e(p["nombre"]), e(r["ganador_n"]),
+                (u" · podio: " + ", ".join(e(x) for x in r.get("podio_n", [])[1:])) if r.get("podio_n") else "",
+                u"✅" if r["acierto"] else u"❌", e(p["fav"]["n"]), pc(p["fav"]["pw"]),
+                u"" if r["acierto"] else u" · al ganador le dábamos %s" % pc(r.get("p_ganador") or 0)))
     if nuevos:
         if primera:
             print("Primera ejecucion: se apuntan %d partidos ya terminados sin enviarlos." % len(nuevos))
