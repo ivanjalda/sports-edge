@@ -185,10 +185,11 @@ var DEP={
  mma:{es:"MMA",en:"MMA",ic:"🥋",url:"equipos.html?dep=mma",cm_es:"UFC",cm_en:"UFC",n:1,ligas:["ufc"]},
  beisbol:{es:"Béisbol",en:"Baseball",ic:"⚾",url:"equipos.html?dep=beisbol",cm_es:"MLB",cm_en:"MLB",n:1,ligas:["mlb"]},
  voleibol:{es:"Voleibol",en:"Volleyball",ic:"🏐",url:"equipos.html?dep=voleibol",cm_es:"NCAA femenina",cm_en:"NCAA women's",n:1,ligas:["voley"]},
+ motor:{es:"Motor",en:"Motorsport",ic:"🏁",url:"carreras.html",cm_es:"Fórmula 1 · MotoGP",cm_en:"Formula 1 · MotoGP",n:2,series:["f1","motogp"]},
  rugby:{es:"Rugby",en:"Rugby",ic:"🏉",url:"equipos.html?dep=rugby",cm_es:"Seis Naciones · Premiership · Top 14 · URC · Champions Cup · Super Rugby",cm_en:"Six Nations · Premiership · Top 14 · URC · Champions Cup · Super Rugby",n:6,ligas:["rug_6n","rug_prem","rug_top14","rug_urc","rug_cc","rug_super"]}
 };
 var NOMBRE_LIGA={nba:"NBA",euroliga:"Euroliga",eurocup:"Eurocup",ncaab:"NCAA",wnba:"WNBA",nhl:"NHL",ncaah:"NCAA",nfl:"NFL",ncaaf:"NCAA",ufc:"UFC",mlb:"MLB",voley:"NCAA",rug_6n:"Seis Naciones",rug_prem:"Premiership",rug_top14:"Top 14",rug_urc:"URC",rug_cc:"Champions Cup",rug_super:"Super Rugby"};
-var SOON=[{ic:"🥊",es:"Boxeo",en:"Boxing"},{ic:"🏎️",es:"Fórmula 1",en:"Formula 1"},{ic:"🏍️",es:"MotoGP",en:"MotoGP"},{ic:"🏁",es:"NASCAR",en:"NASCAR"},{ic:"⛳",es:"Golf",en:"Golf"},{ic:"🚴",es:"Ciclismo",en:"Cycling"},{ic:"🎮",es:"LoL",en:"LoL"},{ic:"🤾",es:"Balonmano",en:"Handball"},{ic:"🏓",es:"Tenis de mesa",en:"Table tennis"},{ic:"🏸",es:"Bádminton",en:"Badminton"},{ic:"🎾",es:"Pádel",en:"Padel"},{ic:"🎱",es:"Snooker",en:"Snooker"},{ic:"⚽",es:"Fútbol sala",en:"Futsal"},{ic:"🏇",es:"Caballos",en:"Horse racing"},{ic:"🐕",es:"Galgos",en:"Greyhounds"}];
+var SOON=[{ic:"🥊",es:"Boxeo",en:"Boxing"},{ic:"🏁",es:"NASCAR",en:"NASCAR"},{ic:"⛳",es:"Golf",en:"Golf"},{ic:"🚴",es:"Ciclismo",en:"Cycling"},{ic:"🎮",es:"LoL",en:"LoL"},{ic:"🤾",es:"Balonmano",en:"Handball"},{ic:"🏓",es:"Tenis de mesa",en:"Table tennis"},{ic:"🏸",es:"Bádminton",en:"Badminton"},{ic:"🎾",es:"Pádel",en:"Padel"},{ic:"🎱",es:"Snooker",en:"Snooker"},{ic:"⚽",es:"Fútbol sala",en:"Futsal"},{ic:"🏇",es:"Caballos",en:"Horse racing"},{ic:"🐕",es:"Galgos",en:"Greyhounds"}];
 var CLOCKS=[
  {tz:"Europe/Madrid",es:"Madrid",en:"Madrid",x_es:"LaLiga · Euroliga",x_en:"LaLiga · EuroLeague"},
  {tz:"Europe/London",es:"Londres",en:"London",x_es:"Premier · Wimbledon",x_en:"Premier · Wimbledon"},
@@ -243,6 +244,9 @@ function proximos(){
           vk:c3&&c3.valor,c:c3,pr:{"L":r.pl,"V":r.pv},nm:{"L":r.local,"V":r.visitante},url:"equipos.html?dep="+dp+"&liga="+lg}); }
     });
   });
+  ["f1","motogp"].forEach(function(s){ var c=D["c_"+s], p=c&&c.proximo; if(!p||!p.pilotos||!p.pilotos.length||!dentro(p.fecha)) return;
+    var f=p.pilotos[0];
+    out.push({dep:"motor",comp:c.nombre,fecha:p.fecha,a:p.nombre,b:"",pick:f.n,prob:f.pw,cuota:null,casa:null,valor:false,url:"carreras.html?serie="+s}); });
   return out;
 }
 function fila(x,valorMode){
@@ -252,7 +256,7 @@ function fila(x,valorMode){
   var cuo=cu?(t("best")+" "+dec(cu,2)+(casa?" "+t("at")+" "+esc(casa):"")):"";
   return '<a class="it" href="'+esc(x.url)+'"><span class="ic">'+DEP[x.dep].ic+'</span>'
     +'<span class="tm">'+esc(fwhen(x.fecha))+'<br>'+esc(x.comp||"")+'</span>'
-    +'<span class="mt">'+esc(x.a)+' – '+esc(x.b)+(x.valor?'<span class="vb">'+t("vb")+'</span>':'')
+    +'<span class="mt">'+esc(x.a)+(x.b?' – '+esc(x.b):'')+(x.valor?'<span class="vb">'+t("vb")+'</span>':'')
     +'<small class="mb">'+esc(fwhen(x.fecha))+' · '+esc(x.comp||"")+' · '+lab+': '+esc(pick)+(cuo?' · '+cuo:'')+'</small></span>'
     +'<span class="pk">'+lab+': <b>'+esc(pick)+'</b>'+(cuo?'<small>'+cuo+'</small>':'')+'</span>'
     +'<span class="pb"><b>'+pc(prob)+'</b><small>'+(cu?dec(cu,2):'&nbsp;')+'</small></span></a>';
@@ -269,6 +273,11 @@ function resumenDep(dp){
   if(dp==="tenis"){ var tb=D.t_bt&&D.t_bt.total, dr=(D.t&&D.t.directo)||{};
     return {n:tb?tb.n:0,acc:tb?tb.acierto:null,rule:tb?tb.mejor_ranking:null,ln:dr.resueltas||0,live:dr.acierto,
             up:((D.t&&D.t.predicciones)||[]).length,old:D.t&&D.t.dias_desde_datos>30}; }
+  if(dp==="motor"){ var n0=0,h0=0,r0=0,ln0=0,lh0=0,up0=0;
+    ["f1","motogp"].forEach(function(s){ var c=D["c_"+s]; if(!c) return; var a=(c.motor||{}).prueba_parrilla||{}, li=c.directo||{};
+      if(a.carreras){ n0+=a.carreras; h0+=a.favorito_gana*a.carreras; r0+=(a.pole_gana||0)*a.carreras; }
+      if(li.carreras){ ln0+=li.carreras; lh0+=li.favorito_gana||0; } if(c.proximo) up0++; });
+    return {n:n0,acc:n0?h0/n0:null,rule:n0?r0/n0:null,ln:ln0,live:ln0?lh0/ln0:null,up:up0}; }
   return sumar(DEP[dp].ligas.map(function(lg){ var b2=D["b_"+lg], e=D["e_"+lg]; if(!b2||!b2.total) return null;
     var d2=(e&&e.directo)||{};
     return {n:b2.total.n,h:b2.total.aciertos,bl:(b2.base_local&&b2.base_local.acierto||0)*b2.total.n,
@@ -291,7 +300,7 @@ function render(){
   ["sub","h-top","n-top","h-val","n-val","h-sp","n-sp","h-soon","n-soon","h-how"].forEach(function(id){
     document.getElementById(id).textContent=t(id.replace("-","_")); });
   document.getElementById("foot").textContent=t("foot");
-  var deps=["futbol","tenis","baloncesto","hockey","americano","mma","beisbol","voleibol","rugby"], R={}, totN=0, totUp=0, comp=0;
+  var deps=["futbol","tenis","baloncesto","hockey","americano","mma","beisbol","voleibol","rugby","motor"], R={}, totN=0, totUp=0, comp=0;
   deps.forEach(function(d){ R[d]=resumenDep(d); totN+=R[d].n||0; totUp+=R[d].up||0; comp+=DEP[d].n; });
   var upd=(D.f_stats&&D.f_stats.actualizado)||(D.t&&D.t.actualizado)||"";
   document.getElementById("kpis").innerHTML=
@@ -341,7 +350,8 @@ function renderNews(){
 }
 function load(f,k){ return fetch("data/"+f+"?v="+Date.now()).then(function(r){ if(!r.ok) throw 0; return r.json(); }).then(function(j){ D[k]=j; }).catch(function(){ D[k]=null; }); }
 var cargas=[load("predicciones.json","f_pred"),load("estadisticas.json","f_stats"),load("backtest.json","f_bt"),load("cuotas.json","f_cuotas"),
-            load("tenis.json","t"),load("tenis_backtest.json","t_bt"),load("noticias.json","news")];
+            load("tenis.json","t"),load("tenis_backtest.json","t_bt"),load("noticias.json","news"),
+            load("carreras_f1.json","c_f1"),load("carreras_motogp.json","c_motogp")];
 ["nba","euroliga","eurocup","ncaab","wnba","nhl","ncaah","nfl","ncaaf","ufc","mlb","voley","rug_6n","rug_prem","rug_top14","rug_urc","rug_cc","rug_super"].forEach(function(lg){
   cargas.push(load("equipos_"+lg+".json","e_"+lg)); cargas.push(load("equipos_"+lg+"_backtest.json","b_"+lg)); });
 render();
