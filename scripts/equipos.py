@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Sports Edge - Motor comun para deportes de equipo sin empate (solo libreria estandar).
 Baloncesto: NBA, Euroliga, Eurocup, NCAA masculina, WNBA. Hockey: NHL, NCAA masculina.
+Futbol americano: NFL y NCAA (FBS). Prediccion: motor propio (Elo + descanso + forma) de motor_equipos.py.
 Para anadir otra liga basta con anadirla a LIGAS.
 
 Datos de resultados y calendario: marcadores publicos de ESPN y API oficial de Euroleague.
@@ -18,6 +19,9 @@ import unicodedata
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone, timedelta
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import motor_equipos
 
 DATA = "data"
 KEY = os.environ.get("ODDS_API_KEY", "").strip()
@@ -44,6 +48,7 @@ HORAS_PRED = 48        # se guardan predicciones de partidos que empiezan en las
 # max_dias: dias sin resultados nuevos a partir de los cuales no se guardan predicciones
 BALONCESTO = {"k": 20.0, "hca": 100.0, "revertir": 0.75, "mov": "nba"}
 HOCKEY = {"k": 6.0, "hca": 50.0, "revertir": 0.70, "mov": "nhl"}
+AMERICANO = {"k": 20.0, "hca": 48.0, "revertir": 0.67, "mov": "nfl"}
 LIGAS = {
     "nba": dict(BALONCESTO, nombre="NBA", fuente="espn", ruta="basketball/nba", extra="",
                 odds="basketball_nba", inicio="20231001", eval="20241001", min_eq=20, max_dias=10,
@@ -61,6 +66,12 @@ LIGAS = {
     "nhl": dict(HOCKEY, nombre="NHL", fuente="espn", ruta="hockey/nhl", extra="",
                 odds="icehockey_nhl", inicio="20231001", eval="20241001", min_eq=20, max_dias=10,
                 meses=(10, 11, 12, 1, 2, 3, 4, 5, 6)),
+    "nfl": dict(AMERICANO, nombre="NFL", fuente="espn", ruta="football/nfl", extra="",
+                odds="americanfootball_nfl", inicio="20230901", eval="20240901", min_eq=10, max_dias=12,
+                meses=(9, 10, 11, 12, 1, 2)),
+    "ncaaf": dict(AMERICANO, nombre="NCAA", fuente="espn", ruta="football/college-football", extra="&groups=80",
+                  odds=None, inicio="20230825", eval="20240825", min_eq=8, max_dias=12,
+                  meses=(8, 9, 10, 11, 12, 1)),
     "ncaah": dict(HOCKEY, nombre="NCAA", fuente="espn", ruta="hockey/mens-college-hockey", extra="",
                   odds=None, inicio="20231001", eval="20241001", min_eq=10, max_dias=12,
                   meses=(10, 11, 12, 1, 2, 3, 4)),
@@ -578,15 +589,24 @@ def procesar(clave, cfg, ahora, stamp, restantes):
                      key=lambda g: g["fecha"])
     ultima = lista_j[-1]["fecha"]
     dias = (ahora - parse_iso(ultima)).days
-    elo, ev, bal = correr(lista_j, cfg)
+    params, inf_motor = motor_equipos.ajustar(lista_j, cfg)
+    elo, ev, bal = motor_equipos.recorrido_final(lista_j, cfg, params)
+    mm, mb = inf_motor.get("motor") or {}, inf_motor.get("elo_basico") or {}
+    print("Motor propio %s: PRUEBA %d partidos no vistos | motor %.1f%% (logloss %.4f) | Elo basico %.1f%% (logloss %.4f) -> %s" %
+          (cfg["nombre"], mm.get("n", 0), 100 * (mm.get("acierto") or 0), mm.get("logloss") or 0,
+           100 * (mb.get("acierto") or 0), mb.get("logloss") or 0,
+           "SE USA el motor (descanso %s, forma %s)" % (params["c_desc"], params["c_forma"]) if inf_motor.get("activo")
+           else "se usa el Elo basico"))
     if not ev:
         print("ERROR: no hay partidos para evaluar en %s." % cfg["nombre"])
         return restantes
     bt = backtest(ev, cfg, stamp, ultima)
-    fiable = (bt["total"]["acierto"] - (bt["base_local"]["acierto"] or 1)) >= VENTAJA_MIN_LIGA
-    bt["valor_activo"] = fiable
-    if not fiable:
-        print("Aviso: en %s el modelo no supera claramente a 'siempre local'. No se marca VALOR." % cfg["nombre"])
+    bt["desde"] = ev[0]["g"]["fecha"][:10].replace("-", "")
+    bt["motor"] = inf_motor
+    # VALOR solo se marca cuando se ha comprobado con cuotas historicas reales que gana dinero.
+    # Para estos deportes aun no tenemos cuotas historicas, asi que no se recomienda ninguna apuesta.
+    fiable = False
+    bt["valor_activo"] = False
     guardar_json("equipos_%s_backtest.json" % clave, bt)
     print("Backtest %s: %d partidos, acierto %.1f%% (siempre local %.1f%%), Brier %.3f (azar 0.250). "
           "Ultimo resultado: %s (hace %d dias)" %
@@ -611,7 +631,7 @@ def procesar(clave, cfg, ahora, stamp, restantes):
             continue
         if g["temporada"] != elo.temp:   # primer partido de una temporada nueva
             elo.nueva_temporada(g["temporada"])
-        pl = round(elo.prob_local(g["local"], g["visitante"], g["neutral"]), 4)
+        pl = round(elo.prob_partido(g["local"], g["visitante"], g["neutral"], parse_iso(g["fecha"])), 4)
         p = {"id": g["id"], "fecha": g["fecha"], "local": g["local"], "visitante": g["visitante"],
              "neutral": g["neutral"], "playoff": g["tipo"] == 3, "pl": pl, "pv": round(1 - pl, 4),
              "elo_l": round(elo.get(g["local"])), "elo_v": round(elo.get(g["visitante"])),

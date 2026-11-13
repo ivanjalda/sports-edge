@@ -331,13 +331,17 @@ def procesar_evento(ev):
     return mejor, {k: round(sum(v) / len(v), 4) for k, v in cons.items()}, casas
 
 
+VALOR_VERIFICADO = False
+
+
 def evaluar(p1, p2, mejor, mercado):
     probs = {"1": p1, "2": p2}
     ev = {}
     valor = []
     for k in ("1", "2"):
         ev[k] = round(probs[k] * mejor[k]["c"] - 1, 4)
-        if ev[k] >= UMBRAL_VALOR and probs[k] >= PROB_MIN and probs[k] > mercado[k]:
+        # VALOR desactivado: aun no se ha comprobado con cuotas historicas reales que gane dinero.
+        if VALOR_VERIFICADO and ev[k] >= UMBRAL_VALOR and probs[k] >= PROB_MIN and probs[k] > mercado[k]:
             valor.append(k)
     return ev, valor
 
