@@ -4,14 +4,14 @@
    dentro de su render(). Los botones ES/EN llaman a setLang() de cada pagina. */
 (function(){
   var TX={
-    es:{home:"Inicio",futbol:"Fútbol",tenis:"Tenis",baloncesto:"Baloncesto",hockey:"Hockey",americano:"Fútbol americano",mma:"MMA",beisbol:"Béisbol",voleibol:"Voleibol",directo:"En directo",stats:"Estadísticas",guia:"Guía",
+    es:{home:"Inicio",futbol:"Fútbol",tenis:"Tenis",baloncesto:"Baloncesto",hockey:"Hockey",americano:"Fútbol americano",mma:"MMA",beisbol:"Béisbol",voleibol:"Voleibol",rugby:"Rugby",directo:"En directo",stats:"Estadísticas",guia:"Guía",
         news:"Noticias",newsof:"Noticias de",more:"Más noticias",ago_h:"hace %d h",ago_m:"hace %d min",tema:"Modo día / noche",picks:"⭐ Nuestros pronósticos",pick:"Pronóstico",odds:"Mejor cuota",at:"en",nopicks:"No hay pronósticos para las próximas horas.",allpicks:"Ver todos en Inicio →",today:"hoy",tomorrow:"mañana",draw:"Empate"},
-    en:{home:"Home",futbol:"Football",tenis:"Tennis",baloncesto:"Basketball",hockey:"Hockey",americano:"American football",mma:"MMA",beisbol:"Baseball",voleibol:"Volleyball",directo:"Live",stats:"Statistics",guia:"Guide",
+    en:{home:"Home",futbol:"Football",tenis:"Tennis",baloncesto:"Basketball",hockey:"Hockey",americano:"American football",mma:"MMA",beisbol:"Baseball",voleibol:"Volleyball",rugby:"Rugby",directo:"Live",stats:"Statistics",guia:"Guide",
         news:"News",newsof:"News:",more:"More news",ago_h:"%dh ago",ago_m:"%d min ago",tema:"Light / dark mode",picks:"⭐ Our top picks",pick:"Pick",odds:"Best odds",at:"at",nopicks:"No picks for the next hours.",allpicks:"See all on Home →",today:"today",tomorrow:"tomorrow",draw:"Draw"}
   };
   var ITEMS=[
     ["home","index.html","🏠"],["directo","directo.html","🔴"],["futbol","futbol.html","⚽"],["tenis","tenis.html","🎾"],
-    ["baloncesto","equipos.html?dep=baloncesto","🏀"],["hockey","equipos.html?dep=hockey","🏒"],["americano","equipos.html?dep=americano","🏈"],["mma","equipos.html?dep=mma","🥋"],["beisbol","equipos.html?dep=beisbol","⚾"],["voleibol","equipos.html?dep=voleibol","🏐"],
+    ["baloncesto","equipos.html?dep=baloncesto","🏀"],["hockey","equipos.html?dep=hockey","🏒"],["americano","equipos.html?dep=americano","🏈"],["mma","equipos.html?dep=mma","🥋"],["beisbol","equipos.html?dep=beisbol","⚾"],["voleibol","equipos.html?dep=voleibol","🏐"],["rugby","equipos.html?dep=rugby","🏉"],
     ["stats","estadisticas.html","📊"],["guia","guia.html","📘"]
   ];
   var css=
@@ -58,13 +58,13 @@
     /* Columna izquierda: nuestros pronosticos destacados */
     ".se-pk{display:block;background:var(--card);border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:10px;padding:9px 11px;margin-bottom:9px;text-decoration:none;color:var(--txt)}"+
     ".se-pk:hover{border-color:var(--acc)}"+
-    ".se-pk .s{font-size:11px;color:var(--mut);margin-bottom:2px}"+
-    ".se-pk .m{font-size:13.5px;font-weight:600;line-height:1.3}"+
-    ".se-pk .p{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-top:5px;font-size:12.5px}"+
-    ".se-pk .p b{color:var(--acc);font-size:15px}"+
-    ".se-pk .c{font-size:11.5px;color:var(--mut);margin-top:2px}"+
-    ".se-pk .bar{height:5px;border-radius:3px;background:var(--line);margin-top:6px;overflow:hidden}"+
-    ".se-pk .bar i{display:block;height:100%;background:var(--acc)}"+
+    ".se-pk .se-ps{font-size:11px;color:var(--mut);margin-bottom:2px}"+
+    ".se-pk .se-pm{font-size:13.5px;font-weight:600;line-height:1.3}"+
+    ".se-pk .se-pp{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-top:5px;font-size:12.5px}"+
+    ".se-pk .se-pp b{color:var(--acc);font-size:15px}"+
+    ".se-pk .se-pc{font-size:11.5px;color:var(--mut);margin-top:2px}"+
+    ".se-pk .se-pbar{height:5px;border-radius:3px;background:var(--line);margin-top:6px;overflow:hidden}"+
+    ".se-pk .se-pbar i{display:block;height:100%;background:var(--acc)}"+
     ".se-side .se-empty{font-size:13px;color:var(--mut);border:1px dashed var(--line);border-radius:10px;padding:12px}"+
     "@media(max-width:1340px){.se-left{display:none}}"+
     "@media(max-width:1060px){.se-wrap{display:block}.se-side{position:static;width:auto;max-height:none;overflow:visible;padding-top:10px}"+
@@ -84,13 +84,13 @@
 
   /* ---------- columnas laterales de noticias ---------- */
   var NEWS=null, pedido=false, ultimo={lang:"es",act:"home"};
-  var DEPS={futbol:1,tenis:1,baloncesto:1,hockey:1,americano:1,mma:1,beisbol:1,voleibol:1};
+  var DEPS={futbol:1,tenis:1,baloncesto:1,hockey:1,americano:1,mma:1,beisbol:1,voleibol:1,rugby:1};
   function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
   function hace(iso,t){ var m=Math.round((Date.now()-Date.parse(iso))/60000); if(!(m>=0)) return "";
     return m<60 ? t.ago_m.replace("%d",m) : t.ago_h.replace("%d",Math.round(m/60)); }
   function tarjeta(x,t,peq){
     if(!/^https?:\/\//.test(x.url)) return "";
-    var img=(x.img&&/^https:\/\//.test(x.img))?'<img src="'+esc(x.img)+'" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">':'';
+    var img=(x.img&&/^https:\/\//.test(x.img))?'<img src="'+esc(x.img)+'" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentNode.classList.remove(\'sm\');this.remove()">':'';
     return '<a class="se-n'+(peq&&img?' sm':'')+'" href="'+esc(x.url)+'" target="_blank" rel="noopener nofollow">'+img
       +'<div class="b"><div class="s"><b>'+esc(x.fuente)+'</b> · '+esc(hace(x.fecha,t))+'</div><div class="h">'+esc(x.t)+'</div></div></a>';
   }
@@ -128,8 +128,8 @@
   /* ---------- columna izquierda: pronosticos destacados (datos reales de data/) ---------- */
   var PK=null, pkPedido=false;
   var LG_DEP={nba:"baloncesto",euroliga:"baloncesto",eurocup:"baloncesto",ncaab:"baloncesto",wnba:"baloncesto",nhl:"hockey",ncaah:"hockey",
-              nfl:"americano",ncaaf:"americano",ufc:"mma",mlb:"beisbol",voley:"voleibol"};
-  var ICO={futbol:"⚽",tenis:"🎾",baloncesto:"🏀",hockey:"🏒",americano:"🏈",mma:"🥋",beisbol:"⚾",voleibol:"🏐"};
+              nfl:"americano",ncaaf:"americano",ufc:"mma",mlb:"beisbol",voley:"voleibol",rug_6n:"rugby",rug_prem:"rugby",rug_top14:"rugby",rug_urc:"rugby",rug_cc:"rugby",rug_super:"rugby"};
+  var ICO={futbol:"⚽",tenis:"🎾",baloncesto:"🏀",hockey:"🏒",americano:"🏈",mma:"🥋",beisbol:"⚾",voleibol:"🏐",rugby:"🏉"};
   function jget(f){ return fetch("data/"+f+"?v="+Date.now()).then(function(r){ if(!r.ok) throw 0; return r.json(); }).catch(function(){ return null; }); }
   function cargarPicks(){
     if(pkPedido) return; pkPedido=true;
@@ -170,11 +170,11 @@
     if(!sel.length){ l.innerHTML='<h3>'+t.picks+'</h3><div class="se-empty">'+t.nopicks+'</div>'; return; }
     l.innerHTML='<h3>'+t.picks+'</h3>'+sel.map(function(x){
       var nom=x.pick==="X"?t.draw:x.pick;
-      return '<a class="se-pk" href="'+esc(x.url)+'"><div class="s">'+(ICO[x.dep]||"")+' '+esc(x.comp||"")+' · '+esc(cuando(x.fecha,t,ultimo.lang))+'</div>'
-        +'<div class="m">'+esc(x.a)+' – '+esc(x.b)+'</div>'
-        +'<div class="p"><span>'+t.pick+': <strong>'+esc(nom)+'</strong></span><b>'+Math.round(x.prob*100)+'%</b></div>'
-        +'<div class="bar"><i style="width:'+Math.round(x.prob*100)+'%"></i></div>'
-        +(x.c?'<div class="c">'+t.odds+' '+String(x.c.toFixed(2)).replace(".",ultimo.lang==="es"?",":".")+(x.casa?' '+t.at+' '+esc(x.casa):'')+'</div>':'')+'</a>';
+      return '<a class="se-pk" href="'+esc(x.url)+'"><div class="se-ps">'+(ICO[x.dep]||"")+' '+esc(x.comp||"")+' · '+esc(cuando(x.fecha,t,ultimo.lang))+'</div>'
+        +'<div class="se-pm">'+esc(x.a)+' – '+esc(x.b)+'</div>'
+        +'<div class="se-pp"><span>'+t.pick+': <strong>'+esc(nom)+'</strong></span><b>'+Math.round(x.prob*100)+'%</b></div>'
+        +'<div class="se-pbar"><i style="width:'+Math.round(x.prob*100)+'%"></i></div>'
+        +(x.c?'<div class="se-pc">'+t.odds+' '+String(x.c.toFixed(2)).replace(".",ultimo.lang==="es"?",":".")+(x.casa?' '+t.at+' '+esc(x.casa):'')+'</div>':'')+'</a>';
     }).join("")+'<a class="se-pk" style="border-left-color:var(--blue);text-align:center;font-weight:700;font-size:13px" href="index.html">'+t.allpicks+'</a>';
   }
 
