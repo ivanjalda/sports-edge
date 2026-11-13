@@ -85,6 +85,25 @@ footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top
 }
 @media(min-width:901px){ .it .mt .mb{display:none} }
 @media(max-width:720px){ main{padding:16px} .hero h1{font-size:24px} .how{grid-template-columns:1fr} }
+/* Franja en directo */
+.lvs{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:6px 0 16px}
+.lvs .hdr{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.lvs .hdr b{font-size:14px;letter-spacing:1px;text-transform:uppercase;color:var(--red);display:flex;align-items:center}
+.lvs .hdr a{font-size:13px;font-weight:700;color:var(--acc);text-decoration:none}
+.lvs .dt{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--red);margin-right:8px;animation:lvp 1.4s infinite}
+@keyframes lvp{0%{opacity:1}50%{opacity:.3}100%{opacity:1}}
+.lvg{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.lvc{display:block;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:8px 11px;text-decoration:none;color:var(--txt)}
+.lvc:hover{border-color:var(--acc)}
+.lvc .s{display:flex;justify-content:space-between;font-size:11.5px;color:var(--mut);margin-bottom:3px}
+.lvc .s .in{color:var(--red);font-weight:700}
+.lvc .t{display:flex;justify-content:space-between;gap:8px;font-size:13.5px;line-height:1.45}
+.lvc .t span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lvc .t b{font-weight:800}
+.lvc .p{font-size:11.5px;color:var(--mut);margin-top:4px;border-top:1px solid var(--line);padding-top:4px}
+.lvc .p strong{color:var(--txt)}
+.lvc .ok{color:var(--acc);font-weight:700} .lvc .ko{color:var(--red);font-weight:700} .lvc .go{color:var(--amb);font-weight:700}
+.lvs .nada{font-size:13px;color:var(--mut)}
 </style>
 </head>
 <body>
@@ -94,6 +113,7 @@ footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top
     <h1 id="h1"></h1>
     <p id="sub"></p>
   </section>
+  <div class="lvs" id="lvs" style="display:none"></div>
   <div class="kpis" id="kpis"></div>
   <div class="clocks" id="clocks"></div>
 
@@ -264,6 +284,7 @@ function tickClocks(){
 
 function render(){
   document.documentElement.lang=lang;
+  if(window.pintarFranja) pintarFranja();
   if(window.navRender) navRender(lang,"home");
   document.getElementById("h1").innerHTML=t("h1");
   ["sub","h-top","n-top","h-val","n-val","h-sp","n-sp","h-soon","n-soon","h-how"].forEach(function(id){
@@ -325,6 +346,83 @@ var cargas=[load("predicciones.json","f_pred"),load("estadisticas.json","f_stats
 render();
 Promise.all(cargas).then(render);
 setInterval(tickClocks,30000);
+</script>
+<script>
+/* Franja "en directo" de Inicio: marcadores reales de ESPN y nuestro pronostico publicado antes del partido */
+(function(){
+  var ESPN="https://site.api.espn.com/apis/site/v2/sports/";
+  var F=[["futbol","⚽","soccer/esp.1","LaLiga",""],["futbol","⚽","soccer/eng.1","Premier",""],["futbol","⚽","soccer/ita.1","Serie A",""],
+    ["futbol","⚽","soccer/ger.1","Bundesliga",""],["futbol","⚽","soccer/fra.1","Ligue 1",""],["futbol","⚽","soccer/por.1","Portugal",""],
+    ["futbol","⚽","soccer/ned.1","Eredivisie",""],["futbol","⚽","soccer/eng.2","Championship",""],["futbol","⚽","soccer/bra.1","Brasileirão",""],
+    ["futbol","⚽","soccer/arg.1","Argentina",""],["futbol","⚽","soccer/usa.1","MLS",""],["futbol","⚽","soccer/uefa.champions","Champions",""],
+    ["nba","🏀","basketball/nba","NBA",""],["wnba","🏀","basketball/wnba","WNBA",""],["ncaab","🏀","basketball/mens-college-basketball","NCAA","groups=50&limit=300"],
+    ["nhl","🏒","hockey/nhl","NHL",""],["nfl","🏈","football/nfl","NFL",""],["ncaaf","🏈","football/college-football","NCAA","groups=80&limit=300"],
+    ["mlb","⚾","baseball/mlb","MLB",""],["voley","🏐","volleyball/womens-college-volleyball","Voleibol NCAA","limit=300"]];
+  var X={es:{live:"En directo ahora",fin:"Terminados hoy",all:"Ver todos en directo",ours:"Nuestro",hit:"✓ acertado",miss:"✗ fallado",going:"● acierta",notgoing:"● falla",
+             draw:"Empate",none:"Ahora mismo no hay partidos en juego.",ft:"Final",ht:"Descanso"},
+         en:{live:"Live now",fin:"Finished today",all:"See all live games",ours:"Our pick",hit:"✓ correct",miss:"✗ wrong",going:"● on track",notgoing:"● off track",
+             draw:"Draw",none:"No games in play right now.",ft:"Final",ht:"Half time"}};
+  var EVS=[];
+  function L(){ return (typeof lang!=="undefined"&&X[lang])?lang:"es"; }
+  function sx(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+  function nw(s){ return String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[^a-z0-9 ]/g," ").split(/\s+/).filter(function(w){ return w&&["fc","cf","sc","ac","cd","rc","ud","club","de","the","afc"].indexOf(w)<0; }); }
+  function par(a,b){ var x=nw(a), y=nw(b); if(!x.length||!y.length) return false; if(x.join(" ")===y.join(" ")) return true;
+    var c=0; x.forEach(function(w){ if(w.length>2&&y.indexOf(w)>=0) c++; }); return c>=1&&(c>=Math.min(x.length,y.length)||c>=2); }
+  function pred(e){
+    var D0=(typeof D!=="undefined")?D:{};
+    if(e.k==="futbol"){ var l=(D0.f_pred&&D0.f_pred.predicciones)||[];
+      for(var i=0;i<l.length;i++){ var p=l[i]; if(String(p.id)==="espn-"+e.id||(par(p.local,e.h)&&par(p.visitante,e.a))){
+        var o={"1":p.p_local,"X":p.p_empate,"2":p.p_visitante}, k="1"; if(o.X>o[k]) k="X"; if(o["2"]>o[k]) k="2";
+        return {k:k,prob:o[k],nom:k==="1"?e.h:(k==="2"?e.a:X[L()].draw)}; } } return null; }
+    var d=D0["e_"+e.k], l2=(d&&d.predicciones)||[];
+    for(var j=0;j<l2.length;j++){ var q=l2[j]; if(String(q.id)===String(e.id)){ var k2=q.pl>=q.pv?"1":"2"; return {k:k2,prob:Math.max(q.pl,q.pv),nom:k2==="1"?e.h:e.a}; } }
+    return null;
+  }
+  function leer(f,j){ var o=[];
+    ((j&&j.events)||[]).forEach(function(ev){ var c=(ev.competitions||[])[0]; if(!c) return; var h=null,a=null;
+      (c.competitors||[]).forEach(function(x){ if(x.homeAway==="home") h=x; else if(x.homeAway==="away") a=x; }); if(!h||!a) return;
+      var st=ev.status||c.status||{}, ty=st.type||{};
+      if(ty.state!=="in"&&ty.state!=="post") return;
+      if(ty.state==="post"&&Date.now()-Date.parse(ev.date)>20*3600000) return;
+      o.push({k:f[0],ic:f[1],liga:f[3],id:ev.id,fecha:ev.date,st:ty.state,tn:ty.name||"",det:ty.shortDetail||"",clk:st.displayClock,per:st.period,
+        h:(h.team||{}).shortDisplayName||(h.team||{}).displayName,a:(a.team||{}).shortDisplayName||(a.team||{}).displayName,
+        hf:(h.team||{}).displayName,af:(a.team||{}).displayName,gh:h.score,ga:a.score}); });
+    return o; }
+  function tiempo(e){ var x=X[L()];
+    if(e.st==="post") return x.ft;
+    if(/HALFTIME/.test(e.tn)) return x.ht;
+    if(e.k==="futbol") return e.clk||e.det;
+    if(L()!=="es") return e.det;
+    var d=String(e.det).replace(/(\d+)(st|nd|rd|th)/g,"$1.º");
+    var m=d.match(/^([\d:.]+) - (.+)$/); if(m) d=m[2]+" · "+m[1];
+    return d.replace(/^End of /,"Fin ").replace(/^Top /,"Alta ").replace(/^Bot(tom)? /,"Baja ").replace(/^Mid /,"Mitad ").replace(/Halftime/,"Descanso").replace(/^Set /,"Set ").replace(/ OT/,"Prórroga"); }
+  function tarjeta(e){ var x=X[L()];
+    var p=pred({k:e.k,id:e.id,h:e.hf,a:e.af}), pt="";
+    if(p){ var gh=parseFloat(e.gh), ga=parseFloat(e.ga), v=gh>ga?"1":(gh<ga?"2":"X"), ok=v===p.k;
+      var tag=e.st==="post"?(ok?'<span class="ok">'+x.hit+'</span>':'<span class="ko">'+x.miss+'</span>'):(ok?'<span class="ok">'+x.going+'</span>':'<span class="go">'+x.notgoing+'</span>');
+      pt='<div class="p">'+x.ours+': <strong>'+sx(p.nom)+' '+Math.round(p.prob*100)+'%</strong> '+tag+'</div>'; }
+    return '<a class="lvc" href="directo.html"><div class="s"><span>'+e.ic+' '+sx(e.liga)+'</span><span class="'+(e.st==="in"?"in":"")+'">'+(e.st==="in"?"● ":"")+sx(tiempo(e))+'</span></div>'
+      +'<div class="t"><span>'+sx(e.h)+'</span><b>'+sx(e.gh)+'</b></div><div class="t"><span>'+sx(e.a)+'</span><b>'+sx(e.ga)+'</b></div>'+pt+'</a>'; }
+  function pintar(){
+    var el=document.getElementById("lvs"); if(!el) return; var x=X[L()];
+    var vivos=EVS.filter(function(e){return e.st==="in";}), fin=EVS.filter(function(e){return e.st==="post";});
+    function conP(e){ return pred({k:e.k,id:e.id,h:e.hf,a:e.af})?1:0; }
+    vivos.sort(function(a,b){ return conP(b)-conP(a); });
+    fin=fin.filter(conP).sort(function(a,b){ return a.fecha<b.fecha?1:-1; });
+    var lista=vivos.length?vivos:fin, tit=vivos.length?x.live+' ('+vivos.length+')':x.fin;
+    if(!lista.length){ el.style.display="none"; return; }
+    el.style.display="";
+    el.innerHTML='<div class="hdr"><b>'+(vivos.length?'<span class="dt"></span>':'')+sx(tit)+'</b><a href="directo.html">'+x.all+' →</a></div>'
+      +(vivos.length?'':'<div class="nada" style="margin-bottom:8px">'+x.none+'</div>')
+      +'<div class="lvg">'+lista.slice(0,12).map(tarjeta).join("")+'</div>'; }
+  function cargar(){
+    Promise.all(F.map(function(f){ return fetch(ESPN+f[2]+"/scoreboard"+(f[4]?"?"+f[4]:"")).then(function(r){ if(!r.ok) throw 0; return r.json(); })
+      .then(function(j){ return leer(f,j); }).catch(function(){ return []; }); }))
+    .then(function(ls){ EVS=[].concat.apply([],ls); pintar(); });
+  }
+  window.pintarFranja=pintar;
+  cargar(); setInterval(cargar,60000);
+})();
 </script>
 </body>
 </html>
