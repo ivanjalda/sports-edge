@@ -157,7 +157,7 @@ es:{nodata:"Sin datos",all:"Todas",dep_baloncesto:"Baloncesto",dep_hockey:"Hocke
  lead_americano:"Probabilidad de victoria en NFL y NCAA con nuestro motor propio: fuerza de cada equipo (Elo), ventaja de jugar en casa, descanso y forma reciente, calculado con resultados reales.",
  h_mot:"Motor propio: prueba con partidos no vistos",n_mot:"El motor combina la fuerza de cada equipo (Elo), el descanso (días desde su último partido) y la forma reciente (últimos 10 partidos). Se ajusta con temporadas antiguas y se mide con las más recientes, prediciendo cada partido solo con lo que se sabía antes.",
  mt_us:"Motor propio",mt_elo:"Elo básico",mt_home:"Siempre local",mt_on:"En uso: mejora al Elo básico",mt_off:"No mejora al Elo básico en la prueba, así que se usa el Elo básico",
- mt_set:"Ajustes elegidos",mt_rest:"descanso",mt_form:"forma",mt_pts:"puntos",
+ mt_set:"Ajustes elegidos",mt_rest:"descanso",mt_form:"forma (últimos 10)",mt_micro:"racha (últimos 3)",mt_sede:"en casa / fuera (últimos 5)",mt_scales:"Escalas que usa el motor: temporada completa (Elo)",mt_none:"ninguna más",mt_pts:"puntos",
  novalor:"VALOR desactivado: solo lo marcaremos cuando una regla haya demostrado ganar dinero con cuotas históricas reales.",
  lead_baloncesto:"Probabilidad de victoria en NBA, Euroliga, Eurocup, NCAA y WNBA con nuestro motor propio: fuerza de cada equipo (Elo), ventaja de jugar en casa, descanso y forma reciente, calculado con resultados reales. No hay empate: la prórroga cuenta.",
  lead_hockey:"Probabilidad de victoria en NHL y NCAA con nuestro motor propio: fuerza de cada equipo (Elo), ventaja de jugar en casa, descanso y forma reciente, calculado con resultados reales. No hay empate: prórroga y penaltis cuentan.",
@@ -203,7 +203,7 @@ en:{nodata:"No data",all:"All",dep_baloncesto:"Basketball",dep_hockey:"Hockey",d
  lead_americano:"Win probability in the NFL and NCAA from our own engine: team strength (Elo), home advantage, rest and recent form, built on real results.",
  h_mot:"Own engine: test on unseen games",n_mot:"The engine combines each team's strength (Elo), rest (days since its last game) and recent form (last 10 games). It is tuned on older seasons and measured on the most recent ones, predicting each game only with what was known beforehand.",
  mt_us:"Own engine",mt_elo:"Basic Elo",mt_home:"Always home",mt_on:"In use: beats basic Elo",mt_off:"Does not beat basic Elo in the test, so basic Elo is used",
- mt_set:"Chosen settings",mt_rest:"rest",mt_form:"form",mt_pts:"points",
+ mt_set:"Chosen settings",mt_rest:"rest",mt_form:"form (last 10)",mt_micro:"streak (last 3)",mt_sede:"home / away (last 5)",mt_scales:"Scales the engine uses: full season (Elo)",mt_none:"no others",mt_pts:"points",
  novalor:"VALUE switched off: we will only flag it once a rule has proven to make money with real historical odds.",
  lead_baloncesto:"Win probability in the NBA, EuroLeague, EuroCup, NCAA and WNBA from our own engine: team strength (Elo), home advantage, rest and recent form, built on real results. No draws: overtime counts.",
  lead_hockey:"Win probability in the NHL and NCAA from our own engine: team strength (Elo), home advantage, rest and recent form, built on real results. No draws: overtime and shootouts count.",
@@ -354,7 +354,12 @@ function pStatsLiga(id){
     var fl=function(n,x,me){ return x?'<tr'+(me?' class="me"':'')+'><td>'+n+'</td><td>'+x.n+'</td><td><b>'+pc(x.acierto,1)+'</b></td><td>'+(x.brier!=null?dec(x.brier,3):'-')+'</td></tr>':''; };
     o+='<h2>'+t("h_mot")+'</h2><div class="note">'+t("n_mot")+'</div><div class="tagm '+(MO.activo?'on':'off')+'">'+(MO.activo?'✓ '+t("mt_on"):t("mt_off"))+'</div>'
       +'<table><tr><th></th><th>'+t("th_n")+'</th><th>'+t("th_hit")+'</th><th>'+t("th_br")+'</th></tr>'+fl(t("mt_us"),MO.motor,true)+fl(t("mt_elo"),MO.elo_basico)+fl(t("mt_home"),MO.local)+'</table>';
-    if(MO.activo&&MO.params){ o+='<div class="leg">'+t("mt_set")+': '+t("mt_rest")+' '+MO.params.c_desc+' '+t("mt_pts")+' · '+t("mt_form")+' '+MO.params.c_forma+' '+t("mt_pts")+'</div>'; }
+    if(MO.activo&&MO.params){ var P=MO.params, ex=[];
+      if(P.c_desc) ex.push(t("mt_rest")+' '+P.c_desc+' '+t("mt_pts"));
+      if(P.c_forma) ex.push(t("mt_form")+' '+P.c_forma+' '+t("mt_pts"));
+      if(P.c_micro) ex.push(t("mt_micro")+' '+P.c_micro+' '+t("mt_pts"));
+      if(P.c_sede) ex.push(t("mt_sede")+' '+P.c_sede+' '+t("mt_pts"));
+      o+='<div class="leg">'+t("mt_scales")+(ex.length?' + '+ex.join(' + '):' · '+t("mt_none"))+'</div>'; }
   }
   o+='<h2>'+t("h_bt")+'</h2><div class="note">'+t("n_bt")+' · '+t("from")+': '+esc(b.desde.substr(6,2)+"/"+b.desde.substr(4,2)+"/"+b.desde.substr(0,4))+' · '+t("upto")+': '+esc(fdatel(b.datos_hasta))+'</div>';
   var hero=null, tr=b.tramos||[];
