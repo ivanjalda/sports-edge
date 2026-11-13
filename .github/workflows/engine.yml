@@ -70,10 +70,5 @@ jobs:
           for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 10; done
           exit 1
 
-      - name: Enviar a Telegram
-        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 7 * * *'
-        continue-on-error: true
-        env:
-          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python3 scripts/telegram.py
+      # Los mensajes de Telegram (pronosticos, resultados y balance) los manda el vigilante
+      # de resultados.yml, para no depender de que esta tarea empiece a su hora.

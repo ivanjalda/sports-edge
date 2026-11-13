@@ -1,13 +1,17 @@
 name: Resultados Telegram
 
+# Vigilante de Telegram: un turno dura unas 5 horas y media y, al terminar, lanza el siguiente.
+# Cada 10 minutos mira los partidos terminados; a las 9:30 (hora de Madrid) manda los pronosticos
+# del dia y a las 23:40 el balance. La tarea programada de cada hora es solo de reserva por si
+# la cadena se corta: si ya hay un turno en marcha, espera y no se duplica nada.
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/30 * * * *"
-    - cron: "40 22 * * *"
+    - cron: "17 * * * *"
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: resultados-telegram
@@ -16,23 +20,23 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
 
-      - name: Enviar resultados (y balance por la noche)
+      - name: Vigilar resultados y enviar a Telegram
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          MODO: ${{ github.event.schedule == '40 22 * * *' && 'balance' || 'resultados' }}
-        run: python3 -u scripts/telegram_directo.py
-
-      - name: Guardar lo enviado
+          MODO: bucle
+          DURACION: "330"
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/telegram_directo.json 2>/dev/null || true
-          git diff --cached --quiet && exit 0
-          git commit -m "Telegram: resultados enviados"
-          for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 10; done
-          exit 1
+          python3 -u scripts/telegram_directo.py
+
+      - name: Lanzar el siguiente turno
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run resultados.yml --ref "${{ github.ref_name }}" || true
