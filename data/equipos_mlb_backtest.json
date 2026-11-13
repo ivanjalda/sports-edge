@@ -1,0 +1,415 @@
+{
+ "actualizado": "2026-11-13 02:59 UTC",
+ "liga": "MLB",
+ "desde": "20250318",
+ "datos_hasta": "2026-10-29T00:00:00Z",
+ "total": {
+  "n": 4946,
+  "aciertos": 2773,
+  "acierto": 0.5607,
+  "ic": [
+   0.5468,
+   0.5744
+  ],
+  "brier": 0.2443
+ },
+ "base_local": {
+  "n": 4946,
+  "acierto": 0.5358
+ },
+ "base_balance": {
+  "n": 4672,
+  "acierto": 0.5394,
+  "nuestro": 0.5589
+ },
+ "tramos": [
+  {
+   "min": 0.6,
+   "n": 698,
+   "conf": 0.635,
+   "acierto": 0.6676,
+   "ic": [
+    0.6318,
+    0.7016
+   ]
+  },
+  {
+   "min": 0.7,
+   "n": 31,
+   "conf": 0.7118,
+   "acierto": 0.871,
+   "ic": [
+    0.7115,
+    0.9487
+   ]
+  },
+  {
+   "min": 0.8,
+   "n": 0,
+   "conf": null,
+   "acierto": null,
+   "ic": null
+  }
+ ],
+ "calibracion": [
+  {
+   "desde": 50,
+   "hasta": 60,
+   "n": 4248,
+   "prometido": 0.5409,
+   "real": 0.5431
+  },
+  {
+   "desde": 60,
+   "hasta": 70,
+   "n": 667,
+   "prometido": 0.6315,
+   "real": 0.6582
+  },
+  {
+   "desde": 70,
+   "hasta": 80,
+   "n": 31,
+   "prometido": 0.7118,
+   "real": 0.871
+  },
+  {
+   "desde": 80,
+   "hasta": 90,
+   "n": 0,
+   "prometido": null,
+   "real": null
+  },
+  {
+   "desde": 90,
+   "hasta": 100,
+   "n": 0,
+   "prometido": null,
+   "real": null
+  }
+ ],
+ "temporadas": {
+  "2025": {
+   "n": 2477,
+   "aciertos": 1397,
+   "acierto": 0.564,
+   "ic": [
+    0.5444,
+    0.5834
+   ],
+   "brier": 0.2434
+  },
+  "2026": {
+   "n": 2469,
+   "aciertos": 1376,
+   "acierto": 0.5573,
+   "ic": [
+    0.5376,
+    0.5768
+   ],
+   "brier": 0.2452
+  }
+ },
+ "fases": {
+  "regular": {
+   "n": 4859,
+   "aciertos": 2723,
+   "acierto": 0.5604,
+   "ic": [
+    0.5464,
+    0.5743
+   ],
+   "brier": 0.2443
+  },
+  "playoff": {
+   "n": 87,
+   "aciertos": 50,
+   "acierto": 0.5747,
+   "ic": [
+    0.4698,
+    0.6733
+   ],
+   "brier": 0.2419
+  }
+ },
+ "elige": {
+  "local": {
+   "n": 3133,
+   "aciertos": 1805,
+   "acierto": 0.5761,
+   "ic": [
+    0.5587,
+    0.5933
+   ],
+   "brier": 0.2429
+  },
+  "visitante": {
+   "n": 1813,
+   "aciertos": 968,
+   "acierto": 0.5339,
+   "ic": [
+    0.5109,
+    0.5568
+   ],
+   "brier": 0.2467
+  }
+ },
+ "ejemplos": [
+  {
+   "fecha": "2026-10-29T00:00:00Z",
+   "local": "Tampa Bay Rays",
+   "visitante": "Milwaukee Brewers",
+   "marcador": "1-4",
+   "fav": "Milwaukee Brewers",
+   "pp": 0.5466,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-28T00:00:00Z",
+   "local": "Tampa Bay Rays",
+   "visitante": "Milwaukee Brewers",
+   "marcador": "4-3",
+   "fav": "Milwaukee Brewers",
+   "pp": 0.5502,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-27T00:00:00Z",
+   "local": "Tampa Bay Rays",
+   "visitante": "Milwaukee Brewers",
+   "marcador": "1-10",
+   "fav": "Milwaukee Brewers",
+   "pp": 0.542,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-25T00:00:00Z",
+   "local": "Milwaukee Brewers",
+   "visitante": "Tampa Bay Rays",
+   "marcador": "5-4",
+   "fav": "Milwaukee Brewers",
+   "pp": 0.5802,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-24T00:00:00Z",
+   "local": "Milwaukee Brewers",
+   "visitante": "Tampa Bay Rays",
+   "marcador": "3-2",
+   "fav": "Milwaukee Brewers",
+   "pp": 0.5776,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-20T00:00:00Z",
+   "local": "Tampa Bay Rays",
+   "visitante": "Cleveland Guardians",
+   "marcador": "7-3",
+   "fav": "Tampa Bay Rays",
+   "pp": 0.5658,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-18T21:00:00Z",
+   "local": "Cleveland Guardians",
+   "visitante": "Tampa Bay Rays",
+   "marcador": "1-3",
+   "fav": "Tampa Bay Rays",
+   "pp": 0.5199,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-18T00:00:00Z",
+   "local": "Cleveland Guardians",
+   "visitante": "Tampa Bay Rays",
+   "marcador": "3-7",
+   "fav": "Tampa Bay Rays",
+   "pp": 0.5131,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-16T00:00:00Z",
+   "local": "Los Angeles Dodgers",
+   "visitante": "Milwaukee Brewers",
+   "marcador": "4-6",
+   "fav": "Milwaukee Brewers",
+   "pp": 0.5093,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-15T17:00:00Z",
+   "local": "Cleveland Guardians",
+   "visitante": "Tampa Bay Rays",
+   "marcador": "3-2",
+   "fav": "Tampa Bay Rays",
+   "pp": 0.5165,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-15T00:00:00Z",
+   "local": "Los Angeles Dodgers",
+   "visitante": "Milwaukee Brewers",
+   "marcador": "2-6",
+   "fav": "Milwaukee Brewers",
+   "pp": 0.5024,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-14T00:00:00Z",
+   "local": "Tampa Bay Rays",
+   "visitante": "Cleveland Guardians",
+   "marcador": "3-1",
+   "fav": "Tampa Bay Rays",
+   "pp": 0.5533,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-13T00:00:00Z",
+   "local": "Tampa Bay Rays",
+   "visitante": "Cleveland Guardians",
+   "marcador": "3-7",
+   "fav": "Tampa Bay Rays",
+   "pp": 0.5611,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-12T21:00:00Z",
+   "local": "Milwaukee Brewers",
+   "visitante": "Los Angeles Dodgers",
+   "marcador": "7-4",
+   "fav": "Milwaukee Brewers",
+   "pp": 0.5381,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-12T00:00:00Z",
+   "local": "Milwaukee Brewers",
+   "visitante": "Los Angeles Dodgers",
+   "marcador": "2-1",
+   "fav": "Milwaukee Brewers",
+   "pp": 0.5351,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-11T00:00:00Z",
+   "local": "Cleveland Guardians",
+   "visitante": "Chicago White Sox",
+   "marcador": "2-0",
+   "fav": "Cleveland Guardians",
+   "pp": 0.537,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-09T00:00:00Z",
+   "local": "Chicago White Sox",
+   "visitante": "Cleveland Guardians",
+   "marcador": "5-9",
+   "fav": "Chicago White Sox",
+   "pp": 0.5115,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-08T02:00:00Z",
+   "local": "San Diego Padres",
+   "visitante": "Milwaukee Brewers",
+   "marcador": "1-3",
+   "fav": "Milwaukee Brewers",
+   "pp": 0.53,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-08T00:00:00Z",
+   "local": "New York Yankees",
+   "visitante": "Tampa Bay Rays",
+   "marcador": "3-4",
+   "fav": "New York Yankees",
+   "pp": 0.5329,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-07T22:00:00Z",
+   "local": "Atlanta Braves",
+   "visitante": "Los Angeles Dodgers",
+   "marcador": "1-4",
+   "fav": "Los Angeles Dodgers",
+   "pp": 0.5332,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-07T20:00:00Z",
+   "local": "Chicago White Sox",
+   "visitante": "Cleveland Guardians",
+   "marcador": "3-9",
+   "fav": "Chicago White Sox",
+   "pp": 0.5199,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-07T01:30:00Z",
+   "local": "San Diego Padres",
+   "visitante": "Milwaukee Brewers",
+   "marcador": "4-3",
+   "fav": "Milwaukee Brewers",
+   "pp": 0.5335,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-06T22:00:00Z",
+   "local": "Atlanta Braves",
+   "visitante": "Los Angeles Dodgers",
+   "marcador": "1-3",
+   "fav": "Los Angeles Dodgers",
+   "pp": 0.5284,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-06T00:00:00Z",
+   "local": "Tampa Bay Rays",
+   "visitante": "New York Yankees",
+   "marcador": "5-2",
+   "fav": "Tampa Bay Rays",
+   "pp": 0.5023,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-05T21:00:00Z",
+   "local": "Cleveland Guardians",
+   "visitante": "Chicago White Sox",
+   "marcador": "3-4",
+   "fav": "Cleveland Guardians",
+   "pp": 0.5249,
+   "ok": false
+  }
+ ],
+ "motor": {
+  "activo": true,
+  "params": {
+   "kmul": 0.7,
+   "hmul": 0.6,
+   "c_desc": 0.0,
+   "c_forma": 0.0
+  },
+  "sd": 4.517,
+  "motor": {
+   "n": 4946,
+   "acierto": 0.5607,
+   "brier": 0.2443,
+   "logloss": 0.6815
+  },
+  "elo_basico": {
+   "n": 4946,
+   "acierto": 0.5596,
+   "brier": 0.2443,
+   "logloss": 0.6816
+  },
+  "local": {
+   "n": 4946,
+   "acierto": 0.5358
+  },
+  "temporadas_prueba": [
+   2025,
+   2026
+  ]
+ },
+ "valor_activo": false
+}

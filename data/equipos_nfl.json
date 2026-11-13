@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13 02:41 UTC",
+ "actualizado": "2026-11-13 02:59 UTC",
  "liga": "NFL",
  "datos_hasta": "2026-11-10T01:15:00Z",
  "dias_desde_datos": 3,
@@ -8,11 +8,688 @@
   "url": "https://www.espn.com"
  },
  "con_cuotas": true,
- "proximo": "2026-11-13T01:15:00Z",
- "predicciones": [],
+ "proximo": "2026-11-15T14:30:00Z",
+ "predicciones": [
+  {
+   "id": "401873053",
+   "fecha": "2026-11-15T14:30:00Z",
+   "local": "Detroit Lions",
+   "visitante": "New England Patriots",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.5467,
+   "pv": 0.4533,
+   "elo_l": 1604,
+   "elo_v": 1571,
+   "bal_l": [
+    6,
+    2
+   ],
+   "bal_v": [
+    5,
+    4
+   ],
+   "creada": "2026-11-13 02:59 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.72,
+      "casa": "Matchbook"
+     },
+     "V": {
+      "c": 2.36,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.5759,
+     "V": 0.4241
+    },
+    "casas": 21,
+    "ev": {
+     "L": -0.0597,
+     "V": 0.0698
+    },
+    "valor": [],
+    "actualizado": "2026-11-13 02:59 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 02:59 UTC",
+    "valor": [],
+    "L": 1.72,
+    "V": 2.36
+   }
+  },
+  {
+   "id": "401873058",
+   "fecha": "2026-11-15T18:00:00Z",
+   "local": "Atlanta Falcons",
+   "visitante": "Kansas City Chiefs",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.361,
+   "pv": 0.639,
+   "elo_l": 1440,
+   "elo_v": 1568,
+   "bal_l": [
+    3,
+    6
+   ],
+   "bal_v": [
+    6,
+    2
+   ],
+   "creada": "2026-11-13 02:59 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 2.64,
+      "casa": "Matchbook"
+     },
+     "V": {
+      "c": 1.6,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.3798,
+     "V": 0.6202
+    },
+    "casas": 21,
+    "ev": {
+     "L": -0.047,
+     "V": 0.0224
+    },
+    "valor": [],
+    "actualizado": "2026-11-13 02:59 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 02:59 UTC",
+    "valor": [],
+    "L": 2.64,
+    "V": 1.6
+   }
+  },
+  {
+   "id": "401873056",
+   "fecha": "2026-11-15T18:00:00Z",
+   "local": "Cleveland Browns",
+   "visitante": "Houston Texans",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4116,
+   "pv": 0.5884,
+   "elo_l": 1442,
+   "elo_v": 1533,
+   "bal_l": [
+    5,
+    4
+   ],
+   "bal_v": [
+    3,
+    5
+   ],
+   "creada": "2026-11-13 02:59 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 3.05,
+      "casa": "Matchbook"
+     },
+     "V": {
+      "c": 1.47,
+      "casa": "Marathon Bet"
+     }
+    },
+    "mercado": {
+     "L": 0.3325,
+     "V": 0.6675
+    },
+    "casas": 21,
+    "ev": {
+     "L": 0.2554,
+     "V": -0.1351
+    },
+    "valor": [],
+    "actualizado": "2026-11-13 02:59 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 02:59 UTC",
+    "valor": [],
+    "L": 3.05,
+    "V": 1.47
+   }
+  },
+  {
+   "id": "401873060",
+   "fecha": "2026-11-15T18:00:00Z",
+   "local": "Green Bay Packers",
+   "visitante": "Minnesota Vikings",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5383,
+   "pv": 0.4617,
+   "elo_l": 1601,
+   "elo_v": 1603,
+   "bal_l": [
+    6,
+    3
+   ],
+   "bal_v": [
+    6,
+    2
+   ],
+   "creada": "2026-11-13 02:59 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.68,
+      "casa": "Matchbook"
+     },
+     "V": {
+      "c": 2.44,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "L": 0.5828,
+     "V": 0.4172
+    },
+    "casas": 21,
+    "ev": {
+     "L": -0.0957,
+     "V": 0.1265
+    },
+    "valor": [],
+    "actualizado": "2026-11-13 02:59 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 02:59 UTC",
+    "valor": [],
+    "L": 1.68,
+    "V": 2.44
+   }
+  },
+  {
+   "id": "401873057",
+   "fecha": "2026-11-15T18:00:00Z",
+   "local": "Tennessee Titans",
+   "visitante": "Jacksonville Jaguars",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.1096,
+   "pv": 0.8904,
+   "elo_l": 1288,
+   "elo_v": 1681,
+   "bal_l": [
+    1,
+    7
+   ],
+   "bal_v": [
+    6,
+    2
+   ],
+   "creada": "2026-11-13 02:59 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 1.19,
+      "casa": "Matchbook"
+     },
+     "L": {
+      "c": 6.2,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.1803,
+     "V": 0.8197
+    },
+    "casas": 21,
+    "ev": {
+     "L": -0.3205,
+     "V": 0.0596
+    },
+    "valor": [],
+    "actualizado": "2026-11-13 02:59 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 02:59 UTC",
+    "valor": [],
+    "L": 6.2,
+    "V": 1.19
+   }
+  },
+  {
+   "id": "401873059",
+   "fecha": "2026-11-15T18:00:00Z",
+   "local": "Indianapolis Colts",
+   "visitante": "Miami Dolphins",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5703,
+   "pv": 0.4297,
+   "elo_l": 1357,
+   "elo_v": 1336,
+   "bal_l": [
+    2,
+    7
+   ],
+   "bal_v": [
+    1,
+    7
+   ],
+   "creada": "2026-11-13 02:59 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.51,
+      "casa": "Matchbook"
+     },
+     "V": {
+      "c": 2.88,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.6467,
+     "V": 0.3533
+    },
+    "casas": 21,
+    "ev": {
+     "L": -0.1388,
+     "V": 0.2375
+    },
+    "valor": [],
+    "actualizado": "2026-11-13 02:59 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 02:59 UTC",
+    "valor": [],
+    "L": 1.51,
+    "V": 2.88
+   }
+  },
+  {
+   "id": "401873055",
+   "fecha": "2026-11-15T18:00:00Z",
+   "local": "New Orleans Saints",
+   "visitante": "Carolina Panthers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.549,
+   "pv": 0.451,
+   "elo_l": 1419,
+   "elo_v": 1414,
+   "bal_l": [
+    3,
+    5
+   ],
+   "bal_v": [
+    3,
+    5
+   ],
+   "creada": "2026-11-13 02:59 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 2.22,
+      "casa": "Betfair"
+     },
+     "L": {
+      "c": 1.79,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "L": 0.5527,
+     "V": 0.4473
+    },
+    "casas": 20,
+    "ev": {
+     "L": -0.0173,
+     "V": 0.0012
+    },
+    "valor": [],
+    "actualizado": "2026-11-13 02:59 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 02:59 UTC",
+    "valor": [],
+    "L": 1.79,
+    "V": 2.22
+   }
+  },
+  {
+   "id": "401873054",
+   "fecha": "2026-11-15T18:00:00Z",
+   "local": "New York Jets",
+   "visitante": "Buffalo Bills",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.0939,
+   "pv": 0.9061,
+   "elo_l": 1309,
+   "elo_v": 1732,
+   "bal_l": [
+    2,
+    7
+   ],
+   "bal_v": [
+    7,
+    1
+   ],
+   "creada": "2026-11-13 02:59 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 1.26,
+      "casa": "Matchbook"
+     },
+     "L": {
+      "c": 4.75,
+      "casa": "BetAnything"
+     }
+    },
+    "mercado": {
+     "L": 0.2217,
+     "V": 0.7783
+    },
+    "casas": 21,
+    "ev": {
+     "L": -0.554,
+     "V": 0.1417
+    },
+    "valor": [],
+    "actualizado": "2026-11-13 02:59 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 02:59 UTC",
+    "valor": [],
+    "L": 4.75,
+    "V": 1.26
+   }
+  },
+  {
+   "id": "401873062",
+   "fecha": "2026-11-15T21:05:00Z",
+   "local": "Las Vegas Raiders",
+   "visitante": "Seattle Seahawks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.2198,
+   "pv": 0.7802,
+   "elo_l": 1405,
+   "elo_v": 1654,
+   "bal_l": [
+    4,
+    5
+   ],
+   "bal_v": [
+    5,
+    4
+   ],
+   "creada": "2026-11-13 02:59 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 3.68,
+      "casa": "Marathon Bet"
+     },
+     "V": {
+      "c": 1.37,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.2845,
+     "V": 0.7155
+    },
+    "casas": 21,
+    "ev": {
+     "L": -0.1911,
+     "V": 0.0689
+    },
+    "valor": [],
+    "actualizado": "2026-11-13 02:59 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 02:59 UTC",
+    "valor": [],
+    "L": 3.68,
+    "V": 1.37
+   }
+  },
+  {
+   "id": "401873061",
+   "fecha": "2026-11-15T21:05:00Z",
+   "local": "Arizona Cardinals",
+   "visitante": "Los Angeles Rams",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.2381,
+   "pv": 0.7619,
+   "elo_l": 1379,
+   "elo_v": 1610,
+   "bal_l": [
+    3,
+    6
+   ],
+   "bal_v": [
+    5,
+    4
+   ],
+   "creada": "2026-11-13 02:59 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 5.1,
+      "casa": "Matchbook"
+     },
+     "V": {
+      "c": 1.23,
+      "casa": "Pinnacle"
+     }
+    },
+    "mercado": {
+     "L": 0.2045,
+     "V": 0.7955
+    },
+    "casas": 21,
+    "ev": {
+     "L": 0.2143,
+     "V": -0.0629
+    },
+    "valor": [],
+    "actualizado": "2026-11-13 02:59 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 02:59 UTC",
+    "valor": [],
+    "L": 5.1,
+    "V": 1.23
+   }
+  },
+  {
+   "id": "401873063",
+   "fecha": "2026-11-15T21:25:00Z",
+   "local": "Dallas Cowboys",
+   "visitante": "San Francisco 49ers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.2584,
+   "pv": 0.7416,
+   "elo_l": 1451,
+   "elo_v": 1663,
+   "bal_l": [
+    4,
+    5
+   ],
+   "bal_v": [
+    7,
+    1
+   ],
+   "creada": "2026-11-13 02:59 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 2.92,
+      "casa": "Matchbook"
+     },
+     "V": {
+      "c": 1.51,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.3489,
+     "V": 0.6511
+    },
+    "casas": 21,
+    "ev": {
+     "L": -0.2455,
+     "V": 0.1198
+    },
+    "valor": [],
+    "actualizado": "2026-11-13 02:59 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 02:59 UTC",
+    "valor": [],
+    "L": 2.92,
+    "V": 1.51
+   }
+  },
+  {
+   "id": "401873064",
+   "fecha": "2026-11-16T01:20:00Z",
+   "local": "Cincinnati Bengals",
+   "visitante": "Pittsburgh Steelers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5633,
+   "pv": 0.4367,
+   "elo_l": 1617,
+   "elo_v": 1602,
+   "bal_l": [
+    6,
+    2
+   ],
+   "bal_v": [
+    6,
+    2
+   ],
+   "creada": "2026-11-13 02:59 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.58,
+      "casa": "Matchbook"
+     },
+     "V": {
+      "c": 2.68,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.6261,
+     "V": 0.3739
+    },
+    "casas": 21,
+    "ev": {
+     "L": -0.11,
+     "V": 0.1704
+    },
+    "valor": [],
+    "actualizado": "2026-11-13 02:59 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 02:59 UTC",
+    "valor": [],
+    "L": 1.58,
+    "V": 2.68
+   }
+  },
+  {
+   "id": "401873065",
+   "fecha": "2026-11-17T01:15:00Z",
+   "local": "Baltimore Ravens",
+   "visitante": "Los Angeles Chargers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7095,
+   "pv": 0.2905,
+   "elo_l": 1457,
+   "elo_v": 1331,
+   "bal_l": [
+    4,
+    5
+   ],
+   "bal_v": [
+    0,
+    8
+   ],
+   "creada": "2026-11-13 02:59 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.5,
+      "casa": "Unibet (SE)"
+     },
+     "V": {
+      "c": 2.9,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "L": 0.6546,
+     "V": 0.3454
+    },
+    "casas": 21,
+    "ev": {
+     "L": 0.0642,
+     "V": -0.1576
+    },
+    "valor": [],
+    "actualizado": "2026-11-13 02:59 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 02:59 UTC",
+    "valor": [],
+    "L": 1.5,
+    "V": 2.9
+   }
+  }
+ ],
  "recientes": [],
  "directo": {
-  "total": 0,
+  "total": 13,
   "resueltas": 0,
   "aciertos": 0,
   "acierto": null,

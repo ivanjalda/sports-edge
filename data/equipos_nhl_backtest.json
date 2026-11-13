@@ -1,26 +1,26 @@
 {
- "actualizado": "2026-11-13 02:41 UTC",
+ "actualizado": "2026-11-13 02:59 UTC",
  "liga": "NHL",
  "desde": "20251007",
  "datos_hasta": "2026-11-13T00:00:00Z",
  "total": {
-  "n": 1689,
-  "aciertos": 931,
-  "acierto": 0.5512,
+  "n": 1690,
+  "aciertos": 932,
+  "acierto": 0.5515,
   "ic": [
-   0.5274,
-   0.5748
+   0.5277,
+   0.575
   ],
   "brier": 0.2462
  },
  "base_local": {
-  "n": 1689,
-  "acierto": 0.5252
+  "n": 1690,
+  "acierto": 0.5254
  },
  "base_balance": {
-  "n": 1460,
-  "acierto": 0.5541,
-  "nuestro": 0.5493
+  "n": 1461,
+  "acierto": 0.5544,
+  "nuestro": 0.5496
  },
  "tramos": [
   {
@@ -58,9 +58,9 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 1038,
+   "n": 1039,
    "prometido": 0.5492,
-   "real": 0.5145
+   "real": 0.5149
   },
   {
    "desde": 60,
@@ -103,24 +103,24 @@
    "brier": 0.2492
   },
   "2027": {
-   "n": 295,
-   "aciertos": 183,
-   "acierto": 0.6203,
+   "n": 296,
+   "aciertos": 184,
+   "acierto": 0.6216,
    "ic": [
-    0.5637,
-    0.6738
+    0.5651,
+    0.675
    ],
    "brier": 0.2318
   }
  },
  "fases": {
   "regular": {
-   "n": 1607,
-   "aciertos": 888,
-   "acierto": 0.5526,
+   "n": 1608,
+   "aciertos": 889,
+   "acierto": 0.5529,
    "ic": [
-    0.5282,
-    0.5767
+    0.5285,
+    0.577
    ],
    "brier": 0.2461
   },
@@ -137,12 +137,12 @@
  },
  "elige": {
   "local": {
-   "n": 1409,
-   "aciertos": 769,
-   "acierto": 0.5458,
+   "n": 1410,
+   "aciertos": 770,
+   "acierto": 0.5461,
    "ic": [
-    0.5197,
-    0.5716
+    0.52,
+    0.5719
    ],
    "brier": 0.2472
   },
@@ -158,6 +158,15 @@
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-13T00:00:00Z",
+   "local": "Ottawa Senators",
+   "visitante": "Colorado Avalanche",
+   "marcador": "4-3",
+   "fav": "Ottawa Senators",
+   "pp": 0.5122,
+   "ok": true
+  },
   {
    "fecha": "2026-11-13T00:00:00Z",
    "local": "Columbus Blue Jackets",
@@ -373,15 +382,6 @@
    "fav": "Toronto Maple Leafs",
    "pp": 0.52,
    "ok": false
-  },
-  {
-   "fecha": "2026-11-08T23:00:00Z",
-   "local": "Winnipeg Jets",
-   "visitante": "Tampa Bay Lightning",
-   "marcador": "4-3",
-   "fav": "Winnipeg Jets",
-   "pp": 0.5139,
-   "ok": true
   }
  ],
  "motor": {
@@ -394,20 +394,20 @@
   },
   "sd": 2.608,
   "motor": {
-   "n": 1689,
-   "acierto": 0.5512,
+   "n": 1690,
+   "acierto": 0.5515,
    "brier": 0.2462,
    "logloss": 0.6854
   },
   "elo_basico": {
-   "n": 1689,
-   "acierto": 0.5518,
+   "n": 1690,
+   "acierto": 0.5521,
    "brier": 0.2465,
    "logloss": 0.6861
   },
   "local": {
-   "n": 1689,
-   "acierto": 0.5252
+   "n": 1690,
+   "acierto": 0.5254
   },
   "temporadas_prueba": [
    2026,

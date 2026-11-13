@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13 02:41 UTC",
+ "actualizado": "2026-11-13 02:59 UTC",
  "liga": "NHL",
  "datos_hasta": "2026-11-13T00:00:00Z",
  "dias_desde_datos": 0,
@@ -8,62 +8,8 @@
   "url": "https://www.espn.com"
  },
  "con_cuotas": true,
- "proximo": "2026-11-13T00:00:00Z",
+ "proximo": "2026-11-13T03:00:00Z",
  "predicciones": [
-  {
-   "id": "401892698",
-   "fecha": "2026-11-13T00:00:00Z",
-   "local": "Ottawa Senators",
-   "visitante": "Colorado Avalanche",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5122,
-   "pv": 0.4878,
-   "elo_l": 1526,
-   "elo_v": 1567,
-   "bal_l": [
-    11,
-    8
-   ],
-   "bal_v": [
-    10,
-    8
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 2.56,
-      "casa": "1xBet"
-     },
-     "L": {
-      "c": 2.5,
-      "casa": "Unibet (SE)"
-     }
-    },
-    "mercado": {
-     "L": 0.5049,
-     "V": 0.4951
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.2805,
-     "V": 0.2488
-    },
-    "valor": [],
-    "actualizado": "2026-11-12 20:52 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-12 15:49 UTC",
-    "valor": [
-     "L"
-    ],
-    "L": 2.7,
-    "V": 2.44
-   }
-  },
   {
    "id": "401892699",
    "fecha": "2026-11-13T00:30:00Z",
@@ -309,21 +255,21 @@
       "casa": "Unibet (SE)"
      },
      "V": {
-      "c": 2.71,
-      "casa": "1xBet"
+      "c": 2.7,
+      "casa": "Marathon Bet"
      }
     },
     "mercado": {
-     "L": 0.5305,
-     "V": 0.4695
+     "L": 0.5316,
+     "V": 0.4684
     },
     "casas": 23,
     "ev": {
      "L": 0.3212,
-     "V": 0.1864
+     "V": 0.1821
     },
     "valor": [],
-    "actualizado": "2026-11-13 02:41 UTC"
+    "actualizado": "2026-11-13 02:59 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-12 15:49 UTC",
@@ -368,8 +314,8 @@
      }
     },
     "mercado": {
-     "L": 0.3284,
-     "V": 0.6716
+     "L": 0.3281,
+     "V": 0.6719
     },
     "casas": 21,
     "ev": {
@@ -377,7 +323,7 @@
      "V": 0.0384
     },
     "valor": [],
-    "actualizado": "2026-11-13 02:41 UTC"
+    "actualizado": "2026-11-13 02:59 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-12 20:09 UTC",
@@ -429,7 +375,7 @@
      "V": 0.311
     },
     "valor": [],
-    "actualizado": "2026-11-13 02:41 UTC"
+    "actualizado": "2026-11-13 02:59 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-12 20:09 UTC",
@@ -822,6 +768,60 @@
     ],
     "L": 3.27,
     "V": 2.02
+   }
+  },
+  {
+   "id": "401892698",
+   "fecha": "2026-11-13T00:00:00Z",
+   "local": "Ottawa Senators",
+   "visitante": "Colorado Avalanche",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5122,
+   "pv": 0.4878,
+   "elo_l": 1526,
+   "elo_v": 1567,
+   "bal_l": [
+    11,
+    8
+   ],
+   "bal_v": [
+    10,
+    8
+   ],
+   "creada": "2026-11-11 04:17 UTC",
+   "resultado": "L",
+   "marcador": "4-3",
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 2.56,
+      "casa": "1xBet"
+     },
+     "L": {
+      "c": 2.5,
+      "casa": "Unibet (SE)"
+     }
+    },
+    "mercado": {
+     "L": 0.5049,
+     "V": 0.4951
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.2805,
+     "V": 0.2488
+    },
+    "valor": [],
+    "actualizado": "2026-11-12 20:52 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-12 15:49 UTC",
+    "valor": [
+     "L"
+    ],
+    "L": 2.7,
+    "V": 2.44
    }
   },
   {
@@ -1327,17 +1327,17 @@
  ],
  "directo": {
   "total": 31,
-  "resueltas": 11,
-  "aciertos": 6,
-  "acierto": 0.5455,
+  "resueltas": 12,
+  "aciertos": 7,
+  "acierto": 0.5833,
   "ic": [
-   0.2801,
-   0.7873
+   0.3195,
+   0.8067
   ],
-  "brier": 0.2257,
-  "apuestas": 11,
-  "ganadas": 2,
-  "roi": -0.57
+  "brier": 0.2267,
+  "apuestas": 12,
+  "ganadas": 3,
+  "roi": -0.3808
  },
  "ranking": [
   {
@@ -1347,16 +1347,16 @@
    "p": 4
   },
   {
-   "equipo": "Colorado Avalanche",
-   "elo": 1567,
-   "g": 10,
-   "p": 8
-  },
-  {
    "equipo": "Tampa Bay Lightning",
    "elo": 1567,
    "g": 13,
    "p": 6
+  },
+  {
+   "equipo": "Colorado Avalanche",
+   "elo": 1565,
+   "g": 10,
+   "p": 9
   },
   {
    "equipo": "Minnesota Wild",
@@ -1396,8 +1396,8 @@
   },
   {
    "equipo": "Ottawa Senators",
-   "elo": 1526,
-   "g": 11,
+   "elo": 1528,
+   "g": 12,
    "p": 8
   },
   {

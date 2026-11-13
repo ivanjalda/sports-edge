@@ -1,14 +1,14 @@
 {
- "actualizado": "2026-11-13 02:41 UTC",
+ "actualizado": "2026-11-13 02:59 UTC",
  "liga": "NCAA",
- "datos_hasta": "2026-11-13T00:00:00Z",
+ "datos_hasta": "2026-11-13T01:00:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
- "proximo": "2026-11-13T01:00:00Z",
+ "proximo": "2026-11-13T03:00:00Z",
  "predicciones": [
   {
    "id": "401919041",
@@ -24,75 +24,6 @@
    "bal_l": [
     3,
     0
-   ],
-   "bal_v": [
-    2,
-    0
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401917524",
-   "fecha": "2026-11-13T01:00:00Z",
-   "local": "South Alabama Jaguars",
-   "visitante": "Loyola Marymount Lions",
-   "neutral": true,
-   "playoff": false,
-   "pl": 0.5401,
-   "pv": 0.4599,
-   "elo_l": 1518,
-   "elo_v": 1491,
-   "bal_l": [
-    1,
-    2
-   ],
-   "bal_v": [
-    1,
-    2
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401916306",
-   "fecha": "2026-11-13T01:00:00Z",
-   "local": "Minnesota Golden Gophers",
-   "visitante": "Southern Jaguars",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7332,
-   "pv": 0.2668,
-   "elo_l": 1548,
-   "elo_v": 1473,
-   "bal_l": [
-    3,
-    0
-   ],
-   "bal_v": [
-    0,
-    4
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401911239",
-   "fecha": "2026-11-13T01:00:00Z",
-   "local": "Southern Illinois Salukis",
-   "visitante": "Richmond Spiders",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6519,
-   "pv": 0.3481,
-   "elo_l": 1518,
-   "elo_v": 1509,
-   "bal_l": [
-    0,
-    1
    ],
    "bal_v": [
     2,
@@ -2865,6 +2796,75 @@
  ],
  "recientes": [
   {
+   "id": "401917524",
+   "fecha": "2026-11-13T01:00:00Z",
+   "local": "South Alabama Jaguars",
+   "visitante": "Loyola Marymount Lions",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.5401,
+   "pv": 0.4599,
+   "elo_l": 1518,
+   "elo_v": 1491,
+   "bal_l": [
+    1,
+    2
+   ],
+   "bal_v": [
+    1,
+    2
+   ],
+   "creada": "2026-11-11 04:17 UTC",
+   "resultado": "L",
+   "marcador": "79-72"
+  },
+  {
+   "id": "401916306",
+   "fecha": "2026-11-13T01:00:00Z",
+   "local": "Minnesota Golden Gophers",
+   "visitante": "Southern Jaguars",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7332,
+   "pv": 0.2668,
+   "elo_l": 1548,
+   "elo_v": 1473,
+   "bal_l": [
+    3,
+    0
+   ],
+   "bal_v": [
+    0,
+    4
+   ],
+   "creada": "2026-11-11 04:17 UTC",
+   "resultado": "L",
+   "marcador": "91-61"
+  },
+  {
+   "id": "401911239",
+   "fecha": "2026-11-13T01:00:00Z",
+   "local": "Southern Illinois Salukis",
+   "visitante": "Richmond Spiders",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6519,
+   "pv": 0.3481,
+   "elo_l": 1518,
+   "elo_v": 1509,
+   "bal_l": [
+    0,
+    1
+   ],
+   "bal_v": [
+    2,
+    0
+   ],
+   "creada": "2026-11-11 04:17 UTC",
+   "resultado": "L",
+   "marcador": "80-70"
+  },
+  {
    "id": "401929447",
    "fecha": "2026-11-13T00:00:00Z",
    "local": "Coastal Carolina Chanticleers",
@@ -3254,87 +3254,18 @@
    "creada": "2026-11-11 04:17 UTC",
    "resultado": "L",
    "marcador": "76-68"
-  },
-  {
-   "id": "401918054",
-   "fecha": "2026-11-12T04:00:00Z",
-   "local": "California Golden Bears",
-   "visitante": "USC Trojans",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6285,
-   "pv": 0.3715,
-   "elo_l": 1537,
-   "elo_v": 1545,
-   "bal_l": [
-    1,
-    1
-   ],
-   "bal_v": [
-    2,
-    0
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": "V",
-   "marcador": "65-77"
-  },
-  {
-   "id": "401929625",
-   "fecha": "2026-11-12T03:00:00Z",
-   "local": "UC Irvine Anteaters",
-   "visitante": "Lincoln (CA) Oaklanders",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8771,
-   "pv": 0.1229,
-   "elo_l": 1618,
-   "elo_v": 1376,
-   "bal_l": [
-    1,
-    0
-   ],
-   "bal_v": [
-    0,
-    2
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": "L",
-   "marcador": "90-40"
-  },
-  {
-   "id": "401925738",
-   "fecha": "2026-11-12T03:00:00Z",
-   "local": "Oregon Ducks",
-   "visitante": "Mississippi Valley State Delta Devils",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.9187,
-   "pv": 0.0813,
-   "elo_l": 1539,
-   "elo_v": 1218,
-   "bal_l": [
-    2,
-    0
-   ],
-   "bal_v": [
-    0,
-    2
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": "L",
-   "marcador": "100-66"
   }
  ],
  "directo": {
   "total": 191,
-  "resueltas": 67,
-  "aciertos": 48,
-  "acierto": 0.7164,
+  "resueltas": 70,
+  "aciertos": 51,
+  "acierto": 0.7286,
   "ic": [
-   0.5991,
-   0.8103
+   0.6146,
+   0.8188
   ],
-  "brier": 0.1739,
+  "brier": 0.1722,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -3911,6 +3842,12 @@
    "p": 0
   },
   {
+   "equipo": "Minnesota Golden Gophers",
+   "elo": 1583,
+   "g": 4,
+   "p": 0
+  },
+  {
    "equipo": "USC Trojans",
    "elo": 1582,
    "g": 3,
@@ -3945,12 +3882,6 @@
    "elo": 1571,
    "g": 2,
    "p": 2
-  },
-  {
-   "equipo": "Minnesota Golden Gophers",
-   "elo": 1571,
-   "g": 3,
-   "p": 0
   },
   {
    "equipo": "LSU Tigers",
@@ -4283,6 +4214,12 @@
    "p": 1
   },
   {
+   "equipo": "Southern Illinois Salukis",
+   "elo": 1531,
+   "g": 1,
+   "p": 1
+  },
+  {
    "equipo": "Southeast Missouri State Redhawks",
    "elo": 1531,
    "g": 1,
@@ -4373,12 +4310,6 @@
    "p": 1
   },
   {
-   "equipo": "Southern Illinois Salukis",
-   "elo": 1522,
-   "g": 0,
-   "p": 1
-  },
-  {
    "equipo": "Maryland Terrapins",
    "elo": 1518,
    "g": 1,
@@ -4403,15 +4334,15 @@
    "p": 1
   },
   {
+   "equipo": "South Alabama Jaguars",
+   "elo": 1517,
+   "g": 2,
+   "p": 2
+  },
+  {
    "equipo": "Bowling Green Falcons",
    "elo": 1516,
    "g": 3,
-   "p": 0
-  },
-  {
-   "equipo": "Richmond Spiders",
-   "elo": 1516,
-   "g": 2,
    "p": 0
   },
   {
@@ -4439,10 +4370,10 @@
    "p": 1
   },
   {
-   "equipo": "South Alabama Jaguars",
+   "equipo": "Richmond Spiders",
    "elo": 1506,
-   "g": 1,
-   "p": 2
+   "g": 2,
+   "p": 1
   },
   {
    "equipo": "Mercer Bears",
@@ -4577,12 +4508,6 @@
    "p": 2
   },
   {
-   "equipo": "Loyola Marymount Lions",
-   "elo": 1486,
-   "g": 1,
-   "p": 2
-  },
-  {
    "equipo": "Youngstown State Penguins",
    "elo": 1485,
    "g": 1,
@@ -4676,6 +4601,12 @@
    "equipo": "Campbell Fighting Camels",
    "elo": 1476,
    "g": 0,
+   "p": 3
+  },
+  {
+   "equipo": "Loyola Marymount Lions",
+   "elo": 1475,
+   "g": 1,
    "p": 3
   },
   {
@@ -4799,12 +4730,6 @@
    "p": 1
   },
   {
-   "equipo": "Southern Jaguars",
-   "elo": 1458,
-   "g": 0,
-   "p": 4
-  },
-  {
    "equipo": "Oakland Golden Grizzlies",
    "elo": 1457,
    "g": 0,
@@ -4881,6 +4806,12 @@
    "elo": 1446,
    "g": 0,
    "p": 2
+  },
+  {
+   "equipo": "Southern Jaguars",
+   "elo": 1446,
+   "g": 0,
+   "p": 5
   },
   {
    "equipo": "Rice Owls",
