@@ -3,6 +3,7 @@
 Elo general + Elo por superficie con resultados reales (TennisMyLife; respaldo: archivo de Jeff Sackmann).
 Partidos proximos y cuotas: The Odds API."""
 import csv
+from collections import deque
 import io
 import json
 import math
@@ -32,6 +33,12 @@ MIN_CREDITOS = 25     # si quedan menos creditos, no se consulta
 UMBRAL_VALOR = 0.05
 PROB_MIN = 0.10
 VENTANA_DIAS = 16
+# ---- Motor propio (se ajusta con ENTRENAMIENTO 2022-2024 y se mide con PRUEBA desde enero del anio pasado)
+ENTRENA_DESDE = 20220101
+PESOS_SUP = [0.3, 0.5, 0.7]
+C_CANSANCIO = [0.0, -1.0, -2.0, -4.0]    # puntos Elo por cada juego de mas disputado en el torneo
+C_FORMA = [0.0, 50.0, 100.0, 200.0]      # puntos Elo por unidad de forma (rinde por encima de lo esperado)
+BASE_MOTOR = {"w_sup": PESO_SUP, "c_cans": 0.0, "c_forma": 0.0}
 SUPERFICIES = ("Hard", "Clay", "Grass")
 ORDEN = {"R128": 1, "R64": 2, "R32": 3, "R16": 4, "QF": 5, "SF": 6, "F": 7, "RR": 3, "BR": 7}
 
@@ -94,6 +101,14 @@ def descargar(tour, anio):
     return None
 
 
+def juegos(sc):
+    """Juegos disputados en un partido a partir del marcador ('6-3 7-6(4)' -> 22)."""
+    t = 0
+    for a, b in re.findall(r"(\d+)-(\d+)", re.sub(r"\(\d+\)", "", sc or "")):
+        t += int(a) + int(b)
+    return t
+
+
 def rank(x):
     try:
         v = int(float(x))
@@ -124,7 +139,7 @@ def parsear(texto, tour):
             mn = 0
         out.append({"d": fecha, "o": (ORDEN.get((f.get("round") or "").strip(), 3), mn), "tour": tour,
                     "sup": (f.get("surface") or "").strip() or None,
-                    "torneo": (f.get("tourney_name") or "").strip(),
+                    "torneo": (f.get("tourney_name") or "").strip(), "jg": juegos(sc),
                     "w": tour + ":" + wid, "l": tour + ":" + lid, "wn": wn, "ln": ln, "sc": sc,
                     "wr": rank(f.get("winner_rank")), "lr": rank(f.get("loser_rank"))})
     return out
@@ -136,6 +151,48 @@ class Elo(object):
         self.g = {}
         self.s = {}
         self.nombres = {}
+        self.forma = {}          # jugador -> ultimos 10 (resultado - esperado)
+        self.torneo = {}         # jugador -> (clave de torneo, fecha de inicio, juegos disputados)
+        self.params = dict(BASE_MOTOR)
+
+    def rasgos(self, a, b, sup, clave_torneo=None, fecha=None):
+        """Lo que sabe el motor ANTES del partido a contra b."""
+        dg = self.rg(a) - self.rg(b)
+        ds = None
+        if sup:
+            sa, sb = self.s.get((a, sup)), self.s.get((b, sup))
+            if sa and sb and sa[1] >= MIN_SUP and sb[1] >= MIN_SUP:
+                ds = sa[0] - sb[0]
+
+        def cans(i):
+            t = self.torneo.get(i)
+            if not t:
+                return 0
+            if clave_torneo is not None:
+                return t[2] if t[0] == clave_torneo else 0
+            # en directo: torneo mas reciente si empezo hace menos de 16 dias
+            if fecha is None:
+                return 0
+            try:
+                dd = (datetime.strptime(str(fecha), "%Y%m%d") - datetime.strptime(str(t[1]), "%Y%m%d")).days
+            except Exception:
+                return 0
+            return t[2] if 0 <= dd <= 16 else 0
+
+        def fm(i):
+            q = self.forma.get(i)
+            return (sum(q) / len(q)) if q else 0.0
+        return (dg, ds, cans(a) - cans(b), fm(a) - fm(b))
+
+    @staticmethod
+    def p_rasgos(x, pr):
+        dg, ds, dc, dfo = x
+        d = dg if ds is None else pr["w_sup"] * ds + (1 - pr["w_sup"]) * dg
+        d += pr["c_cans"] * dc + pr["c_forma"] * dfo
+        return 1.0 / (1.0 + 10 ** (-d / 400.0))
+
+    def prob_motor(self, a, b, sup, fecha):
+        return self.p_rasgos(self.rasgos(a, b, sup, None, fecha), self.params)
 
     def n(self, i):
         return self.g.get(i, [1500.0, 0])[1]
@@ -169,7 +226,15 @@ class Elo(object):
         rw[1] += 1
         rl[1] += 1
 
-    def actualizar(self, w, l, sup, wn, ln, fecha):
+    def actualizar(self, w, l, sup, wn, ln, fecha, clave_torneo=None, jg=0):
+        esperado = 1.0 / (1.0 + 10 ** ((self.rg(l) - self.rg(w)) / 400.0))
+        self.forma.setdefault(w, deque(maxlen=10)).append(1.0 - esperado)
+        self.forma.setdefault(l, deque(maxlen=10)).append(esperado - 1.0)
+        if clave_torneo is not None:
+            for i in (w, l):
+                t = self.torneo.get(i)
+                antes = t[2] if t and t[0] == clave_torneo else 0
+                self.torneo[i] = (clave_torneo, fecha, antes + jg)
         self._mover(self.g, w, l, w, l)
         if sup:
             self._mover(self.s, (w, sup), (l, sup), w, l)
@@ -178,13 +243,59 @@ class Elo(object):
 
 
 def correr(rows, elo, eval_desde):
-    ev = []
+    """Recorre todos los partidos. Guarda los rasgos de cada partido (desde ENTRENA_DESDE) ANTES de jugarse."""
+    feats = []
     for r in sorted(rows, key=lambda x: (x["d"], x["o"])):
         sup = r["sup"] if r["sup"] in SUPERFICIES else None
-        if r["d"] >= eval_desde and elo.n(r["w"]) >= MIN_N and elo.n(r["l"]) >= MIN_N:
-            ev.append((r, sup, elo.prob(r["w"], r["l"], sup)))
-        elo.actualizar(r["w"], r["l"], sup, r["wn"], r["ln"], r["d"])
-    return ev
+        clave = (r["tour"], r["torneo"], r["d"])
+        if r["d"] >= ENTRENA_DESDE and elo.n(r["w"]) >= MIN_N and elo.n(r["l"]) >= MIN_N:
+            feats.append((r, sup, elo.rasgos(r["w"], r["l"], sup, clave)))
+        elo.actualizar(r["w"], r["l"], sup, r["wn"], r["ln"], r["d"], clave, r.get("jg", 0))
+    return feats
+
+
+def ajustar_motor(feats, eval_desde):
+    """Elige los ajustes con ENTRENAMIENTO (antes de eval_desde) y mide con PRUEBA (desde eval_desde).
+    Cada fila es desde el punto de vista del ganador, asi que la probabilidad correcta es p(ganador)."""
+    def ll(p):
+        return -math.log(min(max(p, 1e-6), 1 - 1e-6))
+    mejor = None
+    for w in PESOS_SUP:
+        for cc in C_CANSANCIO:
+            for cf in C_FORMA:
+                pr = {"w_sup": w, "c_cans": cc, "c_forma": cf}
+                s = n = 0
+                for r, sup, x in feats:
+                    if r["d"] >= eval_desde:
+                        continue
+                    s += ll(Elo.p_rasgos(x, pr))
+                    n += 1
+                if n and (mejor is None or s / n < mejor[1]):
+                    mejor = (pr, s / n)
+    if mejor is None:
+        return dict(BASE_MOTOR), {"activo": False}
+
+    def medir(pr):
+        ps = [Elo.p_rasgos(x, pr) for r, sup, x in feats if r["d"] >= eval_desde]
+        n = len(ps)
+        if not n:
+            return None
+        return {"n": n, "acierto": round(sum(1 for p in ps if p > 0.5) / float(n), 4),
+                "brier": round(sum((1 - p) ** 2 for p in ps) / n, 4), "logloss": round(sum(ll(p) for p in ps) / n, 4)}
+    mm, mb = medir(mejor[0]), medir(BASE_MOTOR)
+    activo = bool(mm and mb and mm["logloss"] < mb["logloss"])
+    print("Motor propio tenis: PRUEBA %d partidos no vistos | motor %.1f%% (logloss %.4f) | Elo anterior %.1f%% (logloss %.4f) -> %s" %
+          (mm["n"] if mm else 0, 100 * (mm or {}).get("acierto", 0), (mm or {}).get("logloss", 0),
+           100 * (mb or {}).get("acierto", 0), (mb or {}).get("logloss", 0),
+           ("SE USA el motor (superficie %.1f, cansancio %.1f, forma %.0f)" %
+            (mejor[0]["w_sup"], mejor[0]["c_cans"], mejor[0]["c_forma"])) if activo else "se usa el Elo anterior"))
+    pr = mejor[0] if activo else dict(BASE_MOTOR)
+    return pr, {"activo": activo, "params": mejor[0], "motor": mm, "elo_basico": mb}
+
+
+def evaluados(feats, eval_desde, pr):
+    """Formato del backtest: (partido, superficie, probabilidad del ganador) solo en PRUEBA."""
+    return [(r, sup, Elo.p_rasgos(x, pr)) for r, sup, x in feats if r["d"] >= eval_desde]
 
 
 # ---------------------------------------------------------------- backtest
@@ -404,7 +515,7 @@ def captar(elo, idx, lista, ahora, stamp):
             res = procesar_evento(ev)
             p = por_id.get(eid)
             if p is None:
-                p1 = round(elo.prob(i1, i2, sup), 4)
+                p1 = round(elo.prob_motor(i1, i2, sup, int(ahora.strftime("%Y%m%d"))), 4)
                 p = {"id": eid, "torneo": s.get("title") or clave, "tour": tour.upper(), "sup": sup,
                      "fecha": ev["commence_time"], "j1": n1, "j2": n2, "id1": i1, "id2": i2,
                      "p1": p1, "p2": round(1 - p1, 4), "n1": elo.n(i1), "n2": elo.n(i2),
@@ -494,7 +605,10 @@ def main():
         sys.exit(1)
 
     elo = Elo()
-    ev = correr(rows, elo, EVAL_DESDE)
+    feats = correr(rows, elo, EVAL_DESDE)
+    params, inf_motor = ajustar_motor(feats, EVAL_DESDE)
+    elo.params = params
+    ev = evaluados(feats, EVAL_DESDE, params)
     if not ev:
         print("ERROR: no hay partidos para evaluar. No se cambia nada.")
         sys.exit(1)
@@ -507,7 +621,7 @@ def main():
         "fuentes": fuentes, "total": tot, "tramos": tramos(ev), "calibracion": calibracion(ev),
         "superficies": agrupar(ev, lambda x: x[1]),
         "circuitos": agrupar(ev, lambda x: x[0]["tour"].upper()),
-        "ejemplos": ejemplos(ev)})
+        "ejemplos": ejemplos(ev), "motor": inf_motor})
     print("OK backtest tenis: %d partidos, acierto %.1f%%, Brier %.3f (azar 0.250). Ultimo dato: %s (hace %d dias)" %
           (tot["n"], tot["acierto"] * 100, tot["brier"], ultima, dias))
 

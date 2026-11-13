@@ -101,17 +101,21 @@ def leer_feed(url):
         if tag not in ("item", "entry"):
             continue
         tit = enl = fec = img = None
+        # titular, enlace y fecha: solo de los hijos directos de la noticia (como antes)
+        for ch in it:
+            n = ch.tag.split("}")[-1]
+            if n == "title" and tit is None:
+                tit = limpiar(ch.text)
+            elif n == "link" and not enl:
+                enl = (ch.text or "").strip() or ch.attrib.get("href", "")
+            elif n in ("pubDate", "published", "updated", "date"):
+                fec = fec or ch.text
+        # imagen: puede estar anidada a cualquier nivel
         for ch in it.iter():
             n = ch.tag.split("}")[-1]
             if ch is it:
                 continue
-            if n == "title" and tit is None:
-                tit = limpiar(ch.text)
-            elif n == "link" and enl is None:
-                enl = (ch.text or "").strip() or ch.attrib.get("href", "")
-            elif n in ("pubDate", "published", "updated", "date"):
-                fec = fec or ch.text
-            elif n in ("content", "thumbnail") and ch.attrib.get("url") and not img:
+            if n in ("content", "thumbnail") and ch.attrib.get("url") and not img:
                 tipo = ch.attrib.get("type", "") + ch.attrib.get("medium", "")
                 if n == "thumbnail" or "image" in tipo or re.search(r"\.(jpe?g|png|webp)", ch.attrib["url"], re.I):
                     img = ch.attrib["url"]
