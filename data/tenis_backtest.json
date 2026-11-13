@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13 01:49 UTC",
+ "actualizado": "2026-11-13 02:26 UTC",
  "desde": 20250101,
  "datos_hasta": 20261108,
  "dias_desde_datos": 5,
@@ -17,47 +17,47 @@
  },
  "total": {
   "n": 9229,
-  "aciertos": 5916,
-  "acierto": 0.641,
+  "aciertos": 5899,
+  "acierto": 0.6392,
   "ic": [
-   0.6312,
-   0.6507
+   0.6293,
+   0.6489
   ],
-  "brier": 0.2199,
+  "brier": 0.2198,
   "brier_azar": 0.25,
   "n_ranking": 9215,
-  "acierto_mismo_grupo": 0.6411,
+  "acierto_mismo_grupo": 0.6393,
   "mejor_ranking": 0.6315
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 6401,
-   "conf": 0.739,
-   "acierto": 0.6924,
+   "n": 6430,
+   "conf": 0.7387,
+   "acierto": 0.6922,
    "ic": [
-    0.681,
-    0.7036
+    0.6808,
+    0.7034
    ]
   },
   {
    "min": 0.7,
-   "n": 3801,
-   "conf": 0.8005,
-   "acierto": 0.7474,
+   "n": 3803,
+   "conf": 0.8009,
+   "acierto": 0.7512,
    "ic": [
-    0.7334,
-    0.761
+    0.7373,
+    0.7647
    ]
   },
   {
    "min": 0.8,
-   "n": 1688,
-   "conf": 0.8662,
-   "acierto": 0.8146,
+   "n": 1686,
+   "conf": 0.8668,
+   "acierto": 0.8155,
    "ic": [
-    0.7953,
-    0.8324
+    0.7963,
+    0.8333
    ]
   }
  ],
@@ -65,110 +65,110 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 2828,
-   "prometido": 0.5496,
-   "real": 0.5248
+   "n": 2799,
+   "prometido": 0.5494,
+   "real": 0.5173
   },
   {
    "desde": 60,
    "hasta": 70,
-   "n": 2600,
-   "prometido": 0.649,
-   "real": 0.6119
+   "n": 2627,
+   "prometido": 0.6486,
+   "real": 0.6068
   },
   {
    "desde": 70,
    "hasta": 80,
-   "n": 2113,
-   "prometido": 0.748,
-   "real": 0.6938
+   "n": 2117,
+   "prometido": 0.7483,
+   "real": 0.7
   },
   {
    "desde": 80,
    "hasta": 90,
-   "n": 1255,
-   "prometido": 0.8436,
-   "real": 0.788
+   "n": 1254,
+   "prometido": 0.8444,
+   "real": 0.7903
   },
   {
    "desde": 90,
    "hasta": 100,
-   "n": 433,
-   "prometido": 0.9319,
-   "real": 0.8915
+   "n": 432,
+   "prometido": 0.9321,
+   "real": 0.8889
   }
  ],
  "superficies": {
   "Hard": {
    "n": 5737,
-   "aciertos": 3710,
-   "acierto": 0.6467,
+   "aciertos": 3693,
+   "acierto": 0.6437,
    "ic": [
-    0.6342,
-    0.6589
+    0.6312,
+    0.656
    ],
-   "brier": 0.2194,
+   "brier": 0.2191,
    "brier_azar": 0.25,
    "n_ranking": 5727,
-   "acierto_mismo_grupo": 0.6468,
+   "acierto_mismo_grupo": 0.6438,
    "mejor_ranking": 0.6251
   },
   "Clay": {
    "n": 2400,
-   "aciertos": 1533,
-   "acierto": 0.6388,
+   "aciertos": 1532,
+   "acierto": 0.6383,
    "ic": [
-    0.6193,
-    0.6577
+    0.6189,
+    0.6573
    ],
    "brier": 0.2191,
    "brier_azar": 0.25,
    "n_ranking": 2396,
-   "acierto_mismo_grupo": 0.639,
+   "acierto_mismo_grupo": 0.6386,
    "mejor_ranking": 0.6469
   },
   "Grass": {
    "n": 1092,
-   "aciertos": 673,
-   "acierto": 0.6163,
+   "aciertos": 674,
+   "acierto": 0.6172,
    "ic": [
-    0.5871,
-    0.6447
+    0.588,
+    0.6456
    ],
-   "brier": 0.2246,
+   "brier": 0.2247,
    "brier_azar": 0.25,
    "n_ranking": 1092,
-   "acierto_mismo_grupo": 0.6163,
+   "acierto_mismo_grupo": 0.6172,
    "mejor_ranking": 0.631
   }
  },
  "circuitos": {
   "ATP": {
    "n": 4826,
-   "aciertos": 3065,
-   "acierto": 0.6351,
+   "aciertos": 3062,
+   "acierto": 0.6345,
    "ic": [
-    0.6214,
-    0.6486
+    0.6208,
+    0.648
    ],
-   "brier": 0.2219,
+   "brier": 0.2217,
    "brier_azar": 0.25,
    "n_ranking": 4824,
-   "acierto_mismo_grupo": 0.635,
+   "acierto_mismo_grupo": 0.6343,
    "mejor_ranking": 0.6333
   },
   "WTA": {
    "n": 4403,
-   "aciertos": 2851,
-   "acierto": 0.6475,
+   "aciertos": 2837,
+   "acierto": 0.6443,
    "ic": [
-    0.6333,
-    0.6615
+    0.6301,
+    0.6583
    ],
    "brier": 0.2177,
    "brier_azar": 0.25,
    "n_ranking": 4391,
-   "acierto_mismo_grupo": 0.6479,
+   "acierto_mismo_grupo": 0.6447,
    "mejor_ranking": 0.6295
   }
  },
@@ -182,7 +182,7 @@
    "perdedor": "Ben Shelton",
    "marcador": "7-6(5) 7-5",
    "fav": "Carlos Alcaraz",
-   "pp": 0.8162,
+   "pp": 0.8259,
    "ok": true
   },
   {
@@ -194,7 +194,7 @@
    "perdedor": "Casper Ruud",
    "marcador": "6-4 6-4",
    "fav": "Carlos Alcaraz",
-   "pp": 0.8698,
+   "pp": 0.8673,
    "ok": true
   },
   {
@@ -206,7 +206,7 @@
    "perdedor": "Luca Van Assche",
    "marcador": "5-7 6-3 6-4",
    "fav": "Ben Shelton",
-   "pp": 0.7585,
+   "pp": 0.7489,
    "ok": true
   },
   {
@@ -218,7 +218,7 @@
    "perdedor": "Nuno Borges",
    "marcador": "7-6(5) 6-4",
    "fav": "Casper Ruud",
-   "pp": 0.5897,
+   "pp": 0.6011,
    "ok": true
   },
   {
@@ -230,7 +230,7 @@
    "perdedor": "Taylor Fritz",
    "marcador": "6-7(10) 7-5 6-3",
    "fav": "Carlos Alcaraz",
-   "pp": 0.8275,
+   "pp": 0.8303,
    "ok": true
   },
   {
@@ -242,7 +242,7 @@
    "perdedor": "Rinky Hijikata",
    "marcador": "6-4 6-7(4) 7-5",
    "fav": "Luca Van Assche",
-   "pp": 0.5322,
+   "pp": 0.5451,
    "ok": true
   },
   {
@@ -254,7 +254,7 @@
    "perdedor": "Tommy Paul",
    "marcador": "6-4 4-6 6-3",
    "fav": "Tommy Paul",
-   "pp": 0.5046,
+   "pp": 0.5169,
    "ok": false
   },
   {
@@ -266,7 +266,7 @@
    "perdedor": "Jan-Lennard Struff",
    "marcador": "6-3 6-3",
    "fav": "Casper Ruud",
-   "pp": 0.6013,
+   "pp": 0.6056,
    "ok": true
   },
   {
@@ -278,7 +278,7 @@
    "perdedor": "Arthur Fils",
    "marcador": "6-3 6-4",
    "fav": "Arthur Fils",
-   "pp": 0.5276,
+   "pp": 0.5326,
    "ok": false
   },
   {
@@ -290,7 +290,7 @@
    "perdedor": "Ignacio Buse",
    "marcador": "6-0 6-2",
    "fav": "Nuno Borges",
-   "pp": 0.5847,
+   "pp": 0.5795,
    "ok": true
   },
   {
@@ -302,7 +302,7 @@
    "perdedor": "Lorenzo Musetti",
    "marcador": "7-5 3-6 6-4",
    "fav": "Lorenzo Musetti",
-   "pp": 0.7776,
+   "pp": 0.7773,
    "ok": false
   },
   {
@@ -313,9 +313,9 @@
    "ganador": "Rinky Hijikata",
    "perdedor": "Tomas Martin Etcheverry",
    "marcador": "2-6 6-3 7-5",
-   "fav": "Rinky Hijikata",
-   "pp": 0.5087,
-   "ok": true
+   "fav": "Tomas Martin Etcheverry",
+   "pp": 0.501,
+   "ok": false
   },
   {
    "fecha": 20261105,
@@ -326,7 +326,7 @@
    "perdedor": "Arthur Rinderknech",
    "marcador": "3-6 6-4 7-6(5)",
    "fav": "Ben Shelton",
-   "pp": 0.7486,
+   "pp": 0.7464,
    "ok": true
   },
   {
@@ -338,7 +338,7 @@
    "perdedor": "Quentin Halys",
    "marcador": "7-6(3) 6-4",
    "fav": "Tommy Paul",
-   "pp": 0.7322,
+   "pp": 0.7228,
    "ok": true
   },
   {
@@ -350,7 +350,7 @@
    "perdedor": "Tomas Machac",
    "marcador": "6-3 7-6(4)",
    "fav": "Arthur Fils",
-   "pp": 0.7837,
+   "pp": 0.791,
    "ok": true
   },
   {
@@ -362,7 +362,7 @@
    "perdedor": "Thiago Agustin Tirante",
    "marcador": "6-7(5) 6-3 7-6(3)",
    "fav": "Jan-Lennard Struff",
-   "pp": 0.5719,
+   "pp": 0.5645,
    "ok": true
   },
   {
@@ -374,7 +374,7 @@
    "perdedor": "Alex Michelsen",
    "marcador": "7-6(4) 6-3",
    "fav": "Carlos Alcaraz",
-   "pp": 0.888,
+   "pp": 0.8951,
    "ok": true
   },
   {
@@ -386,7 +386,7 @@
    "perdedor": "Ugo Humbert",
    "marcador": "7-6(3) 7-5",
    "fav": "Matteo Berrettini",
-   "pp": 0.5396,
+   "pp": 0.5449,
    "ok": true
   },
   {
@@ -398,7 +398,7 @@
    "perdedor": "Alex Molcan",
    "marcador": "6-7(6) 7-5 7-6(5)",
    "fav": "Taylor Fritz",
-   "pp": 0.7375,
+   "pp": 0.7307,
    "ok": true
   },
   {
@@ -410,7 +410,7 @@
    "perdedor": "Karen Khachanov",
    "marcador": "6-3 6-4",
    "fav": "Karen Khachanov",
-   "pp": 0.5516,
+   "pp": 0.5439,
    "ok": false
   },
   {
@@ -422,7 +422,7 @@
    "perdedor": "Novak Djokovic",
    "marcador": "2-6 6-3 6-3",
    "fav": "Novak Djokovic",
-   "pp": 0.9123,
+   "pp": 0.9121,
    "ok": false
   },
   {
@@ -434,7 +434,7 @@
    "perdedor": "Daniil Medvedev",
    "marcador": "6-4 6-4",
    "fav": "Daniil Medvedev",
-   "pp": 0.8413,
+   "pp": 0.8258,
    "ok": false
   },
   {
@@ -446,7 +446,7 @@
    "perdedor": "Alex de Minaur",
    "marcador": "7-6(2) 6-3",
    "fav": "Alex de Minaur",
-   "pp": 0.8595,
+   "pp": 0.853,
    "ok": false
   },
   {
@@ -458,7 +458,7 @@
    "perdedor": "Alexander Zverev",
    "marcador": "7-6(5) 6-2",
    "fav": "Alexander Zverev",
-   "pp": 0.7029,
+   "pp": 0.7,
    "ok": false
   },
   {
@@ -470,8 +470,28 @@
    "perdedor": "Learner Tien",
    "marcador": "7-6(4) 6-4",
    "fav": "Learner Tien",
-   "pp": 0.7641,
+   "pp": 0.7551,
    "ok": false
   }
- ]
+ ],
+ "motor": {
+  "activo": true,
+  "params": {
+   "w_sup": 0.3,
+   "c_cans": 0.0,
+   "c_forma": 0.0
+  },
+  "motor": {
+   "n": 9229,
+   "acierto": 0.6392,
+   "brier": 0.2198,
+   "logloss": 0.6297
+  },
+  "elo_basico": {
+   "n": 9229,
+   "acierto": 0.641,
+   "brier": 0.2199,
+   "logloss": 0.63
+  }
+ }
 }

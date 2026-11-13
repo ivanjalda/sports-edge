@@ -1,38 +1,15 @@
 {
- "actualizado": "2026-11-13 01:49 UTC",
+ "actualizado": "2026-11-13 02:27 UTC",
  "liga": "NCAA",
- "datos_hasta": "2026-11-11T00:00:00Z",
- "dias_desde_datos": 2,
+ "datos_hasta": "2026-11-13T00:00:00Z",
+ "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
- "proximo": "2026-11-13T00:00:00Z",
+ "proximo": "2026-11-13T02:05:00Z",
  "predicciones": [
-  {
-   "id": "401923153",
-   "fecha": "2026-11-13T00:00:00Z",
-   "local": "Notre Dame Fighting Irish",
-   "visitante": "Michigan State Spartans",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.3852,
-   "pv": 0.6148,
-   "elo_l": 1461,
-   "elo_v": 1592,
-   "bal_l": [
-    4,
-    6
-   ],
-   "bal_v": [
-    6,
-    2
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "401904347",
    "fecha": "2026-11-13T02:05:00Z",
@@ -1184,14 +1161,41 @@
    "marcador": null
   }
  ],
- "recientes": [],
+ "recientes": [
+  {
+   "id": "401923153",
+   "fecha": "2026-11-13T00:00:00Z",
+   "local": "Notre Dame Fighting Irish",
+   "visitante": "Michigan State Spartans",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.3852,
+   "pv": 0.6148,
+   "elo_l": 1461,
+   "elo_v": 1592,
+   "bal_l": [
+    4,
+    6
+   ],
+   "bal_v": [
+    6,
+    2
+   ],
+   "creada": "2026-11-11 04:17 UTC",
+   "resultado": "L",
+   "marcador": "3-2"
+  }
+ ],
  "directo": {
   "total": 51,
-  "resueltas": 0,
+  "resueltas": 1,
   "aciertos": 0,
-  "acierto": null,
-  "ic": null,
-  "brier": null,
+  "acierto": 0.0,
+  "ic": [
+   0.0,
+   0.7935
+  ],
+  "brier": 0.378,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -1201,12 +1205,6 @@
    "equipo": "Denver Pioneers",
    "elo": 1624,
    "g": 7,
-   "p": 2
-  },
-  {
-   "equipo": "Michigan State Spartans",
-   "elo": 1613,
-   "g": 6,
    "p": 2
   },
   {
@@ -1220,6 +1218,12 @@
    "elo": 1609,
    "g": 6,
    "p": 2
+  },
+  {
+   "equipo": "Michigan State Spartans",
+   "elo": 1608,
+   "g": 6,
+   "p": 3
   },
   {
    "equipo": "Quinnipiac Bobcats",
@@ -1498,6 +1502,12 @@
    "p": 6
   },
   {
+   "equipo": "Notre Dame Fighting Irish",
+   "elo": 1462,
+   "g": 5,
+   "p": 6
+  },
+  {
    "equipo": "RIT Tigers",
    "elo": 1460,
    "g": 3,
@@ -1507,12 +1517,6 @@
    "equipo": "Lindenwood Lions",
    "elo": 1458,
    "g": 3,
-   "p": 6
-  },
-  {
-   "equipo": "Notre Dame Fighting Irish",
-   "elo": 1457,
-   "g": 4,
    "p": 6
   },
   {
