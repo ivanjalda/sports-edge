@@ -193,18 +193,22 @@ def f1_proxima(ahora, ultima_principal):
 
 
 def descargar_f1(cache, ahora):
+    """Devuelve True si el historico quedo completo hasta hoy."""
     t0 = time.time()
+    completo = True
     hechas = set(cache.get("temporadas_completas", []))
     for y in range(SERIES["f1"]["desde"], ahora.year + 1):
         if y in hechas:
             continue
         if time.time() - t0 > LIMITE_SEG:
             print("Aviso: descarga cortada por tiempo. Se continua en la proxima ejecucion.")
+            completo = False
             break
         try:
             carreras = f1_temporada(y)
         except Exception as ex:
             print("Aviso: temporada %d de F1 no disponible (%s)" % (y, ex))
+            completo = False
             continue
         for c in carreras:
             cache["carreras"][c["id"]] = c
@@ -212,6 +216,7 @@ def descargar_f1(cache, ahora):
         if y < ahora.year:
             hechas.add(y)
     cache["temporadas_completas"] = sorted(hechas)
+    return completo
 
 
 # ------------------------------------------------------------------ MotoGP (resultados oficiales)
@@ -277,13 +282,15 @@ def mgp_evento(y, ev, cat):
 
 
 def descargar_motogp(cache, ahora):
+    """Devuelve True si el historico quedo completo hasta hoy."""
     t0 = time.time()
+    completo = True
     hechos = set(cache.get("eventos_hechos", []))
     try:
         temps = mgp_temporadas()
     except Exception as ex:
         print("Aviso: no se pudo leer la lista de temporadas de MotoGP (%s)" % ex)
-        return
+        return False
     cache["_temps"] = {str(k): v for k, v in temps.items()}
     for y in sorted(temps):
         if y < SERIES["motogp"]["desde"] or y > ahora.year:
@@ -293,6 +300,7 @@ def descargar_motogp(cache, ahora):
             evs = pedir(MGP + "events?seasonUuid=%s&isFinished=true" % temps[y], pausa=0.2)
         except Exception as ex:
             print("Aviso: temporada %d de MotoGP no disponible (%s)" % (y, ex))
+            completo = False
             continue
         cache.setdefault("_cat", {})[str(y)] = cat
         n = 0
@@ -302,7 +310,7 @@ def descargar_motogp(cache, ahora):
             if time.time() - t0 > LIMITE_SEG:
                 print("Aviso: descarga cortada por tiempo. Se continua en la proxima ejecucion.")
                 cache["eventos_hechos"] = sorted(hechos)
-                return
+                return False
             try:
                 for c in mgp_evento(y, ev, cat):
                     cache["carreras"][c["id"]] = c
@@ -310,9 +318,11 @@ def descargar_motogp(cache, ahora):
                 n += 1
             except Exception as ex:
                 print("Aviso: evento %s no disponible (%s)" % (ev.get("short_name"), ex))
+                completo = False
         if n:
             print("  MotoGP %d: %d grandes premios nuevos" % (y, n))
     cache["eventos_hechos"] = sorted(hechos)
+    return completo
 
 
 def motogp_proxima(cache, ahora, ultima_principal):
@@ -425,9 +435,11 @@ def procesar(clave, ahora, stamp):
     cache = leer_json("carreras_%s_resultados.json" % clave, {"carreras": {}})
     cache.setdefault("carreras", {})
     if clave == "f1":
-        descargar_f1(cache, ahora)
+        completo = descargar_f1(cache, ahora)
     else:
-        descargar_motogp(cache, ahora)
+        completo = descargar_motogp(cache, ahora)
+    if not completo:
+        print("AVISO: el historico aun no esta completo hasta hoy. No se publica ni se guarda ninguna prediccion.")
     carreras = sorted(cache["carreras"].values(), key=lambda c: (c["fecha"], 0 if c.get("sprint") else 1))
     carreras = [c for c in carreras if len(c["res"]) >= 10]
     print("Carreras con resultado real: %d (%d principales)" % (len(carreras), sum(1 for c in carreras if not c.get("sprint"))))
@@ -457,9 +469,14 @@ def procesar(clave, ahora, stamp):
         st.nueva_temporada(prox["temporada"])
 
     hist = leer_json("carreras_%s_historial.json" % clave, {"predicciones": []})
+    # Predicciones sin resolver hechas con el historico incompleto no son validas: se retiran
+    antes = len(hist["predicciones"])
+    hist["predicciones"] = [p for p in hist["predicciones"] if p.get("resultado") or p.get("datos_completos")]
+    if len(hist["predicciones"]) < antes:
+        print("Se retiran %d predicciones hechas con datos incompletos." % (antes - len(hist["predicciones"])))
     resueltas = resolver(hist, carreras)
     salida_prox = None
-    if prox and prox.get("pilotos"):
+    if prox and prox.get("pilotos") and completo:
         pil = pred_carrera(st, aj, prox, abandono)
         tipo = "parrilla" if prox.get("parrilla") else "previa"
         salida_prox = {k: prox[k] for k in ("id", "nombre", "circuito", "pais", "fecha", "clasif", "sprint")}
@@ -470,12 +487,12 @@ def procesar(clave, ahora, stamp):
             hist["predicciones"].append({"id": prox["id"], "nombre": prox["nombre"], "fecha": prox["fecha"], "tipo": tipo,
                                          "creada": stamp, "fav": {"id": pil[0]["id"], "n": pil[0]["n"], "pw": pil[0]["pw"]},
                                          "pilotos": [{"id": x["id"], "n": x["n"], "pw": x["pw"], "pp": x["pp"]} for x in pil],
-                                         "resultado": None})
+                                         "datos_completos": True, "resultado": None})
             print("Prediccion guardada (%s): %s -> favorito %s %.0f%%" % (tipo, prox["nombre"], pil[0]["n"], 100 * pil[0]["pw"]))
         print("Proxima: %s (%s) | %s | favorito %s %.0f%% | abandonos %.0f%%" %
               (prox["nombre"], prox["fecha"], "con parrilla" if prox.get("parrilla") else "antes de la clasificacion",
                pil[0]["n"], 100 * pil[0]["pw"], 100 * abandono))
-    else:
+    elif completo:
         print("No hay proxima carrera en el calendario (temporada terminada).")
     guardar_json("carreras_%s_historial.json" % clave, hist)
 
@@ -498,7 +515,7 @@ def procesar(clave, ahora, stamp):
                   "ganador": next((r["n"] for r in c["res"] if r.get("pos") == 1), ""),
                   "equipo": next((r["eq"] for r in c["res"] if r.get("pos") == 1), "")}
                  for c in principales[-8:]][::-1]
-    salida = {"serie": clave, "nombre": cfg["nombre"], "actualizado": stamp, "proximo": salida_prox,
+    salida = {"serie": clave, "nombre": cfg["nombre"], "actualizado": stamp, "proximo": salida_prox, "descargando": not completo,
               "abandono": round(abandono, 4), "motor": aj, "fuerzas": fuerzas,
               "equipos": sorted([{"eq": k, "f": v} for k, v in equipos.items()], key=lambda x: -x["f"]),
               "directo": estadisticas(hist), "recientes": recientes[:12], "ultimas": ganadores,
