@@ -174,7 +174,7 @@ def main():
         return
     ahora = datetime.now(timezone.utc)
     px = partidos(ahora)
-    bloques = [u"\U0001F4CA <b>SPORTS EDGE</b> · %s\nPredicciones de las próximas 24 horas, calculadas con resultados reales." %
+    bloques = [u"\U0001F3AF <b>PRONÓSTICOS DEL DÍA</b> · %s\nSports Edge · próximas 24 horas, calculados con resultados reales." %
                ahora.astimezone(TZ).strftime("%d/%m/%Y")]
 
     if not px:
@@ -236,15 +236,6 @@ def main():
                     lin.append(u"   … y %d partidos más en la web" % (len(cs) - MAX_POR_LIGA))
             bloques.append("\n".join(lin))
 
-    rs = resultados(ahora)
-    if rs:
-        lin = [u"\U0001F4C8 <b>Resultados de las últimas 36 horas</b>"]
-        for dep in ("futbol", "tenis", "baloncesto", "hockey", "americano", "mma", "beisbol", "voleibol"):
-            if dep in rs:
-                a, n = rs[dep]
-                lin.append(u"%s: %d de %d acertados (%s)" % (NOMBRES[dep], a, n, pc(a / float(n))))
-        bloques.append("\n".join(lin))
-
     rc = record()
     if rc:
         lin = [u"\U0001F3C6 <b>Récord público en directo</b>"]
@@ -253,6 +244,7 @@ def main():
                 lin.append(u"%s: %s de acierto en %d predicciones" % (NOMBRES[dep], pc(rc[dep][0]), rc[dep][1]))
         bloques.append("\n".join(lin))
 
+    bloques.append(u"\U0001F534 Durante el día: resultados de cada partido aquí y en directo en %sdirecto.html" % WEB)
     bloques.append(u"\U0001F310 Todo el análisis: %s\n⚠ Probabilidades estadísticas, no garantizan resultados. Solo +18. Juega con responsabilidad." % WEB)
 
     mensajes, actual = [], ""
