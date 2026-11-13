@@ -1,15 +1,16 @@
 {
- "actualizado": "2026-11-12 20:52 UTC",
+ "actualizado": "2026-11-13 00:58 UTC",
  "liga": "Eurocup",
- "datos_hasta": "2026-11-11T19:00:00Z",
- "dias_desde_datos": 1,
+ "datos_hasta": "2026-11-12T19:00:00Z",
+ "dias_desde_datos": 0,
  "fuente": {
   "nombre": "Euroleague Basketball",
   "url": "https://www.euroleaguebasketball.net"
  },
  "con_cuotas": false,
- "proximo": "2026-11-12T19:00:00Z",
- "predicciones": [
+ "proximo": "2026-11-17T16:30:00Z",
+ "predicciones": [],
+ "recientes": [
   {
    "id": "U2026_103",
    "fecha": "2026-11-12T19:00:00Z",
@@ -30,11 +31,9 @@
     3
    ],
    "creada": "2026-11-11 04:09 UTC",
-   "resultado": null,
-   "marcador": null
-  }
- ],
- "recientes": [
+   "resultado": "V",
+   "marcador": "89-113"
+  },
   {
    "id": "U2026_110",
    "fecha": "2026-11-11T19:00:00Z",
@@ -199,14 +198,14 @@
  ],
  "directo": {
   "total": 8,
-  "resueltas": 7,
+  "resueltas": 8,
   "aciertos": 5,
-  "acierto": 0.7143,
+  "acierto": 0.625,
   "ic": [
-   0.3589,
-   0.9178
+   0.3057,
+   0.8632
   ],
-  "brier": 0.1708,
+  "brier": 0.1974,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -321,6 +320,12 @@
    "p": 5
   },
   {
+   "equipo": "Maxima Roma",
+   "elo": 1534,
+   "g": 4,
+   "p": 3
+  },
+  {
    "equipo": "Umana Reyer Venice",
    "elo": 1533,
    "g": 3,
@@ -354,12 +359,6 @@
    "equipo": "Le Mans Sarthe Basket",
    "elo": 1521,
    "g": 4,
-   "p": 3
-  },
-  {
-   "equipo": "Maxima Roma",
-   "elo": 1510,
-   "g": 3,
    "p": 3
   },
   {
@@ -423,12 +422,6 @@
    "p": 0
   },
   {
-   "equipo": "Skyliners Frankfurt",
-   "elo": 1494,
-   "g": 3,
-   "p": 3
-  },
-  {
    "equipo": "Riga Zelli",
    "elo": 1494,
    "g": 3,
@@ -481,6 +474,12 @@
    "elo": 1471,
    "g": 2,
    "p": 5
+  },
+  {
+   "equipo": "Skyliners Frankfurt",
+   "elo": 1469,
+   "g": 3,
+   "p": 4
   },
   {
    "equipo": "Aris Thessaloniki Betsson",

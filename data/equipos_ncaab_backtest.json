@@ -1,11 +1,11 @@
 {
- "actualizado": "2026-11-12 20:52 UTC",
+ "actualizado": "2026-11-13 00:58 UTC",
  "liga": "NCAA",
  "desde": "20241101",
- "datos_hasta": "2026-11-12T04:00:00Z",
+ "datos_hasta": "2026-11-12T20:00:00Z",
  "total": {
-  "n": 12191,
-  "aciertos": 8704,
+  "n": 12192,
+  "aciertos": 8705,
   "acierto": 0.714,
   "ic": [
    0.7059,
@@ -14,7 +14,7 @@
   "brier": 0.1887
  },
  "base_local": {
-  "n": 12191,
+  "n": 12192,
   "acierto": 0.6519
  },
  "base_balance": {
@@ -25,7 +25,7 @@
  "tramos": [
   {
    "min": 0.6,
-   "n": 8492,
+   "n": 8493,
    "conf": 0.7287,
    "acierto": 0.7811,
    "ic": [
@@ -35,7 +35,7 @@
   },
   {
    "min": 0.7,
-   "n": 4903,
+   "n": 4904,
    "conf": 0.7864,
    "acierto": 0.8511,
    "ic": [
@@ -45,12 +45,12 @@
   },
   {
    "min": 0.8,
-   "n": 1854,
+   "n": 1855,
    "conf": 0.8498,
-   "acierto": 0.9293,
+   "acierto": 0.9294,
    "ic": [
     0.9168,
-    0.9401
+    0.9402
    ]
   }
  ],
@@ -79,7 +79,7 @@
   {
    "desde": 80,
    "hasta": 90,
-   "n": 1649,
+   "n": 1650,
    "prometido": 0.8413,
    "real": 0.9236
   },
@@ -113,24 +113,24 @@
    "brier": 0.1904
   },
   "2027": {
-   "n": 501,
-   "aciertos": 403,
-   "acierto": 0.8044,
+   "n": 502,
+   "aciertos": 404,
+   "acierto": 0.8048,
    "ic": [
-    0.7674,
-    0.8368
+    0.7678,
+    0.8371
    ],
-   "brier": 0.1446
+   "brier": 0.1443
   }
  },
  "fases": {
   "regular": {
-   "n": 11963,
-   "aciertos": 8549,
+   "n": 11964,
+   "aciertos": 8550,
    "acierto": 0.7146,
    "ic": [
     0.7065,
-    0.7226
+    0.7227
    ],
    "brier": 0.1884
   },
@@ -147,8 +147,8 @@
  },
  "elige": {
   "local": {
-   "n": 9948,
-   "aciertos": 7204,
+   "n": 9949,
+   "aciertos": 7205,
    "acierto": 0.7242,
    "ic": [
     0.7153,
@@ -168,6 +168,15 @@
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-12T20:00:00Z",
+   "local": "George Mason Patriots",
+   "visitante": "Kansas City Roos",
+   "marcador": "76-68",
+   "fav": "George Mason Patriots",
+   "pp": 0.818,
+   "ok": true
+  },
   {
    "fecha": "2026-11-12T04:00:00Z",
    "local": "California Golden Bears",
@@ -383,15 +392,6 @@
    "fav": "West Georgia Wolves",
    "pp": 0.5358,
    "ok": false
-  },
-  {
-   "fecha": "2026-11-12T00:00:00Z",
-   "local": "Florida Atlantic Owls",
-   "visitante": "William & Mary Tribe",
-   "marcador": "95-90",
-   "fav": "Florida Atlantic Owls",
-   "pp": 0.6278,
-   "ok": true
   }
  ],
  "valor_activo": true

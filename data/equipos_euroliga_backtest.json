@@ -1,56 +1,56 @@
 {
- "actualizado": "2026-11-12 20:52 UTC",
+ "actualizado": "2026-11-13 00:58 UTC",
  "liga": "Euroliga",
  "desde": "20241001",
- "datos_hasta": "2026-11-11T19:45:00Z",
+ "datos_hasta": "2026-11-12T20:00:00Z",
  "total": {
-  "n": 834,
-  "aciertos": 532,
-  "acierto": 0.6379,
+  "n": 839,
+  "aciertos": 536,
+  "acierto": 0.6389,
   "ic": [
-   0.6047,
-   0.6698
+   0.6058,
+   0.6707
   ],
-  "brier": 0.2202
+  "brier": 0.2197
  },
  "base_local": {
-  "n": 834,
-  "acierto": 0.6163
+  "n": 839,
+  "acierto": 0.6174
  },
  "base_balance": {
-  "n": 621,
-  "acierto": 0.5942,
-  "nuestro": 0.657
+  "n": 625,
+  "acierto": 0.5936,
+  "nuestro": 0.6576
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 561,
-   "conf": 0.7058,
-   "acierto": 0.6898,
+   "n": 564,
+   "conf": 0.7061,
+   "acierto": 0.6915,
    "ic": [
-    0.6504,
-    0.7267
+    0.6522,
+    0.7282
    ]
   },
   {
    "min": 0.7,
-   "n": 281,
+   "n": 284,
    "conf": 0.7648,
-   "acierto": 0.7651,
+   "acierto": 0.7676,
    "ic": [
-    0.7122,
-    0.8109
+    0.7151,
+    0.813
    ]
   },
   {
    "min": 0.8,
-   "n": 57,
-   "conf": 0.8416,
-   "acierto": 0.9298,
+   "n": 58,
+   "conf": 0.841,
+   "acierto": 0.931,
    "ic": [
-    0.833,
-    0.9724
+    0.8357,
+    0.9729
    ]
   }
  ],
@@ -58,9 +58,9 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 273,
-   "prometido": 0.5499,
-   "real": 0.5311
+   "n": 275,
+   "prometido": 0.5497,
+   "real": 0.5309
   },
   {
    "desde": 60,
@@ -72,16 +72,16 @@
   {
    "desde": 70,
    "hasta": 80,
-   "n": 224,
+   "n": 226,
    "prometido": 0.7452,
-   "real": 0.7232
+   "real": 0.7257
   },
   {
    "desde": 80,
    "hasta": 90,
-   "n": 55,
-   "prometido": 0.8389,
-   "real": 0.9273
+   "n": 56,
+   "prometido": 0.8383,
+   "real": 0.9286
   },
   {
    "desde": 90,
@@ -113,26 +113,26 @@
    "brier": 0.2203
   },
   "2027": {
-   "n": 102,
-   "aciertos": 61,
-   "acierto": 0.598,
+   "n": 107,
+   "aciertos": 65,
+   "acierto": 0.6075,
    "ic": [
-    0.501,
-    0.688
+    0.5128,
+    0.6947
    ],
-   "brier": 0.2321
+   "brier": 0.2275
   }
  },
  "fases": {
   "regular": {
-   "n": 794,
-   "aciertos": 504,
-   "acierto": 0.6348,
+   "n": 799,
+   "aciertos": 508,
+   "acierto": 0.6358,
    "ic": [
-    0.6007,
-    0.6675
+    0.6019,
+    0.6684
    ],
-   "brier": 0.2209
+   "brier": 0.2203
   },
   "playoff": {
    "n": 40,
@@ -147,27 +147,72 @@
  },
  "elige": {
   "local": {
-   "n": 710,
-   "aciertos": 461,
-   "acierto": 0.6493,
+   "n": 713,
+   "aciertos": 464,
+   "acierto": 0.6508,
    "ic": [
-    0.6135,
-    0.6835
+    0.6151,
+    0.6849
    ],
-   "brier": 0.2185
+   "brier": 0.2178
   },
   "visitante": {
-   "n": 124,
-   "aciertos": 71,
-   "acierto": 0.5726,
+   "n": 126,
+   "aciertos": 72,
+   "acierto": 0.5714,
    "ic": [
-    0.4846,
-    0.6562
+    0.4842,
+    0.6545
    ],
-   "brier": 0.23
+   "brier": 0.2302
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-12T20:00:00Z",
+   "local": "Real Madrid",
+   "visitante": "Crvena Zvezda Meridianbet Belgrade",
+   "marcador": "105-84",
+   "fav": "Real Madrid",
+   "pp": 0.7052,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-12T19:30:00Z",
+   "local": "Armani Olimpia Milan",
+   "visitante": "Zalgiris Kaunas",
+   "marcador": "83-86",
+   "fav": "Zalgiris Kaunas",
+   "pp": 0.5385,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-12T19:30:00Z",
+   "local": "Valencia Basket",
+   "visitante": "FC Bayern Munich",
+   "marcador": "102-87",
+   "fav": "Valencia Basket",
+   "pp": 0.8065,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-12T19:15:00Z",
+   "local": "Olympiacos Piraeus",
+   "visitante": "Dubai Basketball",
+   "marcador": "101-72",
+   "fav": "Olympiacos Piraeus",
+   "pp": 0.7783,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-12T19:05:00Z",
+   "local": "Maccabi Rapyd Tel Aviv",
+   "visitante": "Hapoel IBI Tel Aviv",
+   "marcador": "80-73",
+   "fav": "Hapoel IBI Tel Aviv",
+   "pp": 0.5267,
+   "ok": false
+  },
   {
    "fecha": "2026-11-11T19:45:00Z",
    "local": "Paris Basketball",
@@ -346,51 +391,6 @@
    "marcador": "95-76",
    "fav": "Real Madrid",
    "pp": 0.74,
-   "ok": true
-  },
-  {
-   "fecha": "2026-10-29T19:05:00Z",
-   "local": "Maccabi Rapyd Tel Aviv",
-   "visitante": "Paris Basketball",
-   "marcador": "94-99",
-   "fav": "Maccabi Rapyd Tel Aviv",
-   "pp": 0.618,
-   "ok": false
-  },
-  {
-   "fecha": "2026-10-29T19:00:00Z",
-   "local": "Crvena Zvezda Meridianbet Belgrade",
-   "visitante": "FC Bayern Munich",
-   "marcador": "103-73",
-   "fav": "Crvena Zvezda Meridianbet Belgrade",
-   "pp": 0.7559,
-   "ok": true
-  },
-  {
-   "fecha": "2026-10-28T19:30:00Z",
-   "local": "Virtus Bologna",
-   "visitante": "Zalgiris Kaunas",
-   "marcador": "74-91",
-   "fav": "Virtus Bologna",
-   "pp": 0.5368,
-   "ok": false
-  },
-  {
-   "fecha": "2026-10-28T19:00:00Z",
-   "local": "LDLC ASVEL Villeurbanne",
-   "visitante": "Partizan Mozzart Bet Belgrade",
-   "marcador": "82-75",
-   "fav": "Partizan Mozzart Bet Belgrade",
-   "pp": 0.5286,
-   "ok": false
-  },
-  {
-   "fecha": "2026-10-28T18:00:00Z",
-   "local": "Hapoel IBI Tel Aviv",
-   "visitante": "Anadolu Efes Istanbul",
-   "marcador": "118-88",
-   "fav": "Hapoel IBI Tel Aviv",
-   "pp": 0.7187,
    "ok": true
   }
  ],

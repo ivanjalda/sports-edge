@@ -1,21 +1,21 @@
 {
- "actualizado": "2026-11-12 20:52 UTC",
+ "actualizado": "2026-11-13 00:58 UTC",
  "liga": "Eurocup",
  "desde": "20241001",
- "datos_hasta": "2026-11-11T19:00:00Z",
+ "datos_hasta": "2026-11-12T19:00:00Z",
  "total": {
-  "n": 492,
+  "n": 493,
   "aciertos": 314,
-  "acierto": 0.6382,
+  "acierto": 0.6369,
   "ic": [
-   0.5948,
-   0.6794
+   0.5936,
+   0.6782
   ],
-  "brier": 0.2191
+  "brier": 0.2194
  },
  "base_local": {
-  "n": 492,
-  "acierto": 0.6037
+  "n": 493,
+  "acierto": 0.6024
  },
  "base_balance": {
   "n": 278,
@@ -25,12 +25,12 @@
  "tramos": [
   {
    "min": 0.6,
-   "n": 345,
-   "conf": 0.6923,
-   "acierto": 0.6986,
+   "n": 346,
+   "conf": 0.6921,
+   "acierto": 0.6965,
    "ic": [
-    0.6482,
-    0.7446
+    0.6461,
+    0.7426
    ]
   },
   {
@@ -65,9 +65,9 @@
   {
    "desde": 60,
    "hasta": 70,
-   "n": 200,
-   "prometido": 0.6454,
-   "real": 0.635
+   "n": 201,
+   "prometido": 0.6453,
+   "real": 0.6318
   },
   {
    "desde": 70,
@@ -113,38 +113,38 @@
    "brier": 0.2216
   },
   "2027": {
-   "n": 111,
+   "n": 112,
    "aciertos": 75,
-   "acierto": 0.6757,
+   "acierto": 0.6696,
    "ic": [
-    0.584,
-    0.7556
+    0.5782,
+    0.7499
    ],
-   "brier": 0.2141
+   "brier": 0.2156
   }
  },
  "fases": {
   "regular": {
-   "n": 492,
+   "n": 493,
    "aciertos": 314,
-   "acierto": 0.6382,
+   "acierto": 0.6369,
    "ic": [
-    0.5948,
-    0.6794
+    0.5936,
+    0.6782
    ],
-   "brier": 0.2191
+   "brier": 0.2194
   }
  },
  "elige": {
   "local": {
-   "n": 435,
+   "n": 436,
    "aciertos": 277,
-   "acierto": 0.6368,
+   "acierto": 0.6353,
    "ic": [
-    0.5906,
-    0.6806
+    0.5891,
+    0.6791
    ],
-   "brier": 0.2179
+   "brier": 0.2182
   },
   "visitante": {
    "n": 57,
@@ -158,6 +158,15 @@
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-12T19:00:00Z",
+   "local": "Skyliners Frankfurt",
+   "visitante": "Maxima Roma",
+   "marcador": "89-113",
+   "fav": "Skyliners Frankfurt",
+   "pp": 0.6191,
+   "ok": false
+  },
   {
    "fecha": "2026-11-11T19:00:00Z",
    "local": "Le Mans Sarthe Basket",
@@ -372,15 +381,6 @@
    "marcador": "65-71",
    "fav": "Riga Zelli",
    "pp": 0.6504,
-   "ok": false
-  },
-  {
-   "fecha": "2026-11-04T17:00:00Z",
-   "local": "Lietkabelis Panevezys",
-   "visitante": "Kids&Us Manresa",
-   "marcador": "66-80",
-   "fav": "Lietkabelis Panevezys",
-   "pp": 0.5523,
    "ok": false
   }
  ],

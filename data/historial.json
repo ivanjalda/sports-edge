@@ -2580,6 +2580,15 @@
       "p": 0.1001
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 00:57 UTC",
+    "valor": [
+     "2"
+    ],
+    "1": 2.04,
+    "X": 3.67,
+    "2": 3.9
    }
   },
   {
@@ -2624,6 +2633,16 @@
       "p": 0.1736
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 00:57 UTC",
+    "valor": [
+     "1",
+     "X"
+    ],
+    "1": 7.0,
+    "X": 4.9,
+    "2": 1.49
    }
   },
   {
@@ -2688,6 +2707,15 @@
       "p": 0.128
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 00:57 UTC",
+    "valor": [
+     "1"
+    ],
+    "1": 3.23,
+    "X": 3.61,
+    "2": 2.2
    }
   },
   {
@@ -2737,6 +2765,13 @@
       "p": 0.1509
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 00:57 UTC",
+    "valor": [],
+    "1": 1.71,
+    "X": 4.06,
+    "2": 4.95
    }
   },
   {
@@ -2801,6 +2836,15 @@
       "p": 0.1418
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 00:57 UTC",
+    "valor": [
+     "2"
+    ],
+    "1": 2.92,
+    "X": 3.55,
+    "2": 2.45
    }
   },
   {
@@ -2865,6 +2909,16 @@
       "p": 0.08
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 00:57 UTC",
+    "valor": [
+     "X",
+     "2"
+    ],
+    "1": 1.26,
+    "X": 6.59,
+    "2": 12.1
    }
   },
   {
@@ -2919,6 +2973,15 @@
       "p": 0.1303
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 00:57 UTC",
+    "valor": [
+     "2"
+    ],
+    "1": 1.88,
+    "X": 3.81,
+    "2": 4.4
    }
   },
   {
@@ -2968,8 +3031,254 @@
       "p": 0.0966
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 00:57 UTC",
+    "valor": [
+     "2"
+    ],
+    "1": 2.38,
+    "X": 3.65,
+    "2": 3.06
    }
+  },
+  {
+   "id": 555088,
+   "liga": "Brasileirão",
+   "fecha": "2026-11-19T22:30:00Z",
+   "local": "CR Vasco da Gama",
+   "visitante": "SC Internacional",
+   "creada": "2026-11-13T00:51:59Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4442,
+   "p_empate": 0.2787,
+   "p_visitante": 0.2771,
+   "xg_local": 1.52,
+   "xg_visitante": 1.16,
+   "n_partidos": 147,
+   "mercados": {
+    "over15": 0.7591,
+    "over25": 0.5006,
+    "over35": 0.2807,
+    "btts": 0.5476,
+    "marcador": "1-1",
+    "p_marcador": 0.1331,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Carlos Gómez",
+      "g": 5,
+      "p": 0.162
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Johan Carbonero",
+      "g": 7,
+      "p": 0.1924
+     },
+     {
+      "n": "Alan Patrick",
+      "g": 6,
+      "p": 0.1674
+     },
+     {
+      "n": "Alexandro Bernabei",
+      "g": 5,
+      "p": 0.1416
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 00:57 UTC",
+    "valor": [
+     "X",
+     "2"
+    ],
+    "1": 1.7,
+    "X": 4.0,
+    "2": 5.25
+   }
+  },
+  {
+   "id": 555089,
+   "liga": "Brasileirão",
+   "fecha": "2026-11-19T22:30:00Z",
+   "local": "EC Vitória",
+   "visitante": "RB Bragantino",
+   "creada": "2026-11-13T00:51:59Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.3497,
+   "p_empate": 0.3067,
+   "p_visitante": 0.3436,
+   "xg_local": 1.18,
+   "xg_visitante": 1.17,
+   "n_partidos": 110,
+   "mercados": {
+    "over15": 0.6929,
+    "over25": 0.4163,
+    "over35": 0.2102,
+    "btts": 0.4902,
+    "marcador": "1-1",
+    "p_marcador": 0.1449,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Carlos Renê",
+      "g": 9,
+      "p": 0.2617
+     },
+     {
+      "n": "Matheuzinho",
+      "g": 6,
+      "p": 0.1831
+     },
+     {
+      "n": "Renato Kayzer",
+      "g": 5,
+      "p": 0.1551
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Lucas Barbosa",
+      "g": 7,
+      "p": 0.1698
+     },
+     {
+      "n": "Isidro Pitta",
+      "g": 6,
+      "p": 0.1475
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 00:57 UTC",
+    "valor": [
+     "X"
+    ],
+    "1": 2.81,
+    "X": 3.5,
+    "2": 2.58
+   }
+  },
+  {
+   "id": 555087,
+   "liga": "Brasileirão",
+   "fecha": "2026-11-20T00:30:00Z",
+   "local": "São Paulo FC",
+   "visitante": "Fluminense FC",
+   "creada": "2026-11-13T00:51:59Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.358,
+   "p_empate": 0.3114,
+   "p_visitante": 0.3306,
+   "xg_local": 1.17,
+   "xg_visitante": 1.11,
+   "n_partidos": 186,
+   "mercados": {
+    "over15": 0.6784,
+    "over25": 0.3993,
+    "over35": 0.1971,
+    "btts": 0.4763,
+    "marcador": "1-1",
+    "p_marcador": 0.1461,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Jonathan Calleri",
+      "g": 10,
+      "p": 0.2592
+     },
+     {
+      "n": "Luciano",
+      "g": 9,
+      "p": 0.2366
+     },
+     {
+      "n": "Artur Guimaraes",
+      "g": 4,
+      "p": 0.1131
+     }
+    ],
+    "visitante": [
+     {
+      "n": "John Kennedy",
+      "g": 9,
+      "p": 0.1661
+     },
+     {
+      "n": "Hulk",
+      "g": 7,
+      "p": 0.1317
+     },
+     {
+      "n": "Jefferson Savarino",
+      "g": 7,
+      "p": 0.1317
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 00:57 UTC",
+    "valor": [
+     "2"
+    ],
+    "1": 2.4,
+    "X": 3.3,
+    "2": 3.23
+   }
+  },
+  {
+   "id": "espn-401933535",
+   "liga": "MLS",
+   "fecha": "2026-11-20T00:30:00Z",
+   "local": "Orlando City SC",
+   "visitante": "FC Cincinnati",
+   "creada": "2026-11-13T00:51:59Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.479,
+   "p_empate": 0.219,
+   "p_visitante": 0.302,
+   "xg_local": 2.2,
+   "xg_visitante": 1.74,
+   "n_partidos": 180,
+   "mercados": {
+    "over15": 0.9113,
+    "over25": 0.7528,
+    "over35": 0.5544,
+    "btts": 0.7405,
+    "marcador": "1-1",
+    "p_marcador": 0.082,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE"
   }
  ],
- "actualizado": "2026-11-12 20:46 UTC"
+ "actualizado": "2026-11-13 00:51 UTC"
 }

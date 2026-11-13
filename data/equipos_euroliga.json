@@ -1,163 +1,15 @@
 {
- "actualizado": "2026-11-12 20:52 UTC",
+ "actualizado": "2026-11-13 00:58 UTC",
  "liga": "Euroliga",
- "datos_hasta": "2026-11-11T19:45:00Z",
- "dias_desde_datos": 1,
+ "datos_hasta": "2026-11-12T20:00:00Z",
+ "dias_desde_datos": 0,
  "fuente": {
   "nombre": "Euroleague Basketball",
   "url": "https://www.euroleaguebasketball.net"
  },
  "con_cuotas": true,
- "proximo": "2026-11-12T19:05:00Z",
+ "proximo": "2026-11-13T17:30:00Z",
  "predicciones": [
-  {
-   "id": "E2026_103",
-   "fecha": "2026-11-12T19:05:00Z",
-   "local": "Maccabi Rapyd Tel Aviv",
-   "visitante": "Hapoel IBI Tel Aviv",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.4733,
-   "pv": 0.5267,
-   "elo_l": 1433,
-   "elo_v": 1552,
-   "bal_l": [
-    2,
-    8
-   ],
-   "bal_v": [
-    6,
-    4
-   ],
-   "creada": "2026-11-11 04:09 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 1.51,
-      "casa": "1xBet"
-     },
-     "L": {
-      "c": 2.96,
-      "casa": "Betfair"
-     }
-    },
-    "mercado": {
-     "L": 0.355,
-     "V": 0.645
-    },
-    "casas": 21,
-    "ev": {
-     "L": 0.401,
-     "V": -0.2047
-    },
-    "valor": [
-     "L"
-    ],
-    "actualizado": "2026-11-12 15:49 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-11 04:09 UTC",
-    "valor": [
-     "L"
-    ],
-    "L": 2.96,
-    "V": 1.5
-   }
-  },
-  {
-   "id": "E2026_107",
-   "fecha": "2026-11-12T19:15:00Z",
-   "local": "Olympiacos Piraeus",
-   "visitante": "Dubai Basketball",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7783,
-   "pv": 0.2217,
-   "elo_l": 1674,
-   "elo_v": 1555,
-   "bal_l": [
-    7,
-    3
-   ],
-   "bal_v": [
-    7,
-    3
-   ],
-   "creada": "2026-11-11 04:09 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "E2026_105",
-   "fecha": "2026-11-12T19:30:00Z",
-   "local": "Valencia Basket",
-   "visitante": "FC Bayern Munich",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8065,
-   "pv": 0.1935,
-   "elo_l": 1600,
-   "elo_v": 1452,
-   "bal_l": [
-    7,
-    3
-   ],
-   "bal_v": [
-    3,
-    7
-   ],
-   "creada": "2026-11-11 04:09 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "E2026_104",
-   "fecha": "2026-11-12T19:30:00Z",
-   "local": "Armani Olimpia Milan",
-   "visitante": "Zalgiris Kaunas",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.4615,
-   "pv": 0.5385,
-   "elo_l": 1436,
-   "elo_v": 1563,
-   "bal_l": [
-    1,
-    9
-   ],
-   "bal_v": [
-    6,
-    4
-   ],
-   "creada": "2026-11-11 04:09 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "E2026_106",
-   "fecha": "2026-11-12T20:00:00Z",
-   "local": "Real Madrid",
-   "visitante": "Crvena Zvezda Meridianbet Belgrade",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7052,
-   "pv": 0.2948,
-   "elo_l": 1625,
-   "elo_v": 1573,
-   "bal_l": [
-    6,
-    4
-   ],
-   "bal_v": [
-    7,
-    3
-   ],
-   "creada": "2026-11-11 04:09 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "E2026_109",
    "fecha": "2026-11-13T17:30:00Z",
@@ -230,6 +82,154 @@
  ],
  "recientes": [
   {
+   "id": "E2026_106",
+   "fecha": "2026-11-12T20:00:00Z",
+   "local": "Real Madrid",
+   "visitante": "Crvena Zvezda Meridianbet Belgrade",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7052,
+   "pv": 0.2948,
+   "elo_l": 1625,
+   "elo_v": 1573,
+   "bal_l": [
+    6,
+    4
+   ],
+   "bal_v": [
+    7,
+    3
+   ],
+   "creada": "2026-11-11 04:09 UTC",
+   "resultado": "L",
+   "marcador": "105-84"
+  },
+  {
+   "id": "E2026_105",
+   "fecha": "2026-11-12T19:30:00Z",
+   "local": "Valencia Basket",
+   "visitante": "FC Bayern Munich",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8065,
+   "pv": 0.1935,
+   "elo_l": 1600,
+   "elo_v": 1452,
+   "bal_l": [
+    7,
+    3
+   ],
+   "bal_v": [
+    3,
+    7
+   ],
+   "creada": "2026-11-11 04:09 UTC",
+   "resultado": "L",
+   "marcador": "102-87"
+  },
+  {
+   "id": "E2026_104",
+   "fecha": "2026-11-12T19:30:00Z",
+   "local": "Armani Olimpia Milan",
+   "visitante": "Zalgiris Kaunas",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4615,
+   "pv": 0.5385,
+   "elo_l": 1436,
+   "elo_v": 1563,
+   "bal_l": [
+    1,
+    9
+   ],
+   "bal_v": [
+    6,
+    4
+   ],
+   "creada": "2026-11-11 04:09 UTC",
+   "resultado": "V",
+   "marcador": "83-86"
+  },
+  {
+   "id": "E2026_107",
+   "fecha": "2026-11-12T19:15:00Z",
+   "local": "Olympiacos Piraeus",
+   "visitante": "Dubai Basketball",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7783,
+   "pv": 0.2217,
+   "elo_l": 1674,
+   "elo_v": 1555,
+   "bal_l": [
+    7,
+    3
+   ],
+   "bal_v": [
+    7,
+    3
+   ],
+   "creada": "2026-11-11 04:09 UTC",
+   "resultado": "L",
+   "marcador": "101-72"
+  },
+  {
+   "id": "E2026_103",
+   "fecha": "2026-11-12T19:05:00Z",
+   "local": "Maccabi Rapyd Tel Aviv",
+   "visitante": "Hapoel IBI Tel Aviv",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4733,
+   "pv": 0.5267,
+   "elo_l": 1433,
+   "elo_v": 1552,
+   "bal_l": [
+    2,
+    8
+   ],
+   "bal_v": [
+    6,
+    4
+   ],
+   "creada": "2026-11-11 04:09 UTC",
+   "resultado": "L",
+   "marcador": "80-73",
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 1.51,
+      "casa": "1xBet"
+     },
+     "L": {
+      "c": 2.96,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "L": 0.355,
+     "V": 0.645
+    },
+    "casas": 21,
+    "ev": {
+     "L": 0.401,
+     "V": -0.2047
+    },
+    "valor": [
+     "L"
+    ],
+    "actualizado": "2026-11-12 15:49 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-11 04:09 UTC",
+    "valor": [
+     "L"
+    ],
+    "L": 2.96,
+    "V": 1.5
+   }
+  },
+  {
    "id": "E2026_102",
    "fecha": "2026-11-11T19:45:00Z",
    "local": "Partizan Mozzart Bet Belgrade",
@@ -278,35 +278,35 @@
  ],
  "directo": {
   "total": 10,
-  "resueltas": 2,
-  "aciertos": 2,
-  "acierto": 1.0,
+  "resueltas": 7,
+  "aciertos": 6,
+  "acierto": 0.8571,
   "ic": [
-   0.3424,
-   1.0
+   0.4869,
+   0.9743
   ],
-  "brier": 0.1235,
-  "apuestas": 0,
-  "ganadas": 0,
-  "roi": null
+  "brier": 0.1301,
+  "apuestas": 1,
+  "ganadas": 1,
+  "roi": 1.96
  },
  "ranking": [
   {
    "equipo": "Olympiacos Piraeus",
-   "elo": 1674,
-   "g": 7,
+   "elo": 1682,
+   "g": 8,
    "p": 3
   },
   {
    "equipo": "Real Madrid",
-   "elo": 1625,
-   "g": 6,
+   "elo": 1634,
+   "g": 7,
    "p": 4
   },
   {
    "equipo": "Valencia Basket",
-   "elo": 1600,
-   "g": 7,
+   "elo": 1605,
+   "g": 8,
    "p": 3
   },
   {
@@ -316,10 +316,10 @@
    "p": 2
   },
   {
-   "equipo": "Crvena Zvezda Meridianbet Belgrade",
-   "elo": 1573,
+   "equipo": "Zalgiris Kaunas",
+   "elo": 1568,
    "g": 7,
-   "p": 3
+   "p": 4
   },
   {
    "equipo": "Fenerbahce Beko Istanbul",
@@ -328,9 +328,9 @@
    "p": 0
   },
   {
-   "equipo": "Zalgiris Kaunas",
-   "elo": 1563,
-   "g": 6,
+   "equipo": "Crvena Zvezda Meridianbet Belgrade",
+   "elo": 1564,
+   "g": 7,
    "p": 4
   },
   {
@@ -341,15 +341,15 @@
   },
   {
    "equipo": "Dubai Basketball",
-   "elo": 1555,
+   "elo": 1547,
    "g": 7,
-   "p": 3
+   "p": 4
   },
   {
    "equipo": "Hapoel IBI Tel Aviv",
-   "elo": 1552,
+   "elo": 1543,
    "g": 6,
-   "p": 4
+   "p": 5
   },
   {
    "equipo": "Fenerbahce Tarfin Istanbul",
@@ -425,21 +425,21 @@
   },
   {
    "equipo": "FC Bayern Munich",
-   "elo": 1452,
+   "elo": 1448,
    "g": 3,
-   "p": 7
-  },
-  {
-   "equipo": "Armani Olimpia Milan",
-   "elo": 1436,
-   "g": 1,
-   "p": 9
+   "p": 8
   },
   {
    "equipo": "Maccabi Rapyd Tel Aviv",
-   "elo": 1433,
-   "g": 2,
+   "elo": 1442,
+   "g": 3,
    "p": 8
+  },
+  {
+   "equipo": "Armani Olimpia Milan",
+   "elo": 1431,
+   "g": 1,
+   "p": 10
   },
   {
    "equipo": "Virtus Bologna",

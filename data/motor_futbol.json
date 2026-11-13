@@ -1,0 +1,353 @@
+{
+ "ajustado": "2026-11-13 00:50 UTC",
+ "params": {
+  "wa": 0.5,
+  "wb": 0.25,
+  "wc": 0.25,
+  "k_elo": 0.006,
+  "rho": -0.1,
+  "vida_a": 365,
+  "vida_b": 365
+ },
+ "activo": true,
+ "prueba": {
+  "total": {
+   "motor": {
+    "n": 6037,
+    "acierto": 0.4968,
+    "brier": 0.6076,
+    "logloss": 1.0146
+   },
+   "anterior": {
+    "n": 6037,
+    "acierto": 0.4757,
+    "brier": 0.6233,
+    "logloss": 1.0378
+   },
+   "mercado": {
+    "n": 6037,
+    "acierto": 0.509,
+    "brier": 0.5968,
+    "logloss": 0.9982
+   },
+   "local": {
+    "n": 6037,
+    "acierto": 0.4393,
+    "brier": 1.1214,
+    "logloss": null
+   }
+  },
+  "ligas": {
+   "Premier League": {
+    "motor": {
+     "n": 431,
+     "acierto": 0.4919,
+     "brier": 0.614,
+     "logloss": 1.0225
+    },
+    "anterior": {
+     "n": 431,
+     "acierto": 0.4733,
+     "brier": 0.6378,
+     "logloss": 1.0564
+    },
+    "mercado": {
+     "n": 431,
+     "acierto": 0.4896,
+     "brier": 0.6089,
+     "logloss": 1.0138
+    },
+    "local": {
+     "n": 431,
+     "acierto": 0.42,
+     "brier": 1.1601,
+     "logloss": null
+    }
+   },
+   "LaLiga": {
+    "motor": {
+     "n": 444,
+     "acierto": 0.5383,
+     "brier": 0.5752,
+     "logloss": 0.9719
+    },
+    "anterior": {
+     "n": 444,
+     "acierto": 0.5045,
+     "brier": 0.5983,
+     "logloss": 1.0035
+    },
+    "mercado": {
+     "n": 444,
+     "acierto": 0.5541,
+     "brier": 0.5613,
+     "logloss": 0.949
+    },
+    "local": {
+     "n": 444,
+     "acierto": 0.4775,
+     "brier": 1.045,
+     "logloss": null
+    }
+   },
+   "Serie A": {
+    "motor": {
+     "n": 447,
+     "acierto": 0.5391,
+     "brier": 0.5842,
+     "logloss": 0.9815
+    },
+    "anterior": {
+     "n": 447,
+     "acierto": 0.5213,
+     "brier": 0.5958,
+     "logloss": 0.9967
+    },
+    "mercado": {
+     "n": 447,
+     "acierto": 0.5548,
+     "brier": 0.5743,
+     "logloss": 0.9673
+    },
+    "local": {
+     "n": 447,
+     "acierto": 0.4072,
+     "brier": 1.1857,
+     "logloss": null
+    }
+   },
+   "Bundesliga": {
+    "motor": {
+     "n": 338,
+     "acierto": 0.568,
+     "brier": 0.5707,
+     "logloss": 0.9637
+    },
+    "anterior": {
+     "n": 338,
+     "acierto": 0.5296,
+     "brier": 0.5952,
+     "logloss": 1.0031
+    },
+    "mercado": {
+     "n": 338,
+     "acierto": 0.574,
+     "brier": 0.5643,
+     "logloss": 0.9544
+    },
+    "local": {
+     "n": 338,
+     "acierto": 0.4467,
+     "brier": 1.1065,
+     "logloss": null
+    }
+   },
+   "Ligue 1": {
+    "motor": {
+     "n": 350,
+     "acierto": 0.5171,
+     "brier": 0.5928,
+     "logloss": 0.9917
+    },
+    "anterior": {
+     "n": 350,
+     "acierto": 0.4829,
+     "brier": 0.6146,
+     "logloss": 1.0226
+    },
+    "mercado": {
+     "n": 350,
+     "acierto": 0.5457,
+     "brier": 0.5796,
+     "logloss": 0.9729
+    },
+    "local": {
+     "n": 350,
+     "acierto": 0.46,
+     "brier": 1.08,
+     "logloss": null
+    }
+   },
+   "Primeira Liga": {
+    "motor": {
+     "n": 357,
+     "acierto": 0.5742,
+     "brier": 0.5484,
+     "logloss": 0.9273
+    },
+    "anterior": {
+     "n": 357,
+     "acierto": 0.5518,
+     "brier": 0.5665,
+     "logloss": 0.9518
+    },
+    "mercado": {
+     "n": 357,
+     "acierto": 0.5686,
+     "brier": 0.5385,
+     "logloss": 0.9111
+    },
+    "local": {
+     "n": 357,
+     "acierto": 0.4146,
+     "brier": 1.1709,
+     "logloss": null
+    }
+   },
+   "Eredivisie": {
+    "motor": {
+     "n": 368,
+     "acierto": 0.5054,
+     "brier": 0.5887,
+     "logloss": 0.9863
+    },
+    "anterior": {
+     "n": 368,
+     "acierto": 0.4946,
+     "brier": 0.6138,
+     "logloss": 1.0264
+    },
+    "mercado": {
+     "n": 368,
+     "acierto": 0.5217,
+     "brier": 0.5891,
+     "logloss": 0.9873
+    },
+    "local": {
+     "n": 368,
+     "acierto": 0.4212,
+     "brier": 1.1576,
+     "logloss": null
+    }
+   },
+   "Championship": {
+    "motor": {
+     "n": 675,
+     "acierto": 0.4385,
+     "brier": 0.6419,
+     "logloss": 1.0627
+    },
+    "anterior": {
+     "n": 675,
+     "acierto": 0.4311,
+     "brier": 0.6439,
+     "logloss": 1.0652
+    },
+    "mercado": {
+     "n": 675,
+     "acierto": 0.48,
+     "brier": 0.6239,
+     "logloss": 1.0353
+    },
+    "local": {
+     "n": 675,
+     "acierto": 0.4267,
+     "brier": 1.1467,
+     "logloss": null
+    }
+   },
+   "Brasileirão": {
+    "motor": {
+     "n": 667,
+     "acierto": 0.5202,
+     "brier": 0.5953,
+     "logloss": 0.9942
+    },
+    "anterior": {
+     "n": 667,
+     "acierto": 0.5082,
+     "brier": 0.6057,
+     "logloss": 1.0093
+    },
+    "mercado": {
+     "n": 667,
+     "acierto": 0.5352,
+     "brier": 0.5826,
+     "logloss": 0.9763
+    },
+    "local": {
+     "n": 667,
+     "acierto": 0.4993,
+     "brier": 1.0015,
+     "logloss": null
+    }
+   },
+   "Liga Profesional": {
+    "motor": {
+     "n": 954,
+     "acierto": 0.4382,
+     "brier": 0.6402,
+     "logloss": 1.0619
+    },
+    "anterior": {
+     "n": 954,
+     "acierto": 0.4004,
+     "brier": 0.6557,
+     "logloss": 1.0844
+    },
+    "mercado": {
+     "n": 954,
+     "acierto": 0.4266,
+     "brier": 0.634,
+     "logloss": 1.0519
+    },
+    "local": {
+     "n": 954,
+     "acierto": 0.414,
+     "brier": 1.1719,
+     "logloss": null
+    }
+   },
+   "MLS": {
+    "motor": {
+     "n": 1006,
+     "acierto": 0.4791,
+     "brier": 0.6292,
+     "logloss": 1.0477
+    },
+    "anterior": {
+     "n": 1006,
+     "acierto": 0.4692,
+     "brier": 0.6435,
+     "logloss": 1.071
+    },
+    "mercado": {
+     "n": 1006,
+     "acierto": 0.497,
+     "brier": 0.6136,
+     "logloss": 1.0242
+    },
+    "local": {
+     "n": 1006,
+     "acierto": 0.4433,
+     "brier": 1.1133,
+     "logloss": null
+    }
+   }
+  },
+  "valor": {
+   "apuestas": 5393,
+   "ganadas": 1325,
+   "roi": -0.0898,
+   "ic_roi": [
+    -0.1367,
+    -0.043
+   ]
+  },
+  "segundos": 6
+ },
+ "ligas": [
+  "Premier League",
+  "LaLiga",
+  "Serie A",
+  "Bundesliga",
+  "Ligue 1",
+  "Primeira Liga",
+  "Eredivisie",
+  "Championship",
+  "Brasileirão",
+  "Liga Profesional",
+  "MLS"
+ ],
+ "actualizado": "2026-11-13 00:50 UTC"
+}
