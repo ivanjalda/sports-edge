@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13 19:18 UTC",
+ "actualizado": "2026-11-13 19:47 UTC",
  "predicciones": [
   {
    "id": 555085,
@@ -811,6 +811,119 @@
    "modelo": "SE",
    "razon_es": "Goles esperados: 1.56 - 1.08. Motor propio Sports Edge: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.56 - 1.08. Sports Edge's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 565859,
+   "liga": "Bundesliga",
+   "fecha": "2026-11-20T19:30:00Z",
+   "local": "FC Bayern München",
+   "visitante": "1. FC Köln",
+   "creada": "2026-11-13T19:47:41Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.8446,
+   "p_empate": 0.1029,
+   "p_visitante": 0.0525,
+   "xg_local": 3.48,
+   "xg_visitante": 0.88,
+   "n_partidos": 111,
+   "mercados": {
+    "over15": 0.9351,
+    "over25": 0.8089,
+    "over35": 0.631,
+    "btts": 0.5716,
+    "marcador": "3-0",
+    "p_marcador": 0.0904,
+    "ht_local": 0.6642,
+    "ht_empate": 0.2453,
+    "ht_visitante": 0.0905,
+    "ht_gol": 0.8559
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Michael Olise",
+      "g": 6,
+      "p": 0.5132
+     },
+     {
+      "n": "Luis Díaz",
+      "g": 4,
+      "p": 0.3812
+     },
+     {
+      "n": "Harry Kane",
+      "g": 4,
+      "p": 0.3812
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Said El Mala",
+      "g": 3,
+      "p": 0.232
+     },
+     {
+      "n": "Thijs Dallinga",
+      "g": 2,
+      "p": 0.1614
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 3.48 - 0.88. Motor propio Sports Edge: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 3.48 - 0.88. Sports Edge's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 559622,
+   "liga": "Ligue 1",
+   "fecha": "2026-11-20T19:45:00Z",
+   "local": "ES Troyes AC",
+   "visitante": "Le Havre AC",
+   "creada": "2026-11-13T19:47:41Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.3999,
+   "p_empate": 0.3027,
+   "p_visitante": 0.2974,
+   "xg_local": 1.29,
+   "xg_visitante": 1.08,
+   "n_partidos": 48,
+   "mercados": {
+    "over15": 0.6981,
+    "over25": 0.4226,
+    "over35": 0.2151,
+    "btts": 0.4917,
+    "marcador": "1-1",
+    "p_marcador": 0.1432,
+    "ht_local": 0.3021,
+    "ht_empate": 0.457,
+    "ht_visitante": 0.2409,
+    "ht_gol": 0.6435
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [],
+    "visitante": [
+     {
+      "n": "Josh Maja",
+      "g": 4,
+      "p": 0.3812
+     },
+     {
+      "n": "Mbwana Samatta",
+      "g": 2,
+      "p": 0.2134
+     },
+     {
+      "n": "Rayan Fofana",
+      "g": 2,
+      "p": 0.2134
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.29 - 1.08. Motor propio Sports Edge: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.29 - 1.08. Sports Edge's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   }
  ]
 }

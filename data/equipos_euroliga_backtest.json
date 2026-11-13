@@ -1,21 +1,21 @@
 {
- "actualizado": "2026-11-13 19:24 UTC",
+ "actualizado": "2026-11-13 19:53 UTC",
  "liga": "Euroliga",
  "desde": "20250930",
- "datos_hasta": "2026-11-12T20:00:00Z",
+ "datos_hasta": "2026-11-13T17:30:00Z",
  "total": {
-  "n": 509,
-  "aciertos": 324,
-  "acierto": 0.6365,
+  "n": 510,
+  "aciertos": 325,
+  "acierto": 0.6373,
   "ic": [
-   0.5939,
-   0.6772
+   0.5946,
+   0.6778
   ],
-  "brier": 0.2218
+  "brier": 0.2215
  },
  "base_local": {
-  "n": 509,
-  "acierto": 0.6169
+  "n": 510,
+  "acierto": 0.6176
  },
  "base_balance": {
   "n": 369,
@@ -25,22 +25,22 @@
  "tramos": [
   {
    "min": 0.6,
-   "n": 339,
-   "conf": 0.702,
-   "acierto": 0.6785,
+   "n": 340,
+   "conf": 0.7021,
+   "acierto": 0.6794,
    "ic": [
-    0.627,
-    0.7259
+    0.628,
+    0.7268
    ]
   },
   {
    "min": 0.7,
-   "n": 168,
-   "conf": 0.758,
-   "acierto": 0.7679,
+   "n": 169,
+   "conf": 0.7578,
+   "acierto": 0.7692,
    "ic": [
-    0.6985,
-    0.8253
+    0.7001,
+    0.8263
    ]
   },
   {
@@ -72,9 +72,9 @@
   {
    "desde": 70,
    "hasta": 80,
-   "n": 142,
-   "prometido": 0.7443,
-   "real": 0.7394
+   "n": 143,
+   "prometido": 0.7442,
+   "real": 0.7413
   },
   {
    "desde": 80,
@@ -103,26 +103,26 @@
    "brier": 0.2203
   },
   "2027": {
-   "n": 107,
-   "aciertos": 65,
-   "acierto": 0.6075,
+   "n": 108,
+   "aciertos": 66,
+   "acierto": 0.6111,
    "ic": [
-    0.5128,
-    0.6947
+    0.5169,
+    0.6977
    ],
-   "brier": 0.2275
+   "brier": 0.2261
   }
  },
  "fases": {
   "regular": {
-   "n": 490,
-   "aciertos": 311,
-   "acierto": 0.6347,
+   "n": 491,
+   "aciertos": 312,
+   "acierto": 0.6354,
    "ic": [
-    0.5912,
-    0.6761
+    0.592,
+    0.6768
    ],
-   "brier": 0.2221
+   "brier": 0.2218
   },
   "playoff": {
    "n": 19,
@@ -137,14 +137,14 @@
  },
  "elige": {
   "local": {
-   "n": 435,
-   "aciertos": 282,
-   "acierto": 0.6483,
+   "n": 436,
+   "aciertos": 283,
+   "acierto": 0.6491,
    "ic": [
-    0.6023,
-    0.6917
+    0.6032,
+    0.6924
    ],
-   "brier": 0.2202
+   "brier": 0.2198
   },
   "visitante": {
    "n": 74,
@@ -158,6 +158,15 @@
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-13T17:30:00Z",
+   "local": "Anadolu Efes Istanbul",
+   "visitante": "Virtus Bologna",
+   "marcador": "103-91",
+   "fav": "Anadolu Efes Istanbul",
+   "pp": 0.7303,
+   "ok": true
+  },
   {
    "fecha": "2026-11-12T20:00:00Z",
    "local": "Real Madrid",
@@ -373,15 +382,6 @@
    "fav": "Dubai Basketball",
    "pp": 0.5867,
    "ok": true
-  },
-  {
-   "fecha": "2026-10-29T19:45:00Z",
-   "local": "Real Madrid",
-   "visitante": "Fenerbahce Tarfin Istanbul",
-   "marcador": "95-76",
-   "fav": "Real Madrid",
-   "pp": 0.74,
-   "ok": true
   }
  ],
  "motor": {
@@ -394,18 +394,18 @@
    "c_micro": 0.0,
    "c_sede": 0.0
   },
-  "sd": 12.365,
+  "sd": 12.363,
   "motor": {
-   "n": 509,
-   "acierto": 0.6267,
-   "brier": 0.2227,
-   "logloss": 0.6351
+   "n": 510,
+   "acierto": 0.6275,
+   "brier": 0.2224,
+   "logloss": 0.6344
   },
   "elo_basico": {
-   "n": 509,
-   "acierto": 0.6365,
-   "brier": 0.2218,
-   "logloss": 0.6333
+   "n": 510,
+   "acierto": 0.6373,
+   "brier": 0.2215,
+   "logloss": 0.6327
   },
   "escalas": {
    "temporada": true,
@@ -415,8 +415,8 @@
    "descanso": true
   },
   "local": {
-   "n": 509,
-   "acierto": 0.6169
+   "n": 510,
+   "acierto": 0.6176
   },
   "temporadas_prueba": [
    2026,

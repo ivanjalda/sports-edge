@@ -1,38 +1,15 @@
 {
- "actualizado": "2026-11-13 19:24 UTC",
+ "actualizado": "2026-11-13 19:53 UTC",
  "liga": "Euroliga",
- "datos_hasta": "2026-11-12T20:00:00Z",
+ "datos_hasta": "2026-11-13T17:30:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "Euroleague Basketball",
   "url": "https://www.euroleaguebasketball.net"
  },
  "con_cuotas": true,
- "proximo": "2026-11-13T19:30:00Z",
+ "proximo": "2026-11-17T16:00:00Z",
  "predicciones": [
-  {
-   "id": "E2026_109",
-   "fecha": "2026-11-13T17:30:00Z",
-   "local": "Anadolu Efes Istanbul",
-   "visitante": "Virtus Bologna",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7303,
-   "pv": 0.2697,
-   "elo_l": 1488,
-   "elo_v": 1415,
-   "bal_l": [
-    4,
-    6
-   ],
-   "bal_v": [
-    4,
-    6
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "E2026_110",
    "fecha": "2026-11-13T19:15:00Z",
@@ -81,6 +58,29 @@
   }
  ],
  "recientes": [
+  {
+   "id": "E2026_109",
+   "fecha": "2026-11-13T17:30:00Z",
+   "local": "Anadolu Efes Istanbul",
+   "visitante": "Virtus Bologna",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7303,
+   "pv": 0.2697,
+   "elo_l": 1488,
+   "elo_v": 1415,
+   "bal_l": [
+    4,
+    6
+   ],
+   "bal_v": [
+    4,
+    6
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "L",
+   "marcador": "103-91"
+  },
   {
    "id": "E2026_106",
    "fecha": "2026-11-12T20:00:00Z",
@@ -278,14 +278,14 @@
  ],
  "directo": {
   "total": 10,
-  "resueltas": 7,
-  "aciertos": 6,
-  "acierto": 0.8571,
+  "resueltas": 8,
+  "aciertos": 7,
+  "acierto": 0.875,
   "ic": [
-   0.4869,
-   0.9743
+   0.5291,
+   0.9776
   ],
-  "brier": 0.1301,
+  "brier": 0.1229,
   "apuestas": 1,
   "ganadas": 1,
   "roi": 1.96
@@ -376,6 +376,12 @@
    "p": 5
   },
   {
+   "equipo": "Anadolu Efes Istanbul",
+   "elo": 1494,
+   "g": 5,
+   "p": 6
+  },
+  {
    "equipo": "Paris Basketball",
    "elo": 1492,
    "g": 5,
@@ -386,12 +392,6 @@
    "elo": 1491,
    "g": 0,
    "p": 0
-  },
-  {
-   "equipo": "Anadolu Efes Istanbul",
-   "elo": 1488,
-   "g": 4,
-   "p": 6
   },
   {
    "equipo": "Besiktas Istanbul",
@@ -443,9 +443,9 @@
   },
   {
    "equipo": "Virtus Bologna",
-   "elo": 1415,
+   "elo": 1410,
    "g": 4,
-   "p": 6
+   "p": 7
   },
   {
    "equipo": "LDLC ASVEL Villeurbanne",

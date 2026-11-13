@@ -5,146 +5,111 @@
    "nombre": "Grand Prix of Portugal",
    "fecha": "2026-11-15T13:00:00Z",
    "tipo": "previa",
-   "creada": "2026-11-13 19:25 UTC",
+   "creada": "2026-11-13 19:54 UTC",
    "fav": {
-    "id": "e7e4c72e-952e-4f64-8e8a-a47ff590fade",
-    "n": "Alex Marquez",
-    "pw": 0.2587
+    "id": "f55b433d-38b8-4d1d-bb3a-a709c82a0260",
+    "n": "Marc Marquez",
+    "pw": 0.3683
    },
    "pilotos": [
     {
-     "id": "e7e4c72e-952e-4f64-8e8a-a47ff590fade",
-     "n": "Alex Marquez",
-     "pw": 0.2587,
-     "pp": 0.6025
-    },
-    {
      "id": "f55b433d-38b8-4d1d-bb3a-a709c82a0260",
      "n": "Marc Marquez",
-     "pw": 0.2055,
-     "pp": 0.5382
-    },
-    {
-     "id": "9cb55304-0ac1-401c-beb6-1a4f445018a4",
-     "n": "Francesco Bagnaia",
-     "pw": 0.1602,
-     "pp": 0.4552
-    },
-    {
-     "id": "fcdd5500-a769-4ff4-8b9e-080d1849ff42",
-     "n": "Fabio Quartararo",
-     "pw": 0.0492,
-     "pp": 0.1718
-    },
-    {
-     "id": "487440af-cfa9-478a-903b-4e893ee18d3a",
-     "n": "Johann Zarco",
-     "pw": 0.041,
-     "pp": 0.1468
-    },
-    {
-     "id": "6c33de41-f014-4f17-8dc9-e6f36e61026a",
-     "n": "Fabio Di Giannantonio",
-     "pw": 0.0355,
-     "pp": 0.133
-    },
-    {
-     "id": "2614e0f6-7e02-4076-a746-50f43fe3143c",
-     "n": "Fermin Aldeguer",
-     "pw": 0.0348,
-     "pp": 0.132
-    },
-    {
-     "id": "a6108385-dd4c-490d-b02e-542ed0275f79",
-     "n": "Pedro Acosta",
-     "pw": 0.0347,
-     "pp": 0.132
-    },
-    {
-     "id": "a73f8ef2-784f-4f52-8511-1d315fd3a459",
-     "n": "Franco Morbidelli",
-     "pw": 0.0325,
-     "pp": 0.1212
-    },
-    {
-     "id": "ba579548-f026-402b-a607-38db5317d33f",
-     "n": "Brad Binder",
-     "pw": 0.0287,
-     "pp": 0.1065
-    },
-    {
-     "id": "66ee98b2-239c-487f-8913-aab8493ce280",
-     "n": "Maverick Viñales",
-     "pw": 0.0267,
-     "pp": 0.0938
-    },
-    {
-     "id": "9a441928-d1af-452d-afce-fa028c044932",
-     "n": "Joan Mir",
-     "pw": 0.0145,
-     "pp": 0.0542
-    },
-    {
-     "id": "eb47c439-e136-40ff-9534-5c612853f529",
-     "n": "Ai Ogura",
-     "pw": 0.0142,
-     "pp": 0.0473
-    },
-    {
-     "id": "ff225c9d-64a2-43ac-a70e-62cf385a85a1",
-     "n": "Enea Bastianini",
-     "pw": 0.0113,
-     "pp": 0.05
-    },
-    {
-     "id": "6e940243-5167-4cc3-a343-a74337369b94",
-     "n": "Jack Miller",
-     "pw": 0.0102,
-     "pp": 0.0435
+     "pw": 0.3683,
+     "pp": 0.733
     },
     {
      "id": "ab06dbae-7d6e-47c3-b63f-b7ac6b7d3bcd",
      "n": "Marco Bezzecchi",
-     "pw": 0.0102,
-     "pp": 0.0433
+     "pw": 0.2407,
+     "pp": 0.6545
     },
     {
-     "id": "7b0687b0-90bd-4ad6-b157-8c66fb8a93cf",
-     "n": "Luca Marini",
-     "pw": 0.0093,
-     "pp": 0.0388
+     "id": "5cbd7eb6-ccfc-4b9f-aad1-ede25d394f7b",
+     "n": "Jorge Martin",
+     "pw": 0.1188,
+     "pp": 0.4557
     },
     {
-     "id": "1abd2de7-9046-4d0a-88e3-ad801dcc235b",
-     "n": "Miguel Oliveira",
-     "pw": 0.0087,
-     "pp": 0.0308
+     "id": "a6108385-dd4c-490d-b02e-542ed0275f79",
+     "n": "Pedro Acosta",
+     "pw": 0.0923,
+     "pp": 0.3607
+    },
+    {
+     "id": "eb47c439-e136-40ff-9534-5c612853f529",
+     "n": "Ai Ogura",
+     "pw": 0.0845,
+     "pp": 0.3402
     },
     {
      "id": "58448742-f520-466a-a1a1-bf3286cce9c3",
      "n": "Raul Fernandez",
+     "pw": 0.051,
+     "pp": 0.2285
+    },
+    {
+     "id": "6c33de41-f014-4f17-8dc9-e6f36e61026a",
+     "n": "Fabio Di Giannantonio",
+     "pw": 0.0172,
+     "pp": 0.084
+    },
+    {
+     "id": "ff225c9d-64a2-43ac-a70e-62cf385a85a1",
+     "n": "Enea Bastianini",
+     "pw": 0.0127,
+     "pp": 0.062
+    },
+    {
+     "id": "2614e0f6-7e02-4076-a746-50f43fe3143c",
+     "n": "Fermin Aldeguer",
      "pw": 0.0055,
-     "pp": 0.0195
+     "pp": 0.0313
     },
     {
-     "id": "56475aa3-f3d1-485a-b6db-ca1149e1b6fa",
-     "n": "Alex Rins",
-     "pw": 0.0042,
-     "pp": 0.0228
+     "id": "ba579548-f026-402b-a607-38db5317d33f",
+     "n": "Brad Binder",
+     "pw": 0.0033,
+     "pp": 0.0153
     },
     {
-     "id": "201ae7a4-0dc7-4191-be71-d91ac0330090",
-     "n": "Takaaki Nakagami",
-     "pw": 0.0035,
-     "pp": 0.0143
+     "id": "487440af-cfa9-478a-903b-4e893ee18d3a",
+     "n": "Johann Zarco",
+     "pw": 0.0023,
+     "pp": 0.0155
     },
     {
-     "id": "0c9405ff-e879-498c-964d-b39409361a6c",
-     "n": "Lorenzo Savadori",
-     "pw": 0.0012,
-     "pp": 0.0023
+     "id": "3c7598e5-12ec-4e19-9311-1c0e9a017cbe",
+     "n": "Diogo Moreira",
+     "pw": 0.0018,
+     "pp": 0.0103
+    },
+    {
+     "id": "173da4e6-99bd-4468-b277-cf47f1efd24b",
+     "n": "Iker Lecuona",
+     "pw": 0.0005,
+     "pp": 0.0035
+    },
+    {
+     "id": "6cbb2071-121c-4407-9966-1a16cacbf970",
+     "n": "Jake Dixon",
+     "pw": 0.0005,
+     "pp": 0.0033
+    },
+    {
+     "id": "66ee98b2-239c-487f-8913-aab8493ce280",
+     "n": "Maverick Viñales",
+     "pw": 0.0003,
+     "pp": 0.001
+    },
+    {
+     "id": "a73f8ef2-784f-4f52-8511-1d315fd3a459",
+     "n": "Franco Morbidelli",
+     "pw": 0.0002,
+     "pp": 0.0012
     }
    ],
+   "datos_completos": true,
    "resultado": null
   }
  ]

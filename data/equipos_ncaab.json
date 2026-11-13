@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13 19:24 UTC",
+ "actualizado": "2026-11-13 19:53 UTC",
  "liga": "NCAA",
  "datos_hasta": "2026-11-13T03:00:00Z",
  "dias_desde_datos": 0,
@@ -3114,6 +3114,29 @@
    "creada": "2026-11-13 19:24 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401909525",
+   "fecha": "2026-11-15T19:30:00Z",
+   "local": "Marquette Golden Eagles",
+   "visitante": "Missouri Tigers",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.4525,
+   "pv": 0.5475,
+   "elo_l": 1601,
+   "elo_v": 1617,
+   "bal_l": [
+    2,
+    1
+   ],
+   "bal_v": [
+    2,
+    1
+   ],
+   "creada": "2026-11-13 19:53 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
  "recientes": [
@@ -3579,7 +3602,7 @@
   }
  ],
  "directo": {
-  "total": 210,
+  "total": 211,
   "resueltas": 75,
   "aciertos": 55,
   "acierto": 0.7333,
