@@ -4,14 +4,14 @@
    dentro de su render(). Los botones ES/EN llaman a setLang() de cada pagina. */
 (function(){
   var TX={
-    es:{home:"Inicio",futbol:"Fútbol",tenis:"Tenis",baloncesto:"Baloncesto",hockey:"Hockey",americano:"Fútbol americano",stats:"Estadísticas",guia:"Guía",
+    es:{home:"Inicio",futbol:"Fútbol",tenis:"Tenis",baloncesto:"Baloncesto",hockey:"Hockey",americano:"Fútbol americano",mma:"MMA",stats:"Estadísticas",guia:"Guía",
         news:"Noticias",newsof:"Noticias de",more:"Más noticias",ago_h:"hace %d h",ago_m:"hace %d min",tema:"Modo día / noche"},
-    en:{home:"Home",futbol:"Football",tenis:"Tennis",baloncesto:"Basketball",hockey:"Hockey",americano:"American football",stats:"Statistics",guia:"Guide",
+    en:{home:"Home",futbol:"Football",tenis:"Tennis",baloncesto:"Basketball",hockey:"Hockey",americano:"American football",mma:"MMA",stats:"Statistics",guia:"Guide",
         news:"News",newsof:"News:",more:"More news",ago_h:"%dh ago",ago_m:"%d min ago",tema:"Light / dark mode"}
   };
   var ITEMS=[
     ["home","index.html","🏠"],["futbol","futbol.html","⚽"],["tenis","tenis.html","🎾"],
-    ["baloncesto","equipos.html?dep=baloncesto","🏀"],["hockey","equipos.html?dep=hockey","🏒"],["americano","equipos.html?dep=americano","🏈"],
+    ["baloncesto","equipos.html?dep=baloncesto","🏀"],["hockey","equipos.html?dep=hockey","🏒"],["americano","equipos.html?dep=americano","🏈"],["mma","equipos.html?dep=mma","🥋"],
     ["stats","estadisticas.html","📊"],["guia","guia.html","📘"]
   ];
   var css=
@@ -72,7 +72,7 @@
 
   /* ---------- columnas laterales de noticias ---------- */
   var NEWS=null, pedido=false, ultimo={lang:"es",act:"home"};
-  var DEPS={futbol:1,tenis:1,baloncesto:1,hockey:1,americano:1};
+  var DEPS={futbol:1,tenis:1,baloncesto:1,hockey:1,americano:1,mma:1};
   function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
   function hace(iso,t){ var m=Math.round((Date.now()-Date.parse(iso))/60000); if(!(m>=0)) return "";
     return m<60 ? t.ago_m.replace("%d",m) : t.ago_h.replace("%d",Math.round(m/60)); }
