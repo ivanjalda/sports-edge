@@ -1561,8 +1561,8 @@
     0
    ],
    "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "88-69"
   },
   {
    "id": "401917524",
@@ -1653,8 +1653,8 @@
     1
    ],
    "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "86-71"
   },
   {
    "id": "401920157",
@@ -1676,8 +1676,8 @@
     2
    ],
    "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "101-71"
   },
   {
    "id": "401911533",
@@ -1699,8 +1699,8 @@
     1
    ],
    "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "60-58"
   },
   {
    "id": "401911471",
@@ -4392,7 +4392,76 @@
    "creada": "2026-11-13 01:49 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401917530",
+   "fecha": "2026-11-15T03:00:00Z",
+   "local": "Santa Clara Broncos",
+   "visitante": "New Mexico Lobos",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5792,
+   "pv": 0.4208,
+   "elo_l": 1712,
+   "elo_v": 1688,
+   "bal_l": [
+    4,
+    0
+   ],
+   "bal_v": [
+    3,
+    0
+   ],
+   "creada": "2026-11-13 04:21 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401917528",
+   "fecha": "2026-11-15T03:00:00Z",
+   "local": "Seattle U Redhawks",
+   "visitante": "Idaho State Bengals",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8494,
+   "pv": 0.1506,
+   "elo_l": 1495,
+   "elo_v": 1376,
+   "bal_l": [
+    1,
+    2
+   ],
+   "bal_v": [
+    0,
+    3
+   ],
+   "creada": "2026-11-13 04:21 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401911455",
+   "fecha": "2026-11-15T03:00:00Z",
+   "local": "Nevada Wolf Pack",
+   "visitante": "Utah Valley Wolverines",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.61,
+   "pv": 0.39,
+   "elo_l": 1617,
+   "elo_v": 1641,
+   "bal_l": [
+    2,
+    1
+   ],
+   "bal_v": [
+    1,
+    0
+   ],
+   "creada": "2026-11-13 04:21 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-13 02:59 UTC"
+ "actualizado": "2026-11-13 04:21 UTC"
 }

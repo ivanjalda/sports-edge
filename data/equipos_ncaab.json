@@ -1,107 +1,15 @@
 {
- "actualizado": "2026-11-13 02:59 UTC",
+ "actualizado": "2026-11-13 04:21 UTC",
  "liga": "NCAA",
- "datos_hasta": "2026-11-13T01:00:00Z",
+ "datos_hasta": "2026-11-13T02:00:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
- "proximo": "2026-11-13T03:00:00Z",
+ "proximo": "2026-11-13T17:00:00Z",
  "predicciones": [
-  {
-   "id": "401919041",
-   "fecha": "2026-11-13T01:00:00Z",
-   "local": "Texas A&M Aggies",
-   "visitante": "Oklahoma State Cowboys",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7377,
-   "pv": 0.2623,
-   "elo_l": 1639,
-   "elo_v": 1559,
-   "bal_l": [
-    3,
-    0
-   ],
-   "bal_v": [
-    2,
-    0
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401921741",
-   "fecha": "2026-11-13T02:00:00Z",
-   "local": "BYU Cougars",
-   "visitante": "Montana State Bobcats",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7907,
-   "pv": 0.2093,
-   "elo_l": 1656,
-   "elo_v": 1526,
-   "bal_l": [
-    3,
-    0
-   ],
-   "bal_v": [
-    1,
-    1
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401920157",
-   "fecha": "2026-11-13T02:00:00Z",
-   "local": "Cal State Fullerton Titans",
-   "visitante": "Lincoln (CA) Oaklanders",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7814,
-   "pv": 0.2186,
-   "elo_l": 1497,
-   "elo_v": 1376,
-   "bal_l": [
-    1,
-    1
-   ],
-   "bal_v": [
-    0,
-    2
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401911533",
-   "fecha": "2026-11-13T02:00:00Z",
-   "local": "UTEP Miners",
-   "visitante": "New Mexico State Aggies",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5605,
-   "pv": 0.4395,
-   "elo_l": 1443,
-   "elo_v": 1501,
-   "bal_l": [
-    1,
-    1
-   ],
-   "bal_v": [
-    0,
-    1
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "401911471",
    "fecha": "2026-11-13T03:00:00Z",
@@ -2792,9 +2700,170 @@
    "creada": "2026-11-13 01:49 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401917530",
+   "fecha": "2026-11-15T03:00:00Z",
+   "local": "Santa Clara Broncos",
+   "visitante": "New Mexico Lobos",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5792,
+   "pv": 0.4208,
+   "elo_l": 1712,
+   "elo_v": 1688,
+   "bal_l": [
+    4,
+    0
+   ],
+   "bal_v": [
+    3,
+    0
+   ],
+   "creada": "2026-11-13 04:21 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401917528",
+   "fecha": "2026-11-15T03:00:00Z",
+   "local": "Seattle U Redhawks",
+   "visitante": "Idaho State Bengals",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8494,
+   "pv": 0.1506,
+   "elo_l": 1495,
+   "elo_v": 1376,
+   "bal_l": [
+    1,
+    2
+   ],
+   "bal_v": [
+    0,
+    3
+   ],
+   "creada": "2026-11-13 04:21 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401911455",
+   "fecha": "2026-11-15T03:00:00Z",
+   "local": "Nevada Wolf Pack",
+   "visitante": "Utah Valley Wolverines",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.61,
+   "pv": 0.39,
+   "elo_l": 1617,
+   "elo_v": 1641,
+   "bal_l": [
+    2,
+    1
+   ],
+   "bal_v": [
+    1,
+    0
+   ],
+   "creada": "2026-11-13 04:21 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
  "recientes": [
+  {
+   "id": "401921741",
+   "fecha": "2026-11-13T02:00:00Z",
+   "local": "BYU Cougars",
+   "visitante": "Montana State Bobcats",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7907,
+   "pv": 0.2093,
+   "elo_l": 1656,
+   "elo_v": 1526,
+   "bal_l": [
+    3,
+    0
+   ],
+   "bal_v": [
+    1,
+    1
+   ],
+   "creada": "2026-11-11 04:17 UTC",
+   "resultado": "L",
+   "marcador": "86-71"
+  },
+  {
+   "id": "401920157",
+   "fecha": "2026-11-13T02:00:00Z",
+   "local": "Cal State Fullerton Titans",
+   "visitante": "Lincoln (CA) Oaklanders",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7814,
+   "pv": 0.2186,
+   "elo_l": 1497,
+   "elo_v": 1376,
+   "bal_l": [
+    1,
+    1
+   ],
+   "bal_v": [
+    0,
+    2
+   ],
+   "creada": "2026-11-11 04:17 UTC",
+   "resultado": "L",
+   "marcador": "101-71"
+  },
+  {
+   "id": "401911533",
+   "fecha": "2026-11-13T02:00:00Z",
+   "local": "UTEP Miners",
+   "visitante": "New Mexico State Aggies",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5605,
+   "pv": 0.4395,
+   "elo_l": 1443,
+   "elo_v": 1501,
+   "bal_l": [
+    1,
+    1
+   ],
+   "bal_v": [
+    0,
+    1
+   ],
+   "creada": "2026-11-11 04:17 UTC",
+   "resultado": "L",
+   "marcador": "60-58"
+  },
+  {
+   "id": "401919041",
+   "fecha": "2026-11-13T01:00:00Z",
+   "local": "Texas A&M Aggies",
+   "visitante": "Oklahoma State Cowboys",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7377,
+   "pv": 0.2623,
+   "elo_l": 1639,
+   "elo_v": 1559,
+   "bal_l": [
+    3,
+    0
+   ],
+   "bal_v": [
+    2,
+    0
+   ],
+   "creada": "2026-11-11 04:17 UTC",
+   "resultado": "L",
+   "marcador": "88-69"
+  },
   {
    "id": "401917524",
    "fecha": "2026-11-13T01:00:00Z",
@@ -3162,110 +3231,18 @@
    "creada": "2026-11-11 04:17 UTC",
    "resultado": "L",
    "marcador": "72-57"
-  },
-  {
-   "id": "401916288",
-   "fecha": "2026-11-12T23:30:00Z",
-   "local": "Indiana Hoosiers",
-   "visitante": "Tennessee Tech Golden Eagles",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8167,
-   "pv": 0.1833,
-   "elo_l": 1594,
-   "elo_v": 1434,
-   "bal_l": [
-    3,
-    0
-   ],
-   "bal_v": [
-    1,
-    1
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": "L",
-   "marcador": "90-66"
-  },
-  {
-   "id": "401925631",
-   "fecha": "2026-11-12T23:00:00Z",
-   "local": "Coppin State Eagles",
-   "visitante": "Bradley Braves",
-   "neutral": true,
-   "playoff": false,
-   "pl": 0.2291,
-   "pv": 0.7709,
-   "elo_l": 1342,
-   "elo_v": 1553,
-   "bal_l": [
-    1,
-    2
-   ],
-   "bal_v": [
-    0,
-    2
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": "V",
-   "marcador": "54-56"
-  },
-  {
-   "id": "401921086",
-   "fecha": "2026-11-12T23:00:00Z",
-   "local": "UMBC Retrievers",
-   "visitante": "Morgan State Bears",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7509,
-   "pv": 0.2491,
-   "elo_l": 1545,
-   "elo_v": 1453,
-   "bal_l": [
-    0,
-    2
-   ],
-   "bal_v": [
-    3,
-    0
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": "L",
-   "marcador": "85-70"
-  },
-  {
-   "id": "401920073",
-   "fecha": "2026-11-12T20:00:00Z",
-   "local": "George Mason Patriots",
-   "visitante": "Kansas City Roos",
-   "neutral": true,
-   "playoff": false,
-   "pl": 0.8388,
-   "pv": 0.1612,
-   "elo_l": 1599,
-   "elo_v": 1312,
-   "bal_l": [
-    2,
-    0
-   ],
-   "bal_v": [
-    1,
-    2
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": "L",
-   "marcador": "76-68"
   }
  ],
  "directo": {
-  "total": 191,
-  "resueltas": 70,
-  "aciertos": 51,
-  "acierto": 0.7286,
+  "total": 194,
+  "resueltas": 74,
+  "aciertos": 55,
+  "acierto": 0.7432,
   "ic": [
-   0.6146,
-   0.8188
+   0.6335,
+   0.829
   ],
-  "brier": 0.1722,
+  "brier": 0.1677,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -3464,6 +3441,12 @@
    "p": 0
   },
   {
+   "equipo": "BYU Cougars",
+   "elo": 1691,
+   "g": 4,
+   "p": 0
+  },
+  {
    "equipo": "New Mexico Lobos",
    "elo": 1688,
    "g": 3,
@@ -3473,12 +3456,6 @@
    "equipo": "Auburn Tigers",
    "elo": 1686,
    "g": 2,
-   "p": 0
-  },
-  {
-   "equipo": "BYU Cougars",
-   "elo": 1686,
-   "g": 3,
    "p": 0
   },
   {
@@ -3494,14 +3471,14 @@
    "p": 0
   },
   {
-   "equipo": "Clemson Tigers",
-   "elo": 1670,
-   "g": 3,
+   "equipo": "Texas A&M Aggies",
+   "elo": 1677,
+   "g": 4,
    "p": 0
   },
   {
-   "equipo": "Texas A&M Aggies",
-   "elo": 1667,
+   "equipo": "Clemson Tigers",
+   "elo": 1670,
    "g": 3,
    "p": 0
   },
@@ -3824,12 +3801,6 @@
    "p": 2
   },
   {
-   "equipo": "Oklahoma State Cowboys",
-   "elo": 1584,
-   "g": 2,
-   "p": 0
-  },
-  {
    "equipo": "Tennessee State Tigers",
    "elo": 1583,
    "g": 2,
@@ -3864,6 +3835,12 @@
    "elo": 1580,
    "g": 3,
    "p": 0
+  },
+  {
+   "equipo": "Oklahoma State Cowboys",
+   "elo": 1574,
+   "g": 2,
+   "p": 1
   },
   {
    "equipo": "St. Thomas Tommies",
@@ -4268,12 +4245,6 @@
    "p": 1
   },
   {
-   "equipo": "Montana State Bobcats",
-   "elo": 1527,
-   "g": 1,
-   "p": 1
-  },
-  {
    "equipo": "Pacific Tigers",
    "elo": 1527,
    "g": 2,
@@ -4310,6 +4281,18 @@
    "p": 1
   },
   {
+   "equipo": "Cal State Fullerton Titans",
+   "elo": 1523,
+   "g": 2,
+   "p": 1
+  },
+  {
+   "equipo": "Montana State Bobcats",
+   "elo": 1521,
+   "g": 1,
+   "p": 2
+  },
+  {
    "equipo": "Maryland Terrapins",
    "elo": 1518,
    "g": 1,
@@ -4344,12 +4327,6 @@
    "elo": 1516,
    "g": 3,
    "p": 0
-  },
-  {
-   "equipo": "Cal State Fullerton Titans",
-   "elo": 1515,
-   "g": 1,
-   "p": 1
   },
   {
    "equipo": "Cal State Northridge Matadors",
@@ -4412,12 +4389,6 @@
    "p": 3
   },
   {
-   "equipo": "New Mexico State Aggies",
-   "elo": 1500,
-   "g": 0,
-   "p": 1
-  },
-  {
    "equipo": "UC Davis Aggies",
    "elo": 1500,
    "g": 1,
@@ -4470,6 +4441,12 @@
    "elo": 1494,
    "g": 2,
    "p": 1
+  },
+  {
+   "equipo": "New Mexico State Aggies",
+   "elo": 1494,
+   "g": 0,
+   "p": 2
   },
   {
    "equipo": "Marshall Thundering Herd",
@@ -4844,6 +4821,12 @@
    "p": 2
   },
   {
+   "equipo": "UTEP Miners",
+   "elo": 1441,
+   "g": 2,
+   "p": 1
+  },
+  {
    "equipo": "Stony Brook Seawolves",
    "elo": 1440,
    "g": 0,
@@ -4866,12 +4849,6 @@
    "elo": 1437,
    "g": 0,
    "p": 2
-  },
-  {
-   "equipo": "UTEP Miners",
-   "elo": 1435,
-   "g": 1,
-   "p": 1
   },
   {
    "equipo": "Indiana State Sycamores",
@@ -5450,12 +5427,6 @@
    "p": 2
   },
   {
-   "equipo": "Lincoln (CA) Oaklanders",
-   "elo": 1330,
-   "g": 0,
-   "p": 3
-  },
-  {
    "equipo": "Holy Cross Crusaders",
    "elo": 1328,
    "g": 0,
@@ -5478,6 +5449,12 @@
    "elo": 1323,
    "g": 1,
    "p": 3
+  },
+  {
+   "equipo": "Lincoln (CA) Oaklanders",
+   "elo": 1322,
+   "g": 0,
+   "p": 4
   },
   {
    "equipo": "Alcorn State Braves",

@@ -1,36 +1,36 @@
 {
- "actualizado": "2026-11-13 02:59 UTC",
+ "actualizado": "2026-11-13 04:21 UTC",
  "liga": "NFL",
  "desde": "20250905",
- "datos_hasta": "2026-11-10T01:15:00Z",
+ "datos_hasta": "2026-11-13T01:15:00Z",
  "total": {
-  "n": 419,
+  "n": 420,
   "aciertos": 272,
-  "acierto": 0.6492,
+  "acierto": 0.6476,
   "ic": [
-   0.6023,
-   0.6933
+   0.6008,
+   0.6918
   ],
-  "brier": 0.2202
+  "brier": 0.2208
  },
  "base_local": {
-  "n": 419,
-  "acierto": 0.5227
+  "n": 420,
+  "acierto": 0.5214
  },
  "base_balance": {
-  "n": 231,
-  "acierto": 0.6926,
-  "nuestro": 0.684
+  "n": 232,
+  "acierto": 0.6897,
+  "nuestro": 0.681
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 267,
-   "conf": 0.734,
-   "acierto": 0.7004,
+   "n": 268,
+   "conf": 0.7337,
+   "acierto": 0.6978,
    "ic": [
-    0.6429,
-    0.7522
+    0.6403,
+    0.7496
    ]
   },
   {
@@ -65,9 +65,9 @@
   {
    "desde": 60,
    "hasta": 70,
-   "n": 109,
-   "prometido": 0.6518,
-   "real": 0.6055
+   "n": 110,
+   "prometido": 0.6519,
+   "real": 0.6
   },
   {
    "desde": 70,
@@ -103,26 +103,26 @@
    "brier": 0.2211
   },
   "2026": {
-   "n": 135,
+   "n": 136,
    "aciertos": 86,
-   "acierto": 0.637,
+   "acierto": 0.6324,
    "ic": [
-    0.5532,
-    0.7133
+    0.5487,
+    0.7087
    ],
-   "brier": 0.2184
+   "brier": 0.2201
   }
  },
  "fases": {
   "regular": {
-   "n": 406,
+   "n": 407,
    "aciertos": 263,
-   "acierto": 0.6478,
+   "acierto": 0.6462,
    "ic": [
-    0.6001,
-    0.6927
+    0.5986,
+    0.6911
    ],
-   "brier": 0.2215
+   "brier": 0.222
   },
   "playoff": {
    "n": 13,
@@ -137,14 +137,14 @@
  },
  "elige": {
   "local": {
-   "n": 236,
+   "n": 237,
    "aciertos": 154,
-   "acierto": 0.6525,
+   "acierto": 0.6498,
    "ic": [
-    0.5898,
-    0.7104
+    0.5871,
+    0.7077
    ],
-   "brier": 0.2155
+   "brier": 0.2164
   },
   "visitante": {
    "n": 183,
@@ -158,6 +158,15 @@
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-13T01:15:00Z",
+   "local": "New York Giants",
+   "visitante": "Washington Commanders",
+   "marcador": "21-24",
+   "fav": "New York Giants",
+   "pp": 0.663,
+   "ok": false
+  },
   {
    "fecha": "2026-11-10T01:15:00Z",
    "local": "Minnesota Vikings",
@@ -373,15 +382,6 @@
    "fav": "Las Vegas Raiders",
    "pp": 0.5283,
    "ok": true
-  },
-  {
-   "fecha": "2026-11-01T18:00:00Z",
-   "local": "Detroit Lions",
-   "visitante": "Minnesota Vikings",
-   "marcador": "19-15",
-   "fav": "Minnesota Vikings",
-   "pp": 0.6116,
-   "ok": false
   }
  ],
  "motor": {
@@ -392,22 +392,22 @@
    "c_desc": 0.0,
    "c_forma": 0.0
   },
-  "sd": 14.223,
+  "sd": 14.217,
   "motor": {
-   "n": 419,
-   "acierto": 0.6492,
-   "brier": 0.2202,
-   "logloss": 0.6305
+   "n": 420,
+   "acierto": 0.6476,
+   "brier": 0.2208,
+   "logloss": 0.6316
   },
   "elo_basico": {
-   "n": 419,
-   "acierto": 0.6396,
-   "brier": 0.2223,
-   "logloss": 0.6343
+   "n": 420,
+   "acierto": 0.6381,
+   "brier": 0.2228,
+   "logloss": 0.6353
   },
   "local": {
-   "n": 419,
-   "acierto": 0.5227
+   "n": 420,
+   "acierto": 0.5214
   },
   "temporadas_prueba": [
    2025,

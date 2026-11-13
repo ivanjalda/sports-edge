@@ -1,0 +1,408 @@
+{
+ "actualizado": "2026-11-13 04:21 UTC",
+ "liga": "Champions Cup",
+ "desde": "20241206",
+ "datos_hasta": "2026-04-12T14:00:00Z",
+ "total": {
+  "n": 123,
+  "aciertos": 92,
+  "acierto": 0.748,
+  "ic": [
+   0.6645,
+   0.8164
+  ],
+  "brier": 0.1842
+ },
+ "base_local": {
+  "n": 123,
+  "acierto": 0.7236
+ },
+ "base_balance": {
+  "n": 8,
+  "acierto": 0.75,
+  "nuestro": 0.75
+ },
+ "tramos": [
+  {
+   "min": 0.6,
+   "n": 93,
+   "conf": 0.7566,
+   "acierto": 0.7849,
+   "ic": [
+    0.691,
+    0.8563
+   ]
+  },
+  {
+   "min": 0.7,
+   "n": 64,
+   "conf": 0.8068,
+   "acierto": 0.7969,
+   "ic": [
+    0.6829,
+    0.8773
+   ]
+  },
+  {
+   "min": 0.8,
+   "n": 32,
+   "conf": 0.8745,
+   "acierto": 0.9062,
+   "ic": [
+    0.7578,
+    0.9676
+   ]
+  }
+ ],
+ "calibracion": [
+  {
+   "desde": 50,
+   "hasta": 60,
+   "n": 30,
+   "prometido": 0.5532,
+   "real": 0.6333
+  },
+  {
+   "desde": 60,
+   "hasta": 70,
+   "n": 29,
+   "prometido": 0.6457,
+   "real": 0.7586
+  },
+  {
+   "desde": 70,
+   "hasta": 80,
+   "n": 32,
+   "prometido": 0.7391,
+   "real": 0.6875
+  },
+  {
+   "desde": 80,
+   "hasta": 90,
+   "n": 25,
+   "prometido": 0.8605,
+   "real": 0.88
+  },
+  {
+   "desde": 90,
+   "hasta": 100,
+   "n": 7,
+   "prometido": 0.9246,
+   "real": 1.0
+  }
+ ],
+ "temporadas": {
+  "2025": {
+   "n": 63,
+   "aciertos": 49,
+   "acierto": 0.7778,
+   "ic": [
+    0.6609,
+    0.8628
+   ],
+   "brier": 0.1802
+  },
+  "2026": {
+   "n": 60,
+   "aciertos": 43,
+   "acierto": 0.7167,
+   "ic": [
+    0.5923,
+    0.8149
+   ],
+   "brier": 0.1884
+  }
+ },
+ "fases": {
+  "regular": {
+   "n": 123,
+   "aciertos": 92,
+   "acierto": 0.748,
+   "ic": [
+    0.6645,
+    0.8164
+   ],
+   "brier": 0.1842
+  }
+ },
+ "elige": {
+  "local": {
+   "n": 88,
+   "aciertos": 73,
+   "acierto": 0.8295,
+   "ic": [
+    0.7376,
+    0.8939
+   ],
+   "brier": 0.161
+  },
+  "visitante": {
+   "n": 35,
+   "aciertos": 19,
+   "acierto": 0.5429,
+   "ic": [
+    0.3819,
+    0.6953
+   ],
+   "brier": 0.2426
+  }
+ },
+ "ejemplos": [
+  {
+   "fecha": "2026-04-12T14:00:00Z",
+   "local": "Bordeaux Begles",
+   "visitante": "Stade Toulousain",
+   "marcador": "30-15",
+   "fav": "Bordeaux Begles",
+   "pp": 0.7451,
+   "ok": true
+  },
+  {
+   "fecha": "2026-04-11T16:30:00Z",
+   "local": "Leinster",
+   "visitante": "Sale Sharks",
+   "marcador": "43-13",
+   "fav": "Leinster",
+   "pp": 0.865,
+   "ok": true
+  },
+  {
+   "fecha": "2026-04-11T14:00:00Z",
+   "local": "Glasgow Warriors",
+   "visitante": "Toulon",
+   "marcador": "19-22",
+   "fav": "Glasgow Warriors",
+   "pp": 0.7243,
+   "ok": false
+  },
+  {
+   "fecha": "2026-04-10T19:00:00Z",
+   "local": "Bath Rugby",
+   "visitante": "Northampton Saints",
+   "marcador": "43-41",
+   "fav": "Bath Rugby",
+   "pp": 0.6032,
+   "ok": true
+  },
+  {
+   "fecha": "2026-04-05T16:30:00Z",
+   "local": "Leinster",
+   "visitante": "Edinburgh",
+   "marcador": "49-31",
+   "fav": "Leinster",
+   "pp": 0.9172,
+   "ok": true
+  },
+  {
+   "fecha": "2026-04-05T14:00:00Z",
+   "local": "Bordeaux Begles",
+   "visitante": "Leicester Tigers",
+   "marcador": "64-14",
+   "fav": "Bordeaux Begles",
+   "pp": 0.925,
+   "ok": true
+  },
+  {
+   "fecha": "2026-04-04T19:00:00Z",
+   "local": "Harlequins",
+   "visitante": "Sale Sharks",
+   "marcador": "17-26",
+   "fav": "Harlequins",
+   "pp": 0.8508,
+   "ok": false
+  },
+  {
+   "fecha": "2026-04-04T16:30:00Z",
+   "local": "Stade Toulousain",
+   "visitante": "Bristol Rugby",
+   "marcador": "59-26",
+   "fav": "Stade Toulousain",
+   "pp": 0.8349,
+   "ok": true
+  },
+  {
+   "fecha": "2026-04-04T16:30:00Z",
+   "local": "Glasgow Warriors",
+   "visitante": "Bulls",
+   "marcador": "25-21",
+   "fav": "Glasgow Warriors",
+   "pp": 0.8942,
+   "ok": true
+  },
+  {
+   "fecha": "2026-04-04T14:00:00Z",
+   "local": "Toulon",
+   "visitante": "Stormers",
+   "marcador": "28-27",
+   "fav": "Toulon",
+   "pp": 0.6851,
+   "ok": true
+  },
+  {
+   "fecha": "2026-04-04T14:00:00Z",
+   "local": "Bath Rugby",
+   "visitante": "Saracens",
+   "marcador": "31-22",
+   "fav": "Bath Rugby",
+   "pp": 0.7898,
+   "ok": true
+  },
+  {
+   "fecha": "2026-04-03T19:00:00Z",
+   "local": "Northampton Saints",
+   "visitante": "Castres Olympique",
+   "marcador": "49-41",
+   "fav": "Northampton Saints",
+   "pp": 0.8327,
+   "ok": true
+  },
+  {
+   "fecha": "2026-01-18T17:30:00Z",
+   "local": "Glasgow Warriors",
+   "visitante": "Saracens",
+   "marcador": "28-3",
+   "fav": "Glasgow Warriors",
+   "pp": 0.715,
+   "ok": true
+  },
+  {
+   "fecha": "2026-01-18T15:15:00Z",
+   "local": "La Rochelle",
+   "visitante": "Harlequins",
+   "marcador": "17-27",
+   "fav": "Harlequins",
+   "pp": 0.5323,
+   "ok": true
+  },
+  {
+   "fecha": "2026-01-18T15:15:00Z",
+   "local": "Northampton Saints",
+   "visitante": "Scarlets",
+   "marcador": "43-28",
+   "fav": "Northampton Saints",
+   "pp": 0.8973,
+   "ok": true
+  },
+  {
+   "fecha": "2026-01-18T13:00:00Z",
+   "local": "Bristol Rugby",
+   "visitante": "Bordeaux Begles",
+   "marcador": "15-27",
+   "fav": "Bordeaux Begles",
+   "pp": 0.6793,
+   "ok": true
+  },
+  {
+   "fecha": "2026-01-17T20:00:00Z",
+   "local": "Gloucester Rugby",
+   "visitante": "Toulon",
+   "marcador": "14-31",
+   "fav": "Gloucester Rugby",
+   "pp": 0.555,
+   "ok": false
+  },
+  {
+   "fecha": "2026-01-17T17:30:00Z",
+   "local": "Munster",
+   "visitante": "Castres Olympique",
+   "marcador": "29-31",
+   "fav": "Munster",
+   "pp": 0.7046,
+   "ok": false
+  },
+  {
+   "fecha": "2026-01-17T17:30:00Z",
+   "local": "Stade Toulousain",
+   "visitante": "Sale Sharks",
+   "marcador": "77-7",
+   "fav": "Stade Toulousain",
+   "pp": 0.7595,
+   "ok": true
+  },
+  {
+   "fecha": "2026-01-17T15:15:00Z",
+   "local": "Stormers",
+   "visitante": "Leicester Tigers",
+   "marcador": "39-26",
+   "fav": "Stormers",
+   "pp": 0.6024,
+   "ok": true
+  },
+  {
+   "fecha": "2026-01-17T15:15:00Z",
+   "local": "Bayonne",
+   "visitante": "Leinster",
+   "marcador": "13-22",
+   "fav": "Leinster",
+   "pp": 0.8882,
+   "ok": true
+  },
+  {
+   "fecha": "2026-01-17T13:00:00Z",
+   "local": "Sharks",
+   "visitante": "Clermont Auvergne",
+   "marcador": "50-12",
+   "fav": "Sharks",
+   "pp": 0.7827,
+   "ok": true
+  },
+  {
+   "fecha": "2026-01-16T20:00:00Z",
+   "local": "Bath Rugby",
+   "visitante": "Edinburgh",
+   "marcador": "63-10",
+   "fav": "Bath Rugby",
+   "pp": 0.7399,
+   "ok": true
+  },
+  {
+   "fecha": "2026-01-16T20:00:00Z",
+   "local": "Pau",
+   "visitante": "Bulls",
+   "marcador": "24-26",
+   "fav": "Pau",
+   "pp": 0.7506,
+   "ok": false
+  },
+  {
+   "fecha": "2026-01-11T17:30:00Z",
+   "local": "Saracens",
+   "visitante": "Stade Toulousain",
+   "marcador": "20-14",
+   "fav": "Stade Toulousain",
+   "pp": 0.6502,
+   "ok": false
+  }
+ ],
+ "motor": {
+  "activo": true,
+  "params": {
+   "kmul": 1.4,
+   "hmul": 1.4,
+   "c_desc": 0.0,
+   "c_forma": 60.0
+  },
+  "sd": 20.554,
+  "motor": {
+   "n": 123,
+   "acierto": 0.748,
+   "brier": 0.1842,
+   "logloss": 0.5443
+  },
+  "elo_basico": {
+   "n": 123,
+   "acierto": 0.7724,
+   "brier": 0.187,
+   "logloss": 0.557
+  },
+  "local": {
+   "n": 123,
+   "acierto": 0.7236
+  },
+  "temporadas_prueba": [
+   2025,
+   2026
+  ]
+ },
+ "valor_activo": false
+}

@@ -1,0 +1,397 @@
+{
+ "actualizado": "2026-11-13 04:21 UTC",
+ "liga": "Top 14",
+ "desde": "20240907",
+ "datos_hasta": "2025-04-27T19:05:00Z",
+ "total": {
+  "n": 149,
+  "aciertos": 115,
+  "acierto": 0.7718,
+  "ic": [
+   0.6981,
+   0.8319
+  ],
+  "brier": 0.1899
+ },
+ "base_local": {
+  "n": 149,
+  "acierto": 0.7785
+ },
+ "base_balance": {
+  "n": 103,
+  "acierto": 0.5437,
+  "nuestro": 0.7476
+ },
+ "tramos": [
+  {
+   "min": 0.6,
+   "n": 92,
+   "conf": 0.6865,
+   "acierto": 0.8152,
+   "ic": [
+    0.7239,
+    0.8813
+   ]
+  },
+  {
+   "min": 0.7,
+   "n": 32,
+   "conf": 0.7613,
+   "acierto": 0.8438,
+   "ic": [
+    0.6825,
+    0.9314
+   ]
+  },
+  {
+   "min": 0.8,
+   "n": 7,
+   "conf": 0.8179,
+   "acierto": 0.7143,
+   "ic": [
+    0.3589,
+    0.9178
+   ]
+  }
+ ],
+ "calibracion": [
+  {
+   "desde": 50,
+   "hasta": 60,
+   "n": 57,
+   "prometido": 0.5535,
+   "real": 0.7018
+  },
+  {
+   "desde": 60,
+   "hasta": 70,
+   "n": 60,
+   "prometido": 0.6467,
+   "real": 0.8
+  },
+  {
+   "desde": 70,
+   "hasta": 80,
+   "n": 25,
+   "prometido": 0.7455,
+   "real": 0.88
+  },
+  {
+   "desde": 80,
+   "hasta": 90,
+   "n": 7,
+   "prometido": 0.8179,
+   "real": 0.7143
+  },
+  {
+   "desde": 90,
+   "hasta": 100,
+   "n": 0,
+   "prometido": null,
+   "real": null
+  }
+ ],
+ "temporadas": {
+  "2025": {
+   "n": 149,
+   "aciertos": 115,
+   "acierto": 0.7718,
+   "ic": [
+    0.6981,
+    0.8319
+   ],
+   "brier": 0.1899
+  }
+ },
+ "fases": {
+  "regular": {
+   "n": 149,
+   "aciertos": 115,
+   "acierto": 0.7718,
+   "ic": [
+    0.6981,
+    0.8319
+   ],
+   "brier": 0.1899
+  }
+ },
+ "elige": {
+  "local": {
+   "n": 128,
+   "aciertos": 105,
+   "acierto": 0.8203,
+   "ic": [
+    0.7448,
+    0.8772
+   ],
+   "brier": 0.1793
+  },
+  "visitante": {
+   "n": 21,
+   "aciertos": 10,
+   "acierto": 0.4762,
+   "ic": [
+    0.2834,
+    0.6763
+   ],
+   "brier": 0.2547
+  }
+ },
+ "ejemplos": [
+  {
+   "fecha": "2025-04-27T19:05:00Z",
+   "local": "Racing 92",
+   "visitante": "Stade Francais Paris",
+   "marcador": "49-24",
+   "fav": "Racing 92",
+   "pp": 0.6125,
+   "ok": true
+  },
+  {
+   "fecha": "2025-04-26T19:05:00Z",
+   "local": "Bordeaux Begles",
+   "visitante": "La Rochelle",
+   "marcador": "10-21",
+   "fav": "Bordeaux Begles",
+   "pp": 0.8176,
+   "ok": false
+  },
+  {
+   "fecha": "2025-04-26T14:30:00Z",
+   "local": "Vannes",
+   "visitante": "Toulon",
+   "marcador": "29-19",
+   "fav": "Toulon",
+   "pp": 0.6058,
+   "ok": false
+  },
+  {
+   "fecha": "2025-04-26T14:30:00Z",
+   "local": "Montpellier Herault",
+   "visitante": "Perpignan",
+   "marcador": "19-13",
+   "fav": "Montpellier Herault",
+   "pp": 0.684,
+   "ok": true
+  },
+  {
+   "fecha": "2025-04-26T14:30:00Z",
+   "local": "Bayonne",
+   "visitante": "Pau",
+   "marcador": "27-22",
+   "fav": "Bayonne",
+   "pp": 0.6772,
+   "ok": true
+  },
+  {
+   "fecha": "2025-04-26T14:30:00Z",
+   "local": "Clermont Auvergne",
+   "visitante": "Lyon",
+   "marcador": "39-31",
+   "fav": "Clermont Auvergne",
+   "pp": 0.5689,
+   "ok": true
+  },
+  {
+   "fecha": "2025-04-26T12:30:00Z",
+   "local": "Stade Toulousain",
+   "visitante": "Castres Olympique",
+   "marcador": "52-6",
+   "fav": "Stade Toulousain",
+   "pp": 0.8058,
+   "ok": true
+  },
+  {
+   "fecha": "2025-04-20T19:15:00Z",
+   "local": "Stade Francais Paris",
+   "visitante": "Stade Toulousain",
+   "marcador": "21-27",
+   "fav": "Stade Toulousain",
+   "pp": 0.6489,
+   "ok": true
+  },
+  {
+   "fecha": "2025-04-19T19:05:00Z",
+   "local": "Toulon",
+   "visitante": "Clermont Auvergne",
+   "marcador": "31-24",
+   "fav": "Toulon",
+   "pp": 0.778,
+   "ok": true
+  },
+  {
+   "fecha": "2025-04-19T14:30:00Z",
+   "local": "Perpignan",
+   "visitante": "Racing 92",
+   "marcador": "28-24",
+   "fav": "Perpignan",
+   "pp": 0.577,
+   "ok": true
+  },
+  {
+   "fecha": "2025-04-19T14:30:00Z",
+   "local": "La Rochelle",
+   "visitante": "Bayonne",
+   "marcador": "29-28",
+   "fav": "La Rochelle",
+   "pp": 0.5268,
+   "ok": true
+  },
+  {
+   "fecha": "2025-04-19T14:30:00Z",
+   "local": "Lyon",
+   "visitante": "Montpellier Herault",
+   "marcador": "32-23",
+   "fav": "Lyon",
+   "pp": 0.6352,
+   "ok": true
+  },
+  {
+   "fecha": "2025-04-19T14:30:00Z",
+   "local": "Castres Olympique",
+   "visitante": "Vannes",
+   "marcador": "32-13",
+   "fav": "Castres Olympique",
+   "pp": 0.7132,
+   "ok": true
+  },
+  {
+   "fecha": "2025-04-19T12:30:00Z",
+   "local": "Pau",
+   "visitante": "Bordeaux Begles",
+   "marcador": "22-26",
+   "fav": "Bordeaux Begles",
+   "pp": 0.5472,
+   "ok": true
+  },
+  {
+   "fecha": "2025-03-30T19:05:00Z",
+   "local": "Racing 92",
+   "visitante": "Bordeaux Begles",
+   "marcador": "36-31",
+   "fav": "Bordeaux Begles",
+   "pp": 0.6404,
+   "ok": false
+  },
+  {
+   "fecha": "2025-03-29T20:05:00Z",
+   "local": "Castres Olympique",
+   "visitante": "Toulon",
+   "marcador": "28-26",
+   "fav": "Toulon",
+   "pp": 0.5136,
+   "ok": false
+  },
+  {
+   "fecha": "2025-03-29T15:30:00Z",
+   "local": "Montpellier Herault",
+   "visitante": "Stade Francais Paris",
+   "marcador": "38-32",
+   "fav": "Montpellier Herault",
+   "pp": 0.6227,
+   "ok": true
+  },
+  {
+   "fecha": "2025-03-29T15:30:00Z",
+   "local": "Bayonne",
+   "visitante": "Lyon",
+   "marcador": "28-14",
+   "fav": "Bayonne",
+   "pp": 0.6369,
+   "ok": true
+  },
+  {
+   "fecha": "2025-03-29T15:30:00Z",
+   "local": "Clermont Auvergne",
+   "visitante": "La Rochelle",
+   "marcador": "33-19",
+   "fav": "Clermont Auvergne",
+   "pp": 0.6119,
+   "ok": true
+  },
+  {
+   "fecha": "2025-03-29T13:30:00Z",
+   "local": "Stade Toulousain",
+   "visitante": "Pau",
+   "marcador": "55-10",
+   "fav": "Stade Toulousain",
+   "pp": 0.8099,
+   "ok": true
+  },
+  {
+   "fecha": "2025-03-23T20:05:00Z",
+   "local": "Bordeaux Begles",
+   "visitante": "Stade Toulousain",
+   "marcador": "32-24",
+   "fav": "Bordeaux Begles",
+   "pp": 0.553,
+   "ok": true
+  },
+  {
+   "fecha": "2025-03-22T20:05:00Z",
+   "local": "Toulon",
+   "visitante": "Perpignan",
+   "marcador": "40-19",
+   "fav": "Toulon",
+   "pp": 0.8151,
+   "ok": true
+  },
+  {
+   "fecha": "2025-03-22T15:30:00Z",
+   "local": "Stade Francais Paris",
+   "visitante": "Bayonne",
+   "marcador": "31-27",
+   "fav": "Stade Francais Paris",
+   "pp": 0.5563,
+   "ok": true
+  },
+  {
+   "fecha": "2025-03-22T15:30:00Z",
+   "local": "Pau",
+   "visitante": "Montpellier Herault",
+   "marcador": "40-38",
+   "fav": "Pau",
+   "pp": 0.6423,
+   "ok": true
+  },
+  {
+   "fecha": "2025-03-22T15:30:00Z",
+   "local": "Lyon",
+   "visitante": "Vannes",
+   "marcador": "36-21",
+   "fav": "Lyon",
+   "pp": 0.6784,
+   "ok": true
+  }
+ ],
+ "motor": {
+  "activo": true,
+  "params": {
+   "kmul": 0.7,
+   "hmul": 1.4,
+   "c_desc": 0.0,
+   "c_forma": 0.0
+  },
+  "sd": 14.787,
+  "motor": {
+   "n": 149,
+   "acierto": 0.7718,
+   "brier": 0.1899,
+   "logloss": 0.5686
+  },
+  "elo_basico": {
+   "n": 149,
+   "acierto": 0.698,
+   "brier": 0.207,
+   "logloss": 0.6047
+  },
+  "local": {
+   "n": 149,
+   "acierto": 0.7785
+  },
+  "temporadas_prueba": [
+   2025
+  ]
+ },
+ "valor_activo": false
+}

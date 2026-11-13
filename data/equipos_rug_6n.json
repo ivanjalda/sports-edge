@@ -1,0 +1,63 @@
+{
+ "actualizado": "2026-11-13 04:21 UTC",
+ "liga": "Seis Naciones",
+ "datos_hasta": "2025-03-15T20:00:00Z",
+ "dias_desde_datos": 607,
+ "fuente": {
+  "nombre": "ESPN",
+  "url": "https://www.espn.com"
+ },
+ "con_cuotas": true,
+ "proximo": null,
+ "predicciones": [],
+ "recientes": [],
+ "directo": {
+  "total": 0,
+  "resueltas": 0,
+  "aciertos": 0,
+  "acierto": null,
+  "ic": null,
+  "brier": null,
+  "apuestas": 0,
+  "ganadas": 0,
+  "roi": null
+ },
+ "ranking": [
+  {
+   "equipo": "France",
+   "elo": 1696,
+   "g": 3,
+   "p": 1
+  },
+  {
+   "equipo": "Ireland",
+   "elo": 1661,
+   "g": 4,
+   "p": 1
+  },
+  {
+   "equipo": "England",
+   "elo": 1554,
+   "g": 4,
+   "p": 1
+  },
+  {
+   "equipo": "Scotland",
+   "elo": 1472,
+   "g": 2,
+   "p": 3
+  },
+  {
+   "equipo": "Italy",
+   "elo": 1338,
+   "g": 1,
+   "p": 4
+  },
+  {
+   "equipo": "Wales",
+   "elo": 1309,
+   "g": 0,
+   "p": 4
+  }
+ ]
+}

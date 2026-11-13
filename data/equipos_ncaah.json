@@ -1,38 +1,15 @@
 {
- "actualizado": "2026-11-13 02:59 UTC",
+ "actualizado": "2026-11-13 04:21 UTC",
  "liga": "NCAA",
- "datos_hasta": "2026-11-13T00:00:00Z",
+ "datos_hasta": "2026-11-13T02:05:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
- "proximo": "2026-11-19T00:00:00Z",
+ "proximo": "2026-11-14T00:00:00Z",
  "predicciones": [
-  {
-   "id": "401904347",
-   "fecha": "2026-11-13T02:05:00Z",
-   "local": "Air Force Falcons",
-   "visitante": "Bentley Falcons",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5151,
-   "pv": 0.4849,
-   "elo_l": 1484,
-   "elo_v": 1523,
-   "bal_l": [
-    3,
-    5
-   ],
-   "bal_v": [
-    5,
-    5
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "401904631",
    "fecha": "2026-11-13T23:07:00Z",
@@ -1163,6 +1140,29 @@
  ],
  "recientes": [
   {
+   "id": "401904347",
+   "fecha": "2026-11-13T02:05:00Z",
+   "local": "Air Force Falcons",
+   "visitante": "Bentley Falcons",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5151,
+   "pv": 0.4849,
+   "elo_l": 1484,
+   "elo_v": 1523,
+   "bal_l": [
+    3,
+    5
+   ],
+   "bal_v": [
+    5,
+    5
+   ],
+   "creada": "2026-11-11 04:17 UTC",
+   "resultado": "L",
+   "marcador": "4-3"
+  },
+  {
    "id": "401923153",
    "fecha": "2026-11-13T00:00:00Z",
    "local": "Notre Dame Fighting Irish",
@@ -1188,14 +1188,14 @@
  ],
  "directo": {
   "total": 51,
-  "resueltas": 1,
-  "aciertos": 0,
-  "acierto": 0.0,
+  "resueltas": 2,
+  "aciertos": 1,
+  "acierto": 0.5,
   "ic": [
-   0.0,
-   0.7935
+   0.0945,
+   0.9055
   ],
-  "brier": 0.378,
+  "brier": 0.3066,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -1358,12 +1358,6 @@
    "p": 0
   },
   {
-   "equipo": "Bentley Falcons",
-   "elo": 1525,
-   "g": 5,
-   "p": 5
-  },
-  {
    "equipo": "Minnesota State Mavericks",
    "elo": 1523,
    "g": 1,
@@ -1374,6 +1368,12 @@
    "elo": 1522,
    "g": 7,
    "p": 0
+  },
+  {
+   "equipo": "Bentley Falcons",
+   "elo": 1521,
+   "g": 5,
+   "p": 6
   },
   {
    "equipo": "Western Michigan Bulldogs",
@@ -1461,8 +1461,8 @@
   },
   {
    "equipo": "Air Force Falcons",
-   "elo": 1478,
-   "g": 3,
+   "elo": 1482,
+   "g": 4,
    "p": 5
   },
   {

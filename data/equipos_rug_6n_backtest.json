@@ -1,0 +1,408 @@
+{
+ "actualizado": "2026-11-13 04:21 UTC",
+ "liga": "Seis Naciones",
+ "desde": "20240202",
+ "datos_hasta": "2025-03-15T20:00:00Z",
+ "total": {
+  "n": 28,
+  "aciertos": 20,
+  "acierto": 0.7143,
+  "ic": [
+   0.5294,
+   0.8475
+  ],
+  "brier": 0.1819
+ },
+ "base_local": {
+  "n": 28,
+  "acierto": 0.5714
+ },
+ "base_balance": {
+  "n": 0,
+  "acierto": null,
+  "nuestro": null
+ },
+ "tramos": [
+  {
+   "min": 0.6,
+   "n": 22,
+   "conf": 0.7672,
+   "acierto": 0.7727,
+   "ic": [
+    0.5656,
+    0.8988
+   ]
+  },
+  {
+   "min": 0.7,
+   "n": 15,
+   "conf": 0.8229,
+   "acierto": 0.8,
+   "ic": [
+    0.5481,
+    0.9295
+   ]
+  },
+  {
+   "min": 0.8,
+   "n": 10,
+   "conf": 0.8611,
+   "acierto": 0.9,
+   "ic": [
+    0.5958,
+    0.9821
+   ]
+  }
+ ],
+ "calibracion": [
+  {
+   "desde": 50,
+   "hasta": 60,
+   "n": 6,
+   "prometido": 0.5685,
+   "real": 0.5
+  },
+  {
+   "desde": 60,
+   "hasta": 70,
+   "n": 7,
+   "prometido": 0.6479,
+   "real": 0.7143
+  },
+  {
+   "desde": 70,
+   "hasta": 80,
+   "n": 5,
+   "prometido": 0.7464,
+   "real": 0.6
+  },
+  {
+   "desde": 80,
+   "hasta": 90,
+   "n": 8,
+   "prometido": 0.8381,
+   "real": 0.875
+  },
+  {
+   "desde": 90,
+   "hasta": 100,
+   "n": 2,
+   "prometido": 0.9534,
+   "real": 1.0
+  }
+ ],
+ "temporadas": {
+  "2024": {
+   "n": 14,
+   "aciertos": 8,
+   "acierto": 0.5714,
+   "ic": [
+    0.3259,
+    0.7862
+   ],
+   "brier": 0.2384
+  },
+  "2025": {
+   "n": 14,
+   "aciertos": 12,
+   "acierto": 0.8571,
+   "ic": [
+    0.6006,
+    0.9599
+   ],
+   "brier": 0.1254
+  }
+ },
+ "fases": {
+  "regular": {
+   "n": 28,
+   "aciertos": 20,
+   "acierto": 0.7143,
+   "ic": [
+    0.5294,
+    0.8475
+   ],
+   "brier": 0.1819
+  }
+ },
+ "elige": {
+  "local": {
+   "n": 18,
+   "aciertos": 13,
+   "acierto": 0.7222,
+   "ic": [
+    0.4913,
+    0.875
+   ],
+   "brier": 0.155
+  },
+  "visitante": {
+   "n": 10,
+   "aciertos": 7,
+   "acierto": 0.7,
+   "ic": [
+    0.3968,
+    0.8922
+   ],
+   "brier": 0.2302
+  }
+ },
+ "ejemplos": [
+  {
+   "fecha": "2025-03-15T20:00:00Z",
+   "local": "France",
+   "visitante": "Scotland",
+   "marcador": "35-16",
+   "fav": "France",
+   "pp": 0.886,
+   "ok": true
+  },
+  {
+   "fecha": "2025-03-15T16:45:00Z",
+   "local": "Wales",
+   "visitante": "England",
+   "marcador": "14-68",
+   "fav": "England",
+   "pp": 0.6654,
+   "ok": true
+  },
+  {
+   "fecha": "2025-03-15T14:15:00Z",
+   "local": "Italy",
+   "visitante": "Ireland",
+   "marcador": "17-22",
+   "fav": "Ireland",
+   "pp": 0.8326,
+   "ok": true
+  },
+  {
+   "fecha": "2025-03-09T15:00:00Z",
+   "local": "England",
+   "visitante": "Italy",
+   "marcador": "47-24",
+   "fav": "England",
+   "pp": 0.8341,
+   "ok": true
+  },
+  {
+   "fecha": "2025-03-08T16:45:00Z",
+   "local": "Scotland",
+   "visitante": "Wales",
+   "marcador": "35-29",
+   "fav": "Scotland",
+   "pp": 0.7863,
+   "ok": true
+  },
+  {
+   "fecha": "2025-03-08T14:15:00Z",
+   "local": "Ireland",
+   "visitante": "France",
+   "marcador": "27-42",
+   "fav": "Ireland",
+   "pp": 0.6745,
+   "ok": false
+  },
+  {
+   "fecha": "2025-02-23T15:00:00Z",
+   "local": "Italy",
+   "visitante": "France",
+   "marcador": "24-73",
+   "fav": "France",
+   "pp": 0.6581,
+   "ok": true
+  },
+  {
+   "fecha": "2025-02-22T16:45:00Z",
+   "local": "England",
+   "visitante": "Scotland",
+   "marcador": "16-15",
+   "fav": "England",
+   "pp": 0.6459,
+   "ok": true
+  },
+  {
+   "fecha": "2025-02-22T14:15:00Z",
+   "local": "Wales",
+   "visitante": "Ireland",
+   "marcador": "18-27",
+   "fav": "Ireland",
+   "pp": 0.8396,
+   "ok": true
+  },
+  {
+   "fecha": "2025-02-09T15:00:00Z",
+   "local": "Scotland",
+   "visitante": "Ireland",
+   "marcador": "18-32",
+   "fav": "Ireland",
+   "pp": 0.5724,
+   "ok": true
+  },
+  {
+   "fecha": "2025-02-08T16:45:00Z",
+   "local": "England",
+   "visitante": "France",
+   "marcador": "26-25",
+   "fav": "France",
+   "pp": 0.5732,
+   "ok": false
+  },
+  {
+   "fecha": "2025-02-08T14:15:00Z",
+   "local": "Italy",
+   "visitante": "Wales",
+   "marcador": "22-15",
+   "fav": "Italy",
+   "pp": 0.5529,
+   "ok": true
+  },
+  {
+   "fecha": "2025-02-01T16:45:00Z",
+   "local": "Ireland",
+   "visitante": "England",
+   "marcador": "27-22",
+   "fav": "Ireland",
+   "pp": 0.8178,
+   "ok": true
+  },
+  {
+   "fecha": "2025-02-01T14:15:00Z",
+   "local": "Scotland",
+   "visitante": "Italy",
+   "marcador": "31-19",
+   "fav": "Scotland",
+   "pp": 0.7511,
+   "ok": true
+  },
+  {
+   "fecha": "2024-03-16T20:00:00Z",
+   "local": "France",
+   "visitante": "England",
+   "marcador": "33-31",
+   "fav": "France",
+   "pp": 0.8013,
+   "ok": true
+  },
+  {
+   "fecha": "2024-03-16T16:45:00Z",
+   "local": "Ireland",
+   "visitante": "Scotland",
+   "marcador": "17-13",
+   "fav": "Ireland",
+   "pp": 0.8903,
+   "ok": true
+  },
+  {
+   "fecha": "2024-03-16T14:15:00Z",
+   "local": "Wales",
+   "visitante": "Italy",
+   "marcador": "21-24",
+   "fav": "Wales",
+   "pp": 0.7166,
+   "ok": false
+  },
+  {
+   "fecha": "2024-03-10T15:00:00Z",
+   "local": "Wales",
+   "visitante": "France",
+   "marcador": "24-45",
+   "fav": "France",
+   "pp": 0.6506,
+   "ok": true
+  },
+  {
+   "fecha": "2024-03-09T16:45:00Z",
+   "local": "England",
+   "visitante": "Ireland",
+   "marcador": "23-22",
+   "fav": "Ireland",
+   "pp": 0.8031,
+   "ok": false
+  },
+  {
+   "fecha": "2024-03-09T14:15:00Z",
+   "local": "Italy",
+   "visitante": "Scotland",
+   "marcador": "31-29",
+   "fav": "Scotland",
+   "pp": 0.7608,
+   "ok": false
+  },
+  {
+   "fecha": "2024-02-24T16:45:00Z",
+   "local": "Scotland",
+   "visitante": "England",
+   "marcador": "30-21",
+   "fav": "Scotland",
+   "pp": 0.6069,
+   "ok": true
+  },
+  {
+   "fecha": "2024-02-24T14:15:00Z",
+   "local": "Ireland",
+   "visitante": "Wales",
+   "marcador": "31-7",
+   "fav": "Ireland",
+   "pp": 0.9406,
+   "ok": true
+  },
+  {
+   "fecha": "2024-02-11T15:00:00Z",
+   "local": "Ireland",
+   "visitante": "Italy",
+   "marcador": "36-0",
+   "fav": "Ireland",
+   "pp": 0.9662,
+   "ok": true
+  },
+  {
+   "fecha": "2024-02-10T16:45:00Z",
+   "local": "England",
+   "visitante": "Wales",
+   "marcador": "16-14",
+   "fav": "England",
+   "pp": 0.7172,
+   "ok": true
+  },
+  {
+   "fecha": "2024-02-10T14:15:00Z",
+   "local": "Scotland",
+   "visitante": "France",
+   "marcador": "16-20",
+   "fav": "Scotland",
+   "pp": 0.6339,
+   "ok": false
+  }
+ ],
+ "motor": {
+  "activo": true,
+  "params": {
+   "kmul": 1.4,
+   "hmul": 1.4,
+   "c_desc": 0.0,
+   "c_forma": 60.0
+  },
+  "sd": 19.628,
+  "motor": {
+   "n": 28,
+   "acierto": 0.7143,
+   "brier": 0.1819,
+   "logloss": 0.5336
+  },
+  "elo_basico": {
+   "n": 28,
+   "acierto": 0.7143,
+   "brier": 0.1784,
+   "logloss": 0.5353
+  },
+  "local": {
+   "n": 28,
+   "acierto": 0.5714
+  },
+  "temporadas_prueba": [
+   2024,
+   2025
+  ]
+ },
+ "valor_activo": false
+}

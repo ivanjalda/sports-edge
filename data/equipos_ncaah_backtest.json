@@ -1,26 +1,26 @@
 {
- "actualizado": "2026-11-13 02:59 UTC",
+ "actualizado": "2026-11-13 04:21 UTC",
  "liga": "NCAA",
  "desde": "20251003",
- "datos_hasta": "2026-11-13T00:00:00Z",
+ "datos_hasta": "2026-11-13T02:05:00Z",
  "total": {
-  "n": 1297,
+  "n": 1298,
   "aciertos": 853,
-  "acierto": 0.6577,
+  "acierto": 0.6572,
   "ic": [
-   0.6314,
-   0.683
+   0.6309,
+   0.6825
   ],
-  "brier": 0.2182
+  "brier": 0.2183
  },
  "base_local": {
-  "n": 1297,
-  "acierto": 0.5621
+  "n": 1298,
+  "acierto": 0.5624
  },
  "base_balance": {
-  "n": 913,
-  "acierto": 0.6145,
-  "nuestro": 0.6692
+  "n": 914,
+  "acierto": 0.6138,
+  "nuestro": 0.6685
  },
  "tramos": [
   {
@@ -58,9 +58,9 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 521,
+   "n": 522,
    "prometido": 0.5489,
-   "real": 0.5758
+   "real": 0.5747
   },
   {
    "desde": 60,
@@ -103,24 +103,24 @@
    "brier": 0.2174
   },
   "2027": {
-   "n": 250,
+   "n": 251,
    "aciertos": 167,
-   "acierto": 0.668,
+   "acierto": 0.6653,
    "ic": [
-    0.6075,
-    0.7234
+    0.6049,
+    0.7208
    ],
-   "brier": 0.2216
+   "brier": 0.2219
   }
  },
  "fases": {
   "regular": {
-   "n": 1282,
+   "n": 1283,
    "aciertos": 842,
-   "acierto": 0.6568,
+   "acierto": 0.6563,
    "ic": [
-    0.6304,
-    0.6823
+    0.6299,
+    0.6818
    ],
    "brier": 0.2182
   },
@@ -147,17 +147,26 @@
    "brier": 0.2131
   },
   "visitante": {
-   "n": 478,
+   "n": 479,
    "aciertos": 301,
-   "acierto": 0.6297,
+   "acierto": 0.6284,
    "ic": [
-    0.5855,
-    0.6718
+    0.5843,
+    0.6705
    ],
-   "brier": 0.2271
+   "brier": 0.2272
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-13T02:05:00Z",
+   "local": "Air Force Falcons",
+   "visitante": "Bentley Falcons",
+   "marcador": "4-3",
+   "fav": "Bentley Falcons",
+   "pp": 0.5424,
+   "ok": false
+  },
   {
    "fecha": "2026-11-13T00:00:00Z",
    "local": "Notre Dame Fighting Irish",
@@ -236,7 +245,7 @@
    "visitante": "Army Black Knights",
    "marcador": "2-0",
    "fav": "Army Black Knights",
-   "pp": 0.599,
+   "pp": 0.5991,
    "ok": false
   },
   {
@@ -373,15 +382,6 @@
    "fav": "Bentley Falcons",
    "pp": 0.7006,
    "ok": false
-  },
-  {
-   "fecha": "2026-11-07T22:00:00Z",
-   "local": "UConn Huskies",
-   "visitante": "Providence Friars",
-   "marcador": "1-8",
-   "fav": "Providence Friars",
-   "pp": 0.5676,
-   "ok": true
   }
  ],
  "motor": {
@@ -394,20 +394,20 @@
   },
   "sd": 2.88,
   "motor": {
-   "n": 1297,
-   "acierto": 0.6577,
-   "brier": 0.2182,
-   "logloss": 0.6261
+   "n": 1298,
+   "acierto": 0.6572,
+   "brier": 0.2183,
+   "logloss": 0.6262
   },
   "elo_basico": {
-   "n": 1297,
-   "acierto": 0.6515,
+   "n": 1298,
+   "acierto": 0.6518,
    "brier": 0.2242,
    "logloss": 0.6396
   },
   "local": {
-   "n": 1297,
-   "acierto": 0.5621
+   "n": 1298,
+   "acierto": 0.5624
   },
   "temporadas_prueba": [
    2026,

@@ -1,0 +1,397 @@
+{
+ "actualizado": "2026-11-13 04:21 UTC",
+ "liga": "United Rugby Championship",
+ "desde": "20240920",
+ "datos_hasta": "2025-06-07T16:15:00Z",
+ "total": {
+  "n": 146,
+  "aciertos": 105,
+  "acierto": 0.7192,
+  "ic": [
+   0.6414,
+   0.7857
+  ],
+  "brier": 0.1881
+ },
+ "base_local": {
+  "n": 146,
+  "acierto": 0.6644
+ },
+ "base_balance": {
+  "n": 96,
+  "acierto": 0.6667,
+  "nuestro": 0.7292
+ },
+ "tramos": [
+  {
+   "min": 0.6,
+   "n": 109,
+   "conf": 0.7847,
+   "acierto": 0.789,
+   "ic": [
+    0.7032,
+    0.8551
+   ]
+  },
+  {
+   "min": 0.7,
+   "n": 78,
+   "conf": 0.8333,
+   "acierto": 0.8077,
+   "ic": [
+    0.7066,
+    0.8798
+   ]
+  },
+  {
+   "min": 0.8,
+   "n": 54,
+   "conf": 0.8712,
+   "acierto": 0.8333,
+   "ic": [
+    0.7126,
+    0.9098
+   ]
+  }
+ ],
+ "calibracion": [
+  {
+   "desde": 50,
+   "hasta": 60,
+   "n": 37,
+   "prometido": 0.5434,
+   "real": 0.5135
+  },
+  {
+   "desde": 60,
+   "hasta": 70,
+   "n": 31,
+   "prometido": 0.6625,
+   "real": 0.7419
+  },
+  {
+   "desde": 70,
+   "hasta": 80,
+   "n": 24,
+   "prometido": 0.7479,
+   "real": 0.75
+  },
+  {
+   "desde": 80,
+   "hasta": 90,
+   "n": 38,
+   "prometido": 0.8435,
+   "real": 0.8158
+  },
+  {
+   "desde": 90,
+   "hasta": 100,
+   "n": 16,
+   "prometido": 0.937,
+   "real": 0.875
+  }
+ ],
+ "temporadas": {
+  "2025": {
+   "n": 146,
+   "aciertos": 105,
+   "acierto": 0.7192,
+   "ic": [
+    0.6414,
+    0.7857
+   ],
+   "brier": 0.1881
+  }
+ },
+ "fases": {
+  "regular": {
+   "n": 146,
+   "aciertos": 105,
+   "acierto": 0.7192,
+   "ic": [
+    0.6414,
+    0.7857
+   ],
+   "brier": 0.1881
+  }
+ },
+ "elige": {
+  "local": {
+   "n": 92,
+   "aciertos": 74,
+   "acierto": 0.8043,
+   "ic": [
+    0.7118,
+    0.8725
+   ],
+   "brier": 0.1526
+  },
+  "visitante": {
+   "n": 54,
+   "aciertos": 31,
+   "acierto": 0.5741,
+   "ic": [
+    0.4416,
+    0.6967
+   ],
+   "brier": 0.2486
+  }
+ },
+ "ejemplos": [
+  {
+   "fecha": "2025-06-07T16:15:00Z",
+   "local": "Bulls",
+   "visitante": "Sharks",
+   "marcador": "25-13",
+   "fav": "Bulls",
+   "pp": 0.7777,
+   "ok": true
+  },
+  {
+   "fecha": "2025-06-07T13:45:00Z",
+   "local": "Leinster",
+   "visitante": "Glasgow Warriors",
+   "marcador": "37-19",
+   "fav": "Leinster",
+   "pp": 0.8242,
+   "ok": true
+  },
+  {
+   "fecha": "2025-05-31T14:00:00Z",
+   "local": "Leinster",
+   "visitante": "Scarlets",
+   "marcador": "33-21",
+   "fav": "Leinster",
+   "pp": 0.8903,
+   "ok": true
+  },
+  {
+   "fecha": "2025-05-31T11:30:00Z",
+   "local": "Bulls",
+   "visitante": "Edinburgh",
+   "marcador": "42-33",
+   "fav": "Bulls",
+   "pp": 0.8516,
+   "ok": true
+  },
+  {
+   "fecha": "2025-05-30T18:35:00Z",
+   "local": "Glasgow Warriors",
+   "visitante": "Stormers",
+   "marcador": "36-18",
+   "fav": "Glasgow Warriors",
+   "pp": 0.5862,
+   "ok": true
+  },
+  {
+   "fecha": "2025-05-17T18:35:00Z",
+   "local": "Leinster",
+   "visitante": "Glasgow Warriors",
+   "marcador": "13-5",
+   "fav": "Leinster",
+   "pp": 0.8234,
+   "ok": true
+  },
+  {
+   "fecha": "2025-05-17T17:30:00Z",
+   "local": "Sharks",
+   "visitante": "Scarlets",
+   "marcador": "12-3",
+   "fav": "Sharks",
+   "pp": 0.7033,
+   "ok": true
+  },
+  {
+   "fecha": "2025-05-17T16:00:00Z",
+   "local": "Zebre",
+   "visitante": "Connacht",
+   "marcador": "12-22",
+   "fav": "Zebre",
+   "pp": 0.5665,
+   "ok": false
+  },
+  {
+   "fecha": "2025-05-17T15:15:00Z",
+   "local": "Lions",
+   "visitante": "Ospreys",
+   "marcador": "29-28",
+   "fav": "Lions",
+   "pp": 0.6295,
+   "ok": true
+  },
+  {
+   "fecha": "2025-05-17T13:00:00Z",
+   "local": "Bulls",
+   "visitante": "Dragons",
+   "marcador": "55-15",
+   "fav": "Bulls",
+   "pp": 0.9885,
+   "ok": true
+  },
+  {
+   "fecha": "2025-05-16T19:00:00Z",
+   "local": "Munster",
+   "visitante": "Benetton Treviso",
+   "marcador": "30-21",
+   "fav": "Munster",
+   "pp": 0.6298,
+   "ok": true
+  },
+  {
+   "fecha": "2025-05-16T18:35:00Z",
+   "local": "Edinburgh",
+   "visitante": "Ulster",
+   "marcador": "47-17",
+   "fav": "Edinburgh",
+   "pp": 0.7233,
+   "ok": true
+  },
+  {
+   "fecha": "2025-05-16T17:00:00Z",
+   "local": "Stormers",
+   "visitante": "Cardiff Blues",
+   "marcador": "34-24",
+   "fav": "Stormers",
+   "pp": 0.8257,
+   "ok": true
+  },
+  {
+   "fecha": "2025-05-11T13:00:00Z",
+   "local": "Lions",
+   "visitante": "Scarlets",
+   "marcador": "19-32",
+   "fav": "Lions",
+   "pp": 0.5389,
+   "ok": false
+  },
+  {
+   "fecha": "2025-05-10T18:35:00Z",
+   "local": "Connacht",
+   "visitante": "Edinburgh",
+   "marcador": "21-31",
+   "fav": "Edinburgh",
+   "pp": 0.5495,
+   "ok": true
+  },
+  {
+   "fecha": "2025-05-10T16:15:00Z",
+   "local": "Benetton Treviso",
+   "visitante": "Glasgow Warriors",
+   "marcador": "33-7",
+   "fav": "Glasgow Warriors",
+   "pp": 0.6823,
+   "ok": false
+  },
+  {
+   "fecha": "2025-05-10T16:15:00Z",
+   "local": "Leinster",
+   "visitante": "Zebre",
+   "marcador": "76-5",
+   "fav": "Leinster",
+   "pp": 0.9639,
+   "ok": true
+  },
+  {
+   "fecha": "2025-05-10T16:15:00Z",
+   "local": "Stormers",
+   "visitante": "Dragons",
+   "marcador": "48-12",
+   "fav": "Stormers",
+   "pp": 0.9738,
+   "ok": true
+  },
+  {
+   "fecha": "2025-05-10T14:00:00Z",
+   "local": "Bulls",
+   "visitante": "Cardiff Blues",
+   "marcador": "45-21",
+   "fav": "Bulls",
+   "pp": 0.887,
+   "ok": true
+  },
+  {
+   "fecha": "2025-05-09T18:35:00Z",
+   "local": "Munster",
+   "visitante": "Ulster",
+   "marcador": "38-20",
+   "fav": "Munster",
+   "pp": 0.676,
+   "ok": true
+  },
+  {
+   "fecha": "2025-05-09T17:00:00Z",
+   "local": "Sharks",
+   "visitante": "Ospreys",
+   "marcador": "29-10",
+   "fav": "Sharks",
+   "pp": 0.8196,
+   "ok": true
+  },
+  {
+   "fecha": "2025-04-26T18:35:00Z",
+   "local": "Ulster",
+   "visitante": "Sharks",
+   "marcador": "19-22",
+   "fav": "Ulster",
+   "pp": 0.5004,
+   "ok": false
+  },
+  {
+   "fecha": "2025-04-26T16:15:00Z",
+   "local": "Scarlets",
+   "visitante": "Leinster",
+   "marcador": "35-22",
+   "fav": "Leinster",
+   "pp": 0.86,
+   "ok": false
+  },
+  {
+   "fecha": "2025-04-26T16:15:00Z",
+   "local": "Stormers",
+   "visitante": "Benetton Treviso",
+   "marcador": "56-5",
+   "fav": "Stormers",
+   "pp": 0.6978,
+   "ok": true
+  },
+  {
+   "fecha": "2025-04-26T14:00:00Z",
+   "local": "Ospreys",
+   "visitante": "Dragons",
+   "marcador": "57-24",
+   "fav": "Ospreys",
+   "pp": 0.912,
+   "ok": true
+  }
+ ],
+ "motor": {
+  "activo": true,
+  "params": {
+   "kmul": 1.4,
+   "hmul": 1.4,
+   "c_desc": 0.0,
+   "c_forma": 60.0
+  },
+  "sd": 17.176,
+  "motor": {
+   "n": 146,
+   "acierto": 0.7192,
+   "brier": 0.1881,
+   "logloss": 0.5603
+  },
+  "elo_basico": {
+   "n": 146,
+   "acierto": 0.7329,
+   "brier": 0.1895,
+   "logloss": 0.5626
+  },
+  "local": {
+   "n": 146,
+   "acierto": 0.6644
+  },
+  "temporadas_prueba": [
+   2025
+  ]
+ },
+ "valor_activo": false
+}

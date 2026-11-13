@@ -682,8 +682,8 @@
     12
    ],
    "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "5-4",
    "cuota": {
     "mejor": {
      "V": {
@@ -736,8 +736,8 @@
     9
    ],
    "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "3-2",
    "cuota": {
     "mejor": {
      "V": {
@@ -790,8 +790,8 @@
     11
    ],
    "creada": "2026-11-11 04:17 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "3-8",
    "cuota": {
     "mejor": {
      "L": {
@@ -966,16 +966,16 @@
      }
     },
     "mercado": {
-     "L": 0.3281,
-     "V": 0.6719
+     "L": 0.3293,
+     "V": 0.6707
     },
-    "casas": 21,
+    "casas": 23,
     "ev": {
      "L": 0.6839,
      "V": 0.0384
     },
     "valor": [],
-    "actualizado": "2026-11-13 02:59 UTC"
+    "actualizado": "2026-11-13 04:21 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-12 20:09 UTC",
@@ -1013,21 +1013,21 @@
       "casa": "Unibet (SE)"
      },
      "L": {
-      "c": 1.94,
+      "c": 1.96,
       "casa": "1xBet"
      }
     },
     "mercado": {
-     "L": 0.6332,
-     "V": 0.3668
+     "L": 0.6298,
+     "V": 0.3702
     },
-    "casas": 19,
+    "casas": 23,
     "ev": {
-     "L": 0.2236,
+     "L": 0.2362,
      "V": 0.311
     },
     "valor": [],
-    "actualizado": "2026-11-13 02:59 UTC"
+    "actualizado": "2026-11-13 04:21 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-12 20:09 UTC",
@@ -1311,7 +1311,53 @@
    "creada": "2026-11-13 02:27 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401892719",
+   "fecha": "2026-11-15T03:00:00Z",
+   "local": "Anaheim Ducks",
+   "visitante": "New York Islanders",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.579,
+   "pv": 0.421,
+   "elo_l": 1490,
+   "elo_v": 1484,
+   "bal_l": [
+    10,
+    9
+   ],
+   "bal_v": [
+    7,
+    9
+   ],
+   "creada": "2026-11-13 04:21 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892720",
+   "fecha": "2026-11-15T03:00:00Z",
+   "local": "Los Angeles Kings",
+   "visitante": "Calgary Flames",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.587,
+   "pv": 0.413,
+   "elo_l": 1473,
+   "elo_v": 1462,
+   "bal_l": [
+    5,
+    10
+   ],
+   "bal_v": [
+    8,
+    11
+   ],
+   "creada": "2026-11-13 04:21 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-13 02:59 UTC"
+ "actualizado": "2026-11-13 04:21 UTC"
 }

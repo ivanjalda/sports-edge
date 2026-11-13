@@ -1,14 +1,14 @@
 {
- "actualizado": "2026-11-13 02:59 UTC",
+ "actualizado": "2026-11-13 04:21 UTC",
  "liga": "NCAA",
- "datos_hasta": "2026-11-13T01:00:00Z",
+ "datos_hasta": "2026-11-13T02:00:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
- "proximo": "2026-11-13T03:00:00Z",
+ "proximo": "2026-11-13T05:00:00Z",
  "predicciones": [
   {
    "id": "401888524",
@@ -4908,11 +4908,80 @@
    "creada": "2026-11-13 02:59 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401886068",
+   "fecha": "2026-11-15T03:00:00Z",
+   "local": "USC Trojans",
+   "visitante": "Washington Huskies",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4467,
+   "pv": 0.5533,
+   "elo_l": 1625,
+   "elo_v": 1700,
+   "bal_l": [
+    10,
+    15
+   ],
+   "bal_v": [
+    18,
+    6
+   ],
+   "creada": "2026-11-13 04:21 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401884444",
+   "fecha": "2026-11-15T03:00:00Z",
+   "local": "Stanford Cardinal",
+   "visitante": "Georgia Tech Yellow Jackets",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.733,
+   "pv": 0.267,
+   "elo_l": 1768,
+   "elo_v": 1665,
+   "bal_l": [
+    15,
+    9
+   ],
+   "bal_v": [
+    15,
+    10
+   ],
+   "creada": "2026-11-13 04:21 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401897135",
+   "fecha": "2026-11-15T03:00:00Z",
+   "local": "UC Santa Barbara Gauchos",
+   "visitante": "Utah Valley Wolverines",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7465,
+   "pv": 0.2535,
+   "elo_l": 1585,
+   "elo_v": 1444,
+   "bal_l": [
+    13,
+    12
+   ],
+   "bal_v": [
+    9,
+    17
+   ],
+   "creada": "2026-11-13 04:21 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
  "recientes": [],
  "directo": {
-  "total": 213,
+  "total": 216,
   "resueltas": 0,
   "aciertos": 0,
   "acierto": null,
@@ -4937,20 +5006,14 @@
   },
   {
    "equipo": "Louisville Cardinals",
-   "elo": 1946,
+   "elo": 1929,
    "g": 24,
-   "p": 2
-  },
-  {
-   "equipo": "BYU Cougars",
-   "elo": 1901,
-   "g": 20,
-   "p": 1
+   "p": 3
   },
   {
    "equipo": "SMU Mustangs",
-   "elo": 1898,
-   "g": 20,
+   "elo": 1916,
+   "g": 21,
    "p": 4
   },
   {
@@ -4972,6 +5035,12 @@
    "p": 7
   },
   {
+   "equipo": "BYU Cougars",
+   "elo": 1875,
+   "g": 20,
+   "p": 2
+  },
+  {
    "equipo": "Penn State Nittany Lions",
    "elo": 1866,
    "g": 20,
@@ -4985,9 +5054,9 @@
   },
   {
    "equipo": "Kansas Jayhawks",
-   "elo": 1856,
+   "elo": 1827,
    "g": 18,
-   "p": 5
+   "p": 6
   },
   {
    "equipo": "Texas Longhorns",
@@ -5000,6 +5069,12 @@
    "elo": 1816,
    "g": 18,
    "p": 5
+  },
+  {
+   "equipo": "Oregon Ducks",
+   "elo": 1812,
+   "g": 21,
+   "p": 4
   },
   {
    "equipo": "Purdue Boilermakers",
@@ -5018,12 +5093,6 @@
    "elo": 1799,
    "g": 17,
    "p": 9
-  },
-  {
-   "equipo": "Oregon Ducks",
-   "elo": 1797,
-   "g": 20,
-   "p": 4
   },
   {
    "equipo": "Minnesota Golden Gophers",
@@ -5092,8 +5161,20 @@
    "p": 2
   },
   {
+   "equipo": "Baylor Bears",
+   "elo": 1751,
+   "g": 15,
+   "p": 8
+  },
+  {
    "equipo": "Cal Poly Mustangs",
    "elo": 1737,
+   "g": 17,
+   "p": 7
+  },
+  {
+   "equipo": "Colorado Buffaloes",
+   "elo": 1735,
    "g": 17,
    "p": 7
   },
@@ -5108,12 +5189,6 @@
    "elo": 1730,
    "g": 13,
    "p": 10
-  },
-  {
-   "equipo": "Baylor Bears",
-   "elo": 1726,
-   "g": 14,
-   "p": 8
   },
   {
    "equipo": "Long Beach State 49ers",
@@ -5150,12 +5225,6 @@
    "elo": 1711,
    "g": 20,
    "p": 4
-  },
-  {
-   "equipo": "Colorado Buffaloes",
-   "elo": 1706,
-   "g": 16,
-   "p": 7
   },
   {
    "equipo": "Wright State Raiders",
@@ -5212,6 +5281,12 @@
    "p": 10
   },
   {
+   "equipo": "Loyola Marymount Lions",
+   "elo": 1691,
+   "g": 22,
+   "p": 3
+  },
+  {
    "equipo": "Tulsa Golden Hurricane",
    "elo": 1690,
    "g": 18,
@@ -5224,22 +5299,16 @@
    "p": 3
   },
   {
+   "equipo": "Utah Utes",
+   "elo": 1687,
+   "g": 14,
+   "p": 10
+  },
+  {
    "equipo": "Hawai'i Rainbow Warriors",
    "elo": 1685,
    "g": 21,
    "p": 4
-  },
-  {
-   "equipo": "Loyola Marymount Lions",
-   "elo": 1684,
-   "g": 21,
-   "p": 3
-  },
-  {
-   "equipo": "Utah Utes",
-   "elo": 1682,
-   "g": 13,
-   "p": 10
   },
   {
    "equipo": "Arkansas State Red Wolves",
@@ -5356,12 +5425,6 @@
    "p": 8
   },
   {
-   "equipo": "USC Trojans",
-   "elo": 1639,
-   "g": 10,
-   "p": 14
-  },
-  {
    "equipo": "Bowling Green Falcons",
    "elo": 1638,
    "g": 18,
@@ -5404,22 +5467,34 @@
    "p": 7
   },
   {
+   "equipo": "UC Davis Aggies",
+   "elo": 1626,
+   "g": 14,
+   "p": 12
+  },
+  {
+   "equipo": "USC Trojans",
+   "elo": 1625,
+   "g": 10,
+   "p": 15
+  },
+  {
    "equipo": "App State Mountaineers",
    "elo": 1624,
    "g": 18,
    "p": 10
   },
   {
+   "equipo": "Northern Arizona Lumberjacks",
+   "elo": 1622,
+   "g": 18,
+   "p": 9
+  },
+  {
    "equipo": "Xavier Musketeers",
    "elo": 1622,
    "g": 15,
    "p": 10
-  },
-  {
-   "equipo": "UC Davis Aggies",
-   "elo": 1616,
-   "g": 13,
-   "p": 12
   },
   {
    "equipo": "Oklahoma Sooners",
@@ -5432,12 +5507,6 @@
    "elo": 1614,
    "g": 19,
    "p": 7
-  },
-  {
-   "equipo": "Northern Arizona Lumberjacks",
-   "elo": 1611,
-   "g": 17,
-   "p": 9
   },
   {
    "equipo": "St. John's Red Storm",
@@ -5456,6 +5525,12 @@
    "elo": 1606,
    "g": 17,
    "p": 9
+  },
+  {
+   "equipo": "Oregon State Beavers",
+   "elo": 1605,
+   "g": 14,
+   "p": 10
   },
   {
    "equipo": "Florida Gulf Coast Eagles",
@@ -5500,16 +5575,16 @@
    "p": 10
   },
   {
-   "equipo": "Oregon State Beavers",
-   "elo": 1594,
-   "g": 13,
-   "p": 10
-  },
-  {
    "equipo": "Tulane Green Wave",
    "elo": 1593,
    "g": 18,
    "p": 6
+  },
+  {
+   "equipo": "Grand Canyon Lopes",
+   "elo": 1593,
+   "g": 16,
+   "p": 10
   },
   {
    "equipo": "Boise State Broncos",
@@ -5552,12 +5627,6 @@
    "elo": 1589,
    "g": 15,
    "p": 11
-  },
-  {
-   "equipo": "UTEP Miners",
-   "elo": 1589,
-   "g": 16,
-   "p": 10
   },
   {
    "equipo": "Coppin State Eagles",
@@ -5626,15 +5695,15 @@
    "p": 9
   },
   {
-   "equipo": "Grand Canyon Lopes",
-   "elo": 1578,
-   "g": 15,
-   "p": 10
-  },
-  {
    "equipo": "Campbell Fighting Camels",
    "elo": 1575,
    "g": 14,
+   "p": 11
+  },
+  {
+   "equipo": "UTEP Miners",
+   "elo": 1573,
+   "g": 16,
    "p": 11
   },
   {
@@ -5716,12 +5785,6 @@
    "p": 12
   },
   {
-   "equipo": "Weber State Wildcats",
-   "elo": 1550,
-   "g": 15,
-   "p": 9
-  },
-  {
    "equipo": "Idaho State Bengals",
    "elo": 1550,
    "g": 17,
@@ -5732,6 +5795,12 @@
    "elo": 1549,
    "g": 15,
    "p": 10
+  },
+  {
+   "equipo": "Saint Mary's Gaels",
+   "elo": 1548,
+   "g": 15,
+   "p": 11
   },
   {
    "equipo": "Saint Louis Billikens",
@@ -5788,6 +5857,12 @@
    "p": 12
   },
   {
+   "equipo": "Weber State Wildcats",
+   "elo": 1538,
+   "g": 15,
+   "p": 10
+  },
+  {
    "equipo": "Louisiana Ragin' Cajuns",
    "elo": 1538,
    "g": 14,
@@ -5818,18 +5893,6 @@
    "p": 12
   },
   {
-   "equipo": "Wyoming Cowboys",
-   "elo": 1532,
-   "g": 13,
-   "p": 12
-  },
-  {
-   "equipo": "Saint Mary's Gaels",
-   "elo": 1532,
-   "g": 14,
-   "p": 11
-  },
-  {
    "equipo": "Florida A&M Rattlers",
    "elo": 1532,
    "g": 17,
@@ -5852,6 +5915,12 @@
    "elo": 1528,
    "g": 9,
    "p": 11
+  },
+  {
+   "equipo": "Wyoming Cowboys",
+   "elo": 1522,
+   "g": 13,
+   "p": 13
   },
   {
    "equipo": "Bradley Braves",
@@ -5974,6 +6043,12 @@
    "p": 15
   },
   {
+   "equipo": "Montana State Bobcats",
+   "elo": 1505,
+   "g": 16,
+   "p": 10
+  },
+  {
    "equipo": "Ohio State Buckeyes",
    "elo": 1505,
    "g": 11,
@@ -6016,12 +6091,6 @@
    "p": 13
   },
   {
-   "equipo": "Montana State Bobcats",
-   "elo": 1494,
-   "g": 15,
-   "p": 10
-  },
-  {
    "equipo": "Binghamton Bearcats",
    "elo": 1493,
    "g": 14,
@@ -6038,12 +6107,6 @@
    "elo": 1490,
    "g": 13,
    "p": 11
-  },
-  {
-   "equipo": "Omaha Mavericks",
-   "elo": 1489,
-   "g": 12,
-   "p": 10
   },
   {
    "equipo": "Northwestern Wildcats",
@@ -6068,12 +6131,6 @@
    "elo": 1487,
    "g": 11,
    "p": 13
-  },
-  {
-   "equipo": "Denver Pioneers",
-   "elo": 1486,
-   "g": 12,
-   "p": 12
   },
   {
    "equipo": "UAB Blazers",
@@ -6115,6 +6172,12 @@
    "equipo": "Radford Highlanders",
    "elo": 1480,
    "g": 14,
+   "p": 13
+  },
+  {
+   "equipo": "Denver Pioneers",
+   "elo": 1479,
+   "g": 12,
    "p": 13
   },
   {
@@ -6164,6 +6227,12 @@
    "elo": 1473,
    "g": 6,
    "p": 18
+  },
+  {
+   "equipo": "Omaha Mavericks",
+   "elo": 1472,
+   "g": 12,
+   "p": 11
   },
   {
    "equipo": "Wichita State Shockers",
@@ -6256,12 +6325,6 @@
    "p": 11
   },
   {
-   "equipo": "Portland Pilots",
-   "elo": 1454,
-   "g": 11,
-   "p": 10
-  },
-  {
    "equipo": "Air Force Falcons",
    "elo": 1452,
    "g": 10,
@@ -6338,6 +6401,12 @@
    "elo": 1439,
    "g": 11,
    "p": 16
+  },
+  {
+   "equipo": "Portland Pilots",
+   "elo": 1438,
+   "g": 11,
+   "p": 11
   },
   {
    "equipo": "Delaware State Hornets",
@@ -6466,6 +6535,12 @@
    "p": 14
   },
   {
+   "equipo": "Kansas City Kangaroos",
+   "elo": 1405,
+   "g": 12,
+   "p": 13
+  },
+  {
    "equipo": "South Carolina Upstate Spartans",
    "elo": 1402,
    "g": 10,
@@ -6485,9 +6560,9 @@
   },
   {
    "equipo": "Texas Tech Red Raiders",
-   "elo": 1400,
+   "elo": 1395,
    "g": 8,
-   "p": 16
+   "p": 17
   },
   {
    "equipo": "Syracuse Orange",
@@ -6502,18 +6577,6 @@
    "p": 16
   },
   {
-   "equipo": "Gonzaga Bulldogs",
-   "elo": 1389,
-   "g": 8,
-   "p": 17
-  },
-  {
-   "equipo": "Kansas City Kangaroos",
-   "elo": 1388,
-   "g": 11,
-   "p": 13
-  },
-  {
    "equipo": "Virginia Cavaliers",
    "elo": 1386,
    "g": 6,
@@ -6523,6 +6586,12 @@
    "equipo": "Western Carolina Catamounts",
    "elo": 1386,
    "g": 11,
+   "p": 18
+  },
+  {
+   "equipo": "Montana Grizzlies",
+   "elo": 1385,
+   "g": 8,
    "p": 18
   },
   {
@@ -6544,6 +6613,12 @@
    "p": 16
   },
   {
+   "equipo": "San José State Spartans",
+   "elo": 1381,
+   "g": 8,
+   "p": 18
+  },
+  {
    "equipo": "Oakland Golden Grizzlies",
    "elo": 1379,
    "g": 11,
@@ -6553,6 +6628,12 @@
    "equipo": "Fordham Rams",
    "elo": 1378,
    "g": 11,
+   "p": 18
+  },
+  {
+   "equipo": "Gonzaga Bulldogs",
+   "elo": 1378,
+   "g": 8,
    "p": 18
   },
   {
@@ -6586,22 +6667,10 @@
    "p": 15
   },
   {
-   "equipo": "San José State Spartans",
-   "elo": 1363,
-   "g": 7,
-   "p": 18
-  },
-  {
    "equipo": "Seton Hall Pirates",
    "elo": 1362,
    "g": 10,
    "p": 16
-  },
-  {
-   "equipo": "Montana Grizzlies",
-   "elo": 1361,
-   "g": 7,
-   "p": 18
   },
   {
    "equipo": "North Carolina Central Eagles",
@@ -6620,12 +6689,6 @@
    "elo": 1349,
    "g": 6,
    "p": 16
-  },
-  {
-   "equipo": "Idaho Vandals",
-   "elo": 1349,
-   "g": 12,
-   "p": 14
   },
   {
    "equipo": "Elon Phoenix",
@@ -6706,12 +6769,6 @@
    "p": 16
   },
   {
-   "equipo": "Eastern Washington Eagles",
-   "elo": 1332,
-   "g": 10,
-   "p": 16
-  },
-  {
    "equipo": "Columbia Lions",
    "elo": 1331,
    "g": 8,
@@ -6724,16 +6781,22 @@
    "p": 18
   },
   {
-   "equipo": "Nevada Wolf Pack",
-   "elo": 1327,
-   "g": 5,
-   "p": 19
+   "equipo": "Idaho Vandals",
+   "elo": 1324,
+   "g": 12,
+   "p": 15
   },
   {
    "equipo": "Old Dominion Monarchs",
    "elo": 1322,
    "g": 6,
    "p": 19
+  },
+  {
+   "equipo": "Eastern Washington Eagles",
+   "elo": 1320,
+   "g": 10,
+   "p": 17
   },
   {
    "equipo": "Charlotte 49ers",
@@ -6758,6 +6821,12 @@
    "elo": 1308,
    "g": 8,
    "p": 18
+  },
+  {
+   "equipo": "Nevada Wolf Pack",
+   "elo": 1308,
+   "g": 5,
+   "p": 20
   },
   {
    "equipo": "UL Monroe Warhawks",
@@ -6832,16 +6901,16 @@
    "p": 18
   },
   {
+   "equipo": "Seattle U Redhawks",
+   "elo": 1272,
+   "g": 5,
+   "p": 18
+  },
+  {
    "equipo": "Jacksonville State Gamecocks",
    "elo": 1270,
    "g": 3,
    "p": 24
-  },
-  {
-   "equipo": "Seattle U Redhawks",
-   "elo": 1258,
-   "g": 4,
-   "p": 18
   },
   {
    "equipo": "Canisius Golden Griffins",
@@ -6868,12 +6937,6 @@
    "p": 23
   },
   {
-   "equipo": "Pacific Tigers",
-   "elo": 1246,
-   "g": 4,
-   "p": 21
-  },
-  {
    "equipo": "Cleveland State Vikings",
    "elo": 1243,
    "g": 4,
@@ -6889,6 +6952,12 @@
    "equipo": "Evansville Purple Aces",
    "elo": 1233,
    "g": 5,
+   "p": 22
+  },
+  {
+   "equipo": "Pacific Tigers",
+   "elo": 1232,
+   "g": 4,
    "p": 22
   },
   {

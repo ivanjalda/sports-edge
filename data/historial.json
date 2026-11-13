@@ -3278,7 +3278,36 @@
     "ht_gol": null
    },
    "modelo": "SE"
+  },
+  {
+   "id": "espn-401933555",
+   "liga": "MLS",
+   "fecha": "2026-11-20T03:00:00Z",
+   "local": "Seattle Sounders FC",
+   "visitante": "Real Salt Lake",
+   "creada": "2026-11-13T04:15:24Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4716,
+   "p_empate": 0.277,
+   "p_visitante": 0.2515,
+   "xg_local": 1.56,
+   "xg_visitante": 1.08,
+   "n_partidos": 177,
+   "mercados": {
+    "over15": 0.7522,
+    "over25": 0.4914,
+    "over35": 0.2726,
+    "btts": 0.5337,
+    "marcador": "1-1",
+    "p_marcador": 0.1323,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE"
   }
  ],
- "actualizado": "2026-11-13 02:54 UTC"
+ "actualizado": "2026-11-13 04:15 UTC"
 }
