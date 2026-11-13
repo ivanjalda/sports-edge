@@ -1,56 +1,56 @@
 {
- "actualizado": "2026-11-13 01:24 UTC",
+ "actualizado": "2026-11-13 01:49 UTC",
  "liga": "WNBA",
- "desde": "20240501",
+ "desde": "20250516",
  "datos_hasta": "2026-11-01T00:00:00Z",
  "total": {
-  "n": 928,
-  "aciertos": 612,
-  "acierto": 0.6595,
+  "n": 665,
+  "aciertos": 445,
+  "acierto": 0.6692,
   "ic": [
-   0.6284,
-   0.6893
+   0.6325,
+   0.7039
   ],
-  "brier": 0.2159
+  "brier": 0.2102
  },
  "base_local": {
-  "n": 928,
-  "acierto": 0.5539
+  "n": 665,
+  "acierto": 0.5579
  },
  "base_balance": {
-  "n": 799,
-  "acierto": 0.6771,
-  "nuestro": 0.6646
+  "n": 575,
+  "acierto": 0.6643,
+  "nuestro": 0.6817
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 653,
-   "conf": 0.7318,
-   "acierto": 0.7044,
+   "n": 480,
+   "conf": 0.736,
+   "acierto": 0.7167,
    "ic": [
-    0.6683,
-    0.7382
+    0.6748,
+    0.7551
    ]
   },
   {
    "min": 0.7,
-   "n": 371,
-   "conf": 0.7943,
-   "acierto": 0.7547,
+   "n": 291,
+   "conf": 0.7918,
+   "acierto": 0.7732,
    "ic": [
-    0.7085,
-    0.7957
+    0.7217,
+    0.8176
    ]
   },
   {
    "min": 0.8,
-   "n": 164,
-   "conf": 0.8502,
-   "acierto": 0.8171,
+   "n": 119,
+   "conf": 0.8575,
+   "acierto": 0.8403,
    "ic": [
-    0.7509,
-    0.8688
+    0.764,
+    0.8953
    ]
   }
  ],
@@ -58,113 +58,103 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 275,
-   "prometido": 0.5511,
-   "real": 0.5527
+   "n": 185,
+   "prometido": 0.549,
+   "real": 0.5459
   },
   {
    "desde": 60,
    "hasta": 70,
-   "n": 282,
-   "prometido": 0.6495,
-   "real": 0.6383
+   "n": 189,
+   "prometido": 0.65,
+   "real": 0.6296
   },
   {
    "desde": 70,
    "hasta": 80,
-   "n": 207,
-   "prometido": 0.75,
-   "real": 0.7053
+   "n": 172,
+   "prometido": 0.7464,
+   "real": 0.7267
   },
   {
    "desde": 80,
    "hasta": 90,
-   "n": 152,
-   "prometido": 0.8451,
-   "real": 0.8289
+   "n": 102,
+   "prometido": 0.8465,
+   "real": 0.8431
   },
   {
    "desde": 90,
    "hasta": 100,
-   "n": 12,
-   "prometido": 0.916,
-   "real": 0.6667
+   "n": 17,
+   "prometido": 0.9233,
+   "real": 0.8235
   }
  ],
  "temporadas": {
-  "2024": {
-   "n": 263,
-   "aciertos": 172,
-   "acierto": 0.654,
-   "ic": [
-    0.5947,
-    0.7089
-   ],
-   "brier": 0.2173
-  },
   "2025": {
    "n": 311,
-   "aciertos": 203,
-   "acierto": 0.6527,
+   "aciertos": 206,
+   "acierto": 0.6624,
    "ic": [
-    0.5982,
-    0.7035
+    0.6081,
+    0.7127
    ],
-   "brier": 0.2181
+   "brier": 0.2159
   },
   "2026": {
    "n": 354,
-   "aciertos": 237,
-   "acierto": 0.6695,
+   "aciertos": 239,
+   "acierto": 0.6751,
    "ic": [
-    0.6189,
-    0.7164
+    0.6247,
+    0.7218
    ],
-   "brier": 0.213
+   "brier": 0.2053
   }
  },
  "fases": {
   "regular": {
-   "n": 859,
-   "aciertos": 564,
-   "acierto": 0.6566,
+   "n": 618,
+   "aciertos": 415,
+   "acierto": 0.6715,
    "ic": [
-    0.6242,
-    0.6876
+    0.6335,
+    0.7074
    ],
-   "brier": 0.2176
+   "brier": 0.2097
   },
   "playoff": {
-   "n": 69,
-   "aciertos": 48,
-   "acierto": 0.6957,
+   "n": 47,
+   "aciertos": 30,
+   "acierto": 0.6383,
    "ic": [
-    0.5792,
-    0.7915
+    0.4954,
+    0.7603
    ],
-   "brier": 0.1948
+   "brier": 0.2172
   }
  },
  "elige": {
   "local": {
-   "n": 702,
-   "aciertos": 450,
-   "acierto": 0.641,
+   "n": 417,
+   "aciertos": 284,
+   "acierto": 0.6811,
    "ic": [
-    0.6049,
-    0.6757
+    0.6348,
+    0.724
    ],
-   "brier": 0.2178
+   "brier": 0.2061
   },
   "visitante": {
-   "n": 226,
-   "aciertos": 162,
-   "acierto": 0.7168,
+   "n": 248,
+   "aciertos": 161,
+   "acierto": 0.6492,
    "ic": [
-    0.6548,
-    0.7716
+    0.5879,
+    0.7059
    ],
-   "brier": 0.2103
+   "brier": 0.2171
   }
  },
  "ejemplos": [
@@ -174,7 +164,7 @@
    "visitante": "Atlanta Dream",
    "marcador": "68-63",
    "fav": "Golden State Valkyries",
-   "pp": 0.6095,
+   "pp": 0.5059,
    "ok": true
   },
   {
@@ -183,7 +173,7 @@
    "visitante": "Golden State Valkyries",
    "marcador": "80-69",
    "fav": "Atlanta Dream",
-   "pp": 0.6513,
+   "pp": 0.6394,
    "ok": true
   },
   {
@@ -191,9 +181,9 @@
    "local": "Golden State Valkyries",
    "visitante": "Atlanta Dream",
    "marcador": "64-55",
-   "fav": "Golden State Valkyries",
-   "pp": 0.6092,
-   "ok": true
+   "fav": "Atlanta Dream",
+   "pp": 0.5024,
+   "ok": false
   },
   {
    "fecha": "2026-10-24T17:00:00Z",
@@ -201,7 +191,7 @@
    "visitante": "Golden State Valkyries",
    "marcador": "62-67",
    "fav": "Atlanta Dream",
-   "pp": 0.6975,
+   "pp": 0.7034,
    "ok": false
   },
   {
@@ -210,7 +200,7 @@
    "visitante": "Golden State Valkyries",
    "marcador": "97-71",
    "fav": "Atlanta Dream",
-   "pp": 0.6677,
+   "pp": 0.657,
    "ok": true
   },
   {
@@ -219,7 +209,7 @@
    "visitante": "Atlanta Dream",
    "marcador": "65-79",
    "fav": "Golden State Valkyries",
-   "pp": 0.6614,
+   "pp": 0.5562,
    "ok": false
   },
   {
@@ -228,7 +218,7 @@
    "visitante": "Atlanta Dream",
    "marcador": "68-64",
    "fav": "Golden State Valkyries",
-   "pp": 0.6509,
+   "pp": 0.5424,
    "ok": true
   },
   {
@@ -237,7 +227,7 @@
    "visitante": "Golden State Valkyries",
    "marcador": "77-87",
    "fav": "Las Vegas Aces",
-   "pp": 0.5669,
+   "pp": 0.5353,
    "ok": false
   },
   {
@@ -245,9 +235,9 @@
    "local": "New York Liberty",
    "visitante": "Atlanta Dream",
    "marcador": "83-85",
-   "fav": "New York Liberty",
-   "pp": 0.5323,
-   "ok": false
+   "fav": "Atlanta Dream",
+   "pp": 0.5762,
+   "ok": true
   },
   {
    "fecha": "2026-10-08T01:30:00Z",
@@ -255,7 +245,7 @@
    "visitante": "Las Vegas Aces",
    "marcador": "83-81",
    "fav": "Golden State Valkyries",
-   "pp": 0.7011,
+   "pp": 0.6284,
    "ok": true
   },
   {
@@ -264,7 +254,7 @@
    "visitante": "New York Liberty",
    "marcador": "101-98",
    "fav": "Atlanta Dream",
-   "pp": 0.7293,
+   "pp": 0.7202,
    "ok": true
   },
   {
@@ -273,7 +263,7 @@
    "visitante": "Las Vegas Aces",
    "marcador": "71-60",
    "fav": "Golden State Valkyries",
-   "pp": 0.6858,
+   "pp": 0.5466,
    "ok": true
   },
   {
@@ -282,7 +272,7 @@
    "visitante": "New York Liberty",
    "marcador": "92-82",
    "fav": "Atlanta Dream",
-   "pp": 0.7174,
+   "pp": 0.7033,
    "ok": true
   },
   {
@@ -291,7 +281,7 @@
    "visitante": "Dallas Wings",
    "marcador": "77-73",
    "fav": "Golden State Valkyries",
-   "pp": 0.768,
+   "pp": 0.7235,
    "ok": true
   },
   {
@@ -300,7 +290,7 @@
    "visitante": "Indiana Fever",
    "marcador": "94-83",
    "fav": "Las Vegas Aces",
-   "pp": 0.6443,
+   "pp": 0.6535,
    "ok": true
   },
   {
@@ -309,7 +299,7 @@
    "visitante": "Golden State Valkyries",
    "marcador": "108-100",
    "fav": "Golden State Valkyries",
-   "pp": 0.5402,
+   "pp": 0.6109,
    "ok": false
   },
   {
@@ -317,9 +307,9 @@
    "local": "Washington Mystics",
    "visitante": "Atlanta Dream",
    "marcador": "75-93",
-   "fav": "Washington Mystics",
-   "pp": 0.5075,
-   "ok": false
+   "fav": "Atlanta Dream",
+   "pp": 0.613,
+   "ok": true
   },
   {
    "fecha": "2026-09-30T00:30:00Z",
@@ -327,7 +317,7 @@
    "visitante": "Minnesota Lynx",
    "marcador": "87-71",
    "fav": "New York Liberty",
-   "pp": 0.5835,
+   "pp": 0.5595,
    "ok": true
   },
   {
@@ -335,9 +325,9 @@
    "local": "Indiana Fever",
    "visitante": "Las Vegas Aces",
    "marcador": "99-89",
-   "fav": "Indiana Fever",
-   "pp": 0.6156,
-   "ok": true
+   "fav": "Las Vegas Aces",
+   "pp": 0.5173,
+   "ok": false
   },
   {
    "fecha": "2026-09-28T01:00:00Z",
@@ -345,7 +335,7 @@
    "visitante": "Dallas Wings",
    "marcador": "104-80",
    "fav": "Golden State Valkyries",
-   "pp": 0.7738,
+   "pp": 0.7146,
    "ok": true
   },
   {
@@ -354,7 +344,7 @@
    "visitante": "Washington Mystics",
    "marcador": "92-77",
    "fav": "Atlanta Dream",
-   "pp": 0.741,
+   "pp": 0.7314,
    "ok": true
   },
   {
@@ -363,7 +353,7 @@
    "visitante": "Indiana Fever",
    "marcador": "102-85",
    "fav": "Las Vegas Aces",
-   "pp": 0.6381,
+   "pp": 0.6343,
    "ok": true
   },
   {
@@ -372,7 +362,7 @@
    "visitante": "New York Liberty",
    "marcador": "75-91",
    "fav": "Minnesota Lynx",
-   "pp": 0.7504,
+   "pp": 0.642,
    "ok": false
   },
   {
@@ -381,7 +371,7 @@
    "visitante": "Las Vegas Aces",
    "marcador": "82-100",
    "fav": "Las Vegas Aces",
-   "pp": 0.5992,
+   "pp": 0.6725,
    "ok": true
   },
   {
@@ -390,9 +380,39 @@
    "visitante": "Golden State Valkyries",
    "marcador": "75-76",
    "fav": "Golden State Valkyries",
-   "pp": 0.6911,
+   "pp": 0.7866,
    "ok": true
   }
  ],
- "valor_activo": true
+ "motor": {
+  "activo": true,
+  "params": {
+   "kmul": 1.0,
+   "hmul": 0.6,
+   "c_desc": 35.0,
+   "c_forma": 60.0
+  },
+  "sd": 14.166,
+  "motor": {
+   "n": 665,
+   "acierto": 0.6692,
+   "brier": 0.2102,
+   "logloss": 0.6089
+  },
+  "elo_basico": {
+   "n": 665,
+   "acierto": 0.6617,
+   "brier": 0.2154,
+   "logloss": 0.6216
+  },
+  "local": {
+   "n": 665,
+   "acierto": 0.5579
+  },
+  "temporadas_prueba": [
+   2025,
+   2026
+  ]
+ },
+ "valor_activo": false
 }

@@ -1,56 +1,56 @@
 {
- "actualizado": "2026-11-13 01:24 UTC",
+ "actualizado": "2026-11-13 01:49 UTC",
  "liga": "NHL",
- "desde": "20241001",
+ "desde": "20251007",
  "datos_hasta": "2026-11-12T17:00:00Z",
  "total": {
-  "n": 3083,
-  "aciertos": 1735,
-  "acierto": 0.5628,
+  "n": 1685,
+  "aciertos": 929,
+  "acierto": 0.5513,
   "ic": [
-   0.5452,
-   0.5802
+   0.5275,
+   0.5749
   ],
-  "brier": 0.2423
+  "brier": 0.2462
  },
  "base_local": {
-  "n": 3083,
-  "acierto": 0.5436
+  "n": 1685,
+  "acierto": 0.5258
  },
  "base_balance": {
-  "n": 2732,
-  "acierto": 0.5578,
-  "nuestro": 0.5644
+  "n": 1456,
+  "acierto": 0.5536,
+  "nuestro": 0.5495
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 1139,
-   "conf": 0.651,
-   "acierto": 0.6339,
+   "n": 651,
+   "conf": 0.6499,
+   "acierto": 0.6098,
    "ic": [
-    0.6055,
-    0.6614
+    0.5718,
+    0.6466
    ]
   },
   {
    "min": 0.7,
-   "n": 138,
-   "conf": 0.7289,
-   "acierto": 0.7174,
+   "n": 76,
+   "conf": 0.7301,
+   "acierto": 0.7105,
    "ic": [
-    0.6372,
-    0.7858
+    0.6004,
+    0.8004
    ]
   },
   {
    "min": 0.8,
-   "n": 2,
-   "conf": 0.8101,
-   "acierto": 0.5,
+   "n": 1,
+   "conf": 0.801,
+   "acierto": 0.0,
    "ic": [
-    0.0945,
-    0.9055
+    0.0,
+    0.7935
    ]
   }
  ],
@@ -58,30 +58,30 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 1944,
+   "n": 1034,
    "prometido": 0.5492,
-   "real": 0.5211
+   "real": 0.5145
   },
   {
    "desde": 60,
    "hasta": 70,
-   "n": 1001,
-   "prometido": 0.6402,
-   "real": 0.6224
+   "n": 575,
+   "prometido": 0.6394,
+   "real": 0.5965
   },
   {
    "desde": 70,
    "hasta": 80,
-   "n": 136,
-   "prometido": 0.7277,
-   "real": 0.7206
+   "n": 75,
+   "prometido": 0.7291,
+   "real": 0.72
   },
   {
    "desde": 80,
    "hasta": 90,
-   "n": 2,
-   "prometido": 0.8101,
-   "real": 0.5
+   "n": 1,
+   "prometido": 0.801,
+   "real": 0.0
   },
   {
    "desde": 90,
@@ -92,79 +92,69 @@
   }
  ],
  "temporadas": {
-  "2025": {
-   "n": 1398,
-   "aciertos": 806,
-   "acierto": 0.5765,
-   "ic": [
-    0.5505,
-    0.6022
-   ],
-   "brier": 0.2372
-  },
   "2026": {
    "n": 1394,
-   "aciertos": 751,
-   "acierto": 0.5387,
+   "aciertos": 748,
+   "acierto": 0.5366,
    "ic": [
-    0.5125,
-    0.5648
+    0.5103,
+    0.5626
    ],
-   "brier": 0.2497
+   "brier": 0.2492
   },
   "2027": {
    "n": 291,
-   "aciertos": 178,
-   "acierto": 0.6117,
+   "aciertos": 181,
+   "acierto": 0.622,
    "ic": [
-    0.5546,
-    0.6659
+    0.565,
+    0.6758
    ],
-   "brier": 0.2313
+   "brier": 0.2315
   }
  },
  "fases": {
   "regular": {
-   "n": 2915,
-   "aciertos": 1645,
-   "acierto": 0.5643,
+   "n": 1603,
+   "aciertos": 886,
+   "acierto": 0.5527,
    "ic": [
-    0.5462,
-    0.5822
+    0.5283,
+    0.5769
    ],
-   "brier": 0.2424
+   "brier": 0.2461
   },
   "playoff": {
-   "n": 168,
-   "aciertos": 90,
-   "acierto": 0.5357,
+   "n": 82,
+   "aciertos": 43,
+   "acierto": 0.5244,
    "ic": [
-    0.4603,
-    0.6095
+    0.4176,
+    0.629
    ],
-   "brier": 0.2407
+   "brier": 0.2473
   }
  },
  "elige": {
   "local": {
-   "n": 2520,
-   "aciertos": 1424,
-   "acierto": 0.5651,
+   "n": 1406,
+   "aciertos": 768,
+   "acierto": 0.5462,
    "ic": [
-    0.5456,
-    0.5843
+    0.5201,
+    0.5721
    ],
-   "brier": 0.2421
+   "brier": 0.2472
   },
   "visitante": {
-   "n": 563,
-   "aciertos": 311,
-   "acierto": 0.5524,
+   "n": 279,
+   "aciertos": 161,
+   "acierto": 0.5771,
    "ic": [
-    0.5111,
-    0.593
+    0.5184,
+    0.6336
    ],
-   "brier": 0.2431
+   "brier": 0.2411
   }
  },
  "ejemplos": [
@@ -182,9 +172,9 @@
    "local": "San Jose Sharks",
    "visitante": "Pittsburgh Penguins",
    "marcador": "2-3",
-   "fav": "San Jose Sharks",
-   "pp": 0.5127,
-   "ok": false
+   "fav": "Pittsburgh Penguins",
+   "pp": 0.516,
+   "ok": true
   },
   {
    "fecha": "2026-11-12T03:00:00Z",
@@ -192,7 +182,7 @@
    "visitante": "Nashville Predators",
    "marcador": "2-4",
    "fav": "Anaheim Ducks",
-   "pp": 0.5656,
+   "pp": 0.6211,
    "ok": false
   },
   {
@@ -219,7 +209,7 @@
    "visitante": "New York Rangers",
    "marcador": "1-3",
    "fav": "Calgary Flames",
-   "pp": 0.5251,
+   "pp": 0.5537,
    "ok": false
   },
   {
@@ -264,7 +254,7 @@
    "visitante": "New Jersey Devils",
    "marcador": "4-2",
    "fav": "Winnipeg Jets",
-   "pp": 0.5131,
+   "pp": 0.5418,
    "ok": true
   },
   {
@@ -291,7 +281,7 @@
    "visitante": "Colorado Avalanche",
    "marcador": "3-6",
    "fav": "Colorado Avalanche",
-   "pp": 0.5531,
+   "pp": 0.5814,
    "ok": true
   },
   {
@@ -309,7 +299,7 @@
    "visitante": "Philadelphia Flyers",
    "marcador": "1-3",
    "fav": "Philadelphia Flyers",
-   "pp": 0.5456,
+   "pp": 0.5169,
    "ok": true
   },
   {
@@ -318,7 +308,7 @@
    "visitante": "New York Rangers",
    "marcador": "3-1",
    "fav": "Edmonton Oilers",
-   "pp": 0.6242,
+   "pp": 0.5968,
    "ok": true
   },
   {
@@ -327,7 +317,7 @@
    "visitante": "Pittsburgh Penguins",
    "marcador": "5-2",
    "fav": "Anaheim Ducks",
-   "pp": 0.5714,
+   "pp": 0.5993,
    "ok": true
   },
   {
@@ -336,7 +326,7 @@
    "visitante": "Philadelphia Flyers",
    "marcador": "4-3",
    "fav": "Calgary Flames",
-   "pp": 0.5425,
+   "pp": 0.5138,
    "ok": true
   },
   {
@@ -353,9 +343,9 @@
    "local": "Winnipeg Jets",
    "visitante": "Tampa Bay Lightning",
    "marcador": "4-3",
-   "fav": "Tampa Bay Lightning",
-   "pp": 0.5435,
-   "ok": false
+   "fav": "Winnipeg Jets",
+   "pp": 0.5139,
+   "ok": true
   },
   {
    "fecha": "2026-11-08T20:30:00Z",
@@ -363,7 +353,7 @@
    "visitante": "Vegas Golden Knights",
    "marcador": "1-4",
    "fav": "Buffalo Sabres",
-   "pp": 0.569,
+   "pp": 0.5405,
    "ok": false
   },
   {
@@ -372,7 +362,7 @@
    "visitante": "Florida Panthers",
    "marcador": "4-1",
    "fav": "Boston Bruins",
-   "pp": 0.6034,
+   "pp": 0.6306,
    "ok": true
   },
   {
@@ -390,9 +380,39 @@
    "visitante": "Pittsburgh Penguins",
    "marcador": "2-5",
    "fav": "Los Angeles Kings",
-   "pp": 0.569,
+   "pp": 0.597,
    "ok": false
   }
  ],
+ "motor": {
+  "activo": true,
+  "params": {
+   "kmul": 1.0,
+   "hmul": 1.0,
+   "c_desc": 20.0,
+   "c_forma": 0.0
+  },
+  "sd": 2.608,
+  "motor": {
+   "n": 1685,
+   "acierto": 0.5513,
+   "brier": 0.2462,
+   "logloss": 0.6854
+  },
+  "elo_basico": {
+   "n": 1685,
+   "acierto": 0.5513,
+   "brier": 0.2465,
+   "logloss": 0.6861
+  },
+  "local": {
+   "n": 1685,
+   "acierto": 0.5258
+  },
+  "temporadas_prueba": [
+   2026,
+   2027
+  ]
+ },
  "valor_activo": false
 }

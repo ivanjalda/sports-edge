@@ -1,56 +1,56 @@
 {
- "actualizado": "2026-11-13 01:24 UTC",
+ "actualizado": "2026-11-13 01:49 UTC",
  "liga": "Eurocup",
- "desde": "20241001",
+ "desde": "20250930",
  "datos_hasta": "2026-11-12T19:00:00Z",
  "total": {
-  "n": 493,
-  "aciertos": 314,
-  "acierto": 0.6369,
+  "n": 307,
+  "aciertos": 210,
+  "acierto": 0.684,
   "ic": [
-   0.5936,
-   0.6782
+   0.63,
+   0.7335
   ],
-  "brier": 0.2194
+  "brier": 0.2148
  },
  "base_local": {
-  "n": 493,
-  "acierto": 0.6024
+  "n": 307,
+  "acierto": 0.5993
  },
  "base_balance": {
-  "n": 278,
-  "acierto": 0.6655,
-  "nuestro": 0.6475
+  "n": 148,
+  "acierto": 0.6824,
+  "nuestro": 0.723
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 346,
-   "conf": 0.6921,
-   "acierto": 0.6965,
+   "n": 187,
+   "conf": 0.7189,
+   "acierto": 0.738,
    "ic": [
-    0.6461,
-    0.7426
+    0.6706,
+    0.7958
    ]
   },
   {
    "min": 0.7,
-   "n": 145,
-   "conf": 0.7569,
-   "acierto": 0.7862,
+   "n": 95,
+   "conf": 0.7886,
+   "acierto": 0.7895,
    "ic": [
-    0.7125,
-    0.8451
+    0.6971,
+    0.8594
    ]
   },
   {
    "min": 0.8,
-   "n": 25,
-   "conf": 0.835,
-   "acierto": 0.88,
+   "n": 41,
+   "conf": 0.8461,
+   "acierto": 0.7805,
    "ic": [
-    0.7004,
-    0.9583
+    0.6329,
+    0.88
    ]
   }
  ],
@@ -58,103 +58,93 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 147,
-   "prometido": 0.5549,
-   "real": 0.4966
+   "n": 120,
+   "prometido": 0.551,
+   "real": 0.6
   },
   {
    "desde": 60,
    "hasta": 70,
-   "n": 201,
-   "prometido": 0.6453,
-   "real": 0.6318
+   "n": 92,
+   "prometido": 0.6468,
+   "real": 0.6848
   },
   {
    "desde": 70,
    "hasta": 80,
-   "n": 120,
-   "prometido": 0.7407,
-   "real": 0.7667
+   "n": 54,
+   "prometido": 0.745,
+   "real": 0.7963
   },
   {
    "desde": 80,
    "hasta": 90,
-   "n": 25,
-   "prometido": 0.835,
-   "real": 0.88
+   "n": 35,
+   "prometido": 0.8335,
+   "real": 0.8
   },
   {
    "desde": 90,
    "hasta": 100,
-   "n": 0,
-   "prometido": null,
-   "real": null
+   "n": 6,
+   "prometido": 0.9197,
+   "real": 0.6667
   }
  ],
  "temporadas": {
-  "2025": {
-   "n": 186,
-   "aciertos": 115,
-   "acierto": 0.6183,
-   "ic": [
-    0.5467,
-    0.685
-   ],
-   "brier": 0.2195
-  },
   "2026": {
    "n": 195,
-   "aciertos": 124,
-   "acierto": 0.6359,
+   "aciertos": 134,
+   "acierto": 0.6872,
    "ic": [
-    0.5663,
-    0.7002
+    0.619,
+    0.7481
    ],
-   "brier": 0.2216
+   "brier": 0.2147
   },
   "2027": {
    "n": 112,
-   "aciertos": 75,
-   "acierto": 0.6696,
+   "aciertos": 76,
+   "acierto": 0.6786,
    "ic": [
-    0.5782,
-    0.7499
+    0.5874,
+    0.7579
    ],
-   "brier": 0.2156
+   "brier": 0.2149
   }
  },
  "fases": {
   "regular": {
-   "n": 493,
-   "aciertos": 314,
-   "acierto": 0.6369,
+   "n": 307,
+   "aciertos": 210,
+   "acierto": 0.684,
    "ic": [
-    0.5936,
-    0.6782
+    0.63,
+    0.7335
    ],
-   "brier": 0.2194
+   "brier": 0.2148
   }
  },
  "elige": {
   "local": {
-   "n": 436,
-   "aciertos": 277,
-   "acierto": 0.6353,
+   "n": 209,
+   "aciertos": 148,
+   "acierto": 0.7081,
    "ic": [
-    0.5891,
-    0.6791
+    0.6432,
+    0.7656
    ],
-   "brier": 0.2182
+   "brier": 0.2077
   },
   "visitante": {
-   "n": 57,
-   "aciertos": 37,
-   "acierto": 0.6491,
+   "n": 98,
+   "aciertos": 62,
+   "acierto": 0.6327,
    "ic": [
-    0.5194,
-    0.76
+    0.5339,
+    0.7214
    ],
-   "brier": 0.2284
+   "brier": 0.2298
   }
  },
  "ejemplos": [
@@ -164,7 +154,7 @@
    "visitante": "Maxima Roma",
    "marcador": "89-113",
    "fav": "Skyliners Frankfurt",
-   "pp": 0.6191,
+   "pp": 0.5181,
    "ok": false
   },
   {
@@ -173,7 +163,7 @@
    "visitante": "Recoletas Salud San Pablo Burgos",
    "marcador": "88-80",
    "fav": "Le Mans Sarthe Basket",
-   "pp": 0.7243,
+   "pp": 0.7544,
    "ok": true
   },
   {
@@ -182,7 +172,7 @@
    "visitante": "ratiopharm ulm",
    "marcador": "83-78",
    "fav": "Roma Basketball",
-   "pp": 0.6637,
+   "pp": 0.5666,
    "ok": true
   },
   {
@@ -191,7 +181,7 @@
    "visitante": "Hapoel Midtown Jerusalem",
    "marcador": "77-91",
    "fav": "Hapoel Midtown Jerusalem",
-   "pp": 0.5201,
+   "pp": 0.702,
    "ok": true
   },
   {
@@ -200,7 +190,7 @@
    "visitante": "Riga Zelli",
    "marcador": "105-81",
    "fav": "Aris Thessaloniki",
-   "pp": 0.7164,
+   "pp": 0.7622,
    "ok": true
   },
   {
@@ -208,18 +198,18 @@
    "local": "NINERS Chemnitz",
    "visitante": "Napoli Basketball",
    "marcador": "90-112",
-   "fav": "NINERS Chemnitz",
-   "pp": 0.585,
-   "ok": false
+   "fav": "Napoli Basketball",
+   "pp": 0.5026,
+   "ok": true
   },
   {
    "fecha": "2026-11-11T16:30:00Z",
    "local": "Siauliai Basketball",
    "visitante": "La Laguna Tenerife",
    "marcador": "71-86",
-   "fav": "Siauliai Basketball",
-   "pp": 0.5637,
-   "ok": false
+   "fav": "La Laguna Tenerife",
+   "pp": 0.6267,
+   "ok": true
   },
   {
    "fecha": "2026-11-11T16:00:00Z",
@@ -227,7 +217,7 @@
    "visitante": "Lietkabelis Panevezys",
    "marcador": "99-61",
    "fav": "Bahcesehir College Istanbul",
-   "pp": 0.8109,
+   "pp": 0.8429,
    "ok": true
   },
   {
@@ -236,7 +226,7 @@
    "visitante": "Umana Reyer Venice",
    "marcador": "80-76",
    "fav": "London Lions",
-   "pp": 0.5836,
+   "pp": 0.5035,
    "ok": true
   },
   {
@@ -254,7 +244,7 @@
    "visitante": "Cedevita Olimpija Ljubljana",
    "marcador": "71-88",
    "fav": "Rostock Seawolves",
-   "pp": 0.624,
+   "pp": 0.5741,
    "ok": false
   },
   {
@@ -262,9 +252,9 @@
    "local": "Dolomiti Energia Trento",
    "visitante": "Tofas Bursa",
    "marcador": "86-96",
-   "fav": "Dolomiti Energia Trento",
-   "pp": 0.525,
-   "ok": false
+   "fav": "Tofas Bursa",
+   "pp": 0.6369,
+   "ok": true
   },
   {
    "fecha": "2026-11-10T18:30:00Z",
@@ -272,7 +262,7 @@
    "visitante": "Buducnost VOLI Podgorica",
    "marcador": "66-68",
    "fav": "Cosea JL Bourg-en-Bresse",
-   "pp": 0.6478,
+   "pp": 0.5375,
    "ok": false
   },
   {
@@ -280,9 +270,9 @@
    "local": "U-BT Cluj-Napoca",
    "visitante": "Turk Telekom Ankara",
    "marcador": "81-89",
-   "fav": "U-BT Cluj-Napoca",
-   "pp": 0.5433,
-   "ok": false
+   "fav": "Turk Telekom Ankara",
+   "pp": 0.604,
+   "ok": true
   },
   {
    "fecha": "2026-11-10T17:00:00Z",
@@ -290,7 +280,7 @@
    "visitante": "Slask Wroclaw",
    "marcador": "90-82",
    "fav": "Neptunas Klaipeda",
-   "pp": 0.7307,
+   "pp": 0.6888,
    "ok": true
   },
   {
@@ -298,9 +288,9 @@
    "local": "Balkan Botevgrad",
    "visitante": "PAOK Thessaloniki",
    "marcador": "56-79",
-   "fav": "Balkan Botevgrad",
-   "pp": 0.5485,
-   "ok": false
+   "fav": "PAOK Thessaloniki",
+   "pp": 0.6144,
+   "ok": true
   },
   {
    "fecha": "2026-11-05T20:00:00Z",
@@ -308,7 +298,7 @@
    "visitante": "U-BT Cluj-Napoca",
    "marcador": "113-73",
    "fav": "La Laguna Tenerife",
-   "pp": 0.6772,
+   "pp": 0.7311,
    "ok": true
   },
   {
@@ -317,7 +307,7 @@
    "visitante": "Rostock Seawolves",
    "marcador": "59-86",
    "fav": "Recoletas Salud San Pablo Burgos",
-   "pp": 0.6635,
+   "pp": 0.6576,
    "ok": false
   },
   {
@@ -326,7 +316,7 @@
    "visitante": "London Lions",
    "marcador": "86-84",
    "fav": "Maxima Roma",
-   "pp": 0.6492,
+   "pp": 0.5459,
    "ok": true
   },
   {
@@ -335,7 +325,7 @@
    "visitante": "Aris Thessaloniki",
    "marcador": "84-73",
    "fav": "Hapoel Midtown Jerusalem",
-   "pp": 0.6932,
+   "pp": 0.6458,
    "ok": true
   },
   {
@@ -344,7 +334,7 @@
    "visitante": "Siauliai Basketball",
    "marcador": "98-77",
    "fav": "Umana Reyer Venice",
-   "pp": 0.6699,
+   "pp": 0.6586,
    "ok": true
   },
   {
@@ -353,7 +343,7 @@
    "visitante": "Balkan Botevgrad",
    "marcador": "69-78",
    "fav": "BOSNA BH Telecom Sarajevo",
-   "pp": 0.7261,
+   "pp": 0.7688,
    "ok": false
   },
   {
@@ -362,7 +352,7 @@
    "visitante": "Cosea JL Bourg-en-Bresse",
    "marcador": "84-88",
    "fav": "Cosea JL Bourg-en-Bresse",
-   "pp": 0.5992,
+   "pp": 0.6996,
    "ok": true
   },
   {
@@ -371,7 +361,7 @@
    "visitante": "Baglietto Derthona Tortona",
    "marcador": "73-71",
    "fav": "Cedevita Olimpija Ljubljana",
-   "pp": 0.6301,
+   "pp": 0.5097,
    "ok": true
   },
   {
@@ -380,9 +370,39 @@
    "visitante": "Le Mans Sarthe Basket",
    "marcador": "65-71",
    "fav": "Riga Zelli",
-   "pp": 0.6504,
+   "pp": 0.5694,
    "ok": false
   }
  ],
- "valor_activo": true
+ "motor": {
+  "activo": true,
+  "params": {
+   "kmul": 1.4,
+   "hmul": 0.6,
+   "c_desc": 35.0,
+   "c_forma": 60.0
+  },
+  "sd": 14.735,
+  "motor": {
+   "n": 307,
+   "acierto": 0.684,
+   "brier": 0.2148,
+   "logloss": 0.6219
+  },
+  "elo_basico": {
+   "n": 307,
+   "acierto": 0.6482,
+   "brier": 0.2194,
+   "logloss": 0.6293
+  },
+  "local": {
+   "n": 307,
+   "acierto": 0.5993
+  },
+  "temporadas_prueba": [
+   2026,
+   2027
+  ]
+ },
+ "valor_activo": false
 }

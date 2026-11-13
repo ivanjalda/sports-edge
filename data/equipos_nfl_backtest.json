@@ -1,0 +1,418 @@
+{
+ "actualizado": "2026-11-13 01:49 UTC",
+ "liga": "NFL",
+ "desde": "20250905",
+ "datos_hasta": "2026-11-10T01:15:00Z",
+ "total": {
+  "n": 419,
+  "aciertos": 272,
+  "acierto": 0.6492,
+  "ic": [
+   0.6023,
+   0.6933
+  ],
+  "brier": 0.2202
+ },
+ "base_local": {
+  "n": 419,
+  "acierto": 0.5227
+ },
+ "base_balance": {
+  "n": 231,
+  "acierto": 0.6926,
+  "nuestro": 0.684
+ },
+ "tramos": [
+  {
+   "min": 0.6,
+   "n": 267,
+   "conf": 0.734,
+   "acierto": 0.7004,
+   "ic": [
+    0.6429,
+    0.7522
+   ]
+  },
+  {
+   "min": 0.7,
+   "n": 158,
+   "conf": 0.7907,
+   "acierto": 0.7658,
+   "ic": [
+    0.694,
+    0.8251
+   ]
+  },
+  {
+   "min": 0.8,
+   "n": 70,
+   "conf": 0.846,
+   "acierto": 0.7857,
+   "ic": [
+    0.6761,
+    0.8656
+   ]
+  }
+ ],
+ "calibracion": [
+  {
+   "desde": 50,
+   "hasta": 60,
+   "n": 152,
+   "prometido": 0.5506,
+   "real": 0.5592
+  },
+  {
+   "desde": 60,
+   "hasta": 70,
+   "n": 109,
+   "prometido": 0.6518,
+   "real": 0.6055
+  },
+  {
+   "desde": 70,
+   "hasta": 80,
+   "n": 88,
+   "prometido": 0.7466,
+   "real": 0.75
+  },
+  {
+   "desde": 80,
+   "hasta": 90,
+   "n": 64,
+   "prometido": 0.8397,
+   "real": 0.7656
+  },
+  {
+   "desde": 90,
+   "hasta": 100,
+   "n": 6,
+   "prometido": 0.9131,
+   "real": 1.0
+  }
+ ],
+ "temporadas": {
+  "2025": {
+   "n": 284,
+   "aciertos": 186,
+   "acierto": 0.6549,
+   "ic": [
+    0.5979,
+    0.7078
+   ],
+   "brier": 0.2211
+  },
+  "2026": {
+   "n": 135,
+   "aciertos": 86,
+   "acierto": 0.637,
+   "ic": [
+    0.5532,
+    0.7133
+   ],
+   "brier": 0.2184
+  }
+ },
+ "fases": {
+  "regular": {
+   "n": 406,
+   "aciertos": 263,
+   "acierto": 0.6478,
+   "ic": [
+    0.6001,
+    0.6927
+   ],
+   "brier": 0.2215
+  },
+  "playoff": {
+   "n": 13,
+   "aciertos": 9,
+   "acierto": 0.6923,
+   "ic": [
+    0.4237,
+    0.8732
+   ],
+   "brier": 0.1812
+  }
+ },
+ "elige": {
+  "local": {
+   "n": 236,
+   "aciertos": 154,
+   "acierto": 0.6525,
+   "ic": [
+    0.5898,
+    0.7104
+   ],
+   "brier": 0.2155
+  },
+  "visitante": {
+   "n": 183,
+   "aciertos": 118,
+   "acierto": 0.6448,
+   "ic": [
+    0.5731,
+    0.7105
+   ],
+   "brier": 0.2264
+  }
+ },
+ "ejemplos": [
+  {
+   "fecha": "2026-11-10T01:15:00Z",
+   "local": "Minnesota Vikings",
+   "visitante": "Buffalo Bills",
+   "marcador": "6-23",
+   "fav": "Buffalo Bills",
+   "pp": 0.537,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-09T01:20:00Z",
+   "local": "Chicago Bears",
+   "visitante": "Tampa Bay Buccaneers",
+   "marcador": "27-24",
+   "fav": "Chicago Bears",
+   "pp": 0.7309,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-08T21:25:00Z",
+   "local": "Seattle Seahawks",
+   "visitante": "Arizona Cardinals",
+   "marcador": "17-3",
+   "fav": "Seattle Seahawks",
+   "pp": 0.8347,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-08T21:25:00Z",
+   "local": "San Francisco 49ers",
+   "visitante": "Las Vegas Raiders",
+   "marcador": "38-17",
+   "fav": "San Francisco 49ers",
+   "pp": 0.8149,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-08T21:25:00Z",
+   "local": "New England Patriots",
+   "visitante": "Green Bay Packers",
+   "marcador": "27-45",
+   "fav": "New England Patriots",
+   "pp": 0.6574,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-08T21:05:00Z",
+   "local": "Los Angeles Chargers",
+   "visitante": "Houston Texans",
+   "marcador": "22-44",
+   "fav": "Houston Texans",
+   "pp": 0.6615,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-08T18:00:00Z",
+   "local": "Carolina Panthers",
+   "visitante": "Denver Broncos",
+   "marcador": "21-26",
+   "fav": "Denver Broncos",
+   "pp": 0.7703,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-08T18:00:00Z",
+   "local": "Washington Commanders",
+   "visitante": "Los Angeles Rams",
+   "marcador": "13-20",
+   "fav": "Los Angeles Rams",
+   "pp": 0.691,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-08T18:00:00Z",
+   "local": "Philadelphia Eagles",
+   "visitante": "New York Giants",
+   "marcador": "11-19",
+   "fav": "New York Giants",
+   "pp": 0.6132,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-08T18:00:00Z",
+   "local": "New Orleans Saints",
+   "visitante": "Cleveland Browns",
+   "marcador": "23-22",
+   "fav": "Cleveland Browns",
+   "pp": 0.5202,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-08T18:00:00Z",
+   "local": "Miami Dolphins",
+   "visitante": "Detroit Lions",
+   "marcador": "9-19",
+   "fav": "Detroit Lions",
+   "pp": 0.7708,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-08T18:00:00Z",
+   "local": "Kansas City Chiefs",
+   "visitante": "New York Jets",
+   "marcador": "35-12",
+   "fav": "Kansas City Chiefs",
+   "pp": 0.8148,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-08T18:00:00Z",
+   "local": "Indianapolis Colts",
+   "visitante": "Dallas Cowboys",
+   "marcador": "23-27",
+   "fav": "Dallas Cowboys",
+   "pp": 0.5338,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-08T14:30:00Z",
+   "local": "Atlanta Falcons",
+   "visitante": "Cincinnati Bengals",
+   "marcador": "17-34",
+   "fav": "Cincinnati Bengals",
+   "pp": 0.6762,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-06T01:15:00Z",
+   "local": "Baltimore Ravens",
+   "visitante": "Jacksonville Jaguars",
+   "marcador": "10-33",
+   "fav": "Jacksonville Jaguars",
+   "pp": 0.6963,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-03T01:15:00Z",
+   "local": "Seattle Seahawks",
+   "visitante": "Chicago Bears",
+   "marcador": "17-34",
+   "fav": "Seattle Seahawks",
+   "pp": 0.6801,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-02T01:20:00Z",
+   "local": "Washington Commanders",
+   "visitante": "Philadelphia Eagles",
+   "marcador": "27-10",
+   "fav": "Washington Commanders",
+   "pp": 0.5155,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-01T21:25:00Z",
+   "local": "Miami Dolphins",
+   "visitante": "New England Patriots",
+   "marcador": "19-24",
+   "fav": "New England Patriots",
+   "pp": 0.7901,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-01T21:25:00Z",
+   "local": "Denver Broncos",
+   "visitante": "Kansas City Chiefs",
+   "marcador": "28-24",
+   "fav": "Denver Broncos",
+   "pp": 0.6528,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-01T21:05:00Z",
+   "local": "Los Angeles Rams",
+   "visitante": "Los Angeles Chargers",
+   "marcador": "24-9",
+   "fav": "Los Angeles Rams",
+   "pp": 0.7935,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-01T18:00:00Z",
+   "local": "Jacksonville Jaguars",
+   "visitante": "Indianapolis Colts",
+   "marcador": "42-7",
+   "fav": "Jacksonville Jaguars",
+   "pp": 0.8311,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-01T18:00:00Z",
+   "local": "Tampa Bay Buccaneers",
+   "visitante": "Atlanta Falcons",
+   "marcador": "16-0",
+   "fav": "Atlanta Falcons",
+   "pp": 0.5035,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-01T18:00:00Z",
+   "local": "Pittsburgh Steelers",
+   "visitante": "Cleveland Browns",
+   "marcador": "27-6",
+   "fav": "Pittsburgh Steelers",
+   "pp": 0.6721,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-01T18:00:00Z",
+   "local": "New York Jets",
+   "visitante": "Las Vegas Raiders",
+   "marcador": "33-38",
+   "fav": "Las Vegas Raiders",
+   "pp": 0.5283,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-01T18:00:00Z",
+   "local": "Detroit Lions",
+   "visitante": "Minnesota Vikings",
+   "marcador": "19-15",
+   "fav": "Minnesota Vikings",
+   "pp": 0.6116,
+   "ok": false
+  }
+ ],
+ "motor": {
+  "activo": true,
+  "params": {
+   "kmul": 1.4,
+   "hmul": 0.6,
+   "c_desc": 0.0,
+   "c_forma": 0.0
+  },
+  "sd": 14.223,
+  "motor": {
+   "n": 419,
+   "acierto": 0.6492,
+   "brier": 0.2202,
+   "logloss": 0.6305
+  },
+  "elo_basico": {
+   "n": 419,
+   "acierto": 0.6396,
+   "brier": 0.2223,
+   "logloss": 0.6343
+  },
+  "local": {
+   "n": 419,
+   "acierto": 0.5227
+  },
+  "temporadas_prueba": [
+   2025,
+   2026
+  ]
+ },
+ "valor_activo": false
+}
