@@ -125,7 +125,7 @@ function setS(s){ serie=s; render(); }
 function cb(x){ return '<div class="cb"><div class="bar"><i style="width:'+Math.min(100,Math.round((x||0)*100))+'%"></i></div><b>'+pc(x)+'</b></div>'; }
 
 function vPred(d){
-  var p=d.proximo; if(!p) return '<div class="empty">'+t("nonext")+'</div>';
+  var p=d.proximo; if(!p) return '<div class="empty">'+(d.descargando?t("nodata"):t("nonext"))+'</div>';
   var o='<div class="gp"><div class="t">'+esc(p.nombre)+'</div><div class="s">'+esc(p.circuito)+(p.pais?' · '+esc(p.pais):'')+'</div>'
     +'<div class="s">'+t("race")+': <b>'+esc(fecha(p.fecha,true))+'</b>'+(p.clasif?' · '+t("quali")+': '+esc(fecha(p.clasif,true)):'')+'</div>'
     +'<span class="badge '+(p.tipo==="parrilla"?'on':'pre')+'">'+(p.tipo==="parrilla"?t("grid"):t("pre"))+'</span>';
