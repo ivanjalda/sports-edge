@@ -317,24 +317,24 @@
     "mejor": {
      "1": {
       "c": 1.46,
-      "casa": "Pinnacle"
+      "casa": "Betfair"
      },
      "2": {
-      "c": 3.0,
-      "casa": "Unibet (NL)"
+      "c": 3.1,
+      "casa": "Betfair"
      }
     },
     "mercado": {
-     "1": 0.6714,
-     "2": 0.3286
+     "1": 0.6748,
+     "2": 0.3252
     },
-    "casas": 9,
+    "casas": 20,
     "ev": {
      "1": -0.0405,
-     "2": 0.0284
+     "2": 0.0627
     },
     "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
+    "actualizado": "2026-11-14 14:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 15:11 UTC",
@@ -363,25 +363,25 @@
    "cuota": {
     "mejor": {
      "2": {
-      "c": 2.46,
-      "casa": "BetOnline.ag"
+      "c": 2.58,
+      "casa": "Betfair"
      },
      "1": {
-      "c": 1.62,
+      "c": 1.6,
       "casa": "Pinnacle"
      }
     },
     "mercado": {
-     "1": 0.6033,
-     "2": 0.3967
+     "1": 0.6085,
+     "2": 0.3915
     },
-    "casas": 9,
+    "casas": 20,
     "ev": {
-     "1": -0.1595,
-     "2": 0.1838
+     "1": -0.1699,
+     "2": 0.2415
     },
     "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
+    "actualizado": "2026-11-14 14:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 15:11 UTC",
@@ -414,21 +414,21 @@
       "casa": "Unibet (NL)"
      },
      "2": {
-      "c": 7.0,
-      "casa": "William Hill"
+      "c": 7.84,
+      "casa": "Pinnacle"
      }
     },
     "mercado": {
-     "1": 0.8383,
-     "2": 0.1617
+     "1": 0.8526,
+     "2": 0.1474
     },
-    "casas": 8,
+    "casas": 20,
     "ev": {
      "1": 0.0078,
-     "2": -0.188
+     "2": -0.0906
     },
     "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
+    "actualizado": "2026-11-14 14:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 15:11 UTC",
@@ -457,25 +457,25 @@
    "cuota": {
     "mejor": {
      "1": {
-      "c": 1.24,
-      "casa": "BetAnything"
+      "c": 1.29,
+      "casa": "William Hill"
      },
      "2": {
-      "c": 4.3,
-      "casa": "BetOnline.ag"
+      "c": 4.1,
+      "casa": "Betfair"
      }
     },
     "mercado": {
-     "1": 0.7711,
-     "2": 0.2289
+     "1": 0.7486,
+     "2": 0.2514
     },
-    "casas": 7,
+    "casas": 20,
     "ev": {
-     "1": -0.1291,
-     "2": 0.2801
+     "1": -0.094,
+     "2": 0.2206
     },
     "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
+    "actualizado": "2026-11-14 14:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 15:11 UTC",
@@ -551,25 +551,25 @@
    "cuota": {
     "mejor": {
      "1": {
-      "c": 2.6,
-      "casa": "Nordic Bet"
+      "c": 3.3,
+      "casa": "Betfair"
      },
      "2": {
-      "c": 1.56,
-      "casa": "1xBet"
+      "c": 1.43,
+      "casa": "Betfair"
      }
     },
     "mercado": {
-     "1": 0.3694,
-     "2": 0.6306
+     "1": 0.3066,
+     "2": 0.6934
     },
-    "casas": 11,
+    "casas": 20,
     "ev": {
-     "1": 0.5595,
-     "2": -0.3757
+     "1": 0.9793,
+     "2": -0.4277
     },
     "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
+    "actualizado": "2026-11-14 14:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 19:24 UTC",
@@ -577,7 +577,54 @@
     "1": 2.6,
     "2": 1.56
    }
+  },
+  {
+   "id": "57cede457aa62785e8460c5b2a052ac6",
+   "torneo": "WTA Finals",
+   "tour": "WTA",
+   "sup": "Hard",
+   "fecha": "2026-11-14T21:10:00Z",
+   "j1": "Linda Noskova",
+   "j2": "Elina Svitolina",
+   "id1": "wta:222328",
+   "id2": "wta:202494",
+   "p1": 0.5307,
+   "p2": 0.4693,
+   "n1": 213,
+   "n2": 416,
+   "creada": "2026-11-14 14:02 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "2": {
+      "c": 2.52,
+      "casa": "Betfair"
+     },
+     "1": {
+      "c": 1.65,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "1": 0.5929,
+     "2": 0.4071
+    },
+    "casas": 20,
+    "ev": {
+     "1": -0.1243,
+     "2": 0.1826
+    },
+    "valor": [],
+    "actualizado": "2026-11-14 14:02 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-14 14:02 UTC",
+    "valor": [],
+    "1": 1.65,
+    "2": 2.52
+   }
   }
  ],
- "actualizado": "2026-11-14 02:42 UTC"
+ "actualizado": "2026-11-14 14:02 UTC"
 }

@@ -1,84 +1,15 @@
 {
- "actualizado": "2026-11-14 02:42 UTC",
+ "actualizado": "2026-11-14 14:02 UTC",
  "liga": "NCAA",
- "datos_hasta": "2026-11-13T02:00:00Z",
- "dias_desde_datos": 1,
+ "datos_hasta": "2026-11-14T03:15:00Z",
+ "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
- "proximo": "2026-11-14T03:15:00Z",
+ "proximo": "2026-11-14T17:00:00Z",
  "predicciones": [
-  {
-   "id": "401858293",
-   "fecha": "2026-11-14T00:00:00Z",
-   "local": "Pittsburgh Panthers",
-   "visitante": "Florida State Seminoles",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7142,
-   "pv": 0.2858,
-   "elo_l": 1552,
-   "elo_v": 1480,
-   "bal_l": [
-    5,
-    3
-   ],
-   "bal_v": [
-    3,
-    5
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401858526",
-   "fecha": "2026-11-14T02:00:00Z",
-   "local": "UCLA Bruins",
-   "visitante": "Illinois Fighting Illini",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.758,
-   "pv": 0.242,
-   "elo_l": 1704,
-   "elo_v": 1614,
-   "bal_l": [
-    9,
-    0
-   ],
-   "bal_v": [
-    6,
-    3
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401856860",
-   "fecha": "2026-11-14T03:15:00Z",
-   "local": "Colorado Buffaloes",
-   "visitante": "Houston Cougars",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.1592,
-   "pv": 0.8408,
-   "elo_l": 1371,
-   "elo_v": 1668,
-   "bal_l": [
-    2,
-    6
-   ],
-   "bal_v": [
-    6,
-    2
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "401858296",
    "fecha": "2026-11-14T17:00:00Z",
@@ -1439,6 +1370,75 @@
  ],
  "recientes": [
   {
+   "id": "401856860",
+   "fecha": "2026-11-14T03:15:00Z",
+   "local": "Colorado Buffaloes",
+   "visitante": "Houston Cougars",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.1592,
+   "pv": 0.8408,
+   "elo_l": 1371,
+   "elo_v": 1668,
+   "bal_l": [
+    2,
+    6
+   ],
+   "bal_v": [
+    6,
+    2
+   ],
+   "creada": "2026-11-13 01:49 UTC",
+   "resultado": "L",
+   "marcador": "42-32"
+  },
+  {
+   "id": "401858526",
+   "fecha": "2026-11-14T02:00:00Z",
+   "local": "UCLA Bruins",
+   "visitante": "Illinois Fighting Illini",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.758,
+   "pv": 0.242,
+   "elo_l": 1704,
+   "elo_v": 1614,
+   "bal_l": [
+    9,
+    0
+   ],
+   "bal_v": [
+    6,
+    3
+   ],
+   "creada": "2026-11-13 01:49 UTC",
+   "resultado": "L",
+   "marcador": "22-14"
+  },
+  {
+   "id": "401858293",
+   "fecha": "2026-11-14T00:00:00Z",
+   "local": "Pittsburgh Panthers",
+   "visitante": "Florida State Seminoles",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7142,
+   "pv": 0.2858,
+   "elo_l": 1552,
+   "elo_v": 1480,
+   "bal_l": [
+    5,
+    3
+   ],
+   "bal_v": [
+    3,
+    5
+   ],
+   "creada": "2026-11-13 01:49 UTC",
+   "resultado": "V",
+   "marcador": "10-16"
+  },
+  {
    "id": "401869969",
    "fecha": "2026-11-13T02:00:00Z",
    "local": "UL Monroe Warhawks",
@@ -1464,14 +1464,14 @@
  ],
  "directo": {
   "total": 63,
-  "resueltas": 1,
-  "aciertos": 1,
-  "acierto": 1.0,
+  "resueltas": 4,
+  "aciertos": 2,
+  "acierto": 0.5,
   "ic": [
-   0.2065,
-   1.0
+   0.15,
+   0.85
   ],
-  "brier": 0.0367,
+  "brier": 0.3281,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -1550,6 +1550,12 @@
    "p": 1
   },
   {
+   "equipo": "UCLA Bruins",
+   "elo": 1721,
+   "g": 10,
+   "p": 0
+  },
+  {
    "equipo": "James Madison Dukes",
    "elo": 1713,
    "g": 8,
@@ -1560,12 +1566,6 @@
    "elo": 1707,
    "g": 6,
    "p": 2
-  },
-  {
-   "equipo": "UCLA Bruins",
-   "elo": 1704,
-   "g": 9,
-   "p": 0
   },
   {
    "equipo": "BYU Cougars",
@@ -1612,12 +1612,6 @@
   {
    "equipo": "North Dakota State Bison",
    "elo": 1675,
-   "g": 6,
-   "p": 2
-  },
-  {
-   "equipo": "Houston Cougars",
-   "elo": 1668,
    "g": 6,
    "p": 2
   },
@@ -1676,16 +1670,16 @@
    "p": 4
   },
   {
-   "equipo": "Illinois Fighting Illini",
-   "elo": 1614,
-   "g": 6,
-   "p": 3
-  },
-  {
    "equipo": "Louisiana Tech Bulldogs",
    "elo": 1611,
    "g": 6,
    "p": 2
+  },
+  {
+   "equipo": "Houston Cougars",
+   "elo": 1609,
+   "g": 6,
+   "p": 3
   },
   {
    "equipo": "Baylor Bears",
@@ -1728,6 +1722,12 @@
    "elo": 1598,
    "g": 6,
    "p": 2
+  },
+  {
+   "equipo": "Illinois Fighting Illini",
+   "elo": 1597,
+   "g": 6,
+   "p": 4
   },
   {
    "equipo": "Texas State Bobcats",
@@ -1805,12 +1805,6 @@
    "equipo": "Ohio Bobcats",
    "elo": 1556,
    "g": 6,
-   "p": 3
-  },
-  {
-   "equipo": "Pittsburgh Panthers",
-   "elo": 1552,
-   "g": 5,
    "p": 3
   },
   {
@@ -1898,6 +1892,12 @@
    "p": 5
   },
   {
+   "equipo": "Florida State Seminoles",
+   "elo": 1520,
+   "g": 4,
+   "p": 5
+  },
+  {
    "equipo": "Florida Atlantic Owls",
    "elo": 1520,
    "g": 5,
@@ -1906,6 +1906,12 @@
   {
    "equipo": "Auburn Tigers",
    "elo": 1513,
+   "g": 5,
+   "p": 4
+  },
+  {
+   "equipo": "Pittsburgh Panthers",
+   "elo": 1512,
    "g": 5,
    "p": 4
   },
@@ -1980,12 +1986,6 @@
    "elo": 1483,
    "g": 5,
    "p": 4
-  },
-  {
-   "equipo": "Florida State Seminoles",
-   "elo": 1480,
-   "g": 3,
-   "p": 5
   },
   {
    "equipo": "NC State Wolfpack",
@@ -2120,6 +2120,12 @@
    "p": 5
   },
   {
+   "equipo": "Colorado Buffaloes",
+   "elo": 1431,
+   "g": 3,
+   "p": 6
+  },
+  {
    "equipo": "Gardner-Webb Runnin' Bulldogs",
    "elo": 1430,
    "g": 0,
@@ -2250,12 +2256,6 @@
    "elo": 1373,
    "g": 0,
    "p": 1
-  },
-  {
-   "equipo": "Colorado Buffaloes",
-   "elo": 1371,
-   "g": 2,
-   "p": 6
   },
   {
    "equipo": "Maryland Terrapins",

@@ -1,119 +1,15 @@
 {
- "actualizado": "2026-11-14 02:42 UTC",
+ "actualizado": "2026-11-14 14:02 UTC",
  "liga": "NHL",
- "datos_hasta": "2026-11-13T03:00:00Z",
+ "datos_hasta": "2026-11-14T03:00:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": true,
- "proximo": "2026-11-14T03:00:00Z",
+ "proximo": "2026-11-14T18:00:00Z",
  "predicciones": [
-  {
-   "id": "401892706",
-   "fecha": "2026-11-14T02:00:00Z",
-   "local": "Vancouver Canucks",
-   "visitante": "New York Rangers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.4263,
-   "pv": 0.5737,
-   "elo_l": 1397,
-   "elo_v": 1498,
-   "bal_l": [
-    2,
-    17
-   ],
-   "bal_v": [
-    10,
-    8
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 1.83,
-      "casa": "1xBet"
-     },
-     "L": {
-      "c": 4.0,
-      "casa": "LeoVegas (SE)"
-     }
-    },
-    "mercado": {
-     "L": 0.3329,
-     "V": 0.6671
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.7052,
-     "V": 0.0499
-    },
-    "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-12 20:09 UTC",
-    "valor": [],
-    "L": 4.0,
-    "V": 1.81
-   }
-  },
-  {
-   "id": "401892707",
-   "fecha": "2026-11-14T03:00:00Z",
-   "local": "Vegas Golden Knights",
-   "visitante": "Nashville Predators",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6307,
-   "pv": 0.3693,
-   "elo_l": 1541,
-   "elo_v": 1498,
-   "bal_l": [
-    11,
-    7
-   ],
-   "bal_v": [
-    9,
-    9
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 3.3,
-      "casa": "Unibet (SE)"
-     },
-     "L": {
-      "c": 2.08,
-      "casa": "1xBet"
-     }
-    },
-    "mercado": {
-     "L": 0.5952,
-     "V": 0.4048
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.3119,
-     "V": 0.2187
-    },
-    "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-12 20:09 UTC",
-    "valor": [],
-    "L": 1.97,
-    "V": 3.6
-   }
-  },
   {
    "id": "401891809",
    "fecha": "2026-11-14T18:00:00Z",
@@ -139,25 +35,25 @@
    "cuota": {
     "mejor": {
      "L": {
-      "c": 1.53,
+      "c": 1.46,
       "casa": "1xBet"
      },
      "V": {
-      "c": 5.75,
-      "casa": "LeoVegas (SE)"
+      "c": 6.7,
+      "casa": "Tipico"
      }
     },
     "mercado": {
-     "L": 0.7674,
-     "V": 0.2326
+     "L": 0.7924,
+     "V": 0.2076
     },
-    "casas": 18,
+    "casas": 23,
     "ev": {
-     "L": 0.0425,
-     "V": 0.8319
+     "L": -0.0052,
+     "V": 1.1346
     },
     "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
+    "actualizado": "2026-11-14 14:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 15:11 UTC",
@@ -191,25 +87,25 @@
    "cuota": {
     "mejor": {
      "L": {
-      "c": 3.2,
+      "c": 3.4,
       "casa": "LeoVegas (SE)"
      },
      "V": {
-      "c": 2.14,
+      "c": 2.07,
       "casa": "1xBet"
      }
     },
     "mercado": {
-     "L": 0.412,
-     "V": 0.588
+     "L": 0.3967,
+     "V": 0.6033
     },
-    "casas": 16,
+    "casas": 23,
     "ev": {
-     "L": 0.504,
-     "V": 0.1342
+     "L": 0.598,
+     "V": 0.0971
     },
     "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
+    "actualizado": "2026-11-14 14:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 19:24 UTC",
@@ -243,25 +139,25 @@
    "cuota": {
     "mejor": {
      "L": {
-      "c": 2.75,
+      "c": 2.65,
       "casa": "Unibet (SE)"
      },
      "V": {
-      "c": 2.38,
+      "c": 2.44,
       "casa": "1xBet"
      }
     },
     "mercado": {
-     "L": 0.4717,
-     "V": 0.5283
+     "L": 0.4823,
+     "V": 0.5177
     },
-    "casas": 16,
+    "casas": 23,
     "ev": {
-     "L": 0.4916,
-     "V": 0.0891
+     "L": 0.4374,
+     "V": 0.1165
     },
     "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
+    "actualizado": "2026-11-14 14:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 19:24 UTC",
@@ -295,25 +191,25 @@
    "cuota": {
     "mejor": {
      "V": {
-      "c": 2.1,
+      "c": 2.11,
       "casa": "1xBet"
      },
      "L": {
-      "c": 3.2,
+      "c": 3.05,
       "casa": "Unibet (SE)"
      }
     },
     "mercado": {
-     "L": 0.4094,
-     "V": 0.5906
+     "L": 0.4184,
+     "V": 0.5816
     },
-    "casas": 16,
+    "casas": 23,
     "ev": {
-     "L": 0.5024,
-     "V": 0.114
+     "L": 0.432,
+     "V": 0.1194
     },
     "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
+    "actualizado": "2026-11-14 14:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 19:24 UTC",
@@ -347,25 +243,25 @@
    "cuota": {
     "mejor": {
      "V": {
-      "c": 2.51,
+      "c": 2.71,
       "casa": "1xBet"
      },
      "L": {
-      "c": 2.48,
-      "casa": "1xBet"
+      "c": 2.35,
+      "casa": "Unibet (SE)"
      }
     },
     "mercado": {
-     "L": 0.5054,
-     "V": 0.4946
+     "L": 0.5323,
+     "V": 0.4677
     },
-    "casas": 10,
+    "casas": 23,
     "ev": {
-     "L": 0.3154,
-     "V": 0.1787
+     "L": 0.2464,
+     "V": 0.2726
     },
     "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
+    "actualizado": "2026-11-14 14:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 19:24 UTC",
@@ -408,16 +304,16 @@
      }
     },
     "mercado": {
-     "L": 0.6782,
-     "V": 0.3218
+     "L": 0.6725,
+     "V": 0.3275
     },
-    "casas": 16,
+    "casas": 23,
     "ev": {
      "L": 0.2394,
      "V": 0.3079
     },
     "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
+    "actualizado": "2026-11-14 14:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 19:24 UTC",
@@ -451,25 +347,25 @@
    "cuota": {
     "mejor": {
      "V": {
-      "c": 2.38,
+      "c": 2.28,
       "casa": "Unibet (SE)"
      },
      "L": {
-      "c": 2.72,
-      "casa": "1xBet"
+      "c": 2.85,
+      "casa": "Unibet (SE)"
      }
     },
     "mercado": {
-     "L": 0.4677,
-     "V": 0.5323
+     "L": 0.4512,
+     "V": 0.5488
     },
-    "casas": 16,
+    "casas": 23,
     "ev": {
-     "L": 0.4117,
-     "V": 0.1448
+     "L": 0.4792,
+     "V": 0.0967
     },
     "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
+    "actualizado": "2026-11-14 14:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 19:24 UTC",
@@ -503,25 +399,25 @@
    "cuota": {
     "mejor": {
      "V": {
-      "c": 2.42,
+      "c": 2.41,
       "casa": "1xBet"
      },
      "L": {
-      "c": 2.63,
+      "c": 2.7,
       "casa": "Unibet (SE)"
      }
     },
     "mercado": {
-     "L": 0.484,
-     "V": 0.516
+     "L": 0.4774,
+     "V": 0.5226
     },
-    "casas": 16,
+    "casas": 23,
     "ev": {
-     "L": 0.5346,
-     "V": 0.0079
+     "L": 0.5755,
+     "V": 0.0038
     },
     "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
+    "actualizado": "2026-11-14 14:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 19:24 UTC",
@@ -555,7 +451,7 @@
    "cuota": {
     "mejor": {
      "L": {
-      "c": 2.2,
+      "c": 2.25,
       "casa": "1xBet"
      },
      "V": {
@@ -564,16 +460,16 @@
      }
     },
     "mercado": {
-     "L": 0.5659,
-     "V": 0.4341
+     "L": 0.5577,
+     "V": 0.4423
     },
-    "casas": 16,
+    "casas": 23,
     "ev": {
-     "L": 0.291,
+     "L": 0.3203,
      "V": 0.2189
     },
     "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
+    "actualizado": "2026-11-14 14:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 19:24 UTC",
@@ -616,16 +512,16 @@
      }
     },
     "mercado": {
-     "L": 0.49,
-     "V": 0.51
+     "L": 0.4882,
+     "V": 0.5118
     },
-    "casas": 16,
+    "casas": 23,
     "ev": {
      "L": 0.466,
      "V": 0.087
     },
     "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
+    "actualizado": "2026-11-14 14:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 19:24 UTC",
@@ -659,25 +555,25 @@
    "cuota": {
     "mejor": {
      "V": {
-      "c": 3.05,
+      "c": 2.9,
       "casa": "Unibet (SE)"
      },
      "L": {
-      "c": 2.18,
+      "c": 2.23,
       "casa": "1xBet"
      }
     },
     "mercado": {
-     "L": 0.5695,
-     "V": 0.4305
+     "L": 0.5592,
+     "V": 0.4408
     },
-    "casas": 16,
+    "casas": 23,
     "ev": {
-     "L": 0.298,
-     "V": 0.234
+     "L": 0.3277,
+     "V": 0.1733
     },
     "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
+    "actualizado": "2026-11-14 14:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 19:24 UTC",
@@ -711,25 +607,25 @@
    "cuota": {
     "mejor": {
      "V": {
-      "c": 3.95,
+      "c": 3.75,
       "casa": "LeoVegas (SE)"
      },
      "L": {
-      "c": 1.86,
+      "c": 1.87,
       "casa": "1xBet"
      }
     },
     "mercado": {
-     "L": 0.6606,
-     "V": 0.3394
+     "L": 0.651,
+     "V": 0.349
     },
-    "casas": 16,
+    "casas": 23,
     "ev": {
-     "L": 0.2345,
-     "V": 0.3284
+     "L": 0.2411,
+     "V": 0.2611
     },
     "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
+    "actualizado": "2026-11-14 14:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 19:24 UTC",
@@ -763,25 +659,25 @@
    "cuota": {
     "mejor": {
      "L": {
-      "c": 2.41,
-      "casa": "1xBet"
+      "c": 2.4,
+      "casa": "LeoVegas (SE)"
      },
      "V": {
-      "c": 2.6,
-      "casa": "LeoVegas (SE)"
+      "c": 2.61,
+      "casa": "1xBet"
      }
     },
     "mercado": {
-     "L": 0.5152,
-     "V": 0.4848
+     "L": 0.5135,
+     "V": 0.4865
     },
-    "casas": 16,
+    "casas": 23,
     "ev": {
-     "L": 0.3954,
-     "V": 0.0946
+     "L": 0.3896,
+     "V": 0.0988
     },
     "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
+    "actualizado": "2026-11-14 14:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 19:24 UTC",
@@ -815,25 +711,25 @@
    "cuota": {
     "mejor": {
      "V": {
-      "c": 3.5,
+      "c": 3.4,
       "casa": "Unibet (SE)"
      },
      "L": {
-      "c": 2.03,
+      "c": 1.98,
       "casa": "1xBet"
      }
     },
     "mercado": {
-     "L": 0.6208,
-     "V": 0.3792
+     "L": 0.6192,
+     "V": 0.3808
     },
-    "casas": 16,
+    "casas": 23,
     "ev": {
-     "L": 0.1916,
-     "V": 0.4455
+     "L": 0.1623,
+     "V": 0.4042
     },
     "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
+    "actualizado": "2026-11-14 14:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 19:24 UTC",
@@ -959,6 +855,110 @@
   }
  ],
  "recientes": [
+  {
+   "id": "401892707",
+   "fecha": "2026-11-14T03:00:00Z",
+   "local": "Vegas Golden Knights",
+   "visitante": "Nashville Predators",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6307,
+   "pv": 0.3693,
+   "elo_l": 1541,
+   "elo_v": 1498,
+   "bal_l": [
+    11,
+    7
+   ],
+   "bal_v": [
+    9,
+    9
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "V",
+   "marcador": "2-3",
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 3.3,
+      "casa": "Unibet (SE)"
+     },
+     "L": {
+      "c": 2.08,
+      "casa": "1xBet"
+     }
+    },
+    "mercado": {
+     "L": 0.5952,
+     "V": 0.4048
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.3119,
+     "V": 0.2187
+    },
+    "valor": [],
+    "actualizado": "2026-11-13 19:53 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-12 20:09 UTC",
+    "valor": [],
+    "L": 1.97,
+    "V": 3.6
+   }
+  },
+  {
+   "id": "401892706",
+   "fecha": "2026-11-14T02:00:00Z",
+   "local": "Vancouver Canucks",
+   "visitante": "New York Rangers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4263,
+   "pv": 0.5737,
+   "elo_l": 1397,
+   "elo_v": 1498,
+   "bal_l": [
+    2,
+    17
+   ],
+   "bal_v": [
+    10,
+    8
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "V",
+   "marcador": "1-5",
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 1.83,
+      "casa": "1xBet"
+     },
+     "L": {
+      "c": 4.0,
+      "casa": "LeoVegas (SE)"
+     }
+    },
+    "mercado": {
+     "L": 0.3329,
+     "V": 0.6671
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.7052,
+     "V": 0.0499
+    },
+    "valor": [],
+    "actualizado": "2026-11-13 19:53 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-12 20:09 UTC",
+    "valor": [],
+    "L": 4.0,
+    "V": 1.81
+   }
+  },
   {
    "id": "401892705",
    "fecha": "2026-11-13T03:00:00Z",
@@ -1894,14 +1894,14 @@
  ],
  "directo": {
   "total": 38,
-  "resueltas": 17,
-  "aciertos": 8,
-  "acierto": 0.4706,
+  "resueltas": 19,
+  "aciertos": 9,
+  "acierto": 0.4737,
   "ic": [
-   0.2616,
-   0.6904
+   0.2733,
+   0.6829
   ],
-  "brier": 0.2524,
+  "brier": 0.2563,
   "apuestas": 17,
   "ganadas": 5,
   "roi": -0.2582
@@ -1932,12 +1932,6 @@
    "p": 7
   },
   {
-   "equipo": "Vegas Golden Knights",
-   "elo": 1544,
-   "g": 12,
-   "p": 7
-  },
-  {
    "equipo": "Montreal Canadiens",
    "elo": 1544,
    "g": 11,
@@ -1948,6 +1942,12 @@
    "elo": 1543,
    "g": 14,
    "p": 5
+  },
+  {
+   "equipo": "Vegas Golden Knights",
+   "elo": 1541,
+   "g": 12,
+   "p": 8
   },
   {
    "equipo": "Dallas Stars",
@@ -2004,22 +2004,22 @@
    "p": 10
   },
   {
+   "equipo": "New York Rangers",
+   "elo": 1506,
+   "g": 12,
+   "p": 8
+  },
+  {
+   "equipo": "Nashville Predators",
+   "elo": 1506,
+   "g": 11,
+   "p": 9
+  },
+  {
    "equipo": "Utah Hockey Club",
    "elo": 1504,
    "g": 0,
    "p": 0
-  },
-  {
-   "equipo": "Nashville Predators",
-   "elo": 1503,
-   "g": 10,
-   "p": 9
-  },
-  {
-   "equipo": "New York Rangers",
-   "elo": 1502,
-   "g": 11,
-   "p": 8
   },
   {
    "equipo": "Arizona Coyotes",
@@ -2107,9 +2107,9 @@
   },
   {
    "equipo": "Vancouver Canucks",
-   "elo": 1397,
+   "elo": 1392,
    "g": 2,
-   "p": 17
+   "p": 18
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-14 02:38 UTC",
+ "actualizado": "2026-11-14 13:58 UTC",
  "predicciones": [
   {
    "id": 555085,
@@ -1012,6 +1012,311 @@
    "modelo": "SE",
    "razon_es": "Goles esperados: 1.25 - 0.82. Motor propio Sports Edge: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.25 - 0.82. Sports Edge's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 560643,
+   "liga": "Premier League",
+   "fecha": "2026-11-21T12:30:00Z",
+   "local": "Manchester City FC",
+   "visitante": "Fulham FC",
+   "creada": "2026-11-14T13:58:09Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.6478,
+   "p_empate": 0.2174,
+   "p_visitante": 0.1349,
+   "xg_local": 2.09,
+   "xg_visitante": 0.86,
+   "n_partidos": 162,
+   "mercados": {
+    "over15": 0.802,
+    "over25": 0.5645,
+    "over35": 0.3405,
+    "btts": 0.5145,
+    "marcador": "2-0",
+    "p_marcador": 0.1144,
+    "ht_local": 0.4731,
+    "ht_empate": 0.3799,
+    "ht_visitante": 0.147,
+    "ht_gol": 0.7227
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Erling Haaland",
+      "g": 9,
+      "p": 0.5917
+     },
+     {
+      "n": "Rayan Cherki",
+      "g": 5,
+      "p": 0.392
+     },
+     {
+      "n": "Antoine Semenyo",
+      "g": 2,
+      "p": 0.1805
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Joshua King",
+      "g": 2,
+      "p": 0.158
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 2.09 - 0.86. Motor propio Sports Edge: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 2.09 - 0.86. Sports Edge's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 561944,
+   "liga": "Championship",
+   "fecha": "2026-11-21T12:30:00Z",
+   "local": "Southampton FC",
+   "visitante": "Derby County FC",
+   "creada": "2026-11-14T13:58:09Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.6557,
+   "p_empate": 0.2076,
+   "p_visitante": 0.1366,
+   "xg_local": 2.21,
+   "xg_visitante": 0.93,
+   "n_partidos": 107,
+   "mercados": {
+    "over15": 0.8295,
+    "over25": 0.6071,
+    "over35": 0.3837,
+    "btts": 0.5475,
+    "marcador": "2-0",
+    "p_marcador": 0.1059,
+    "ht_local": 0.4989,
+    "ht_empate": 0.3479,
+    "ht_visitante": 0.1532,
+    "ht_gol": 0.7671
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Cyle Larin",
+      "g": 7,
+      "p": 0.4134
+     },
+     {
+      "n": "Kuryu Matsuki",
+      "g": 4,
+      "p": 0.2627
+     },
+     {
+      "n": "Finn Azaz",
+      "g": 3,
+      "p": 0.2044
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Samuel Szmodics",
+      "g": 3,
+      "p": 0.1807
+     },
+     {
+      "n": "Bobby Clark",
+      "g": 3,
+      "p": 0.1807
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 2.21 - 0.93. Motor propio Sports Edge: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 2.21 - 0.93. Sports Edge's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 561948,
+   "liga": "Championship",
+   "fecha": "2026-11-21T12:30:00Z",
+   "local": "Norwich City FC",
+   "visitante": "Cardiff City FC",
+   "creada": "2026-11-14T13:58:09Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.562,
+   "p_empate": 0.226,
+   "p_visitante": 0.212,
+   "xg_local": 2.11,
+   "xg_visitante": 1.25,
+   "n_partidos": 153,
+   "mercados": {
+    "over15": 0.858,
+    "over25": 0.6529,
+    "over35": 0.4333,
+    "btts": 0.6365,
+    "marcador": "1-1",
+    "p_marcador": 0.1007,
+    "ht_local": 0.4406,
+    "ht_empate": 0.3476,
+    "ht_visitante": 0.2118,
+    "ht_gol": 0.79
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Mohamed Toure",
+      "g": 5,
+      "p": 0.2809
+     },
+     {
+      "n": "Mathias Kvistgaarden",
+      "g": 4,
+      "p": 0.2318
+     },
+     {
+      "n": "Edmond-Paris Maghoma",
+      "g": 4,
+      "p": 0.2318
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Jack Moylan",
+      "g": 10,
+      "p": 0.3706
+     },
+     {
+      "n": "Yousef Salech",
+      "g": 5,
+      "p": 0.2066
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 2.11 - 1.25. Motor propio Sports Edge: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 2.11 - 1.25. Sports Edge's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 561950,
+   "liga": "Championship",
+   "fecha": "2026-11-21T12:30:00Z",
+   "local": "Millwall FC",
+   "visitante": "Queens Park Rangers FC",
+   "creada": "2026-11-14T13:58:09Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4595,
+   "p_empate": 0.2805,
+   "p_visitante": 0.2601,
+   "xg_local": 1.52,
+   "xg_visitante": 1.09,
+   "n_partidos": 199,
+   "mercados": {
+    "over15": 0.7469,
+    "over25": 0.4843,
+    "over35": 0.2663,
+    "btts": 0.531,
+    "marcador": "1-1",
+    "p_marcador": 0.134,
+    "ht_local": 0.356,
+    "ht_empate": 0.4139,
+    "ht_visitante": 0.2301,
+    "ht_gol": 0.7023
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Lyndon Dykes",
+      "g": 5,
+      "p": 0.2814
+     },
+     {
+      "n": "Taïryk Arconte",
+      "g": 3,
+      "p": 0.1798
+     },
+     {
+      "n": "Camiel Neghli",
+      "g": 3,
+      "p": 0.1798
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Richard Kone",
+      "g": 5,
+      "p": 0.2031
+     },
+     {
+      "n": "Paul Smyth",
+      "g": 3,
+      "p": 0.1274
+     },
+     {
+      "n": "Jimmy Dunne",
+      "g": 3,
+      "p": 0.1274
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.52 - 1.09. Motor propio Sports Edge: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.52 - 1.09. Sports Edge's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 564755,
+   "liga": "LaLiga",
+   "fecha": "2026-11-21T13:00:00Z",
+   "local": "Deportivo Alavés",
+   "visitante": "RC Deportivo La Coruña",
+   "creada": "2026-11-14T13:58:09Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.3961,
+   "p_empate": 0.3059,
+   "p_visitante": 0.298,
+   "xg_local": 1.27,
+   "xg_visitante": 1.07,
+   "n_partidos": 12,
+   "mercados": {
+    "over15": 0.6893,
+    "over25": 0.4122,
+    "over35": 0.207,
+    "btts": 0.4837,
+    "marcador": "1-1",
+    "p_marcador": 0.1442,
+    "ht_local": 0.2987,
+    "ht_empate": 0.461,
+    "ht_visitante": 0.2403,
+    "ht_gol": 0.6378
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Lucas Boyé",
+      "g": 5,
+      "p": 0.3451
+     },
+     {
+      "n": "Mariano Díaz",
+      "g": 4,
+      "p": 0.2873
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Pierre-Emerick Aubameyang",
+      "g": 5,
+      "p": 0.3
+     },
+     {
+      "n": "Mario Soriano",
+      "g": 2,
+      "p": 0.133
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.27 - 1.07. Motor propio Sports Edge: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.27 - 1.07. Sports Edge's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   }
  ]
 }
