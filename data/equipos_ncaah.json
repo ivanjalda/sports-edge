@@ -1,360 +1,15 @@
 {
- "actualizado": "2026-11-13 19:53 UTC",
+ "actualizado": "2026-11-14 02:42 UTC",
  "liga": "NCAA",
- "datos_hasta": "2026-11-13T02:05:00Z",
+ "datos_hasta": "2026-11-14T00:15:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
- "proximo": "2026-11-14T00:00:00Z",
+ "proximo": "2026-11-14T20:00:00Z",
  "predicciones": [
-  {
-   "id": "401904631",
-   "fecha": "2026-11-13T23:07:00Z",
-   "local": "Michigan Tech Huskies",
-   "visitante": "Lake Superior State Lakers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6735,
-   "pv": 0.3265,
-   "elo_l": 1533,
-   "elo_v": 1457,
-   "bal_l": [
-    6,
-    2
-   ],
-   "bal_v": [
-    2,
-    4
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401904441",
-   "fecha": "2026-11-14T00:00:00Z",
-   "local": "Niagara Purple Eagles",
-   "visitante": "Holy Cross Crusaders",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5514,
-   "pv": 0.4486,
-   "elo_l": 1478,
-   "elo_v": 1492,
-   "bal_l": [
-    5,
-    4
-   ],
-   "bal_v": [
-    4,
-    8
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401904503",
-   "fecha": "2026-11-14T00:00:00Z",
-   "local": "Army Black Knights",
-   "visitante": "Sacred Heart Pioneers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5386,
-   "pv": 0.4614,
-   "elo_l": 1498,
-   "elo_v": 1522,
-   "bal_l": [
-    6,
-    2
-   ],
-   "bal_v": [
-    6,
-    4
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401904743",
-   "fecha": "2026-11-14T00:00:00Z",
-   "local": "Vermont Catamounts",
-   "visitante": "Maine Black Bears",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.4732,
-   "pv": 0.5268,
-   "elo_l": 1477,
-   "elo_v": 1546,
-   "bal_l": [
-    5,
-    3
-   ],
-   "bal_v": [
-    5,
-    5
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401904773",
-   "fecha": "2026-11-14T00:00:00Z",
-   "local": "Massachusetts Minutemen",
-   "visitante": "Boston College Eagles",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5631,
-   "pv": 0.4369,
-   "elo_l": 1535,
-   "elo_v": 1541,
-   "bal_l": [
-    5,
-    5
-   ],
-   "bal_v": [
-    2,
-    5
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401904802",
-   "fecha": "2026-11-14T00:00:00Z",
-   "local": "New Hampshire Wildcats",
-   "visitante": "Rensselaer Engineers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6271,
-   "pv": 0.3729,
-   "elo_l": 1498,
-   "elo_v": 1458,
-   "bal_l": [
-    5,
-    4
-   ],
-   "bal_v": [
-    4,
-    5
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401904826",
-   "fecha": "2026-11-14T00:00:00Z",
-   "local": "Providence Friars",
-   "visitante": "Merrimack Warriors",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6264,
-   "pv": 0.3736,
-   "elo_l": 1565,
-   "elo_v": 1526,
-   "bal_l": [
-    6,
-    2
-   ],
-   "bal_v": [
-    6,
-    1
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401904896",
-   "fecha": "2026-11-14T00:00:00Z",
-   "local": "Western Michigan Broncos",
-   "visitante": "Colorado College Tigers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6459,
-   "pv": 0.3541,
-   "elo_l": 1590,
-   "elo_v": 1535,
-   "bal_l": [
-    6,
-    2
-   ],
-   "bal_v": [
-    7,
-    2
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401904986",
-   "fecha": "2026-11-14T00:00:00Z",
-   "local": "Quinnipiac Bobcats",
-   "visitante": "Dartmouth Big Green",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.604,
-   "pv": 0.396,
-   "elo_l": 1585,
-   "elo_v": 1562,
-   "bal_l": [
-    7,
-    2
-   ],
-   "bal_v": [
-    4,
-    0
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401905094",
-   "fecha": "2026-11-14T00:00:00Z",
-   "local": "Princeton Tigers",
-   "visitante": "Harvard Crimson",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5854,
-   "pv": 0.4146,
-   "elo_l": 1505,
-   "elo_v": 1495,
-   "bal_l": [
-    2,
-    2
-   ],
-   "bal_v": [
-    3,
-    2
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401905160",
-   "fecha": "2026-11-14T00:00:00Z",
-   "local": "Yale Bulldogs",
-   "visitante": "Colgate Raiders",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5489,
-   "pv": 0.4511,
-   "elo_l": 1450,
-   "elo_v": 1466,
-   "bal_l": [
-    2,
-    1
-   ],
-   "bal_v": [
-    2,
-    8
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401912445",
-   "fecha": "2026-11-14T00:00:00Z",
-   "local": "Brown Bears",
-   "visitante": "Cornell Big Red",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.4198,
-   "pv": 0.5802,
-   "elo_l": 1441,
-   "elo_v": 1548,
-   "bal_l": [
-    0,
-    3
-   ],
-   "bal_v": [
-    2,
-    2
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401913577",
-   "fecha": "2026-11-14T00:00:00Z",
-   "local": "UConn Huskies",
-   "visitante": "Northeastern Huskies",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5709,
-   "pv": 0.4291,
-   "elo_l": 1526,
-   "elo_v": 1526,
-   "bal_l": [
-    4,
-    5
-   ],
-   "bal_v": [
-    4,
-    2
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401923154",
-   "fecha": "2026-11-14T00:00:00Z",
-   "local": "Michigan Wolverines",
-   "visitante": "Penn State Nittany Lions",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6794,
-   "pv": 0.3206,
-   "elo_l": 1587,
-   "elo_v": 1507,
-   "bal_l": [
-    8,
-    1
-   ],
-   "bal_v": [
-    2,
-    7
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401923155",
-   "fecha": "2026-11-14T00:00:00Z",
-   "local": "Notre Dame Fighting Irish",
-   "visitante": "Michigan State Spartans",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.3852,
-   "pv": 0.6148,
-   "elo_l": 1461,
-   "elo_v": 1592,
-   "bal_l": [
-    4,
-    6
-   ],
-   "bal_v": [
-    6,
-    2
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "401904942",
    "fecha": "2026-11-14T00:05:00Z",
@@ -372,52 +27,6 @@
    ],
    "bal_v": [
     3,
-    4
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401904585",
-   "fecha": "2026-11-14T00:07:00Z",
-   "local": "Northern Michigan Wildcats",
-   "visitante": "Bowling Green Falcons",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.3916,
-   "pv": 0.6084,
-   "elo_l": 1402,
-   "elo_v": 1528,
-   "bal_l": [
-    3,
-    7
-   ],
-   "bal_v": [
-    6,
-    4
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401904845",
-   "fecha": "2026-11-14T00:15:00Z",
-   "local": "UMass Lowell  River Hawks",
-   "visitante": "Union Dutchmen",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.4693,
-   "pv": 0.5307,
-   "elo_l": 1458,
-   "elo_v": 1530,
-   "bal_l": [
-    2,
-    8
-   ],
-   "bal_v": [
-    5,
     4
    ],
    "creada": "2026-11-12 03:18 UTC",
@@ -1140,6 +749,397 @@
  ],
  "recientes": [
   {
+   "id": "401904845",
+   "fecha": "2026-11-14T00:15:00Z",
+   "local": "UMass Lowell  River Hawks",
+   "visitante": "Union Dutchmen",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4693,
+   "pv": 0.5307,
+   "elo_l": 1458,
+   "elo_v": 1530,
+   "bal_l": [
+    2,
+    8
+   ],
+   "bal_v": [
+    5,
+    4
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "L",
+   "marcador": "5-4"
+  },
+  {
+   "id": "401904585",
+   "fecha": "2026-11-14T00:07:00Z",
+   "local": "Northern Michigan Wildcats",
+   "visitante": "Bowling Green Falcons",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.3916,
+   "pv": 0.6084,
+   "elo_l": 1402,
+   "elo_v": 1528,
+   "bal_l": [
+    3,
+    7
+   ],
+   "bal_v": [
+    6,
+    4
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "L",
+   "marcador": "4-3"
+  },
+  {
+   "id": "401904441",
+   "fecha": "2026-11-14T00:00:00Z",
+   "local": "Niagara Purple Eagles",
+   "visitante": "Holy Cross Crusaders",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5514,
+   "pv": 0.4486,
+   "elo_l": 1478,
+   "elo_v": 1492,
+   "bal_l": [
+    5,
+    4
+   ],
+   "bal_v": [
+    4,
+    8
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "V",
+   "marcador": "3-5"
+  },
+  {
+   "id": "401904503",
+   "fecha": "2026-11-14T00:00:00Z",
+   "local": "Army Black Knights",
+   "visitante": "Sacred Heart Pioneers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5386,
+   "pv": 0.4614,
+   "elo_l": 1498,
+   "elo_v": 1522,
+   "bal_l": [
+    6,
+    2
+   ],
+   "bal_v": [
+    6,
+    4
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "L",
+   "marcador": "5-2"
+  },
+  {
+   "id": "401904743",
+   "fecha": "2026-11-14T00:00:00Z",
+   "local": "Vermont Catamounts",
+   "visitante": "Maine Black Bears",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4732,
+   "pv": 0.5268,
+   "elo_l": 1477,
+   "elo_v": 1546,
+   "bal_l": [
+    5,
+    3
+   ],
+   "bal_v": [
+    5,
+    5
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "E",
+   "marcador": "0-0"
+  },
+  {
+   "id": "401904773",
+   "fecha": "2026-11-14T00:00:00Z",
+   "local": "Massachusetts Minutemen",
+   "visitante": "Boston College Eagles",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5631,
+   "pv": 0.4369,
+   "elo_l": 1535,
+   "elo_v": 1541,
+   "bal_l": [
+    5,
+    5
+   ],
+   "bal_v": [
+    2,
+    5
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "V",
+   "marcador": "1-3"
+  },
+  {
+   "id": "401904802",
+   "fecha": "2026-11-14T00:00:00Z",
+   "local": "New Hampshire Wildcats",
+   "visitante": "Rensselaer Engineers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6271,
+   "pv": 0.3729,
+   "elo_l": 1498,
+   "elo_v": 1458,
+   "bal_l": [
+    5,
+    4
+   ],
+   "bal_v": [
+    4,
+    5
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "L",
+   "marcador": "5-4"
+  },
+  {
+   "id": "401904826",
+   "fecha": "2026-11-14T00:00:00Z",
+   "local": "Providence Friars",
+   "visitante": "Merrimack Warriors",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6264,
+   "pv": 0.3736,
+   "elo_l": 1565,
+   "elo_v": 1526,
+   "bal_l": [
+    6,
+    2
+   ],
+   "bal_v": [
+    6,
+    1
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "L",
+   "marcador": "4-2"
+  },
+  {
+   "id": "401904896",
+   "fecha": "2026-11-14T00:00:00Z",
+   "local": "Western Michigan Broncos",
+   "visitante": "Colorado College Tigers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6459,
+   "pv": 0.3541,
+   "elo_l": 1590,
+   "elo_v": 1535,
+   "bal_l": [
+    6,
+    2
+   ],
+   "bal_v": [
+    7,
+    2
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "L",
+   "marcador": "4-0"
+  },
+  {
+   "id": "401904986",
+   "fecha": "2026-11-14T00:00:00Z",
+   "local": "Quinnipiac Bobcats",
+   "visitante": "Dartmouth Big Green",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.604,
+   "pv": 0.396,
+   "elo_l": 1585,
+   "elo_v": 1562,
+   "bal_l": [
+    7,
+    2
+   ],
+   "bal_v": [
+    4,
+    0
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "V",
+   "marcador": "2-5"
+  },
+  {
+   "id": "401905094",
+   "fecha": "2026-11-14T00:00:00Z",
+   "local": "Princeton Tigers",
+   "visitante": "Harvard Crimson",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5854,
+   "pv": 0.4146,
+   "elo_l": 1505,
+   "elo_v": 1495,
+   "bal_l": [
+    2,
+    2
+   ],
+   "bal_v": [
+    3,
+    2
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "V",
+   "marcador": "2-3"
+  },
+  {
+   "id": "401905160",
+   "fecha": "2026-11-14T00:00:00Z",
+   "local": "Yale Bulldogs",
+   "visitante": "Colgate Raiders",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5489,
+   "pv": 0.4511,
+   "elo_l": 1450,
+   "elo_v": 1466,
+   "bal_l": [
+    2,
+    1
+   ],
+   "bal_v": [
+    2,
+    8
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "V",
+   "marcador": "1-6"
+  },
+  {
+   "id": "401912445",
+   "fecha": "2026-11-14T00:00:00Z",
+   "local": "Brown Bears",
+   "visitante": "Cornell Big Red",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4198,
+   "pv": 0.5802,
+   "elo_l": 1441,
+   "elo_v": 1548,
+   "bal_l": [
+    0,
+    3
+   ],
+   "bal_v": [
+    2,
+    2
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "L",
+   "marcador": "3-1"
+  },
+  {
+   "id": "401913577",
+   "fecha": "2026-11-14T00:00:00Z",
+   "local": "UConn Huskies",
+   "visitante": "Northeastern Huskies",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5709,
+   "pv": 0.4291,
+   "elo_l": 1526,
+   "elo_v": 1526,
+   "bal_l": [
+    4,
+    5
+   ],
+   "bal_v": [
+    4,
+    2
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "V",
+   "marcador": "1-4"
+  },
+  {
+   "id": "401923154",
+   "fecha": "2026-11-14T00:00:00Z",
+   "local": "Michigan Wolverines",
+   "visitante": "Penn State Nittany Lions",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6794,
+   "pv": 0.3206,
+   "elo_l": 1587,
+   "elo_v": 1507,
+   "bal_l": [
+    8,
+    1
+   ],
+   "bal_v": [
+    2,
+    7
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "L",
+   "marcador": "6-3"
+  },
+  {
+   "id": "401923155",
+   "fecha": "2026-11-14T00:00:00Z",
+   "local": "Notre Dame Fighting Irish",
+   "visitante": "Michigan State Spartans",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.3852,
+   "pv": 0.6148,
+   "elo_l": 1461,
+   "elo_v": 1592,
+   "bal_l": [
+    4,
+    6
+   ],
+   "bal_v": [
+    6,
+    2
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "E",
+   "marcador": "1-1"
+  },
+  {
+   "id": "401904631",
+   "fecha": "2026-11-13T23:07:00Z",
+   "local": "Michigan Tech Huskies",
+   "visitante": "Lake Superior State Lakers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6735,
+   "pv": 0.3265,
+   "elo_l": 1533,
+   "elo_v": 1457,
+   "bal_l": [
+    6,
+    2
+   ],
+   "bal_v": [
+    2,
+    4
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "V",
+   "marcador": "1-2"
+  },
+  {
    "id": "401904347",
    "fecha": "2026-11-13T02:05:00Z",
    "local": "Air Force Falcons",
@@ -1188,14 +1188,14 @@
  ],
  "directo": {
   "total": 51,
-  "resueltas": 2,
-  "aciertos": 1,
-  "acierto": 0.5,
+  "resueltas": 19,
+  "aciertos": 6,
+  "acierto": 0.3158,
   "ic": [
-   0.0945,
-   0.9055
+   0.1536,
+   0.5399
   ],
-  "brier": 0.3066,
+  "brier": 0.2497,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -1209,14 +1209,14 @@
   },
   {
    "equipo": "Michigan Wolverines",
-   "elo": 1611,
-   "g": 8,
+   "elo": 1615,
+   "g": 9,
    "p": 1
   },
   {
    "equipo": "Western Michigan Broncos",
-   "elo": 1609,
-   "g": 6,
+   "elo": 1615,
+   "g": 7,
    "p": 2
   },
   {
@@ -1227,9 +1227,9 @@
   },
   {
    "equipo": "Quinnipiac Bobcats",
-   "elo": 1602,
+   "elo": 1595,
    "g": 7,
-   "p": 2
+   "p": 3
   },
   {
    "equipo": "North Dakota Fighting Hawks",
@@ -1238,21 +1238,21 @@
    "p": 3
   },
   {
-   "equipo": "Wisconsin Badgers",
-   "elo": 1583,
-   "g": 7,
-   "p": 0
-  },
-  {
    "equipo": "Providence Friars",
-   "elo": 1582,
-   "g": 6,
+   "elo": 1586,
+   "g": 7,
    "p": 2
   },
   {
    "equipo": "Dartmouth Big Green",
-   "elo": 1578,
-   "g": 4,
+   "elo": 1585,
+   "g": 5,
+   "p": 0
+  },
+  {
+   "equipo": "Wisconsin Badgers",
+   "elo": 1583,
+   "g": 7,
    "p": 0
   },
   {
@@ -1260,12 +1260,6 @@
    "elo": 1561,
    "g": 7,
    "p": 4
-  },
-  {
-   "equipo": "Cornell Big Red",
-   "elo": 1557,
-   "g": 2,
-   "p": 2
   },
   {
    "equipo": "Minnesota Duluth Bulldogs",
@@ -1280,22 +1274,22 @@
    "p": 5
   },
   {
-   "equipo": "Colorado College Tigers",
-   "elo": 1549,
-   "g": 7,
-   "p": 2
-  },
-  {
    "equipo": "Boston College Eagles",
-   "elo": 1544,
-   "g": 2,
+   "elo": 1550,
+   "g": 3,
    "p": 5
   },
   {
-   "equipo": "Massachusetts Minutemen",
+   "equipo": "Cornell Big Red",
+   "elo": 1549,
+   "g": 2,
+   "p": 3
+  },
+  {
+   "equipo": "Colorado College Tigers",
    "elo": 1543,
-   "g": 5,
-   "p": 5
+   "g": 7,
+   "p": 3
   },
   {
    "equipo": "Augustana University (SD) Vikings",
@@ -1304,39 +1298,39 @@
    "p": 0
   },
   {
+   "equipo": "Northeastern Huskies",
+   "elo": 1540,
+   "g": 5,
+   "p": 2
+  },
+  {
+   "equipo": "Massachusetts Minutemen",
+   "elo": 1537,
+   "g": 5,
+   "p": 6
+  },
+  {
    "equipo": "Merrimack Warriors",
-   "elo": 1539,
+   "elo": 1535,
    "g": 6,
-   "p": 1
+   "p": 2
   },
   {
    "equipo": "Michigan Tech Huskies",
-   "elo": 1539,
+   "elo": 1534,
    "g": 6,
-   "p": 2
+   "p": 3
   },
   {
    "equipo": "Bowling Green Falcons",
-   "elo": 1534,
+   "elo": 1529,
    "g": 6,
-   "p": 4
+   "p": 5
   },
   {
    "equipo": "Union Dutchmen",
-   "elo": 1533,
+   "elo": 1529,
    "g": 5,
-   "p": 4
-  },
-  {
-   "equipo": "Northeastern Huskies",
-   "elo": 1533,
-   "g": 4,
-   "p": 2
-  },
-  {
-   "equipo": "UConn Huskies",
-   "elo": 1532,
-   "g": 4,
    "p": 5
   },
   {
@@ -1346,16 +1340,16 @@
    "p": 4
   },
   {
-   "equipo": "Sacred Heart Pioneers",
-   "elo": 1527,
-   "g": 6,
-   "p": 4
-  },
-  {
    "equipo": "St. Thomas - Minnesota Tommies",
    "elo": 1527,
    "g": 0,
    "p": 0
+  },
+  {
+   "equipo": "UConn Huskies",
+   "elo": 1525,
+   "g": 4,
+   "p": 6
   },
   {
    "equipo": "Minnesota State Mavericks",
@@ -1376,6 +1370,12 @@
    "p": 6
   },
   {
+   "equipo": "Sacred Heart Pioneers",
+   "elo": 1521,
+   "g": 6,
+   "p": 5
+  },
+  {
    "equipo": "Western Michigan Bulldogs",
    "elo": 1517,
    "g": 0,
@@ -1388,22 +1388,22 @@
    "p": 5
   },
   {
-   "equipo": "Penn State Nittany Lions",
-   "elo": 1508,
-   "g": 2,
-   "p": 7
-  },
-  {
    "equipo": "Arizona State Sun Devils",
    "elo": 1507,
    "g": 5,
    "p": 5
   },
   {
-   "equipo": "Princeton Tigers",
-   "elo": 1506,
-   "g": 2,
+   "equipo": "Army Black Knights",
+   "elo": 1505,
+   "g": 7,
    "p": 2
+  },
+  {
+   "equipo": "Penn State Nittany Lions",
+   "elo": 1504,
+   "g": 2,
+   "p": 8
   },
   {
    "equipo": "Minnesota Golden Gophers",
@@ -1412,22 +1412,22 @@
    "p": 4
   },
   {
-   "equipo": "Army Black Knights",
-   "elo": 1499,
-   "g": 6,
+   "equipo": "Princeton Tigers",
+   "elo": 1502,
+   "g": 2,
+   "p": 3
+  },
+  {
+   "equipo": "Harvard Crimson",
+   "elo": 1500,
+   "g": 4,
    "p": 2
   },
   {
    "equipo": "New Hampshire Wildcats",
-   "elo": 1496,
-   "g": 5,
+   "elo": 1499,
+   "g": 6,
    "p": 4
-  },
-  {
-   "equipo": "Harvard Crimson",
-   "elo": 1496,
-   "g": 3,
-   "p": 2
   },
   {
    "equipo": "St. Cloud State Huskies",
@@ -1442,6 +1442,12 @@
    "p": 4
   },
   {
+   "equipo": "Holy Cross Crusaders",
+   "elo": 1490,
+   "g": 5,
+   "p": 8
+  },
+  {
    "equipo": "American International Yellow Jackets",
    "elo": 1488,
    "g": 0,
@@ -1452,12 +1458,6 @@
    "elo": 1484,
    "g": 6,
    "p": 2
-  },
-  {
-   "equipo": "Holy Cross Crusaders",
-   "elo": 1484,
-   "g": 4,
-   "p": 8
   },
   {
    "equipo": "Air Force Falcons",
@@ -1478,12 +1478,6 @@
    "p": 8
   },
   {
-   "equipo": "Niagara Purple Eagles",
-   "elo": 1468,
-   "g": 5,
-   "p": 4
-  },
-  {
    "equipo": "Robert Morris Colonials",
    "elo": 1466,
    "g": 4,
@@ -1500,6 +1494,18 @@
    "elo": 1464,
    "g": 3,
    "p": 6
+  },
+  {
+   "equipo": "Niagara Purple Eagles",
+   "elo": 1462,
+   "g": 5,
+   "p": 5
+  },
+  {
+   "equipo": "Colgate Raiders",
+   "elo": 1462,
+   "g": 3,
+   "p": 8
   },
   {
    "equipo": "Notre Dame Fighting Irish",
@@ -1520,22 +1526,16 @@
    "p": 6
   },
   {
-   "equipo": "Colgate Raiders",
-   "elo": 1453,
-   "g": 2,
+   "equipo": "UMass Lowell  River Hawks",
+   "elo": 1452,
+   "g": 3,
    "p": 8
   },
   {
    "equipo": "Rensselaer Engineers",
-   "elo": 1450,
+   "elo": 1447,
    "g": 4,
-   "p": 5
-  },
-  {
-   "equipo": "UMass Lowell  River Hawks",
-   "elo": 1448,
-   "g": 2,
-   "p": 8
+   "p": 6
   },
   {
    "equipo": "Long Island University Long Island University",
@@ -1545,27 +1545,27 @@
   },
   {
    "equipo": "Lake Superior State Lakers",
-   "elo": 1440,
-   "g": 2,
+   "elo": 1445,
+   "g": 3,
    "p": 4
   },
   {
    "equipo": "Yale Bulldogs",
-   "elo": 1437,
+   "elo": 1429,
    "g": 2,
-   "p": 1
+   "p": 2
+  },
+  {
+   "equipo": "Brown Bears",
+   "elo": 1429,
+   "g": 1,
+   "p": 3
   },
   {
    "equipo": "Stonehill Stonehill",
    "elo": 1425,
    "g": 4,
    "p": 5
-  },
-  {
-   "equipo": "Brown Bears",
-   "elo": 1421,
-   "g": 0,
-   "p": 3
   },
   {
    "equipo": "Ferris State Bulldogs",
@@ -1593,8 +1593,8 @@
   },
   {
    "equipo": "Northern Michigan Wildcats",
-   "elo": 1380,
-   "g": 3,
+   "elo": 1385,
+   "g": 4,
    "p": 7
   }
  ]

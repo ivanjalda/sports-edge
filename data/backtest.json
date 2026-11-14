@@ -1,18 +1,18 @@
 {
- "actualizado": "2026-11-13 19:51 UTC",
+ "actualizado": "2026-11-14 02:42 UTC",
  "total": {
-  "n": 659,
-  "aciertos": 340,
-  "acierto": 0.5159,
+  "n": 779,
+  "aciertos": 397,
+  "acierto": 0.5096,
   "ic": [
-   0.4778,
-   0.5539
+   0.4746,
+   0.5446
   ],
-  "brier": 0.6031,
+  "brier": 0.6061,
   "brier_azar": 0.6667,
-  "siempre_local": 0.4704,
-  "over25": 0.5463,
-  "btts": 0.5569
+  "siempre_local": 0.466,
+  "over25": 0.5404,
+  "btts": 0.5469
  },
  "ligas": {
   "Premier League": {
@@ -113,7 +113,20 @@
    "over25": 0.629,
    "btts": 0.629
   },
-  "Championship": null,
+  "Championship": {
+   "n": 120,
+   "aciertos": 57,
+   "acierto": 0.475,
+   "ic": [
+    0.3878,
+    0.5637
+   ],
+   "brier": 0.6224,
+   "brier_azar": 0.6667,
+   "siempre_local": 0.4417,
+   "over25": 0.5083,
+   "btts": 0.4917
+  },
   "Brasileirão": {
    "n": 286,
    "aciertos": 148,
@@ -132,32 +145,32 @@
  "tramos": [
   {
    "min": 0.45,
-   "n": 436,
-   "conf": 0.572,
-   "acierto": 0.5482,
+   "n": 504,
+   "conf": 0.5689,
+   "acierto": 0.5496,
    "ic": [
-    0.5012,
-    0.5943
+    0.506,
+    0.5925
    ]
   },
   {
    "min": 0.55,
-   "n": 216,
-   "conf": 0.6496,
-   "acierto": 0.6667,
+   "n": 246,
+   "conf": 0.6455,
+   "acierto": 0.6463,
    "ic": [
-    0.6014,
-    0.7261
+    0.5848,
+    0.7034
    ]
   },
   {
    "min": 0.65,
-   "n": 85,
-   "conf": 0.7306,
-   "acierto": 0.6941,
+   "n": 90,
+   "conf": 0.7283,
+   "acierto": 0.6889,
    "ic": [
-    0.5895,
-    0.7819
+    0.5872,
+    0.7751
    ]
   }
  ],
@@ -172,51 +185,51 @@
   {
    "desde": 10,
    "hasta": 20,
-   "n": 267,
-   "prometido": 0.1648,
-   "real": 0.1873
+   "n": 300,
+   "prometido": 0.1654,
+   "real": 0.19
   },
   {
    "desde": 20,
    "hasta": 30,
-   "n": 778,
-   "prometido": 0.2484,
-   "real": 0.2519
+   "n": 934,
+   "prometido": 0.2485,
+   "real": 0.2473
   },
   {
    "desde": 30,
    "hasta": 40,
-   "n": 326,
-   "prometido": 0.347,
-   "real": 0.3497
+   "n": 399,
+   "prometido": 0.3473,
+   "real": 0.3559
   },
   {
    "desde": 40,
    "hasta": 50,
-   "n": 261,
-   "prometido": 0.449,
-   "real": 0.4444
+   "n": 312,
+   "prometido": 0.4485,
+   "real": 0.4519
   },
   {
    "desde": 50,
    "hasta": 60,
-   "n": 163,
-   "prometido": 0.5463,
-   "real": 0.4785
+   "n": 192,
+   "prometido": 0.5458,
+   "real": 0.4896
   },
   {
    "desde": 60,
    "hasta": 70,
-   "n": 95,
-   "prometido": 0.6435,
-   "real": 0.6526
+   "n": 112,
+   "prometido": 0.6429,
+   "real": 0.6339
   },
   {
    "desde": 70,
    "hasta": 80,
-   "n": 37,
-   "prometido": 0.7476,
-   "real": 0.7838
+   "n": 38,
+   "prometido": 0.7467,
+   "real": 0.7632
   },
   {
    "desde": 80,

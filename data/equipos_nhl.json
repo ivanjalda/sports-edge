@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-13 19:53 UTC",
+ "actualizado": "2026-11-14 02:42 UTC",
  "liga": "NHL",
  "datos_hasta": "2026-11-13T03:00:00Z",
  "dias_desde_datos": 0,
@@ -8,7 +8,7 @@
   "url": "https://www.espn.com"
  },
  "con_cuotas": true,
- "proximo": "2026-11-14T02:00:00Z",
+ "proximo": "2026-11-14T03:00:00Z",
  "predicciones": [
   {
    "id": "401892706",
@@ -841,6 +841,121 @@
     "L": 2.0,
     "V": 3.5
    }
+  },
+  {
+   "id": "401892721",
+   "fecha": "2026-11-16T00:30:00Z",
+   "local": "Philadelphia Flyers",
+   "visitante": "Edmonton Oilers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4858,
+   "pv": 0.5142,
+   "elo_l": 1484,
+   "elo_v": 1543,
+   "bal_l": [
+    5,
+    15
+   ],
+   "bal_v": [
+    14,
+    5
+   ],
+   "creada": "2026-11-14 02:42 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892722",
+   "fecha": "2026-11-16T01:00:00Z",
+   "local": "Dallas Stars",
+   "visitante": "Florida Panthers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5966,
+   "pv": 0.4034,
+   "elo_l": 1532,
+   "elo_v": 1514,
+   "bal_l": [
+    10,
+    8
+   ],
+   "bal_v": [
+    10,
+    9
+   ],
+   "creada": "2026-11-14 02:42 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892723",
+   "fecha": "2026-11-16T01:00:00Z",
+   "local": "Anaheim Ducks",
+   "visitante": "Calgary Flames",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6106,
+   "pv": 0.3894,
+   "elo_l": 1490,
+   "elo_v": 1462,
+   "bal_l": [
+    10,
+    9
+   ],
+   "bal_v": [
+    8,
+    11
+   ],
+   "creada": "2026-11-14 02:42 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892724",
+   "fecha": "2026-11-16T02:00:00Z",
+   "local": "Vegas Golden Knights",
+   "visitante": "Vancouver Canucks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7572,
+   "pv": 0.2428,
+   "elo_l": 1544,
+   "elo_v": 1397,
+   "bal_l": [
+    12,
+    7
+   ],
+   "bal_v": [
+    2,
+    17
+   ],
+   "creada": "2026-11-14 02:42 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892725",
+   "fecha": "2026-11-16T02:00:00Z",
+   "local": "San Jose Sharks",
+   "visitante": "Nashville Predators",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4858,
+   "pv": 0.5142,
+   "elo_l": 1443,
+   "elo_v": 1503,
+   "bal_l": [
+    8,
+    13
+   ],
+   "bal_v": [
+    10,
+    9
+   ],
+   "creada": "2026-11-14 02:42 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
  "recientes": [
@@ -1778,7 +1893,7 @@
   }
  ],
  "directo": {
-  "total": 33,
+  "total": 38,
   "resueltas": 17,
   "aciertos": 8,
   "acierto": 0.4706,

@@ -3416,7 +3416,91 @@
      }
     ]
    }
+  },
+  {
+   "id": 564748,
+   "liga": "LaLiga",
+   "fecha": "2026-11-20T20:00:00Z",
+   "local": "Athletic Club",
+   "visitante": "RCD Espanyol de Barcelona",
+   "creada": "2026-11-14T02:38:02Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.5352,
+   "p_empate": 0.2752,
+   "p_visitante": 0.1896,
+   "xg_local": 1.59,
+   "xg_visitante": 0.85,
+   "n_partidos": 126,
+   "mercados": {
+    "over15": 0.7119,
+    "over25": 0.4407,
+    "over35": 0.2296,
+    "btts": 0.4682,
+    "marcador": "1-1",
+    "p_marcador": 0.1298,
+    "ht_local": 0.3851,
+    "ht_empate": 0.44,
+    "ht_visitante": 0.1749,
+    "ht_gol": 0.6545
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Álex Berenguer",
+      "g": 4,
+      "p": 0.3456
+     },
+     {
+      "n": "Iñaki Williams",
+      "g": 3,
+      "p": 0.2724
+     },
+     {
+      "n": "Aitor Paredes Casamichana",
+      "g": 2,
+      "p": 0.191
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Roberto Fernández",
+      "g": 6,
+      "p": 0.3245
+     }
+    ]
+   }
+  },
+  {
+   "id": "espn-401933760",
+   "liga": "Liga Profesional",
+   "fecha": "2026-11-20T23:00:00Z",
+   "local": "Vélez Sarsfield",
+   "visitante": "Belgrano (Córdoba)",
+   "creada": "2026-11-14T02:38:02Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4489,
+   "p_empate": 0.3188,
+   "p_visitante": 0.2324,
+   "xg_local": 1.25,
+   "xg_visitante": 0.82,
+   "n_partidos": 151,
+   "mercados": {
+    "over15": 0.6261,
+    "over25": 0.3428,
+    "over35": 0.1561,
+    "btts": 0.4132,
+    "marcador": "1-0",
+    "p_marcador": 0.1442,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE"
   }
  ],
- "actualizado": "2026-11-13 19:47 UTC"
+ "actualizado": "2026-11-14 02:38 UTC"
 }

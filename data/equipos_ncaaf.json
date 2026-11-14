@@ -1,14 +1,14 @@
 {
- "actualizado": "2026-11-13 19:53 UTC",
+ "actualizado": "2026-11-14 02:42 UTC",
  "liga": "NCAA",
  "datos_hasta": "2026-11-13T02:00:00Z",
- "dias_desde_datos": 0,
+ "dias_desde_datos": 1,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
- "proximo": "2026-11-14T00:00:00Z",
+ "proximo": "2026-11-14T03:15:00Z",
  "predicciones": [
   {
    "id": "401858293",
@@ -1366,6 +1366,75 @@
    "creada": "2026-11-13 02:59 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401866465",
+   "fecha": "2026-11-17T23:00:00Z",
+   "local": "Western Michigan Broncos",
+   "visitante": "Eastern Michigan Eagles",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.9159,
+   "pv": 0.0841,
+   "elo_l": 1599,
+   "elo_v": 1341,
+   "bal_l": [
+    6,
+    3
+   ],
+   "bal_v": [
+    3,
+    6
+   ],
+   "creada": "2026-11-14 02:42 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401866464",
+   "fecha": "2026-11-18T00:00:00Z",
+   "local": "Ohio Bobcats",
+   "visitante": "Ball State Cardinals",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.9069,
+   "pv": 0.0931,
+   "elo_l": 1556,
+   "elo_v": 1285,
+   "bal_l": [
+    6,
+    3
+   ],
+   "bal_v": [
+    2,
+    7
+   ],
+   "creada": "2026-11-14 02:42 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401866466",
+   "fecha": "2026-11-18T00:00:00Z",
+   "local": "Kent State Golden Flashes",
+   "visitante": "Miami (OH) RedHawks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.2388,
+   "pv": 0.7612,
+   "elo_l": 1293,
+   "elo_v": 1498,
+   "bal_l": [
+    2,
+    7
+   ],
+   "bal_v": [
+    5,
+    4
+   ],
+   "creada": "2026-11-14 02:42 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
  "recientes": [
@@ -1394,7 +1463,7 @@
   }
  ],
  "directo": {
-  "total": 60,
+  "total": 63,
   "resueltas": 1,
   "aciertos": 1,
   "acierto": 1.0,

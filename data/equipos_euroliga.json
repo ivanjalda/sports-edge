@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-11-13 19:53 UTC",
+ "actualizado": "2026-11-14 02:42 UTC",
  "liga": "Euroliga",
- "datos_hasta": "2026-11-13T17:30:00Z",
+ "datos_hasta": "2026-11-13T19:30:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "Euroleague Basketball",
@@ -9,30 +9,8 @@
  },
  "con_cuotas": true,
  "proximo": "2026-11-17T16:00:00Z",
- "predicciones": [
-  {
-   "id": "E2026_110",
-   "fecha": "2026-11-13T19:15:00Z",
-   "local": "Panathinaikos AKTOR Athens",
-   "visitante": "FC Barcelona",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6698,
-   "pv": 0.3302,
-   "elo_l": 1583,
-   "elo_v": 1560,
-   "bal_l": [
-    8,
-    2
-   ],
-   "bal_v": [
-    7,
-    3
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null
-  },
+ "predicciones": [],
+ "recientes": [
   {
    "id": "E2026_108",
    "fecha": "2026-11-13T19:30:00Z",
@@ -53,11 +31,32 @@
     6
    ],
    "creada": "2026-11-12 03:18 UTC",
-   "resultado": null,
-   "marcador": null
-  }
- ],
- "recientes": [
+   "resultado": "V",
+   "marcador": "91-95"
+  },
+  {
+   "id": "E2026_110",
+   "fecha": "2026-11-13T19:15:00Z",
+   "local": "Panathinaikos AKTOR Athens",
+   "visitante": "FC Barcelona",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6698,
+   "pv": 0.3302,
+   "elo_l": 1583,
+   "elo_v": 1560,
+   "bal_l": [
+    8,
+    2
+   ],
+   "bal_v": [
+    7,
+    3
+   ],
+   "creada": "2026-11-12 03:18 UTC",
+   "resultado": "V",
+   "marcador": "74-76"
+  },
   {
    "id": "E2026_109",
    "fecha": "2026-11-13T17:30:00Z",
@@ -278,14 +277,14 @@
  ],
  "directo": {
   "total": 10,
-  "resueltas": 8,
+  "resueltas": 10,
   "aciertos": 7,
-  "acierto": 0.875,
+  "acierto": 0.7,
   "ic": [
-   0.5291,
-   0.9776
+   0.3968,
+   0.8922
   ],
-  "brier": 0.1229,
+  "brier": 0.1686,
   "apuestas": 1,
   "ganadas": 1,
   "roi": 1.96
@@ -311,15 +310,21 @@
   },
   {
    "equipo": "Panathinaikos AKTOR Athens",
-   "elo": 1583,
+   "elo": 1576,
    "g": 8,
-   "p": 2
+   "p": 3
   },
   {
    "equipo": "Zalgiris Kaunas",
    "elo": 1568,
    "g": 7,
    "p": 4
+  },
+  {
+   "equipo": "FC Barcelona",
+   "elo": 1568,
+   "g": 8,
+   "p": 3
   },
   {
    "equipo": "Fenerbahce Beko Istanbul",
@@ -332,12 +337,6 @@
    "elo": 1564,
    "g": 7,
    "p": 4
-  },
-  {
-   "equipo": "FC Barcelona",
-   "elo": 1560,
-   "g": 7,
-   "p": 3
   },
   {
    "equipo": "Dubai Basketball",
@@ -395,8 +394,8 @@
   },
   {
    "equipo": "Besiktas Istanbul",
-   "elo": 1483,
-   "g": 4,
+   "elo": 1489,
+   "g": 5,
    "p": 6
   },
   {
@@ -448,16 +447,16 @@
    "p": 7
   },
   {
-   "equipo": "LDLC ASVEL Villeurbanne",
-   "elo": 1386,
-   "g": 4,
-   "p": 6
-  },
-  {
    "equipo": "Kosner Baskonia Vitoria-Gasteiz",
    "elo": 1384,
    "g": 1,
    "p": 10
+  },
+  {
+   "equipo": "LDLC ASVEL Villeurbanne",
+   "elo": 1380,
+   "g": 4,
+   "p": 7
   },
   {
    "equipo": "ALBA Berlin",
