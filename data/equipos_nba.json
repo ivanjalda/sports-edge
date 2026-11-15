@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-14 14:02 UTC",
+ "actualizado": "2026-11-15 02:08 UTC",
  "liga": "NBA",
  "datos_hasta": "2026-11-14T03:30:00Z",
  "dias_desde_datos": 0,
@@ -8,7 +8,7 @@
   "url": "https://www.espn.com"
  },
  "con_cuotas": true,
- "proximo": "2026-11-15T00:00:00Z",
+ "proximo": "2026-11-15T18:00:00Z",
  "predicciones": [
   {
    "id": "401909980",
@@ -474,6 +474,190 @@
     4
    ],
    "creada": "2026-11-14 02:42 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909994",
+   "fecha": "2026-11-17T00:00:00Z",
+   "local": "Boston Celtics",
+   "visitante": "Orlando Magic",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7925,
+   "pv": 0.2075,
+   "elo_l": 1649,
+   "elo_v": 1506,
+   "bal_l": [
+    10,
+    2
+   ],
+   "bal_v": [
+    5,
+    7
+   ],
+   "creada": "2026-11-15 02:08 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909995",
+   "fecha": "2026-11-17T00:00:00Z",
+   "local": "Cleveland Cavaliers",
+   "visitante": "Chicago Bulls",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8207,
+   "pv": 0.1793,
+   "elo_l": 1564,
+   "elo_v": 1382,
+   "bal_l": [
+    6,
+    7
+   ],
+   "bal_v": [
+    2,
+    9
+   ],
+   "creada": "2026-11-15 02:08 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909996",
+   "fecha": "2026-11-17T00:00:00Z",
+   "local": "Washington Wizards",
+   "visitante": "Memphis Grizzlies",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.379,
+   "pv": 0.621,
+   "elo_l": 1328,
+   "elo_v": 1445,
+   "bal_l": [
+    4,
+    9
+   ],
+   "bal_v": [
+    8,
+    4
+   ],
+   "creada": "2026-11-15 02:08 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909997",
+   "fecha": "2026-11-17T00:30:00Z",
+   "local": "Brooklyn Nets",
+   "visitante": "Philadelphia 76ers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.3077,
+   "pv": 0.6923,
+   "elo_l": 1354,
+   "elo_v": 1547,
+   "bal_l": [
+    3,
+    8
+   ],
+   "bal_v": [
+    10,
+    3
+   ],
+   "creada": "2026-11-15 02:08 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909998",
+   "fecha": "2026-11-17T00:30:00Z",
+   "local": "Miami Heat",
+   "visitante": "Houston Rockets",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4186,
+   "pv": 0.5814,
+   "elo_l": 1507,
+   "elo_v": 1610,
+   "bal_l": [
+    6,
+    6
+   ],
+   "bal_v": [
+    10,
+    3
+   ],
+   "creada": "2026-11-15 02:08 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909999",
+   "fecha": "2026-11-17T01:00:00Z",
+   "local": "Minnesota Timberwolves",
+   "visitante": "Portland Trail Blazers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6645,
+   "pv": 0.3355,
+   "elo_l": 1608,
+   "elo_v": 1562,
+   "bal_l": [
+    9,
+    3
+   ],
+   "bal_v": [
+    9,
+    3
+   ],
+   "creada": "2026-11-15 02:08 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401910000",
+   "fecha": "2026-11-17T01:00:00Z",
+   "local": "New Orleans Pelicans",
+   "visitante": "Golden State Warriors",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.3293,
+   "pv": 0.6707,
+   "elo_l": 1374,
+   "elo_v": 1520,
+   "bal_l": [
+    4,
+    9
+   ],
+   "bal_v": [
+    8,
+    5
+   ],
+   "creada": "2026-11-15 02:08 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401910001",
+   "fecha": "2026-11-17T02:00:00Z",
+   "local": "Denver Nuggets",
+   "visitante": "Phoenix Suns",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6823,
+   "pv": 0.3177,
+   "elo_l": 1579,
+   "elo_v": 1510,
+   "bal_l": [
+    6,
+    4
+   ],
+   "bal_v": [
+    5,
+    6
+   ],
+   "creada": "2026-11-15 02:08 UTC",
    "resultado": null,
    "marcador": null
   }
@@ -1567,7 +1751,7 @@
   }
  ],
  "directo": {
-  "total": 37,
+  "total": 45,
   "resueltas": 23,
   "aciertos": 16,
   "acierto": 0.6957,

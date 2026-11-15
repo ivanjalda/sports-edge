@@ -1,18 +1,18 @@
 {
- "actualizado": "2026-11-14 14:02 UTC",
+ "actualizado": "2026-11-15 02:08 UTC",
  "total": {
-  "n": 779,
-  "aciertos": 397,
+  "n": 781,
+  "aciertos": 398,
   "acierto": 0.5096,
   "ic": [
    0.4746,
-   0.5446
+   0.5445
   ],
   "brier": 0.6061,
   "brier_azar": 0.6667,
-  "siempre_local": 0.466,
-  "over25": 0.5404,
-  "btts": 0.5469
+  "siempre_local": 0.4648,
+  "over25": 0.5403,
+  "btts": 0.5467
  },
  "ligas": {
   "Premier League": {
@@ -128,18 +128,18 @@
    "btts": 0.4917
   },
   "Brasileirão": {
-   "n": 286,
-   "aciertos": 148,
-   "acierto": 0.5175,
+   "n": 288,
+   "aciertos": 149,
+   "acierto": 0.5174,
    "ic": [
-    0.4597,
-    0.5748
+    0.4598,
+    0.5745
    ],
-   "brier": 0.613,
+   "brier": 0.6131,
    "brier_azar": 0.6667,
-   "siempre_local": 0.493,
+   "siempre_local": 0.4896,
    "over25": 0.5,
-   "btts": 0.542
+   "btts": 0.5417
   }
  },
  "tramos": [
@@ -192,23 +192,23 @@
   {
    "desde": 20,
    "hasta": 30,
-   "n": 934,
+   "n": 936,
    "prometido": 0.2485,
-   "real": 0.2473
+   "real": 0.2479
   },
   {
    "desde": 30,
    "hasta": 40,
-   "n": 399,
+   "n": 402,
    "prometido": 0.3473,
-   "real": 0.3559
+   "real": 0.3532
   },
   {
    "desde": 40,
    "hasta": 50,
-   "n": 312,
+   "n": 313,
    "prometido": 0.4485,
-   "real": 0.4519
+   "real": 0.4537
   },
   {
    "desde": 50,
@@ -247,6 +247,26 @@
   }
  ],
  "ejemplos": [
+  {
+   "liga": "Brasileirão",
+   "fecha": "2026-11-14T23:30:00Z",
+   "local": "Chapecoense AF",
+   "visitante": "CR Vasco da Gama",
+   "marcador": "0-2",
+   "pick": "2",
+   "pp": 0.4472,
+   "res": "2"
+  },
+  {
+   "liga": "Brasileirão",
+   "fecha": "2026-11-14T21:30:00Z",
+   "local": "Mirassol FC",
+   "visitante": "CA Mineiro",
+   "marcador": "0-0",
+   "pick": "1",
+   "pp": 0.3711,
+   "res": "X"
+  },
   {
    "liga": "Primeira Liga",
    "fecha": "2026-11-08T20:30:00Z",
@@ -475,26 +495,6 @@
    "marcador": "1-2",
    "pick": "1",
    "pp": 0.4504,
-   "res": "2"
-  },
-  {
-   "liga": "Ligue 1",
-   "fecha": "2026-11-08T14:00:00Z",
-   "local": "Stade Rennais FC 1901",
-   "visitante": "Lille OSC",
-   "marcador": "1-2",
-   "pick": "2",
-   "pp": 0.4135,
-   "res": "2"
-  },
-  {
-   "liga": "Serie A",
-   "fecha": "2026-11-08T14:00:00Z",
-   "local": "AC Monza",
-   "visitante": "Atalanta BC",
-   "marcador": "0-1",
-   "pick": "2",
-   "pp": 0.4138,
    "res": "2"
   }
  ]

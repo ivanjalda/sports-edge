@@ -1056,8 +1056,8 @@
     8
    ],
    "creada": "2026-11-12 20:09 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "5-1",
    "cuota": {
     "mejor": {
      "L": {
@@ -1108,8 +1108,8 @@
     11
    ],
    "creada": "2026-11-12 20:52 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "4-5",
    "cuota": {
     "mejor": {
      "L": {
@@ -1878,7 +1878,30 @@
    "creada": "2026-11-14 02:42 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401892726",
+   "fecha": "2026-11-17T00:30:00Z",
+   "local": "New York Rangers",
+   "visitante": "Montreal Canadiens",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5181,
+   "pv": 0.4819,
+   "elo_l": 1506,
+   "elo_v": 1544,
+   "bal_l": [
+    12,
+    8
+   ],
+   "bal_v": [
+    11,
+    7
+   ],
+   "creada": "2026-11-15 02:08 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-14 14:02 UTC"
+ "actualizado": "2026-11-15 02:08 UTC"
 }

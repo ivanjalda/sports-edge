@@ -1,866 +1,15 @@
 {
- "actualizado": "2026-11-14 14:02 UTC",
+ "actualizado": "2026-11-15 02:08 UTC",
  "liga": "NCAA",
- "datos_hasta": "2026-11-14T03:15:00Z",
+ "datos_hasta": "2026-11-14T22:30:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
- "proximo": "2026-11-14T17:00:00Z",
+ "proximo": "2026-11-15T02:30:00Z",
  "predicciones": [
-  {
-   "id": "401858296",
-   "fecha": "2026-11-14T17:00:00Z",
-   "local": "Miami Hurricanes",
-   "visitante": "Duke Blue Devils",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7677,
-   "pv": 0.2323,
-   "elo_l": 1814,
-   "elo_v": 1687,
-   "bal_l": [
-    7,
-    1
-   ],
-   "bal_v": [
-    6,
-    2
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401858301",
-   "fecha": "2026-11-14T17:00:00Z",
-   "local": "SMU Mustangs",
-   "visitante": "Wake Forest Demon Deacons",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5095,
-   "pv": 0.4905,
-   "elo_l": 1667,
-   "elo_v": 1695,
-   "bal_l": [
-    6,
-    2
-   ],
-   "bal_v": [
-    7,
-    1
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401858522",
-   "fecha": "2026-11-14T17:00:00Z",
-   "local": "Ohio State Buckeyes",
-   "visitante": "Northwestern Wildcats",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7888,
-   "pv": 0.2112,
-   "elo_l": 1737,
-   "elo_v": 1592,
-   "bal_l": [
-    6,
-    3
-   ],
-   "bal_v": [
-    6,
-    3
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401856859",
-   "fecha": "2026-11-14T17:00:00Z",
-   "local": "Iowa State Cyclones",
-   "visitante": "Cincinnati Bearcats",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5809,
-   "pv": 0.4191,
-   "elo_l": 1521,
-   "elo_v": 1530,
-   "bal_l": [
-    3,
-    5
-   ],
-   "bal_v": [
-    4,
-    4
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401856886",
-   "fecha": "2026-11-14T17:00:00Z",
-   "local": "Mississippi State Bulldogs",
-   "visitante": "Auburn Tigers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5327,
-   "pv": 0.4673,
-   "elo_l": 1468,
-   "elo_v": 1513,
-   "bal_l": [
-    4,
-    5
-   ],
-   "bal_v": [
-    5,
-    4
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401858300",
-   "fecha": "2026-11-14T17:00:00Z",
-   "local": "NC State Wolfpack",
-   "visitante": "Syracuse Orange",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7008,
-   "pv": 0.2992,
-   "elo_l": 1474,
-   "elo_v": 1382,
-   "bal_l": [
-    3,
-    5
-   ],
-   "bal_v": [
-    3,
-    5
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401858520",
-   "fecha": "2026-11-14T17:00:00Z",
-   "local": "Maryland Terrapins",
-   "visitante": "Wisconsin Badgers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.2239,
-   "pv": 0.7761,
-   "elo_l": 1370,
-   "elo_v": 1596,
-   "bal_l": [
-    2,
-    6
-   ],
-   "bal_v": [
-    6,
-    3
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401861967",
-   "fecha": "2026-11-14T17:00:00Z",
-   "local": "UConn Huskies",
-   "visitante": "James Madison Dukes",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.187,
-   "pv": 0.813,
-   "elo_l": 1449,
-   "elo_v": 1713,
-   "bal_l": [
-    3,
-    5
-   ],
-   "bal_v": [
-    8,
-    2
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401858297",
-   "fecha": "2026-11-14T17:30:00Z",
-   "local": "Clemson Tigers",
-   "visitante": "Georgia Tech Yellow Jackets",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8723,
-   "pv": 0.1277,
-   "elo_l": 1597,
-   "elo_v": 1362,
-   "bal_l": [
-    5,
-    3
-   ],
-   "bal_v": [
-    1,
-    7
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401858525",
-   "fecha": "2026-11-14T17:30:00Z",
-   "local": "Rutgers Scarlet Knights",
-   "visitante": "Nebraska Cornhuskers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.2323,
-   "pv": 0.7677,
-   "elo_l": 1362,
-   "elo_v": 1557,
-   "bal_l": [
-    1,
-    7
-   ],
-   "bal_v": [
-    5,
-    4
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401856889",
-   "fecha": "2026-11-14T17:45:00Z",
-   "local": "Vanderbilt Commodores",
-   "visitante": "Alabama Crimson Tide",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.1678,
-   "pv": 0.8322,
-   "elo_l": 1504,
-   "elo_v": 1772,
-   "bal_l": [
-    3,
-    5
-   ],
-   "bal_v": [
-    7,
-    2
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401862825",
-   "fecha": "2026-11-14T18:00:00Z",
-   "local": "Charlotte 49ers",
-   "visitante": "East Carolina Pirates",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.1877,
-   "pv": 0.8123,
-   "elo_l": 1250,
-   "elo_v": 1523,
-   "bal_l": [
-    1,
-    7
-   ],
-   "bal_v": [
-    4,
-    4
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401862829",
-   "fecha": "2026-11-14T18:00:00Z",
-   "local": "Temple Owls",
-   "visitante": "UAB Blazers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.3995,
-   "pv": 0.6005,
-   "elo_l": 1305,
-   "elo_v": 1436,
-   "bal_l": [
-    1,
-    7
-   ],
-   "bal_v": [
-    4,
-    4
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401869937",
-   "fecha": "2026-11-14T18:00:00Z",
-   "local": "Coastal Carolina Chanticleers",
-   "visitante": "Arkansas State Red Wolves",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.4948,
-   "pv": 0.5052,
-   "elo_l": 1364,
-   "elo_v": 1433,
-   "bal_l": [
-    2,
-    6
-   ],
-   "bal_v": [
-    3,
-    5
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401856862",
-   "fecha": "2026-11-14T19:00:00Z",
-   "local": "TCU Horned Frogs",
-   "visitante": "Kansas State Wildcats",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.718,
-   "pv": 0.282,
-   "elo_l": 1557,
-   "elo_v": 1455,
-   "bal_l": [
-    3,
-    5
-   ],
-   "bal_v": [
-    4,
-    5
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401862828",
-   "fecha": "2026-11-14T19:00:00Z",
-   "local": "Rice Owls",
-   "visitante": "Tulane Green Wave",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.2953,
-   "pv": 0.7047,
-   "elo_l": 1268,
-   "elo_v": 1458,
-   "bal_l": [
-    0,
-    8
-   ],
-   "bal_v": [
-    4,
-    5
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401870769",
-   "fecha": "2026-11-14T19:00:00Z",
-   "local": "Sam Houston Bearkats",
-   "visitante": "Kennesaw State Owls",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.3245,
-   "pv": 0.6755,
-   "elo_l": 1247,
-   "elo_v": 1435,
-   "bal_l": [
-    1,
-    8
-   ],
-   "bal_v": [
-    2,
-    6
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401856888",
-   "fecha": "2026-11-14T20:00:00Z",
-   "local": "Texas A&M Aggies",
-   "visitante": "Tennessee Volunteers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.322,
-   "pv": 0.678,
-   "elo_l": 1541,
-   "elo_v": 1707,
-   "bal_l": [
-    3,
-    5
-   ],
-   "bal_v": [
-    6,
-    2
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401870796",
-   "fecha": "2026-11-14T20:00:00Z",
-   "local": "Missouri State Bears",
-   "visitante": "New Mexico State Aggies",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6467,
-   "pv": 0.3533,
-   "elo_l": 1366,
-   "elo_v": 1326,
-   "bal_l": [
-    2,
-    6
-   ],
-   "bal_v": [
-    2,
-    6
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401871060",
-   "fecha": "2026-11-14T20:00:00Z",
-   "local": "Delaware Blue Hens",
-   "visitante": "Florida International Panthers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6424,
-   "pv": 0.3576,
-   "elo_l": 1469,
-   "elo_v": 1435,
-   "bal_l": [
-    3,
-    5
-   ],
-   "bal_v": [
-    3,
-    5
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401856883",
-   "fecha": "2026-11-14T20:30:00Z",
-   "local": "Georgia Bulldogs",
-   "visitante": "Missouri Tigers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8703,
-   "pv": 0.1297,
-   "elo_l": 1848,
-   "elo_v": 1633,
-   "bal_l": [
-    7,
-    1
-   ],
-   "bal_v": [
-    5,
-    3
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401858294",
-   "fecha": "2026-11-14T20:30:00Z",
-   "local": "Notre Dame Fighting Irish",
-   "visitante": "Boston College Eagles",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.9576,
-   "pv": 0.0424,
-   "elo_l": 1821,
-   "elo_v": 1434,
-   "bal_l": [
-    8,
-    1
-   ],
-   "bal_v": [
-    4,
-    5
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401858518",
-   "fecha": "2026-11-14T20:30:00Z",
-   "local": "Indiana Hoosiers",
-   "visitante": "USC Trojans",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8039,
-   "pv": 0.1961,
-   "elo_l": 1853,
-   "elo_v": 1696,
-   "bal_l": [
-    7,
-    1
-   ],
-   "bal_v": [
-    7,
-    2
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401856858",
-   "fecha": "2026-11-14T20:30:00Z",
-   "local": "BYU Cougars",
-   "visitante": "Baylor Bears",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6975,
-   "pv": 0.3025,
-   "elo_l": 1703,
-   "elo_v": 1608,
-   "bal_l": [
-    6,
-    2
-   ],
-   "bal_v": [
-    5,
-    3
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401858523",
-   "fecha": "2026-11-14T20:30:00Z",
-   "local": "Oregon Ducks",
-   "visitante": "Michigan Wolverines",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8409,
-   "pv": 0.1591,
-   "elo_l": 1758,
-   "elo_v": 1561,
-   "bal_l": [
-    6,
-    3
-   ],
-   "bal_v": [
-    5,
-    4
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401856857",
-   "fecha": "2026-11-14T20:30:00Z",
-   "local": "UCF Knights",
-   "visitante": "Arizona State Sun Devils",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.4964,
-   "pv": 0.5036,
-   "elo_l": 1461,
-   "elo_v": 1539,
-   "bal_l": [
-    4,
-    4
-   ],
-   "bal_v": [
-    4,
-    4
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401858295",
-   "fecha": "2026-11-14T20:30:00Z",
-   "local": "Virginia Cavaliers",
-   "visitante": "California Golden Bears",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.748,
-   "pv": 0.252,
-   "elo_l": 1486,
-   "elo_v": 1381,
-   "bal_l": [
-    3,
-    5
-   ],
-   "bal_v": [
-    3,
-    6
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401862826",
-   "fecha": "2026-11-14T20:30:00Z",
-   "local": "Tulsa Golden Hurricane",
-   "visitante": "Florida Atlantic Owls",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5789,
-   "pv": 0.4211,
-   "elo_l": 1486,
-   "elo_v": 1520,
-   "bal_l": [
-    4,
-    4
-   ],
-   "bal_v": [
-    5,
-    3
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401864536",
-   "fecha": "2026-11-14T20:30:00Z",
-   "local": "Northern Illinois Huskies",
-   "visitante": "Nevada Wolf Pack",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.2355,
-   "pv": 0.7645,
-   "elo_l": 1202,
-   "elo_v": 1420,
-   "bal_l": [
-    0,
-    9
-   ],
-   "bal_v": [
-    3,
-    5
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401869952",
-   "fecha": "2026-11-14T20:30:00Z",
-   "local": "Georgia State Panthers",
-   "visitante": "Georgia Southern Eagles",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.408,
-   "pv": 0.592,
-   "elo_l": 1435,
-   "elo_v": 1565,
-   "bal_l": [
-    4,
-    4
-   ],
-   "bal_v": [
-    4,
-    4
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401870752",
-   "fecha": "2026-11-14T20:30:00Z",
-   "local": "Western Kentucky Hilltoppers",
-   "visitante": "Jacksonville State Gamecocks",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.2255,
-   "pv": 0.7745,
-   "elo_l": 1381,
-   "elo_v": 1598,
-   "bal_l": [
-    2,
-    6
-   ],
-   "bal_v": [
-    6,
-    2
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401871061",
-   "fecha": "2026-11-14T20:30:00Z",
-   "local": "Liberty Flames",
-   "visitante": "Middle Tennessee Blue Raiders",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8997,
-   "pv": 0.1003,
-   "elo_l": 1639,
-   "elo_v": 1394,
-   "bal_l": [
-    8,
-    1
-   ],
-   "bal_v": [
-    5,
-    4
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401860916",
-   "fecha": "2026-11-14T21:00:00Z",
-   "local": "Texas State Bobcats",
-   "visitante": "Fresno State Bulldogs",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6285,
-   "pv": 0.3715,
-   "elo_l": 1597,
-   "elo_v": 1561,
-   "bal_l": [
-    4,
-    4
-   ],
-   "bal_v": [
-    5,
-    4
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401856887",
-   "fecha": "2026-11-14T21:15:00Z",
-   "local": "Oklahoma Sooners",
-   "visitante": "Ole Miss Rebels",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.4605,
-   "pv": 0.5395,
-   "elo_l": 1614,
-   "elo_v": 1695,
-   "bal_l": [
-    5,
-    4
-   ],
-   "bal_v": [
-    6,
-    3
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401858521",
-   "fecha": "2026-11-14T21:15:00Z",
-   "local": "Michigan State Spartans",
-   "visitante": "Washington Huskies",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.3657,
-   "pv": 0.6343,
-   "elo_l": 1459,
-   "elo_v": 1607,
-   "bal_l": [
-    3,
-    6
-   ],
-   "bal_v": [
-    4,
-    4
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401871099",
-   "fecha": "2026-11-14T22:00:00Z",
-   "local": "Louisiana Tech Bulldogs",
-   "visitante": "Southern Miss Golden Eagles",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.9032,
-   "pv": 0.0968,
-   "elo_l": 1611,
-   "elo_v": 1346,
-   "bal_l": [
-    6,
-    2
-   ],
-   "bal_v": [
-    2,
-    6
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401856861",
-   "fecha": "2026-11-14T22:30:00Z",
-   "local": "West Virginia Mountaineers",
-   "visitante": "Kansas Jayhawks",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7021,
-   "pv": 0.2979,
-   "elo_l": 1499,
-   "elo_v": 1426,
-   "bal_l": [
-    5,
-    4
-   ],
-   "bal_v": [
-    2,
-    6
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "401860914",
    "fecha": "2026-11-14T23:00:00Z",
@@ -1366,20 +515,342 @@
    "creada": "2026-11-14 02:42 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401866467",
+   "fecha": "2026-11-19T00:00:00Z",
+   "local": "Massachusetts Minutemen",
+   "visitante": "Akron Zips",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7341,
+   "pv": 0.2659,
+   "elo_l": 1290,
+   "elo_v": 1233,
+   "bal_l": [
+    3,
+    5
+   ],
+   "bal_v": [
+    0,
+    9
+   ],
+   "creada": "2026-11-15 02:08 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401866469",
+   "fecha": "2026-11-19T00:30:00Z",
+   "local": "Buffalo Bulls",
+   "visitante": "Central Michigan Chippewas",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6699,
+   "pv": 0.3301,
+   "elo_l": 1531,
+   "elo_v": 1471,
+   "bal_l": [
+    5,
+    3
+   ],
+   "bal_v": [
+    4,
+    5
+   ],
+   "creada": "2026-11-15 02:08 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
  "recientes": [
   {
-   "id": "401856860",
-   "fecha": "2026-11-14T03:15:00Z",
-   "local": "Colorado Buffaloes",
-   "visitante": "Houston Cougars",
+   "id": "401856861",
+   "fecha": "2026-11-14T22:30:00Z",
+   "local": "West Virginia Mountaineers",
+   "visitante": "Kansas Jayhawks",
    "neutral": false,
    "playoff": false,
-   "pl": 0.1592,
-   "pv": 0.8408,
-   "elo_l": 1371,
-   "elo_v": 1668,
+   "pl": 0.7021,
+   "pv": 0.2979,
+   "elo_l": 1499,
+   "elo_v": 1426,
+   "bal_l": [
+    5,
+    4
+   ],
+   "bal_v": [
+    2,
+    6
+   ],
+   "creada": "2026-11-13 01:49 UTC",
+   "resultado": "V",
+   "marcador": "14-37"
+  },
+  {
+   "id": "401871099",
+   "fecha": "2026-11-14T22:00:00Z",
+   "local": "Louisiana Tech Bulldogs",
+   "visitante": "Southern Miss Golden Eagles",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.9032,
+   "pv": 0.0968,
+   "elo_l": 1611,
+   "elo_v": 1346,
+   "bal_l": [
+    6,
+    2
+   ],
+   "bal_v": [
+    2,
+    6
+   ],
+   "creada": "2026-11-13 01:49 UTC",
+   "resultado": "L",
+   "marcador": "63-31"
+  },
+  {
+   "id": "401858521",
+   "fecha": "2026-11-14T21:15:00Z",
+   "local": "Michigan State Spartans",
+   "visitante": "Washington Huskies",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.3657,
+   "pv": 0.6343,
+   "elo_l": 1459,
+   "elo_v": 1607,
+   "bal_l": [
+    3,
+    6
+   ],
+   "bal_v": [
+    4,
+    4
+   ],
+   "creada": "2026-11-13 01:49 UTC",
+   "resultado": "V",
+   "marcador": "14-21"
+  },
+  {
+   "id": "401860916",
+   "fecha": "2026-11-14T21:00:00Z",
+   "local": "Texas State Bobcats",
+   "visitante": "Fresno State Bulldogs",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6285,
+   "pv": 0.3715,
+   "elo_l": 1597,
+   "elo_v": 1561,
+   "bal_l": [
+    4,
+    4
+   ],
+   "bal_v": [
+    5,
+    4
+   ],
+   "creada": "2026-11-13 01:49 UTC",
+   "resultado": "L",
+   "marcador": "37-35"
+  },
+  {
+   "id": "401856883",
+   "fecha": "2026-11-14T20:30:00Z",
+   "local": "Georgia Bulldogs",
+   "visitante": "Missouri Tigers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8703,
+   "pv": 0.1297,
+   "elo_l": 1848,
+   "elo_v": 1633,
+   "bal_l": [
+    7,
+    1
+   ],
+   "bal_v": [
+    5,
+    3
+   ],
+   "creada": "2026-11-13 01:49 UTC",
+   "resultado": "L",
+   "marcador": "48-21"
+  },
+  {
+   "id": "401858294",
+   "fecha": "2026-11-14T20:30:00Z",
+   "local": "Notre Dame Fighting Irish",
+   "visitante": "Boston College Eagles",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.9576,
+   "pv": 0.0424,
+   "elo_l": 1821,
+   "elo_v": 1434,
+   "bal_l": [
+    8,
+    1
+   ],
+   "bal_v": [
+    4,
+    5
+   ],
+   "creada": "2026-11-13 01:49 UTC",
+   "resultado": "L",
+   "marcador": "41-7"
+  },
+  {
+   "id": "401858518",
+   "fecha": "2026-11-14T20:30:00Z",
+   "local": "Indiana Hoosiers",
+   "visitante": "USC Trojans",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8039,
+   "pv": 0.1961,
+   "elo_l": 1853,
+   "elo_v": 1696,
+   "bal_l": [
+    7,
+    1
+   ],
+   "bal_v": [
+    7,
+    2
+   ],
+   "creada": "2026-11-13 01:49 UTC",
+   "resultado": "L",
+   "marcador": "27-13"
+  },
+  {
+   "id": "401858523",
+   "fecha": "2026-11-14T20:30:00Z",
+   "local": "Oregon Ducks",
+   "visitante": "Michigan Wolverines",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8409,
+   "pv": 0.1591,
+   "elo_l": 1758,
+   "elo_v": 1561,
+   "bal_l": [
+    6,
+    3
+   ],
+   "bal_v": [
+    5,
+    4
+   ],
+   "creada": "2026-11-13 01:49 UTC",
+   "resultado": "L",
+   "marcador": "31-7"
+  },
+  {
+   "id": "401856857",
+   "fecha": "2026-11-14T20:30:00Z",
+   "local": "UCF Knights",
+   "visitante": "Arizona State Sun Devils",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4964,
+   "pv": 0.5036,
+   "elo_l": 1461,
+   "elo_v": 1539,
+   "bal_l": [
+    4,
+    4
+   ],
+   "bal_v": [
+    4,
+    4
+   ],
+   "creada": "2026-11-13 01:49 UTC",
+   "resultado": "V",
+   "marcador": "13-26"
+  },
+  {
+   "id": "401858295",
+   "fecha": "2026-11-14T20:30:00Z",
+   "local": "Virginia Cavaliers",
+   "visitante": "California Golden Bears",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.748,
+   "pv": 0.252,
+   "elo_l": 1486,
+   "elo_v": 1381,
+   "bal_l": [
+    3,
+    5
+   ],
+   "bal_v": [
+    3,
+    6
+   ],
+   "creada": "2026-11-13 01:49 UTC",
+   "resultado": "L",
+   "marcador": "36-7"
+  },
+  {
+   "id": "401864536",
+   "fecha": "2026-11-14T20:30:00Z",
+   "local": "Northern Illinois Huskies",
+   "visitante": "Nevada Wolf Pack",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.2355,
+   "pv": 0.7645,
+   "elo_l": 1202,
+   "elo_v": 1420,
+   "bal_l": [
+    0,
+    9
+   ],
+   "bal_v": [
+    3,
+    5
+   ],
+   "creada": "2026-11-13 01:49 UTC",
+   "resultado": "V",
+   "marcador": "7-28"
+  },
+  {
+   "id": "401869952",
+   "fecha": "2026-11-14T20:30:00Z",
+   "local": "Georgia State Panthers",
+   "visitante": "Georgia Southern Eagles",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.408,
+   "pv": 0.592,
+   "elo_l": 1435,
+   "elo_v": 1565,
+   "bal_l": [
+    4,
+    4
+   ],
+   "bal_v": [
+    4,
+    4
+   ],
+   "creada": "2026-11-13 01:49 UTC",
+   "resultado": "V",
+   "marcador": "17-34"
+  },
+  {
+   "id": "401870752",
+   "fecha": "2026-11-14T20:30:00Z",
+   "local": "Western Kentucky Hilltoppers",
+   "visitante": "Jacksonville State Gamecocks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.2255,
+   "pv": 0.7745,
+   "elo_l": 1381,
+   "elo_v": 1598,
    "bal_l": [
     2,
     6
@@ -1390,88 +861,180 @@
    ],
    "creada": "2026-11-13 01:49 UTC",
    "resultado": "L",
-   "marcador": "42-32"
+   "marcador": "34-24"
   },
   {
-   "id": "401858526",
-   "fecha": "2026-11-14T02:00:00Z",
-   "local": "UCLA Bruins",
-   "visitante": "Illinois Fighting Illini",
+   "id": "401871061",
+   "fecha": "2026-11-14T20:30:00Z",
+   "local": "Liberty Flames",
+   "visitante": "Middle Tennessee Blue Raiders",
    "neutral": false,
    "playoff": false,
-   "pl": 0.758,
-   "pv": 0.242,
-   "elo_l": 1704,
-   "elo_v": 1614,
+   "pl": 0.8997,
+   "pv": 0.1003,
+   "elo_l": 1639,
+   "elo_v": 1394,
    "bal_l": [
-    9,
-    0
+    8,
+    1
    ],
    "bal_v": [
-    6,
-    3
+    5,
+    4
    ],
    "creada": "2026-11-13 01:49 UTC",
    "resultado": "L",
-   "marcador": "22-14"
+   "marcador": "28-23"
   },
   {
-   "id": "401858293",
-   "fecha": "2026-11-14T00:00:00Z",
-   "local": "Pittsburgh Panthers",
-   "visitante": "Florida State Seminoles",
+   "id": "401856888",
+   "fecha": "2026-11-14T20:00:00Z",
+   "local": "Texas A&M Aggies",
+   "visitante": "Tennessee Volunteers",
    "neutral": false,
    "playoff": false,
-   "pl": 0.7142,
-   "pv": 0.2858,
-   "elo_l": 1552,
-   "elo_v": 1480,
+   "pl": 0.322,
+   "pv": 0.678,
+   "elo_l": 1541,
+   "elo_v": 1707,
    "bal_l": [
-    5,
-    3
+    3,
+    5
+   ],
+   "bal_v": [
+    6,
+    2
+   ],
+   "creada": "2026-11-13 01:49 UTC",
+   "resultado": "V",
+   "marcador": "7-22"
+  },
+  {
+   "id": "401870796",
+   "fecha": "2026-11-14T20:00:00Z",
+   "local": "Missouri State Bears",
+   "visitante": "New Mexico State Aggies",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6467,
+   "pv": 0.3533,
+   "elo_l": 1366,
+   "elo_v": 1326,
+   "bal_l": [
+    2,
+    6
+   ],
+   "bal_v": [
+    2,
+    6
+   ],
+   "creada": "2026-11-13 01:49 UTC",
+   "resultado": "L",
+   "marcador": "27-21"
+  },
+  {
+   "id": "401871060",
+   "fecha": "2026-11-14T20:00:00Z",
+   "local": "Delaware Blue Hens",
+   "visitante": "Florida International Panthers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6424,
+   "pv": 0.3576,
+   "elo_l": 1469,
+   "elo_v": 1435,
+   "bal_l": [
+    3,
+    5
    ],
    "bal_v": [
     3,
     5
    ],
    "creada": "2026-11-13 01:49 UTC",
-   "resultado": "V",
-   "marcador": "10-16"
+   "resultado": "L",
+   "marcador": "24-16"
   },
   {
-   "id": "401869969",
-   "fecha": "2026-11-13T02:00:00Z",
-   "local": "UL Monroe Warhawks",
-   "visitante": "Louisiana Ragin' Cajuns",
+   "id": "401856862",
+   "fecha": "2026-11-14T19:00:00Z",
+   "local": "TCU Horned Frogs",
+   "visitante": "Kansas State Wildcats",
    "neutral": false,
    "playoff": false,
-   "pl": 0.1916,
-   "pv": 0.8084,
-   "elo_l": 1255,
-   "elo_v": 1514,
+   "pl": 0.718,
+   "pv": 0.282,
+   "elo_l": 1557,
+   "elo_v": 1455,
    "bal_l": [
-    2,
-    7
+    3,
+    5
    ],
    "bal_v": [
-    5,
-    3
+    4,
+    5
+   ],
+   "creada": "2026-11-13 01:49 UTC",
+   "resultado": "L",
+   "marcador": "20-10"
+  },
+  {
+   "id": "401862828",
+   "fecha": "2026-11-14T19:00:00Z",
+   "local": "Rice Owls",
+   "visitante": "Tulane Green Wave",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.2953,
+   "pv": 0.7047,
+   "elo_l": 1268,
+   "elo_v": 1458,
+   "bal_l": [
+    0,
+    8
+   ],
+   "bal_v": [
+    4,
+    5
    ],
    "creada": "2026-11-13 01:49 UTC",
    "resultado": "V",
-   "marcador": "21-42"
+   "marcador": "17-20"
+  },
+  {
+   "id": "401870769",
+   "fecha": "2026-11-14T19:00:00Z",
+   "local": "Sam Houston Bearkats",
+   "visitante": "Kennesaw State Owls",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.3245,
+   "pv": 0.6755,
+   "elo_l": 1247,
+   "elo_v": 1435,
+   "bal_l": [
+    1,
+    8
+   ],
+   "bal_v": [
+    2,
+    6
+   ],
+   "creada": "2026-11-13 01:49 UTC",
+   "resultado": "V",
+   "marcador": "7-26"
   }
  ],
  "directo": {
-  "total": 63,
-  "resueltas": 4,
-  "aciertos": 2,
-  "acierto": 0.5,
+  "total": 65,
+  "resueltas": 38,
+  "aciertos": 27,
+  "acierto": 0.7105,
   "ic": [
-   0.15,
-   0.85
+   0.5524,
+   0.83
   ],
-  "brier": 0.3281,
+  "brier": 0.2054,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -1479,14 +1042,26 @@
  "ranking": [
   {
    "equipo": "Indiana Hoosiers",
-   "elo": 1853,
-   "g": 7,
+   "elo": 1868,
+   "g": 8,
    "p": 1
   },
   {
    "equipo": "Georgia Bulldogs",
-   "elo": 1848,
-   "g": 7,
+   "elo": 1862,
+   "g": 8,
+   "p": 1
+  },
+  {
+   "equipo": "Miami Hurricanes",
+   "elo": 1829,
+   "g": 8,
+   "p": 1
+  },
+  {
+   "equipo": "Notre Dame Fighting Irish",
+   "elo": 1827,
+   "g": 9,
    "p": 1
   },
   {
@@ -1496,16 +1071,10 @@
    "p": 0
   },
   {
-   "equipo": "Notre Dame Fighting Irish",
-   "elo": 1821,
+   "equipo": "Alabama Crimson Tide",
+   "elo": 1789,
    "g": 8,
-   "p": 1
-  },
-  {
-   "equipo": "Miami Hurricanes",
-   "elo": 1814,
-   "g": 7,
-   "p": 1
+   "p": 2
   },
   {
    "equipo": "Texas Longhorns",
@@ -1514,15 +1083,21 @@
    "p": 2
   },
   {
-   "equipo": "Alabama Crimson Tide",
+   "equipo": "Oregon Ducks",
    "elo": 1772,
    "g": 7,
-   "p": 2
+   "p": 3
   },
   {
-   "equipo": "Oregon Ducks",
-   "elo": 1758,
-   "g": 6,
+   "equipo": "Wake Forest Demon Deacons",
+   "elo": 1755,
+   "g": 8,
+   "p": 1
+  },
+  {
+   "equipo": "Ohio State Buckeyes",
+   "elo": 1751,
+   "g": 7,
    "p": 3
   },
   {
@@ -1532,16 +1107,16 @@
    "p": 2
   },
   {
-   "equipo": "Ohio State Buckeyes",
-   "elo": 1737,
-   "g": 6,
-   "p": 3
-  },
-  {
    "equipo": "Boise State Broncos",
    "elo": 1737,
    "g": 8,
    "p": 1
+  },
+  {
+   "equipo": "Tennessee Volunteers",
+   "elo": 1734,
+   "g": 7,
+   "p": 2
   },
   {
    "equipo": "Texas Tech Red Raiders",
@@ -1556,34 +1131,10 @@
    "p": 0
   },
   {
-   "equipo": "James Madison Dukes",
-   "elo": 1713,
-   "g": 8,
-   "p": 2
-  },
-  {
-   "equipo": "Tennessee Volunteers",
-   "elo": 1707,
-   "g": 6,
-   "p": 2
-  },
-  {
    "equipo": "BYU Cougars",
    "elo": 1703,
    "g": 6,
    "p": 2
-  },
-  {
-   "equipo": "USC Trojans",
-   "elo": 1696,
-   "g": 7,
-   "p": 2
-  },
-  {
-   "equipo": "Wake Forest Demon Deacons",
-   "elo": 1695,
-   "g": 7,
-   "p": 1
   },
   {
    "equipo": "Ole Miss Rebels",
@@ -1598,16 +1149,16 @@
    "p": 2
   },
   {
-   "equipo": "Duke Blue Devils",
-   "elo": 1687,
-   "g": 6,
-   "p": 2
-  },
-  {
    "equipo": "New Mexico Lobos",
    "elo": 1684,
    "g": 7,
    "p": 1
+  },
+  {
+   "equipo": "USC Trojans",
+   "elo": 1682,
+   "g": 7,
+   "p": 3
   },
   {
    "equipo": "North Dakota State Bison",
@@ -1616,10 +1167,10 @@
    "p": 2
   },
   {
-   "equipo": "SMU Mustangs",
-   "elo": 1667,
+   "equipo": "Duke Blue Devils",
+   "elo": 1671,
    "g": 6,
-   "p": 2
+   "p": 3
   },
   {
    "equipo": "Louisville Cardinals",
@@ -1640,6 +1191,12 @@
    "p": 3
   },
   {
+   "equipo": "Liberty Flames",
+   "elo": 1645,
+   "g": 9,
+   "p": 1
+  },
+  {
    "equipo": "North Texas Mean Green",
    "elo": 1644,
    "g": 6,
@@ -1652,28 +1209,34 @@
    "p": 3
   },
   {
-   "equipo": "Liberty Flames",
-   "elo": 1639,
+   "equipo": "James Madison Dukes",
+   "elo": 1638,
    "g": 8,
-   "p": 1
+   "p": 3
+  },
+  {
+   "equipo": "Washington Huskies",
+   "elo": 1629,
+   "g": 5,
+   "p": 4
+  },
+  {
+   "equipo": "Louisiana Tech Bulldogs",
+   "elo": 1622,
+   "g": 7,
+   "p": 2
   },
   {
    "equipo": "Missouri Tigers",
-   "elo": 1633,
+   "elo": 1619,
    "g": 5,
-   "p": 3
+   "p": 4
   },
   {
    "equipo": "Oklahoma Sooners",
    "elo": 1614,
    "g": 5,
    "p": 4
-  },
-  {
-   "equipo": "Louisiana Tech Bulldogs",
-   "elo": 1611,
-   "g": 6,
-   "p": 2
   },
   {
    "equipo": "Houston Cougars",
@@ -1688,9 +1251,15 @@
    "p": 3
   },
   {
-   "equipo": "Washington Huskies",
+   "equipo": "SMU Mustangs",
    "elo": 1607,
-   "g": 4,
+   "g": 6,
+   "p": 3
+  },
+  {
+   "equipo": "Texas State Bobcats",
+   "elo": 1607,
+   "g": 5,
    "p": 4
   },
   {
@@ -1718,46 +1287,34 @@
    "p": 3
   },
   {
-   "equipo": "Jacksonville State Gamecocks",
-   "elo": 1598,
-   "g": 6,
-   "p": 2
-  },
-  {
    "equipo": "Illinois Fighting Illini",
    "elo": 1597,
    "g": 6,
    "p": 4
   },
   {
-   "equipo": "Texas State Bobcats",
-   "elo": 1597,
-   "g": 4,
-   "p": 4
-  },
-  {
-   "equipo": "Clemson Tigers",
+   "equipo": "Georgia Southern Eagles",
    "elo": 1597,
    "g": 5,
-   "p": 3
-  },
-  {
-   "equipo": "Wisconsin Badgers",
-   "elo": 1596,
-   "g": 6,
-   "p": 3
-  },
-  {
-   "equipo": "Northwestern Wildcats",
-   "elo": 1592,
-   "g": 6,
-   "p": 3
+   "p": 4
   },
   {
    "equipo": "Toledo Rockets",
    "elo": 1592,
    "g": 7,
    "p": 2
+  },
+  {
+   "equipo": "Nebraska Cornhuskers",
+   "elo": 1587,
+   "g": 6,
+   "p": 4
+  },
+  {
+   "equipo": "Northwestern Wildcats",
+   "elo": 1579,
+   "g": 6,
+   "p": 4
   },
   {
    "equipo": "Oklahoma State Cowboys",
@@ -1772,34 +1329,34 @@
    "p": 2
   },
   {
-   "equipo": "Georgia Southern Eagles",
-   "elo": 1565,
-   "g": 4,
-   "p": 4
-  },
-  {
-   "equipo": "Fresno State Bulldogs",
-   "elo": 1561,
-   "g": 5,
-   "p": 4
-  },
-  {
-   "equipo": "Michigan Wolverines",
-   "elo": 1561,
+   "equipo": "Arizona State Sun Devils",
+   "elo": 1575,
    "g": 5,
    "p": 4
   },
   {
    "equipo": "TCU Horned Frogs",
-   "elo": 1557,
-   "g": 3,
+   "elo": 1574,
+   "g": 4,
    "p": 5
   },
   {
-   "equipo": "Nebraska Cornhuskers",
-   "elo": 1557,
-   "g": 5,
+   "equipo": "Wisconsin Badgers",
+   "elo": 1566,
+   "g": 6,
    "p": 4
+  },
+  {
+   "equipo": "Auburn Tigers",
+   "elo": 1566,
+   "g": 6,
+   "p": 4
+  },
+  {
+   "equipo": "Iowa State Cyclones",
+   "elo": 1559,
+   "g": 4,
+   "p": 5
   },
   {
    "equipo": "Ohio Bobcats",
@@ -1808,10 +1365,28 @@
    "p": 3
   },
   {
+   "equipo": "Fresno State Bulldogs",
+   "elo": 1550,
+   "g": 5,
+   "p": 5
+  },
+  {
+   "equipo": "Jacksonville State Gamecocks",
+   "elo": 1547,
+   "g": 6,
+   "p": 3
+  },
+  {
    "equipo": "UNLV Rebels",
    "elo": 1547,
    "g": 5,
    "p": 4
+  },
+  {
+   "equipo": "Michigan Wolverines",
+   "elo": 1546,
+   "g": 5,
+   "p": 5
   },
   {
    "equipo": "Appalachian State Mountaineers",
@@ -1832,21 +1407,9 @@
    "p": 4
   },
   {
-   "equipo": "Texas A&M Aggies",
-   "elo": 1541,
-   "g": 3,
-   "p": 5
-  },
-  {
    "equipo": "South Florida Bulls",
    "elo": 1539,
    "g": 5,
-   "p": 4
-  },
-  {
-   "equipo": "Arizona State Sun Devils",
-   "elo": 1539,
-   "g": 4,
    "p": 4
   },
   {
@@ -1862,12 +1425,6 @@
    "p": 3
   },
   {
-   "equipo": "Cincinnati Bearcats",
-   "elo": 1530,
-   "g": 4,
-   "p": 4
-  },
-  {
    "equipo": "Virginia Tech Hokies",
    "elo": 1528,
    "g": 5,
@@ -1875,8 +1432,20 @@
   },
   {
    "equipo": "East Carolina Pirates",
-   "elo": 1523,
+   "elo": 1527,
+   "g": 5,
+   "p": 4
+  },
+  {
+   "equipo": "UConn Huskies",
+   "elo": 1524,
    "g": 4,
+   "p": 5
+  },
+  {
+   "equipo": "Clemson Tigers",
+   "elo": 1522,
+   "g": 5,
    "p": 4
   },
   {
@@ -1884,12 +1453,6 @@
    "elo": 1522,
    "g": 5,
    "p": 3
-  },
-  {
-   "equipo": "Iowa State Cyclones",
-   "elo": 1521,
-   "g": 3,
-   "p": 5
   },
   {
    "equipo": "Florida State Seminoles",
@@ -1904,10 +1467,10 @@
    "p": 3
   },
   {
-   "equipo": "Auburn Tigers",
-   "elo": 1513,
-   "g": 5,
-   "p": 4
+   "equipo": "Texas A&M Aggies",
+   "elo": 1514,
+   "g": 3,
+   "p": 6
   },
   {
    "equipo": "Pittsburgh Panthers",
@@ -1916,21 +1479,15 @@
    "p": 4
   },
   {
-   "equipo": "Minnesota Golden Gophers",
-   "elo": 1508,
+   "equipo": "Virginia Cavaliers",
+   "elo": 1510,
    "g": 4,
-   "p": 4
-  },
-  {
-   "equipo": "Vanderbilt Commodores",
-   "elo": 1504,
-   "g": 3,
    "p": 5
   },
   {
-   "equipo": "West Virginia Mountaineers",
-   "elo": 1499,
-   "g": 5,
+   "equipo": "Minnesota Golden Gophers",
+   "elo": 1508,
+   "g": 4,
    "p": 4
   },
   {
@@ -1952,6 +1509,18 @@
    "p": 5
   },
   {
+   "equipo": "Kansas Jayhawks",
+   "elo": 1492,
+   "g": 3,
+   "p": 6
+  },
+  {
+   "equipo": "Cincinnati Bearcats",
+   "elo": 1492,
+   "g": 4,
+   "p": 5
+  },
+  {
    "equipo": "Florida Gators",
    "elo": 1491,
    "g": 4,
@@ -1964,10 +1533,16 @@
    "p": 1
   },
   {
-   "equipo": "Virginia Cavaliers",
-   "elo": 1486,
-   "g": 3,
+   "equipo": "Delaware Blue Hens",
+   "elo": 1490,
+   "g": 4,
    "p": 5
+  },
+  {
+   "equipo": "Vanderbilt Commodores",
+   "elo": 1487,
+   "g": 3,
+   "p": 6
   },
   {
    "equipo": "Tulsa Golden Hurricane",
@@ -1988,10 +1563,10 @@
    "p": 4
   },
   {
-   "equipo": "NC State Wolfpack",
-   "elo": 1474,
-   "g": 3,
-   "p": 5
+   "equipo": "UAB Blazers",
+   "elo": 1473,
+   "g": 5,
+   "p": 4
   },
   {
    "equipo": "Idaho Vandals",
@@ -2006,22 +1581,16 @@
    "p": 5
   },
   {
-   "equipo": "Delaware Blue Hens",
-   "elo": 1469,
+   "equipo": "Tulane Green Wave",
+   "elo": 1470,
+   "g": 5,
+   "p": 5
+  },
+  {
+   "equipo": "Kennesaw State Owls",
+   "elo": 1462,
    "g": 3,
-   "p": 5
-  },
-  {
-   "equipo": "Mississippi State Bulldogs",
-   "elo": 1468,
-   "g": 4,
-   "p": 5
-  },
-  {
-   "equipo": "UCF Knights",
-   "elo": 1461,
-   "g": 4,
-   "p": 4
+   "p": 6
   },
   {
    "equipo": "Illinois State Redbirds",
@@ -2030,33 +1599,21 @@
    "p": 0
   },
   {
-   "equipo": "Michigan State Spartans",
-   "elo": 1459,
-   "g": 3,
-   "p": 6
-  },
-  {
-   "equipo": "Tulane Green Wave",
-   "elo": 1458,
-   "g": 4,
-   "p": 5
-  },
-  {
-   "equipo": "Kansas State Wildcats",
-   "elo": 1455,
-   "g": 4,
-   "p": 5
-  },
-  {
    "equipo": "South Dakota Coyotes",
    "elo": 1451,
    "g": 0,
    "p": 1
   },
   {
-   "equipo": "UConn Huskies",
-   "elo": 1449,
+   "equipo": "NC State Wolfpack",
+   "elo": 1445,
    "g": 3,
+   "p": 6
+  },
+  {
+   "equipo": "Nevada Wolf Pack",
+   "elo": 1444,
+   "g": 4,
    "p": 5
   },
   {
@@ -2072,10 +1629,22 @@
    "p": 1
   },
   {
-   "equipo": "UAB Blazers",
-   "elo": 1436,
+   "equipo": "Kansas State Wildcats",
+   "elo": 1437,
    "g": 4,
-   "p": 4
+   "p": 6
+  },
+  {
+   "equipo": "Michigan State Spartans",
+   "elo": 1437,
+   "g": 3,
+   "p": 7
+  },
+  {
+   "equipo": "Georgia Tech Yellow Jackets",
+   "elo": 1437,
+   "g": 2,
+   "p": 7
   },
   {
    "equipo": "San Diego State Aztecs",
@@ -2084,34 +1653,16 @@
    "p": 5
   },
   {
-   "equipo": "Kennesaw State Owls",
-   "elo": 1435,
-   "g": 2,
-   "p": 6
-  },
-  {
-   "equipo": "Florida International Panthers",
-   "elo": 1435,
-   "g": 3,
-   "p": 5
-  },
-  {
-   "equipo": "Georgia State Panthers",
-   "elo": 1435,
-   "g": 4,
-   "p": 4
-  },
-  {
-   "equipo": "Boston College Eagles",
-   "elo": 1434,
-   "g": 4,
-   "p": 5
-  },
-  {
-   "equipo": "Arkansas State Red Wolves",
+   "equipo": "West Virginia Mountaineers",
    "elo": 1433,
-   "g": 3,
+   "g": 5,
    "p": 5
+  },
+  {
+   "equipo": "Western Kentucky Hilltoppers",
+   "elo": 1432,
+   "g": 3,
+   "p": 6
   },
   {
    "equipo": "Stanford Cardinal",
@@ -2138,16 +1689,22 @@
    "p": 7
   },
   {
+   "equipo": "Boston College Eagles",
+   "elo": 1428,
+   "g": 4,
+   "p": 6
+  },
+  {
    "equipo": "South Alabama Jaguars",
    "elo": 1427,
    "g": 4,
    "p": 5
   },
   {
-   "equipo": "Kansas Jayhawks",
-   "elo": 1426,
-   "g": 2,
-   "p": 6
+   "equipo": "UCF Knights",
+   "elo": 1425,
+   "g": 4,
+   "p": 5
   },
   {
    "equipo": "Arkansas Razorbacks",
@@ -2156,16 +1713,28 @@
    "p": 6
   },
   {
-   "equipo": "Nevada Wolf Pack",
-   "elo": 1420,
-   "g": 3,
-   "p": 5
-  },
-  {
    "equipo": "Hawai'i Rainbow Warriors",
    "elo": 1417,
    "g": 3,
    "p": 6
+  },
+  {
+   "equipo": "Mississippi State Bulldogs",
+   "elo": 1415,
+   "g": 4,
+   "p": 6
+  },
+  {
+   "equipo": "Florida International Panthers",
+   "elo": 1414,
+   "g": 3,
+   "p": 6
+  },
+  {
+   "equipo": "Syracuse Orange",
+   "elo": 1412,
+   "g": 4,
+   "p": 5
   },
   {
    "equipo": "Southern Illinois Salukis",
@@ -2180,10 +1749,28 @@
    "p": 1
   },
   {
+   "equipo": "Arkansas State Red Wolves",
+   "elo": 1404,
+   "g": 3,
+   "p": 6
+  },
+  {
+   "equipo": "Georgia State Panthers",
+   "elo": 1403,
+   "g": 4,
+   "p": 5
+  },
+  {
    "equipo": "App State Mountaineers",
    "elo": 1402,
    "g": 5,
    "p": 4
+  },
+  {
+   "equipo": "Maryland Terrapins",
+   "elo": 1400,
+   "g": 3,
+   "p": 6
   },
   {
    "equipo": "Northern Iowa Panthers",
@@ -2198,10 +1785,16 @@
    "p": 5
   },
   {
+   "equipo": "Coastal Carolina Chanticleers",
+   "elo": 1393,
+   "g": 3,
+   "p": 6
+  },
+  {
    "equipo": "Middle Tennessee Blue Raiders",
-   "elo": 1394,
+   "elo": 1388,
    "g": 5,
-   "p": 4
+   "p": 5
   },
   {
    "equipo": "San José State Spartans",
@@ -2210,21 +1803,9 @@
    "p": 5
   },
   {
-   "equipo": "Syracuse Orange",
-   "elo": 1382,
+   "equipo": "Missouri State Bears",
+   "elo": 1385,
    "g": 3,
-   "p": 5
-  },
-  {
-   "equipo": "California Golden Bears",
-   "elo": 1381,
-   "g": 3,
-   "p": 6
-  },
-  {
-   "equipo": "Western Kentucky Hilltoppers",
-   "elo": 1381,
-   "g": 2,
    "p": 6
   },
   {
@@ -2258,40 +1839,10 @@
    "p": 1
   },
   {
-   "equipo": "Maryland Terrapins",
-   "elo": 1370,
-   "g": 2,
-   "p": 6
-  },
-  {
-   "equipo": "Missouri State Bears",
-   "elo": 1366,
-   "g": 2,
-   "p": 6
-  },
-  {
    "equipo": "Maine Black Bears",
    "elo": 1366,
    "g": 0,
    "p": 2
-  },
-  {
-   "equipo": "Coastal Carolina Chanticleers",
-   "elo": 1364,
-   "g": 2,
-   "p": 6
-  },
-  {
-   "equipo": "Georgia Tech Yellow Jackets",
-   "elo": 1362,
-   "g": 1,
-   "p": 7
-  },
-  {
-   "equipo": "Rutgers Scarlet Knights",
-   "elo": 1362,
-   "g": 1,
-   "p": 7
   },
   {
    "equipo": "UT Martin Skyhawks",
@@ -2300,16 +1851,16 @@
    "p": 2
   },
   {
+   "equipo": "California Golden Bears",
+   "elo": 1357,
+   "g": 3,
+   "p": 7
+  },
+  {
    "equipo": "Wagner Seahawks",
    "elo": 1347,
    "g": 0,
    "p": 2
-  },
-  {
-   "equipo": "Southern Miss Golden Eagles",
-   "elo": 1346,
-   "g": 2,
-   "p": 6
   },
   {
    "equipo": "Eastern Michigan Eagles",
@@ -2324,16 +1875,22 @@
    "p": 2
   },
   {
+   "equipo": "Southern Miss Golden Eagles",
+   "elo": 1335,
+   "g": 2,
+   "p": 7
+  },
+  {
+   "equipo": "Rutgers Scarlet Knights",
+   "elo": 1332,
+   "g": 1,
+   "p": 8
+  },
+  {
    "equipo": "Nicholls Colonels",
    "elo": 1331,
    "g": 0,
    "p": 2
-  },
-  {
-   "equipo": "New Mexico State Aggies",
-   "elo": 1326,
-   "g": 2,
-   "p": 6
   },
   {
    "equipo": "Murray State Racers",
@@ -2342,16 +1899,16 @@
    "p": 2
   },
   {
+   "equipo": "New Mexico State Aggies",
+   "elo": 1308,
+   "g": 2,
+   "p": 7
+  },
+  {
    "equipo": "Colorado State Rams",
    "elo": 1305,
    "g": 2,
    "p": 6
-  },
-  {
-   "equipo": "Temple Owls",
-   "elo": 1305,
-   "g": 1,
-   "p": 7
   },
   {
    "equipo": "Kent State Golden Flashes",
@@ -2378,20 +1935,20 @@
    "p": 9
   },
   {
-   "equipo": "Rice Owls",
+   "equipo": "Temple Owls",
    "elo": 1268,
-   "g": 0,
+   "g": 1,
    "p": 8
   },
   {
-   "equipo": "Charlotte 49ers",
-   "elo": 1250,
-   "g": 1,
-   "p": 7
+   "equipo": "Rice Owls",
+   "elo": 1256,
+   "g": 0,
+   "p": 9
   },
   {
-   "equipo": "Sam Houston Bearkats",
-   "elo": 1247,
+   "equipo": "Charlotte 49ers",
+   "elo": 1246,
    "g": 1,
    "p": 8
   },
@@ -2408,9 +1965,9 @@
    "p": 9
   },
   {
-   "equipo": "Northern Illinois Huskies",
-   "elo": 1202,
-   "g": 0,
+   "equipo": "Sam Houston Bearkats",
+   "elo": 1220,
+   "g": 1,
    "p": 9
   },
   {
@@ -2418,6 +1975,12 @@
    "elo": 1191,
    "g": 0,
    "p": 8
+  },
+  {
+   "equipo": "Northern Illinois Huskies",
+   "elo": 1178,
+   "g": 0,
+   "p": 10
   }
  ]
 }

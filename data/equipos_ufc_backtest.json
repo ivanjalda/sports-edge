@@ -1,21 +1,21 @@
 {
- "actualizado": "2026-11-14 14:02 UTC",
+ "actualizado": "2026-11-15 02:08 UTC",
  "liga": "UFC",
  "desde": "20250111",
- "datos_hasta": "2026-11-08T01:00:00Z",
+ "datos_hasta": "2026-11-15T00:00:00Z",
  "total": {
-  "n": 846,
-  "aciertos": 522,
-  "acierto": 0.617,
+  "n": 854,
+  "aciertos": 526,
+  "acierto": 0.6159,
   "ic": [
-   0.5838,
-   0.6492
+   0.5829,
+   0.648
   ],
-  "brier": 0.2381
+  "brier": 0.2382
  },
  "base_local": {
-  "n": 846,
-  "acierto": 0.5615
+  "n": 854,
+  "acierto": 0.5574
  },
  "base_balance": {
   "n": 0,
@@ -25,12 +25,12 @@
  "tramos": [
   {
    "min": 0.6,
-   "n": 174,
-   "conf": 0.6359,
-   "acierto": 0.6782,
+   "n": 177,
+   "conf": 0.6363,
+   "acierto": 0.678,
    "ic": [
-    0.6055,
-    0.7431
+    0.606,
+    0.7424
    ]
   },
   {
@@ -55,16 +55,16 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 672,
-   "prometido": 0.5445,
-   "real": 0.6012
+   "n": 677,
+   "prometido": 0.5444,
+   "real": 0.5997
   },
   {
    "desde": 60,
    "hasta": 70,
-   "n": 167,
-   "prometido": 0.6323,
-   "real": 0.6766
+   "n": 170,
+   "prometido": 0.6328,
+   "real": 0.6765
   },
   {
    "desde": 70,
@@ -100,51 +100,114 @@
    "brier": 0.2369
   },
   "2026": {
-   "n": 371,
-   "aciertos": 224,
-   "acierto": 0.6038,
+   "n": 379,
+   "aciertos": 228,
+   "acierto": 0.6016,
    "ic": [
-    0.5532,
-    0.6522
+    0.5515,
+    0.6496
    ],
-   "brier": 0.2397
+   "brier": 0.24
   }
  },
  "fases": {
   "regular": {
-   "n": 846,
-   "aciertos": 522,
-   "acierto": 0.617,
+   "n": 854,
+   "aciertos": 526,
+   "acierto": 0.6159,
    "ic": [
-    0.5838,
-    0.6492
+    0.5829,
+    0.648
    ],
-   "brier": 0.2381
+   "brier": 0.2382
   }
  },
  "elige": {
   "local": {
-   "n": 433,
+   "n": 436,
    "aciertos": 292,
-   "acierto": 0.6744,
+   "acierto": 0.6697,
    "ic": [
-    0.6289,
-    0.7168
+    0.6243,
+    0.7122
    ],
-   "brier": 0.2316
+   "brier": 0.2321
   },
   "visitante": {
-   "n": 413,
-   "aciertos": 230,
-   "acierto": 0.5569,
+   "n": 418,
+   "aciertos": 234,
+   "acierto": 0.5598,
    "ic": [
-    0.5087,
-    0.6041
+    0.5119,
+    0.6066
    ],
-   "brier": 0.2449
+   "brier": 0.2446
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-15T00:00:00Z",
+   "local": "Stephen Thompson",
+   "visitante": "Charles Radtke",
+   "marcador": "1-0",
+   "fav": "Charles Radtke",
+   "pp": 0.6361,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-15T00:00:00Z",
+   "local": "Drew Dober",
+   "visitante": "Chris Duncan",
+   "marcador": "0-1",
+   "fav": "Chris Duncan",
+   "pp": 0.5005,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-15T00:00:00Z",
+   "local": "Jim Miller",
+   "visitante": "Terrance McKinney",
+   "marcador": "0-1",
+   "fav": "Jim Miller",
+   "pp": 0.5826,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-15T00:00:00Z",
+   "local": "Donte Johnson",
+   "visitante": "Cesar Almeida",
+   "marcador": "0-1",
+   "fav": "Donte Johnson",
+   "pp": 0.5826,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-14T22:00:00Z",
+   "local": "Jared Gordon",
+   "visitante": "Melquizael Costa",
+   "marcador": "0-1",
+   "fav": "Melquizael Costa",
+   "pp": 0.6766,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-14T22:00:00Z",
+   "local": "Macy Chiasson",
+   "visitante": "Bia Mesquita",
+   "marcador": "0-1",
+   "fav": "Bia Mesquita",
+   "pp": 0.6614,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-14T22:00:00Z",
+   "local": "Alatengheili",
+   "visitante": "Juan Diaz",
+   "marcador": "0-1",
+   "fav": "Juan Diaz",
+   "pp": 0.5084,
+   "ok": true
+  },
   {
    "fecha": "2026-11-08T01:00:00Z",
    "local": "Waldo Cortes Acosta",
@@ -169,7 +232,7 @@
    "visitante": "Elijah Smith",
    "marcador": "0-1",
    "fav": "Elijah Smith",
-   "pp": 0.5981,
+   "pp": 0.598,
    "ok": true
   },
   {
@@ -232,7 +295,7 @@
    "visitante": "Jacobe Smith",
    "marcador": "0-1",
    "fav": "Jacobe Smith",
-   "pp": 0.5616,
+   "pp": 0.5615,
    "ok": true
   },
   {
@@ -306,69 +369,6 @@
    "fav": "Ramazan Temirov",
    "pp": 0.5963,
    "ok": false
-  },
-  {
-   "fecha": "2026-10-24T18:00:00Z",
-   "local": "Alexander Volkov",
-   "visitante": "Rizvan Kuniev",
-   "marcador": "1-0",
-   "fav": "Alexander Volkov",
-   "pp": 0.6218,
-   "ok": true
-  },
-  {
-   "fecha": "2026-10-24T18:00:00Z",
-   "local": "Aaron Pico",
-   "visitante": "Losene Keita",
-   "marcador": "1-0",
-   "fav": "Aaron Pico",
-   "pp": 0.518,
-   "ok": true
-  },
-  {
-   "fecha": "2026-10-24T16:00:00Z",
-   "local": "Azamat Murzakanov",
-   "visitante": "Dominick Reyes",
-   "marcador": "0-1",
-   "fav": "Dominick Reyes",
-   "pp": 0.5002,
-   "ok": true
-  },
-  {
-   "fecha": "2026-10-24T16:00:00Z",
-   "local": "Nikita Krylov",
-   "visitante": "Abdul-Rakhman Yakhyaev",
-   "marcador": "0-1",
-   "fav": "Abdul-Rakhman Yakhyaev",
-   "pp": 0.6111,
-   "ok": true
-  },
-  {
-   "fecha": "2026-10-24T16:00:00Z",
-   "local": "Abus Magomedov",
-   "visitante": "Cam Rowston",
-   "marcador": "1-0",
-   "fav": "Abus Magomedov",
-   "pp": 0.5092,
-   "ok": true
-  },
-  {
-   "fecha": "2026-10-24T16:00:00Z",
-   "local": "Grant Dawson",
-   "visitante": "Nurullo Aliev",
-   "marcador": "1-0",
-   "fav": "Grant Dawson",
-   "pp": 0.5615,
-   "ok": true
-  },
-  {
-   "fecha": "2026-10-24T14:00:00Z",
-   "local": "Bolaji Oki",
-   "visitante": "Daniel Santos",
-   "marcador": "0-1",
-   "fav": "Daniel Santos",
-   "pp": 0.5974,
-   "ok": true
   }
  ],
  "motor": {
@@ -381,18 +381,18 @@
    "c_micro": 0.0,
    "c_sede": 0.0
   },
-  "sd": 0.992,
+  "sd": 0.993,
   "motor": {
-   "n": 846,
-   "acierto": 0.617,
-   "brier": 0.2381,
-   "logloss": 0.669
+   "n": 854,
+   "acierto": 0.6159,
+   "brier": 0.2382,
+   "logloss": 0.6693
   },
   "elo_basico": {
-   "n": 846,
-   "acierto": 0.6194,
+   "n": 854,
+   "acierto": 0.6183,
    "brier": 0.2406,
-   "logloss": 0.6741
+   "logloss": 0.6742
   },
   "escalas": {
    "temporada": true,
@@ -402,8 +402,8 @@
    "descanso": false
   },
   "local": {
-   "n": 846,
-   "acierto": 0.5615
+   "n": 854,
+   "acierto": 0.5574
   },
   "temporadas_prueba": [
    2025,
