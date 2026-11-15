@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-15 02:08 UTC",
+ "actualizado": "2026-11-15 14:35 UTC",
  "datos_hasta": 20261108,
  "dias_desde_datos": 7,
  "fuentes": {
@@ -87,31 +87,78 @@
    "cuota": {
     "mejor": {
      "2": {
-      "c": 2.58,
+      "c": 2.56,
       "casa": "Betfair"
      },
      "1": {
-      "c": 1.6,
-      "casa": "Pinnacle"
+      "c": 1.63,
+      "casa": "Betfair"
      }
     },
     "mercado": {
-     "1": 0.6085,
-     "2": 0.3915
+     "1": 0.6133,
+     "2": 0.3867
     },
     "casas": 20,
     "ev": {
-     "1": -0.1699,
-     "2": 0.2415
+     "1": -0.1544,
+     "2": 0.2319
     },
     "valor": [],
-    "actualizado": "2026-11-14 14:02 UTC"
+    "actualizado": "2026-11-15 14:35 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 15:11 UTC",
     "valor": [],
     "1": 1.67,
     "2": 2.3
+   }
+  },
+  {
+   "id": "db0cf55e0c26bfbf59d91c22de428d25",
+   "torneo": "WTA Finals",
+   "tour": "WTA",
+   "sup": "Hard",
+   "fecha": "2026-11-15T20:00:00Z",
+   "j1": "Elina Svitolina",
+   "j2": "Mirra Andreeva",
+   "id1": "wta:202494",
+   "id2": "wta:259799",
+   "p1": 0.4827,
+   "p2": 0.5173,
+   "n1": 416,
+   "n2": 195,
+   "creada": "2026-11-15 14:35 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "1": {
+      "c": 3.55,
+      "casa": "Matchbook"
+     },
+     "2": {
+      "c": 1.39,
+      "casa": "1xBet"
+     }
+    },
+    "mercado": {
+     "1": 0.2984,
+     "2": 0.7016
+    },
+    "casas": 20,
+    "ev": {
+     "1": 0.7136,
+     "2": -0.281
+    },
+    "valor": [],
+    "actualizado": "2026-11-15 14:35 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-15 14:35 UTC",
+    "valor": [],
+    "1": 3.55,
+    "2": 1.39
    }
   },
   {
@@ -134,25 +181,25 @@
    "cuota": {
     "mejor": {
      "1": {
-      "c": 1.14,
+      "c": 1.13,
       "casa": "Unibet (NL)"
      },
      "2": {
-      "c": 7.84,
-      "casa": "Pinnacle"
+      "c": 8.6,
+      "casa": "Betfair"
      }
     },
     "mercado": {
-     "1": 0.8526,
-     "2": 0.1474
+     "1": 0.8587,
+     "2": 0.1413
     },
-    "casas": 20,
+    "casas": 21,
     "ev": {
-     "1": 0.0078,
-     "2": -0.0906
+     "1": -0.0011,
+     "2": -0.0024
     },
     "valor": [],
-    "actualizado": "2026-11-14 14:02 UTC"
+    "actualizado": "2026-11-15 14:35 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 15:11 UTC",
@@ -181,8 +228,8 @@
    "cuota": {
     "mejor": {
      "1": {
-      "c": 1.29,
-      "casa": "William Hill"
+      "c": 1.33,
+      "casa": "Unibet (NL)"
      },
      "2": {
       "c": 4.1,
@@ -190,16 +237,16 @@
      }
     },
     "mercado": {
-     "1": 0.7486,
-     "2": 0.2514
+     "1": 0.7402,
+     "2": 0.2598
     },
-    "casas": 20,
+    "casas": 21,
     "ev": {
-     "1": -0.094,
+     "1": -0.0659,
      "2": 0.2206
     },
     "valor": [],
-    "actualizado": "2026-11-14 14:02 UTC"
+    "actualizado": "2026-11-15 14:35 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 15:11 UTC",
@@ -210,7 +257,7 @@
   }
  ],
  "directo": {
-  "total": 13,
+  "total": 14,
   "resueltas": 0,
   "acierto": null,
   "brier": null,

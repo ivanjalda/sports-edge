@@ -1,36 +1,36 @@
 {
- "actualizado": "2026-11-15 02:08 UTC",
+ "actualizado": "2026-11-15 14:36 UTC",
  "liga": "NHL",
  "desde": "20251007",
- "datos_hasta": "2026-11-14T20:30:00Z",
+ "datos_hasta": "2026-11-15T03:00:00Z",
  "total": {
-  "n": 1699,
-  "aciertos": 936,
-  "acierto": 0.5509,
+  "n": 1711,
+  "aciertos": 938,
+  "acierto": 0.5482,
   "ic": [
-   0.5272,
-   0.5744
+   0.5246,
+   0.5717
   ],
-  "brier": 0.2463
+  "brier": 0.2467
  },
  "base_local": {
-  "n": 1699,
-  "acierto": 0.5244
+  "n": 1711,
+  "acierto": 0.5213
  },
  "base_balance": {
-  "n": 1470,
+  "n": 1481,
   "acierto": 0.5544,
-  "nuestro": 0.549
+  "nuestro": 0.5463
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 655,
-   "conf": 0.6499,
-   "acierto": 0.6092,
+   "n": 657,
+   "conf": 0.65,
+   "acierto": 0.6073,
    "ic": [
-    0.5713,
-    0.6458
+    0.5694,
+    0.6439
    ]
   },
   {
@@ -58,16 +58,16 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 1044,
-   "prometido": 0.5491,
-   "real": 0.5144
+   "n": 1054,
+   "prometido": 0.5492,
+   "real": 0.5114
   },
   {
    "desde": 60,
    "hasta": 70,
-   "n": 579,
-   "prometido": 0.6394,
-   "real": 0.5959
+   "n": 581,
+   "prometido": 0.6395,
+   "real": 0.5938
   },
   {
    "desde": 70,
@@ -103,26 +103,26 @@
    "brier": 0.2492
   },
   "2027": {
-   "n": 305,
-   "aciertos": 188,
-   "acierto": 0.6164,
+   "n": 317,
+   "aciertos": 190,
+   "acierto": 0.5994,
    "ic": [
-    0.5607,
-    0.6692
+    0.5445,
+    0.6518
    ],
-   "brier": 0.2327
+   "brier": 0.2356
   }
  },
  "fases": {
   "regular": {
-   "n": 1617,
-   "aciertos": 893,
-   "acierto": 0.5523,
+   "n": 1629,
+   "aciertos": 895,
+   "acierto": 0.5494,
    "ic": [
-    0.5279,
-    0.5763
+    0.5252,
+    0.5734
    ],
-   "brier": 0.2462
+   "brier": 0.2467
   },
   "playoff": {
    "n": 82,
@@ -137,27 +137,135 @@
  },
  "elige": {
   "local": {
-   "n": 1416,
-   "aciertos": 772,
-   "acierto": 0.5452,
+   "n": 1427,
+   "aciertos": 773,
+   "acierto": 0.5417,
    "ic": [
-    0.5192,
-    0.571
+    0.5158,
+    0.5674
    ],
-   "brier": 0.2473
+   "brier": 0.2479
   },
   "visitante": {
-   "n": 283,
-   "aciertos": 164,
-   "acierto": 0.5795,
+   "n": 284,
+   "aciertos": 165,
+   "acierto": 0.581,
    "ic": [
-    0.5213,
-    0.6356
+    0.5229,
+    0.6369
    ],
-   "brier": 0.2408
+   "brier": 0.2406
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-15T03:00:00Z",
+   "local": "Los Angeles Kings",
+   "visitante": "Calgary Flames",
+   "marcador": "2-3",
+   "fav": "Los Angeles Kings",
+   "pp": 0.5514,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-15T03:00:00Z",
+   "local": "Anaheim Ducks",
+   "visitante": "New York Islanders",
+   "marcador": "2-6",
+   "fav": "Anaheim Ducks",
+   "pp": 0.5996,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-15T02:00:00Z",
+   "local": "Utah Mammoth",
+   "visitante": "San Jose Sharks",
+   "marcador": "5-6",
+   "fav": "Utah Mammoth",
+   "pp": 0.6337,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-15T01:00:00Z",
+   "local": "Dallas Stars",
+   "visitante": "Buffalo Sabres",
+   "marcador": "2-0",
+   "fav": "Dallas Stars",
+   "pp": 0.5888,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-15T00:00:00Z",
+   "local": "St. Louis Blues",
+   "visitante": "Florida Panthers",
+   "marcador": "1-4",
+   "fav": "St. Louis Blues",
+   "pp": 0.5632,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-15T00:00:00Z",
+   "local": "Columbus Blue Jackets",
+   "visitante": "Philadelphia Flyers",
+   "marcador": "3-4",
+   "fav": "Columbus Blue Jackets",
+   "pp": 0.5535,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-15T00:00:00Z",
+   "local": "Washington Capitals",
+   "visitante": "New Jersey Devils",
+   "marcador": "4-7",
+   "fav": "Washington Capitals",
+   "pp": 0.5723,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-15T00:00:00Z",
+   "local": "Pittsburgh Penguins",
+   "visitante": "Ottawa Senators",
+   "marcador": "1-4",
+   "fav": "Pittsburgh Penguins",
+   "pp": 0.5443,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-15T00:00:00Z",
+   "local": "Tampa Bay Lightning",
+   "visitante": "Detroit Red Wings",
+   "marcador": "0-2",
+   "fav": "Tampa Bay Lightning",
+   "pp": 0.6877,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-15T00:00:00Z",
+   "local": "Montreal Canadiens",
+   "visitante": "Colorado Avalanche",
+   "marcador": "1-4",
+   "fav": "Montreal Canadiens",
+   "pp": 0.5415,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-15T00:00:00Z",
+   "local": "Toronto Maple Leafs",
+   "visitante": "Edmonton Oilers",
+   "marcador": "0-1",
+   "fav": "Edmonton Oilers",
+   "pp": 0.5649,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-15T00:00:00Z",
+   "local": "Boston Bruins",
+   "visitante": "Minnesota Wild",
+   "marcador": "2-6",
+   "fav": "Boston Bruins",
+   "pp": 0.5289,
+   "ok": false
+  },
   {
    "fecha": "2026-11-14T20:30:00Z",
    "local": "Chicago Blackhawks",
@@ -274,114 +382,6 @@
    "fav": "Minnesota Wild",
    "pp": 0.5508,
    "ok": true
-  },
-  {
-   "fecha": "2026-11-13T00:00:00Z",
-   "local": "Boston Bruins",
-   "visitante": "Montreal Canadiens",
-   "marcador": "2-5",
-   "fav": "Boston Bruins",
-   "pp": 0.5975,
-   "ok": false
-  },
-  {
-   "fecha": "2026-11-12T17:00:00Z",
-   "local": "Seattle Kraken",
-   "visitante": "Carolina Hurricanes",
-   "marcador": "1-4",
-   "fav": "Carolina Hurricanes",
-   "pp": 0.6743,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-12T03:00:00Z",
-   "local": "San Jose Sharks",
-   "visitante": "Pittsburgh Penguins",
-   "marcador": "2-3",
-   "fav": "Pittsburgh Penguins",
-   "pp": 0.516,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-12T03:00:00Z",
-   "local": "Anaheim Ducks",
-   "visitante": "Nashville Predators",
-   "marcador": "2-4",
-   "fav": "Anaheim Ducks",
-   "pp": 0.6211,
-   "ok": false
-  },
-  {
-   "fecha": "2026-11-12T02:30:00Z",
-   "local": "Vegas Golden Knights",
-   "visitante": "Utah Mammoth",
-   "marcador": "5-3",
-   "fav": "Vegas Golden Knights",
-   "pp": 0.6097,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-12T02:00:00Z",
-   "local": "Edmonton Oilers",
-   "visitante": "Philadelphia Flyers",
-   "marcador": "3-2",
-   "fav": "Edmonton Oilers",
-   "pp": 0.6488,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-12T00:30:00Z",
-   "local": "Calgary Flames",
-   "visitante": "New York Rangers",
-   "marcador": "1-3",
-   "fav": "Calgary Flames",
-   "pp": 0.5537,
-   "ok": false
-  },
-  {
-   "fecha": "2026-11-12T00:00:00Z",
-   "local": "Buffalo Sabres",
-   "visitante": "Tampa Bay Lightning",
-   "marcador": "3-8",
-   "fav": "Buffalo Sabres",
-   "pp": 0.5309,
-   "ok": false
-  },
-  {
-   "fecha": "2026-11-11T03:00:00Z",
-   "local": "Los Angeles Kings",
-   "visitante": "Nashville Predators",
-   "marcador": "0-3",
-   "fav": "Los Angeles Kings",
-   "pp": 0.5497,
-   "ok": false
-  },
-  {
-   "fecha": "2026-11-11T01:00:00Z",
-   "local": "St. Louis Blues",
-   "visitante": "Detroit Red Wings",
-   "marcador": "3-2",
-   "fav": "St. Louis Blues",
-   "pp": 0.5996,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-11T00:30:00Z",
-   "local": "Columbus Blue Jackets",
-   "visitante": "Florida Panthers",
-   "marcador": "1-4",
-   "fav": "Columbus Blue Jackets",
-   "pp": 0.561,
-   "ok": false
-  },
-  {
-   "fecha": "2026-11-11T00:00:00Z",
-   "local": "Winnipeg Jets",
-   "visitante": "New Jersey Devils",
-   "marcador": "4-2",
-   "fav": "Winnipeg Jets",
-   "pp": 0.5418,
-   "ok": true
   }
  ],
  "motor": {
@@ -396,16 +396,16 @@
   },
   "sd": 2.609,
   "motor": {
-   "n": 1699,
-   "acierto": 0.5509,
-   "brier": 0.2463,
-   "logloss": 0.6856
+   "n": 1711,
+   "acierto": 0.5482,
+   "brier": 0.2467,
+   "logloss": 0.6865
   },
   "elo_basico": {
-   "n": 1699,
-   "acierto": 0.5515,
-   "brier": 0.2466,
-   "logloss": 0.6863
+   "n": 1711,
+   "acierto": 0.5488,
+   "brier": 0.2471,
+   "logloss": 0.6873
   },
   "escalas": {
    "temporada": true,
@@ -415,8 +415,8 @@
    "descanso": true
   },
   "local": {
-   "n": 1699,
-   "acierto": 0.5244
+   "n": 1711,
+   "acierto": 0.5213
   },
   "temporadas_prueba": [
    2026,

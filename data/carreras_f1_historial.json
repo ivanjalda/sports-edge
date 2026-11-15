@@ -1,3 +1,146 @@
 {
- "predicciones": []
+ "predicciones": [
+  {
+   "id": "f1-2026-21",
+   "nombre": "Las Vegas Grand Prix",
+   "fecha": "2026-11-22T04:00:00Z",
+   "tipo": "previa",
+   "creada": "2026-11-15 14:37 UTC",
+   "fav": {
+    "id": "max_verstappen",
+    "n": "Max Verstappen",
+    "pw": 0.427
+   },
+   "pilotos": [
+    {
+     "id": "max_verstappen",
+     "n": "Max Verstappen",
+     "pw": 0.427,
+     "pp": 0.805
+    },
+    {
+     "id": "antonelli",
+     "n": "Andrea Kimi Antonelli",
+     "pw": 0.1753,
+     "pp": 0.5715
+    },
+    {
+     "id": "leclerc",
+     "n": "Charles Leclerc",
+     "pw": 0.1058,
+     "pp": 0.399
+    },
+    {
+     "id": "norris",
+     "n": "Lando Norris",
+     "pw": 0.1023,
+     "pp": 0.384
+    },
+    {
+     "id": "hamilton",
+     "n": "Lewis Hamilton",
+     "pw": 0.0803,
+     "pp": 0.3263
+    },
+    {
+     "id": "russell",
+     "n": "George Russell",
+     "pw": 0.0407,
+     "pp": 0.1857
+    },
+    {
+     "id": "hadjar",
+     "n": "Isack Hadjar",
+     "pw": 0.037,
+     "pp": 0.1822
+    },
+    {
+     "id": "piastri",
+     "n": "Oscar Piastri",
+     "pw": 0.0115,
+     "pp": 0.0502
+    },
+    {
+     "id": "lawson",
+     "n": "Liam Lawson",
+     "pw": 0.01,
+     "pp": 0.0512
+    },
+    {
+     "id": "arvid_lindblad",
+     "n": "Arvid Lindblad",
+     "pw": 0.0035,
+     "pp": 0.0147
+    },
+    {
+     "id": "hulkenberg",
+     "n": "Nico Hülkenberg",
+     "pw": 0.0018,
+     "pp": 0.0088
+    },
+    {
+     "id": "gasly",
+     "n": "Pierre Gasly",
+     "pw": 0.0017,
+     "pp": 0.0043
+    },
+    {
+     "id": "colapinto",
+     "n": "Franco Colapinto",
+     "pw": 0.0017,
+     "pp": 0.003
+    },
+    {
+     "id": "bortoleto",
+     "n": "Gabriel Bortoleto",
+     "pw": 0.0005,
+     "pp": 0.0047
+    },
+    {
+     "id": "rafael_camara",
+     "n": "Rafael Camara",
+     "pw": 0.0003,
+     "pp": 0.0025
+    },
+    {
+     "id": "alonso",
+     "n": "Fernando Alonso",
+     "pw": 0.0002,
+     "pp": 0.0028
+    },
+    {
+     "id": "stroll",
+     "n": "Lance Stroll",
+     "pw": 0.0002,
+     "pp": 0.0008
+    },
+    {
+     "id": "albon",
+     "n": "Alexander Albon",
+     "pw": 0.0002,
+     "pp": 0.0007
+    },
+    {
+     "id": "bearman",
+     "n": "Oliver Bearman",
+     "pw": 0.0,
+     "pp": 0.0018
+    },
+    {
+     "id": "sainz",
+     "n": "Carlos Sainz",
+     "pw": 0.0,
+     "pp": 0.0008
+    },
+    {
+     "id": "perez",
+     "n": "Sergio Pérez",
+     "pw": 0.0,
+     "pp": 0.0
+    }
+   ],
+   "datos_completos": true,
+   "resultado": null
+  }
+ ]
 }

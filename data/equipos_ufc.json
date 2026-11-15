@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-11-15 02:08 UTC",
+ "actualizado": "2026-11-15 14:36 UTC",
  "liga": "UFC",
- "datos_hasta": "2026-11-15T00:00:00Z",
+ "datos_hasta": "2026-11-15T02:00:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
@@ -9,59 +9,8 @@
  },
  "con_cuotas": true,
  "proximo": null,
- "predicciones": [
-  {
-   "id": "401922640",
-   "fecha": "2026-11-15T02:00:00Z",
-   "local": "Uroš Medić",
-   "visitante": "Kevin Holland",
-   "neutral": true,
-   "playoff": false,
-   "pl": 0.6012,
-   "pv": 0.3988,
-   "elo_l": 1581,
-   "elo_v": 1509,
-   "bal_l": [
-    2,
-    0
-   ],
-   "bal_v": [
-    1,
-    0
-   ],
-   "creada": "2026-11-13 02:41 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 2.44,
-      "casa": "Betfair"
-     },
-     "L": {
-      "c": 1.68,
-      "casa": "Coolbet"
-     }
-    },
-    "mercado": {
-     "L": 0.5874,
-     "V": 0.4126
-    },
-    "casas": 14,
-    "ev": {
-     "L": 0.01,
-     "V": -0.0269
-    },
-    "valor": [],
-    "actualizado": "2026-11-14 14:02 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-13 02:41 UTC",
-    "valor": [],
-    "L": 1.68,
-    "V": 2.46
-   }
-  },
+ "predicciones": [],
+ "recientes": [
   {
    "id": "401922639",
    "fecha": "2026-11-15T02:00:00Z",
@@ -82,8 +31,8 @@
     0
    ],
    "creada": "2026-11-13 02:41 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "1-0",
    "cuota": {
     "mejor": {
      "L": {
@@ -134,8 +83,8 @@
     0
    ],
    "creada": "2026-11-13 02:41 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "1-0",
    "cuota": {
     "mejor": {
      "L": {
@@ -165,9 +114,7 @@
     "L": 1.54,
     "V": 2.8
    }
-  }
- ],
- "recientes": [
+  },
   {
    "id": "401931773",
    "fecha": "2026-11-15T00:00:00Z",
@@ -483,14 +430,14 @@
  ],
  "directo": {
   "total": 9,
-  "resueltas": 6,
-  "aciertos": 3,
-  "acierto": 0.5,
+  "resueltas": 8,
+  "aciertos": 5,
+  "acierto": 0.625,
   "ic": [
-   0.1876,
-   0.8124
+   0.3057,
+   0.8632
   ],
-  "brier": 0.2587,
+  "brier": 0.2406,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -605,6 +552,18 @@
    "p": 0
   },
   {
+   "equipo": "Ciryl Gane",
+   "elo": 1621,
+   "g": 2,
+   "p": 0
+  },
+  {
+   "equipo": "Caio Borralho",
+   "elo": 1621,
+   "g": 2,
+   "p": 0
+  },
+  {
    "equipo": "Nassourdine Imavov",
    "elo": 1619,
    "g": 0,
@@ -709,18 +668,6 @@
   {
    "equipo": "Chris Padilla",
    "elo": 1603,
-   "g": 1,
-   "p": 0
-  },
-  {
-   "equipo": "Ciryl Gane",
-   "elo": 1602,
-   "g": 1,
-   "p": 0
-  },
-  {
-   "equipo": "Caio Borralho",
-   "elo": 1601,
    "g": 1,
    "p": 0
   },
@@ -840,6 +787,12 @@
   },
   {
    "equipo": "Sergei Pavlovich",
+   "elo": 1591,
+   "g": 1,
+   "p": 0
+  },
+  {
+   "equipo": "Kayla Harrison",
    "elo": 1591,
    "g": 1,
    "p": 0
@@ -1101,12 +1054,6 @@
    "elo": 1574,
    "g": 1,
    "p": 1
-  },
-  {
-   "equipo": "Kayla Harrison",
-   "elo": 1571,
-   "g": 0,
-   "p": 0
   },
   {
    "equipo": "Youssef Zalal",
@@ -1379,12 +1326,6 @@
    "p": 1
   },
   {
-   "equipo": "Yousri Belgaroui",
-   "elo": 1557,
-   "g": 2,
-   "p": 0
-  },
-  {
    "equipo": "Raoni Barcelos",
    "elo": 1557,
    "g": 1,
@@ -1458,12 +1399,6 @@
   },
   {
    "equipo": "Carli Judice",
-   "elo": 1551,
-   "g": 2,
-   "p": 0
-  },
-  {
-   "equipo": "Josh Hokit",
    "elo": 1551,
    "g": 2,
    "p": 0
@@ -1775,6 +1710,12 @@
    "p": 0
   },
   {
+   "equipo": "Yousri Belgaroui",
+   "elo": 1538,
+   "g": 2,
+   "p": 1
+  },
+  {
    "equipo": "Mohammed Usman",
    "elo": 1538,
    "g": 0,
@@ -1823,12 +1764,6 @@
    "p": 1
   },
   {
-   "equipo": "Norma Dumont",
-   "elo": 1536,
-   "g": 0,
-   "p": 2
-  },
-  {
    "equipo": "Drakkar Klose",
    "elo": 1536,
    "g": 0,
@@ -1851,6 +1786,12 @@
    "elo": 1535,
    "g": 1,
    "p": 1
+  },
+  {
+   "equipo": "Norma Dumont",
+   "elo": 1534,
+   "g": 0,
+   "p": 2
   },
   {
    "equipo": "Nazim Sadykhov",
@@ -1887,6 +1828,12 @@
    "elo": 1533,
    "g": 0,
    "p": 2
+  },
+  {
+   "equipo": "Josh Hokit",
+   "elo": 1532,
+   "g": 2,
+   "p": 1
   },
   {
    "equipo": "Renato Moicano",
@@ -1955,6 +1902,12 @@
    "p": 1
   },
   {
+   "equipo": "Amanda Nunes",
+   "elo": 1529,
+   "g": 0,
+   "p": 1
+  },
+  {
    "equipo": "Chris Gutierrez",
    "elo": 1529,
    "g": 0,
@@ -2015,12 +1968,6 @@
    "p": 1
   },
   {
-   "equipo": "Irene Aldana",
-   "elo": 1527,
-   "g": 0,
-   "p": 0
-  },
-  {
    "equipo": "Charles Radtke",
    "elo": 1527,
    "g": 1,
@@ -2030,12 +1977,6 @@
    "equipo": "Dione Barbosa",
    "elo": 1527,
    "g": 1,
-   "p": 0
-  },
-  {
-   "equipo": "Raquel Pennington",
-   "elo": 1527,
-   "g": 0,
    "p": 0
   },
   {
@@ -2095,6 +2036,12 @@
   {
    "equipo": "Joanne Wood",
    "elo": 1526,
+   "g": 0,
+   "p": 0
+  },
+  {
+   "equipo": "Raquel Pennington",
+   "elo": 1525,
    "g": 0,
    "p": 0
   },
@@ -2483,12 +2430,6 @@
    "p": 0
   },
   {
-   "equipo": "Julianna Peña",
-   "elo": 1510,
-   "g": 0,
-   "p": 0
-  },
-  {
    "equipo": "Trey Waters",
    "elo": 1510,
    "g": 0,
@@ -2561,6 +2502,12 @@
    "p": 1
   },
   {
+   "equipo": "Irene Aldana",
+   "elo": 1508,
+   "g": 0,
+   "p": 0
+  },
+  {
    "equipo": "Otari Tanzilovi",
    "elo": 1508,
    "g": 1,
@@ -2577,12 +2524,6 @@
    "elo": 1508,
    "g": 2,
    "p": 0
-  },
-  {
-   "equipo": "Karol Rosa",
-   "elo": 1508,
-   "g": 0,
-   "p": 1
   },
   {
    "equipo": "Ketlen Souza",
@@ -2619,6 +2560,12 @@
    "elo": 1506,
    "g": 0,
    "p": 0
+  },
+  {
+   "equipo": "Karol Rosa",
+   "elo": 1506,
+   "g": 0,
+   "p": 1
   },
   {
    "equipo": "Gabe Green",
@@ -2663,13 +2610,13 @@
    "p": 1
   },
   {
-   "equipo": "Anthony Wint",
+   "equipo": "Luis Felipe Dias",
    "elo": 1505,
    "g": 0,
    "p": 0
   },
   {
-   "equipo": "Luis Felipe Dias",
+   "equipo": "Anthony Wint",
    "elo": 1505,
    "g": 0,
    "p": 0
@@ -3113,6 +3060,12 @@
    "p": 1
   },
   {
+   "equipo": "Julianna Peña",
+   "elo": 1491,
+   "g": 0,
+   "p": 0
+  },
+  {
    "equipo": "HyunSung Park",
    "elo": 1491,
    "g": 0,
@@ -3299,13 +3252,13 @@
    "p": 0
   },
   {
-   "equipo": "Holly Holm",
+   "equipo": "Silvana Gomez Juarez",
    "elo": 1484,
    "g": 0,
    "p": 0
   },
   {
-   "equipo": "Silvana Gomez Juarez",
+   "equipo": "Holly Holm",
    "elo": 1484,
    "g": 0,
    "p": 0
@@ -3461,16 +3414,16 @@
    "p": 1
   },
   {
-   "equipo": "Ding Meng",
-   "elo": 1481,
-   "g": 0,
-   "p": 1
-  },
-  {
    "equipo": "Nick Maximov",
    "elo": 1481,
    "g": 0,
    "p": 0
+  },
+  {
+   "equipo": "Ding Meng",
+   "elo": 1481,
+   "g": 0,
+   "p": 1
   },
   {
    "equipo": "Blagoy Ivanov",
@@ -3588,6 +3541,12 @@
   },
   {
    "equipo": "JeongYeong Lee",
+   "elo": 1478,
+   "g": 0,
+   "p": 1
+  },
+  {
+   "equipo": "Bilal Hasan",
    "elo": 1478,
    "g": 0,
    "p": 1
@@ -3717,6 +3676,12 @@
    "elo": 1475,
    "g": 0,
    "p": 1
+  },
+  {
+   "equipo": "Luis Gurule",
+   "elo": 1475,
+   "g": 2,
+   "p": 2
   },
   {
    "equipo": "Kurt Holobaugh",
@@ -4511,12 +4476,6 @@
    "p": 0
   },
   {
-   "equipo": "Luis Gurule",
-   "elo": 1448,
-   "g": 1,
-   "p": 2
-  },
-  {
    "equipo": "Edson Barboza",
    "elo": 1447,
    "g": 0,
@@ -4697,19 +4656,25 @@
    "p": 0
   },
   {
-   "equipo": "Denys Bondar",
-   "elo": 1442,
-   "g": 0,
-   "p": 0
-  },
-  {
    "equipo": "Ramona Pascual",
    "elo": 1442,
    "g": 0,
    "p": 0
   },
   {
+   "equipo": "Jessica-Rose Clark",
+   "elo": 1442,
+   "g": 0,
+   "p": 0
+  },
+  {
    "equipo": "Jay Perrin",
+   "elo": 1442,
+   "g": 0,
+   "p": 0
+  },
+  {
+   "equipo": "Denys Bondar",
    "elo": 1442,
    "g": 0,
    "p": 0
@@ -4722,12 +4687,6 @@
   },
   {
    "equipo": "David Dvorak",
-   "elo": 1442,
-   "g": 0,
-   "p": 0
-  },
-  {
-   "equipo": "Jessica-Rose Clark",
    "elo": 1442,
    "g": 0,
    "p": 0

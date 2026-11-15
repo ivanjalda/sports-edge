@@ -1,97 +1,45 @@
 {
- "actualizado": "2026-11-15 02:08 UTC",
+ "actualizado": "2026-11-15 14:36 UTC",
  "liga": "NHL",
- "datos_hasta": "2026-11-14T20:30:00Z",
+ "datos_hasta": "2026-11-15T03:00:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": true,
- "proximo": "2026-11-15T03:00:00Z",
+ "proximo": "2026-11-16T00:30:00Z",
  "predicciones": [
   {
-   "id": "401892709",
-   "fecha": "2026-11-15T00:00:00Z",
-   "local": "Boston Bruins",
-   "visitante": "Minnesota Wild",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5424,
-   "pv": 0.4576,
-   "elo_l": 1537,
-   "elo_v": 1558,
-   "bal_l": [
-    12,
-    5
-   ],
-   "bal_v": [
-    13,
-    7
-   ],
-   "creada": "2026-11-13 00:58 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "L": {
-      "c": 2.65,
-      "casa": "Unibet (SE)"
-     },
-     "V": {
-      "c": 2.44,
-      "casa": "1xBet"
-     }
-    },
-    "mercado": {
-     "L": 0.4823,
-     "V": 0.5177
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.4374,
-     "V": 0.1165
-    },
-    "valor": [],
-    "actualizado": "2026-11-14 14:02 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-13 19:24 UTC",
-    "valor": [],
-    "L": 2.75,
-    "V": 2.37
-   }
-  },
-  {
-   "id": "401892710",
-   "fecha": "2026-11-15T00:00:00Z",
-   "local": "Toronto Maple Leafs",
+   "id": "401892721",
+   "fecha": "2026-11-16T00:30:00Z",
+   "local": "Philadelphia Flyers",
    "visitante": "Edmonton Oilers",
    "neutral": false,
    "playoff": false,
-   "pl": 0.4695,
-   "pv": 0.5305,
-   "elo_l": 1472,
+   "pl": 0.4858,
+   "pv": 0.5142,
+   "elo_l": 1484,
    "elo_v": 1543,
    "bal_l": [
-    7,
-    11
+    5,
+    15
    ],
    "bal_v": [
     14,
     5
    ],
-   "creada": "2026-11-13 00:58 UTC",
+   "creada": "2026-11-14 02:42 UTC",
    "resultado": null,
    "marcador": null,
    "cuota": {
     "mejor": {
      "V": {
-      "c": 2.11,
+      "c": 2.14,
       "casa": "1xBet"
      },
      "L": {
-      "c": 3.05,
+      "c": 3.15,
       "casa": "Unibet (SE)"
      }
     },
@@ -101,247 +49,39 @@
     },
     "casas": 23,
     "ev": {
-     "L": 0.432,
-     "V": 0.1194
+     "L": 0.5303,
+     "V": 0.1004
     },
     "valor": [],
-    "actualizado": "2026-11-14 14:02 UTC"
+    "actualizado": "2026-11-15 14:36 UTC"
    },
    "cuota_guardada": {
-    "fecha": "2026-11-13 19:24 UTC",
+    "fecha": "2026-11-15 14:36 UTC",
     "valor": [],
-    "L": 3.2,
-    "V": 2.1
+    "L": 3.15,
+    "V": 2.14
    }
   },
   {
-   "id": "401892711",
-   "fecha": "2026-11-15T00:00:00Z",
-   "local": "Montreal Canadiens",
-   "visitante": "Colorado Avalanche",
+   "id": "401892722",
+   "fecha": "2026-11-16T01:00:00Z",
+   "local": "Dallas Stars",
+   "visitante": "Florida Panthers",
    "neutral": false,
    "playoff": false,
-   "pl": 0.5304,
-   "pv": 0.4696,
-   "elo_l": 1539,
-   "elo_v": 1567,
+   "pl": 0.5966,
+   "pv": 0.4034,
+   "elo_l": 1532,
+   "elo_v": 1514,
    "bal_l": [
-    10,
-    7
-   ],
-   "bal_v": [
     10,
     8
    ],
-   "creada": "2026-11-13 00:58 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 2.71,
-      "casa": "1xBet"
-     },
-     "L": {
-      "c": 2.35,
-      "casa": "Unibet (SE)"
-     }
-    },
-    "mercado": {
-     "L": 0.5323,
-     "V": 0.4677
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.2464,
-     "V": 0.2726
-    },
-    "valor": [],
-    "actualizado": "2026-11-14 14:02 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-13 19:24 UTC",
-    "valor": [],
-    "L": 2.48,
-    "V": 2.51
-   }
-  },
-  {
-   "id": "401892712",
-   "fecha": "2026-11-15T00:00:00Z",
-   "local": "Tampa Bay Lightning",
-   "visitante": "Detroit Red Wings",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.681,
-   "pv": 0.319,
-   "elo_l": 1563,
-   "elo_v": 1482,
-   "bal_l": [
-    12,
-    6
-   ],
    "bal_v": [
-    7,
-    12
-   ],
-   "creada": "2026-11-13 00:58 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 4.1,
-      "casa": "Unibet (SE)"
-     },
-     "L": {
-      "c": 1.82,
-      "casa": "1xBet"
-     }
-    },
-    "mercado": {
-     "L": 0.6725,
-     "V": 0.3275
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.2394,
-     "V": 0.3079
-    },
-    "valor": [],
-    "actualizado": "2026-11-14 14:02 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-13 19:24 UTC",
-    "valor": [],
-    "L": 1.82,
-    "V": 4.1
-   }
-  },
-  {
-   "id": "401892713",
-   "fecha": "2026-11-15T00:00:00Z",
-   "local": "Pittsburgh Penguins",
-   "visitante": "Ottawa Senators",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.519,
-   "pv": 0.481,
-   "elo_l": 1489,
-   "elo_v": 1526,
-   "bal_l": [
-    6,
-    12
-   ],
-   "bal_v": [
-    11,
-    8
-   ],
-   "creada": "2026-11-13 00:58 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 2.28,
-      "casa": "Unibet (SE)"
-     },
-     "L": {
-      "c": 2.85,
-      "casa": "Unibet (SE)"
-     }
-    },
-    "mercado": {
-     "L": 0.4512,
-     "V": 0.5488
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.4792,
-     "V": 0.0967
-    },
-    "valor": [],
-    "actualizado": "2026-11-14 14:02 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-13 19:24 UTC",
-    "valor": [],
-    "L": 2.72,
-    "V": 2.38
-   }
-  },
-  {
-   "id": "401892714",
-   "fecha": "2026-11-15T00:00:00Z",
-   "local": "Washington Capitals",
-   "visitante": "New Jersey Devils",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5835,
-   "pv": 0.4165,
-   "elo_l": 1528,
-   "elo_v": 1520,
-   "bal_l": [
     10,
-    6
-   ],
-   "bal_v": [
-    13,
-    6
-   ],
-   "creada": "2026-11-13 00:58 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 2.41,
-      "casa": "1xBet"
-     },
-     "L": {
-      "c": 2.7,
-      "casa": "Unibet (SE)"
-     }
-    },
-    "mercado": {
-     "L": 0.4774,
-     "V": 0.5226
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.5755,
-     "V": 0.0038
-    },
-    "valor": [],
-    "actualizado": "2026-11-14 14:02 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-13 19:24 UTC",
-    "valor": [],
-    "L": 2.63,
-    "V": 2.42
-   }
-  },
-  {
-   "id": "401892715",
-   "fecha": "2026-11-15T00:00:00Z",
-   "local": "Columbus Blue Jackets",
-   "visitante": "Philadelphia Flyers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5868,
-   "pv": 0.4132,
-   "elo_l": 1494,
-   "elo_v": 1484,
-   "bal_l": [
-    7,
     9
    ],
-   "bal_v": [
-    5,
-    15
-   ],
-   "creada": "2026-11-13 00:58 UTC",
+   "creada": "2026-11-14 02:42 UTC",
    "resultado": null,
    "marcador": null,
    "cuota": {
@@ -351,185 +91,233 @@
       "casa": "1xBet"
      },
      "V": {
-      "c": 2.95,
-      "casa": "Unibet (SE)"
-     }
-    },
-    "mercado": {
-     "L": 0.5577,
-     "V": 0.4423
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.3203,
-     "V": 0.2189
-    },
-    "valor": [],
-    "actualizado": "2026-11-14 14:02 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-13 19:24 UTC",
-    "valor": [],
-    "L": 2.21,
-    "V": 2.95
-   }
-  },
-  {
-   "id": "401892716",
-   "fecha": "2026-11-15T00:00:00Z",
-   "local": "St. Louis Blues",
-   "visitante": "Florida Panthers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5617,
-   "pv": 0.4383,
-   "elo_l": 1506,
-   "elo_v": 1512,
-   "bal_l": [
-    8,
-    10
-   ],
-   "bal_v": [
-    9,
-    9
-   ],
-   "creada": "2026-11-13 00:58 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 2.48,
-      "casa": "Unibet (SE)"
-     },
-     "L": {
-      "c": 2.61,
+      "c": 2.85,
       "casa": "1xBet"
      }
     },
     "mercado": {
-     "L": 0.4882,
-     "V": 0.5118
+     "L": 0.5544,
+     "V": 0.4456
     },
     "casas": 23,
     "ev": {
-     "L": 0.466,
-     "V": 0.087
+     "L": 0.3424,
+     "V": 0.1497
     },
     "valor": [],
-    "actualizado": "2026-11-14 14:02 UTC"
+    "actualizado": "2026-11-15 14:36 UTC"
    },
    "cuota_guardada": {
-    "fecha": "2026-11-13 19:24 UTC",
+    "fecha": "2026-11-15 14:36 UTC",
     "valor": [],
-    "L": 2.63,
-    "V": 2.48
+    "L": 2.25,
+    "V": 2.85
    }
   },
   {
-   "id": "401892717",
-   "fecha": "2026-11-15T01:00:00Z",
-   "local": "Dallas Stars",
-   "visitante": "Buffalo Sabres",
+   "id": "401892723",
+   "fecha": "2026-11-16T01:00:00Z",
+   "local": "Anaheim Ducks",
+   "visitante": "Calgary Flames",
    "neutral": false,
    "playoff": false,
-   "pl": 0.5954,
-   "pv": 0.4046,
-   "elo_l": 1540,
-   "elo_v": 1523,
+   "pl": 0.6106,
+   "pv": 0.3894,
+   "elo_l": 1490,
+   "elo_v": 1462,
    "bal_l": [
     10,
+    9
+   ],
+   "bal_v": [
+    8,
+    11
+   ],
+   "creada": "2026-11-14 02:42 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 2.14,
+      "casa": "1xBet"
+     },
+     "V": {
+      "c": 3.15,
+      "casa": "Unibet (SE)"
+     }
+    },
+    "mercado": {
+     "L": 0.5837,
+     "V": 0.4163
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.3067,
+     "V": 0.2266
+    },
+    "valor": [],
+    "actualizado": "2026-11-15 14:36 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-15 14:36 UTC",
+    "valor": [],
+    "L": 2.14,
+    "V": 3.15
+   }
+  },
+  {
+   "id": "401892724",
+   "fecha": "2026-11-16T02:00:00Z",
+   "local": "Vegas Golden Knights",
+   "visitante": "Vancouver Canucks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7572,
+   "pv": 0.2428,
+   "elo_l": 1544,
+   "elo_v": 1397,
+   "bal_l": [
+    12,
     7
    ],
    "bal_v": [
-    8,
-    10
+    2,
+    17
    ],
-   "creada": "2026-11-13 01:24 UTC",
+   "creada": "2026-11-14 02:42 UTC",
    "resultado": null,
    "marcador": null,
    "cuota": {
     "mejor": {
      "V": {
-      "c": 2.9,
-      "casa": "Unibet (SE)"
+      "c": 6.7,
+      "casa": "Tipico"
      },
      "L": {
-      "c": 2.23,
+      "c": 1.46,
       "casa": "1xBet"
      }
     },
     "mercado": {
-     "L": 0.5592,
-     "V": 0.4408
+     "L": 0.7945,
+     "V": 0.2055
     },
     "casas": 23,
     "ev": {
-     "L": 0.3277,
-     "V": 0.1733
+     "L": 0.1055,
+     "V": 0.6268
     },
     "valor": [],
-    "actualizado": "2026-11-14 14:02 UTC"
+    "actualizado": "2026-11-15 14:36 UTC"
    },
    "cuota_guardada": {
-    "fecha": "2026-11-13 19:24 UTC",
+    "fecha": "2026-11-15 14:36 UTC",
     "valor": [],
-    "L": 2.1,
-    "V": 3.1
+    "L": 1.46,
+    "V": 6.7
    }
   },
   {
-   "id": "401892718",
-   "fecha": "2026-11-15T02:00:00Z",
-   "local": "Utah Mammoth",
-   "visitante": "San Jose Sharks",
+   "id": "401892725",
+   "fecha": "2026-11-16T02:00:00Z",
+   "local": "San Jose Sharks",
+   "visitante": "Nashville Predators",
    "neutral": false,
    "playoff": false,
-   "pl": 0.6637,
-   "pv": 0.3363,
-   "elo_l": 1511,
-   "elo_v": 1443,
+   "pl": 0.4858,
+   "pv": 0.5142,
+   "elo_l": 1443,
+   "elo_v": 1503,
    "bal_l": [
-    10,
-    9
-   ],
-   "bal_v": [
     8,
     13
    ],
-   "creada": "2026-11-13 02:27 UTC",
+   "bal_v": [
+    10,
+    9
+   ],
+   "creada": "2026-11-14 02:42 UTC",
    "resultado": null,
    "marcador": null,
    "cuota": {
     "mejor": {
      "V": {
-      "c": 3.75,
-      "casa": "LeoVegas (SE)"
+      "c": 2.01,
+      "casa": "1xBet"
      },
      "L": {
-      "c": 1.87,
+      "c": 3.25,
       "casa": "1xBet"
      }
     },
     "mercado": {
-     "L": 0.651,
-     "V": 0.349
+     "L": 0.3889,
+     "V": 0.6111
     },
     "casas": 23,
     "ev": {
-     "L": 0.2411,
-     "V": 0.2611
+     "L": 0.5789,
+     "V": 0.0335
     },
     "valor": [],
-    "actualizado": "2026-11-14 14:02 UTC"
+    "actualizado": "2026-11-15 14:36 UTC"
    },
    "cuota_guardada": {
-    "fecha": "2026-11-13 19:24 UTC",
+    "fecha": "2026-11-15 14:36 UTC",
     "valor": [],
-    "L": 1.93,
-    "V": 3.95
+    "L": 3.25,
+    "V": 2.01
    }
   },
+  {
+   "id": "401892726",
+   "fecha": "2026-11-17T00:30:00Z",
+   "local": "New York Rangers",
+   "visitante": "Montreal Canadiens",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5181,
+   "pv": 0.4819,
+   "elo_l": 1506,
+   "elo_v": 1544,
+   "bal_l": [
+    12,
+    8
+   ],
+   "bal_v": [
+    11,
+    7
+   ],
+   "creada": "2026-11-15 02:08 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892727",
+   "fecha": "2026-11-17T02:30:00Z",
+   "local": "Utah Mammoth",
+   "visitante": "Vancouver Canucks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6942,
+   "pv": 0.3058,
+   "elo_l": 1505,
+   "elo_v": 1392,
+   "bal_l": [
+    10,
+    11
+   ],
+   "bal_v": [
+    2,
+    18
+   ],
+   "creada": "2026-11-15 14:36 UTC",
+   "resultado": null,
+   "marcador": null
+  }
+ ],
+ "recientes": [
   {
    "id": "401892719",
    "fecha": "2026-11-15T03:00:00Z",
@@ -550,8 +338,8 @@
     9
    ],
    "creada": "2026-11-13 04:21 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "2-6",
    "cuota": {
     "mejor": {
      "L": {
@@ -602,8 +390,8 @@
     11
    ],
    "creada": "2026-11-13 04:21 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "2-3",
    "cuota": {
     "mejor": {
      "V": {
@@ -635,145 +423,525 @@
    }
   },
   {
-   "id": "401892721",
-   "fecha": "2026-11-16T00:30:00Z",
-   "local": "Philadelphia Flyers",
+   "id": "401892718",
+   "fecha": "2026-11-15T02:00:00Z",
+   "local": "Utah Mammoth",
+   "visitante": "San Jose Sharks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6637,
+   "pv": 0.3363,
+   "elo_l": 1511,
+   "elo_v": 1443,
+   "bal_l": [
+    10,
+    9
+   ],
+   "bal_v": [
+    8,
+    13
+   ],
+   "creada": "2026-11-13 02:27 UTC",
+   "resultado": "V",
+   "marcador": "5-6",
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 3.75,
+      "casa": "LeoVegas (SE)"
+     },
+     "L": {
+      "c": 1.87,
+      "casa": "1xBet"
+     }
+    },
+    "mercado": {
+     "L": 0.651,
+     "V": 0.349
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.2411,
+     "V": 0.2611
+    },
+    "valor": [],
+    "actualizado": "2026-11-14 14:02 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 19:24 UTC",
+    "valor": [],
+    "L": 1.93,
+    "V": 3.95
+   }
+  },
+  {
+   "id": "401892717",
+   "fecha": "2026-11-15T01:00:00Z",
+   "local": "Dallas Stars",
+   "visitante": "Buffalo Sabres",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5954,
+   "pv": 0.4046,
+   "elo_l": 1540,
+   "elo_v": 1523,
+   "bal_l": [
+    10,
+    7
+   ],
+   "bal_v": [
+    8,
+    10
+   ],
+   "creada": "2026-11-13 01:24 UTC",
+   "resultado": "L",
+   "marcador": "2-0",
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 2.9,
+      "casa": "Unibet (SE)"
+     },
+     "L": {
+      "c": 2.23,
+      "casa": "1xBet"
+     }
+    },
+    "mercado": {
+     "L": 0.5592,
+     "V": 0.4408
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.3277,
+     "V": 0.1733
+    },
+    "valor": [],
+    "actualizado": "2026-11-14 14:02 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 19:24 UTC",
+    "valor": [],
+    "L": 2.1,
+    "V": 3.1
+   }
+  },
+  {
+   "id": "401892709",
+   "fecha": "2026-11-15T00:00:00Z",
+   "local": "Boston Bruins",
+   "visitante": "Minnesota Wild",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5424,
+   "pv": 0.4576,
+   "elo_l": 1537,
+   "elo_v": 1558,
+   "bal_l": [
+    12,
+    5
+   ],
+   "bal_v": [
+    13,
+    7
+   ],
+   "creada": "2026-11-13 00:58 UTC",
+   "resultado": "V",
+   "marcador": "2-6",
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 2.65,
+      "casa": "Unibet (SE)"
+     },
+     "V": {
+      "c": 2.44,
+      "casa": "1xBet"
+     }
+    },
+    "mercado": {
+     "L": 0.4823,
+     "V": 0.5177
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.4374,
+     "V": 0.1165
+    },
+    "valor": [],
+    "actualizado": "2026-11-14 14:02 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 19:24 UTC",
+    "valor": [],
+    "L": 2.75,
+    "V": 2.37
+   }
+  },
+  {
+   "id": "401892710",
+   "fecha": "2026-11-15T00:00:00Z",
+   "local": "Toronto Maple Leafs",
    "visitante": "Edmonton Oilers",
    "neutral": false,
    "playoff": false,
-   "pl": 0.4858,
-   "pv": 0.5142,
-   "elo_l": 1484,
+   "pl": 0.4695,
+   "pv": 0.5305,
+   "elo_l": 1472,
    "elo_v": 1543,
    "bal_l": [
-    5,
-    15
+    7,
+    11
    ],
    "bal_v": [
     14,
     5
    ],
-   "creada": "2026-11-14 02:42 UTC",
-   "resultado": null,
-   "marcador": null
+   "creada": "2026-11-13 00:58 UTC",
+   "resultado": "V",
+   "marcador": "0-1",
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 2.11,
+      "casa": "1xBet"
+     },
+     "L": {
+      "c": 3.05,
+      "casa": "Unibet (SE)"
+     }
+    },
+    "mercado": {
+     "L": 0.4184,
+     "V": 0.5816
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.432,
+     "V": 0.1194
+    },
+    "valor": [],
+    "actualizado": "2026-11-14 14:02 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 19:24 UTC",
+    "valor": [],
+    "L": 3.2,
+    "V": 2.1
+   }
   },
   {
-   "id": "401892722",
-   "fecha": "2026-11-16T01:00:00Z",
-   "local": "Dallas Stars",
-   "visitante": "Florida Panthers",
+   "id": "401892711",
+   "fecha": "2026-11-15T00:00:00Z",
+   "local": "Montreal Canadiens",
+   "visitante": "Colorado Avalanche",
    "neutral": false,
    "playoff": false,
-   "pl": 0.5966,
-   "pv": 0.4034,
-   "elo_l": 1532,
-   "elo_v": 1514,
+   "pl": 0.5304,
+   "pv": 0.4696,
+   "elo_l": 1539,
+   "elo_v": 1567,
    "bal_l": [
     10,
-    8
-   ],
-   "bal_v": [
-    10,
-    9
-   ],
-   "creada": "2026-11-14 02:42 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401892723",
-   "fecha": "2026-11-16T01:00:00Z",
-   "local": "Anaheim Ducks",
-   "visitante": "Calgary Flames",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6106,
-   "pv": 0.3894,
-   "elo_l": 1490,
-   "elo_v": 1462,
-   "bal_l": [
-    10,
-    9
-   ],
-   "bal_v": [
-    8,
-    11
-   ],
-   "creada": "2026-11-14 02:42 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401892724",
-   "fecha": "2026-11-16T02:00:00Z",
-   "local": "Vegas Golden Knights",
-   "visitante": "Vancouver Canucks",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7572,
-   "pv": 0.2428,
-   "elo_l": 1544,
-   "elo_v": 1397,
-   "bal_l": [
-    12,
     7
    ],
    "bal_v": [
-    2,
-    17
-   ],
-   "creada": "2026-11-14 02:42 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401892725",
-   "fecha": "2026-11-16T02:00:00Z",
-   "local": "San Jose Sharks",
-   "visitante": "Nashville Predators",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.4858,
-   "pv": 0.5142,
-   "elo_l": 1443,
-   "elo_v": 1503,
-   "bal_l": [
-    8,
-    13
-   ],
-   "bal_v": [
     10,
-    9
+    8
    ],
-   "creada": "2026-11-14 02:42 UTC",
-   "resultado": null,
-   "marcador": null
+   "creada": "2026-11-13 00:58 UTC",
+   "resultado": "V",
+   "marcador": "1-4",
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 2.71,
+      "casa": "1xBet"
+     },
+     "L": {
+      "c": 2.35,
+      "casa": "Unibet (SE)"
+     }
+    },
+    "mercado": {
+     "L": 0.5323,
+     "V": 0.4677
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.2464,
+     "V": 0.2726
+    },
+    "valor": [],
+    "actualizado": "2026-11-14 14:02 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 19:24 UTC",
+    "valor": [],
+    "L": 2.48,
+    "V": 2.51
+   }
   },
   {
-   "id": "401892726",
-   "fecha": "2026-11-17T00:30:00Z",
-   "local": "New York Rangers",
-   "visitante": "Montreal Canadiens",
+   "id": "401892712",
+   "fecha": "2026-11-15T00:00:00Z",
+   "local": "Tampa Bay Lightning",
+   "visitante": "Detroit Red Wings",
    "neutral": false,
    "playoff": false,
-   "pl": 0.5181,
-   "pv": 0.4819,
-   "elo_l": 1506,
-   "elo_v": 1544,
+   "pl": 0.681,
+   "pv": 0.319,
+   "elo_l": 1563,
+   "elo_v": 1482,
    "bal_l": [
     12,
-    8
+    6
+   ],
+   "bal_v": [
+    7,
+    12
+   ],
+   "creada": "2026-11-13 00:58 UTC",
+   "resultado": "V",
+   "marcador": "0-2",
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 4.1,
+      "casa": "Unibet (SE)"
+     },
+     "L": {
+      "c": 1.82,
+      "casa": "1xBet"
+     }
+    },
+    "mercado": {
+     "L": 0.6725,
+     "V": 0.3275
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.2394,
+     "V": 0.3079
+    },
+    "valor": [],
+    "actualizado": "2026-11-14 14:02 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 19:24 UTC",
+    "valor": [],
+    "L": 1.82,
+    "V": 4.1
+   }
+  },
+  {
+   "id": "401892713",
+   "fecha": "2026-11-15T00:00:00Z",
+   "local": "Pittsburgh Penguins",
+   "visitante": "Ottawa Senators",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.519,
+   "pv": 0.481,
+   "elo_l": 1489,
+   "elo_v": 1526,
+   "bal_l": [
+    6,
+    12
    ],
    "bal_v": [
     11,
-    7
+    8
    ],
-   "creada": "2026-11-15 02:08 UTC",
-   "resultado": null,
-   "marcador": null
-  }
- ],
- "recientes": [
+   "creada": "2026-11-13 00:58 UTC",
+   "resultado": "V",
+   "marcador": "1-4",
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 2.28,
+      "casa": "Unibet (SE)"
+     },
+     "L": {
+      "c": 2.85,
+      "casa": "Unibet (SE)"
+     }
+    },
+    "mercado": {
+     "L": 0.4512,
+     "V": 0.5488
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.4792,
+     "V": 0.0967
+    },
+    "valor": [],
+    "actualizado": "2026-11-14 14:02 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 19:24 UTC",
+    "valor": [],
+    "L": 2.72,
+    "V": 2.38
+   }
+  },
+  {
+   "id": "401892714",
+   "fecha": "2026-11-15T00:00:00Z",
+   "local": "Washington Capitals",
+   "visitante": "New Jersey Devils",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5835,
+   "pv": 0.4165,
+   "elo_l": 1528,
+   "elo_v": 1520,
+   "bal_l": [
+    10,
+    6
+   ],
+   "bal_v": [
+    13,
+    6
+   ],
+   "creada": "2026-11-13 00:58 UTC",
+   "resultado": "V",
+   "marcador": "4-7",
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 2.41,
+      "casa": "1xBet"
+     },
+     "L": {
+      "c": 2.7,
+      "casa": "Unibet (SE)"
+     }
+    },
+    "mercado": {
+     "L": 0.4774,
+     "V": 0.5226
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.5755,
+     "V": 0.0038
+    },
+    "valor": [],
+    "actualizado": "2026-11-14 14:02 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 19:24 UTC",
+    "valor": [],
+    "L": 2.63,
+    "V": 2.42
+   }
+  },
+  {
+   "id": "401892715",
+   "fecha": "2026-11-15T00:00:00Z",
+   "local": "Columbus Blue Jackets",
+   "visitante": "Philadelphia Flyers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5868,
+   "pv": 0.4132,
+   "elo_l": 1494,
+   "elo_v": 1484,
+   "bal_l": [
+    7,
+    9
+   ],
+   "bal_v": [
+    5,
+    15
+   ],
+   "creada": "2026-11-13 00:58 UTC",
+   "resultado": "V",
+   "marcador": "3-4",
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 2.25,
+      "casa": "1xBet"
+     },
+     "V": {
+      "c": 2.95,
+      "casa": "Unibet (SE)"
+     }
+    },
+    "mercado": {
+     "L": 0.5577,
+     "V": 0.4423
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.3203,
+     "V": 0.2189
+    },
+    "valor": [],
+    "actualizado": "2026-11-14 14:02 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 19:24 UTC",
+    "valor": [],
+    "L": 2.21,
+    "V": 2.95
+   }
+  },
+  {
+   "id": "401892716",
+   "fecha": "2026-11-15T00:00:00Z",
+   "local": "St. Louis Blues",
+   "visitante": "Florida Panthers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5617,
+   "pv": 0.4383,
+   "elo_l": 1506,
+   "elo_v": 1512,
+   "bal_l": [
+    8,
+    10
+   ],
+   "bal_v": [
+    9,
+    9
+   ],
+   "creada": "2026-11-13 00:58 UTC",
+   "resultado": "V",
+   "marcador": "1-4",
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 2.48,
+      "casa": "Unibet (SE)"
+     },
+     "L": {
+      "c": 2.61,
+      "casa": "1xBet"
+     }
+    },
+    "mercado": {
+     "L": 0.4882,
+     "V": 0.5118
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.466,
+     "V": 0.087
+    },
+    "valor": [],
+    "actualizado": "2026-11-14 14:02 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 19:24 UTC",
+    "valor": [],
+    "L": 2.63,
+    "V": 2.48
+   }
+  },
   {
    "id": "401892708",
    "fecha": "2026-11-14T20:30:00Z",
@@ -1197,678 +1365,18 @@
     "L": 2.01,
     "V": 3.45
    }
-  },
-  {
-   "id": "401892699",
-   "fecha": "2026-11-13T00:30:00Z",
-   "local": "Florida Panthers",
-   "visitante": "Detroit Red Wings",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6143,
-   "pv": 0.3857,
-   "elo_l": 1512,
-   "elo_v": 1482,
-   "bal_l": [
-    9,
-    9
-   ],
-   "bal_v": [
-    7,
-    12
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": "L",
-   "marcador": "5-4",
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 3.45,
-      "casa": "Unibet (SE)"
-     },
-     "L": {
-      "c": 2.05,
-      "casa": "1xBet"
-     }
-    },
-    "mercado": {
-     "L": 0.6124,
-     "V": 0.3876
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.2593,
-     "V": 0.3307
-    },
-    "valor": [],
-    "actualizado": "2026-11-12 20:52 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-12 15:49 UTC",
-    "valor": [
-     "L"
-    ],
-    "L": 2.03,
-    "V": 3.45
-   }
-  },
-  {
-   "id": "401892696",
-   "fecha": "2026-11-13T00:00:00Z",
-   "local": "Boston Bruins",
-   "visitante": "Montreal Canadiens",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5695,
-   "pv": 0.4305,
-   "elo_l": 1537,
-   "elo_v": 1539,
-   "bal_l": [
-    12,
-    5
-   ],
-   "bal_v": [
-    10,
-    7
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": "V",
-   "marcador": "2-5",
-   "cuota": {
-    "mejor": {
-     "L": {
-      "c": 2.35,
-      "casa": "1xBet"
-     },
-     "V": {
-      "c": 2.7,
-      "casa": "1xBet"
-     }
-    },
-    "mercado": {
-     "L": 0.5315,
-     "V": 0.4685
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.3383,
-     "V": 0.1623
-    },
-    "valor": [],
-    "actualizado": "2026-11-12 20:52 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-12 15:49 UTC",
-    "valor": [
-     "L"
-    ],
-    "L": 2.35,
-    "V": 2.7
-   }
-  },
-  {
-   "id": "401892697",
-   "fecha": "2026-11-13T00:00:00Z",
-   "local": "Toronto Maple Leafs",
-   "visitante": "Minnesota Wild",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.4492,
-   "pv": 0.5508,
-   "elo_l": 1472,
-   "elo_v": 1558,
-   "bal_l": [
-    7,
-    11
-   ],
-   "bal_v": [
-    13,
-    7
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": "V",
-   "marcador": "2-5",
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 2.0,
-      "casa": "1xBet"
-     },
-     "L": {
-      "c": 3.35,
-      "casa": "Unibet (SE)"
-     }
-    },
-    "mercado": {
-     "L": 0.3858,
-     "V": 0.6142
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.5048,
-     "V": 0.1016
-    },
-    "valor": [],
-    "actualizado": "2026-11-12 20:52 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-12 15:49 UTC",
-    "valor": [
-     "L"
-    ],
-    "L": 3.27,
-    "V": 2.02
-   }
-  },
-  {
-   "id": "401892698",
-   "fecha": "2026-11-13T00:00:00Z",
-   "local": "Ottawa Senators",
-   "visitante": "Colorado Avalanche",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5122,
-   "pv": 0.4878,
-   "elo_l": 1526,
-   "elo_v": 1567,
-   "bal_l": [
-    11,
-    8
-   ],
-   "bal_v": [
-    10,
-    8
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": "L",
-   "marcador": "4-3",
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 2.56,
-      "casa": "1xBet"
-     },
-     "L": {
-      "c": 2.5,
-      "casa": "Unibet (SE)"
-     }
-    },
-    "mercado": {
-     "L": 0.5049,
-     "V": 0.4951
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.2805,
-     "V": 0.2488
-    },
-    "valor": [],
-    "actualizado": "2026-11-12 20:52 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-12 15:49 UTC",
-    "valor": [
-     "L"
-    ],
-    "L": 2.7,
-    "V": 2.44
-   }
-  },
-  {
-   "id": "401892700",
-   "fecha": "2026-11-13T00:00:00Z",
-   "local": "New Jersey Devils",
-   "visitante": "Washington Capitals",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5594,
-   "pv": 0.4406,
-   "elo_l": 1520,
-   "elo_v": 1528,
-   "bal_l": [
-    13,
-    6
-   ],
-   "bal_v": [
-    10,
-    6
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": "L",
-   "marcador": "5-2",
-   "cuota": {
-    "mejor": {
-     "L": {
-      "c": 2.12,
-      "casa": "1xBet"
-     },
-     "V": {
-      "c": 3.06,
-      "casa": "1xBet"
-     }
-    },
-    "mercado": {
-     "L": 0.5889,
-     "V": 0.4111
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.1859,
-     "V": 0.3482
-    },
-    "valor": [],
-    "actualizado": "2026-11-12 20:52 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-12 15:49 UTC",
-    "valor": [
-     "V"
-    ],
-    "L": 2.16,
-    "V": 3.25
-   }
-  },
-  {
-   "id": "401892701",
-   "fecha": "2026-11-13T00:00:00Z",
-   "local": "Columbus Blue Jackets",
-   "visitante": "Tampa Bay Lightning",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.4815,
-   "pv": 0.5185,
-   "elo_l": 1494,
-   "elo_v": 1557,
-   "bal_l": [
-    7,
-    9
-   ],
-   "bal_v": [
-    11,
-    6
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": "V",
-   "marcador": "1-3",
-   "cuota": {
-    "mejor": {
-     "L": {
-      "c": 2.57,
-      "casa": "1xBet"
-     },
-     "V": {
-      "c": 2.45,
-      "casa": "Unibet (SE)"
-     }
-    },
-    "mercado": {
-     "L": 0.4912,
-     "V": 0.5088
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.2375,
-     "V": 0.2703
-    },
-    "valor": [],
-    "actualizado": "2026-11-12 20:52 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-12 15:49 UTC",
-    "valor": [
-     "V"
-    ],
-    "L": 2.58,
-    "V": 2.43
-   }
-  },
-  {
-   "id": "401891808",
-   "fecha": "2026-11-12T17:00:00Z",
-   "local": "Seattle Kraken",
-   "visitante": "Carolina Hurricanes",
-   "neutral": true,
-   "playoff": false,
-   "pl": 0.3257,
-   "pv": 0.6743,
-   "elo_l": 1476,
-   "elo_v": 1602,
-   "bal_l": [
-    9,
-    7
-   ],
-   "bal_v": [
-    14,
-    4
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": "V",
-   "marcador": "1-4",
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 1.58,
-      "casa": "1xBet"
-     },
-     "L": {
-      "c": 5.2,
-      "casa": "Unibet (SE)"
-     }
-    },
-    "mercado": {
-     "L": 0.2581,
-     "V": 0.7419
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.6936,
-     "V": 0.0654
-    },
-    "valor": [
-     "L"
-    ],
-    "actualizado": "2026-11-12 15:49 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-11 04:17 UTC",
-    "valor": [
-     "L"
-    ],
-    "L": 4.5,
-    "V": 1.79
-   }
-  },
-  {
-   "id": "401892694",
-   "fecha": "2026-11-12T03:00:00Z",
-   "local": "Anaheim Ducks",
-   "visitante": "Nashville Predators",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5729,
-   "pv": 0.4271,
-   "elo_l": 1494,
-   "elo_v": 1493,
-   "bal_l": [
-    10,
-    8
-   ],
-   "bal_v": [
-    8,
-    9
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": "V",
-   "marcador": "2-4",
-   "cuota": {
-    "mejor": {
-     "L": {
-      "c": 2.18,
-      "casa": "LeoVegas (SE)"
-     },
-     "V": {
-      "c": 2.92,
-      "casa": "1xBet"
-     }
-    },
-    "mercado": {
-     "L": 0.5646,
-     "V": 0.4354
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.2489,
-     "V": 0.2471
-    },
-    "valor": [
-     "L"
-    ],
-    "actualizado": "2026-11-11 14:57 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-11 04:17 UTC",
-    "valor": [
-     "L"
-    ],
-    "L": 2.2,
-    "V": 2.95
-   }
-  },
-  {
-   "id": "401892695",
-   "fecha": "2026-11-12T03:00:00Z",
-   "local": "San Jose Sharks",
-   "visitante": "Pittsburgh Penguins",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5127,
-   "pv": 0.4873,
-   "elo_l": 1445,
-   "elo_v": 1487,
-   "bal_l": [
-    8,
-    12
-   ],
-   "bal_v": [
-    5,
-    12
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": "V",
-   "marcador": "2-3",
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 2.2,
-      "casa": "LeoVegas (SE)"
-     },
-     "L": {
-      "c": 2.9,
-      "casa": "LeoVegas (SE)"
-     }
-    },
-    "mercado": {
-     "L": 0.4415,
-     "V": 0.5585
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.4868,
-     "V": 0.0721
-    },
-    "valor": [
-     "L"
-    ],
-    "actualizado": "2026-11-11 14:57 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-11 04:17 UTC",
-    "valor": [
-     "L"
-    ],
-    "L": 2.87,
-    "V": 2.28
-   }
-  },
-  {
-   "id": "401892693",
-   "fecha": "2026-11-12T02:30:00Z",
-   "local": "Vegas Golden Knights",
-   "visitante": "Utah Mammoth",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6097,
-   "pv": 0.3903,
-   "elo_l": 1541,
-   "elo_v": 1514,
-   "bal_l": [
-    11,
-    7
-   ],
-   "bal_v": [
-    10,
-    8
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": "L",
-   "marcador": "5-3",
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 2.72,
-      "casa": "1xBet"
-     },
-     "L": {
-      "c": 2.32,
-      "casa": "1xBet"
-     }
-    },
-    "mercado": {
-     "L": 0.5335,
-     "V": 0.4665
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.4145,
-     "V": 0.0616
-    },
-    "valor": [
-     "L"
-    ],
-    "actualizado": "2026-11-11 14:57 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-11 04:17 UTC",
-    "valor": [
-     "L"
-    ],
-    "L": 2.3,
-    "V": 2.76
-   }
-  },
-  {
-   "id": "401892692",
-   "fecha": "2026-11-12T02:00:00Z",
-   "local": "Edmonton Oilers",
-   "visitante": "Philadelphia Flyers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6488,
-   "pv": 0.3512,
-   "elo_l": 1542,
-   "elo_v": 1485,
-   "bal_l": [
-    13,
-    5
-   ],
-   "bal_v": [
-    5,
-    14
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": "L",
-   "marcador": "3-2",
-   "cuota": {
-    "mejor": {
-     "L": {
-      "c": 1.86,
-      "casa": "1xBet"
-     },
-     "V": {
-      "c": 3.9,
-      "casa": "LeoVegas (SE)"
-     }
-    },
-    "mercado": {
-     "L": 0.6604,
-     "V": 0.3396
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.2068,
-     "V": 0.3697
-    },
-    "valor": [
-     "V"
-    ],
-    "actualizado": "2026-11-11 14:57 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-11 04:17 UTC",
-    "valor": [
-     "V"
-    ],
-    "L": 1.9,
-    "V": 3.8
-   }
-  },
-  {
-   "id": "401892691",
-   "fecha": "2026-11-12T00:30:00Z",
-   "local": "Calgary Flames",
-   "visitante": "New York Rangers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5251,
-   "pv": 0.4749,
-   "elo_l": 1466,
-   "elo_v": 1498,
-   "bal_l": [
-    8,
-    10
-   ],
-   "bal_v": [
-    10,
-    8
-   ],
-   "creada": "2026-11-11 04:17 UTC",
-   "resultado": "V",
-   "marcador": "1-3",
-   "cuota": {
-    "mejor": {
-     "L": {
-      "c": 3.05,
-      "casa": "LeoVegas (SE)"
-     },
-     "V": {
-      "c": 2.15,
-      "casa": "1xBet"
-     }
-    },
-    "mercado": {
-     "L": 0.4236,
-     "V": 0.5764
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.6016,
-     "V": 0.021
-    },
-    "valor": [
-     "L"
-    ],
-    "actualizado": "2026-11-11 14:57 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-11 04:17 UTC",
-    "valor": [
-     "L"
-    ],
-    "L": 2.96,
-    "V": 2.18
-   }
   }
  ],
  "directo": {
-  "total": 39,
-  "resueltas": 21,
-  "aciertos": 11,
-  "acierto": 0.5238,
+  "total": 40,
+  "resueltas": 33,
+  "aciertos": 13,
+  "acierto": 0.3939,
   "ic": [
-   0.3237,
-   0.7166
+   0.2468,
+   0.5632
   ],
-  "brier": 0.2473,
+  "brier": 0.2729,
   "apuestas": 17,
   "ganadas": 5,
   "roi": -0.2582
@@ -1881,33 +1389,27 @@
    "p": 4
   },
   {
-   "equipo": "Tampa Bay Lightning",
-   "elo": 1567,
-   "g": 13,
-   "p": 6
-  },
-  {
    "equipo": "Colorado Avalanche",
-   "elo": 1565,
-   "g": 10,
+   "elo": 1570,
+   "g": 11,
    "p": 9
   },
   {
    "equipo": "Minnesota Wild",
-   "elo": 1562,
-   "g": 14,
+   "elo": 1567,
+   "g": 15,
    "p": 7
   },
   {
-   "equipo": "Montreal Canadiens",
-   "elo": 1544,
-   "g": 11,
+   "equipo": "Tampa Bay Lightning",
+   "elo": 1561,
+   "g": 13,
    "p": 7
   },
   {
    "equipo": "Edmonton Oilers",
-   "elo": 1543,
-   "g": 14,
+   "elo": 1546,
+   "g": 15,
    "p": 5
   },
   {
@@ -1917,58 +1419,52 @@
    "p": 8
   },
   {
-   "equipo": "Dallas Stars",
-   "elo": 1532,
-   "g": 10,
+   "equipo": "Montreal Canadiens",
+   "elo": 1539,
+   "g": 11,
    "p": 8
   },
   {
-   "equipo": "Boston Bruins",
-   "elo": 1532,
-   "g": 12,
-   "p": 6
+   "equipo": "Dallas Stars",
+   "elo": 1535,
+   "g": 11,
+   "p": 8
   },
   {
    "equipo": "Ottawa Senators",
-   "elo": 1528,
-   "g": 12,
+   "elo": 1533,
+   "g": 13,
    "p": 8
   },
   {
-   "equipo": "Washington Capitals",
-   "elo": 1524,
-   "g": 10,
-   "p": 7
-  },
-  {
    "equipo": "New Jersey Devils",
-   "elo": 1524,
-   "g": 14,
+   "elo": 1529,
+   "g": 15,
    "p": 6
   },
   {
-   "equipo": "Buffalo Sabres",
-   "elo": 1520,
-   "g": 8,
-   "p": 11
+   "equipo": "Boston Bruins",
+   "elo": 1526,
+   "g": 12,
+   "p": 7
   },
   {
    "equipo": "Florida Panthers",
-   "elo": 1514,
-   "g": 10,
+   "elo": 1520,
+   "g": 11,
    "p": 9
   },
   {
-   "equipo": "St. Louis Blues",
-   "elo": 1508,
-   "g": 9,
-   "p": 10
+   "equipo": "Washington Capitals",
+   "elo": 1519,
+   "g": 10,
+   "p": 8
   },
   {
-   "equipo": "Utah Mammoth",
-   "elo": 1508,
-   "g": 10,
-   "p": 10
+   "equipo": "Buffalo Sabres",
+   "elo": 1517,
+   "g": 8,
+   "p": 12
   },
   {
    "equipo": "New York Rangers",
@@ -1983,10 +1479,22 @@
    "p": 9
   },
   {
+   "equipo": "Utah Mammoth",
+   "elo": 1505,
+   "g": 10,
+   "p": 11
+  },
+  {
    "equipo": "Utah Hockey Club",
    "elo": 1504,
    "g": 0,
    "p": 0
+  },
+  {
+   "equipo": "St. Louis Blues",
+   "elo": 1503,
+   "g": 9,
+   "p": 11
   },
   {
    "equipo": "Arizona Coyotes",
@@ -2001,40 +1509,40 @@
    "p": 11
   },
   {
-   "equipo": "Columbus Blue Jackets",
-   "elo": 1491,
-   "g": 7,
-   "p": 10
-  },
-  {
-   "equipo": "Anaheim Ducks",
-   "elo": 1490,
-   "g": 10,
-   "p": 9
-  },
-  {
    "equipo": "New York Islanders",
-   "elo": 1490,
-   "g": 8,
+   "elo": 1496,
+   "g": 9,
    "p": 9
   },
   {
-   "equipo": "Pittsburgh Penguins",
-   "elo": 1489,
-   "g": 6,
-   "p": 12
+   "equipo": "Columbus Blue Jackets",
+   "elo": 1488,
+   "g": 7,
+   "p": 11
   },
   {
    "equipo": "Philadelphia Flyers",
-   "elo": 1484,
-   "g": 5,
+   "elo": 1486,
+   "g": 6,
    "p": 15
   },
   {
    "equipo": "Detroit Red Wings",
-   "elo": 1480,
-   "g": 7,
+   "elo": 1485,
+   "g": 8,
    "p": 13
+  },
+  {
+   "equipo": "Pittsburgh Penguins",
+   "elo": 1484,
+   "g": 6,
+   "p": 13
+  },
+  {
+   "equipo": "Anaheim Ducks",
+   "elo": 1484,
+   "g": 10,
+   "p": 10
   },
   {
    "equipo": "Seattle Kraken",
@@ -2044,26 +1552,26 @@
   },
   {
    "equipo": "Toronto Maple Leafs",
-   "elo": 1468,
+   "elo": 1466,
    "g": 7,
-   "p": 12
+   "p": 13
   },
   {
    "equipo": "Los Angeles Kings",
-   "elo": 1468,
+   "elo": 1465,
    "g": 5,
-   "p": 11
+   "p": 12
   },
   {
    "equipo": "Calgary Flames",
-   "elo": 1462,
-   "g": 8,
+   "elo": 1465,
+   "g": 9,
    "p": 11
   },
   {
    "equipo": "San Jose Sharks",
-   "elo": 1443,
-   "g": 8,
+   "elo": 1446,
+   "g": 9,
    "p": 13
   },
   {
