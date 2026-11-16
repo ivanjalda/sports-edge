@@ -1,13 +1,13 @@
 {
  "serie": "motogp",
  "nombre": "MotoGP",
- "actualizado": "2026-11-16 16:52 UTC",
+ "actualizado": "2026-11-16 18:29 UTC",
  "proximo": {
-  "id": "mgp-2026-VAL",
-  "nombre": "Grand Prix of Valencia",
-  "circuito": "Circuit Ricardo Tormo",
-  "pais": "Spain",
-  "fecha": "2026-11-22T14:00:00Z",
+  "id": "mgp-2026-POR",
+  "nombre": "Grand Prix of Portugal",
+  "circuito": "Autódromo Internacional do Algarve",
+  "pais": "Portugal",
+  "fecha": "2026-11-22T13:00:00Z",
   "clasif": "2026-11-21T11:15:00Z",
   "sprint": true,
   "tipo": "previa",
@@ -396,5 +396,6 @@
    "equipo": "SuperFile Trackhouse MotoGP Team"
   }
  ],
- "fuentes": "Resultados oficiales de motogp.com"
+ "fuentes": "Resultados oficiales de motogp.com",
+ "tipo_serie": "motor"
 }

@@ -1,0 +1,392 @@
+{
+ "serie": "golf_dp",
+ "nombre": "DP World Tour",
+ "actualizado": "2026-11-16 18:29 UTC",
+ "proximo": null,
+ "descargando": false,
+ "abandono": 0.0001,
+ "motor": {
+  "k": 4.0,
+  "w": 0.5,
+  "t": 30.0,
+  "t_grid": 30.0,
+  "c_grid": 0.0,
+  "prueba_previa": {
+   "carreras": 67,
+   "favorito_gana": 0.0448,
+   "logloss": 4.4905,
+   "podio": 0.1194,
+   "pole_gana": null
+  },
+  "prueba_parrilla": null,
+  "azar_logloss": 4.9379,
+  "temporadas_prueba": [
+   2025,
+   2026
+  ]
+ },
+ "fuerzas": [
+  {
+   "n": "Rory McIlroy",
+   "eq": "-",
+   "piloto": 131.4,
+   "total": 131.4
+  },
+  {
+   "n": "Eugenio Chacarra",
+   "eq": "-",
+   "piloto": 123.3,
+   "total": 123.3
+  },
+  {
+   "n": "Matt Wallace",
+   "eq": "-",
+   "piloto": 109.8,
+   "total": 109.8
+  },
+  {
+   "n": "Kristoffer Reitan",
+   "eq": "-",
+   "piloto": 106.8,
+   "total": 106.8
+  },
+  {
+   "n": "Adam Scott",
+   "eq": "-",
+   "piloto": 97.6,
+   "total": 97.6
+  },
+  {
+   "n": "Francesco Laporta",
+   "eq": "-",
+   "piloto": 96.6,
+   "total": 96.6
+  },
+  {
+   "n": "Oliver Lindell",
+   "eq": "-",
+   "piloto": 93.9,
+   "total": 93.9
+  },
+  {
+   "n": "Daniel Hillier",
+   "eq": "-",
+   "piloto": 92.3,
+   "total": 92.3
+  },
+  {
+   "n": "Jacob Skov Olesen",
+   "eq": "-",
+   "piloto": 88.1,
+   "total": 88.1
+  },
+  {
+   "n": "David Puig",
+   "eq": "-",
+   "piloto": 86.6,
+   "total": 86.6
+  },
+  {
+   "n": "Victor Perez",
+   "eq": "-",
+   "piloto": 84.0,
+   "total": 84.0
+  },
+  {
+   "n": "Tyrrell Hatton",
+   "eq": "-",
+   "piloto": 80.7,
+   "total": 80.7
+  },
+  {
+   "n": "Jayden Schaper",
+   "eq": "-",
+   "piloto": 80.4,
+   "total": 80.4
+  },
+  {
+   "n": "Bernd Wiesberger",
+   "eq": "-",
+   "piloto": 80.4,
+   "total": 80.4
+  },
+  {
+   "n": "Adrian Meronk",
+   "eq": "-",
+   "piloto": 79.4,
+   "total": 79.4
+  },
+  {
+   "n": "Joe Dean",
+   "eq": "-",
+   "piloto": 77.6,
+   "total": 77.6
+  },
+  {
+   "n": "Jon Rahm",
+   "eq": "-",
+   "piloto": 76.5,
+   "total": 76.5
+  },
+  {
+   "n": "Aaron Rai",
+   "eq": "-",
+   "piloto": 71.7,
+   "total": 71.7
+  },
+  {
+   "n": "Tommy Fleetwood",
+   "eq": "-",
+   "piloto": 70.1,
+   "total": 70.1
+  },
+  {
+   "n": "Ryan Fox",
+   "eq": "-",
+   "piloto": 68.6,
+   "total": 68.6
+  },
+  {
+   "n": "Nacho Elvira",
+   "eq": "-",
+   "piloto": 68.0,
+   "total": 68.0
+  },
+  {
+   "n": "Angel Ayora",
+   "eq": "-",
+   "piloto": 67.2,
+   "total": 67.2
+  },
+  {
+   "n": "Joost Luiten",
+   "eq": "-",
+   "piloto": 67.2,
+   "total": 67.2
+  },
+  {
+   "n": "Matthew Jordan",
+   "eq": "-",
+   "piloto": 67.1,
+   "total": 67.1
+  },
+  {
+   "n": "Hennie Du Plessis",
+   "eq": "-",
+   "piloto": 62.7,
+   "total": 62.7
+  },
+  {
+   "n": "Freddy Schott",
+   "eq": "-",
+   "piloto": 62.6,
+   "total": 62.6
+  },
+  {
+   "n": "Mikael Lindberg",
+   "eq": "-",
+   "piloto": 61.2,
+   "total": 61.2
+  },
+  {
+   "n": "Frederic LaCroix",
+   "eq": "-",
+   "piloto": 59.7,
+   "total": 59.7
+  },
+  {
+   "n": "Dan Bradbury",
+   "eq": "-",
+   "piloto": 58.8,
+   "total": 58.8
+  },
+  {
+   "n": "Niklas Nørgaard",
+   "eq": "-",
+   "piloto": 58.2,
+   "total": 58.2
+  },
+  {
+   "n": "Martin Couvra",
+   "eq": "-",
+   "piloto": 56.7,
+   "total": 56.7
+  },
+  {
+   "n": "Calum Hill",
+   "eq": "-",
+   "piloto": 56.4,
+   "total": 56.4
+  },
+  {
+   "n": "Angel Hidalgo",
+   "eq": "-",
+   "piloto": 55.6,
+   "total": 55.6
+  },
+  {
+   "n": "Ewen Ferguson",
+   "eq": "-",
+   "piloto": 55.2,
+   "total": 55.2
+  },
+  {
+   "n": "Patrick Reed",
+   "eq": "-",
+   "piloto": 53.4,
+   "total": 53.4
+  },
+  {
+   "n": "Kota Kaneko",
+   "eq": "-",
+   "piloto": 51.0,
+   "total": 51.0
+  },
+  {
+   "n": "Jeff Winther",
+   "eq": "-",
+   "piloto": 49.2,
+   "total": 49.2
+  },
+  {
+   "n": "Gregorio De Leo",
+   "eq": "-",
+   "piloto": 49.1,
+   "total": 49.1
+  },
+  {
+   "n": "Davis Bryant",
+   "eq": "-",
+   "piloto": 42.8,
+   "total": 42.8
+  },
+  {
+   "n": "Andy Sullivan",
+   "eq": "-",
+   "piloto": 42.4,
+   "total": 42.4
+  },
+  {
+   "n": "Marcus Armitage",
+   "eq": "-",
+   "piloto": 39.4,
+   "total": 39.4
+  },
+  {
+   "n": "Casey Jarvis",
+   "eq": "-",
+   "piloto": 39.0,
+   "total": 39.0
+  },
+  {
+   "n": "Manuel Elvira",
+   "eq": "-",
+   "piloto": 37.4,
+   "total": 37.4
+  },
+  {
+   "n": "Adrian Otaegui",
+   "eq": "-",
+   "piloto": 33.5,
+   "total": 33.5
+  },
+  {
+   "n": "Julien Guerrier",
+   "eq": "-",
+   "piloto": 29.1,
+   "total": 29.1
+  },
+  {
+   "n": "Yuto Katsuragawa",
+   "eq": "-",
+   "piloto": 27.7,
+   "total": 27.7
+  },
+  {
+   "n": "Jorge Campillo",
+   "eq": "-",
+   "piloto": 27.5,
+   "total": 27.5
+  },
+  {
+   "n": "Shaun Norris",
+   "eq": "-",
+   "piloto": 25.7,
+   "total": 25.7
+  },
+  {
+   "n": "Thriston Lawrence",
+   "eq": "-",
+   "piloto": 18.7,
+   "total": 18.7
+  },
+  {
+   "n": "Grant Forrest",
+   "eq": "-",
+   "piloto": 11.7,
+   "total": 11.7
+  }
+ ],
+ "equipos": [
+  {
+   "eq": "-",
+   "f": -0.0
+  }
+ ],
+ "directo": {
+  "carreras": 0
+ },
+ "recientes": [],
+ "ultimas": [
+  {
+   "nombre": "DP World Tour Championship",
+   "fecha": "2026-11-12T08:00:00Z",
+   "ganador": "Tyrrell Hatton",
+   "equipo": "-"
+  },
+  {
+   "nombre": "Abu Dhabi Aldar Championship",
+   "fecha": "2026-11-05T08:00:00Z",
+   "ganador": "Jon Rahm",
+   "equipo": "-"
+  },
+  {
+   "nombre": "Genesis Championship",
+   "fecha": "2026-10-22T07:00:00Z",
+   "ganador": "Yuto Katsuragawa",
+   "equipo": "-"
+  },
+  {
+   "nombre": "DP World India Championship",
+   "fecha": "2026-10-15T07:00:00Z",
+   "ganador": "Eugenio Chacarra",
+   "equipo": "-"
+  },
+  {
+   "nombre": "Open de España pres. by Madrid",
+   "fecha": "2026-10-08T07:00:00Z",
+   "ganador": "Grant Forrest",
+   "equipo": "-"
+  },
+  {
+   "nombre": "Alfred Dunhill Links Championship",
+   "fecha": "2026-10-01T07:00:00Z",
+   "ganador": "Adrian Meronk",
+   "equipo": "-"
+  },
+  {
+   "nombre": "FedEx Open de France",
+   "fecha": "2026-09-24T07:00:00Z",
+   "ganador": "Matt Fitzpatrick",
+   "equipo": "-"
+  },
+  {
+   "nombre": "BMW PGA Championship",
+   "fecha": "2026-09-17T07:00:00Z",
+   "ganador": "J.J. Spaun",
+   "equipo": "-"
+  }
+ ],
+ "fuentes": "Marcador público de ESPN",
+ "tipo_serie": "golf"
+}

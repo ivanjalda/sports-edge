@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-16 16:50 UTC",
+ "actualizado": "2026-11-16 18:27 UTC",
  "datos_hasta": 20261114,
  "dias_desde_datos": 2,
  "fuentes": {
@@ -20,53 +20,6 @@
  "sin_datos": [],
  "predicciones": [
   {
-   "id": "c81851847baf5e3a479993ec167a8e2a",
-   "torneo": "ATP Finals",
-   "tour": "ATP",
-   "sup": "Hard",
-   "fecha": "2026-11-16T13:00:00Z",
-   "j1": "Carlos Alcaraz",
-   "j2": "Frances Tiafoe",
-   "id1": "atp:A0E2",
-   "id2": "atp:TD51",
-   "p1": 0.884,
-   "p2": 0.116,
-   "n1": 392,
-   "n2": 476,
-   "creada": "2026-11-13 15:11 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "1": {
-      "c": 1.13,
-      "casa": "Unibet (NL)"
-     },
-     "2": {
-      "c": 8.6,
-      "casa": "Betfair"
-     }
-    },
-    "mercado": {
-     "1": 0.8587,
-     "2": 0.1413
-    },
-    "casas": 21,
-    "ev": {
-     "1": -0.0011,
-     "2": -0.0024
-    },
-    "valor": [],
-    "actualizado": "2026-11-15 14:35 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-13 15:11 UTC",
-    "valor": [],
-    "1": 1.14,
-    "2": 7.0
-   }
-  },
-  {
    "id": "7ac3bf138012785e65835d1481524d5c",
    "torneo": "ATP Finals",
    "tour": "ATP",
@@ -86,25 +39,25 @@
    "cuota": {
     "mejor": {
      "1": {
-      "c": 1.29,
-      "casa": "William Hill"
+      "c": 1.3,
+      "casa": "Betfair"
      },
      "2": {
       "c": 4.3,
-      "casa": "Betfair"
+      "casa": "BetOnline.ag"
      }
     },
     "mercado": {
-     "1": 0.757,
-     "2": 0.243
+     "1": 0.7578,
+     "2": 0.2422
     },
     "casas": 21,
     "ev": {
-     "1": -0.094,
+     "1": -0.087,
      "2": 0.2801
     },
     "valor": [],
-    "actualizado": "2026-11-16 16:50 UTC"
+    "actualizado": "2026-11-16 18:27 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 15:11 UTC",
@@ -133,25 +86,25 @@
    "cuota": {
     "mejor": {
      "1": {
-      "c": 2.02,
+      "c": 1.99,
       "casa": "Betfair"
      },
      "2": {
-      "c": 1.94,
+      "c": 1.99,
       "casa": "Betfair"
      }
     },
     "mercado": {
-     "1": 0.4971,
-     "2": 0.5029
+     "1": 0.498,
+     "2": 0.502
     },
     "casas": 19,
     "ev": {
-     "1": 0.0484,
-     "2": -0.0669
+     "1": 0.0328,
+     "2": -0.0428
     },
     "valor": [],
-    "actualizado": "2026-11-16 16:50 UTC"
+    "actualizado": "2026-11-16 18:27 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-16 16:50 UTC",
@@ -181,7 +134,7 @@
     "mejor": {
      "1": {
       "c": 1.54,
-      "casa": "Winamax (DE)"
+      "casa": "1xBet"
      },
      "2": {
       "c": 2.82,
@@ -189,8 +142,8 @@
      }
     },
     "mercado": {
-     "1": 0.6381,
-     "2": 0.3619
+     "1": 0.6376,
+     "2": 0.3624
     },
     "casas": 19,
     "ev": {
@@ -198,7 +151,7 @@
      "2": 0.0651
     },
     "valor": [],
-    "actualizado": "2026-11-16 16:50 UTC"
+    "actualizado": "2026-11-16 18:27 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-16 16:50 UTC",
@@ -210,10 +163,10 @@
  ],
  "directo": {
   "total": 16,
-  "resueltas": 0,
-  "acierto": null,
-  "brier": null,
-  "apuestas": 0,
-  "roi": null
+  "resueltas": 12,
+  "acierto": 0.5833,
+  "brier": 0.2556,
+  "apuestas": 4,
+  "roi": -0.47
  }
 }

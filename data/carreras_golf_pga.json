@@ -1,0 +1,823 @@
+{
+ "serie": "golf_pga",
+ "nombre": "PGA Tour",
+ "actualizado": "2026-11-16 18:29 UTC",
+ "proximo": {
+  "id": "golf_pga-401850981",
+  "nombre": "The RSM Classic",
+  "circuito": "",
+  "pais": "",
+  "fecha": "2026-11-19T08:00:00Z",
+  "clasif": null,
+  "sprint": false,
+  "tipo": "previa",
+  "pilotos": [],
+  "sin_lista": true
+ },
+ "descargando": false,
+ "abandono": 0.0001,
+ "motor": {
+  "k": 4.0,
+  "w": 0.5,
+  "t": 30.0,
+  "t_grid": 30.0,
+  "c_grid": 0.0,
+  "prueba_previa": {
+   "carreras": 91,
+   "favorito_gana": 0.1319,
+   "logloss": 4.1279,
+   "podio": 0.1429,
+   "pole_gana": null
+  },
+  "prueba_parrilla": null,
+  "azar_logloss": 4.7745,
+  "temporadas_prueba": [
+   2025,
+   2026
+  ]
+ },
+ "fuerzas": [
+  {
+   "n": "Ryan Gerard",
+   "eq": "-",
+   "piloto": 112.9,
+   "total": 112.9
+  },
+  {
+   "n": "Jordan Smith",
+   "eq": "-",
+   "piloto": 90.9,
+   "total": 90.9
+  },
+  {
+   "n": "Ben Kohles",
+   "eq": "-",
+   "piloto": 90.6,
+   "total": 90.6
+  },
+  {
+   "n": "Keith Mitchell",
+   "eq": "-",
+   "piloto": 86.9,
+   "total": 86.9
+  },
+  {
+   "n": "Chris Kirk",
+   "eq": "-",
+   "piloto": 79.3,
+   "total": 79.3
+  },
+  {
+   "n": "Jackson Koivun",
+   "eq": "-",
+   "piloto": 79.3,
+   "total": 79.3
+  },
+  {
+   "n": "Blades Brown",
+   "eq": "-",
+   "piloto": 78.3,
+   "total": 78.3
+  },
+  {
+   "n": "Ben James",
+   "eq": "-",
+   "piloto": 77.9,
+   "total": 77.9
+  },
+  {
+   "n": "Michael Kim",
+   "eq": "-",
+   "piloto": 73.5,
+   "total": 73.5
+  },
+  {
+   "n": "Ben Griffin",
+   "eq": "-",
+   "piloto": 70.5,
+   "total": 70.5
+  },
+  {
+   "n": "Harry Hall",
+   "eq": "-",
+   "piloto": 68.6,
+   "total": 68.6
+  },
+  {
+   "n": "Séamus Power",
+   "eq": "-",
+   "piloto": 68.2,
+   "total": 68.2
+  },
+  {
+   "n": "Denny McCarthy",
+   "eq": "-",
+   "piloto": 62.5,
+   "total": 62.5
+  },
+  {
+   "n": "Zach Bauchou",
+   "eq": "-",
+   "piloto": 60.9,
+   "total": 60.9
+  },
+  {
+   "n": "Christiaan Bezuidenhout",
+   "eq": "-",
+   "piloto": 58.5,
+   "total": 58.5
+  },
+  {
+   "n": "Rico Hoey",
+   "eq": "-",
+   "piloto": 56.4,
+   "total": 56.4
+  },
+  {
+   "n": "Stephan Jaeger",
+   "eq": "-",
+   "piloto": 55.9,
+   "total": 55.9
+  },
+  {
+   "n": "Neal Shipley",
+   "eq": "-",
+   "piloto": 55.2,
+   "total": 55.2
+  },
+  {
+   "n": "Austin Eckroat",
+   "eq": "-",
+   "piloto": 55.1,
+   "total": 55.1
+  },
+  {
+   "n": "Beau Hossler",
+   "eq": "-",
+   "piloto": 54.6,
+   "total": 54.6
+  },
+  {
+   "n": "Trace Crowe",
+   "eq": "-",
+   "piloto": 54.6,
+   "total": 54.6
+  },
+  {
+   "n": "David Ford",
+   "eq": "-",
+   "piloto": 53.2,
+   "total": 53.2
+  },
+  {
+   "n": "Kristoffer Ventura",
+   "eq": "-",
+   "piloto": 52.6,
+   "total": 52.6
+  },
+  {
+   "n": "Zac Blair",
+   "eq": "-",
+   "piloto": 52.0,
+   "total": 52.0
+  },
+  {
+   "n": "Sudarshan Yellamaraju",
+   "eq": "-",
+   "piloto": 50.7,
+   "total": 50.7
+  },
+  {
+   "n": "Luke Clanton",
+   "eq": "-",
+   "piloto": 49.4,
+   "total": 49.4
+  },
+  {
+   "n": "Nick Taylor",
+   "eq": "-",
+   "piloto": 48.8,
+   "total": 48.8
+  },
+  {
+   "n": "Ben Silverman",
+   "eq": "-",
+   "piloto": 48.4,
+   "total": 48.4
+  },
+  {
+   "n": "Emiliano Grillo",
+   "eq": "-",
+   "piloto": 47.4,
+   "total": 47.4
+  },
+  {
+   "n": "Steven Fisk",
+   "eq": "-",
+   "piloto": 45.1,
+   "total": 45.1
+  },
+  {
+   "n": "Jackson Suber",
+   "eq": "-",
+   "piloto": 42.5,
+   "total": 42.5
+  },
+  {
+   "n": "Chad Ramey",
+   "eq": "-",
+   "piloto": 39.2,
+   "total": 39.2
+  },
+  {
+   "n": "Kevin Roy",
+   "eq": "-",
+   "piloto": 38.2,
+   "total": 38.2
+  },
+  {
+   "n": "John Parry",
+   "eq": "-",
+   "piloto": 38.0,
+   "total": 38.0
+  },
+  {
+   "n": "Mackenzie Hughes",
+   "eq": "-",
+   "piloto": 38.0,
+   "total": 38.0
+  },
+  {
+   "n": "Adrien Dumont de Chassart",
+   "eq": "-",
+   "piloto": 37.4,
+   "total": 37.4
+  },
+  {
+   "n": "Jesper Svensson",
+   "eq": "-",
+   "piloto": 36.0,
+   "total": 36.0
+  },
+  {
+   "n": "Pierceson Coody",
+   "eq": "-",
+   "piloto": 35.5,
+   "total": 35.5
+  },
+  {
+   "n": "Erik van Rooyen",
+   "eq": "-",
+   "piloto": 35.4,
+   "total": 35.4
+  },
+  {
+   "n": "Max McGreevy",
+   "eq": "-",
+   "piloto": 34.9,
+   "total": 34.9
+  },
+  {
+   "n": "Johnny Keefer",
+   "eq": "-",
+   "piloto": 32.8,
+   "total": 32.8
+  },
+  {
+   "n": "Rasmus Neergaard-Petersen",
+   "eq": "-",
+   "piloto": 31.6,
+   "total": 31.6
+  },
+  {
+   "n": "Kensei Hirata",
+   "eq": "-",
+   "piloto": 30.3,
+   "total": 30.3
+  },
+  {
+   "n": "Max Greyserman",
+   "eq": "-",
+   "piloto": 29.2,
+   "total": 29.2
+  },
+  {
+   "n": "Marco Penge",
+   "eq": "-",
+   "piloto": 28.2,
+   "total": 28.2
+  },
+  {
+   "n": "Paul Peterson",
+   "eq": "-",
+   "piloto": 28.0,
+   "total": 28.0
+  },
+  {
+   "n": "Karl Vilips",
+   "eq": "-",
+   "piloto": 27.7,
+   "total": 27.7
+  },
+  {
+   "n": "Zecheng Dou",
+   "eq": "-",
+   "piloto": 27.6,
+   "total": 27.6
+  },
+  {
+   "n": "Brice Garnett",
+   "eq": "-",
+   "piloto": 27.3,
+   "total": 27.3
+  },
+  {
+   "n": "Alvaro Ortiz",
+   "eq": "-",
+   "piloto": 26.2,
+   "total": 26.2
+  },
+  {
+   "n": "Billy Horschel",
+   "eq": "-",
+   "piloto": 26.1,
+   "total": 26.1
+  },
+  {
+   "n": "Hayden Springer",
+   "eq": "-",
+   "piloto": 24.3,
+   "total": 24.3
+  },
+  {
+   "n": "Peter Malnati",
+   "eq": "-",
+   "piloto": 23.8,
+   "total": 23.8
+  },
+  {
+   "n": "Patrick Fishburn",
+   "eq": "-",
+   "piloto": 23.1,
+   "total": 23.1
+  },
+  {
+   "n": "Lucas Glover",
+   "eq": "-",
+   "piloto": 22.8,
+   "total": 22.8
+  },
+  {
+   "n": "Joel Dahmen",
+   "eq": "-",
+   "piloto": 22.8,
+   "total": 22.8
+  },
+  {
+   "n": "David Skinns",
+   "eq": "-",
+   "piloto": 22.5,
+   "total": 22.5
+  },
+  {
+   "n": "Isaiah Salinda",
+   "eq": "-",
+   "piloto": 21.7,
+   "total": 21.7
+  },
+  {
+   "n": "Andrew Putnam",
+   "eq": "-",
+   "piloto": 21.4,
+   "total": 21.4
+  },
+  {
+   "n": "Taylor Moore",
+   "eq": "-",
+   "piloto": 20.0,
+   "total": 20.0
+  },
+  {
+   "n": "Tony Finau",
+   "eq": "-",
+   "piloto": 19.4,
+   "total": 19.4
+  },
+  {
+   "n": "Gordon Sargent",
+   "eq": "-",
+   "piloto": 18.9,
+   "total": 18.9
+  },
+  {
+   "n": "Chandler Blanchet",
+   "eq": "-",
+   "piloto": 18.7,
+   "total": 18.7
+  },
+  {
+   "n": "A.J. Ewart",
+   "eq": "-",
+   "piloto": 18.2,
+   "total": 18.2
+  },
+  {
+   "n": "Dylan Wu",
+   "eq": "-",
+   "piloto": 18.1,
+   "total": 18.1
+  },
+  {
+   "n": "Kevin Yu",
+   "eq": "-",
+   "piloto": 17.2,
+   "total": 17.2
+  },
+  {
+   "n": "Haotong Li",
+   "eq": "-",
+   "piloto": 17.1,
+   "total": 17.1
+  },
+  {
+   "n": "Cam Davis",
+   "eq": "-",
+   "piloto": 16.9,
+   "total": 16.9
+  },
+  {
+   "n": "William Mouw",
+   "eq": "-",
+   "piloto": 16.9,
+   "total": 16.9
+  },
+  {
+   "n": "Kevin Streelman",
+   "eq": "-",
+   "piloto": 16.8,
+   "total": 16.8
+  },
+  {
+   "n": "Patrick Rodgers",
+   "eq": "-",
+   "piloto": 16.3,
+   "total": 16.3
+  },
+  {
+   "n": "Nick Dunlap",
+   "eq": "-",
+   "piloto": 16.1,
+   "total": 16.1
+  },
+  {
+   "n": "Austin Hitt",
+   "eq": "-",
+   "piloto": 13.5,
+   "total": 13.5
+  },
+  {
+   "n": "Lee Hodges",
+   "eq": "-",
+   "piloto": 13.0,
+   "total": 13.0
+  },
+  {
+   "n": "Matthieu Pavon",
+   "eq": "-",
+   "piloto": 12.4,
+   "total": 12.4
+  },
+  {
+   "n": "Justin Lower",
+   "eq": "-",
+   "piloto": 11.5,
+   "total": 11.5
+  },
+  {
+   "n": "Chandler Phillips",
+   "eq": "-",
+   "piloto": 11.1,
+   "total": 11.1
+  },
+  {
+   "n": "Takumi Kanaya",
+   "eq": "-",
+   "piloto": 9.8,
+   "total": 9.8
+  },
+  {
+   "n": "Alejandro Tosti",
+   "eq": "-",
+   "piloto": 9.5,
+   "total": 9.5
+  },
+  {
+   "n": "John VanDerLaan",
+   "eq": "-",
+   "piloto": 9.0,
+   "total": 9.0
+  },
+  {
+   "n": "Ben Martin",
+   "eq": "-",
+   "piloto": 8.7,
+   "total": 8.7
+  },
+  {
+   "n": "David Lipsky",
+   "eq": "-",
+   "piloto": 8.5,
+   "total": 8.5
+  },
+  {
+   "n": "Tom Hoge",
+   "eq": "-",
+   "piloto": 8.1,
+   "total": 8.1
+  },
+  {
+   "n": "Preston Stout",
+   "eq": "-",
+   "piloto": 7.9,
+   "total": 7.9
+  },
+  {
+   "n": "Matt Kuchar",
+   "eq": "-",
+   "piloto": 7.8,
+   "total": 7.8
+  },
+  {
+   "n": "Jeffrey Kang",
+   "eq": "-",
+   "piloto": 7.0,
+   "total": 7.0
+  },
+  {
+   "n": "Patton Kizzire",
+   "eq": "-",
+   "piloto": 6.5,
+   "total": 6.5
+  },
+  {
+   "n": "Tyler Duncan",
+   "eq": "-",
+   "piloto": 5.9,
+   "total": 5.9
+  },
+  {
+   "n": "Sami Välimäki",
+   "eq": "-",
+   "piloto": 5.7,
+   "total": 5.7
+  },
+  {
+   "n": "Davis Riley",
+   "eq": "-",
+   "piloto": 3.3,
+   "total": 3.3
+  },
+  {
+   "n": "Garrick Higgo",
+   "eq": "-",
+   "piloto": 1.8,
+   "total": 1.8
+  },
+  {
+   "n": "Adam Svensson",
+   "eq": "-",
+   "piloto": 1.6,
+   "total": 1.6
+  },
+  {
+   "n": "Rasmus Højgaard",
+   "eq": "-",
+   "piloto": 0.6,
+   "total": 0.6
+  },
+  {
+   "n": "Jay Leng",
+   "eq": "-",
+   "piloto": 0.2,
+   "total": 0.2
+  },
+  {
+   "n": "Vince Whaley",
+   "eq": "-",
+   "piloto": -0.1,
+   "total": -0.1
+  },
+  {
+   "n": "Will Gordon",
+   "eq": "-",
+   "piloto": -0.3,
+   "total": -0.3
+  },
+  {
+   "n": "Joe Highsmith",
+   "eq": "-",
+   "piloto": -0.5,
+   "total": -0.5
+  },
+  {
+   "n": "Rafael Campos",
+   "eq": "-",
+   "piloto": -1.1,
+   "total": -1.1
+  },
+  {
+   "n": "Mark Hubbard",
+   "eq": "-",
+   "piloto": -4.8,
+   "total": -4.8
+  },
+  {
+   "n": "Danny Walker",
+   "eq": "-",
+   "piloto": -6.9,
+   "total": -6.9
+  },
+  {
+   "n": "Alejandro Madariaga",
+   "eq": "-",
+   "piloto": -7.2,
+   "total": -7.2
+  },
+  {
+   "n": "Muzzy Donohue",
+   "eq": "-",
+   "piloto": -7.3,
+   "total": -7.3
+  },
+  {
+   "n": "Davis Chatfield",
+   "eq": "-",
+   "piloto": -8.6,
+   "total": -8.6
+  },
+  {
+   "n": "Hank Lebioda",
+   "eq": "-",
+   "piloto": -9.0,
+   "total": -9.0
+  },
+  {
+   "n": "Willie Mack III",
+   "eq": "-",
+   "piloto": -9.4,
+   "total": -9.4
+  },
+  {
+   "n": "Taylor Pendrith",
+   "eq": "-",
+   "piloto": -13.6,
+   "total": -13.6
+  },
+  {
+   "n": "Marcelo Rozo",
+   "eq": "-",
+   "piloto": -13.8,
+   "total": -13.8
+  },
+  {
+   "n": "Tyler Collet",
+   "eq": "-",
+   "piloto": -14.9,
+   "total": -14.9
+  },
+  {
+   "n": "Taylor Montgomery",
+   "eq": "-",
+   "piloto": -15.6,
+   "total": -15.6
+  },
+  {
+   "n": "Harry Higgs",
+   "eq": "-",
+   "piloto": -21.7,
+   "total": -21.7
+  },
+  {
+   "n": "Nathan Tseng",
+   "eq": "-",
+   "piloto": -22.4,
+   "total": -22.4
+  },
+  {
+   "n": "Lyon Lazare",
+   "eq": "-",
+   "piloto": -23.4,
+   "total": -23.4
+  },
+  {
+   "n": "Jorge Villar",
+   "eq": "-",
+   "piloto": -24.0,
+   "total": -24.0
+  },
+  {
+   "n": "Camilo Villegas",
+   "eq": "-",
+   "piloto": -26.9,
+   "total": -26.9
+  },
+  {
+   "n": "Pontus Nyholm",
+   "eq": "-",
+   "piloto": -27.6,
+   "total": -27.6
+  },
+  {
+   "n": "Aaron Wise",
+   "eq": "-",
+   "piloto": -31.8,
+   "total": -31.8
+  },
+  {
+   "n": "Nicholas Marchese",
+   "eq": "-",
+   "piloto": -33.5,
+   "total": -33.5
+  },
+  {
+   "n": "Jimmy Stanger",
+   "eq": "-",
+   "piloto": -35.9,
+   "total": -35.9
+  },
+  {
+   "n": "Nicholas Lindheim",
+   "eq": "-",
+   "piloto": -41.1,
+   "total": -41.1
+  },
+  {
+   "n": "Christo Lamprecht",
+   "eq": "-",
+   "piloto": -41.9,
+   "total": -41.9
+  }
+ ],
+ "equipos": [
+  {
+   "eq": "-",
+   "f": 0.0
+  }
+ ],
+ "directo": {
+  "carreras": 0
+ },
+ "recientes": [],
+ "ultimas": [
+  {
+   "nombre": "World Wide Technology Championship",
+   "fecha": "2026-11-05T08:00:00Z",
+   "ganador": "Blades Brown",
+   "equipo": "-"
+  },
+  {
+   "nombre": "VidantaWorld Mexico Open",
+   "fecha": "2026-10-29T07:00:00Z",
+   "ganador": "Andrew Novak",
+   "equipo": "-"
+  },
+  {
+   "nombre": "Butterfield Bermuda Championship",
+   "fecha": "2026-10-22T07:00:00Z",
+   "ganador": "Austin Smotherman",
+   "equipo": "-"
+  },
+  {
+   "nombre": "Baycurrent Classic",
+   "fecha": "2026-10-08T07:00:00Z",
+   "ganador": "Michael Brennan",
+   "equipo": "-"
+  },
+  {
+   "nombre": "Bank of Utah Championship",
+   "fecha": "2026-10-01T07:00:00Z",
+   "ganador": "Austin Smotherman",
+   "equipo": "-"
+  },
+  {
+   "nombre": "Biltmore Championship Asheville",
+   "fecha": "2026-09-17T07:00:00Z",
+   "ganador": "Jacob Bridgeman",
+   "equipo": "-"
+  },
+  {
+   "nombre": "TOUR Championship",
+   "fecha": "2026-08-27T07:00:00Z",
+   "ganador": "Scottie Scheffler",
+   "equipo": "-"
+  },
+  {
+   "nombre": "BMW Championship",
+   "fecha": "2026-08-20T07:00:00Z",
+   "ganador": "Wyndham Clark",
+   "equipo": "-"
+  }
+ ],
+ "fuentes": "Marcador público de ESPN",
+ "tipo_serie": "golf"
+}
