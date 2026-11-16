@@ -1,0 +1,48 @@
+name: Revision diaria
+
+# Revisor automatico: comprueba toda la web despues de cada ejecucion del Motor y, por si acaso,
+# una vez al dia. Si encuentra un ERROR, termina en rojo y GitHub avisa por correo al dueno.
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Motor"]
+    types: [completed]
+  schedule:
+    - cron: "41 10 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: revision
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Revisar toda la web
+        id: rev
+        run: |
+          python3 -u scripts/revisor.py && echo "fallo=no" >> "$GITHUB_OUTPUT" || echo "fallo=si" >> "$GITHUB_OUTPUT"
+
+      - name: Guardar el informe
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/revision.json data/revision_huellas.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Revision diaria"
+          for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 10; done
+          exit 1
+
+      - name: Resultado de la revision
+        run: |
+          if [ "${{ steps.rev.outputs.fallo }}" = "si" ]; then
+            echo "Se han encontrado ERRORES. Abre el paso 'Revisar toda la web' para verlos."
+            exit 1
+          fi
+          echo "Todo correcto."
