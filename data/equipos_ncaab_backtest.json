@@ -1,20 +1,20 @@
 {
- "actualizado": "2026-11-16 02:26 UTC",
+ "actualizado": "2026-11-16 16:51 UTC",
  "liga": "NCAA",
  "desde": "20251103",
- "datos_hasta": "2026-11-16T00:00:00Z",
+ "datos_hasta": "2026-11-16T02:00:00Z",
  "total": {
-  "n": 6515,
-  "aciertos": 4740,
-  "acierto": 0.7276,
+  "n": 6518,
+  "aciertos": 4743,
+  "acierto": 0.7277,
   "ic": [
-   0.7166,
-   0.7382
+   0.7167,
+   0.7383
   ],
   "brier": 0.1789
  },
  "base_local": {
-  "n": 6515,
+  "n": 6518,
   "acierto": 0.6569
  },
  "base_balance": {
@@ -25,32 +25,32 @@
  "tramos": [
   {
    "min": 0.6,
-   "n": 5146,
+   "n": 5149,
    "conf": 0.7867,
-   "acierto": 0.7759,
+   "acierto": 0.7761,
    "ic": [
-    0.7643,
-    0.7871
+    0.7645,
+    0.7873
    ]
   },
   {
    "min": 0.7,
-   "n": 3755,
-   "conf": 0.8373,
-   "acierto": 0.8234,
+   "n": 3757,
+   "conf": 0.8374,
+   "acierto": 0.8235,
    "ic": [
-    0.8109,
-    0.8353
+    0.811,
+    0.8354
    ]
   },
   {
    "min": 0.8,
-   "n": 2356,
+   "n": 2358,
    "conf": 0.8892,
-   "acierto": 0.8896,
+   "acierto": 0.8897,
    "ic": [
-    0.8764,
-    0.9017
+    0.8765,
+    0.9018
    ]
   }
  ],
@@ -65,9 +65,9 @@
   {
    "desde": 60,
    "hasta": 70,
-   "n": 1391,
-   "prometido": 0.6502,
-   "real": 0.6477
+   "n": 1392,
+   "prometido": 0.6501,
+   "real": 0.648
   },
   {
    "desde": 70,
@@ -79,16 +79,16 @@
   {
    "desde": 80,
    "hasta": 90,
-   "n": 1359,
+   "n": 1360,
    "prometido": 0.8503,
-   "real": 0.8492
+   "real": 0.8493
   },
   {
    "desde": 90,
    "hasta": 100,
-   "n": 997,
+   "n": 998,
    "prometido": 0.9421,
-   "real": 0.9448
+   "real": 0.9449
   }
  ],
  "temporadas": {
@@ -103,24 +103,24 @@
    "brier": 0.1828
   },
   "2027": {
-   "n": 676,
-   "aciertos": 535,
-   "acierto": 0.7914,
+   "n": 679,
+   "aciertos": 538,
+   "acierto": 0.7923,
    "ic": [
-    0.7592,
-    0.8204
+    0.7602,
+    0.8212
    ],
-   "brier": 0.1452
+   "brier": 0.1448
   }
  },
  "fases": {
   "regular": {
-   "n": 6410,
-   "aciertos": 4673,
-   "acierto": 0.729,
+   "n": 6413,
+   "aciertos": 4676,
+   "acierto": 0.7291,
    "ic": [
-    0.718,
-    0.7398
+    0.7181,
+    0.7399
    ],
    "brier": 0.1785
   },
@@ -137,27 +137,54 @@
  },
  "elige": {
   "local": {
-   "n": 4965,
-   "aciertos": 3735,
-   "acierto": 0.7523,
+   "n": 4967,
+   "aciertos": 3737,
+   "acierto": 0.7524,
    "ic": [
-    0.7401,
-    0.7641
+    0.7402,
+    0.7642
    ],
    "brier": 0.1677
   },
   "visitante": {
-   "n": 1550,
-   "aciertos": 1005,
-   "acierto": 0.6484,
+   "n": 1551,
+   "aciertos": 1006,
+   "acierto": 0.6486,
    "ic": [
-    0.6243,
-    0.6718
+    0.6245,
+    0.672
    ],
-   "brier": 0.2148
+   "brier": 0.2147
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-16T02:00:00Z",
+   "local": "San José State Spartans",
+   "visitante": "Alabama State Hornets",
+   "marcador": "80-68",
+   "fav": "San José State Spartans",
+   "pp": 0.8666,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-16T01:00:00Z",
+   "local": "Wisconsin Badgers",
+   "visitante": "Coastal Carolina Chanticleers",
+   "marcador": "89-81",
+   "fav": "Wisconsin Badgers",
+   "pp": 0.9519,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-16T01:00:00Z",
+   "local": "UTSA Roadrunners",
+   "visitante": "Texas State Bobcats",
+   "marcador": "67-87",
+   "fav": "Texas State Bobcats",
+   "pp": 0.622,
+   "ok": true
+  },
   {
    "fecha": "2026-11-16T00:00:00Z",
    "local": "USC Trojans",
@@ -355,33 +382,6 @@
    "fav": "La Salle Explorers",
    "pp": 0.5228,
    "ok": false
-  },
-  {
-   "fecha": "2026-11-15T19:00:00Z",
-   "local": "Charleston Cougars",
-   "visitante": "South Carolina State Bulldogs",
-   "marcador": "90-66",
-   "fav": "Charleston Cougars",
-   "pp": 0.8772,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-15T19:00:00Z",
-   "local": "Michigan Wolverines",
-   "visitante": "William & Mary Tribe",
-   "marcador": "123-79",
-   "fav": "Michigan Wolverines",
-   "pp": 0.9184,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-15T18:30:00Z",
-   "local": "Boston College Eagles",
-   "visitante": "New Hampshire Wildcats",
-   "marcador": "67-55",
-   "fav": "Boston College Eagles",
-   "pp": 0.8751,
-   "ok": true
   }
  ],
  "motor": {
@@ -396,16 +396,16 @@
   },
   "sd": 15.854,
   "motor": {
-   "n": 6515,
-   "acierto": 0.7276,
+   "n": 6518,
+   "acierto": 0.7277,
    "brier": 0.1789,
-   "logloss": 0.5304
+   "logloss": 0.5302
   },
   "elo_basico": {
-   "n": 6515,
-   "acierto": 0.7159,
+   "n": 6518,
+   "acierto": 0.716,
    "brier": 0.1864,
-   "logloss": 0.5527
+   "logloss": 0.5526
   },
   "escalas": {
    "temporada": true,
@@ -415,7 +415,7 @@
    "descanso": true
   },
   "local": {
-   "n": 6515,
+   "n": 6518,
    "acierto": 0.6569
   },
   "temporadas_prueba": [

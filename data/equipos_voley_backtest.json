@@ -1,12 +1,12 @@
 {
- "actualizado": "2026-11-16 02:26 UTC",
+ "actualizado": "2026-11-16 16:51 UTC",
  "liga": "NCAA",
  "desde": "20250822",
- "datos_hasta": "2026-11-16T00:00:00Z",
+ "datos_hasta": "2026-11-16T01:00:00Z",
  "total": {
-  "n": 9722,
-  "aciertos": 7144,
-  "acierto": 0.7348,
+  "n": 9723,
+  "aciertos": 7145,
+  "acierto": 0.7349,
   "ic": [
    0.726,
    0.7435
@@ -14,18 +14,18 @@
   "brier": 0.1747
  },
  "base_local": {
-  "n": 9722,
+  "n": 9723,
   "acierto": 0.5721
  },
  "base_balance": {
-  "n": 7580,
-  "acierto": 0.6985,
-  "nuestro": 0.7526
+  "n": 7581,
+  "acierto": 0.6986,
+  "nuestro": 0.7527
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 7187,
+   "n": 7188,
    "conf": 0.7646,
    "acierto": 0.8002,
    "ic": [
@@ -65,9 +65,9 @@
   {
    "desde": 60,
    "hasta": 70,
-   "n": 2270,
+   "n": 2271,
    "prometido": 0.6493,
-   "real": 0.6744
+   "real": 0.6746
   },
   {
    "desde": 70,
@@ -103,21 +103,21 @@
    "brier": 0.1766
   },
   "2026": {
-   "n": 4646,
-   "aciertos": 3422,
-   "acierto": 0.7365,
+   "n": 4647,
+   "aciertos": 3423,
+   "acierto": 0.7366,
    "ic": [
     0.7237,
-    0.749
+    0.7491
    ],
    "brier": 0.1726
   }
  },
  "fases": {
   "regular": {
-   "n": 9722,
-   "aciertos": 7144,
-   "acierto": 0.7348,
+   "n": 9723,
+   "aciertos": 7145,
+   "acierto": 0.7349,
    "ic": [
     0.726,
     0.7435
@@ -127,9 +127,9 @@
  },
  "elige": {
   "local": {
-   "n": 5906,
-   "aciertos": 4445,
-   "acierto": 0.7526,
+   "n": 5907,
+   "aciertos": 4446,
+   "acierto": 0.7527,
    "ic": [
     0.7415,
     0.7635
@@ -148,6 +148,15 @@
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-16T01:00:00Z",
+   "local": "Pittsburgh Panthers",
+   "visitante": "Louisville Cardinals",
+   "marcador": "3-0",
+   "fav": "Pittsburgh Panthers",
+   "pp": 0.698,
+   "ok": true
+  },
   {
    "fecha": "2026-11-16T00:00:00Z",
    "local": "Creighton Bluejays",
@@ -208,7 +217,7 @@
    "visitante": "Baylor Bears",
    "marcador": "2-3",
    "fav": "Colorado Buffaloes",
-   "pp": 0.5231,
+   "pp": 0.5232,
    "ok": false
   },
   {
@@ -363,15 +372,6 @@
    "fav": "Texas A&M Aggies",
    "pp": 0.9499,
    "ok": true
-  },
-  {
-   "fecha": "2026-11-15T18:00:00Z",
-   "local": "North Carolina Tar Heels",
-   "visitante": "Duke Blue Devils",
-   "marcador": "3-0",
-   "fav": "North Carolina Tar Heels",
-   "pp": 0.8519,
-   "ok": true
   }
  ],
  "motor": {
@@ -386,13 +386,13 @@
   },
   "sd": 2.367,
   "motor": {
-   "n": 9722,
-   "acierto": 0.7348,
+   "n": 9723,
+   "acierto": 0.7349,
    "brier": 0.1747,
    "logloss": 0.5221
   },
   "elo_basico": {
-   "n": 9722,
+   "n": 9723,
    "acierto": 0.729,
    "brier": 0.189,
    "logloss": 0.5616
@@ -405,7 +405,7 @@
    "descanso": false
   },
   "local": {
-   "n": 9722,
+   "n": 9723,
    "acierto": 0.5721
   },
   "temporadas_prueba": [

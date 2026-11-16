@@ -1,21 +1,21 @@
 {
- "actualizado": "2026-11-16 02:26 UTC",
+ "actualizado": "2026-11-16 16:51 UTC",
  "liga": "NFL",
  "desde": "20250905",
- "datos_hasta": "2026-11-15T21:25:00Z",
+ "datos_hasta": "2026-11-16T01:20:00Z",
  "total": {
-  "n": 431,
-  "aciertos": 280,
-  "acierto": 0.6497,
+  "n": 432,
+  "aciertos": 281,
+  "acierto": 0.6505,
   "ic": [
-   0.6035,
-   0.6932
+   0.6044,
+   0.6939
   ],
-  "brier": 0.219
+  "brier": 0.2189
  },
  "base_local": {
-  "n": 431,
-  "acierto": 0.5151
+  "n": 432,
+  "acierto": 0.5162
  },
  "base_balance": {
   "n": 242,
@@ -58,9 +58,9 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 157,
-   "prometido": 0.5508,
-   "real": 0.5541
+   "n": 158,
+   "prometido": 0.5509,
+   "real": 0.557
   },
   {
    "desde": 60,
@@ -103,24 +103,24 @@
    "brier": 0.2211
   },
   "2026": {
-   "n": 147,
-   "aciertos": 94,
-   "acierto": 0.6395,
+   "n": 148,
+   "aciertos": 95,
+   "acierto": 0.6419,
    "ic": [
-    0.5592,
-    0.7126
+    0.562,
+    0.7146
    ],
-   "brier": 0.2148
+   "brier": 0.2147
   }
  },
  "fases": {
   "regular": {
-   "n": 418,
-   "aciertos": 271,
-   "acierto": 0.6483,
+   "n": 419,
+   "aciertos": 272,
+   "acierto": 0.6492,
    "ic": [
-    0.6014,
-    0.6926
+    0.6023,
+    0.6933
    ],
    "brier": 0.2201
   },
@@ -137,14 +137,14 @@
  },
  "elige": {
   "local": {
-   "n": 241,
-   "aciertos": 156,
-   "acierto": 0.6473,
+   "n": 242,
+   "aciertos": 157,
+   "acierto": 0.6488,
    "ic": [
-    0.5851,
-    0.7049
+    0.5867,
+    0.7062
    ],
-   "brier": 0.2169
+   "brier": 0.2168
   },
   "visitante": {
    "n": 190,
@@ -158,6 +158,15 @@
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-16T01:20:00Z",
+   "local": "Cincinnati Bengals",
+   "visitante": "Pittsburgh Steelers",
+   "marcador": "38-18",
+   "fav": "Cincinnati Bengals",
+   "pp": 0.5633,
+   "ok": true
+  },
   {
    "fecha": "2026-11-15T21:25:00Z",
    "local": "Dallas Cowboys",
@@ -373,15 +382,6 @@
    "fav": "Kansas City Chiefs",
    "pp": 0.8148,
    "ok": true
-  },
-  {
-   "fecha": "2026-11-08T18:00:00Z",
-   "local": "Indianapolis Colts",
-   "visitante": "Dallas Cowboys",
-   "marcador": "23-27",
-   "fav": "Dallas Cowboys",
-   "pp": 0.5338,
-   "ok": true
   }
  ],
  "motor": {
@@ -394,18 +394,18 @@
    "c_micro": 0.0,
    "c_sede": 0.0
   },
-  "sd": 14.261,
+  "sd": 14.265,
   "motor": {
-   "n": 431,
-   "acierto": 0.6497,
-   "brier": 0.219,
-   "logloss": 0.6273
+   "n": 432,
+   "acierto": 0.6505,
+   "brier": 0.2189,
+   "logloss": 0.6272
   },
   "elo_basico": {
-   "n": 431,
-   "acierto": 0.6404,
-   "brier": 0.2212,
-   "logloss": 0.6318
+   "n": 432,
+   "acierto": 0.6412,
+   "brier": 0.2211,
+   "logloss": 0.6315
   },
   "escalas": {
    "temporada": true,
@@ -415,8 +415,8 @@
    "descanso": false
   },
   "local": {
-   "n": 431,
-   "acierto": 0.5151
+   "n": 432,
+   "acierto": 0.5162
   },
   "temporadas_prueba": [
    2025,

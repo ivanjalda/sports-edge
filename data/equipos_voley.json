@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-11-16 02:26 UTC",
+ "actualizado": "2026-11-16 16:51 UTC",
  "liga": "NCAA",
- "datos_hasta": "2026-11-16T00:00:00Z",
+ "datos_hasta": "2026-11-16T01:00:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
@@ -10,29 +10,6 @@
  "con_cuotas": false,
  "proximo": "2026-11-17T00:30:00Z",
  "predicciones": [
-  {
-   "id": "401883963",
-   "fecha": "2026-11-16T01:00:00Z",
-   "local": "Pittsburgh Panthers",
-   "visitante": "Louisville Cardinals",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.698,
-   "pv": 0.302,
-   "elo_l": 1983,
-   "elo_v": 1929,
-   "bal_l": [
-    24,
-    1
-   ],
-   "bal_v": [
-    24,
-    3
-   ],
-   "creada": "2026-11-14 02:42 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "401887144",
    "fecha": "2026-11-17T00:30:00Z",
@@ -538,9 +515,55 @@
    "creada": "2026-11-16 02:26 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401886069",
+   "fecha": "2026-11-18T03:30:00Z",
+   "local": "UCLA Bruins",
+   "visitante": "USC Trojans",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6707,
+   "pv": 0.3293,
+   "elo_l": 1718,
+   "elo_v": 1637,
+   "bal_l": [
+    17,
+    10
+   ],
+   "bal_v": [
+    11,
+    15
+   ],
+   "creada": "2026-11-16 16:51 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
  "recientes": [
+  {
+   "id": "401883963",
+   "fecha": "2026-11-16T01:00:00Z",
+   "local": "Pittsburgh Panthers",
+   "visitante": "Louisville Cardinals",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.698,
+   "pv": 0.302,
+   "elo_l": 1983,
+   "elo_v": 1929,
+   "bal_l": [
+    24,
+    1
+   ],
+   "bal_v": [
+    24,
+    3
+   ],
+   "creada": "2026-11-14 02:42 UTC",
+   "resultado": "L",
+   "marcador": "3-0"
+  },
   {
    "id": "401884489",
    "fecha": "2026-11-15T21:00:00Z",
@@ -977,41 +1000,18 @@
    "creada": "2026-11-13 19:24 UTC",
    "resultado": "L",
    "marcador": "3-1"
-  },
-  {
-   "id": "401885760",
-   "fecha": "2026-11-15T18:00:00Z",
-   "local": "New Hampshire Wildcats",
-   "visitante": "UAlbany Great Danes",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7578,
-   "pv": 0.2422,
-   "elo_l": 1513,
-   "elo_v": 1417,
-   "bal_l": [
-    15,
-    7
-   ],
-   "bal_v": [
-    7,
-    14
-   ],
-   "creada": "2026-11-13 19:24 UTC",
-   "resultado": "L",
-   "marcador": "3-0"
   }
  ],
  "directo": {
-  "total": 275,
-  "resueltas": 249,
-  "aciertos": 192,
-  "acierto": 0.7711,
+  "total": 276,
+  "resueltas": 250,
+  "aciertos": 193,
+  "acierto": 0.772,
   "ic": [
-   0.715,
-   0.8189
+   0.7161,
+   0.8197
   ],
-  "brier": 0.1487,
+  "brier": 0.1485,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -1025,20 +1025,20 @@
   },
   {
    "equipo": "Pittsburgh Panthers",
-   "elo": 1983,
-   "g": 24,
+   "elo": 1997,
+   "g": 25,
    "p": 1
-  },
-  {
-   "equipo": "Louisville Cardinals",
-   "elo": 1929,
-   "g": 24,
-   "p": 3
   },
   {
    "equipo": "SMU Mustangs",
    "elo": 1917,
    "g": 22,
+   "p": 4
+  },
+  {
+   "equipo": "Louisville Cardinals",
+   "elo": 1914,
+   "g": 24,
    "p": 4
   },
   {

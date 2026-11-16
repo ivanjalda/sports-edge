@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-16 02:25 UTC",
+ "actualizado": "2026-11-16 16:50 UTC",
  "datos_hasta": 20261114,
  "dias_desde_datos": 2,
  "fuentes": {
@@ -15,8 +15,7 @@
   }
  },
  "torneos": [
-  "ATP Finals",
-  "WTA Finals"
+  "ATP Finals"
  ],
  "sin_datos": [],
  "predicciones": [
@@ -87,25 +86,25 @@
    "cuota": {
     "mejor": {
      "1": {
-      "c": 1.33,
-      "casa": "Unibet (NL)"
+      "c": 1.29,
+      "casa": "William Hill"
      },
      "2": {
-      "c": 4.1,
+      "c": 4.3,
       "casa": "Betfair"
      }
     },
     "mercado": {
-     "1": 0.7402,
-     "2": 0.2598
+     "1": 0.757,
+     "2": 0.243
     },
     "casas": 21,
     "ev": {
-     "1": -0.0659,
-     "2": 0.2206
+     "1": -0.094,
+     "2": 0.2801
     },
     "valor": [],
-    "actualizado": "2026-11-15 14:35 UTC"
+    "actualizado": "2026-11-16 16:50 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 15:11 UTC",
@@ -113,10 +112,104 @@
     "1": 1.23,
     "2": 4.3
    }
+  },
+  {
+   "id": "b347b8bd2e85f10eca7dc7160026443b",
+   "torneo": "ATP Finals",
+   "tour": "ATP",
+   "sup": "Hard",
+   "fecha": "2026-11-17T13:00:00Z",
+   "j1": "Arthur Fils",
+   "j2": "Rafael Jodar",
+   "id1": "atp:F0F1",
+   "id2": "atp:J0DZ",
+   "p1": 0.519,
+   "p2": 0.481,
+   "n1": 195,
+   "n2": 67,
+   "creada": "2026-11-16 16:50 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "1": {
+      "c": 2.02,
+      "casa": "Betfair"
+     },
+     "2": {
+      "c": 1.94,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "1": 0.4971,
+     "2": 0.5029
+    },
+    "casas": 19,
+    "ev": {
+     "1": 0.0484,
+     "2": -0.0669
+    },
+    "valor": [],
+    "actualizado": "2026-11-16 16:50 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-16 16:50 UTC",
+    "valor": [],
+    "1": 2.02,
+    "2": 1.94
+   }
+  },
+  {
+   "id": "f0a6612a0e894025a58459b04ecd02c9",
+   "torneo": "ATP Finals",
+   "tour": "ATP",
+   "sup": "Hard",
+   "fecha": "2026-11-17T19:30:00Z",
+   "j1": "Alexander Zverev",
+   "j2": "Ben Shelton",
+   "id1": "atp:Z355",
+   "id2": "atp:S0S1",
+   "p1": 0.6223,
+   "p2": 0.3777,
+   "n1": 637,
+   "n2": 251,
+   "creada": "2026-11-16 16:50 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "1": {
+      "c": 1.54,
+      "casa": "Winamax (DE)"
+     },
+     "2": {
+      "c": 2.82,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "1": 0.6381,
+     "2": 0.3619
+    },
+    "casas": 19,
+    "ev": {
+     "1": -0.0417,
+     "2": 0.0651
+    },
+    "valor": [],
+    "actualizado": "2026-11-16 16:50 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-16 16:50 UTC",
+    "valor": [],
+    "1": 1.54,
+    "2": 2.82
+   }
   }
  ],
  "directo": {
-  "total": 14,
+  "total": 16,
   "resueltas": 0,
   "acierto": null,
   "brier": null,

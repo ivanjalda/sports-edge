@@ -5816,8 +5816,8 @@
     3
    ],
    "creada": "2026-11-14 02:42 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "3-0"
   },
   {
    "id": "401887144",
@@ -6324,7 +6324,30 @@
    "creada": "2026-11-16 02:26 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401886069",
+   "fecha": "2026-11-18T03:30:00Z",
+   "local": "UCLA Bruins",
+   "visitante": "USC Trojans",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6707,
+   "pv": 0.3293,
+   "elo_l": 1718,
+   "elo_v": 1637,
+   "bal_l": [
+    17,
+    10
+   ],
+   "bal_v": [
+    11,
+    15
+   ],
+   "creada": "2026-11-16 16:51 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-16 02:26 UTC"
+ "actualizado": "2026-11-16 16:51 UTC"
 }

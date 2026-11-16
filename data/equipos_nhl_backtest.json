@@ -1,46 +1,46 @@
 {
- "actualizado": "2026-11-16 02:26 UTC",
+ "actualizado": "2026-11-16 16:51 UTC",
  "liga": "NHL",
  "desde": "20251007",
- "datos_hasta": "2026-11-15T03:00:00Z",
+ "datos_hasta": "2026-11-16T02:00:00Z",
  "total": {
-  "n": 1711,
-  "aciertos": 938,
-  "acierto": 0.5482,
+  "n": 1716,
+  "aciertos": 941,
+  "acierto": 0.5484,
   "ic": [
-   0.5246,
-   0.5717
+   0.5247,
+   0.5718
   ],
-  "brier": 0.2467
+  "brier": 0.2468
  },
  "base_local": {
-  "n": 1711,
-  "acierto": 0.5213
+  "n": 1716,
+  "acierto": 0.5216
  },
  "base_balance": {
-  "n": 1481,
-  "acierto": 0.5544,
-  "nuestro": 0.5463
+  "n": 1486,
+  "acierto": 0.5545,
+  "nuestro": 0.5464
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 657,
-   "conf": 0.65,
-   "acierto": 0.6073,
+   "n": 658,
+   "conf": 0.6501,
+   "acierto": 0.6064,
    "ic": [
-    0.5694,
-    0.6439
+    0.5685,
+    0.643
    ]
   },
   {
    "min": 0.7,
-   "n": 76,
-   "conf": 0.7301,
-   "acierto": 0.7105,
+   "n": 77,
+   "conf": 0.7304,
+   "acierto": 0.7013,
    "ic": [
-    0.6004,
-    0.8004
+    0.5915,
+    0.792
    ]
   },
   {
@@ -58,9 +58,9 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 1054,
-   "prometido": 0.5492,
-   "real": 0.5114
+   "n": 1058,
+   "prometido": 0.5493,
+   "real": 0.5123
   },
   {
    "desde": 60,
@@ -72,9 +72,9 @@
   {
    "desde": 70,
    "hasta": 80,
-   "n": 75,
-   "prometido": 0.7291,
-   "real": 0.72
+   "n": 76,
+   "prometido": 0.7295,
+   "real": 0.7105
   },
   {
    "desde": 80,
@@ -103,26 +103,26 @@
    "brier": 0.2492
   },
   "2027": {
-   "n": 317,
-   "aciertos": 190,
+   "n": 322,
+   "aciertos": 193,
    "acierto": 0.5994,
    "ic": [
-    0.5445,
-    0.6518
+    0.545,
+    0.6514
    ],
-   "brier": 0.2356
+   "brier": 0.2364
   }
  },
  "fases": {
   "regular": {
-   "n": 1629,
-   "aciertos": 895,
-   "acierto": 0.5494,
+   "n": 1634,
+   "aciertos": 898,
+   "acierto": 0.5496,
    "ic": [
-    0.5252,
-    0.5734
+    0.5254,
+    0.5736
    ],
-   "brier": 0.2467
+   "brier": 0.2468
   },
   "playoff": {
    "n": 82,
@@ -137,27 +137,72 @@
  },
  "elige": {
   "local": {
-   "n": 1427,
-   "aciertos": 773,
-   "acierto": 0.5417,
+   "n": 1430,
+   "aciertos": 775,
+   "acierto": 0.542,
    "ic": [
-    0.5158,
-    0.5674
+    0.5161,
+    0.5676
    ],
-   "brier": 0.2479
+   "brier": 0.248
   },
   "visitante": {
-   "n": 284,
-   "aciertos": 165,
-   "acierto": 0.581,
+   "n": 286,
+   "aciertos": 166,
+   "acierto": 0.5804,
    "ic": [
-    0.5229,
-    0.6369
+    0.5225,
+    0.6362
    ],
-   "brier": 0.2406
+   "brier": 0.2408
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-16T02:00:00Z",
+   "local": "San Jose Sharks",
+   "visitante": "Nashville Predators",
+   "marcador": "4-2",
+   "fav": "Nashville Predators",
+   "pp": 0.5426,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-16T02:00:00Z",
+   "local": "Vegas Golden Knights",
+   "visitante": "Vancouver Canucks",
+   "marcador": "3-6",
+   "fav": "Vegas Golden Knights",
+   "pp": 0.7584,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-16T01:00:00Z",
+   "local": "Anaheim Ducks",
+   "visitante": "Calgary Flames",
+   "marcador": "6-1",
+   "fav": "Anaheim Ducks",
+   "pp": 0.5983,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-16T01:00:00Z",
+   "local": "Dallas Stars",
+   "visitante": "Florida Panthers",
+   "marcador": "2-1",
+   "fav": "Dallas Stars",
+   "pp": 0.5934,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-16T00:30:00Z",
+   "local": "Philadelphia Flyers",
+   "visitante": "Edmonton Oilers",
+   "marcador": "2-5",
+   "fav": "Edmonton Oilers",
+   "pp": 0.5132,
+   "ok": true
+  },
   {
    "fecha": "2026-11-15T03:00:00Z",
    "local": "Los Angeles Kings",
@@ -337,51 +382,6 @@
    "fav": "Buffalo Sabres",
    "pp": 0.5254,
    "ok": false
-  },
-  {
-   "fecha": "2026-11-13T00:30:00Z",
-   "local": "Florida Panthers",
-   "visitante": "Detroit Red Wings",
-   "marcador": "5-4",
-   "fav": "Florida Panthers",
-   "pp": 0.6143,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-13T00:00:00Z",
-   "local": "Ottawa Senators",
-   "visitante": "Colorado Avalanche",
-   "marcador": "4-3",
-   "fav": "Ottawa Senators",
-   "pp": 0.5122,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-13T00:00:00Z",
-   "local": "Columbus Blue Jackets",
-   "visitante": "Tampa Bay Lightning",
-   "marcador": "1-3",
-   "fav": "Columbus Blue Jackets",
-   "pp": 0.5016,
-   "ok": false
-  },
-  {
-   "fecha": "2026-11-13T00:00:00Z",
-   "local": "New Jersey Devils",
-   "visitante": "Washington Capitals",
-   "marcador": "5-2",
-   "fav": "New Jersey Devils",
-   "pp": 0.5594,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-13T00:00:00Z",
-   "local": "Toronto Maple Leafs",
-   "visitante": "Minnesota Wild",
-   "marcador": "2-5",
-   "fav": "Minnesota Wild",
-   "pp": 0.5508,
-   "ok": true
   }
  ],
  "motor": {
@@ -394,18 +394,18 @@
    "c_micro": 0.0,
    "c_sede": 0.0
   },
-  "sd": 2.609,
+  "sd": 2.61,
   "motor": {
-   "n": 1711,
-   "acierto": 0.5482,
-   "brier": 0.2467,
-   "logloss": 0.6865
+   "n": 1716,
+   "acierto": 0.5484,
+   "brier": 0.2468,
+   "logloss": 0.6868
   },
   "elo_basico": {
-   "n": 1711,
-   "acierto": 0.5488,
-   "brier": 0.2471,
-   "logloss": 0.6873
+   "n": 1716,
+   "acierto": 0.549,
+   "brier": 0.2472,
+   "logloss": 0.6875
   },
   "escalas": {
    "temporada": true,
@@ -415,8 +415,8 @@
    "descanso": true
   },
   "local": {
-   "n": 1711,
-   "acierto": 0.5213
+   "n": 1716,
+   "acierto": 0.5216
   },
   "temporadas_prueba": [
    2026,

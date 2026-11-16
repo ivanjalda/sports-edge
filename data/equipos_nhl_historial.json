@@ -1784,8 +1784,8 @@
     5
    ],
    "creada": "2026-11-14 02:42 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "2-5",
    "cuota": {
     "mejor": {
      "V": {
@@ -1836,8 +1836,8 @@
     9
    ],
    "creada": "2026-11-14 02:42 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "2-1",
    "cuota": {
     "mejor": {
      "L": {
@@ -1888,8 +1888,8 @@
     11
    ],
    "creada": "2026-11-14 02:42 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "6-1",
    "cuota": {
     "mejor": {
      "L": {
@@ -1940,8 +1940,8 @@
     17
    ],
    "creada": "2026-11-14 02:42 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "3-6",
    "cuota": {
     "mejor": {
      "V": {
@@ -1992,8 +1992,8 @@
     9
    ],
    "creada": "2026-11-14 02:42 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "4-2",
    "cuota": {
     "mejor": {
      "V": {
@@ -2045,7 +2045,36 @@
    ],
    "creada": "2026-11-15 02:08 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 2.5,
+      "casa": "LeoVegas (SE)"
+     },
+     "L": {
+      "c": 2.6,
+      "casa": "1xBet"
+     }
+    },
+    "mercado": {
+     "L": 0.493,
+     "V": 0.507
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.3471,
+     "V": 0.2047
+    },
+    "valor": [],
+    "actualizado": "2026-11-16 16:51 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-16 16:51 UTC",
+    "valor": [],
+    "L": 2.6,
+    "V": 2.5
+   }
   },
   {
    "id": "401892727",
@@ -2068,7 +2097,36 @@
    ],
    "creada": "2026-11-15 14:36 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.55,
+      "casa": "1xBet"
+     },
+     "V": {
+      "c": 5.5,
+      "casa": "LeoVegas (SE)"
+     }
+    },
+    "mercado": {
+     "L": 0.7566,
+     "V": 0.2434
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.076,
+     "V": 0.6819
+    },
+    "valor": [],
+    "actualizado": "2026-11-16 16:51 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-16 16:51 UTC",
+    "valor": [],
+    "L": 1.55,
+    "V": 5.5
+   }
   },
   {
    "id": "401892728",
@@ -2276,7 +2334,53 @@
    "creada": "2026-11-16 02:26 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401892737",
+   "fecha": "2026-11-18T03:00:00Z",
+   "local": "Vegas Golden Knights",
+   "visitante": "Dallas Stars",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.566,
+   "pv": 0.434,
+   "elo_l": 1533,
+   "elo_v": 1537,
+   "bal_l": [
+    12,
+    9
+   ],
+   "bal_v": [
+    12,
+    8
+   ],
+   "creada": "2026-11-16 16:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892738",
+   "fecha": "2026-11-18T03:00:00Z",
+   "local": "San Jose Sharks",
+   "visitante": "Calgary Flames",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5574,
+   "pv": 0.4426,
+   "elo_l": 1450,
+   "elo_v": 1460,
+   "bal_l": [
+    10,
+    13
+   ],
+   "bal_v": [
+    9,
+    12
+   ],
+   "creada": "2026-11-16 16:51 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-16 02:26 UTC"
+ "actualizado": "2026-11-16 16:51 UTC"
 }

@@ -592,8 +592,8 @@
     2
    ],
    "creada": "2026-11-13 02:59 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "38-18",
    "cuota": {
     "mejor": {
      "L": {
@@ -649,25 +649,25 @@
    "cuota": {
     "mejor": {
      "L": {
-      "c": 1.5,
-      "casa": "Betfair"
+      "c": 1.47,
+      "casa": "Coolbet"
      },
      "V": {
-      "c": 2.96,
-      "casa": "Matchbook"
+      "c": 3.05,
+      "casa": "Betfair"
      }
     },
     "mercado": {
-     "L": 0.6587,
-     "V": 0.3413
+     "L": 0.6672,
+     "V": 0.3328
     },
     "casas": 21,
     "ev": {
-     "L": 0.0642,
-     "V": -0.1401
+     "L": 0.043,
+     "V": -0.114
     },
     "valor": [],
-    "actualizado": "2026-11-15 14:36 UTC"
+    "actualizado": "2026-11-16 16:51 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-13 02:59 UTC",
@@ -697,8 +697,37 @@
    ],
    "creada": "2026-11-16 02:26 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.18,
+      "casa": "Matchbook"
+     },
+     "V": {
+      "c": 6.0,
+      "casa": "Unibet (NL)"
+     }
+    },
+    "mercado": {
+     "L": 0.8299,
+     "V": 0.1701
+    },
+    "casas": 20,
+    "ev": {
+     "L": -0.1446,
+     "V": 0.6506
+    },
+    "valor": [],
+    "actualizado": "2026-11-16 16:51 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-16 16:51 UTC",
+    "valor": [],
+    "L": 1.18,
+    "V": 6.0
+   }
   }
  ],
- "actualizado": "2026-11-16 02:26 UTC"
+ "actualizado": "2026-11-16 16:51 UTC"
 }
