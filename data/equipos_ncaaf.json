@@ -1,14 +1,14 @@
 {
- "actualizado": "2026-11-15 14:36 UTC",
+ "actualizado": "2026-11-16 02:26 UTC",
  "liga": "NCAA",
- "datos_hasta": "2026-11-15T04:00:00Z",
+ "datos_hasta": "2026-11-15T18:00:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
- "proximo": "2026-11-15T18:00:00Z",
+ "proximo": "2026-11-17T23:00:00Z",
  "predicciones": [
   {
    "id": "401866465",
@@ -122,6 +122,29 @@
     5
    ],
    "creada": "2026-11-15 02:08 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401862830",
+   "fecha": "2026-11-20T00:30:00Z",
+   "local": "Temple Owls",
+   "visitante": "Rice Owls",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6369,
+   "pv": 0.3631,
+   "elo_l": 1268,
+   "elo_v": 1256,
+   "bal_l": [
+    1,
+    8
+   ],
+   "bal_v": [
+    0,
+    9
+   ],
+   "creada": "2026-11-16 02:26 UTC",
    "resultado": null,
    "marcador": null
   }
@@ -589,15 +612,15 @@
   }
  ],
  "directo": {
-  "total": 65,
-  "resueltas": 59,
+  "total": 66,
+  "resueltas": 60,
   "aciertos": 41,
-  "acierto": 0.6949,
+  "acierto": 0.6833,
   "ic": [
-   0.5685,
-   0.7975
+   0.5577,
+   0.7869
   ],
-  "brier": 0.2107,
+  "brier": 0.2121,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -700,12 +723,6 @@
    "p": 0
   },
   {
-   "equipo": "Ole Miss Rebels",
-   "elo": 1695,
-   "g": 6,
-   "p": 3
-  },
-  {
    "equipo": "North Dakota State Bison",
    "elo": 1689,
    "g": 7,
@@ -736,6 +753,12 @@
    "p": 3
   },
   {
+   "equipo": "Ole Miss Rebels",
+   "elo": 1665,
+   "g": 6,
+   "p": 4
+  },
+  {
    "equipo": "Memphis Tigers",
    "elo": 1660,
    "g": 8,
@@ -758,6 +781,12 @@
    "elo": 1645,
    "g": 9,
    "p": 1
+  },
+  {
+   "equipo": "Oklahoma Sooners",
+   "elo": 1645,
+   "g": 6,
+   "p": 4
   },
   {
    "equipo": "UTSA Roadrunners",
@@ -792,12 +821,6 @@
   {
    "equipo": "Missouri Tigers",
    "elo": 1619,
-   "g": 5,
-   "p": 4
-  },
-  {
-   "equipo": "Oklahoma Sooners",
-   "elo": 1614,
    "g": 5,
    "p": 4
   },

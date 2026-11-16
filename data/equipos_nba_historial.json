@@ -1534,8 +1534,8 @@
     8
    ],
    "creada": "2026-11-13 19:24 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "131-124",
    "cuota": {
     "mejor": {
      "V": {
@@ -1586,8 +1586,8 @@
     2
    ],
    "creada": "2026-11-14 02:42 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "123-131",
    "cuota": {
     "mejor": {
      "V": {
@@ -1638,8 +1638,8 @@
     8
    ],
    "creada": "2026-11-14 02:42 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "113-105",
    "cuota": {
     "mejor": {
      "V": {
@@ -1690,8 +1690,8 @@
     2
    ],
    "creada": "2026-11-14 02:42 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "102-110",
    "cuota": {
     "mejor": {
      "V": {
@@ -1742,8 +1742,8 @@
     5
    ],
    "creada": "2026-11-14 02:42 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "131-94",
    "cuota": {
     "mejor": {
      "L": {
@@ -1794,8 +1794,8 @@
     5
    ],
    "creada": "2026-11-14 02:42 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "108-112",
    "cuota": {
     "mejor": {
      "V": {
@@ -2165,7 +2165,76 @@
    "creada": "2026-11-15 02:08 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401910002",
+   "fecha": "2026-11-18T00:30:00Z",
+   "local": "Toronto Raptors",
+   "visitante": "New York Knicks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.3517,
+   "pv": 0.6483,
+   "elo_l": 1514,
+   "elo_v": 1659,
+   "bal_l": [
+    5,
+    8
+   ],
+   "bal_v": [
+    7,
+    6
+   ],
+   "creada": "2026-11-16 02:26 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401910003",
+   "fecha": "2026-11-18T01:00:00Z",
+   "local": "Minnesota Timberwolves",
+   "visitante": "Portland Trail Blazers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6343,
+   "pv": 0.3657,
+   "elo_l": 1591,
+   "elo_v": 1562,
+   "bal_l": [
+    9,
+    4
+   ],
+   "bal_v": [
+    9,
+    3
+   ],
+   "creada": "2026-11-16 02:26 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401910004",
+   "fecha": "2026-11-18T01:00:00Z",
+   "local": "San Antonio Spurs",
+   "visitante": "Detroit Pistons",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7228,
+   "pv": 0.2772,
+   "elo_l": 1703,
+   "elo_v": 1618,
+   "bal_l": [
+    12,
+    2
+   ],
+   "bal_v": [
+    8,
+    4
+   ],
+   "creada": "2026-11-16 02:26 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-15 14:36 UTC"
+ "actualizado": "2026-11-16 02:26 UTC"
 }

@@ -1,26 +1,26 @@
 {
- "actualizado": "2026-11-15 14:36 UTC",
+ "actualizado": "2026-11-16 02:26 UTC",
  "liga": "NCAA",
  "desde": "20250823",
- "datos_hasta": "2026-11-15T04:00:00Z",
+ "datos_hasta": "2026-11-15T18:00:00Z",
  "total": {
-  "n": 1504,
+  "n": 1505,
   "aciertos": 1071,
-  "acierto": 0.7121,
+  "acierto": 0.7116,
   "ic": [
-   0.6887,
-   0.7344
+   0.6882,
+   0.734
   ],
   "brier": 0.1884
  },
  "base_local": {
-  "n": 1504,
-  "acierto": 0.6104
+  "n": 1505,
+  "acierto": 0.6106
  },
  "base_balance": {
-  "n": 668,
-  "acierto": 0.6632,
-  "nuestro": 0.6931
+  "n": 669,
+  "acierto": 0.6622,
+  "nuestro": 0.6921
  },
  "tramos": [
   {
@@ -58,9 +58,9 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 362,
+   "n": 363,
    "prometido": 0.5499,
-   "real": 0.5497
+   "real": 0.5482
   },
   {
    "desde": 60,
@@ -103,26 +103,26 @@
    "brier": 0.1823
   },
   "2026": {
-   "n": 655,
+   "n": 656,
    "aciertos": 461,
-   "acierto": 0.7038,
+   "acierto": 0.7027,
    "ic": [
-    0.6677,
-    0.7375
+    0.6667,
+    0.7365
    ],
-   "brier": 0.1963
+   "brier": 0.1964
   }
  },
  "fases": {
   "regular": {
-   "n": 1458,
+   "n": 1459,
    "aciertos": 1045,
-   "acierto": 0.7167,
+   "acierto": 0.7162,
    "ic": [
-    0.6931,
-    0.7393
+    0.6926,
+    0.7388
    ],
-   "brier": 0.1873
+   "brier": 0.1874
   },
   "playoff": {
    "n": 46,
@@ -147,17 +147,26 @@
    "brier": 0.1731
   },
   "visitante": {
-   "n": 531,
+   "n": 532,
    "aciertos": 342,
-   "acierto": 0.6441,
+   "acierto": 0.6429,
    "ic": [
-    0.6024,
-    0.6836
+    0.6012,
+    0.6824
    ],
-   "brier": 0.2163
+   "brier": 0.2164
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-15T18:00:00Z",
+   "local": "Oklahoma Sooners",
+   "visitante": "Ole Miss Rebels",
+   "marcador": "24-17",
+   "fav": "Ole Miss Rebels",
+   "pp": 0.5264,
+   "ok": false
+  },
   {
    "fecha": "2026-11-15T04:00:00Z",
    "local": "Hawai'i Rainbow Warriors",
@@ -373,15 +382,6 @@
    "fav": "Louisiana Tech Bulldogs",
    "pp": 0.9206,
    "ok": true
-  },
-  {
-   "fecha": "2026-11-14T21:30:00Z",
-   "local": "Rice Owls",
-   "visitante": "Tulane Green Wave",
-   "marcador": "17-20",
-   "fav": "Tulane Green Wave",
-   "pp": 0.6965,
-   "ok": true
   }
  ],
  "motor": {
@@ -394,18 +394,18 @@
    "c_micro": 30.0,
    "c_sede": 0.0
   },
-  "sd": 20.709,
+  "sd": 20.706,
   "motor": {
-   "n": 1504,
-   "acierto": 0.7121,
+   "n": 1505,
+   "acierto": 0.7116,
    "brier": 0.1884,
-   "logloss": 0.5572
+   "logloss": 0.5574
   },
   "elo_basico": {
-   "n": 1504,
-   "acierto": 0.7061,
-   "brier": 0.1937,
-   "logloss": 0.5715
+   "n": 1505,
+   "acierto": 0.7056,
+   "brier": 0.1938,
+   "logloss": 0.5716
   },
   "escalas": {
    "temporada": true,
@@ -415,8 +415,8 @@
    "descanso": false
   },
   "local": {
-   "n": 1504,
-   "acierto": 0.6104
+   "n": 1505,
+   "acierto": 0.6106
   },
   "temporadas_prueba": [
    2025,

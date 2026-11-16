@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-15 14:36 UTC",
+ "actualizado": "2026-11-16 02:26 UTC",
  "liga": "NHL",
  "datos_hasta": "2026-11-15T03:00:00Z",
  "dias_desde_datos": 0,
@@ -8,7 +8,7 @@
   "url": "https://www.espn.com"
  },
  "con_cuotas": true,
- "proximo": "2026-11-16T00:30:00Z",
+ "proximo": "2026-11-17T00:30:00Z",
  "predicciones": [
   {
    "id": "401892721",
@@ -313,6 +313,213 @@
     18
    ],
    "creada": "2026-11-15 14:36 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892728",
+   "fecha": "2026-11-18T00:00:00Z",
+   "local": "Boston Bruins",
+   "visitante": "Los Angeles Kings",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6553,
+   "pv": 0.3447,
+   "elo_l": 1526,
+   "elo_v": 1465,
+   "bal_l": [
+    12,
+    7
+   ],
+   "bal_v": [
+    5,
+    12
+   ],
+   "creada": "2026-11-16 02:26 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892730",
+   "fecha": "2026-11-18T00:00:00Z",
+   "local": "Florida Panthers",
+   "visitante": "Edmonton Oilers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5344,
+   "pv": 0.4656,
+   "elo_l": 1520,
+   "elo_v": 1546,
+   "bal_l": [
+    11,
+    9
+   ],
+   "bal_v": [
+    15,
+    5
+   ],
+   "creada": "2026-11-16 02:26 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892731",
+   "fecha": "2026-11-18T00:00:00Z",
+   "local": "New York Islanders",
+   "visitante": "Columbus Blue Jackets",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5824,
+   "pv": 0.4176,
+   "elo_l": 1496,
+   "elo_v": 1488,
+   "bal_l": [
+    9,
+    9
+   ],
+   "bal_v": [
+    7,
+    11
+   ],
+   "creada": "2026-11-16 02:26 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892732",
+   "fecha": "2026-11-18T00:00:00Z",
+   "local": "Philadelphia Flyers",
+   "visitante": "Buffalo Sabres",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5282,
+   "pv": 0.4718,
+   "elo_l": 1486,
+   "elo_v": 1517,
+   "bal_l": [
+    6,
+    15
+   ],
+   "bal_v": [
+    8,
+    12
+   ],
+   "creada": "2026-11-16 02:26 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892736",
+   "fecha": "2026-11-18T00:00:00Z",
+   "local": "Winnipeg Jets",
+   "visitante": "Ottawa Senators",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5186,
+   "pv": 0.4814,
+   "elo_l": 1496,
+   "elo_v": 1533,
+   "bal_l": [
+    10,
+    11
+   ],
+   "bal_v": [
+    13,
+    8
+   ],
+   "creada": "2026-11-16 02:26 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892729",
+   "fecha": "2026-11-18T00:30:00Z",
+   "local": "Tampa Bay Lightning",
+   "visitante": "Washington Capitals",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6303,
+   "pv": 0.3697,
+   "elo_l": 1561,
+   "elo_v": 1519,
+   "bal_l": [
+    13,
+    7
+   ],
+   "bal_v": [
+    10,
+    8
+   ],
+   "creada": "2026-11-16 02:26 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892733",
+   "fecha": "2026-11-18T00:30:00Z",
+   "local": "Chicago Blackhawks",
+   "visitante": "Toronto Maple Leafs",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4999,
+   "pv": 0.5001,
+   "elo_l": 1416,
+   "elo_v": 1466,
+   "bal_l": [
+    5,
+    14
+   ],
+   "bal_v": [
+    7,
+    13
+   ],
+   "creada": "2026-11-16 02:26 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892734",
+   "fecha": "2026-11-18T01:00:00Z",
+   "local": "St. Louis Blues",
+   "visitante": "Anaheim Ducks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5985,
+   "pv": 0.4015,
+   "elo_l": 1503,
+   "elo_v": 1484,
+   "bal_l": [
+    9,
+    11
+   ],
+   "bal_v": [
+    10,
+    10
+   ],
+   "creada": "2026-11-16 02:26 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892735",
+   "fecha": "2026-11-18T01:00:00Z",
+   "local": "Minnesota Wild",
+   "visitante": "Nashville Predators",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6548,
+   "pv": 0.3452,
+   "elo_l": 1567,
+   "elo_v": 1506,
+   "bal_l": [
+    15,
+    7
+   ],
+   "bal_v": [
+    11,
+    9
+   ],
+   "creada": "2026-11-16 02:26 UTC",
    "resultado": null,
    "marcador": null
   }
@@ -1368,7 +1575,7 @@
   }
  ],
  "directo": {
-  "total": 40,
+  "total": 49,
   "resueltas": 33,
   "aciertos": 13,
   "acierto": 0.3939,

@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-11-15 14:35 UTC",
+ "actualizado": "2026-11-16 02:25 UTC",
  "desde": 20250101,
- "datos_hasta": 20261108,
- "dias_desde_datos": 7,
+ "datos_hasta": 20261114,
+ "dias_desde_datos": 2,
  "fuentes": {
   "ATP": {
    "nombre": "TennisMyLife",
@@ -16,48 +16,48 @@
   }
  },
  "total": {
-  "n": 9229,
-  "aciertos": 5899,
-  "acierto": 0.6392,
+  "n": 9253,
+  "aciertos": 5916,
+  "acierto": 0.6394,
   "ic": [
-   0.6293,
-   0.6489
+   0.6295,
+   0.6491
   ],
   "brier": 0.2198,
   "brier_azar": 0.25,
-  "n_ranking": 9215,
-  "acierto_mismo_grupo": 0.6393,
-  "mejor_ranking": 0.6315
+  "n_ranking": 9239,
+  "acierto_mismo_grupo": 0.6395,
+  "mejor_ranking": 0.6316
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 6430,
-   "conf": 0.7387,
+   "n": 6449,
+   "conf": 0.7385,
    "acierto": 0.6922,
    "ic": [
     0.6808,
-    0.7034
+    0.7033
    ]
   },
   {
    "min": 0.7,
-   "n": 3803,
-   "conf": 0.8009,
-   "acierto": 0.7512,
+   "n": 3809,
+   "conf": 0.8008,
+   "acierto": 0.7514,
    "ic": [
-    0.7373,
-    0.7647
+    0.7374,
+    0.7648
    ]
   },
   {
    "min": 0.8,
-   "n": 1686,
+   "n": 1688,
    "conf": 0.8668,
-   "acierto": 0.8155,
+   "acierto": 0.8152,
    "ic": [
-    0.7963,
-    0.8333
+    0.7959,
+    0.833
    ]
   }
  ],
@@ -65,30 +65,30 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 2799,
+   "n": 2804,
    "prometido": 0.5494,
-   "real": 0.5173
+   "real": 0.5178
   },
   {
    "desde": 60,
    "hasta": 70,
-   "n": 2627,
+   "n": 2640,
    "prometido": 0.6486,
    "real": 0.6068
   },
   {
    "desde": 70,
    "hasta": 80,
-   "n": 2117,
+   "n": 2121,
    "prometido": 0.7483,
-   "real": 0.7
+   "real": 0.7006
   },
   {
    "desde": 80,
    "hasta": 90,
-   "n": 1254,
-   "prometido": 0.8444,
-   "real": 0.7903
+   "n": 1256,
+   "prometido": 0.8443,
+   "real": 0.7898
   },
   {
    "desde": 90,
@@ -100,18 +100,18 @@
  ],
  "superficies": {
   "Hard": {
-   "n": 5737,
-   "aciertos": 3693,
-   "acierto": 0.6437,
+   "n": 5761,
+   "aciertos": 3710,
+   "acierto": 0.644,
    "ic": [
-    0.6312,
-    0.656
+    0.6315,
+    0.6563
    ],
    "brier": 0.2191,
    "brier_azar": 0.25,
-   "n_ranking": 5727,
-   "acierto_mismo_grupo": 0.6438,
-   "mejor_ranking": 0.6251
+   "n_ranking": 5751,
+   "acierto_mismo_grupo": 0.6441,
+   "mejor_ranking": 0.6253
   },
   "Clay": {
    "n": 2400,
@@ -144,18 +144,18 @@
  },
  "circuitos": {
   "ATP": {
-   "n": 4826,
-   "aciertos": 3062,
-   "acierto": 0.6345,
+   "n": 4850,
+   "aciertos": 3079,
+   "acierto": 0.6348,
    "ic": [
-    0.6208,
-    0.648
+    0.6212,
+    0.6483
    ],
    "brier": 0.2217,
    "brier_azar": 0.25,
-   "n_ranking": 4824,
-   "acierto_mismo_grupo": 0.6343,
-   "mejor_ranking": 0.6333
+   "n_ranking": 4848,
+   "acierto_mismo_grupo": 0.6347,
+   "mejor_ranking": 0.6335
   },
   "WTA": {
    "n": 4403,
@@ -174,6 +174,270 @@
  },
  "ejemplos": [
   {
+   "fecha": 20261114,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Taylor Fritz",
+   "perdedor": "Thiago Agustin Tirante",
+   "marcador": "6-2 4-6 7-6(3)",
+   "fav": "Taylor Fritz",
+   "pp": 0.7132,
+   "ok": true
+  },
+  {
+   "fecha": 20261113,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Taylor Fritz",
+   "perdedor": "Lorenzo Musetti",
+   "marcador": "6-4 6-2",
+   "fav": "Taylor Fritz",
+   "pp": 0.5416,
+   "ok": true
+  },
+  {
+   "fecha": 20261113,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Thiago Agustin Tirante",
+   "perdedor": "Alejandro Tabilo",
+   "marcador": "7-5 7-6(1)",
+   "fav": "Thiago Agustin Tirante",
+   "pp": 0.5431,
+   "ok": true
+  },
+  {
+   "fecha": 20261112,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Lorenzo Musetti",
+   "perdedor": "Ugo Humbert",
+   "marcador": "7-6(5) 3-6 6-4",
+   "fav": "Lorenzo Musetti",
+   "pp": 0.6814,
+   "ok": true
+  },
+  {
+   "fecha": 20261112,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Thiago Agustin Tirante",
+   "perdedor": "Alexander Shevchenko",
+   "marcador": "7-6(5) 6-7(5) 6-3",
+   "fav": "Thiago Agustin Tirante",
+   "pp": 0.6194,
+   "ok": true
+  },
+  {
+   "fecha": 20261112,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Alejandro Tabilo",
+   "perdedor": "Alex Michelsen",
+   "marcador": "7-5 7-6(2)",
+   "fav": "Alex Michelsen",
+   "pp": 0.688,
+   "ok": false
+  },
+  {
+   "fecha": 20261111,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Holger Rune",
+   "perdedor": "Miomir Kecmanovic",
+   "marcador": "2-6 6-1 6-4",
+   "fav": "Holger Rune",
+   "pp": 0.7503,
+   "ok": true
+  },
+  {
+   "fecha": 20261111,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Alexander Shevchenko",
+   "perdedor": "Casper Ruud",
+   "marcador": "6-7(5) 6-4 6-3",
+   "fav": "Casper Ruud",
+   "pp": 0.8105,
+   "ok": false
+  },
+  {
+   "fecha": 20261111,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Taylor Fritz",
+   "perdedor": "Cameron Norrie",
+   "marcador": "7-5 6-3",
+   "fav": "Taylor Fritz",
+   "pp": 0.7302,
+   "ok": true
+  },
+  {
+   "fecha": 20261111,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Ugo Humbert",
+   "perdedor": "Borna Gojo",
+   "marcador": "6-2 6-4",
+   "fav": "Ugo Humbert",
+   "pp": 0.639,
+   "ok": true
+  },
+  {
+   "fecha": 20261111,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Alejandro Tabilo",
+   "perdedor": "Lorenzo Sonego",
+   "marcador": "7-6(2) 6-7(7) 7-5",
+   "fav": "Alejandro Tabilo",
+   "pp": 0.5623,
+   "ok": true
+  },
+  {
+   "fecha": 20261110,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Lorenzo Musetti",
+   "perdedor": "Toby Samuel",
+   "marcador": "6-1 6-4",
+   "fav": "Lorenzo Musetti",
+   "pp": 0.8026,
+   "ok": true
+  },
+  {
+   "fecha": 20261110,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Alex Michelsen",
+   "perdedor": "Juan Manuel Cerundolo",
+   "marcador": "6-3 6-2",
+   "fav": "Alex Michelsen",
+   "pp": 0.7518,
+   "ok": true
+  },
+  {
+   "fecha": 20261110,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Holger Rune",
+   "perdedor": "Zizou Bergs",
+   "marcador": "6-3 6-4",
+   "fav": "Holger Rune",
+   "pp": 0.6279,
+   "ok": true
+  },
+  {
+   "fecha": 20261110,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Miomir Kecmanovic",
+   "perdedor": "Arthur Rinderknech",
+   "marcador": "7-6(4) 4-6 6-4",
+   "fav": "Arthur Rinderknech",
+   "pp": 0.6438,
+   "ok": false
+  },
+  {
+   "fecha": 20261110,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Lorenzo Sonego",
+   "perdedor": "Quentin Halys",
+   "marcador": "6-4 7-6(4)",
+   "fav": "Quentin Halys",
+   "pp": 0.6614,
+   "ok": false
+  },
+  {
+   "fecha": 20261110,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Alexander Shevchenko",
+   "perdedor": "Adrian Mannarino",
+   "marcador": "6-1 6-3",
+   "fav": "Adrian Mannarino",
+   "pp": 0.6368,
+   "ok": false
+  },
+  {
+   "fecha": 20261109,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Toby Samuel",
+   "perdedor": "Leo Borg",
+   "marcador": "6-3 6-2",
+   "fav": "Toby Samuel",
+   "pp": 0.6851,
+   "ok": true
+  },
+  {
+   "fecha": 20261109,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Cameron Norrie",
+   "perdedor": "James Duckworth",
+   "marcador": "7-5 6-0",
+   "fav": "Cameron Norrie",
+   "pp": 0.6579,
+   "ok": true
+  },
+  {
+   "fecha": 20261109,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Alex Michelsen",
+   "perdedor": "Yannick Hanfmann",
+   "marcador": "6-2 6-3",
+   "fav": "Alex Michelsen",
+   "pp": 0.677,
+   "ok": true
+  },
+  {
+   "fecha": 20261109,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Ugo Humbert",
+   "perdedor": "Adolfo Daniel Vallejo",
+   "marcador": "6-4 6-3",
+   "fav": "Ugo Humbert",
+   "pp": 0.5926,
+   "ok": true
+  },
+  {
+   "fecha": 20261109,
+   "tour": "ATP",
+   "torneo": "Stockholm",
+   "sup": "Hard",
+   "ganador": "Borna Gojo",
+   "perdedor": "Tomas Machac",
+   "marcador": "6-3 6-4",
+   "fav": "Tomas Machac",
+   "pp": 0.6039,
+   "ok": false
+  },
+  {
    "fecha": 20261108,
    "tour": "ATP",
    "torneo": "Paris Masters",
@@ -186,292 +450,28 @@
    "ok": true
   },
   {
-   "fecha": 20261107,
+   "fecha": 20261108,
    "tour": "ATP",
-   "torneo": "Paris Masters",
+   "torneo": "Stockholm",
    "sup": "Hard",
-   "ganador": "Carlos Alcaraz",
-   "perdedor": "Casper Ruud",
-   "marcador": "6-4 6-4",
-   "fav": "Carlos Alcaraz",
-   "pp": 0.8673,
-   "ok": true
-  },
-  {
-   "fecha": 20261107,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Ben Shelton",
-   "perdedor": "Luca Van Assche",
-   "marcador": "5-7 6-3 6-4",
-   "fav": "Ben Shelton",
-   "pp": 0.7489,
-   "ok": true
-  },
-  {
-   "fecha": 20261106,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Casper Ruud",
-   "perdedor": "Nuno Borges",
-   "marcador": "7-6(5) 6-4",
-   "fav": "Casper Ruud",
-   "pp": 0.6011,
-   "ok": true
-  },
-  {
-   "fecha": 20261106,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Carlos Alcaraz",
-   "perdedor": "Taylor Fritz",
-   "marcador": "6-7(10) 7-5 6-3",
-   "fav": "Carlos Alcaraz",
-   "pp": 0.8303,
-   "ok": true
-  },
-  {
-   "fecha": 20261106,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Luca Van Assche",
-   "perdedor": "Rinky Hijikata",
-   "marcador": "6-4 6-7(4) 7-5",
-   "fav": "Luca Van Assche",
-   "pp": 0.5451,
-   "ok": true
-  },
-  {
-   "fecha": 20261106,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Ben Shelton",
-   "perdedor": "Tommy Paul",
-   "marcador": "6-4 4-6 6-3",
-   "fav": "Tommy Paul",
-   "pp": 0.5169,
+   "ganador": "Thiago Agustin Tirante",
+   "perdedor": "Jaume Munar",
+   "marcador": "7-6(3) 6-3",
+   "fav": "Jaume Munar",
+   "pp": 0.5509,
    "ok": false
   },
   {
-   "fecha": 20261105,
+   "fecha": 20261108,
    "tour": "ATP",
-   "torneo": "Paris Masters",
+   "torneo": "Stockholm",
    "sup": "Hard",
-   "ganador": "Casper Ruud",
-   "perdedor": "Jan-Lennard Struff",
-   "marcador": "6-3 6-3",
-   "fav": "Casper Ruud",
-   "pp": 0.6056,
+   "ganador": "Juan Manuel Cerundolo",
+   "perdedor": "Elias Ymer",
+   "marcador": "6-1 7-6(4)",
+   "fav": "Juan Manuel Cerundolo",
+   "pp": 0.6065,
    "ok": true
-  },
-  {
-   "fecha": 20261105,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Taylor Fritz",
-   "perdedor": "Arthur Fils",
-   "marcador": "6-3 6-4",
-   "fav": "Arthur Fils",
-   "pp": 0.5326,
-   "ok": false
-  },
-  {
-   "fecha": 20261105,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Nuno Borges",
-   "perdedor": "Ignacio Buse",
-   "marcador": "6-0 6-2",
-   "fav": "Nuno Borges",
-   "pp": 0.5795,
-   "ok": true
-  },
-  {
-   "fecha": 20261105,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Luca Van Assche",
-   "perdedor": "Lorenzo Musetti",
-   "marcador": "7-5 3-6 6-4",
-   "fav": "Lorenzo Musetti",
-   "pp": 0.7773,
-   "ok": false
-  },
-  {
-   "fecha": 20261105,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Rinky Hijikata",
-   "perdedor": "Tomas Martin Etcheverry",
-   "marcador": "2-6 6-3 7-5",
-   "fav": "Tomas Martin Etcheverry",
-   "pp": 0.501,
-   "ok": false
-  },
-  {
-   "fecha": 20261105,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Ben Shelton",
-   "perdedor": "Arthur Rinderknech",
-   "marcador": "3-6 6-4 7-6(5)",
-   "fav": "Ben Shelton",
-   "pp": 0.7464,
-   "ok": true
-  },
-  {
-   "fecha": 20261105,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Tommy Paul",
-   "perdedor": "Quentin Halys",
-   "marcador": "7-6(3) 6-4",
-   "fav": "Tommy Paul",
-   "pp": 0.7228,
-   "ok": true
-  },
-  {
-   "fecha": 20261104,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Arthur Fils",
-   "perdedor": "Tomas Machac",
-   "marcador": "6-3 7-6(4)",
-   "fav": "Arthur Fils",
-   "pp": 0.791,
-   "ok": true
-  },
-  {
-   "fecha": 20261104,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Jan-Lennard Struff",
-   "perdedor": "Thiago Agustin Tirante",
-   "marcador": "6-7(5) 6-3 7-6(3)",
-   "fav": "Jan-Lennard Struff",
-   "pp": 0.5645,
-   "ok": true
-  },
-  {
-   "fecha": 20261104,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Carlos Alcaraz",
-   "perdedor": "Alex Michelsen",
-   "marcador": "7-6(4) 6-3",
-   "fav": "Carlos Alcaraz",
-   "pp": 0.8951,
-   "ok": true
-  },
-  {
-   "fecha": 20261104,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Matteo Berrettini",
-   "perdedor": "Ugo Humbert",
-   "marcador": "7-6(3) 7-5",
-   "fav": "Matteo Berrettini",
-   "pp": 0.5449,
-   "ok": true
-  },
-  {
-   "fecha": 20261104,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Taylor Fritz",
-   "perdedor": "Alex Molcan",
-   "marcador": "6-7(6) 7-5 7-6(5)",
-   "fav": "Taylor Fritz",
-   "pp": 0.7307,
-   "ok": true
-  },
-  {
-   "fecha": 20261104,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Nuno Borges",
-   "perdedor": "Karen Khachanov",
-   "marcador": "6-3 6-4",
-   "fav": "Karen Khachanov",
-   "pp": 0.5439,
-   "ok": false
-  },
-  {
-   "fecha": 20261104,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Rinky Hijikata",
-   "perdedor": "Novak Djokovic",
-   "marcador": "2-6 6-3 6-3",
-   "fav": "Novak Djokovic",
-   "pp": 0.9121,
-   "ok": false
-  },
-  {
-   "fecha": 20261104,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Ignacio Buse",
-   "perdedor": "Daniil Medvedev",
-   "marcador": "6-4 6-4",
-   "fav": "Daniil Medvedev",
-   "pp": 0.8258,
-   "ok": false
-  },
-  {
-   "fecha": 20261104,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Tomas Martin Etcheverry",
-   "perdedor": "Alex de Minaur",
-   "marcador": "7-6(2) 6-3",
-   "fav": "Alex de Minaur",
-   "pp": 0.853,
-   "ok": false
-  },
-  {
-   "fecha": 20261104,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Lorenzo Musetti",
-   "perdedor": "Alexander Zverev",
-   "marcador": "7-6(5) 6-2",
-   "fav": "Alexander Zverev",
-   "pp": 0.7,
-   "ok": false
-  },
-  {
-   "fecha": 20261104,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Luca Van Assche",
-   "perdedor": "Learner Tien",
-   "marcador": "7-6(4) 6-4",
-   "fav": "Learner Tien",
-   "pp": 0.7551,
-   "ok": false
   }
  ],
  "motor": {
@@ -482,14 +482,14 @@
    "c_forma": 0.0
   },
   "motor": {
-   "n": 9229,
-   "acierto": 0.6392,
+   "n": 9253,
+   "acierto": 0.6394,
    "brier": 0.2198,
    "logloss": 0.6297
   },
   "elo_basico": {
-   "n": 9229,
-   "acierto": 0.641,
+   "n": 9253,
+   "acierto": 0.6412,
    "brier": 0.2199,
    "logloss": 0.63
   }
