@@ -18,7 +18,7 @@ import random
 
 K_OPC = [4.0, 8.0, 16.0]          # cuanto se mueve la fuerza tras cada carrera
 W_EQUIPO = [0.5, 1.0, 2.0]        # peso del equipo frente al piloto
-T_OPC = [20.0, 30.0, 50.0, 80.0, 120.0, 180.0, 260.0]  # "temperatura": cuanto se parecen las probabilidades al reparto igualado
+T_OPC = [12.0, 20.0, 30.0, 50.0, 80.0, 120.0, 180.0, 260.0]  # "temperatura": cuanto se parecen las probabilidades al reparto igualado
 G_OPC = [0.0, 20.0, 40.0, 70.0, 110.0, 160.0, 230.0]  # peso de la posicion de salida
 ESCALA = 50.0                     # escala fija de la comparacion por parejas al actualizar
 REV_PILOTO = 0.85                 # parte de la fuerza del piloto que se conserva al cambiar de temporada

@@ -279,7 +279,8 @@ def ciclo(estado, ahora, balance):
 
     bloques = []
     # Carreras (F1 y MotoGP): resultado de la ultima carrera frente a nuestro favorito
-    for serie, ic, nomb in (("f1", u"\U0001F3CE", u"Fórmula 1"), ("motogp", u"\U0001F3CD", u"MotoGP")):
+    for serie, ic, nomb in (("f1", u"\U0001F3CE", u"Fórmula 1"), ("motogp", u"\U0001F3CD", u"MotoGP"),
+                            ("golf_pga", u"\u26f3", u"PGA Tour"), ("golf_dp", u"\u26f3", u"DP World Tour")):
         hist = leer("carreras_%s_historial.json" % serie, {}).get("predicciones", [])
         por = {}
         for p in hist:
@@ -299,7 +300,7 @@ def ciclo(estado, ahora, balance):
                 continue
             bloques.append(u"%s <b>%s · %s</b>\n\U0001F3C6 Ganó <b>%s</b>%s\n%s Nuestro favorito: %s (%s de ganar)%s" % (
                 ic, nomb, e(p["nombre"]), e(r["ganador_n"]),
-                (u" · podio: " + ", ".join(e(x) for x in r.get("podio_n", [])[1:])) if r.get("podio_n") else "",
+                ((u" · top 3: " if serie.startswith("golf") else u" · podio: ") + ", ".join(e(x) for x in r.get("podio_n", [])[1:])) if r.get("podio_n") else "",
                 u"✅" if r["acierto"] else u"❌", e(p["fav"]["n"]), pc(p["fav"]["pw"]),
                 u"" if r["acierto"] else u" · al ganador le dábamos %s" % pc(r.get("p_ganador") or 0)))
     if nuevos:

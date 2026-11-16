@@ -240,7 +240,7 @@ def main():
             bloques.append("\n".join(lin))
 
     # Carreras (F1 y MotoGP) en las proximas 72 horas
-    for serie, ic in (("f1", u"\U0001F3CE"), ("motogp", u"\U0001F3CD")):
+    for serie, ic in (("f1", u"\U0001F3CE"), ("motogp", u"\U0001F3CD"), ("golf_pga", u"\u26f3"), ("golf_dp", u"\u26f3")):
         c = leer("carreras_%s.json" % serie, {})
         pr = c.get("proximo") or {}
         try:
@@ -252,9 +252,15 @@ def main():
         dia = datetime.strptime(pr["fecha"][:19], "%Y-%m-%dT%H:%M:%S").replace(tzinfo=timezone.utc).astimezone(TZ)
         lin = [u"%s <b>%s · %s</b> (%s %s)" % (ic, e(c.get("nombre", "")), e(pr.get("nombre", "")),
                                               [u"lun", u"mar", u"mié", u"jue", u"vie", u"sáb", u"dom"][dia.weekday()], dia.strftime("%H:%M")),
-               u"<i>%s</i>" % (u"Con la parrilla de salida" if pr.get("tipo") == "parrilla" else u"Antes de la clasificación")]
+               u"<i>%s</i>" % (u"Antes del torneo" if serie.startswith("golf") else
+                                u"Con la parrilla de salida" if pr.get("tipo") == "parrilla" else u"Antes de la clasificación")]
+        if pr.get("en_juego"):
+            continue
         for i, x in enumerate(pr["pilotos"][:5]):
-            lin.append(u"%d. <b>%s</b> (%s) · gana %s · podio %s" % (i + 1, e(x["n"]), e(x["eq"]), pc(x["pw"]), pc(x["pp"])))
+            if serie.startswith("golf"):
+                lin.append(u"%d. <b>%s</b> · gana %s · top 10 %s" % (i + 1, e(x["n"]), pc(x["pw"]), pc(x.get("p10") or 0)))
+            else:
+                lin.append(u"%d. <b>%s</b> (%s) · gana %s · podio %s" % (i + 1, e(x["n"]), e(x["eq"]), pc(x["pw"]), pc(x["pp"])))
         bloques.append("\n".join(lin))
 
     rc = record()

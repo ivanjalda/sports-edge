@@ -557,6 +557,83 @@ def liquidar(lista, rows, ahora):
     return n
 
 
+ESPN_TENIS = "https://site.api.espn.com/apis/site/v2/sports/tennis/%s/scoreboard?dates=%s"
+
+
+def _palabras(s):
+    s = unicodedata.normalize("NFD", str(s or ""))
+    s = "".join(c for c in s if unicodedata.category(c) != "Mn").lower()
+    return [w for w in re.sub(r"[^a-z ]", " ", s).split() if len(w) > 1]
+
+
+def _mismo(a, b):
+    """Mismo jugador: coincide el apellido (ultima palabra) y la inicial del nombre."""
+    x, y = _palabras(a), _palabras(b)
+    if not x or not y:
+        return False
+    return x[-1] == y[-1] and x[0][0] == y[0][0]
+
+
+def liquidar_espn(lista, ahora):
+    """Respaldo: si la fuente principal tarda en publicar un resultado (pasa con torneos como las
+    WTA Finals), se toma el resultado oficial del marcador publico de ESPN. Solo partidos terminados."""
+    pend = [p for p in lista if p.get("resultado") is None and parse_iso(p["fecha"]) < ahora - timedelta(hours=5)]
+    if not pend:
+        return 0
+    cache, n = {}, 0
+    for p in pend:
+        tour = "wta" if str(p.get("tour", "")).upper() == "WTA" else "atp"
+        f = parse_iso(p["fecha"])
+        for dd in (0, 1, -1, 2):
+            dia = (f + timedelta(days=dd)).strftime("%Y%m%d")
+            clave = (tour, dia)
+            if clave not in cache:
+                try:
+                    req = urllib.request.Request(ESPN_TENIS % (tour, dia), headers={"User-Agent": "Mozilla/5.0"})
+                    with urllib.request.urlopen(req, timeout=25) as r:
+                        cache[clave] = json.loads(r.read().decode("utf-8"))
+                except Exception as ex:
+                    print("Aviso: marcador de ESPN %s %s no disponible (%s)" % (tour, dia, ex))
+                    cache[clave] = {}
+            hecho = False
+            for ev in cache[clave].get("events") or []:
+                for g in ev.get("groupings") or [{"competitions": ev.get("competitions") or []}]:
+                    for c in g.get("competitions") or []:
+                        st = ((c.get("status") or {}).get("type") or {})
+                        if st.get("state") != "post":
+                            continue
+                        cs = c.get("competitors") or []
+                        if len(cs) != 2:
+                            continue
+                        nom = [((x.get("athlete") or {}).get("displayName") or (x.get("athlete") or {}).get("fullName") or "") for x in cs]
+                        if _mismo(nom[0], p["j1"]) and _mismo(nom[1], p["j2"]):
+                            a, b = cs[0], cs[1]
+                        elif _mismo(nom[1], p["j1"]) and _mismo(nom[0], p["j2"]):
+                            a, b = cs[1], cs[0]
+                        else:
+                            continue
+                        if not (a.get("winner") or b.get("winner")):
+                            continue
+                        p["resultado"] = "1" if a.get("winner") else "2"
+                        sets = []
+                        for la, lb in zip(a.get("linescores") or [], b.get("linescores") or []):
+                            sets.append("%s-%s" % (int(la.get("value", 0)), int(lb.get("value", 0))))
+                        p["marcador"] = " ".join(sets)
+                        p["fuente_resultado"] = "ESPN"
+                        n += 1
+                        hecho = True
+                        break
+                    if hecho:
+                        break
+                if hecho:
+                    break
+            if hecho:
+                break
+    if n:
+        print("Resultados tomados del marcador de ESPN (la fuente principal aun no los tiene): %d" % n)
+    return n
+
+
 def stats_directo(lista):
     res = [p for p in lista if p.get("resultado")]
     n = len(res)
@@ -634,6 +711,7 @@ def main():
     else:
         sin_datos, torneos, consultado = captar(elo, idx, lista, ahora, stamp)
     liq = liquidar(lista, rows, ahora)
+    liq += liquidar_espn(lista, ahora)
     if liq:
         print("Resultados de tenis anotados: %d" % liq)
     hist["predicciones"] = lista
