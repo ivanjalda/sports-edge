@@ -78,7 +78,26 @@ footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top
 <footer id="foot"></footer>
 <script src="nav.js"></script>
 <script>
-var SERIES=[{id:"f1",ic:"🏎️",es:"Fórmula 1",en:"Formula 1"},{id:"motogp",ic:"🏍️",es:"MotoGP",en:"MotoGP"}];
+var TODAS=[{id:"f1",g:"motor",ic:"🏎️",es:"Fórmula 1",en:"Formula 1"},{id:"motogp",g:"motor",ic:"🏍️",es:"MotoGP",en:"MotoGP"},
+  {id:"golf_pga",g:"golf",ic:"⛳",es:"PGA Tour",en:"PGA Tour"},{id:"golf_dp",g:"golf",ic:"⛳",es:"DP World Tour",en:"DP World Tour"}];
+var GOLF={
+es:{h1:"⛳ Golf",lead:"Probabilidad de ganar, de acabar entre los 3 primeros y entre los 10 primeros de cada jugador con nuestro motor propio: fuerza de cada golfista calculada con todos sus torneos reales (incluidos los cortes) y probada en torneos que el motor no había visto.",
+ t_pred:"Próximo torneo",t_rank:"Fuerza de jugadores",m_pre:"Antes del torneo",race:"Torneo",driver:"Jugador",podium:"Top 3",points:"Top 10",pod:"jugadores del top 3 acertados",
+ rk_n:"Índice del motor: fuerza de cada jugador según sus resultados reales. Solo sirve para compararlos.",
+ dnf:"Retiradas tenidas en cuenta: %s de los jugadores se retiran antes de terminar.",
+ nonext:"No hay ningún torneo próximo en el calendario.",live:"En directo (predicciones guardadas antes de cada torneo)",
+ live_none:"Aún no ha terminado ningún torneo desde que guardamos predicciones.",mt:"Cómo acierta el motor en torneos que no había visto",
+ mt_n:"Prueba con %s torneos de las temporadas %s.",h_none:"Todavía no hay torneos resueltos.",h_last:"Últimos ganadores"},
+en:{h1:"⛳ Golf",lead:"Probability of winning, finishing top 3 and top 10 for every player from our own engine: each golfer's strength computed from all their real tournaments (cuts included) and tested on tournaments the engine had not seen.",
+ t_pred:"Next tournament",t_rank:"Player strength",m_pre:"Before the tournament",race:"Tournament",driver:"Player",podium:"Top 3",points:"Top 10",pod:"top-3 players predicted",
+ rk_n:"Engine index: each player's strength from real results. Only meaningful to compare them.",
+ dnf:"Withdrawals included: %s of players withdraw before finishing.",
+ nonext:"There is no upcoming tournament in the calendar.",live:"Live (predictions saved before each tournament)",
+ live_none:"No tournament has finished yet since we started saving predictions.",mt:"How the engine does on tournaments it had not seen",
+ mt_n:"Test with %s tournaments from the %s seasons.",h_none:"No tournaments resolved yet.",h_last:"Latest winners"}};
+var grupo="motor";
+try{ var q0=new URLSearchParams(location.search); if(q0.get("grupo")==="golf"||String(q0.get("serie")||"").indexOf("golf")===0) grupo="golf"; }catch(e){}
+var SERIES=TODAS.filter(function(x){ return x.g===grupo; });
 var T={
 es:{h1:"🏁 Motor",lead:"Probabilidad de victoria, podio y puntos de cada piloto con nuestro motor propio: fuerza del piloto y de su coche o moto, posición de salida y abandonos, calculado solo con resultados reales y probado en carreras que el motor no había visto.",
  t_pred:"Próxima carrera",t_stats:"Estadísticas",t_rank:"Fuerza de pilotos",t_hist:"Historial",
@@ -111,11 +130,11 @@ en:{h1:"🏁 Motorsport",lead:"Win, podium and points probability for every driv
  hit:"✓ correct",miss:"✗ wrong",h_none:"No races resolved yet.",src:"Data",
  foot:"18+ only. Probabilities are statistical estimates and do not guarantee results. Please gamble responsibly."}
 };
-var lang="es", serie="f1", tab="pred", D={};
+var lang="es", serie=SERIES[0].id, tab="pred", D={};
 try{ lang=localStorage.getItem("lang")||(navigator.language.indexOf("es")==0?"es":"en"); }catch(e){}
 try{ var q=new URLSearchParams(location.search); if(q.get("serie")) serie=q.get("serie"); if(q.get("tab")) tab=q.get("tab"); }catch(e){}
 function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
-function t(k){ return T[lang][k]; }
+function t(k){ if(grupo==="golf"&&GOLF[lang][k]!=null) return GOLF[lang][k]; return T[lang][k]; }
 function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
 function pc(x){ if(x==null) return "–"; var v=x*100; return (v<1&&v>0?(lang==="es"?v.toFixed(1).replace(".",","):v.toFixed(1)):Math.round(v))+"%"; }
 function fecha(iso,conHora){ try{ var d=new Date(iso); var o={weekday:"long",day:"numeric",month:"long"}; if(conHora){o.hour="2-digit";o.minute="2-digit";}
@@ -126,13 +145,16 @@ function cb(x){ return '<div class="cb"><div class="bar"><i style="width:'+Math.
 
 function vPred(d){
   var p=d.proximo; if(!p) return '<div class="empty">'+(d.descargando?t("nodata"):t("nonext"))+'</div>';
+  var aviso=p.en_juego?(lang==="es"?"Torneo en juego. Esta es la predicción que guardamos antes de empezar.":"Tournament in play. This is the prediction we saved before it started.")
+    :(p.sin_lista?(lang==="es"?"Todavía no se ha publicado la lista de participantes. La predicción aparecerá en cuanto se conozca.":"The entry list is not published yet. The prediction will appear as soon as it is known."):"");
+  if(p.sin_lista||(p.en_juego&&!(p.pilotos||[]).length)) return '<div class="gp"><div class="t">'+esc(p.nombre)+'</div><div class="s">'+esc(fecha(p.fecha,false))+'</div></div><div class="empty">'+(aviso||t("nonext"))+'</div>';
   var o='<div class="gp"><div class="t">'+esc(p.nombre)+'</div><div class="s">'+esc(p.circuito)+(p.pais?' · '+esc(p.pais):'')+'</div>'
     +'<div class="s">'+t("race")+': <b>'+esc(fecha(p.fecha,true))+'</b>'+(p.clasif?' · '+t("quali")+': '+esc(fecha(p.clasif,true)):'')+'</div>'
-    +'<span class="badge '+(p.tipo==="parrilla"?'on':'pre')+'">'+(p.tipo==="parrilla"?t("grid"):t("pre"))+'</span>';
+    +(grupo==="golf"?(aviso?'<span class="badge on">'+aviso+'</span>':''):'<span class="badge '+(p.tipo==="parrilla"?'on':'pre')+'">'+(p.tipo==="parrilla"?t("grid"):t("pre"))+'</span>');
   var L=p.pilotos||[], nom=[t("fav"),t("second"),t("third")];
-  o+='<div class="top3">'+L.slice(0,3).map(function(x,i){ return '<div class="tc'+(i===0?' f':'')+'"><div class="p">'+nom[i]+'</div><div class="n">'+esc(x.n)+'</div><div class="e">'+esc(x.eq)+(x.grid?' · '+t("start")+' '+x.grid+'.º':'')+'</div><div class="w">'+pc(x.pw)+' <small>'+t("towin")+'</small></div></div>'; }).join("")+'</div></div>';
+  o+='<div class="top3">'+L.slice(0,3).map(function(x,i){ return '<div class="tc'+(i===0?' f':'')+'"><div class="p">'+nom[i]+'</div><div class="n">'+esc(x.n)+'</div><div class="e">'+(x.eq&&x.eq!=="-"?esc(x.eq):'')+(x.grid?' · '+t("start")+' '+x.grid+'.º':'')+'</div><div class="w">'+pc(x.pw)+' <small>'+t("towin")+'</small></div></div>'; }).join("")+'</div></div>';
   o+='<table><tr><th>'+t("pos")+'</th><th class="l">'+t("driver")+'</th>'+(p.tipo==="parrilla"?'<th>'+t("start")+'</th>':'')+'<th>'+t("win")+'</th><th>'+t("podium")+'</th><th class="hide-m">'+t("points")+'</th></tr>'
-    +L.map(function(x,i){ return '<tr><td>'+(i+1)+'</td><td class="l"><b>'+esc(x.n)+'</b><span class="sub">'+esc(x.eq)+'</span></td>'+(p.tipo==="parrilla"?'<td>'+(x.grid||'–')+'</td>':'')
+    +L.slice(0,grupo==="golf"?40:99).map(function(x,i){ return '<tr><td>'+(i+1)+'</td><td class="l"><b>'+esc(x.n)+'</b><span class="sub">'+(x.eq&&x.eq!=="-"?esc(x.eq):'')+'</span></td>'+(p.tipo==="parrilla"?'<td>'+(x.grid||'–')+'</td>':'')
       +'<td>'+cb(x.pw)+'</td><td>'+pc(x.pp)+'</td><td class="hide-m">'+pc(x.p10)+'</td></tr>'; }).join("")+'</table>';
   o+='<div class="note">'+t("dnf").replace("%s",pc(d.abandono))+'</div>';
   return o;
@@ -142,8 +164,8 @@ function vStats(d){
   var o='<h2>'+t("mt")+'</h2><div class="note">'+t("mt_n").replace("%s",a.carreras||"–").replace("%s",(m.temporadas_prueba||[]).join(" y "))+'</div>';
   o+='<div class="grid"><div class="card"><div class="l">'+t("m_pre")+'</div><div class="n g">'+pc(a.favorito_gana)+'</div><div class="l">'+t("fav_w")+'</div><div class="s">'+t("rnd").replace("%s",pc(1/n))+'</div></div>'
     +'<div class="card"><div class="l">'+t("m_pre")+'</div><div class="n g">'+pc(a.podio)+'</div><div class="l">'+t("pod")+'</div><div class="s">'+t("rnd").replace("%s",pc(3/n))+'</div></div>'
-    +'<div class="card"><div class="l">'+t("m_grid")+'</div><div class="n g">'+pc(b.favorito_gana)+'</div><div class="l">'+t("fav_w")+'</div><div class="s">'+t("pole")+': '+pc(b.pole_gana)+'</div></div>'
-    +'<div class="card"><div class="l">'+t("m_grid")+'</div><div class="n g">'+pc(b.podio)+'</div><div class="l">'+t("pod")+'</div></div></div>';
+    +(b.carreras?'<div class="card"><div class="l">'+t("m_grid")+'</div><div class="n g">'+pc(b.favorito_gana)+'</div><div class="l">'+t("fav_w")+'</div><div class="s">'+t("pole")+': '+pc(b.pole_gana)+'</div></div>'
+    +'<div class="card"><div class="l">'+t("m_grid")+'</div><div class="n g">'+pc(b.podio)+'</div><div class="l">'+t("pod")+'</div></div>':'')+'</div>';
   var li=d.directo||{};
   o+='<h2>'+t("live")+'</h2>'+(li.carreras?'<div class="grid"><div class="card"><div class="n g">'+pc(li.acierto)+'</div><div class="l">'+t("fav_w")+'</div><div class="s">'+t("live_n").replace("%s",li.carreras)+'</div></div><div class="card"><div class="n g">'+pc(li.podio)+'</div><div class="l">'+t("pod")+'</div></div></div>':'<div class="empty">'+t("live_none")+'</div>');
   o+='<div class="box">'+t("src")+': '+esc(d.fuentes||"")+' · '+esc(d.actualizado||"")+'</div>';
@@ -154,8 +176,8 @@ function vRank(d){
   var mx=Math.max.apply(null,F.map(function(x){return x.total;})), mn=Math.min.apply(null,F.map(function(x){return x.total;}));
   function w(v){ return mx>mn?Math.round(100*(v-mn)/(mx-mn)):50; }
   var o='<h2>'+t("rk")+'</h2><div class="note">'+t("rk_n")+'</div><table><tr><th>'+t("pos")+'</th><th class="l">'+t("driver")+'</th><th>'+t("total")+'</th><th class="hide-m">'+t("only")+'</th></tr>'
-    +F.map(function(x,i){ return '<tr><td>'+(i+1)+'</td><td class="l"><b>'+esc(x.n)+'</b><span class="sub">'+esc(x.eq)+'</span></td><td><div class="cb"><div class="bar"><i style="width:'+w(x.total)+'%;background:var(--blue)"></i></div><b>'+Math.round(x.total)+'</b></div></td><td class="hide-m">'+Math.round(x.piloto)+'</td></tr>'; }).join("")+'</table>';
-  var E=d.equipos||[];
+    +F.slice(0,grupo==="golf"?50:99).map(function(x,i){ return '<tr><td>'+(i+1)+'</td><td class="l"><b>'+esc(x.n)+'</b><span class="sub">'+(x.eq!=="-"?esc(x.eq):'')+'</span></td><td><div class="cb"><div class="bar"><i style="width:'+w(x.total)+'%;background:var(--blue)"></i></div><b>'+Math.round(x.total)+'</b></div></td><td class="hide-m">'+Math.round(x.piloto)+'</td></tr>'; }).join("")+'</table>';
+  var E=grupo==="golf"?[]:(d.equipos||[]);
   if(E.length) o+='<h2>'+t("teams")+'</h2><table><tr><th>'+t("pos")+'</th><th class="l">'+t("team")+'</th><th>'+t("total")+'</th></tr>'+E.map(function(x,i){ return '<tr><td>'+(i+1)+'</td><td class="l">'+esc(x.eq)+'</td><td>'+Math.round(x.f)+'</td></tr>'; }).join("")+'</table>';
   return o;
 }
@@ -166,12 +188,12 @@ function vHist(d){
       +'<span>'+t("our")+': <b>'+esc(r.fav.n)+'</b> '+pc(r.fav.pw)+'<br>'+t("won")+': <b>'+esc(s.ganador_n)+'</b> ('+t("gave")+' '+pc(s.p_ganador)+')</span>'
       +'<span class="'+(s.acierto?'ok':'ko')+'">'+(s.acierto?t("hit"):t("miss"))+'</span></div>'; }).join(""):'<div class="empty">'+t("h_none")+'</div>';
   var U=d.ultimas||[];
-  if(U.length) o+='<h2>'+t("h_last")+'</h2><table><tr><th class="l">'+t("race")+'</th><th class="l">'+t("won")+'</th></tr>'+U.map(function(u){ return '<tr><td class="l">'+esc(u.nombre)+'<span class="sub">'+esc(fecha(u.fecha,false))+'</span></td><td class="l"><b>'+esc(u.ganador)+'</b><span class="sub">'+esc(u.equipo)+'</span></td></tr>'; }).join("")+'</table>';
+  if(U.length) o+='<h2>'+t("h_last")+'</h2><table><tr><th class="l">'+t("race")+'</th><th class="l">'+t("won")+'</th></tr>'+U.map(function(u){ return '<tr><td class="l">'+esc(u.nombre)+'<span class="sub">'+esc(fecha(u.fecha,false))+'</span></td><td class="l"><b>'+esc(u.ganador)+'</b><span class="sub">'+(u.equipo!=="-"?esc(u.equipo):'')+'</span></td></tr>'; }).join("")+'</table>';
   return o;
 }
 function render(){
   document.documentElement.lang=lang;
-  if(window.navRender) navRender(lang,"motor");
+  if(window.navRender) navRender(lang,grupo);
   document.getElementById("h1").textContent=t("h1");
   document.getElementById("lead").textContent=t("lead");
   document.getElementById("foot").textContent=t("foot");
