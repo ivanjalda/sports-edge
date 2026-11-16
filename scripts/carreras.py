@@ -346,13 +346,22 @@ def motogp_proxima(cache, ahora, ultima_principal):
         if not rac:
             continue
         f = parse_iso(rac[0]["date"])
+        # La web oficial a veces deja las horas de las sesiones con la fecha antigua cuando un GP cambia de fecha:
+        # manda el dia del evento (date_end) y de la sesion solo se toma la hora.
+        try:
+            dia_fin = datetime.strptime(ev["date_end"][:10], "%Y-%m-%d").date()
+            desfase = dia_fin - f.date()
+            if desfase.days != 0:
+                f = f + desfase
+        except Exception:
+            desfase = None
         if f < ahora - timedelta(hours=3) or rac[0].get("status") == "FINISHED":
             continue
         q = [s for s in ses if s.get("type") == "Q"]
         prox = {"id": "mgp-%s-%s" % (y, ev.get("short_name", ev["id"][:6])), "temporada": int(y),
                 "nombre": ev.get("name", "").title().replace(" Of ", " of "), "circuito": (ev.get("circuit") or {}).get("name", ""),
                 "pais": (ev.get("country") or {}).get("name", ""), "fecha": iso(f),
-                "clasif": iso(parse_iso(q[-1]["date"])) if q else None, "sprint": True}
+                "clasif": iso(parse_iso(q[-1]["date"]) + (desfase or timedelta(0))) if q else None, "sprint": True}
         grid = mgp_parrilla(ses)
         base = ultima_principal["res"] if ultima_principal else []
         conocidos = {r["id"]: r for r in base}
@@ -481,6 +490,10 @@ def procesar(clave, ahora, stamp):
         tipo = "parrilla" if prox.get("parrilla") else "previa"
         salida_prox = {k: prox[k] for k in ("id", "nombre", "circuito", "pais", "fecha", "clasif", "sprint")}
         salida_prox.update({"tipo": tipo, "pilotos": pil})
+        for p in hist["predicciones"]:
+            if p["id"] == prox["id"] and not p.get("resultado") and p["fecha"] != prox["fecha"]:
+                print("Fecha corregida segun el calendario oficial: %s %s -> %s" % (p["id"], p["fecha"], prox["fecha"]))
+                p["fecha"] = prox["fecha"]
         dias = (parse_iso(prox["fecha"]) - ahora).total_seconds() / 86400.0
         ya = any(p["id"] == prox["id"] and p["tipo"] == tipo for p in hist["predicciones"])
         if 0 < dias <= DIAS_PREVIA and not ya:
