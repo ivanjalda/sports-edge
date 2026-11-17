@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sports Edge · Aprender</title>
+<meta name="description" content="Aprende a leer probabilidades, cuotas y nuestras predicciones; glosario, reglas de cada deporte y gestión responsable de la banca.">
+<style>
+:root{--bg:#0b0f17;--card:#121826;--card2:#0f1522;--line:#1f2937;--txt:#e5e7eb;--mut:#8b95a7;--acc:#22c55e;--blue:#38bdf8;--red:#ef4444;--amb:#f59e0b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6}
+main{padding:22px 28px;max-width:none}
+h1{font-size:26px;margin:6px 0}
+.lead{color:var(--mut);font-size:14px;max-width:900px}
+.idx{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 6px}
+.idx a{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:6px 14px;color:var(--txt);text-decoration:none;font-size:13px;font-weight:600}
+.idx a:hover{border-color:var(--acc)}
+h2{font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--blue);margin:30px 0 10px;scroll-margin-top:120px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.t{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;scroll-margin-top:120px}
+.t b{display:block;font-size:16px;margin-bottom:4px}
+.t p{margin:0;color:var(--mut);font-size:14px}
+.t .ej{margin-top:8px;font-size:13px;color:var(--txt);background:var(--card2);border-radius:8px;padding:8px 10px}
+.t:target{border-color:var(--acc);box-shadow:0 0 0 2px var(--acc) inset}
+.calc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;align-items:end}
+.calc label{display:block;font-size:12px;color:var(--mut);margin-bottom:4px;font-weight:600}
+.calc input{width:100%;background:var(--card2);border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:9px 10px;font-size:15px}
+.res{grid-column:1 / -1;background:var(--card2);border-radius:10px;padding:12px 14px;font-size:14px}
+.res b{font-size:20px}
+.ok{color:var(--acc)} .ko{color:var(--red)}
+.warn{border-color:#7c5a10}
+footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top:1px solid var(--line);margin-top:30px}
+</style>
+</head>
+<body>
+<header id="top"></header>
+<main>
+  <h1 id="h1"></h1>
+  <div class="lead" id="lead"></div>
+  <div class="idx" id="idx"></div>
+  <div id="body"></div>
+</main>
+<footer id="foot"></footer>
+<script src="nav.js"></script>
+<script>
+var T={
+es:{h1:"🎓 Aprender",lead:"Todo lo que necesitas para entender nuestras predicciones y apostar con cabeza. Las palabras subrayadas en cualquier página de la web te traen aquí.",
+ s_leer:"Cómo leer una predicción",s_glos:"Glosario",s_banca:"Banca y juego responsable",s_calc:"Calculadora de apuesta",s_reglas:"Reglas de cada deporte",
+ leer:[["1. La probabilidad","Es cuántas veces de cada 100 pasaría ese resultado si el partido se jugara muchas veces. Un 70 % no es seguro: de cada 10 partidos así, se esperan 3 sorpresas."],
+  ["2. El favorito","Es el resultado con más probabilidad. Lo marcamos para que lo veas rápido, pero no significa que vaya a ganar siempre."],
+  ["3. La cuota","Es lo que paga la casa de apuestas por cada euro. Mostramos la mejor cuota que encontramos y en qué casa está."],
+  ["4. Comparar","Si nuestra probabilidad es mayor que la probabilidad que esconde la cuota, habría valor. Solo lo marcamos cuando está demostrado con resultados reales; hoy ninguna regla lo está."]],
+ glos:[["cuota","Cuota","Lo que paga la casa por cada euro apostado, incluido el euro. Cuota 2,00: apuestas 10 € y, si aciertas, cobras 20 €.","Cuota 1,50 → si ganas, 10 € se convierten en 15 €."],
+  ["implicita","Probabilidad implícita","La probabilidad que esconde una cuota: 1 dividido entre la cuota. Las casas suman un poco de más para ganar ellas (su margen).","Cuota 2,00 → 1 / 2 = 50 %."],
+  ["valor","Apuesta de valor","Cuando la probabilidad real es mayor que la implícita de la cuota. Es la única forma de ganar a largo plazo, y es muy difícil. Nosotros solo la marcamos si está demostrada con cuotas reales del pasado.","Nosotros 60 %, cuota 2,00 (50 %) → habría valor."],
+  ["elo","Elo","Puntuación de fuerza de cada equipo o jugador. Sube al ganar y baja al perder, más o menos según lo esperado. Viene del ajedrez.","Un equipo con 100 puntos más gana más a menudo."],
+  ["logloss","Logloss","Nota de calidad de las probabilidades: castiga mucho dar algo por seguro y fallar. Cuanto más bajo, mejor. Con ella decidimos qué motor se usa.","Decir 99 % y fallar cuesta mucho más que decir 60 % y fallar."],
+  ["brier","Brier","Otra nota de calidad de las probabilidades, de 0 a 1. Más bajo es mejor. Al azar sale 0,25.","Brier 0,18 es claramente mejor que el azar."],
+  ["favorito","Favorito","El resultado con más probabilidad según nuestro motor.","Favorito al 55 %: partido casi igualado."],
+  ["empate","Empate","En fútbol es un resultado más (1, X, 2). En rugby es muy raro y, si pasa, cuenta como fallo nuestro.",""],
+  ["parrilla","Parrilla de salida","Orden en el que salen los pilotos, decidido en la clasificación. Cambia mucho las probabilidades, por eso rehacemos la predicción cuando se conoce.",""],
+  ["podio","Podio / top 3","Terminar entre los tres primeros.",""],
+  ["top10","Top 10","Terminar entre los diez primeros. En golf es una apuesta muy habitual.",""],
+  ["corte","Corte (golf)","Tras dos días, solo siguen los mejores. Los que no pasan el corte cuentan como resultado malo en nuestro motor.",""],
+  ["abandono","Abandono","No terminar la carrera (avería, caída…). Los tenemos en cuenta con la tasa real de las últimas carreras.",""],
+  ["regla","Regla sencilla","Lo que acertaría alguien sin motor, por ejemplo «siempre gana el de casa» o «gana el mejor del ranking». Nuestro motor tiene que superarla para tener sentido.",""],
+  ["prueba","Partidos no vistos","Probamos el motor con temporadas que no ha usado para aprender, como si fuera el futuro. Así el porcentaje de acierto es honesto.",""],
+  ["forma","Forma reciente","Cómo le han ido los últimos partidos a un equipo, más allá de su fuerza general.",""],
+  ["racha","Racha","Los últimos 3 partidos. Solo la usamos si de verdad mejora la predicción.",""],
+  ["banca","Banca","El dinero que reservas solo para apostar y que puedes permitirte perder.",""],
+  ["kelly","Criterio de Kelly","Fórmula que calcula qué parte de la banca apostar cuando hay ventaja. Es muy agresiva, por eso aquí usamos un cuarto de lo que da. Si no hay ventaja, dice: no apuestes.",""]],
+ banca:[["Apuesta solo lo que puedas perder","Separa una banca pequeña y no la rellenes con dinero de tus gastos."],
+  ["Apuestas pequeñas y fijas","Entre el 1 % y el 2 % de la banca por apuesta. Así una mala racha no te arruina."],
+  ["No persigas pérdidas","Subir la apuesta para recuperar es la forma más rápida de perderlo todo."],
+  ["Una probabilidad no es una certeza","Incluso al 80 % se falla 1 de cada 5 veces."],
+  ["Si deja de ser divertido, para","En España puedes llamar gratis a FEJAR (900 200 225) o informarte en jugarbien.es. Solo mayores de 18 años."]],
+ c_banca:"Tu banca (€)",c_cuota:"Cuota",c_prob:"Probabilidad de ganar (%)",c_hint:"Pon nuestra probabilidad o la tuya.",
+ c_no:"Sin ventaja: con esa cuota la casa paga menos de lo que vale. Mejor no apostar.",c_si:"Apuesta prudente (¼ de Kelly):",c_de:"de tu banca",c_imp:"Probabilidad implícita de la cuota",c_edge:"Tu ventaja",
+ c_warn:"Es una herramienta de cálculo, no una recomendación. Ninguna apuesta es segura.",
+ reglas:[["⚽ Fútbol","1 = gana el local, X = empate, 2 = gana el visitante. Cuentan los 90 minutos más el descuento; la prórroga y los penaltis no."],
+  ["🎾 Tenis","Gana quien gana los sets. Si un jugador se retira, el partido es para el otro."],
+  ["🏀 Baloncesto","No hay empate: si acaban iguales se juega prórroga. Nuestra probabilidad incluye la prórroga."],
+  ["🏒 Hockey","Si hay empate se juega prórroga y, si sigue, tanda de penaltis. Predecimos quién gana al final."],
+  ["🏈 Fútbol americano","Cuatro cuartos y prórroga si hay empate. Predecimos el ganador final."],
+  ["🥋 MMA","Gana por KO, sumisión o decisión de los jueces. Los empates no los contamos."],
+  ["⚾ Béisbol","Nueve entradas; si hay empate, entradas extra. Predecimos el ganador final."],
+  ["🏐 Voleibol","Gana el primero que gana 3 sets. No hay empate."],
+  ["🏉 Rugby","80 minutos. El empate existe pero es muy raro (2-3 %)."],
+  ["🏁 Fórmula 1 y MotoGP","Damos la probabilidad de ganar, de podio y de puntos (top 10). Antes de la clasificación y con la parrilla."],
+  ["⛳ Golf","Cuatro días; tras el segundo hay corte. Damos probabilidad de ganar, top 3 y top 10."]]},
+en:{h1:"🎓 Learn",lead:"Everything you need to understand our predictions and bet sensibly. Underlined words anywhere on the site bring you here.",
+ s_leer:"How to read a prediction",s_glos:"Glossary",s_banca:"Bankroll and responsible gambling",s_calc:"Stake calculator",s_reglas:"Rules of each sport",
+ leer:[["1. Probability","How many times out of 100 that result would happen if the game were played many times. 70% is not certain: out of 10 such games, expect 3 upsets."],
+  ["2. Favourite","The most likely result. We highlight it so you see it fast, but it does not always win."],
+  ["3. Odds","What the bookmaker pays per unit staked. We show the best odds we found and where."],
+  ["4. Compare","If our probability is higher than the one hidden in the odds, there would be value. We only flag it when proven with real results; today no rule is."]],
+ glos:[["cuota","Odds","What the bookmaker pays per unit staked, stake included. Odds 2.00: stake 10, if you win you get 20.","Odds 1.50 → 10 becomes 15 if you win."],
+  ["implicita","Implied probability","The probability hidden in the odds: 1 divided by the odds. Bookmakers add a bit extra for their margin.","Odds 2.00 → 1 / 2 = 50%."],
+  ["valor","Value bet","When the real probability is higher than the odds' implied one. The only way to win long term, and very hard. We only flag it if proven with real past odds.","We say 60%, odds 2.00 (50%) → value."],
+  ["elo","Elo","Strength rating for each team or player. Goes up when winning and down when losing, more or less depending on what was expected.","100 points more wins more often."],
+  ["logloss","Logloss","Quality score of probabilities: punishes being sure and wrong. Lower is better. We use it to choose the engine.","Saying 99% and missing costs far more than 60% and missing."],
+  ["brier","Brier","Another quality score of probabilities, 0 to 1. Lower is better. Random is 0.25.",""],
+  ["favorito","Favourite","The result with the highest probability according to our engine.",""],
+  ["empate","Draw","In football it is a result (1, X, 2). In rugby it is very rare and counts as a miss for us.",""],
+  ["parrilla","Starting grid","Order in which drivers start, set in qualifying. It changes probabilities a lot, so we redo the prediction once known.",""],
+  ["podio","Podium / top 3","Finishing in the first three.",""],
+  ["top10","Top 10","Finishing in the first ten. A very common golf bet.",""],
+  ["corte","The cut (golf)","After two days only the best continue. Missing the cut counts as a bad result in our engine.",""],
+  ["abandono","Retirement","Not finishing the race. We include the real rate of recent races.",""],
+  ["regla","Simple rule","What someone with no engine would get, e.g. 'home team always wins'. Our engine must beat it.",""],
+  ["prueba","Unseen games","We test the engine on seasons it did not learn from, as if they were the future. That keeps the hit rate honest.",""],
+  ["forma","Recent form","How a team's last games went, beyond its overall strength.",""],
+  ["racha","Streak","The last 3 games. Only used if it really improves the prediction.",""],
+  ["banca","Bankroll","Money set aside only for betting, that you can afford to lose.",""],
+  ["kelly","Kelly criterion","Formula for what share of the bankroll to stake when you have an edge. It is aggressive, so we use a quarter. With no edge it says: do not bet.",""]],
+ banca:[["Only bet what you can lose","Keep a small bankroll and never refill it with money for your expenses."],
+  ["Small, fixed stakes","1% to 2% of the bankroll per bet, so a bad run does not ruin you."],
+  ["Do not chase losses","Raising stakes to recover is the fastest way to lose everything."],
+  ["A probability is not a certainty","Even at 80% you miss 1 in 5."],
+  ["If it stops being fun, stop","Seek help from your local support service. 18+ only."]],
+ c_banca:"Your bankroll",c_cuota:"Odds",c_prob:"Win probability (%)",c_hint:"Use our probability or your own.",
+ c_no:"No edge: at these odds the bookmaker pays less than it is worth. Better not to bet.",c_si:"Prudent stake (¼ Kelly):",c_de:"of your bankroll",c_imp:"Implied probability",c_edge:"Your edge",
+ c_warn:"This is a calculator, not a recommendation. No bet is safe.",
+ reglas:[["⚽ Football","1 = home win, X = draw, 2 = away win. 90 minutes plus stoppage time; extra time and penalties do not count."],
+  ["🎾 Tennis","Whoever wins the sets wins. If a player retires, the match goes to the other."],
+  ["🏀 Basketball","No draws: overtime if tied. Our probability includes overtime."],
+  ["🏒 Hockey","Overtime and then shootout if tied. We predict the final winner."],
+  ["🏈 American football","Four quarters and overtime if tied. We predict the final winner."],
+  ["🥋 MMA","Win by KO, submission or decision. Draws are not counted."],
+  ["⚾ Baseball","Nine innings; extra innings if tied. We predict the final winner."],
+  ["🏐 Volleyball","First to win 3 sets. No draws."],
+  ["🏉 Rugby","80 minutes. Draws exist but are very rare (2-3%)."],
+  ["🏁 Formula 1 and MotoGP","Probability of winning, podium and points (top 10), before qualifying and with the grid."],
+  ["⛳ Golf","Four days with a cut after the second. Probability of winning, top 3 and top 10."]]}
+};
+var lang="es";
+try{ lang=localStorage.getItem("lang")||(navigator.language.indexOf("es")==0?"es":"en"); }catch(e){}
+function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
+function t(k){ return T[lang][k]; }
+function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+function num(id){ var v=String(document.getElementById(id).value||"").replace(",","."); return parseFloat(v); }
+function calcular(){
+  var b=num("c-b"), c=num("c-c"), p=num("c-p")/100, el=document.getElementById("c-r");
+  if(!(b>0)||!(c>1)||!(p>0&&p<1)){ el.innerHTML=""; return; }
+  var imp=1/c, edge=p*c-1, k=(p*c-1)/(c-1), f=Math.max(0,k/4);
+  var d=function(x,n){ var s=x.toFixed(n); return lang==="es"?s.replace(".",","):s; };
+  var o=t("c_imp")+': <b style="font-size:15px">'+d(imp*100,1)+'%</b> · '+t("c_edge")+': <b style="font-size:15px" class="'+(edge>0?"ok":"ko")+'">'+(edge>0?"+":"")+d(edge*100,1)+'%</b><br>';
+  if(f<=0) o+='<span class="ko"><b style="font-size:16px">'+t("c_no")+'</b></span>';
+  else o+=t("c_si")+' <b class="ok">'+d(b*f,2)+(lang==="es"?" €":"")+'</b> ('+d(f*100,1)+'% '+t("c_de")+')';
+  el.innerHTML=o+'<div style="font-size:12px;color:var(--mut);margin-top:6px">'+t("c_warn")+'</div>';
+}
+function render(){
+  document.documentElement.lang=lang;
+  if(window.navRender) navRender(lang,"aprender");
+  document.title="Sports Edge · "+t("h1").replace("🎓 ","");
+  document.getElementById("h1").textContent=t("h1");
+  document.getElementById("lead").textContent=t("lead");
+  document.getElementById("foot").textContent="🔞 18+";
+  document.getElementById("idx").innerHTML=[["leer","s_leer"],["glosario","s_glos"],["banca-resp","s_banca"],["calculadora","s_calc"],["reglas","s_reglas"]]
+    .map(function(x){ return '<a href="#'+x[0]+'">'+t(x[1])+'</a>'; }).join("")+'<a href="guia.html">📘 '+(lang==="es"?"Cómo funciona nuestro motor":"How our engine works")+'</a>';
+  var keep={b:"",c:"",p:""}; ["b","c","p"].forEach(function(k){ var e=document.getElementById("c-"+k); if(e) keep[k]=e.value; });
+  var o='<h2 id="leer">'+t("s_leer")+'</h2><div class="grid">'+t("leer").map(function(x){ return '<div class="t"><b>'+esc(x[0])+'</b><p>'+esc(x[1])+'</p></div>'; }).join("")+'</div>';
+  o+='<h2 id="glosario">'+t("s_glos")+'</h2><div class="grid">'+t("glos").map(function(x){ return '<div class="t" id="'+x[0]+'"><b>'+esc(x[1])+'</b><p>'+esc(x[2])+'</p>'+(x[3]?'<div class="ej">'+esc(x[3])+'</div>':'')+'</div>'; }).join("")+'</div>';
+  o+='<h2 id="banca-resp">'+t("s_banca")+'</h2><div class="grid">'+t("banca").map(function(x,i){ return '<div class="t'+(i===4?' warn':'')+'"><b>'+esc(x[0])+'</b><p>'+esc(x[1])+'</p></div>'; }).join("")+'</div>';
+  o+='<h2 id="calculadora">'+t("s_calc")+'</h2><div class="calc">'
+    +'<div><label for="c-b">'+t("c_banca")+'</label><input id="c-b" inputmode="decimal" value="'+esc(keep.b||"100")+'" oninput="calcular()"></div>'
+    +'<div><label for="c-c">'+t("c_cuota")+'</label><input id="c-c" inputmode="decimal" value="'+esc(keep.c||"2,10")+'" oninput="calcular()"></div>'
+    +'<div><label for="c-p">'+t("c_prob")+'</label><input id="c-p" inputmode="decimal" value="'+esc(keep.p||"55")+'" oninput="calcular()"><div style="font-size:11.5px;color:var(--mut);margin-top:3px">'+t("c_hint")+'</div></div>'
+    +'<div class="res" id="c-r"></div></div>';
+  o+='<h2 id="reglas">'+t("s_reglas")+'</h2><div class="grid">'+t("reglas").map(function(x){ return '<div class="t"><b>'+esc(x[0])+'</b><p>'+esc(x[1])+'</p></div>'; }).join("")+'</div>';
+  document.getElementById("body").innerHTML=o;
+  calcular();
+  if(location.hash){ var el=document.getElementById(location.hash.substr(1)); if(el) setTimeout(function(){ el.scrollIntoView({block:"center"}); },50); }
+}
+render();
+</script>
+</body>
+</html>
