@@ -1,4 +1,4 @@
-/* Sports Edge - piezas comunes a todas las paginas:
+/* SportEVLab - piezas comunes a todas las paginas:
    cabecera con menu, modo dia/noche, ancho de pagina y columnas laterales de noticias.
    Cada pagina pone <header id="top"></header>, carga este archivo y llama a navRender(lang, "seccion")
    dentro de su render(). Los botones ES/EN llaman a setLang() de cada pagina. */
@@ -26,13 +26,14 @@
       "--acc:#1e7a4c;--blue:#8a6a00;--red:#c0392b;--amb:#a15c00}"+
     ":root[data-theme=light] body{background:var(--bg);color:var(--txt)}"+
     ":root[data-theme=light] #top{background:#ffffff}"+
-    ":root[data-theme=light] #top .se-logo{color:#8a6a00}"+
+    ":root[data-theme=light] #top .se-logo{color:#111827}"+
     ":root[data-theme=light] #top nav a.on{border-bottom-color:#8a6a00}"+
     ":root[data-theme=light] #top .se-lang button.on{background:#8a6a00;border-color:#8a6a00;color:#fff}"+
     /* Cabecera */
     "#top{display:block;padding:0;border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:20}"+
     "#top .se-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 28px 6px}"+
-    "#top .se-logo{font-weight:800;font-size:20px;letter-spacing:.5px;color:var(--txt);text-decoration:none}"+
+    "#top .se-logo{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:22px;letter-spacing:-.3px;color:var(--txt);text-decoration:none}"+
+    "#top .se-logo img{border-radius:8px}#top .se-logo b{color:#d4a52a;font-weight:800}"+
     "#top .se-logo span{color:var(--acc)}"+
     "#top .se-r{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}"+
     "#top .se-btn{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 12px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--txt);text-decoration:none;font-weight:700;font-size:13px;white-space:nowrap}"+
@@ -231,13 +232,14 @@
   }
 
   /* ---------- cabecera ---------- */
+  (function(){ try{ if(!document.querySelector("link[rel=icon]")){ var l=document.createElement("link"); l.rel="icon"; l.type="image/svg+xml"; l.href="img/icono.svg"; document.head.appendChild(l); } }catch(e){} })();
   window.navRender=function(lang,activo){
     ultimo={lang:lang,act:activo};
     var el=document.getElementById("top"); if(!el) return;
     var t=TX[lang]||TX.es, n="";
     for(var i=0;i<ITEMS.length;i++){ var it=ITEMS[i];
       n+='<a href="'+it[1]+'"'+(it[0]===activo?' class="on"':'')+'>'+it[2]+' '+t[it[0]]+'</a>'; }
-    el.innerHTML='<div class="se-row"><a class="se-logo" href="index.html">SPORTS<span>EDGE</span></a>'
+    el.innerHTML='<div class="se-row"><a class="se-logo" href="index.html"><img src="img/icono.svg" alt="" width="34" height="34"><i style="font-style:normal">Sport<span>EV</span><b>Lab</b></i></a>'
       +'<div class="se-r"><a class="se-btn'+(activo==="aprender"?' on':'')+'" href="aprender.html">🎓 '+t.aprender+'</a>'
       +'<a class="se-btn'+(activo==="records"?' on':'')+'" href="records.html">🏆 '+t.records+'</a><button id="se-th" class="se-th" onclick="cambiarTema()" title="'+t.tema+'">'
       +(document.documentElement.getAttribute("data-theme")==="light"?"🌙":"☀️")+'</button>'
@@ -275,7 +277,7 @@
   function pintarBarra(){
     var tr=document.getElementById("se-tk-tr"), lab=document.getElementById("se-tk-lab"); if(!tr) return;
     var t=TX[ultimo.lang]||TX.es, it=[];
-    lab.textContent=TK_LIVE.length?"● "+t.tk_live:"⭐ SPORTS EDGE";
+    lab.textContent=TK_LIVE.length?"● "+t.tk_live:"⭐ SPORTEVLAB";
     TK_LIVE.slice(0,40).forEach(function(x){ it.push('<a class="tk-it" href="directo.html"><span class="tk-lv">●</span>'+x.ic+' <span class="tk-m">'+esc(x.lg)+'</span> '+esc(x.h)+' <b>'+esc(x.gh)+'-'+esc(x.ga)+'</b> '+esc(x.a)+' <span class="tk-m">'+esc(x.det)+'</span></a>'); });
     if(TK_HOY) it.push('<a class="tk-it" href="estadisticas.html"><span class="tk-g">📈 '+t.tk_today.replace("%a",TK_HOY.a).replace("%n",TK_HOY.n)+'</span></a>');
     (PK||[]).slice().sort(function(a,b){ return b.prob-a.prob; }).slice(0,15).forEach(function(x){
