@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-11-17 01:35 UTC",
+ "actualizado": "2026-11-17 04:48 UTC",
  "liga": "NFL",
- "datos_hasta": "2026-11-16T01:20:00Z",
- "dias_desde_datos": 1,
+ "datos_hasta": "2026-11-17T01:15:00Z",
+ "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
@@ -10,58 +10,6 @@
  "con_cuotas": true,
  "proximo": "2026-11-20T01:15:00Z",
  "predicciones": [
-  {
-   "id": "401873065",
-   "fecha": "2026-11-17T01:15:00Z",
-   "local": "Baltimore Ravens",
-   "visitante": "Los Angeles Chargers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7095,
-   "pv": 0.2905,
-   "elo_l": 1457,
-   "elo_v": 1331,
-   "bal_l": [
-    4,
-    5
-   ],
-   "bal_v": [
-    0,
-    8
-   ],
-   "creada": "2026-11-13 02:59 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "L": {
-      "c": 1.47,
-      "casa": "Coolbet"
-     },
-     "V": {
-      "c": 3.1,
-      "casa": "Betfair"
-     }
-    },
-    "mercado": {
-     "L": 0.6676,
-     "V": 0.3324
-    },
-    "casas": 21,
-    "ev": {
-     "L": 0.043,
-     "V": -0.0995
-    },
-    "valor": [],
-    "actualizado": "2026-11-16 18:27 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-13 02:59 UTC",
-    "valor": [],
-    "L": 1.5,
-    "V": 2.9
-   }
-  },
   {
    "id": "401873066",
    "fecha": "2026-11-20T01:15:00Z",
@@ -116,6 +64,58 @@
   }
  ],
  "recientes": [
+  {
+   "id": "401873065",
+   "fecha": "2026-11-17T01:15:00Z",
+   "local": "Baltimore Ravens",
+   "visitante": "Los Angeles Chargers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7095,
+   "pv": 0.2905,
+   "elo_l": 1457,
+   "elo_v": 1331,
+   "bal_l": [
+    4,
+    5
+   ],
+   "bal_v": [
+    0,
+    8
+   ],
+   "creada": "2026-11-13 02:59 UTC",
+   "resultado": "V",
+   "marcador": "20-23",
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.47,
+      "casa": "Coolbet"
+     },
+     "V": {
+      "c": 3.1,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "L": 0.6676,
+     "V": 0.3324
+    },
+    "casas": 21,
+    "ev": {
+     "L": 0.043,
+     "V": -0.0995
+    },
+    "valor": [],
+    "actualizado": "2026-11-16 18:27 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-13 02:59 UTC",
+    "valor": [],
+    "L": 1.5,
+    "V": 2.9
+   }
+  },
   {
    "id": "401873064",
    "fecha": "2026-11-16T01:20:00Z",
@@ -743,14 +743,14 @@
  ],
  "directo": {
   "total": 14,
-  "resueltas": 12,
+  "resueltas": 13,
   "aciertos": 9,
-  "acierto": 0.75,
+  "acierto": 0.6923,
   "ic": [
-   0.4677,
-   0.9111
+   0.4237,
+   0.8732
   ],
-  "brier": 0.1534,
+  "brier": 0.1803,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -865,12 +865,6 @@
    "p": 4
   },
   {
-   "equipo": "Baltimore Ravens",
-   "elo": 1457,
-   "g": 4,
-   "p": 5
-  },
-  {
    "equipo": "Dallas Cowboys",
    "elo": 1438,
    "g": 4,
@@ -887,6 +881,12 @@
    "elo": 1435,
    "g": 3,
    "p": 5
+  },
+  {
+   "equipo": "Baltimore Ravens",
+   "elo": 1428,
+   "g": 4,
+   "p": 6
   },
   {
    "equipo": "Atlanta Falcons",
@@ -913,6 +913,12 @@
    "p": 7
   },
   {
+   "equipo": "Los Angeles Chargers",
+   "elo": 1361,
+   "g": 1,
+   "p": 8
+  },
+  {
    "equipo": "Arizona Cardinals",
    "elo": 1359,
    "g": 3,
@@ -923,12 +929,6 @@
    "elo": 1342,
    "g": 2,
    "p": 7
-  },
-  {
-   "equipo": "Los Angeles Chargers",
-   "elo": 1331,
-   "g": 0,
-   "p": 8
   },
   {
    "equipo": "Miami Dolphins",

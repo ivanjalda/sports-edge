@@ -2002,8 +2002,8 @@
     7
    ],
    "creada": "2026-11-15 02:08 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "105-115",
    "cuota": {
     "mejor": {
      "L": {
@@ -2054,8 +2054,8 @@
     9
    ],
    "creada": "2026-11-15 02:08 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "126-115",
    "cuota": {
     "mejor": {
      "V": {
@@ -2106,8 +2106,8 @@
     4
    ],
    "creada": "2026-11-15 02:08 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "120-136",
    "cuota": {
     "mejor": {
      "V": {
@@ -2158,8 +2158,8 @@
     3
    ],
    "creada": "2026-11-15 02:08 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "123-135",
    "cuota": {
     "mejor": {
      "L": {
@@ -2210,8 +2210,8 @@
     3
    ],
    "creada": "2026-11-15 02:08 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "128-110",
    "cuota": {
     "mejor": {
      "V": {
@@ -2262,8 +2262,8 @@
     3
    ],
    "creada": "2026-11-15 02:08 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "106-98",
    "cuota": {
     "mejor": {
      "L": {
@@ -2314,8 +2314,8 @@
     5
    ],
    "creada": "2026-11-15 02:08 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "115-94",
    "cuota": {
     "mejor": {
      "V": {
@@ -2366,8 +2366,8 @@
     6
    ],
    "creada": "2026-11-15 02:08 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "105-117",
    "cuota": {
     "mejor": {
      "L": {
@@ -2835,7 +2835,76 @@
    "creada": "2026-11-17 01:35 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401910015",
+   "fecha": "2026-11-19T02:30:00Z",
+   "local": "Denver Nuggets",
+   "visitante": "Boston Celtics",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.454,
+   "pv": 0.546,
+   "elo_l": 1570,
+   "elo_v": 1640,
+   "bal_l": [
+    7,
+    5
+   ],
+   "bal_v": [
+    11,
+    3
+   ],
+   "creada": "2026-11-17 04:48 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401910017",
+   "fecha": "2026-11-19T03:00:00Z",
+   "local": "Los Angeles Lakers",
+   "visitante": "Utah Jazz",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.9061,
+   "pv": 0.0939,
+   "elo_l": 1609,
+   "elo_v": 1313,
+   "bal_l": [
+    12,
+    2
+   ],
+   "bal_v": [
+    1,
+    13
+   ],
+   "creada": "2026-11-17 04:48 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401910018",
+   "fecha": "2026-11-19T03:00:00Z",
+   "local": "Sacramento Kings",
+   "visitante": "Phoenix Suns",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.3514,
+   "pv": 0.6486,
+   "elo_l": 1339,
+   "elo_v": 1517,
+   "bal_l": [
+    1,
+    12
+   ],
+   "bal_v": [
+    6,
+    7
+   ],
+   "creada": "2026-11-17 04:48 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-17 01:35 UTC"
+ "actualizado": "2026-11-17 04:48 UTC"
 }

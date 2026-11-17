@@ -1,67 +1,15 @@
 {
- "actualizado": "2026-11-17 01:35 UTC",
+ "actualizado": "2026-11-17 04:48 UTC",
  "liga": "NHL",
- "datos_hasta": "2026-11-16T02:00:00Z",
+ "datos_hasta": "2026-11-17T00:30:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": true,
- "proximo": "2026-11-17T02:30:00Z",
+ "proximo": "2026-11-18T00:00:00Z",
  "predicciones": [
-  {
-   "id": "401892726",
-   "fecha": "2026-11-17T00:30:00Z",
-   "local": "New York Rangers",
-   "visitante": "Montreal Canadiens",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5181,
-   "pv": 0.4819,
-   "elo_l": 1506,
-   "elo_v": 1544,
-   "bal_l": [
-    12,
-    8
-   ],
-   "bal_v": [
-    11,
-    7
-   ],
-   "creada": "2026-11-15 02:08 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 2.52,
-      "casa": "1xBet"
-     },
-     "L": {
-      "c": 2.56,
-      "casa": "1xBet"
-     }
-    },
-    "mercado": {
-     "L": 0.4955,
-     "V": 0.5045
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.3263,
-     "V": 0.2144
-    },
-    "valor": [],
-    "actualizado": "2026-11-16 18:27 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-16 16:51 UTC",
-    "valor": [],
-    "L": 2.6,
-    "V": 2.5
-   }
-  },
   {
    "id": "401892727",
    "fecha": "2026-11-17T02:30:00Z",
@@ -731,9 +679,84 @@
    "creada": "2026-11-17 01:35 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401892741",
+   "fecha": "2026-11-19T03:00:00Z",
+   "local": "Utah Mammoth",
+   "visitante": "Colorado Avalanche",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4779,
+   "pv": 0.5221,
+   "elo_l": 1505,
+   "elo_v": 1570,
+   "bal_l": [
+    10,
+    11
+   ],
+   "bal_v": [
+    11,
+    9
+   ],
+   "creada": "2026-11-17 04:48 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
  "recientes": [
+  {
+   "id": "401892726",
+   "fecha": "2026-11-17T00:30:00Z",
+   "local": "New York Rangers",
+   "visitante": "Montreal Canadiens",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5181,
+   "pv": 0.4819,
+   "elo_l": 1506,
+   "elo_v": 1544,
+   "bal_l": [
+    12,
+    8
+   ],
+   "bal_v": [
+    11,
+    7
+   ],
+   "creada": "2026-11-15 02:08 UTC",
+   "resultado": "L",
+   "marcador": "3-1",
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 2.52,
+      "casa": "1xBet"
+     },
+     "L": {
+      "c": 2.56,
+      "casa": "1xBet"
+     }
+    },
+    "mercado": {
+     "L": 0.4955,
+     "V": 0.5045
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.3263,
+     "V": 0.2144
+    },
+    "valor": [],
+    "actualizado": "2026-11-16 18:27 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-16 16:51 UTC",
+    "valor": [],
+    "L": 2.6,
+    "V": 2.5
+   }
+  },
   {
    "id": "401892724",
    "fecha": "2026-11-16T02:00:00Z",
@@ -1721,70 +1744,18 @@
     "L": 1.61,
     "V": 5.2
    }
-  },
-  {
-   "id": "401892707",
-   "fecha": "2026-11-14T03:00:00Z",
-   "local": "Vegas Golden Knights",
-   "visitante": "Nashville Predators",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6307,
-   "pv": 0.3693,
-   "elo_l": 1541,
-   "elo_v": 1498,
-   "bal_l": [
-    11,
-    7
-   ],
-   "bal_v": [
-    9,
-    9
-   ],
-   "creada": "2026-11-12 03:18 UTC",
-   "resultado": "V",
-   "marcador": "2-3",
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 3.3,
-      "casa": "Unibet (SE)"
-     },
-     "L": {
-      "c": 2.08,
-      "casa": "1xBet"
-     }
-    },
-    "mercado": {
-     "L": 0.5952,
-     "V": 0.4048
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.3119,
-     "V": 0.2187
-    },
-    "valor": [],
-    "actualizado": "2026-11-13 19:53 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-12 20:09 UTC",
-    "valor": [],
-    "L": 1.97,
-    "V": 3.6
-   }
   }
  ],
  "directo": {
-  "total": 53,
-  "resueltas": 38,
-  "aciertos": 16,
-  "acierto": 0.4211,
+  "total": 54,
+  "resueltas": 39,
+  "aciertos": 17,
+  "acierto": 0.4359,
   "ic": [
-   0.2785,
-   0.5781
+   0.293,
+   0.5902
   ],
-  "brier": 0.2735,
+  "brier": 0.2725,
   "apuestas": 17,
   "ganadas": 5,
   "roi": -0.2582
@@ -1821,16 +1792,16 @@
    "p": 5
   },
   {
-   "equipo": "Montreal Canadiens",
-   "elo": 1539,
-   "g": 11,
-   "p": 8
-  },
-  {
    "equipo": "Dallas Stars",
    "elo": 1537,
    "g": 12,
    "p": 8
+  },
+  {
+   "equipo": "Montreal Canadiens",
+   "elo": 1535,
+   "g": 11,
+   "p": 9
   },
   {
    "equipo": "Vegas Golden Knights",
@@ -1876,8 +1847,8 @@
   },
   {
    "equipo": "New York Rangers",
-   "elo": 1506,
-   "g": 12,
+   "elo": 1510,
+   "g": 13,
    "p": 8
   },
   {

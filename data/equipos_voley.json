@@ -1,61 +1,15 @@
 {
- "actualizado": "2026-11-17 01:35 UTC",
+ "actualizado": "2026-11-17 04:48 UTC",
  "liga": "NCAA",
- "datos_hasta": "2026-11-16T01:00:00Z",
- "dias_desde_datos": 1,
+ "datos_hasta": "2026-11-17T02:00:00Z",
+ "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
- "proximo": "2026-11-17T02:00:00Z",
+ "proximo": "2026-11-17T23:00:00Z",
  "predicciones": [
-  {
-   "id": "401887144",
-   "fecha": "2026-11-17T00:30:00Z",
-   "local": "Iowa State Cyclones",
-   "visitante": "Cincinnati Bearcats",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6509,
-   "pv": 0.3491,
-   "elo_l": 1635,
-   "elo_v": 1584,
-   "bal_l": [
-    13,
-    11
-   ],
-   "bal_v": [
-    11,
-    12
-   ],
-   "creada": "2026-11-15 02:08 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401891235",
-   "fecha": "2026-11-17T02:00:00Z",
-   "local": "Montana Grizzlies",
-   "visitante": "Northern Colorado Bears",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.2123,
-   "pv": 0.7877,
-   "elo_l": 1366,
-   "elo_v": 1580,
-   "bal_l": [
-    8,
-    19
-   ],
-   "bal_v": [
-    15,
-    12
-   ],
-   "creada": "2026-11-15 02:08 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "401885217",
    "fecha": "2026-11-17T23:00:00Z",
@@ -837,9 +791,124 @@
    "creada": "2026-11-17 01:35 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401891113",
+   "fecha": "2026-11-19T02:00:00Z",
+   "local": "Idaho State Bengals",
+   "visitante": "Eastern Washington Eagles",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8834,
+   "pv": 0.1166,
+   "elo_l": 1586,
+   "elo_v": 1339,
+   "bal_l": [
+    19,
+    9
+   ],
+   "bal_v": [
+    11,
+    17
+   ],
+   "creada": "2026-11-17 04:48 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401891269",
+   "fecha": "2026-11-19T02:00:00Z",
+   "local": "Montana State Bobcats",
+   "visitante": "Northern Colorado Bears",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4167,
+   "pv": 0.5833,
+   "elo_l": 1518,
+   "elo_v": 1589,
+   "bal_l": [
+    17,
+    10
+   ],
+   "bal_v": [
+    16,
+    12
+   ],
+   "creada": "2026-11-17 04:48 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401901194",
+   "fecha": "2026-11-19T02:00:00Z",
+   "local": "UC Davis Aggies",
+   "visitante": "Grand Canyon Lopes",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4951,
+   "pv": 0.5049,
+   "elo_l": 1612,
+   "elo_v": 1610,
+   "bal_l": [
+    14,
+    13
+   ],
+   "bal_v": [
+    17,
+    10
+   ],
+   "creada": "2026-11-17 04:48 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
  "recientes": [
+  {
+   "id": "401891235",
+   "fecha": "2026-11-17T02:00:00Z",
+   "local": "Montana Grizzlies",
+   "visitante": "Northern Colorado Bears",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.2123,
+   "pv": 0.7877,
+   "elo_l": 1366,
+   "elo_v": 1580,
+   "bal_l": [
+    8,
+    19
+   ],
+   "bal_v": [
+    15,
+    12
+   ],
+   "creada": "2026-11-15 02:08 UTC",
+   "resultado": "V",
+   "marcador": "1-3"
+  },
+  {
+   "id": "401887144",
+   "fecha": "2026-11-17T00:30:00Z",
+   "local": "Iowa State Cyclones",
+   "visitante": "Cincinnati Bearcats",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6509,
+   "pv": 0.3491,
+   "elo_l": 1635,
+   "elo_v": 1584,
+   "bal_l": [
+    13,
+    11
+   ],
+   "bal_v": [
+    11,
+    12
+   ],
+   "creada": "2026-11-15 02:08 UTC",
+   "resultado": "L",
+   "marcador": "3-2"
+  },
   {
    "id": "401883963",
    "fecha": "2026-11-16T01:00:00Z",
@@ -1253,64 +1322,18 @@
    "creada": "2026-11-13 19:24 UTC",
    "resultado": "L",
    "marcador": "3-0"
-  },
-  {
-   "id": "401884200",
-   "fecha": "2026-11-15T18:00:00Z",
-   "local": "UMBC Retrievers",
-   "visitante": "Binghamton Bearcats",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8051,
-   "pv": 0.1949,
-   "elo_l": 1630,
-   "elo_v": 1493,
-   "bal_l": [
-    14,
-    5
-   ],
-   "bal_v": [
-    14,
-    9
-   ],
-   "creada": "2026-11-13 19:24 UTC",
-   "resultado": "L",
-   "marcador": "3-1"
-  },
-  {
-   "id": "401884272",
-   "fecha": "2026-11-15T18:00:00Z",
-   "local": "NC State Wolfpack",
-   "visitante": "Virginia Cavaliers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8808,
-   "pv": 0.1192,
-   "elo_l": 1593,
-   "elo_v": 1386,
-   "bal_l": [
-    15,
-    10
-   ],
-   "bal_v": [
-    6,
-    17
-   ],
-   "creada": "2026-11-13 19:24 UTC",
-   "resultado": "L",
-   "marcador": "3-1"
   }
  ],
  "directo": {
-  "total": 289,
-  "resueltas": 250,
-  "aciertos": 193,
-  "acierto": 0.772,
+  "total": 292,
+  "resueltas": 252,
+  "aciertos": 195,
+  "acierto": 0.7738,
   "ic": [
-   0.7161,
-   0.8197
+   0.7183,
+   0.8211
   ],
-  "brier": 0.1485,
+  "brier": 0.148,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -1743,6 +1766,12 @@
    "p": 11
   },
   {
+   "equipo": "Iowa State Cyclones",
+   "elo": 1643,
+   "g": 14,
+   "p": 11
+  },
+  {
    "equipo": "UMBC Retrievers",
    "elo": 1641,
    "g": 16,
@@ -1759,12 +1788,6 @@
    "elo": 1637,
    "g": 11,
    "p": 15
-  },
-  {
-   "equipo": "Iowa State Cyclones",
-   "elo": 1635,
-   "g": 13,
-   "p": 11
   },
   {
    "equipo": "Winthrop Eagles",
@@ -1929,6 +1952,12 @@
    "p": 9
   },
   {
+   "equipo": "Northern Colorado Bears",
+   "elo": 1589,
+   "g": 16,
+   "p": 12
+  },
+  {
    "equipo": "Campbell Fighting Camels",
    "elo": 1588,
    "g": 15,
@@ -1959,12 +1988,6 @@
    "p": 11
   },
   {
-   "equipo": "Cincinnati Bearcats",
-   "elo": 1584,
-   "g": 11,
-   "p": 12
-  },
-  {
    "equipo": "West Virginia Mountaineers",
    "elo": 1583,
    "g": 13,
@@ -1983,12 +2006,6 @@
    "p": 5
   },
   {
-   "equipo": "Northern Colorado Bears",
-   "elo": 1580,
-   "g": 15,
-   "p": 12
-  },
-  {
    "equipo": "Kansas State Wildcats",
    "elo": 1580,
    "g": 11,
@@ -1997,6 +2014,12 @@
   {
    "equipo": "LSU Tigers",
    "elo": 1578,
+   "g": 11,
+   "p": 13
+  },
+  {
+   "equipo": "Cincinnati Bearcats",
+   "elo": 1576,
    "g": 11,
    "p": 13
   },
@@ -2955,12 +2978,6 @@
    "p": 17
   },
   {
-   "equipo": "Montana Grizzlies",
-   "elo": 1366,
-   "g": 8,
-   "p": 19
-  },
-  {
    "equipo": "Alabama State Hornets",
    "elo": 1364,
    "g": 10,
@@ -3018,6 +3035,12 @@
    "equipo": "Western Carolina Catamounts",
    "elo": 1357,
    "g": 11,
+   "p": 20
+  },
+  {
+   "equipo": "Montana Grizzlies",
+   "elo": 1357,
+   "g": 8,
    "p": 20
   },
   {
