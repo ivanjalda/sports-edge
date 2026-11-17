@@ -60,6 +60,11 @@ jobs:
         timeout-minutes: 25
         run: python3 -u scripts/carreras.py
 
+      - name: Records (con nuestros datos reales)
+        continue-on-error: true
+        timeout-minutes: 10
+        run: python3 -u scripts/records.py
+
       - name: Noticias
         continue-on-error: true
         timeout-minutes: 5
