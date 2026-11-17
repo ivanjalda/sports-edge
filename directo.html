@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sports Edge · En directo</title>
+<title>SportEVLab · En directo</title>
 <meta name="description" content="Resultados en directo de fútbol, baloncesto, hockey, fútbol americano, béisbol y voleibol, con nuestra predicción antes de cada partido.">
 <style>
 :root{--bg:#0b0f17;--card:#121826;--card2:#0f1522;--line:#1f2937;--txt:#e5e7eb;--mut:#8b95a7;--acc:#22c55e;--blue:#38bdf8;--red:#ef4444;--amb:#f59e0b}
@@ -259,7 +259,7 @@ function bloque(lista){
 function render(){
   document.documentElement.lang=lang;
   if(window.navRender) navRender(lang,"directo");
-  document.title="Sports Edge · "+t("h1").replace("🔴 ","");
+  document.title="SportEVLab · "+t("h1").replace("🔴 ","");
   document.getElementById("h1").textContent=t("h1");
   document.getElementById("lead").textContent=t("lead");
   document.getElementById("foot").textContent=t("warn");

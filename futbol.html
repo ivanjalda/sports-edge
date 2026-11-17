@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sports Edge · Fútbol</title>
+<title>SportEVLab · Fútbol</title>
 <style>
 :root{--bg:#0b0f17;--card:#121826;--card2:#0f1522;--line:#1f2937;--txt:#e5e7eb;--mut:#8b95a7;--acc:#22c55e;--blue:#38bdf8;--red:#ef4444}
 *{box-sizing:border-box}
@@ -135,9 +135,9 @@ var T = {
       noweek1:"Esta liga no juega en los próximos 7 días. Sus predicciones aparecerán solas unos días antes de la próxima jornada.",
       h_res:"Cómo nos fue: resultados recientes",n_res:"Partidos ya jugados con la predicción que publicamos antes del partido. ✓ = el resultado que dimos como más probable fue el que ocurrió. ✗ = ocurrió otro. Pulsa una liga para ver el detalle.",
       okof:"acertados de",pickh:"Nuestro pronóstico",
-      m_tit:"🧠 Motor Sports Edge: así acierta",m_badge:"Motor propio · probado con %n partidos que no había visto",
+      m_tit:"🧠 Motor SportEVLab: así acierta",m_badge:"Motor propio · probado con %n partidos que no había visto",
       m_txt:"Nuestro motor combina tres medidas de cada equipo: sus goles (dando más peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo. Se ajusta con temporadas antiguas y se mide con las dos más recientes, prediciendo cada partido solo con lo que se sabía antes. Datos: football-data.co.uk.",
-      m_us:"Motor Sports Edge",m_old:"Modelo anterior",m_mk:"Casas de apuestas (cuota de cierre)",m_home:"Siempre local",
+      m_us:"Motor SportEVLab",m_old:"Modelo anterior",m_mk:"Casas de apuestas (cuota de cierre)",m_home:"Siempre local",
       m_hit:"Acierto",m_br:"Calibración (Brier)",m_n:"Partidos",m_val:"Simulación de VALOR con cuotas reales",
       m_val2:"apuestas · beneficio medio por apuesta",m_ic:"intervalo 95 %",m_lg:"Por liga",m_on:"En uso en las predicciones",m_off:"No se usa: en la prueba no mejoró al modelo anterior",
       r_tit:"Regla de VALOR más exigente (buscada por el Laboratorio)",r_txt:"Ventaja de al menos %e %, como máximo %d puntos por encima de las casas y probabilidad de al menos %p %.",
@@ -169,9 +169,9 @@ var T = {
       noweek1:"This league does not play in the next 7 days. Its predictions will appear a few days before the next matchday.",
       h_res:"How we did: recent results",n_res:"Games already played with the prediction we published before kick-off. ✓ = the outcome we rated most likely happened. ✗ = another outcome happened. Tap a league to see the detail.",
       okof:"right out of",pickh:"Our pick",
-      m_tit:"🧠 Sports Edge engine: how accurate it is",m_badge:"Own engine · tested on %n games it had not seen",
+      m_tit:"🧠 SportEVLab engine: how accurate it is",m_badge:"Own engine · tested on %n games it had not seen",
       m_txt:"Our engine blends three measures of each team: its goals (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating. It is tuned on older seasons and measured on the two most recent ones, predicting each game only with what was known beforehand. Data: football-data.co.uk.",
-      m_us:"Sports Edge engine",m_old:"Previous model",m_mk:"Bookmakers (closing odds)",m_home:"Always home",
+      m_us:"SportEVLab engine",m_old:"Previous model",m_mk:"Bookmakers (closing odds)",m_home:"Always home",
       m_hit:"Hit rate",m_br:"Calibration (Brier)",m_n:"Games",m_val:"VALUE simulation with real odds",
       m_val2:"bets · average profit per bet",m_ic:"95% interval",m_lg:"By league",m_on:"In use for predictions",m_off:"Not used: it did not beat the previous model in the test",
       r_tit:"Stricter VALUE rule (found by the Lab)",r_txt:"Edge of at least %e%, at most %d points above the bookmakers and probability of at least %p%.",
@@ -359,7 +359,7 @@ function render(){
   if(window.navRender) navRender(lang,"futbol");
   document.getElementById("h1f").textContent=lang==="es"?"⚽ Fútbol":"⚽ Football";
   document.getElementById("leadf").textContent=lang==="es"?"Probabilidades de 1X2, goles, primera parte y goleadores en 11 ligas (las 5 grandes de Europa, Portugal, Países Bajos, Championship, Brasil, Argentina y MLS), calculadas con nuestro motor propio a partir de resultados reales y comparadas con las cuotas de las casas de apuestas.":"1X2, goals, first-half and scorer probabilities for 11 leagues (Europe's big five, Portugal, the Netherlands, the Championship, Brazil, Argentina and MLS), built by our own engine from real results and compared with bookmakers' odds.";
-  document.title=lang==="es"?"Sports Edge · Fútbol":"Sports Edge · Football";
+  document.title=lang==="es"?"SportEVLab · Fútbol":"SportEVLab · Football";
   document.documentElement.lang=lang;
   document.getElementById("foot").textContent=t("foot");
 
