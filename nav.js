@@ -90,7 +90,17 @@
     /* Otras webs y pie comun */
     ".se-ow{margin:34px 28px 0;padding:18px 0 0;border-top:1px solid var(--line)}"+
     ".se-ow h3{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--blue);margin:0 0 10px}"+
-    ".se-ow .g{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}"+
+    ".se-ow .vp{overflow:hidden;border-radius:14px}"+
+    ".se-ow .g{display:flex;transition:transform .8s ease}"+
+    ".se-ow .g>a{flex:0 0 calc(50% - 6px);margin-right:12px;display:grid!important;grid-template-columns:1.1fr 1fr;min-height:210px}"+
+    ".se-ow .g>a .im{height:auto!important;min-height:210px}"+
+    ".se-ow .g>a .tx{display:flex!important;flex-direction:column;justify-content:center;padding:18px 20px!important}"+
+    ".se-ow .g>a b{font-size:20px!important} .se-ow .g>a span.tx>span{font-size:14px!important}"+
+    ".se-ow .dots{display:flex;gap:6px;justify-content:center;margin-top:10px}"+
+    ".se-ow .dots button{width:9px;height:9px;border-radius:50%;border:0;background:var(--line);cursor:pointer;padding:0}"+
+    ".se-ow .dots button.on{background:var(--acc);width:22px;border-radius:5px}"+
+    "@media(max-width:900px){.se-ow .g>a{flex-basis:100%;grid-template-columns:1fr}.se-ow .g>a .im{min-height:160px}}"+
+    "@media(prefers-reduced-motion:reduce){.se-ow .g{transition:none}.se-ow .g>a .im{animation:none}}"+
     ".se-ow a{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:var(--txt)}"+
     ".se-ow a .im{display:block;height:150px;background:linear-gradient(135deg,#0f2a1d,#1e7a4c 60%,#8a6a00);background-size:cover;background-position:center}"+
     ".se-ow a .im.ic{background-size:72px,cover;background-repeat:no-repeat,no-repeat;background-position:center,center}"+
@@ -280,21 +290,40 @@
   /* ---------- pie comun: otras webs y aviso de juego responsable ---------- */
   /* imagenes oficiales de cada web (la que cada web publica para compartirse en redes) */
   var WEBS=[
-    ["https://equityintrinsic.com/","https://equityintrinsic.com/icono-48.png",true,"📈 Equity Intrinsic","ow_eq"],
+    ["https://equityintrinsic.com/","img/equity-intrinsic.jpg",false,"📈 Equity Intrinsic","ow_eq"],
     ["https://nexusterminalalerts.com/","https://nexusterminalalerts.com/og-image.jpg",false,"📊 Nexus Terminal Alerts","ow_nx"],
     ["https://dazpremiumfit.com/","https://dazpremiumfit.com/cdn/shop/files/f8bc49e2-f715-4a8d-aab8-6fbea8d7f3d4_91f710a0-5d71-463a-b4b0-843f4b06fbf4.jpg?v=1740522264&width=800",false,"👕 DAZ Premium Fit","ow_daz"],
     ["https://www.valmontco.com/","https://www.valmontco.com/cdn/shop/files/Gemini_Generated_Image_rn5qnprn5qnprn5q_332c8c1b-d38f-49f7-b964-fe5d442752d6.png?v=1783524650&width=800",false,"🎓 Valmont &amp; Co.","ow_val"]];
   function montarPie(){
     var t=TX[ultimo.lang]||TX.es, ex=document.getElementById("se-ow");
-    var html='<h3>'+t.ow_t+'</h3><div class="g">'
-      +WEBS.map(function(w){ return '<a href="'+w[0]+'" target="_blank" rel="noopener"><span class="im'+(w[2]?' ic':'')+'" style="background-image:url(\''+w[1]+'\'),linear-gradient(135deg,#0f2a1d,#1e7a4c 60%,#8a6a00)"></span>'
-        +'<span class="tx"><b>'+w[3]+'</b><span>'+t[w[4]]+'</span><i>'+t.ow_go+'</i></span></a>'; }).join("")+'</div>'
+    if(!ORDEN_WEBS){ ORDEN_WEBS=WEBS.slice(); for(var i=ORDEN_WEBS.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)), x=ORDEN_WEBS[i]; ORDEN_WEBS[i]=ORDEN_WEBS[j]; ORDEN_WEBS[j]=x; } }
+    var html='<h3>'+t.ow_t+'</h3><div class="vp"><div class="g" id="se-ow-g">'
+      +ORDEN_WEBS.concat(ORDEN_WEBS.slice(0,2)).map(function(w){ return '<a href="'+w[0]+'" target="_blank" rel="noopener"><span class="im'+(w[2]?' ic':'')+'" style="background-image:url(\''+w[1]+'\'),linear-gradient(135deg,#0f2a1d,#1e7a4c 60%,#8a6a00)"></span>'
+        +'<span class="tx"><b>'+w[3]+'</b><span>'+t[w[4]]+'</span><i>'+t.ow_go+'</i></span></a>'; }).join("")+'</div></div>'
+      +'<div class="dots" id="se-ow-d">'+ORDEN_WEBS.map(function(w,i){ return '<button aria-label="'+(i+1)+'" onclick="seOwIr('+i+')"></button>'; }).join("")+'</div>'
       +'<div class="se-resp">🔞 '+t.resp+'</div>';
-    if(ex){ ex.innerHTML=html; return; }
-    var d=document.createElement("section"); d.className="se-ow"; d.id="se-ow"; d.innerHTML=html;
-    var f=document.querySelector("body > footer");
-    if(f) f.parentNode.insertBefore(d,f); else document.body.appendChild(d);
+    if(ex){ ex.innerHTML=html; }
+    else {
+      var d=document.createElement("section"); d.className="se-ow"; d.id="se-ow"; d.innerHTML=html;
+      var f=document.querySelector("body > footer");
+      if(f) f.parentNode.insertBefore(d,f); else document.body.appendChild(d);
+      d.addEventListener("mouseenter",function(){ owPausa=true; }); d.addEventListener("mouseleave",function(){ owPausa=false; });
+      setInterval(function(){ if(!owPausa) seOwIr(owI+1); },5500);
+      window.addEventListener("resize",function(){ seOwIr(owI%WEBS.length,true); });
+    }
+    seOwIr(owI,true);
   }
+  /* carrusel: avanza solo cada 5,5 s, se para al pasar el raton y vuelve al principio sin salto */
+  var ORDEN_WEBS=null, owI=0, owPausa=false;
+  window.seOwIr=function(i,sin){
+    var g=document.getElementById("se-ow-g"), n=WEBS.length; if(!g) return;
+    var paso=g.children[0]?g.children[0].getBoundingClientRect().width+12:0;
+    g.style.transition=sin?"none":""; owI=i; g.style.transform="translateX("+(-paso*i)+"px)";
+    if(i>=n){ setTimeout(function(){ g.style.transition="none"; owI=i-n; g.style.transform="translateX("+(-paso*owI)+"px)"; pintarDots(); },850); }
+    pintarDots();
+  };
+  function pintarDots(){ var d=document.getElementById("se-ow-d"); if(!d) return; var n=WEBS.length;
+    for(var k=0;k<d.children.length;k++) d.children[k].className=(k===owI%n)?"on":""; }
 
   /* ---------- glosario: los terminos se enlazan solos a su explicacion en Aprender ---------- */
   var TERMS=[
