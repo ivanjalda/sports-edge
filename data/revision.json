@@ -1,12 +1,14 @@
 {
- "fecha": "2026-11-16 18:36 UTC",
- "estado": "ok",
+ "fecha": "2026-11-17 01:38 UTC",
+ "estado": "aviso",
  "errores": [],
- "avisos": [],
+ "avisos": [
+  "tenis_historial.json: Mirra Andreeva - Karolina Muchova se jugo hace 3 dias y aun no tiene resultado."
+ ],
  "bien": [
   "98 archivos de datos leidos sin problemas",
-  "291 probabilidades publicadas revisadas",
-  "756 predicciones resueltas del historial publico comprobadas (ninguna borrada ni cambiada)",
+  "372 probabilidades publicadas revisadas",
+  "762 predicciones resueltas del historial publico comprobadas (ninguna borrada ni cambiada)",
   "vigilante de Telegram revisado",
   "web publicada respondiendo",
   "8 paginas, el menu y los archivos que usan revisados",
