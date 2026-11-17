@@ -222,10 +222,16 @@ def html_correo(u, C, ahora, lang):
 def brevo(metodo, ruta, datos=None):
     req = urllib.request.Request("https://api.brevo.com/v3" + ruta, method=metodo,
                                  data=json.dumps(datos).encode() if datos is not None else None,
-                                 headers={"api-key": BREVO, "accept": "application/json", "content-type": "application/json"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        t = r.read().decode() or "{}"
-        return json.loads(t)
+                                 headers={"api-key": BREVO, "accept": "application/json", "content-type": "application/json",
+                                          "user-agent": "SportEVLab/1.0 (+https://sportevlab.com)"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            t = r.read().decode() or "{}"
+            return json.loads(t)
+    except urllib.error.HTTPError as ex:
+        # mostramos lo que dice Brevo para saber exactamente que falla
+        cuerpo = ex.read().decode("utf-8", "replace")[:400]
+        raise RuntimeError("Brevo respondio %s en %s: %s" % (ex.code, ruta, cuerpo))
 
 
 def quedan_hoy():
@@ -307,9 +313,6 @@ def main():
             enviar(u["email"], u.get("nombre"), TX[lang]["asunto"] % fecha_txt, html_correo(u, C, ahora, lang), lang)
             u["_ref"].update({"ultimo_correo": dia})
             ok += 1
-        except urllib.error.HTTPError as ex:
-            mal += 1
-            print("Error enviando a un suscriptor: %s %s" % (ex.code, ex.read()[:200]))
         except Exception as ex:
             mal += 1
             print("Error enviando a un suscriptor: %s" % ex)
