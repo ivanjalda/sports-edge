@@ -375,7 +375,8 @@ const app = initializeApp({
   appId: "1:801849684736:web:9eeab6f9134ad8b37ab9e5"
 });
 const auth = getAuth(app), db = getFirestore(app);
-const VUELTA = { url: "https://sportevlab.com/cuenta.html#espacio" };
+const VUELTA = { url: "https://sportevlab.com/cuenta.html" };
+const BIENVENIDA = { url: "https://sportevlab.com/cuenta.html?bienvenida=1" };
 
 /* Enlaces de los correos: confirmar correo, cambiar contrasena, recuperar correo. Todo pasa dentro de nuestra web. */
 const q = new URLSearchParams(location.search);
@@ -393,6 +394,8 @@ if (q.get("mode") && q.get("oobCode")) {
     history.replaceState(null, "", "cuenta.html"); render();
   })();
 }
+/* Vuelta desde la pagina de Firebase tras confirmar el correo: mostramos nuestra bienvenida */
+if (q.get("bienvenida") === "1") { ACCION = { modo: "verifyEmail", estado: "hecho" }; history.replaceState(null, "", "cuenta.html"); render(); }
 window.nuevaPass = async function () {
   const pw = document.getElementById("np").value;
   if (pw.length < 8) { msg("m-np", t("e_campos")); return; }
@@ -421,6 +424,7 @@ function recordarNombre(u) { try { if (u) localStorage.setItem("se_user", (P.nom
 
 onAuthStateChanged(auth, async (u) => {
   U = u;
+  if (u && !u.emailVerified) { try { await u.reload(); U = auth.currentUser; } catch (e) {} }
   if (u) await cargarPerfil(u);
   recordarNombre(u); LISTO = true; render();
   if (location.hash === "#salir") { if (u) salir(); else history.replaceState(null, "", "cuenta.html"); }
@@ -439,7 +443,7 @@ window.enviar = async function () {
       P.nombre = $("i-nombre").value.trim().slice(0, 40);
       const c = await createUserWithEmailAndPassword(auth, em, pw);
       if (P.nombre) await updateProfile(c.user, { displayName: P.nombre });
-      auth.languageCode = lang; await sendEmailVerification(c.user, VUELTA);
+      auth.languageCode = lang; await sendEmailVerification(c.user, BIENVENIDA);
       await guardar({ nombre: P.nombre }); recordarNombre(c.user); msg("m-ver", t("ok_reg"), "ok"); render();
     } else { await signInWithEmailAndPassword(auth, em, pw); }
   } catch (e) { msg("m1", errTxt(e)); }
@@ -448,7 +452,7 @@ window.olvido = async function () {
   const em = $("i-email").value.trim(); if (!em) { msg("m1", t("e_email_reset")); return; }
   try { auth.languageCode = lang; await sendPasswordResetEmail(auth, em, VUELTA); msg("m1", t("ok_reset"), "ok"); } catch (e) { msg("m1", errTxt(e)); }
 };
-window.reenviar = async function () { try { auth.languageCode = lang; await sendEmailVerification(auth.currentUser, VUELTA); msg("m-ver", t("ok_reenv"), "ok"); } catch (e) { msg("m-ver", errTxt(e)); } };
+window.reenviar = async function () { try { auth.languageCode = lang; await sendEmailVerification(auth.currentUser, BIENVENIDA); msg("m-ver", t("ok_reenv"), "ok"); } catch (e) { msg("m-ver", errTxt(e)); } };
 window.togDep = async function (d) {
   const i = P.deportes.indexOf(d); if (i >= 0) P.deportes.splice(i, 1); else P.deportes.push(d); render();
   try { await guardar({ deportes: P.deportes }); msg("m-fav", t("ok_fav"), "ok"); } catch (e) { msg("m-fav", errTxt(e)); }
