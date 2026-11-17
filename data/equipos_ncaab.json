@@ -1,107 +1,15 @@
 {
- "actualizado": "2026-11-17 04:48 UTC",
+ "actualizado": "2026-11-17 16:51 UTC",
  "liga": "NCAA",
- "datos_hasta": "2026-11-17T02:30:00Z",
+ "datos_hasta": "2026-11-17T03:00:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
- "proximo": "2026-11-17T16:00:00Z",
+ "proximo": "2026-11-17T17:00:00Z",
  "predicciones": [
-  {
-   "id": "401926143",
-   "fecha": "2026-11-17T01:00:00Z",
-   "local": "North Dakota Fighting Hawks",
-   "visitante": "SIU Edwardsville Cougars",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.684,
-   "pv": 0.316,
-   "elo_l": 1444,
-   "elo_v": 1491,
-   "bal_l": [
-    1,
-    2
-   ],
-   "bal_v": [
-    0,
-    3
-   ],
-   "creada": "2026-11-15 02:08 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401924265",
-   "fecha": "2026-11-17T03:00:00Z",
-   "local": "UCLA Bruins",
-   "visitante": "Long Beach State Beach",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.9814,
-   "pv": 0.0186,
-   "elo_l": 1712,
-   "elo_v": 1411,
-   "bal_l": [
-    3,
-    0
-   ],
-   "bal_v": [
-    1,
-    2
-   ],
-   "creada": "2026-11-15 14:36 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401920373",
-   "fecha": "2026-11-17T03:00:00Z",
-   "local": "UC San Diego Tritons",
-   "visitante": "Texas Southern Tigers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8755,
-   "pv": 0.1245,
-   "elo_l": 1584,
-   "elo_v": 1411,
-   "bal_l": [
-    1,
-    1
-   ],
-   "bal_v": [
-    1,
-    3
-   ],
-   "creada": "2026-11-15 14:36 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401917532",
-   "fecha": "2026-11-17T03:00:00Z",
-   "local": "Saint Mary's Gaels",
-   "visitante": "Portland State Vikings",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.9365,
-   "pv": 0.0635,
-   "elo_l": 1739,
-   "elo_v": 1534,
-   "bal_l": [
-    3,
-    1
-   ],
-   "bal_v": [
-    1,
-    2
-   ],
-   "creada": "2026-11-15 14:36 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "401927381",
    "fecha": "2026-11-17T17:00:00Z",
@@ -2681,6 +2589,75 @@
  ],
  "recientes": [
   {
+   "id": "401924265",
+   "fecha": "2026-11-17T03:00:00Z",
+   "local": "UCLA Bruins",
+   "visitante": "Long Beach State Beach",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.9814,
+   "pv": 0.0186,
+   "elo_l": 1712,
+   "elo_v": 1411,
+   "bal_l": [
+    3,
+    0
+   ],
+   "bal_v": [
+    1,
+    2
+   ],
+   "creada": "2026-11-15 14:36 UTC",
+   "resultado": "L",
+   "marcador": "105-66"
+  },
+  {
+   "id": "401920373",
+   "fecha": "2026-11-17T03:00:00Z",
+   "local": "UC San Diego Tritons",
+   "visitante": "Texas Southern Tigers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8755,
+   "pv": 0.1245,
+   "elo_l": 1584,
+   "elo_v": 1411,
+   "bal_l": [
+    1,
+    1
+   ],
+   "bal_v": [
+    1,
+    3
+   ],
+   "creada": "2026-11-15 14:36 UTC",
+   "resultado": "L",
+   "marcador": "97-92"
+  },
+  {
+   "id": "401917532",
+   "fecha": "2026-11-17T03:00:00Z",
+   "local": "Saint Mary's Gaels",
+   "visitante": "Portland State Vikings",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.9365,
+   "pv": 0.0635,
+   "elo_l": 1739,
+   "elo_v": 1534,
+   "bal_l": [
+    3,
+    1
+   ],
+   "bal_v": [
+    1,
+    2
+   ],
+   "creada": "2026-11-15 14:36 UTC",
+   "resultado": "L",
+   "marcador": "94-78"
+  },
+  {
    "id": "401929192",
    "fecha": "2026-11-17T02:30:00Z",
    "local": "Oregon State Beavers",
@@ -3070,87 +3047,18 @@
    "creada": "2026-11-15 02:08 UTC",
    "resultado": "L",
    "marcador": "85-68"
-  },
-  {
-   "id": "401906783",
-   "fecha": "2026-11-17T00:00:00Z",
-   "local": "Georgia Bulldogs",
-   "visitante": "Jacksonville Dolphins",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8811,
-   "pv": 0.1189,
-   "elo_l": 1662,
-   "elo_v": 1459,
-   "bal_l": [
-    4,
-    0
-   ],
-   "bal_v": [
-    2,
-    1
-   ],
-   "creada": "2026-11-15 02:08 UTC",
-   "resultado": "L",
-   "marcador": "107-62"
-  },
-  {
-   "id": "401916317",
-   "fecha": "2026-11-16T23:30:00Z",
-   "local": "Ohio State Buckeyes",
-   "visitante": "Prairie View A&M Panthers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.9192,
-   "pv": 0.0808,
-   "elo_l": 1651,
-   "elo_v": 1450,
-   "bal_l": [
-    2,
-    2
-   ],
-   "bal_v": [
-    1,
-    3
-   ],
-   "creada": "2026-11-15 02:08 UTC",
-   "resultado": "L",
-   "marcador": "86-59"
-  },
-  {
-   "id": "401921087",
-   "fecha": "2026-11-16T23:00:00Z",
-   "local": "UMBC Retrievers",
-   "visitante": "Iona Gaels",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7806,
-   "pv": 0.2194,
-   "elo_l": 1557,
-   "elo_v": 1486,
-   "bal_l": [
-    1,
-    2
-   ],
-   "bal_v": [
-    2,
-    3
-   ],
-   "creada": "2026-11-15 02:08 UTC",
-   "resultado": "L",
-   "marcador": "75-67"
   }
  ],
  "directo": {
   "total": 370,
-  "resueltas": 249,
-  "aciertos": 187,
-  "acierto": 0.751,
+  "resueltas": 252,
+  "aciertos": 190,
+  "acierto": 0.754,
   "ic": [
-   0.6938,
-   0.8006
+   0.6972,
+   0.8031
   ],
-  "brier": 0.1638,
+  "brier": 0.1619,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -3254,8 +3162,8 @@
   },
   {
    "equipo": "Saint Mary's Gaels",
-   "elo": 1739,
-   "g": 3,
+   "elo": 1744,
+   "g": 4,
    "p": 1
   },
   {
@@ -3302,8 +3210,8 @@
   },
   {
    "equipo": "UCLA Bruins",
-   "elo": 1712,
-   "g": 3,
+   "elo": 1717,
+   "g": 4,
    "p": 0
   },
   {
@@ -3710,8 +3618,8 @@
   },
   {
    "equipo": "UC San Diego Tritons",
-   "elo": 1584,
-   "g": 1,
+   "elo": 1586,
+   "g": 2,
    "p": 1
   },
   {
@@ -4087,12 +3995,6 @@
    "p": 3
   },
   {
-   "equipo": "Portland State Vikings",
-   "elo": 1534,
-   "g": 1,
-   "p": 2
-  },
-  {
    "equipo": "Central Arkansas Bears",
    "elo": 1534,
    "g": 2,
@@ -4133,6 +4035,12 @@
    "elo": 1530,
    "g": 1,
    "p": 2
+  },
+  {
+   "equipo": "Portland State Vikings",
+   "elo": 1530,
+   "g": 1,
+   "p": 3
   },
   {
    "equipo": "Quinnipiac Bobcats",
@@ -4891,22 +4799,10 @@
    "p": 3
   },
   {
-   "equipo": "Long Beach State Beach",
-   "elo": 1411,
-   "g": 1,
-   "p": 2
-  },
-  {
    "equipo": "Louisiana Ragin' Cajuns",
    "elo": 1411,
    "g": 1,
    "p": 2
-  },
-  {
-   "equipo": "Texas Southern Tigers",
-   "elo": 1411,
-   "g": 1,
-   "p": 3
   },
   {
    "equipo": "San Diego Toreros",
@@ -4919,6 +4815,12 @@
    "elo": 1409,
    "g": 2,
    "p": 2
+  },
+  {
+   "equipo": "Texas Southern Tigers",
+   "elo": 1408,
+   "g": 1,
+   "p": 4
   },
   {
    "equipo": "Abilene Christian Wildcats",
@@ -4948,6 +4850,12 @@
    "equipo": "Jackson State Tigers",
    "elo": 1406,
    "g": 2,
+   "p": 3
+  },
+  {
+   "equipo": "Long Beach State Beach",
+   "elo": 1406,
+   "g": 1,
    "p": 3
   },
   {

@@ -2423,25 +2423,25 @@
    "cuota": {
     "mejor": {
      "V": {
-      "c": 1.68,
-      "casa": "Coolbet"
+      "c": 1.75,
+      "casa": "Matchbook"
      },
      "L": {
-      "c": 2.35,
-      "casa": "Unibet (SE)"
+      "c": 2.28,
+      "casa": "Matchbook"
      }
     },
     "mercado": {
-     "L": 0.4199,
-     "V": 0.5801
+     "L": 0.4354,
+     "V": 0.5646
     },
-    "casas": 16,
+    "casas": 25,
     "ev": {
-     "L": -0.1735,
-     "V": 0.0891
+     "L": -0.1981,
+     "V": 0.1345
     },
     "valor": [],
-    "actualizado": "2026-11-17 01:35 UTC"
+    "actualizado": "2026-11-17 16:51 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-17 01:35 UTC",
@@ -2471,7 +2471,36 @@
    ],
    "creada": "2026-11-16 02:26 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.85,
+      "casa": "Matchbook"
+     },
+     "V": {
+      "c": 2.14,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.539,
+     "V": 0.461
+    },
+    "casas": 25,
+    "ev": {
+     "L": 0.1735,
+     "V": -0.2174
+    },
+    "valor": [],
+    "actualizado": "2026-11-17 16:51 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-17 16:51 UTC",
+    "valor": [],
+    "L": 1.85,
+    "V": 2.14
+   }
   },
   {
    "id": "401910004",
@@ -2498,25 +2527,25 @@
    "cuota": {
     "mejor": {
      "V": {
-      "c": 4.0,
-      "casa": "888sport"
+      "c": 4.7,
+      "casa": "Matchbook"
      },
      "L": {
-      "c": 1.31,
-      "casa": "1xBet"
+      "c": 1.26,
+      "casa": "Unibet (SE)"
      }
     },
     "mercado": {
-     "L": 0.7443,
-     "V": 0.2557
+     "L": 0.7716,
+     "V": 0.2284
     },
-    "casas": 15,
+    "casas": 25,
     "ev": {
-     "L": -0.0531,
-     "V": 0.1088
+     "L": -0.0893,
+     "V": 0.3028
     },
     "valor": [],
-    "actualizado": "2026-11-17 01:35 UTC"
+    "actualizado": "2026-11-17 16:51 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-17 01:35 UTC",
@@ -2550,25 +2579,25 @@
    "cuota": {
     "mejor": {
      "L": {
-      "c": 1.45,
-      "casa": "1xBet"
+      "c": 1.46,
+      "casa": "Betfair"
      },
      "V": {
-      "c": 2.9,
-      "casa": "888sport"
+      "c": 3.1,
+      "casa": "Matchbook"
      }
     },
     "mercado": {
-     "L": 0.6601,
-     "V": 0.3399
+     "L": 0.6761,
+     "V": 0.3239
     },
-    "casas": 12,
+    "casas": 25,
     "ev": {
-     "L": 0.1781,
-     "V": -0.4563
+     "L": 0.1863,
+     "V": -0.4187
     },
     "valor": [],
-    "actualizado": "2026-11-17 01:35 UTC"
+    "actualizado": "2026-11-17 16:51 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-17 01:35 UTC",
@@ -2602,25 +2631,25 @@
    "cuota": {
     "mejor": {
      "V": {
-      "c": 4.38,
-      "casa": "1xBet"
+      "c": 3.6,
+      "casa": "Unibet (SE)"
      },
      "L": {
-      "c": 1.29,
-      "casa": "888sport"
+      "c": 1.37,
+      "casa": "Matchbook"
      }
     },
     "mercado": {
-     "L": 0.7515,
-     "V": 0.2485
+     "L": 0.7201,
+     "V": 0.2799
     },
-    "casas": 12,
+    "casas": 25,
     "ev": {
-     "L": 0.0012,
-     "V": -0.0193
+     "L": 0.0633,
+     "V": -0.194
     },
     "valor": [],
-    "actualizado": "2026-11-17 01:35 UTC"
+    "actualizado": "2026-11-17 16:51 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-17 01:35 UTC",
@@ -2906,5 +2935,5 @@
    "marcador": null
   }
  ],
- "actualizado": "2026-11-17 04:48 UTC"
+ "actualizado": "2026-11-17 16:51 UTC"
 }
