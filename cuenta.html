@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SportEVLab · Mi cuenta</title>
+<meta name="description" content="Tu espacio en SportEVLab: tus deportes y equipos favoritos, tus pronósticos y tus avisos por correo y Telegram, en español o en inglés.">
+<style>
+:root{--bg:#0b0f17;--card:#121826;--card2:#0f1522;--line:#1f2937;--txt:#e5e7eb;--mut:#8b95a7;--acc:#22c55e;--blue:#38bdf8;--red:#ef4444;--amb:#f59e0b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5}
+main{padding:24px 28px;max-width:1180px;margin:0 auto}
+h1{font-size:26px;margin:6px 0}
+.lead{color:var(--mut);font-size:14px;margin-bottom:18px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+.box h2{font-size:14px;margin:0 0 12px;text-transform:uppercase;letter-spacing:1px;color:var(--blue)}
+.box+.box{margin-top:16px}
+.ben{list-style:none;padding:0;margin:0}
+.ben li{padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}
+.ben li:last-child{border-bottom:0}
+label.l{display:block;font-size:12.5px;color:var(--mut);font-weight:700;margin:12px 0 5px}
+input[type=email],input[type=password],input[type=text]{width:100%;background:var(--card2);border:1px solid var(--line);color:var(--txt);border-radius:9px;padding:10px 12px;font-size:15px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;border:1px solid var(--line);background:var(--card2);color:var(--txt);border-radius:10px;padding:11px;font-size:15px;font-weight:700;cursor:pointer;margin-top:12px;text-decoration:none}
+.btn.pri{background:var(--acc);border-color:var(--acc);color:#04130a}
+.btn.mini{display:inline-flex;width:auto;padding:8px 14px;font-size:13.5px;margin-right:8px}
+.sep{display:flex;align-items:center;gap:10px;color:var(--mut);font-size:12px;margin:16px 0 4px}
+.sep:before,.sep:after{content:"";flex:1;height:1px;background:var(--line)}
+.tabs{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
+.tab{flex:1;text-align:center;padding:9px 12px;border-radius:9px;border:1px solid var(--line);cursor:pointer;font-weight:700;font-size:14px;color:var(--mut);background:var(--card);white-space:nowrap}
+.tab.on{border-color:var(--acc);color:var(--txt);box-shadow:0 0 0 1px var(--acc) inset}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--txt);margin:10px 0;cursor:pointer}
+.chk input{margin-top:3px;width:17px;height:17px;flex:0 0 auto;accent-color:var(--acc)}
+.chk small{display:block;color:var(--mut);font-size:12.5px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opt{padding:8px 14px;border-radius:20px;border:1px solid var(--line);cursor:pointer;font-weight:600;font-size:13.5px;color:var(--mut);background:var(--card2);user-select:none}
+.opt.on{background:var(--acc);border-color:var(--acc);color:#04130a}
+.msg{font-size:13.5px;margin-top:10px;min-height:20px}
+.msg.ok{color:var(--acc)} .msg.ko{color:var(--red)} .msg.aviso{color:var(--amb)}
+.msg a{color:var(--blue)}
+.hola{display:flex;align-items:center;gap:14px;margin-bottom:6px;flex-wrap:wrap}
+.avt{width:52px;height:52px;border-radius:50%;background:var(--acc);color:#04130a;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;overflow:hidden;flex:0 0 auto}
+.avt img{width:100%;height:100%;object-fit:cover}
+.hola b{display:block;font-size:20px} .hola span{color:var(--mut);font-size:13px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;cursor:pointer}
+.kpi:hover{border-color:var(--acc)}
+.kpi .k{font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;font-weight:700}
+.kpi .v{font-size:22px;font-weight:800;margin-top:2px}
+.kpi .s{font-size:12.5px;color:var(--mut)}
+.pk{display:grid;grid-template-columns:28px 1fr auto;gap:10px;align-items:center;padding:11px 6px;border-bottom:1px solid var(--line)}
+.pk:last-child{border-bottom:0}
+.pk .i{font-size:20px;text-align:center}
+.pk .c{font-size:12px;color:var(--mut)}
+.pk .p{font-size:14.5px}
+.pk .p b{color:var(--acc)}
+.pk .r{text-align:right;font-size:13px;white-space:nowrap}
+.pk .r .pr{font-size:18px;font-weight:800;color:var(--acc);display:block}
+.pk.seg{background:rgba(34,197,94,.07);border-radius:8px}
+.st{background:none;border:0;cursor:pointer;font-size:16px;color:var(--mut);padding:0 2px;vertical-align:-1px}
+.st.on{color:var(--amb)}
+.eq{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:20px;border:1px solid var(--line);background:var(--card2);font-size:13.5px;font-weight:600;margin:0 6px 8px 0}
+.eq button{background:none;border:0;color:var(--mut);cursor:pointer;font-size:15px;padding:0}
+.tg{display:grid;grid-template-columns:1fr;gap:10px;margin-top:10px}
+.tg a,.tg div{display:block;text-align:center;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--card2);color:var(--txt);text-decoration:none;font-weight:700;font-size:14px}
+.tg div{color:var(--mut);font-weight:600;font-size:13px}
+.nota{font-size:12.5px;color:var(--mut);margin-top:4px}
+.nota a{color:var(--blue)}
+.vacio{color:var(--mut);font-size:14px;padding:14px 0}
+.bien{text-align:center;padding:40px 24px;max-width:620px;margin:20px auto}
+.bien .ico{font-size:58px}
+.bien h1{font-size:28px}
+.bien p{color:var(--mut)}
+.hide{display:none!important}
+@media(max-width:860px){ .cols{grid-template-columns:1fr} main{padding:18px 16px} .kpis{grid-template-columns:1fr} .tab{flex:1 1 40%} }
+footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top:1px solid var(--line);margin-top:30px}
+</style>
+</head>
+<body>
+<header id="top"></header>
+<main>
+
+  <!-- Pagina que se ve al pulsar el enlace de un correo (confirmar cuenta, cambiar contrasena) -->
+  <div id="v-accion" class="hide"><div class="box bien" id="accion"></div></div>
+
+  <!-- Sin sesion: registro y entrada -->
+  <div id="v-fuera" class="hide">
+    <h1 id="h1"></h1>
+    <div class="lead" id="lead"></div>
+    <div class="cols">
+      <div class="box"><h2 id="b-tit"></h2><ul class="ben" id="ben"></ul></div>
+      <div class="box">
+        <div class="tabs"><div class="tab on" id="t-reg" onclick="modo('reg')"></div><div class="tab" id="t-ent" onclick="modo('ent')"></div></div>
+        <button class="btn" onclick="conGoogle()"><svg width="18" height="18" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 38.2 44 33 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg><span id="l-google"></span></button>
+        <div class="sep" id="l-o"></div>
+        <div id="f-nombre"><label class="l" for="i-nombre" id="l-nombre"></label><input id="i-nombre" type="text" autocomplete="name"></div>
+        <label class="l" for="i-email" id="l-email"></label><input id="i-email" type="email" autocomplete="email">
+        <label class="l" for="i-pass" id="l-pass"></label><input id="i-pass" type="password" autocomplete="current-password">
+        <label class="chk" id="c-priv"><input type="checkbox" id="i-priv"><span id="l-priv"></span></label>
+        <button class="btn pri" id="b-env" onclick="enviar()"></button>
+        <div class="nota" style="margin-top:10px"><a href="#" onclick="olvido();return false" id="l-olv"></a></div>
+        <div class="msg" id="m1"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Con sesion: el espacio del usuario -->
+  <div id="v-dentro" class="hide">
+    <div class="hola"><div class="avt" id="av"></div><div><b id="u-hola"></b><span id="u-mail"></span></div></div>
+    <div class="msg aviso" id="m-ver" style="margin-bottom:8px"></div>
+    <div class="tabs" id="tabs"></div>
+
+    <section id="s-espacio">
+      <div class="kpis" id="kpis"></div>
+      <div class="box"><h2 id="h-mis"></h2><div class="nota" id="n-mis"></div><div id="mis" style="margin-top:8px"></div></div>
+    </section>
+
+    <section id="s-favoritos">
+      <div class="box"><h2 id="h-deps"></h2><div class="nota" id="n-deps"></div><div class="opts" id="o-deps" style="margin-top:12px"></div></div>
+      <div class="box"><h2 id="h-eqs"></h2><div class="nota" id="n-eqs"></div><div id="eqs" style="margin-top:12px"></div></div>
+      <div class="msg" id="m-fav"></div>
+    </section>
+
+    <section id="s-avisos">
+      <div class="box">
+        <h2 id="h-email"></h2>
+        <div class="nota" id="n-email"></div>
+        <label class="chk"><input type="checkbox" id="p-email" onchange="P.email_diario=this.checked;render()"><span id="l-pemail"></span></label>
+        <div id="email-idioma"><label class="l" id="l-eidioma"></label><div class="opts" id="o-eidioma"></div></div>
+      </div>
+      <div class="box">
+        <h2 id="h-tg"></h2>
+        <div class="nota" id="n-tg"></div>
+        <div class="opts" id="o-tg" style="margin-top:12px"></div>
+        <div class="tg" id="tg"></div>
+      </div>
+      <div class="box">
+        <h2 id="h-promo"></h2>
+        <label class="chk"><input type="checkbox" id="p-promo" onchange="P.promo=this.checked"><span id="l-ppromo"></span></label>
+      </div>
+      <button class="btn pri" onclick="guardarAvisos()" id="b-guardar"></button>
+      <div class="msg" id="m-av"></div>
+    </section>
+
+    <section id="s-ajustes">
+      <div class="box">
+        <h2 id="h-datos"></h2>
+        <label class="l" for="a-nombre" id="l-anombre"></label><input id="a-nombre" type="text" maxlength="40">
+        <label class="l" id="l-widioma"></label><div class="opts" id="o-widioma"></div>
+        <button class="btn pri mini" onclick="guardarDatos()" id="b-gdatos"></button>
+        <div class="msg" id="m-aj"></div>
+      </div>
+      <div class="box">
+        <h2 id="h-seg"></h2>
+        <button class="btn mini" onclick="cambiarPass()" id="b-pass"></button>
+        <button class="btn mini" onclick="salir()" id="b-salir"></button>
+        <div class="nota" style="margin-top:18px"><a href="#" onclick="borrarCuenta();return false" id="l-borrar" style="color:var(--red)"></a></div>
+        <div class="msg" id="m-seg"></div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer id="foot"></footer>
+<script src="nav.js"></script>
+<script>
+/* Textos y pantallas de la pagina. La conexion con Firebase va en el modulo de abajo. */
+var DEPS=[["futbol","⚽","Fútbol","Football"],["tenis","🎾","Tenis","Tennis"],["baloncesto","🏀","Baloncesto","Basketball"],["hockey","🏒","Hockey","Hockey"],
+  ["americano","🏈","Fútbol americano","American football"],["mma","🥋","MMA","MMA"],["beisbol","⚾","Béisbol","Baseball"],["voleibol","🏐","Voleibol","Volleyball"],
+  ["rugby","🏉","Rugby","Rugby"],["motor","🏁","Motor","Motorsport"],["golf","⛳","Golf","Golf"]];
+var ICO={}; DEPS.forEach(function(d){ ICO[d[0]]=d[1]; });
+/* Canales de Telegram: se rellenan cuando esten creados */
+var TELEGRAM={es:"",en:""};
+var T={
+es:{h1:"👤 Mi cuenta",lead:"Crea tu cuenta gratis y ten tu propio espacio: tus deportes y equipos favoritos, tus pronósticos y, si quieres, avisos por correo o Telegram.",
+ b_tit:"Lo que tienes con tu cuenta",ben:["🏠 Tu espacio con los pronósticos de tus deportes y equipos","⭐ Sigue a tus equipos y deportistas favoritos","📧 Correo diario con pronósticos, resultados y noticias (si lo eliges)","📲 Canal de Telegram en español o en inglés (si lo eliges)","🌍 Todo en tu idioma: español o inglés","🔒 Tus datos son solo tuyos: puedes cambiarlos o borrar tu cuenta cuando quieras"],
+ reg:"Crear cuenta",ent:"Entrar",google_reg:"Registrarme con Google",google_ent:"Entrar con Google",o:"o con tu correo",nombre:"Nombre",email:"Correo electrónico",pass:"Contraseña (mínimo 8 caracteres)",
+ priv:'Tengo 18 años o más y acepto la <a href="privacidad.html" target="_blank" style="color:var(--blue)">política de privacidad</a>.',env_reg:"Crear mi cuenta",env_ent:"Entrar",olv:"¿Has olvidado la contraseña?",
+ hola:"Hola",tabs:["🏠 Mi espacio","⭐ Mis favoritos","🔔 Mis avisos","⚙️ Ajustes"],
+ k_deps:"Deportes favoritos",k_eqs:"Equipos y deportistas",k_av:"Avisos",k_elige:"Toca para elegir",k_act:"activos",k_off:"Sin avisos · toca para elegir",
+ h_mis:"Tus pronósticos · próximas 36 horas",n_mis_fav:"De tus deportes y equipos favoritos. Toca ☆ para seguir a un equipo o deportista.",n_mis_todo:"Aún no has elegido favoritos: te enseñamos los más claros de todos los deportes. Toca ☆ para seguir a un equipo o deportista.",
+ mis_vacio:"Ahora mismo no hay pronósticos de tus favoritos en las próximas 36 horas. Vuelve más tarde o añade más deportes.",cargando:"Cargando pronósticos…",
+ h_deps:"Tus deportes favoritos",n_deps:"Saldrán primero en tu espacio. Se guardan solos al tocarlos.",
+ h_eqs:"Equipos y deportistas que sigues",n_eqs:"Para seguir uno, toca ☆ junto a su nombre en «Mi espacio».",eqs_vacio:"Todavía no sigues a ninguno.",
+ h_email:"📧 Correo diario",n_email:"Cada mañana: pronósticos del día, resultados de ayer y noticias. Solo lo recibes si lo activas.",
+ pemail:"Sí, quiero recibir el correo diario",eidioma:"Idioma del correo",e_nover:"Primero confirma tu correo con el enlace que te enviamos.",
+ h_tg:"📲 Canal de Telegram",n_tg:"Avisos de pronósticos y resultados durante el día. Elige el canal y te damos el enlace para entrar.",tg_no:"No, gracias",tg_es:"🇪🇸 Español",tg_en:"🇬🇧 Inglés",
+ tg_link_es:"📲 Entrar al canal en español",tg_link_en:"📲 Entrar al canal en inglés",tg_pronto:"El canal estará listo muy pronto. El enlace aparecerá aquí.",
+ h_promo:"🌐 Nuestras otras webs",ppromo:"Recibir también novedades de nuestras otras webs<small>Opcional. Puedes quitarlo cuando quieras.</small>",
+ guardar:"Guardar mis avisos",ok_av:"✓ Avisos guardados.",ok_fav:"✓ Guardado.",
+ h_datos:"Tus datos",anombre:"Nombre",widioma:"Idioma de la web",gdatos:"Guardar",ok_datos:"✓ Datos guardados.",
+ h_seg:"Seguridad",b_pass:"Cambiar contraseña",ok_pass:"✓ Te hemos enviado un correo para cambiar la contraseña.",no_pass:"Entras con Google: la contraseña se cambia en tu cuenta de Google.",
+ salir:"Cerrar sesión",borrar:"Borrar mi cuenta y todos mis datos",
+ ok_reg:"✓ Cuenta creada. Te hemos enviado un correo para confirmar tu dirección (mira también en «Spam»).",ok_reset:"✓ Te hemos enviado un correo para cambiar la contraseña.",
+ ver:"⚠ Confirma tu correo con el enlace que te enviamos.",reenviar:"Reenviar el correo",ok_reenv:"✓ Correo enviado de nuevo. Mira también en «Spam».",
+ e_priv:"Tienes que aceptar la política de privacidad y confirmar que eres mayor de edad.",e_campos:"Escribe tu correo y una contraseña de al menos 8 caracteres.",
+ e_email_reset:"Escribe tu correo arriba y vuelve a pulsar.",e_conf:"¿Seguro que quieres borrar tu cuenta y todos tus datos? No se puede deshacer.",e_gen:"No se ha podido completar. Inténtalo de nuevo.",
+ a_verif_t:"¡Ya estás registrado!",a_verif_p:"Tu correo está confirmado. Bienvenido a SportEVLab: ya tienes tu espacio con tus favoritos y puedes elegir tus avisos.",
+ a_ir_espacio:"🏠 Ir a mi espacio",a_ir_web:"Ver los pronósticos de hoy",a_cargando:"Confirmando…",
+ a_mal_t:"Este enlace ya no sirve",a_mal_p:"Puede que ya lo hayas usado o que haya caducado. Si tu cuenta ya está confirmada, entra normalmente.",
+ a_pass_t:"Elige tu nueva contraseña",a_pass_b:"Guardar contraseña",a_pass_ok_t:"Contraseña cambiada",a_pass_ok_p:"Ya puedes entrar con tu nueva contraseña.",a_entrar:"Entrar",
+ a_rec_t:"Correo recuperado",a_rec_p:"Hemos devuelto tu cuenta a tu correo anterior. Por seguridad, cambia la contraseña.",
+ err:{"auth/email-already-in-use":"Ese correo ya tiene cuenta. Pulsa «Entrar».","auth/invalid-credential":"Correo o contraseña incorrectos.","auth/wrong-password":"Correo o contraseña incorrectos.",
+  "auth/user-not-found":"No hay ninguna cuenta con ese correo.","auth/invalid-email":"Ese correo no es válido.","auth/weak-password":"La contraseña es demasiado corta.",
+  "auth/popup-closed-by-user":"Has cerrado la ventana de Google antes de terminar.","auth/too-many-requests":"Demasiados intentos. Espera unos minutos.","auth/requires-recent-login":"Por seguridad, cierra sesión, vuelve a entrar y repite la acción."},
+ hoy:"Hoy",man:"Mañana",foot:"🔞 Solo para mayores de 18 años. Juega con responsabilidad."},
+en:{h1:"👤 My account",lead:"Create your free account and get your own space: your favourite sports and teams, your predictions and, if you want, alerts by email or Telegram.",
+ b_tit:"What you get with your account",ben:["🏠 Your space with predictions for your sports and teams","⭐ Follow your favourite teams and athletes","📧 Daily email with predictions, results and news (if you choose it)","📲 Telegram channel in Spanish or English (if you choose it)","🌍 Everything in your language: Spanish or English","🔒 Your data is yours: change it or delete your account any time"],
+ reg:"Sign up",ent:"Log in",google_reg:"Sign up with Google",google_ent:"Log in with Google",o:"or with your email",nombre:"Name",email:"Email",pass:"Password (at least 8 characters)",
+ priv:'I am 18 or older and I accept the <a href="privacidad.html" target="_blank" style="color:var(--blue)">privacy policy</a>.',env_reg:"Create my account",env_ent:"Log in",olv:"Forgot your password?",
+ hola:"Hi",tabs:["🏠 My space","⭐ My favourites","🔔 My alerts","⚙️ Settings"],
+ k_deps:"Favourite sports",k_eqs:"Teams and athletes",k_av:"Alerts",k_elige:"Tap to choose",k_act:"active",k_off:"No alerts · tap to choose",
+ h_mis:"Your predictions · next 36 hours",n_mis_fav:"From your favourite sports and teams. Tap ☆ to follow a team or athlete.",n_mis_todo:"You have no favourites yet: here are the clearest picks from every sport. Tap ☆ to follow a team or athlete.",
+ mis_vacio:"There are no predictions for your favourites in the next 36 hours. Come back later or add more sports.",cargando:"Loading predictions…",
+ h_deps:"Your favourite sports",n_deps:"They show first in your space. Saved automatically when you tap them.",
+ h_eqs:"Teams and athletes you follow",n_eqs:"To follow one, tap ☆ next to its name in 'My space'.",eqs_vacio:"You don't follow any yet.",
+ h_email:"📧 Daily email",n_email:"Every morning: today's predictions, yesterday's results and news. You only get it if you turn it on.",
+ pemail:"Yes, I want the daily email",eidioma:"Email language",e_nover:"First confirm your email with the link we sent you.",
+ h_tg:"📲 Telegram channel",n_tg:"Prediction and result alerts during the day. Choose a channel and we give you the link to join.",tg_no:"No, thanks",tg_es:"🇪🇸 Spanish",tg_en:"🇬🇧 English",
+ tg_link_es:"📲 Join the Spanish channel",tg_link_en:"📲 Join the English channel",tg_pronto:"The channel will be ready very soon. The link will appear here.",
+ h_promo:"🌐 Our other websites",ppromo:"Also receive news from our other websites<small>Optional. You can remove it any time.</small>",
+ guardar:"Save my alerts",ok_av:"✓ Alerts saved.",ok_fav:"✓ Saved.",
+ h_datos:"Your details",anombre:"Name",widioma:"Website language",gdatos:"Save",ok_datos:"✓ Details saved.",
+ h_seg:"Security",b_pass:"Change password",ok_pass:"✓ We sent you an email to change your password.",no_pass:"You log in with Google: change your password in your Google account.",
+ salir:"Log out",borrar:"Delete my account and all my data",
+ ok_reg:"✓ Account created. We sent you an email to confirm your address (check spam too).",ok_reset:"✓ We sent you an email to reset your password.",
+ ver:"⚠ Confirm your email with the link we sent you.",reenviar:"Resend the email",ok_reenv:"✓ Email sent again. Check your spam folder too.",
+ e_priv:"You must accept the privacy policy and confirm you are of legal age.",e_campos:"Enter your email and a password of at least 8 characters.",
+ e_email_reset:"Type your email above and press again.",e_conf:"Are you sure you want to delete your account and all your data? This cannot be undone.",e_gen:"Could not complete. Please try again.",
+ a_verif_t:"You're registered!",a_verif_p:"Your email is confirmed. Welcome to SportEVLab: your space with your favourites is ready and you can choose your alerts.",
+ a_ir_espacio:"🏠 Go to my space",a_ir_web:"See today's predictions",a_cargando:"Confirming…",
+ a_mal_t:"This link no longer works",a_mal_p:"You may have used it already or it has expired. If your account is already confirmed, just log in.",
+ a_pass_t:"Choose your new password",a_pass_b:"Save password",a_pass_ok_t:"Password changed",a_pass_ok_p:"You can now log in with your new password.",a_entrar:"Log in",
+ a_rec_t:"Email recovered",a_rec_p:"Your account is back on your previous email. For safety, change your password.",
+ err:{"auth/email-already-in-use":"That email already has an account. Press 'Log in'.","auth/invalid-credential":"Wrong email or password.","auth/wrong-password":"Wrong email or password.",
+  "auth/user-not-found":"No account with that email.","auth/invalid-email":"That email is not valid.","auth/weak-password":"The password is too short.",
+  "auth/popup-closed-by-user":"You closed the Google window before finishing.","auth/too-many-requests":"Too many attempts. Wait a few minutes.","auth/requires-recent-login":"For security, log out, log in again and repeat."},
+ hoy:"Today",man:"Tomorrow",foot:"🔞 18+ only. Please gamble responsibly."}
+};
+var SECS=["espacio","favoritos","avisos","ajustes"];
+var lang="es", M="reg", U=null, LISTO=false, ACCION=null, SEC="espacio";
+var P={idioma:"es",email_diario:false,telegram:"no",promo:false,deportes:[],equipos:[],nombre:""};
+try{ lang=localStorage.getItem("lang")||(navigator.language.indexOf("es")==0?"es":"en"); }catch(e){}
+P.idioma=lang;
+(function(){ var h=location.hash.replace("#",""); if(SECS.indexOf(h)>=0) SEC=h; })();
+window.addEventListener("hashchange",function(){ var h=location.hash.replace("#",""); if(SECS.indexOf(h)>=0){ SEC=h; render(); window.scrollTo(0,0); } else if(h==="salir"&&window.salir) salir(); });
+function t(k){ return T[lang][k]; }
+function $(i){ return document.getElementById(i); }
+function esc(x){ return String(x==null?"":x).replace(/[&<>"']/g,function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
+function modo(m){ M=m; render(); }
+function ir(s){ location.hash=s; }
+function msg(id,txt,cls){ var e=$(id); if(!e) return; e.className="msg "+(cls||"ko"); e.innerHTML=txt||""; }
+function errTxt(e){ return (e&&T[lang].err[e.code])||t("e_gen"); }
+function sigue(n){ return !!n&&P.equipos.indexOf(n)>=0; }
+function cuando(iso){ var d=new Date(iso), hoy=new Date(), man=new Date(Date.now()+86400000), L=lang==="es"?"es-ES":"en-GB";
+  var h=d.toLocaleTimeString(L,{hour:"2-digit",minute:"2-digit"});
+  if(d.toDateString()===hoy.toDateString()) return t("hoy")+" "+h;
+  if(d.toDateString()===man.toDateString()) return t("man")+" "+h;
+  return d.toLocaleDateString(L,{weekday:"short",day:"numeric"})+" "+h; }
+function estrella(n){ if(!n) return ""; return ' <button class="st'+(sigue(n)?' on':'')+'" onclick="togEq(this.dataset.n)" data-n="'+esc(n)+'">'+(sigue(n)?"★":"☆")+'</button>'; }
+
+/* "Mi espacio": pronosticos reales de las proximas 36 h (los carga nav.js de los datos del motor) */
+function pintarMis(){
+  var el=$("mis"); if(!el||!U) return;
+  var L=window.SE_PICKS;
+  if(!L){ el.innerHTML='<div class="vacio">'+t("cargando")+'</div>'; return; }
+  var hayFav=P.deportes.length||P.equipos.length, sel;
+  function seg(x){ return sigue(x.a)||sigue(x.b)||sigue(x.pick); }
+  if(hayFav){
+    sel=L.filter(function(x){ return P.deportes.indexOf(x.dep)>=0||seg(x); });
+    sel.sort(function(a,b){ return (seg(b)?1:0)-(seg(a)?1:0)||Date.parse(a.fecha)-Date.parse(b.fecha); });
+    sel=sel.slice(0,40);
+  } else { sel=L.slice().sort(function(a,b){ return b.prob-a.prob; }).slice(0,12); }
+  $("n-mis").textContent=hayFav?t("n_mis_fav"):t("n_mis_todo");
+  if(!sel.length){ el.innerHTML='<div class="vacio">'+t("mis_vacio")+'</div>'; return; }
+  el.innerHTML=sel.map(function(x){
+    var carrera=!x.b;
+    var partido=carrera?esc(x.a):esc(x.a)+estrella(x.a)+' <span style="color:var(--mut)">vs</span> '+esc(x.b)+estrella(x.b);
+    var pick=carrera?esc(x.pick)+estrella(x.pick):esc(x.pick);
+    var cuota=x.c?'@ '+Number(x.c).toFixed(2)+(x.casa?' · '+esc(x.casa):''):'';
+    return '<div class="pk'+(seg(x)?' seg':'')+'"><div class="i">'+(ICO[x.dep]||"🎯")+'</div><div><div class="c">'+esc(x.comp)+' · '+cuando(x.fecha)+'</div>'
+      +'<div class="p">'+partido+'</div><div class="p">🎯 <b>'+pick+'</b></div></div>'
+      +'<div class="r"><span class="pr">'+Math.round(x.prob*100)+'%</span>'+cuota+'<br><a href="'+esc(x.url)+'" style="color:var(--blue);font-size:12.5px">'+(lang==="es"?"Ver más ›":"More ›")+'</a></div></div>';
+  }).join("");
+}
+document.addEventListener("se-picks",pintarMis);
+
+function render(){
+  document.documentElement.lang=lang;
+  if(window.navRender) navRender(lang,"cuenta");
+  $("foot").textContent=t("foot");
+  $("v-accion").className=ACCION?"":"hide";
+  $("v-fuera").className=(!ACCION&&LISTO&&!U)?"":"hide";
+  $("v-dentro").className=(!ACCION&&LISTO&&U)?"":"hide";
+  if(ACCION){ pintarAccion(); return; }
+  if(!U){
+    $("h1").textContent=t("h1"); $("lead").textContent=t("lead"); $("b-tit").textContent=t("b_tit");
+    $("ben").innerHTML=t("ben").map(function(x){ return "<li>"+x+"</li>"; }).join("");
+    $("t-reg").textContent=t("reg"); $("t-ent").textContent=t("ent");
+    $("t-reg").className="tab"+(M==="reg"?" on":""); $("t-ent").className="tab"+(M==="ent"?" on":"");
+    $("l-google").textContent=M==="reg"?t("google_reg"):t("google_ent"); $("l-o").textContent=t("o");
+    $("l-nombre").textContent=t("nombre"); $("l-email").textContent=t("email"); $("l-pass").textContent=t("pass");
+    $("f-nombre").className=M==="reg"?"":"hide"; $("c-priv").className="chk"+(M==="reg"?"":" hide");
+    $("l-priv").innerHTML=t("priv"); $("b-env").textContent=M==="reg"?t("env_reg"):t("env_ent"); $("l-olv").textContent=t("olv");
+    return;
+  }
+  var nom=P.nombre||U.displayName||(U.email||"").split("@")[0];
+  $("u-hola").textContent=t("hola")+", "+nom; $("u-mail").textContent=U.email||"";
+  $("av").innerHTML=U.photoURL?'<img src="'+esc(U.photoURL)+'" alt="">':esc(String(nom||"?").charAt(0).toUpperCase());
+  var conPass=U.providerData&&U.providerData.some(function(p){return p.providerId==="password";});
+  var nover=conPass&&!U.emailVerified;
+  if(nover&&$("m-ver").className.indexOf("ok")<0) msg("m-ver",t("ver")+' <a href="#" onclick="reenviar();return false">'+t("reenviar")+'</a>',"aviso");
+  else if(!nover) msg("m-ver","","ok");
+  $("tabs").innerHTML=t("tabs").map(function(x,i){ return '<div class="tab'+(SEC===SECS[i]?' on':'')+'" onclick="ir(\''+SECS[i]+'\')">'+x+'</div>'; }).join("");
+  SECS.forEach(function(s){ $("s-"+s).className=SEC===s?"":"hide"; });
+  /* Mi espacio */
+  var nd=P.deportes.length, ne=P.equipos.length, na=(P.email_diario?1:0)+(P.telegram!=="no"?1:0);
+  $("kpis").innerHTML=
+    '<div class="kpi" onclick="ir(\'favoritos\')"><div class="k">'+t("k_deps")+'</div><div class="v">'+(nd?P.deportes.map(function(d){return ICO[d]||"";}).join(" "):"—")+'</div><div class="s">'+(nd?nd:t("k_elige"))+'</div></div>'
+   +'<div class="kpi" onclick="ir(\'favoritos\')"><div class="k">'+t("k_eqs")+'</div><div class="v">'+(ne||"—")+'</div><div class="s">'+(ne?esc(P.equipos.slice(0,3).join(", "))+(ne>3?"…":""):t("k_elige"))+'</div></div>'
+   +'<div class="kpi" onclick="ir(\'avisos\')"><div class="k">'+t("k_av")+'</div><div class="v">'+(na?(P.email_diario?"📧 ":"")+(P.telegram!=="no"?"📲":""):"—")+'</div><div class="s">'+(na?na+" "+t("k_act"):t("k_off"))+'</div></div>';
+  $("h-mis").textContent=t("h_mis"); pintarMis();
+  /* Favoritos */
+  $("h-deps").textContent=t("h_deps"); $("n-deps").textContent=t("n_deps");
+  $("o-deps").innerHTML=DEPS.map(function(d){ var on=P.deportes.indexOf(d[0])>=0; return '<div class="opt'+(on?' on':'')+'" onclick="togDep(\''+d[0]+'\')">'+d[1]+' '+(lang==="es"?d[2]:d[3])+'</div>'; }).join("");
+  $("h-eqs").textContent=t("h_eqs"); $("n-eqs").textContent=t("n_eqs");
+  $("eqs").innerHTML=ne?P.equipos.map(function(n){ return '<span class="eq">⭐ '+esc(n)+' <button data-n="'+esc(n)+'" onclick="togEq(this.dataset.n)">✕</button></span>'; }).join(""):'<div class="vacio">'+t("eqs_vacio")+'</div>';
+  /* Avisos: nada activado por defecto; solo si el usuario lo elige */
+  $("h-email").textContent=t("h_email"); $("l-pemail").textContent=t("pemail");
+  $("n-email").innerHTML=esc(t("n_email"))+(nover?'<br><span style="color:var(--amb)">'+esc(t("e_nover"))+'</span>':'');
+  $("p-email").checked=!!P.email_diario; $("p-email").disabled=nover;
+  $("email-idioma").className=P.email_diario?"":"hide"; $("l-eidioma").textContent=t("eidioma");
+  $("o-eidioma").innerHTML=[["es","🇪🇸 Español"],["en","🇬🇧 English"]].map(function(x){ return '<div class="opt'+(P.idioma===x[0]?' on':'')+'" onclick="P.idioma=\''+x[0]+'\';render()">'+x[1]+'</div>'; }).join("");
+  $("h-tg").textContent=t("h_tg"); $("n-tg").textContent=t("n_tg");
+  $("o-tg").innerHTML=[["no",t("tg_no")],["es",t("tg_es")],["en",t("tg_en")]].map(function(x){ return '<div class="opt'+(P.telegram===x[0]?' on':'')+'" onclick="P.telegram=\''+x[0]+'\';render()">'+x[1]+'</div>'; }).join("");
+  var tgk=P.telegram;
+  $("tg").innerHTML=(tgk==="es"||tgk==="en")?(TELEGRAM[tgk]?'<a href="'+TELEGRAM[tgk]+'" target="_blank" rel="noopener">'+t("tg_link_"+tgk)+'</a>':'<div>'+t("tg_pronto")+'</div>'):"";
+  $("h-promo").textContent=t("h_promo"); $("l-ppromo").innerHTML=t("ppromo"); $("p-promo").checked=!!P.promo;
+  $("b-guardar").textContent=t("guardar");
+  /* Ajustes */
+  $("h-datos").textContent=t("h_datos"); $("l-anombre").textContent=t("anombre"); if(document.activeElement!==$("a-nombre")) $("a-nombre").value=nom||"";
+  $("l-widioma").textContent=t("widioma");
+  $("o-widioma").innerHTML=[["es","🇪🇸 Español"],["en","🇬🇧 English"]].map(function(x){ return '<div class="opt'+(lang===x[0]?' on':'')+'" onclick="setLang(\''+x[0]+'\')">'+x[1]+'</div>'; }).join("");
+  $("b-gdatos").textContent=t("gdatos"); $("h-seg").textContent=t("h_seg"); $("b-pass").textContent=t("b_pass");
+  $("b-salir").textContent=t("salir"); $("l-borrar").textContent=t("borrar");
+}
+
+/* Pantalla que se ve al pulsar el enlace del correo (confirmar cuenta, cambiar contrasena...) */
+function pintarAccion(){
+  var a=ACCION, h="";
+  if(a.estado==="cargando") h='<div class="ico">⏳</div><p>'+t("a_cargando")+'</p>';
+  else if(a.estado==="mal") h='<div class="ico">⚠️</div><h1>'+t("a_mal_t")+'</h1><p>'+t("a_mal_p")+'</p><a class="btn pri" href="cuenta.html">'+t("a_entrar")+'</a><a class="btn" href="index.html">'+t("a_ir_web")+'</a>';
+  else if(a.modo==="verifyEmail") h='<div class="ico">✅</div><h1>'+t("a_verif_t")+'</h1><p>'+t("a_verif_p")+'</p><a class="btn pri" href="cuenta.html#espacio">'+t("a_ir_espacio")+'</a><a class="btn" href="index.html">'+t("a_ir_web")+'</a>';
+  else if(a.modo==="recoverEmail") h='<div class="ico">✅</div><h1>'+t("a_rec_t")+'</h1><p>'+t("a_rec_p")+'</p><a class="btn pri" href="cuenta.html">'+t("a_entrar")+'</a>';
+  else if(a.modo==="resetPassword"&&a.estado==="hecho") h='<div class="ico">✅</div><h1>'+t("a_pass_ok_t")+'</h1><p>'+t("a_pass_ok_p")+'</p><a class="btn pri" href="cuenta.html">'+t("a_entrar")+'</a>';
+  else if(a.modo==="resetPassword") h='<div class="ico">🔑</div><h1>'+t("a_pass_t")+'</h1><p>'+esc(a.email||"")+'</p><input id="np" type="password" placeholder="'+esc(t("pass"))+'" autocomplete="new-password"><button class="btn pri" onclick="nuevaPass()">'+t("a_pass_b")+'</button><div class="msg" id="m-np"></div>';
+  $("accion").innerHTML=h;
+}
+render();
+</script>
+<script type="module">
+/* Conexion con Firebase (registro, inicio de sesion y datos de cada usuario) */
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getAuth, onAuthStateChanged, GoogleAuthProvider, signInWithPopup, createUserWithEmailAndPassword, signInWithEmailAndPassword,
+  sendEmailVerification, sendPasswordResetEmail, updateProfile, signOut, deleteUser, applyActionCode, verifyPasswordResetCode,
+  confirmPasswordReset } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getFirestore, doc, getDoc, setDoc, deleteDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const app = initializeApp({
+  apiKey: "AIzaSyDRJpOiS_hxQ-uyBEWzaMGndB7PvRtMFiM",
+  authDomain: "sportevlab.firebaseapp.com",
+  projectId: "sportevlab",
+  storageBucket: "sportevlab.firebasestorage.app",
+  messagingSenderId: "801849684736",
+  appId: "1:801849684736:web:9eeab6f9134ad8b37ab9e5"
+});
+const auth = getAuth(app), db = getFirestore(app);
+const VUELTA = { url: "https://sportevlab.com/cuenta.html#espacio" };
+
+/* Enlaces de los correos: confirmar correo, cambiar contrasena, recuperar correo. Todo pasa dentro de nuestra web. */
+const q = new URLSearchParams(location.search);
+if (q.get("mode") && q.get("oobCode")) {
+  const modo = q.get("mode"), code = q.get("oobCode");
+  if (q.get("lang") === "en" || q.get("lang") === "es") lang = q.get("lang");
+  ACCION = { modo, code, estado: "cargando" }; render();
+  (async () => {
+    try {
+      if (modo === "verifyEmail") { await applyActionCode(auth, code); if (auth.currentUser) await auth.currentUser.reload(); ACCION.estado = "hecho"; }
+      else if (modo === "resetPassword") { ACCION.email = await verifyPasswordResetCode(auth, code); ACCION.estado = "pedir"; }
+      else if (modo === "recoverEmail") { await applyActionCode(auth, code); ACCION.estado = "hecho"; }
+      else ACCION.estado = "mal";
+    } catch (e) { ACCION.estado = "mal"; }
+    history.replaceState(null, "", "cuenta.html"); render();
+  })();
+}
+window.nuevaPass = async function () {
+  const pw = document.getElementById("np").value;
+  if (pw.length < 8) { msg("m-np", t("e_campos")); return; }
+  try { await confirmPasswordReset(auth, ACCION.code, pw); ACCION.estado = "hecho"; render(); } catch (e) { msg("m-np", errTxt(e)); }
+};
+
+async function cargarPerfil(u) {
+  try {
+    const s = await getDoc(doc(db, "usuarios", u.uid));
+    if (s.exists()) {
+      const d = s.data();
+      P.nombre = d.nombre || ""; P.idioma = d.idioma || P.idioma; P.email_diario = d.email_diario === true;
+      P.telegram = (d.telegram === "es" || d.telegram === "en") ? d.telegram : "no"; P.promo = d.promo === true;
+      P.deportes = Array.isArray(d.deportes) ? d.deportes : []; P.equipos = Array.isArray(d.equipos) ? d.equipos : [];
+    } else { P.nombre = P.nombre || u.displayName || ""; await guardar({}, true); }
+  } catch (e) { console.log(e); }
+}
+async function guardar(campos, nuevo) {
+  const u = auth.currentUser; if (!u) return;
+  const datos = Object.assign({ actualizado: serverTimestamp() }, campos);
+  if (nuevo) Object.assign(datos, { nombre: P.nombre || u.displayName || "", email: u.email || "", idioma: P.idioma, email_diario: false, telegram: "no",
+    promo: false, deportes: [], equipos: [], creado: serverTimestamp(), acepta_privacidad: serverTimestamp(), idioma_registro: lang });
+  await setDoc(doc(db, "usuarios", u.uid), datos, { merge: true });
+}
+function recordarNombre(u) { try { if (u) localStorage.setItem("se_user", (P.nombre || u.displayName || (u.email || "").split("@")[0]).split(" ")[0]); else localStorage.removeItem("se_user"); } catch (e) {} }
+
+onAuthStateChanged(auth, async (u) => {
+  U = u;
+  if (u) await cargarPerfil(u);
+  recordarNombre(u); LISTO = true; render();
+  if (location.hash === "#salir") { if (u) salir(); else history.replaceState(null, "", "cuenta.html"); }
+});
+
+window.conGoogle = async function () {
+  if (M === "reg" && !$("i-priv").checked) { msg("m1", t("e_priv")); return; }
+  try { await signInWithPopup(auth, new GoogleAuthProvider()); msg("m1", ""); } catch (e) { msg("m1", errTxt(e)); }
+};
+window.enviar = async function () {
+  const em = $("i-email").value.trim(), pw = $("i-pass").value;
+  if (!em || pw.length < 8) { msg("m1", t("e_campos")); return; }
+  try {
+    if (M === "reg") {
+      if (!$("i-priv").checked) { msg("m1", t("e_priv")); return; }
+      P.nombre = $("i-nombre").value.trim().slice(0, 40);
+      const c = await createUserWithEmailAndPassword(auth, em, pw);
+      if (P.nombre) await updateProfile(c.user, { displayName: P.nombre });
+      auth.languageCode = lang; await sendEmailVerification(c.user, VUELTA);
+      await guardar({ nombre: P.nombre }); recordarNombre(c.user); msg("m-ver", t("ok_reg"), "ok"); render();
+    } else { await signInWithEmailAndPassword(auth, em, pw); }
+  } catch (e) { msg("m1", errTxt(e)); }
+};
+window.olvido = async function () {
+  const em = $("i-email").value.trim(); if (!em) { msg("m1", t("e_email_reset")); return; }
+  try { auth.languageCode = lang; await sendPasswordResetEmail(auth, em, VUELTA); msg("m1", t("ok_reset"), "ok"); } catch (e) { msg("m1", errTxt(e)); }
+};
+window.reenviar = async function () { try { auth.languageCode = lang; await sendEmailVerification(auth.currentUser, VUELTA); msg("m-ver", t("ok_reenv"), "ok"); } catch (e) { msg("m-ver", errTxt(e)); } };
+window.togDep = async function (d) {
+  const i = P.deportes.indexOf(d); if (i >= 0) P.deportes.splice(i, 1); else P.deportes.push(d); render();
+  try { await guardar({ deportes: P.deportes }); msg("m-fav", t("ok_fav"), "ok"); } catch (e) { msg("m-fav", errTxt(e)); }
+};
+window.togEq = async function (n) {
+  const i = P.equipos.indexOf(n); if (i >= 0) P.equipos.splice(i, 1); else if (P.equipos.length < 60) P.equipos.push(n); render();
+  try { await guardar({ equipos: P.equipos }); } catch (e) { console.log(e); }
+};
+window.guardarAvisos = async function () {
+  P.email_diario = $("p-email").checked; P.promo = $("p-promo").checked;
+  try { await guardar({ email_diario: P.email_diario, idioma: P.idioma, telegram: P.telegram, promo: P.promo }); render(); msg("m-av", t("ok_av"), "ok"); } catch (e) { msg("m-av", errTxt(e)); }
+};
+window.guardarDatos = async function () {
+  P.nombre = $("a-nombre").value.trim().slice(0, 40);
+  try { await guardar({ nombre: P.nombre }); if (auth.currentUser) await updateProfile(auth.currentUser, { displayName: P.nombre }); recordarNombre(auth.currentUser); render(); msg("m-aj", t("ok_datos"), "ok"); } catch (e) { msg("m-aj", errTxt(e)); }
+};
+window.cambiarPass = async function () {
+  const u = auth.currentUser;
+  if (!u.providerData.some(p => p.providerId === "password")) { msg("m-seg", t("no_pass"), "aviso"); return; }
+  try { auth.languageCode = lang; await sendPasswordResetEmail(auth, u.email, VUELTA); msg("m-seg", t("ok_pass"), "ok"); } catch (e) { msg("m-seg", errTxt(e)); }
+};
+window.salir = async function () { await signOut(auth); try { localStorage.removeItem("se_user"); } catch (e) {} location.href = "index.html"; };
+window.borrarCuenta = async function () {
+  if (!confirm(t("e_conf"))) return;
+  try { const u = auth.currentUser; await deleteDoc(doc(db, "usuarios", u.uid)); await deleteUser(u); try { localStorage.removeItem("se_user"); } catch (e) {} location.href = "index.html"; } catch (e) { msg("m-seg", errTxt(e)); }
+};
+</script>
+</body>
+</html>
