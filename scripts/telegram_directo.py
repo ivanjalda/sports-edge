@@ -413,6 +413,14 @@ def bucle():
                 r = subprocess.run([sys.executable, "-u", os.path.join("scripts", "telegram.py")])
                 if r.returncode == 0:
                     estado["manana"] = dia
+            # 1b) correo diario a los registrados que lo activaron (cada uno lo recibe una sola vez al dia)
+            if (loc.hour, loc.minute) >= HORA_MANANA and estado.get("correo") != dia and os.environ.get("BREVO_API_KEY"):
+                intentos = estado.get("correo_intentos", {})
+                intentos = {dia: intentos.get(dia, 0) + 1}
+                estado["correo_intentos"] = intentos
+                r = subprocess.run([sys.executable, "-u", os.path.join("scripts", "correo.py")])
+                if r.returncode == 0 or intentos[dia] >= 3:
+                    estado["correo"] = dia
             # 2) resultados y 3) balance
             balance = (loc.hour, loc.minute) >= HORA_BALANCE
             mensajes = ciclo(estado, ahora, balance)
