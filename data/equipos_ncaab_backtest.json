@@ -1,21 +1,21 @@
 {
- "actualizado": "2026-11-16 18:27 UTC",
+ "actualizado": "2026-11-17 01:35 UTC",
  "liga": "NCAA",
  "desde": "20251103",
- "datos_hasta": "2026-11-16T02:00:00Z",
+ "datos_hasta": "2026-11-16T23:30:00Z",
  "total": {
-  "n": 6518,
-  "aciertos": 4743,
-  "acierto": 0.7277,
+  "n": 6523,
+  "aciertos": 4748,
+  "acierto": 0.7279,
   "ic": [
-   0.7167,
-   0.7383
+   0.717,
+   0.7385
   ],
-  "brier": 0.1789
+  "brier": 0.1788
  },
  "base_local": {
-  "n": 6518,
-  "acierto": 0.6569
+  "n": 6523,
+  "acierto": 0.6572
  },
  "base_balance": {
   "n": 4625,
@@ -25,32 +25,32 @@
  "tramos": [
   {
    "min": 0.6,
-   "n": 5149,
-   "conf": 0.7867,
-   "acierto": 0.7761,
+   "n": 5154,
+   "conf": 0.7868,
+   "acierto": 0.7763,
    "ic": [
-    0.7645,
-    0.7873
+    0.7647,
+    0.7875
    ]
   },
   {
    "min": 0.7,
-   "n": 3757,
+   "n": 3761,
    "conf": 0.8374,
-   "acierto": 0.8235,
+   "acierto": 0.8237,
    "ic": [
-    0.811,
-    0.8354
+    0.8112,
+    0.8356
    ]
   },
   {
    "min": 0.8,
-   "n": 2358,
+   "n": 2362,
    "conf": 0.8892,
-   "acierto": 0.8897,
+   "acierto": 0.8899,
    "ic": [
-    0.8765,
-    0.9018
+    0.8767,
+    0.9019
    ]
   }
  ],
@@ -65,30 +65,30 @@
   {
    "desde": 60,
    "hasta": 70,
-   "n": 1392,
-   "prometido": 0.6501,
-   "real": 0.648
+   "n": 1393,
+   "prometido": 0.6502,
+   "real": 0.6482
   },
   {
    "desde": 70,
    "hasta": 80,
    "n": 1399,
-   "prometido": 0.7501,
+   "prometido": 0.75,
    "real": 0.7119
   },
   {
    "desde": 80,
    "hasta": 90,
-   "n": 1360,
+   "n": 1362,
    "prometido": 0.8503,
-   "real": 0.8493
+   "real": 0.8495
   },
   {
    "desde": 90,
    "hasta": 100,
-   "n": 998,
-   "prometido": 0.9421,
-   "real": 0.9449
+   "n": 1000,
+   "prometido": 0.942,
+   "real": 0.945
   }
  ],
  "temporadas": {
@@ -103,26 +103,26 @@
    "brier": 0.1828
   },
   "2027": {
-   "n": 679,
-   "aciertos": 538,
-   "acierto": 0.7923,
+   "n": 684,
+   "aciertos": 543,
+   "acierto": 0.7939,
    "ic": [
-    0.7602,
-    0.8212
+    0.7619,
+    0.8225
    ],
-   "brier": 0.1448
+   "brier": 0.1439
   }
  },
  "fases": {
   "regular": {
-   "n": 6413,
-   "aciertos": 4676,
-   "acierto": 0.7291,
+   "n": 6418,
+   "aciertos": 4681,
+   "acierto": 0.7294,
    "ic": [
-    0.7181,
-    0.7399
+    0.7184,
+    0.7401
    ],
-   "brier": 0.1785
+   "brier": 0.1783
   },
   "playoff": {
    "n": 105,
@@ -137,14 +137,14 @@
  },
  "elige": {
   "local": {
-   "n": 4967,
-   "aciertos": 3737,
-   "acierto": 0.7524,
+   "n": 4972,
+   "aciertos": 3742,
+   "acierto": 0.7526,
    "ic": [
-    0.7402,
-    0.7642
+    0.7404,
+    0.7644
    ],
-   "brier": 0.1677
+   "brier": 0.1675
   },
   "visitante": {
    "n": 1551,
@@ -159,12 +159,57 @@
  },
  "ejemplos": [
   {
+   "fecha": "2026-11-16T23:30:00Z",
+   "local": "Ohio State Buckeyes",
+   "visitante": "Prairie View A&M Panthers",
+   "marcador": "86-59",
+   "fav": "Ohio State Buckeyes",
+   "pp": 0.9191,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-16T23:00:00Z",
+   "local": "Maryland Terrapins",
+   "visitante": "Alcorn State Braves",
+   "marcador": "117-57",
+   "fav": "Maryland Terrapins",
+   "pp": 0.9353,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-16T23:00:00Z",
+   "local": "UMBC Retrievers",
+   "visitante": "Iona Gaels",
+   "marcador": "75-67",
+   "fav": "UMBC Retrievers",
+   "pp": 0.6983,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-16T19:00:00Z",
+   "local": "UTEP Miners",
+   "visitante": "Florida A&M Rattlers",
+   "marcador": "79-46",
+   "fav": "UTEP Miners",
+   "pp": 0.8907,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-16T17:00:00Z",
+   "local": "North Alabama Lions",
+   "visitante": "Fisk Bulldogs",
+   "marcador": "87-49",
+   "fav": "North Alabama Lions",
+   "pp": 0.8488,
+   "ok": true
+  },
+  {
    "fecha": "2026-11-16T02:00:00Z",
    "local": "San José State Spartans",
    "visitante": "Alabama State Hornets",
    "marcador": "80-68",
    "fav": "San José State Spartans",
-   "pp": 0.8666,
+   "pp": 0.8665,
    "ok": true
   },
   {
@@ -209,7 +254,7 @@
    "visitante": "Cal Poly Mustangs",
    "marcador": "77-52",
    "fav": "Montana State Bobcats",
-   "pp": 0.7674,
+   "pp": 0.7673,
    "ok": true
   },
   {
@@ -236,7 +281,7 @@
    "visitante": "New Haven Chargers",
    "marcador": "86-52",
    "fav": "Penn State Nittany Lions",
-   "pp": 0.8637,
+   "pp": 0.8636,
    "ok": true
   },
   {
@@ -254,7 +299,7 @@
    "visitante": "Idaho State Bengals",
    "marcador": "77-70",
    "fav": "Seattle U Redhawks",
-   "pp": 0.8766,
+   "pp": 0.8765,
    "ok": true
   },
   {
@@ -263,7 +308,7 @@
    "visitante": "Chicago State Cougars",
    "marcador": "86-49",
    "fav": "Loyola Marymount Lions",
-   "pp": 0.8845,
+   "pp": 0.8844,
    "ok": true
   },
   {
@@ -290,7 +335,7 @@
    "visitante": "Air Force Falcons",
    "marcador": "93-69",
    "fav": "Pacific Tigers",
-   "pp": 0.9527,
+   "pp": 0.9526,
    "ok": true
   },
   {
@@ -299,7 +344,7 @@
    "visitante": "Creighton Bluejays",
    "marcador": "69-70",
    "fav": "Iowa Hawkeyes",
-   "pp": 0.6894,
+   "pp": 0.6893,
    "ok": false
   },
   {
@@ -308,7 +353,7 @@
    "visitante": "High Point Panthers",
    "marcador": "58-68",
    "fav": "Saint Louis Billikens",
-   "pp": 0.7826,
+   "pp": 0.7825,
    "ok": false
   },
   {
@@ -326,7 +371,7 @@
    "visitante": "Purdue Fort Wayne Mastodons",
    "marcador": "74-86",
    "fav": "Eastern Illinois Panthers",
-   "pp": 0.5115,
+   "pp": 0.5116,
    "ok": false
   },
   {
@@ -337,51 +382,6 @@
    "fav": "Texas Longhorns",
    "pp": 0.5884,
    "ok": true
-  },
-  {
-   "fecha": "2026-11-15T19:30:00Z",
-   "local": "Missouri Tigers",
-   "visitante": "Marquette Golden Eagles",
-   "marcador": "69-64",
-   "fav": "Missouri Tigers",
-   "pp": 0.5475,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-15T19:00:00Z",
-   "local": "Rhode Island Rams",
-   "visitante": "Princeton Tigers",
-   "marcador": "79-72",
-   "fav": "Rhode Island Rams",
-   "pp": 0.8401,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-15T19:00:00Z",
-   "local": "North Dakota State Bison",
-   "visitante": "Cal State Bakersfield Roadrunners",
-   "marcador": "69-73",
-   "fav": "North Dakota State Bison",
-   "pp": 0.7244,
-   "ok": false
-  },
-  {
-   "fecha": "2026-11-15T19:00:00Z",
-   "local": "Holy Cross Crusaders",
-   "visitante": "UAlbany Great Danes",
-   "marcador": "60-62",
-   "fav": "UAlbany Great Danes",
-   "pp": 0.6194,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-15T19:00:00Z",
-   "local": "La Salle Explorers",
-   "visitante": "Temple Owls",
-   "marcador": "71-84",
-   "fav": "La Salle Explorers",
-   "pp": 0.5228,
-   "ok": false
   }
  ],
  "motor": {
@@ -394,18 +394,18 @@
    "c_micro": 15.0,
    "c_sede": 15.0
   },
-  "sd": 15.854,
+  "sd": 15.861,
   "motor": {
-   "n": 6518,
-   "acierto": 0.7277,
-   "brier": 0.1789,
-   "logloss": 0.5302
+   "n": 6523,
+   "acierto": 0.7279,
+   "brier": 0.1788,
+   "logloss": 0.53
   },
   "elo_basico": {
-   "n": 6518,
-   "acierto": 0.716,
-   "brier": 0.1864,
-   "logloss": 0.5526
+   "n": 6523,
+   "acierto": 0.7162,
+   "brier": 0.1863,
+   "logloss": 0.5524
   },
   "escalas": {
    "temporada": true,
@@ -415,8 +415,8 @@
    "descanso": true
   },
   "local": {
-   "n": 6518,
-   "acierto": 0.6569
+   "n": 6523,
+   "acierto": 0.6572
   },
   "temporadas_prueba": [
    2026,

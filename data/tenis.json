@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-11-16 18:27 UTC",
+ "actualizado": "2026-11-17 01:35 UTC",
  "datos_hasta": 20261114,
- "dias_desde_datos": 2,
+ "dias_desde_datos": 3,
  "fuentes": {
   "ATP": {
    "nombre": "TennisMyLife",
@@ -19,53 +19,6 @@
  ],
  "sin_datos": [],
  "predicciones": [
-  {
-   "id": "7ac3bf138012785e65835d1481524d5c",
-   "torneo": "ATP Finals",
-   "tour": "ATP",
-   "sup": "Hard",
-   "fecha": "2026-11-16T19:30:00Z",
-   "j1": "Daniil Medvedev",
-   "j2": "Flavio Cobolli",
-   "id1": "atp:MM58",
-   "id2": "atp:C0E9",
-   "p1": 0.7023,
-   "p2": 0.2977,
-   "n1": 611,
-   "n2": 200,
-   "creada": "2026-11-13 15:11 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "1": {
-      "c": 1.3,
-      "casa": "Betfair"
-     },
-     "2": {
-      "c": 4.3,
-      "casa": "BetOnline.ag"
-     }
-    },
-    "mercado": {
-     "1": 0.7578,
-     "2": 0.2422
-    },
-    "casas": 21,
-    "ev": {
-     "1": -0.087,
-     "2": 0.2801
-    },
-    "valor": [],
-    "actualizado": "2026-11-16 18:27 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-13 15:11 UTC",
-    "valor": [],
-    "1": 1.23,
-    "2": 4.3
-   }
-  },
   {
    "id": "b347b8bd2e85f10eca7dc7160026443b",
    "torneo": "ATP Finals",
@@ -86,25 +39,25 @@
    "cuota": {
     "mejor": {
      "1": {
-      "c": 1.99,
+      "c": 2.02,
       "casa": "Betfair"
      },
      "2": {
-      "c": 1.99,
+      "c": 1.96,
       "casa": "Betfair"
      }
     },
     "mercado": {
-     "1": 0.498,
-     "2": 0.502
+     "1": 0.4976,
+     "2": 0.5024
     },
-    "casas": 19,
+    "casas": 18,
     "ev": {
-     "1": 0.0328,
-     "2": -0.0428
+     "1": 0.0484,
+     "2": -0.0572
     },
     "valor": [],
-    "actualizado": "2026-11-16 18:27 UTC"
+    "actualizado": "2026-11-17 01:35 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-16 16:50 UTC",
@@ -133,25 +86,25 @@
    "cuota": {
     "mejor": {
      "1": {
-      "c": 1.54,
-      "casa": "1xBet"
+      "c": 1.53,
+      "casa": "Betfair"
      },
      "2": {
-      "c": 2.82,
+      "c": 2.84,
       "casa": "Betfair"
      }
     },
     "mercado": {
-     "1": 0.6376,
-     "2": 0.3624
+     "1": 0.6351,
+     "2": 0.3649
     },
-    "casas": 19,
+    "casas": 18,
     "ev": {
-     "1": -0.0417,
-     "2": 0.0651
+     "1": -0.0479,
+     "2": 0.0727
     },
     "valor": [],
-    "actualizado": "2026-11-16 18:27 UTC"
+    "actualizado": "2026-11-17 01:35 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-16 16:50 UTC",
@@ -159,13 +112,107 @@
     "1": 1.54,
     "2": 2.82
    }
+  },
+  {
+   "id": "a3e64105988f48f4c6447c9ca6de0030",
+   "torneo": "ATP Finals",
+   "tour": "ATP",
+   "sup": "Hard",
+   "fecha": "2026-11-18T13:00:00Z",
+   "j1": "Carlos Alcaraz",
+   "j2": "Daniil Medvedev",
+   "id1": "atp:A0E2",
+   "id2": "atp:MM58",
+   "p1": 0.829,
+   "p2": 0.171,
+   "n1": 392,
+   "n2": 611,
+   "creada": "2026-11-17 01:35 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "1": {
+      "c": 1.29,
+      "casa": "888sport"
+     },
+     "2": {
+      "c": 4.4,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "1": 0.7458,
+     "2": 0.2542
+    },
+    "casas": 16,
+    "ev": {
+     "1": 0.0694,
+     "2": -0.2476
+    },
+    "valor": [],
+    "actualizado": "2026-11-17 01:35 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-17 01:35 UTC",
+    "valor": [],
+    "1": 1.29,
+    "2": 4.4
+   }
+  },
+  {
+   "id": "5f11f792535a031c557f8a33a8093f18",
+   "torneo": "ATP Finals",
+   "tour": "ATP",
+   "sup": "Hard",
+   "fecha": "2026-11-18T19:30:00Z",
+   "j1": "Flavio Cobolli",
+   "j2": "Frances Tiafoe",
+   "id1": "atp:C0E9",
+   "id2": "atp:TD51",
+   "p1": 0.4,
+   "p2": 0.6,
+   "n1": 200,
+   "n2": 476,
+   "creada": "2026-11-17 01:35 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "1": {
+      "c": 2.02,
+      "casa": "Betfair"
+     },
+     "2": {
+      "c": 1.89,
+      "casa": "1xBet"
+     }
+    },
+    "mercado": {
+     "1": 0.484,
+     "2": 0.516
+    },
+    "casas": 16,
+    "ev": {
+     "1": -0.192,
+     "2": 0.134
+    },
+    "valor": [],
+    "actualizado": "2026-11-17 01:35 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-17 01:35 UTC",
+    "valor": [],
+    "1": 2.02,
+    "2": 1.89
+   }
   }
  ],
  "directo": {
-  "total": 16,
-  "resueltas": 12,
-  "acierto": 0.5833,
-  "brier": 0.2556,
+  "total": 18,
+  "resueltas": 13,
+  "acierto": 0.6154,
+  "brier": 0.2427,
   "apuestas": 4,
   "roi": -0.47
  }

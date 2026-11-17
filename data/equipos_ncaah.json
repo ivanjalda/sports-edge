@@ -1,15 +1,39 @@
 {
- "actualizado": "2026-11-16 18:27 UTC",
+ "actualizado": "2026-11-17 01:35 UTC",
  "liga": "NCAA",
  "datos_hasta": "2026-11-15T01:00:00Z",
- "dias_desde_datos": 1,
+ "dias_desde_datos": 2,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
  "proximo": "2026-11-19T00:00:00Z",
- "predicciones": [],
+ "predicciones": [
+  {
+   "id": "401904713",
+   "fecha": "2026-11-19T00:00:00Z",
+   "local": "Boston University Terriers",
+   "visitante": "Quinnipiac Bobcats",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.47,
+   "pv": 0.53,
+   "elo_l": 1561,
+   "elo_v": 1599,
+   "bal_l": [
+    7,
+    4
+   ],
+   "bal_v": [
+    8,
+    3
+   ],
+   "creada": "2026-11-17 01:35 UTC",
+   "resultado": null,
+   "marcador": null
+  }
+ ],
  "recientes": [
   {
    "id": "401904871",
@@ -473,7 +497,7 @@
   }
  ],
  "directo": {
-  "total": 51,
+  "total": 52,
   "resueltas": 51,
   "aciertos": 26,
   "acierto": 0.5098,
