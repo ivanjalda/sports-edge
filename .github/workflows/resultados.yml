@@ -2,7 +2,7 @@ name: Resultados Telegram
 
 # Vigilante de Telegram: un turno dura unas 5 horas y media y, al terminar, lanza el siguiente.
 # Cada 10 minutos mira los partidos terminados; a las 9:30 (hora de Madrid) manda los pronosticos
-# del dia y a las 23:40 el balance. La tarea programada de cada hora es solo de reserva por si
+# del dia (y el correo diario a los registrados que lo activaron) y a las 23:40 el balance. La tarea programada de cada hora es solo de reserva por si
 # la cadena se corta: si ya hay un turno en marcha, espera y no se duplica nada.
 on:
   workflow_dispatch:
@@ -24,10 +24,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Preparar el correo diario
+        run: pip install -q firebase-admin || true
+
       - name: Vigilar resultados y enviar a Telegram
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          FIREBASE_CUENTA: ${{ secrets.FIREBASE_CUENTA }}
           MODO: bucle
           DURACION: "330"
         run: |

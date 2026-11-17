@@ -1,0 +1,26 @@
+name: Correo diario
+
+# Envio manual del correo diario. El envio normal lo hace solo el vigilante (Resultados Telegram) cada manana.
+# Si escribes una direccion en "prueba", solo se manda un ejemplo (en espanol y en ingles) a esa direccion.
+on:
+  workflow_dispatch:
+    inputs:
+      prueba:
+        description: "Correo para recibir una prueba (dejalo vacio para enviar a todos los suscriptores)"
+        required: false
+        default: ""
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Preparar
+        run: pip install -q firebase-admin
+      - name: Enviar correo diario
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          FIREBASE_CUENTA: ${{ secrets.FIREBASE_CUENTA }}
+          CORREO_PRUEBA: ${{ github.event.inputs.prueba }}
+        run: python3 -u scripts/correo.py
