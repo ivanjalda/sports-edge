@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sports Edge · Récords</title>
+<meta name="description" content="Récords, palmarés y logros de cada deporte: Balón de Oro, Grand Slams, títulos mundiales y récords calculados con nuestros datos reales.">
+<style>
+:root{--bg:#0b0f17;--card:#121826;--card2:#0f1522;--line:#1f2937;--txt:#e5e7eb;--mut:#8b95a7;--acc:#22c55e;--blue:#38bdf8;--red:#ef4444;--amb:#f59e0b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5}
+main{padding:22px 28px}
+@media(max-width:720px){main{padding:16px}}
+h1{font-size:26px;margin:6px 0}
+.lead{color:var(--mut);font-size:14px;max-width:960px}
+.ligas{display:flex;gap:8px;margin:14px 0 6px;flex-wrap:wrap}
+.lg{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 14px;cursor:pointer;font-weight:700;color:var(--mut);font-size:14px}
+.lg.on{border-color:var(--acc);color:var(--txt);box-shadow:0 0 0 1px var(--acc) inset}
+h2{font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--blue);margin:26px 0 6px}
+.note{color:var(--mut);font-size:13px;margin:0 0 10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.rc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column}
+.rc .k{font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.6px;font-weight:700}
+.rc .v{font-size:26px;font-weight:800;color:var(--acc);line-height:1.15;margin-top:4px}
+.rc .q{font-size:16px;font-weight:700;margin-top:2px}
+.rc .d{font-size:13px;color:var(--mut);margin-top:6px;flex:1}
+.rc .f{font-size:11.5px;color:var(--mut);margin-top:8px;border-top:1px solid var(--line);padding-top:6px}
+.rc .f a{color:var(--blue)}
+.comp{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.comp h3{margin:0 0 2px;font-size:17px}
+.comp .p{font-size:12px;color:var(--mut);margin-bottom:10px}
+.comp .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.mini{background:var(--card2);border-radius:10px;padding:10px 12px}
+.mini .k{font-size:11.5px;color:var(--mut);font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.mini .q{font-size:15px;font-weight:700;margin-top:2px}
+.mini .s{font-size:12.5px;color:var(--mut)}
+.mini ol{margin:4px 0 0;padding-left:18px;font-size:13px}
+.empty{color:var(--mut);padding:18px;text-align:center;border:1px dashed var(--line);border-radius:12px;font-size:14px}
+footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top:1px solid var(--line);margin-top:30px}
+</style>
+</head>
+<body>
+<header id="top"></header>
+<main>
+  <h1 id="h1"></h1>
+  <div class="lead" id="lead"></div>
+  <div class="ligas" id="deps"></div>
+  <div id="m"></div>
+</main>
+<footer id="foot"></footer>
+<script src="nav.js"></script>
+<script>
+/* Palmares historico: solo datos reales. Los que cambian con el tiempo llevan la fecha en que se comprobaron y su fuente. */
+var DEPS=[["futbol","⚽","Fútbol","Football"],["tenis","🎾","Tenis","Tennis"],["baloncesto","🏀","Baloncesto","Basketball"],["hockey","🏒","Hockey","Hockey"],
+  ["americano","🏈","Fútbol americano","American football"],["mma","🥋","MMA","MMA"],["beisbol","⚾","Béisbol","Baseball"],["voleibol","🏐","Voleibol","Volleyball"],
+  ["rugby","🏉","Rugby","Rugby"],["motor","🏁","Motor","Motorsport"],["golf","⛳","Golf","Golf"]];
+var V="17/11/2026";
+var PAL={
+ futbol:[
+  {k:"Balón de Oro 2026",q:"Harry Kane",d:"Inglaterra · Bayern de Múnich. Primer inglés en ganarlo desde Michael Owen (2001).",f:"Comprobado el "+V,u:"https://www.forbesargentina.com/today/balon-oro-2026-harry-kane-quedo-premio-corono-una-temporada-historica-n101153/amp"},
+  {k:"Balón de Oro 2025",q:"Ousmane Dembélé",d:"Francia · París Saint-Germain.",f:"Comprobado el "+V,u:"https://www.clarosports.com/futbol/balon-de-oro/ousmane-dembele-ganador-del-balon-de-oro-2025/"},
+  {k:"Más Balones de Oro",v:"8",q:"Lionel Messi",d:"2009, 2010, 2011, 2012, 2015, 2019, 2021 y 2023. Récord absoluto.",f:"Dato histórico"},
+  {k:"2.º con más Balones de Oro",v:"5",q:"Cristiano Ronaldo",d:"2008, 2013, 2014, 2016 y 2017.",f:"Dato histórico"},
+  {k:"Máximo goleador de la Champions League",v:"140",q:"Cristiano Ronaldo",d:"Goles en la Copa de Europa / Champions League. Le sigue Messi con 129.",f:"Dato histórico (ambos ya no juegan en Europa)"},
+  {k:"Más Copas de Europa",v:"15",q:"Real Madrid",d:"Récord de títulos de la Copa de Europa / Champions League.",f:"Dato histórico"},
+  {k:"Campeón de la Champions 2026",q:"París Saint-Germain",d:"Ganó la final al Arsenal en los penaltis y repitió título tras el de 2025.",f:"Comprobado el "+V,u:"https://www.uefa.com/uefachampionsleague/news/02a5-20c02e59f219-15e92acdc717-1000--paris-retain-champions-league-holders-edge-arsenal-on-penalties/"}],
+ tenis:[
+  {k:"Más Grand Slams (hombres)",v:"24",q:"Novak Djokovic",d:"Récord masculino. En la final del Open de Australia 2026 se le escapó el 25.º.",f:"Comprobado el "+V,u:"https://www.foxsports.com/articles/tennis/djokovic-falls-short-of-a-25th-major-title-as-alcaraz-triumphs-in-australia-its-still-his-mission"},
+  {k:"Más Grand Slams (mujeres)",v:"24",q:"Margaret Court",d:"Récord absoluto. En la Era Abierta, Serena Williams con 23.",f:"Dato histórico"},
+  {k:"Más Roland Garros",v:"14",q:"Rafael Nadal",d:"Récord de títulos en un mismo Grand Slam.",f:"Dato histórico (retirado en 2024)"},
+  {k:"Grand Slam completo más joven",q:"Carlos Alcaraz",d:"Con 22 años, al ganar el Open de Australia 2026 a Djokovic, completó los cuatro grandes.",f:"Comprobado el "+V,u:"https://www.foxsports.com/articles/tennis/djokovic-falls-short-of-a-25th-major-title-as-alcaraz-triumphs-in-australia-its-still-his-mission"},
+  {k:"US Open 2026",q:"Alexander Zverev",d:"Ganó la final a Ben Shelton; su segundo Grand Slam.",f:"Comprobado el "+V,u:"https://www.aljazeera.com/amp/sports/2026/9/13/zverev-beats-shelton-in-four-sets-to-win-us-open-title"}],
+ baloncesto:[
+  {k:"Máximo anotador de la NBA",q:"LeBron James",d:"Superó a Kareem Abdul-Jabbar en febrero de 2023 y sigue ampliando el récord.",f:"Dato histórico"},
+  {k:"Más títulos de la NBA",v:"18",q:"Boston Celtics",d:"Uno más que Los Angeles Lakers (17).",f:"Dato histórico"},
+  {k:"Más anillos de un jugador",v:"11",q:"Bill Russell",d:"Todos con los Boston Celtics (1957-1969).",f:"Dato histórico"},
+  {k:"Más Euroligas",v:"11",q:"Real Madrid",d:"Club con más Copas de Europa de baloncesto.",f:"Dato histórico"}],
+ hockey:[
+  {k:"Máximo goleador de la NHL",q:"Alex Ovechkin",d:"Superó los 894 goles de Wayne Gretzky en abril de 2025.",f:"Dato histórico"},
+  {k:"Más Copas Stanley",v:"24",q:"Montreal Canadiens",d:"Récord de la NHL.",f:"Dato histórico"},
+  {k:"Más puntos en la NHL",v:"2.857",q:"Wayne Gretzky",d:"Goles más asistencias: récord que sigue vigente.",f:"Dato histórico"}],
+ americano:[
+  {k:"Más Super Bowls de un jugador",v:"7",q:"Tom Brady",d:"6 con New England Patriots y 1 con Tampa Bay Buccaneers.",f:"Dato histórico"},
+  {k:"Temporada perfecta",q:"Miami Dolphins 1972",d:"Único campeón de la NFL sin ninguna derrota (17-0).",f:"Dato histórico"}],
+ beisbol:[
+  {k:"Más Series Mundiales",v:"27",q:"New York Yankees",d:"Récord de las Grandes Ligas.",f:"Dato histórico"},
+  {k:"Más jonrones en la historia",v:"762",q:"Barry Bonds",d:"Récord de las Grandes Ligas.",f:"Dato histórico"}],
+ rugby:[
+  {k:"Más Copas del Mundo",v:"4",q:"Sudáfrica",d:"1995, 2007, 2019 y 2023. Nueva Zelanda tiene 3.",f:"Dato histórico"}],
+ motor:[
+  {k:"Más títulos de Fórmula 1",v:"7",q:"Lewis Hamilton y Michael Schumacher",d:"Empatados en el récord.",f:"Dato histórico"},
+  {k:"Campeón de F1 2025",q:"Lando Norris",d:"Su primer título mundial, con McLaren.",f:"Dato histórico"},
+  {k:"Más títulos mundiales de motociclismo",v:"15",q:"Giacomo Agostini",d:"8 en la categoría reina (500 cc) y 7 en 350 cc.",f:"Dato histórico"},
+  {k:"Campeón de MotoGP 2025",q:"Marc Márquez",d:"Con Ducati, su 7.º título en la categoría reina.",f:"Dato histórico"},
+  {k:"Títulos de Valentino Rossi",v:"9",q:"Valentino Rossi",d:"7 de ellos en la categoría reina.",f:"Dato histórico"}],
+ golf:[
+  {k:"Más grandes (majors)",v:"18",q:"Jack Nicklaus",d:"Récord de los cuatro grandes torneos.",f:"Dato histórico"},
+  {k:"Más victorias en el PGA Tour",v:"82",q:"Tiger Woods y Sam Snead",d:"Empatados en el récord. Tiger tiene además 15 grandes.",f:"Dato histórico"}]
+};
+var T={
+es:{h1:"🏆 Récords",lead:"Palmarés y récords de cada deporte. Arriba, los grandes hitos históricos (los que cambian con el tiempo llevan la fecha en que se comprobaron y su fuente). Abajo, récords calculados por nuestro motor con todos los resultados reales que guardamos.",
+ hist:"Palmarés y récords históricos",ours:"Récords en nuestros datos",ours_n:"Calculados automáticamente con los resultados reales que guarda el motor. Solo cubren el periodo indicado, no toda la historia del deporte.",
+ per:"Datos del %a al %b · %n partidos",per_r:"Datos del %a al %b · %n carreras/torneos",wins:"Más victorias",best:"Mejor temporada regular",streak:"Racha de victorias más larga",
+ big:"Mayor victoria",pods:"Más %s",ws:"Más victorias en una temporada",src:"Fuente",nod:"Todavía no hay récords calculados para este deporte.",season:"Temporada",until:"hasta el",vs:"a"},
+en:{h1:"🏆 Records",lead:"Honours and records of each sport. Above, the great historical milestones (those that change over time show when they were checked and their source). Below, records computed by our engine from all the real results we keep.",
+ hist:"Historical honours and records",ours:"Records in our data",ours_n:"Computed automatically from the real results our engine keeps. They only cover the period shown, not the whole history of the sport.",
+ per:"Data from %a to %b · %n games",per_r:"Data from %a to %b · %n races/tournaments",wins:"Most wins",best:"Best regular season",streak:"Longest winning streak",
+ big:"Biggest win",pods:"Most %s",ws:"Most wins in a season",src:"Source",nod:"No computed records for this sport yet.",season:"Season",until:"until",vs:"vs"}
+};
+var lang="es", dep="futbol", R=null;
+try{ lang=localStorage.getItem("lang")||(navigator.language.indexOf("es")==0?"es":"en"); }catch(e){}
+try{ var q=new URLSearchParams(location.search); if(q.get("dep")) dep=q.get("dep"); }catch(e){}
+function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
+function t(k){ return T[lang][k]; }
+function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+function fd(s){ try{ return new Date(s+"T12:00:00Z").toLocaleDateString(lang==="es"?"es-ES":"en-GB",{day:"numeric",month:"short",year:"numeric"}); }catch(e){ return s; } }
+function setD(d){ dep=d; try{ history.replaceState(null,"","?dep="+d); }catch(e){} render(); }
+function tarjeta(x){
+  return '<div class="rc"><div class="k">'+esc(x.k)+'</div>'+(x.v?'<div class="v">'+esc(x.v)+'</div>':'')+'<div class="q">'+esc(x.q)+'</div><div class="d">'+esc(x.d)+'</div>'
+    +'<div class="f">'+esc(x.f)+(x.u?' · <a href="'+esc(x.u)+'" target="_blank" rel="noopener">'+t("src")+'</a>':'')+'</div></div>';
+}
+function comp(c){
+  var carrera=c.dep==="motor"||c.dep==="golf";
+  var o='<div class="comp"><h3>'+esc(c.nombre)+'</h3><div class="p">'+(carrera?t("per_r"):t("per")).replace("%a",fd(c.desde)).replace("%b",fd(c.hasta)).replace("%n",c.partidos.toLocaleString(lang==="es"?"es-ES":"en-GB"))+'</div><div class="row">';
+  o+='<div class="mini"><div class="k">'+t("wins")+'</div><ol>'+c.mas_victorias.map(function(x){ return '<li><b>'+esc(x.quien)+'</b> · '+x.n+'</li>'; }).join("")+'</ol></div>';
+  if(carrera){
+    if(c.mas_podios) o+='<div class="mini"><div class="k">'+t("pods").replace("%s",c.etiqueta_podio)+'</div><ol>'+c.mas_podios.map(function(x){ return '<li><b>'+esc(x.quien)+'</b> · '+x.n+'</li>'; }).join("")+'</ol></div>';
+    if(c.mejor_temporada) o+='<div class="mini"><div class="k">'+t("ws")+'</div><div class="q">'+esc(c.mejor_temporada.quien)+'</div><div class="s">'+c.mejor_temporada.v+' · '+t("season")+' '+c.mejor_temporada.temporada+'</div></div>';
+  } else {
+    if(c.mejor_temporada) o+='<div class="mini"><div class="k">'+t("best")+'</div><div class="q">'+esc(c.mejor_temporada.quien)+'</div><div class="s">'+c.mejor_temporada.v+'-'+c.mejor_temporada.d+' · '+t("season")+' '+c.mejor_temporada.temporada+'</div></div>';
+    if(c.racha&&c.racha.n) o+='<div class="mini"><div class="k">'+t("streak")+'</div><div class="q">'+esc(c.racha.quien)+'</div><div class="s">'+c.racha.n+' · '+t("until")+' '+esc(fd(c.racha.hasta))+'</div></div>';
+    if(c.mayor_victoria) o+='<div class="mini"><div class="k">'+t("big")+'</div><div class="q">'+esc(c.mayor_victoria.quien)+' '+esc(c.mayor_victoria.marcador)+'</div><div class="s">'+t("vs")+' '+esc(c.mayor_victoria.rival)+' · '+esc(fd(c.mayor_victoria.fecha))+'</div></div>';
+  }
+  return o+'</div></div>';
+}
+function render(){
+  document.documentElement.lang=lang;
+  if(window.navRender) navRender(lang,"records");
+  document.title="Sports Edge · "+t("h1").replace("🏆 ","");
+  document.getElementById("h1").textContent=t("h1");
+  document.getElementById("lead").textContent=t("lead");
+  document.getElementById("foot").textContent="🔞 18+";
+  document.getElementById("deps").innerHTML=DEPS.map(function(d){ return '<div class="lg'+(dep===d[0]?' on':'')+'" onclick="setD(\''+d[0]+'\')">'+d[1]+' '+(lang==="es"?d[2]:d[3])+'</div>'; }).join("");
+  var P=(PAL[dep]||[]).filter(function(x){ return !x.oculto; });
+  var o='<h2>'+t("hist")+'</h2>'+(P.length?'<div class="grid">'+P.map(tarjeta).join("")+'</div>':'');
+  o+='<h2>'+t("ours")+'</h2><div class="note">'+t("ours_n")+'</div>';
+  var C=R?(R.competiciones||[]).filter(function(c){ return c.dep===dep; }):[];
+  if(dep==="futbol"||dep==="tenis") C=[];
+  o+=C.length?'<div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(420px,1fr))">'+C.map(comp).join("")+'</div>':'<div class="empty">'+(R===null?'…':t("nod"))+'</div>';
+  document.getElementById("m").innerHTML=o;
+}
+render();
+fetch("data/records.json?v="+Date.now()).then(function(r){ if(!r.ok) throw 0; return r.json(); }).then(function(j){ R=j; render(); }).catch(function(){ R={competiciones:[]}; render(); });
+</script>
+</body>
+</html>

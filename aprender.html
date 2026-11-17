@@ -16,6 +16,7 @@ h1{font-size:26px;margin:6px 0}
 .idx{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 6px}
 .idx a{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:6px 14px;color:var(--txt);text-decoration:none;font-size:13px;font-weight:600}
 .idx a:hover{border-color:var(--acc)}
+.idx a.on{background:var(--acc);border-color:var(--acc);color:var(--bg)}
 h2{font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--blue);margin:30px 0 10px;scroll-margin-top:120px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
 .t{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;scroll-margin-top:120px}
@@ -134,13 +135,18 @@ en:{h1:"🎓 Learn",lead:"Everything you need to understand our predictions and 
   ["🏁 Formula 1 and MotoGP","Probability of winning, podium and points (top 10), before qualifying and with the grid."],
   ["⛳ Golf","Four days with a cut after the second. Probability of winning, top 3 and top 10."]]}
 };
-var lang="es";
+var lang="es", sec="leer";
+var SECS=[["leer","s_leer"],["glosario","s_glos"],["banca-resp","s_banca"],["calculadora","s_calc"],["reglas","s_reglas"]];
+function secDeHash(){ var h=(location.hash||"").substr(1); if(!h) return;
+  if(SECS.some(function(x){return x[0]===h;})) sec=h; else if(T.es.glos.some(function(g){return g[0]===h;})) sec="glosario"; }
+window.addEventListener("hashchange",function(){ secDeHash(); render(); });
+secDeHash();
 try{ lang=localStorage.getItem("lang")||(navigator.language.indexOf("es")==0?"es":"en"); }catch(e){}
 function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
 function t(k){ return T[lang][k]; }
 function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
 function num(id){ var v=String(document.getElementById(id).value||"").replace(",","."); return parseFloat(v); }
-function calcular(){
+function calcular(){ if(!document.getElementById("c-b")) return;
   var b=num("c-b"), c=num("c-c"), p=num("c-p")/100, el=document.getElementById("c-r");
   if(!(b>0)||!(c>1)||!(p>0&&p<1)){ el.innerHTML=""; return; }
   var imp=1/c, edge=p*c-1, k=(p*c-1)/(c-1), f=Math.max(0,k/4);
@@ -157,8 +163,8 @@ function render(){
   document.getElementById("h1").textContent=t("h1");
   document.getElementById("lead").textContent=t("lead");
   document.getElementById("foot").textContent="🔞 18+";
-  document.getElementById("idx").innerHTML=[["leer","s_leer"],["glosario","s_glos"],["banca-resp","s_banca"],["calculadora","s_calc"],["reglas","s_reglas"]]
-    .map(function(x){ return '<a href="#'+x[0]+'">'+t(x[1])+'</a>'; }).join("")+'<a href="guia.html">📘 '+(lang==="es"?"Cómo funciona nuestro motor":"How our engine works")+'</a>';
+  document.getElementById("idx").innerHTML=SECS
+    .map(function(x){ return '<a href="#'+x[0]+'"'+(sec===x[0]?' class="on"':'')+'>'+t(x[1])+'</a>'; }).join("")+'<a href="guia.html">📘 '+(lang==="es"?"Cómo funciona nuestro motor":"How our engine works")+'</a>';
   var keep={b:"",c:"",p:""}; ["b","c","p"].forEach(function(k){ var e=document.getElementById("c-"+k); if(e) keep[k]=e.value; });
   var o='<h2 id="leer">'+t("s_leer")+'</h2><div class="grid">'+t("leer").map(function(x){ return '<div class="t"><b>'+esc(x[0])+'</b><p>'+esc(x[1])+'</p></div>'; }).join("")+'</div>';
   o+='<h2 id="glosario">'+t("s_glos")+'</h2><div class="grid">'+t("glos").map(function(x){ return '<div class="t" id="'+x[0]+'"><b>'+esc(x[1])+'</b><p>'+esc(x[2])+'</p>'+(x[3]?'<div class="ej">'+esc(x[3])+'</div>':'')+'</div>'; }).join("")+'</div>';
@@ -169,9 +175,11 @@ function render(){
     +'<div><label for="c-p">'+t("c_prob")+'</label><input id="c-p" inputmode="decimal" value="'+esc(keep.p||"55")+'" oninput="calcular()"><div style="font-size:11.5px;color:var(--mut);margin-top:3px">'+t("c_hint")+'</div></div>'
     +'<div class="res" id="c-r"></div></div>';
   o+='<h2 id="reglas">'+t("s_reglas")+'</h2><div class="grid">'+t("reglas").map(function(x){ return '<div class="t"><b>'+esc(x[0])+'</b><p>'+esc(x[1])+'</p></div>'; }).join("")+'</div>';
-  document.getElementById("body").innerHTML=o;
+  var partes={}; o.split('<h2 id="').slice(1).forEach(function(b){ partes[b.substr(0,b.indexOf('"'))]='<h2 id="'+b; });
+  document.getElementById("body").innerHTML=partes[sec]||o;
   calcular();
-  if(location.hash){ var el=document.getElementById(location.hash.substr(1)); if(el) setTimeout(function(){ el.scrollIntoView({block:"center"}); },50); }
+  var h=(location.hash||"").substr(1);
+  if(h&&sec==="glosario"&&h!=="glosario"){ var el=document.getElementById(h); if(el) setTimeout(function(){ el.scrollIntoView({block:"center"}); },50); }
 }
 render();
 </script>
