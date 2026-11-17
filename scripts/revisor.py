@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Sports Edge - REVISOR AUTOMATICO DIARIO (solo libreria estandar).
+"""SportEVLab - REVISOR AUTOMATICO DIARIO (solo libreria estandar).
 
 Revisa toda la web cada dia, sin depender de nadie, y deja el informe en data/revision.json.
 Si encuentra un ERROR, la tarea de GitHub termina en rojo y GitHub avisa por correo al dueno del repositorio.
@@ -25,7 +25,7 @@ import urllib.request
 from datetime import datetime, timezone, timedelta
 
 DATA = "data"
-WEB = "https://ivanjalda.github.io/sports-edge/"
+WEB = "https://sportevlab.com/"
 SALIDA = os.path.join(DATA, "revision.json")
 HUELLAS = os.path.join(DATA, "revision_huellas.json")
 
@@ -280,7 +280,7 @@ def revisar_motores(datos):
 
 
 def main():
-    print("Revision automatica de Sports Edge · %s" % AHORA.strftime("%Y-%m-%d %H:%M UTC"))
+    print("Revision automatica de SportEVLab · %s" % AHORA.strftime("%Y-%m-%d %H:%M UTC"))
     datos = revisar_archivos()
     revisar_predicciones(datos)
     nuevas = revisar_historial(datos)

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Sports Edge - Telegram: resultados finalizados (cada 30 min) y balance del dia (por la noche).
+"""SportEVLab - Telegram: resultados finalizados (cada 30 min) y balance del dia (por la noche).
 
 Solo libreria estandar. Nada se inventa:
 - Los marcadores finales salen del marcador publico de ESPN.
@@ -32,7 +32,7 @@ TOKEN = os.environ.get("TELEGRAM_TOKEN", "").strip()
 CHAT = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
 PRUEBA = bool(os.environ.get("TELEGRAM_PRUEBA"))
 MODO = os.environ.get("MODO", "resultados").strip().lower()
-WEB = "https://ivanjalda.github.io/sports-edge/"
+WEB = "https://sportevlab.com/"
 DATA = "data"
 ESTADO = "telegram_directo.json"
 ESPN = "https://site.api.espn.com/apis/site/v2/sports/"

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Sports Edge - Motor de futbol (solo libreria estandar)."""
+"""SportEVLab - Motor de futbol (solo libreria estandar)."""
 import json
 import math
 import os
@@ -439,11 +439,11 @@ def main():
             continue
         q = dict(p)
         if p.get("modelo") == "SE":
-            q["razon_es"] = ("Goles esperados: %.2f - %.2f. Motor propio Sports Edge: combina la fuerza en goles de cada "
+            q["razon_es"] = ("Goles esperados: %.2f - %.2f. Motor propio SportEVLab: combina la fuerza en goles de cada "
                              "equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su "
                              "rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto." %
                              (p["xg_local"], p["xg_visitante"]))
-            q["razon_en"] = ("Expected goals: %.2f - %.2f. Sports Edge's own engine: it blends each team's goal strength "
+            q["razon_en"] = ("Expected goals: %.2f - %.2f. SportEVLab's own engine: it blends each team's goal strength "
                              "(weighted towards recent games), the quality of its chances (shots on target) and its Elo "
                              "rating, tuned on past seasons and checked on games it had not seen." %
                              (p["xg_local"], p["xg_visitante"]))

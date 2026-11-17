@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Sports Edge - Resumen diario a Telegram con TODOS los deportes (solo libreria estandar).
+"""SportEVLab - Resumen diario a Telegram con TODOS los deportes (solo libreria estandar).
 Lee los mismos archivos que la web: nada se inventa. Si un deporte no tiene partidos hoy, no aparece."""
 import html
 import json
@@ -17,7 +17,7 @@ except Exception:
 
 TOKEN = os.environ.get("TELEGRAM_TOKEN", "").strip()
 CHAT = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
-WEB = "https://ivanjalda.github.io/sports-edge/"
+WEB = "https://sportevlab.com/"
 HORAS = 24
 LIGAS_FUT = ["Premier League", "LaLiga", "Serie A", "Bundesliga", "Ligue 1",
              "Primeira Liga", "Eredivisie", "Championship", "Brasileirão", "Liga Profesional", "MLS"]
@@ -177,7 +177,7 @@ def main():
         return
     ahora = datetime.now(timezone.utc)
     px = partidos(ahora)
-    bloques = [u"\U0001F3AF <b>PRONÓSTICOS DEL DÍA</b> · %s\nSports Edge · próximas 24 horas, calculados con resultados reales." %
+    bloques = [u"\U0001F3AF <b>PRONÓSTICOS DEL DÍA</b> · %s\nSportEVLab · próximas 24 horas, calculados con resultados reales." %
                ahora.astimezone(TZ).strftime("%d/%m/%Y")]
 
     if not px:
