@@ -4,12 +4,12 @@
    dentro de su render(). Los botones ES/EN llaman a setLang() de cada pagina. */
 (function(){
   var TX={
-    es:{home:"Inicio",futbol:"Fútbol",tenis:"Tenis",baloncesto:"Baloncesto",hockey:"Hockey",americano:"Fútbol americano",mma:"MMA",beisbol:"Béisbol",voleibol:"Voleibol",rugby:"Rugby",motor:"Motor",golf:"Golf",directo:"En directo",stats:"Estadísticas",guia:"Guía",aprender:"Aprender",records:"Récords",
+    es:{home:"Inicio",futbol:"Fútbol",tenis:"Tenis",baloncesto:"Baloncesto",hockey:"Hockey",americano:"Fútbol americano",mma:"MMA",beisbol:"Béisbol",voleibol:"Voleibol",rugby:"Rugby",motor:"Motor",golf:"Golf",directo:"En directo",stats:"Estadísticas",guia:"Guía",aprender:"Aprender",records:"Récords",entrar:"Entrar",micuenta:"Mi cuenta",dd:["🏠 Mi espacio","⭐ Mis favoritos","🔔 Mis avisos","⚙️ Ajustes","🚪 Cerrar sesión"],
         tk_live:"EN DIRECTO",tk_pick:"Pronóstico",tk_today:"Hoy llevamos %a de %n acertados",tk_wait:"Cargando marcadores y pronósticos…",
         ow_t:"Nuestras otras webs",ow_eq:"Análisis de acciones de bolsa y su valor intrínseco.",ow_nx:"Análisis y señales de trading en tiempo real.",ow_daz:"Ropa deportiva de calidad, marca registrada en EE. UU.",ow_val:"Academia de inversión: libros, guías y cursos.",ow_go:"Visitar →",
         resp:"Solo para mayores de 18 años · Las probabilidades son estimaciones estadísticas, no garantías · Juega con responsabilidad",
         news:"Noticias",newsof:"Noticias de",more:"Más noticias",ago_h:"hace %d h",ago_m:"hace %d min",tema:"Modo día / noche",picks:"⭐ Nuestros pronósticos",pick:"Pronóstico",odds:"Mejor cuota",at:"en",nopicks:"No hay pronósticos para las próximas horas.",allpicks:"Ver todos en Inicio →",today:"hoy",tomorrow:"mañana",draw:"Empate"},
-    en:{home:"Home",futbol:"Football",tenis:"Tennis",baloncesto:"Basketball",hockey:"Hockey",americano:"American football",mma:"MMA",beisbol:"Baseball",voleibol:"Volleyball",rugby:"Rugby",motor:"Motorsport",golf:"Golf",directo:"Live",stats:"Statistics",guia:"Guide",aprender:"Learn",records:"Records",
+    en:{home:"Home",futbol:"Football",tenis:"Tennis",baloncesto:"Basketball",hockey:"Hockey",americano:"American football",mma:"MMA",beisbol:"Baseball",voleibol:"Volleyball",rugby:"Rugby",motor:"Motorsport",golf:"Golf",directo:"Live",stats:"Statistics",guia:"Guide",aprender:"Learn",records:"Records",entrar:"Log in",micuenta:"My account",dd:["🏠 My space","⭐ My favourites","🔔 My alerts","⚙️ Settings","🚪 Log out"],
         tk_live:"LIVE",tk_pick:"Pick",tk_today:"Today: %a of %n correct",tk_wait:"Loading scores and picks…",
         ow_t:"Our other websites",ow_eq:"Stock analysis and intrinsic value.",ow_nx:"Real-time trading analysis and signals.",ow_daz:"Quality sportswear, US registered brand.",ow_val:"Investing academy: books, guides and courses.",ow_go:"Visit →",
         resp:"18+ only · Probabilities are statistical estimates, not guarantees · Please gamble responsibly",
@@ -38,6 +38,9 @@
     "#top .se-r{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}"+
     "#top .se-btn{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 12px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--txt);text-decoration:none;font-weight:700;font-size:13px;white-space:nowrap}"+
     "#top .se-btn:hover,#top .se-btn.on{border-color:var(--acc);color:var(--acc)}"+
+    "#top .se-dd{position:relative}#top .se-ddm{display:none;position:absolute;right:0;top:38px;min-width:200px;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.35);padding:6px;z-index:60}"+
+    "#top .se-dd.abierto .se-ddm{display:block}#top .se-ddm a{display:block;padding:9px 12px;border-radius:8px;color:var(--txt);text-decoration:none;font-weight:600;font-size:14px;white-space:nowrap}#top .se-ddm a:hover{background:var(--card2)}#top .se-ddm a.sal{border-top:1px solid var(--line);margin-top:4px;color:var(--mut)}"+
+    "#top .se-acc{background:var(--acc);border-color:var(--acc);color:#04130a}#top .se-acc:hover,#top .se-acc.on{color:#04130a;filter:brightness(1.1)}"+
     "#top .se-th{background:var(--card);border:1px solid var(--line);color:var(--txt);height:32px;min-width:38px;border-radius:8px;cursor:pointer;font-size:16px;line-height:1}"+
     "#top .se-lang button{background:var(--card);color:var(--mut);border:1px solid var(--line);padding:6px 12px;cursor:pointer;font-weight:700;font-size:13px}"+
     "#top .se-lang button.on{color:var(--bg);background:var(--acc);border-color:var(--acc)}"+
@@ -200,7 +203,7 @@
       var nc=3+lgs.length;
       [["f1",r[nc]],["motogp",r[nc+1]],["golf_pga",r[nc+2]],["golf_dp",r[nc+3]]].forEach(function(z){ var c=z[1], p=c&&c.proximo; if(!p||!p.pilotos||!p.pilotos.length||p.en_juego||!ok(p.fecha)) return;
         var f=p.pilotos[0]; out.push({dep:z[0].indexOf("golf")===0?"golf":"motor",comp:c.nombre,fecha:p.fecha,a:p.nombre,b:"",pick:f.n,prob:f.pw,c:null,casa:null,url:"carreras.html?serie="+z[0]}); });
-      PK=out; pintarLados(); pintarBarra();
+      PK=out; window.SE_PICKS=out; try{ document.dispatchEvent(new Event("se-picks")); }catch(e){} pintarLados(); pintarBarra();
     });
   }
   function cuando(iso,t,lang){ var d=new Date(iso), hoy=new Date(), man=new Date(Date.now()+86400000);
@@ -233,6 +236,7 @@
 
   /* ---------- cabecera ---------- */
   (function(){ try{ if(!document.querySelector("link[rel=icon]")){ var l=document.createElement("link"); l.rel="icon"; l.type="image/svg+xml"; l.href="img/icono.svg"; document.head.appendChild(l); } }catch(e){} })();
+  document.addEventListener("click",function(){ var d=document.querySelector("#top .se-dd.abierto"); if(d) d.classList.remove("abierto"); });
   window.navRender=function(lang,activo){
     ultimo={lang:lang,act:activo};
     var el=document.getElementById("top"); if(!el) return;
@@ -241,11 +245,18 @@
       n+='<a href="'+it[1]+'"'+(it[0]===activo?' class="on"':'')+'>'+it[2]+' '+t[it[0]]+'</a>'; }
     el.innerHTML='<div class="se-row"><a class="se-logo" href="index.html"><img src="img/icono.svg" alt="" width="34" height="34"><i style="font-style:normal">Sport<span>EV</span><b>Lab</b></i></a>'
       +'<div class="se-r"><a class="se-btn'+(activo==="aprender"?' on':'')+'" href="aprender.html">🎓 '+t.aprender+'</a>'
-      +'<a class="se-btn'+(activo==="records"?' on':'')+'" href="records.html">🏆 '+t.records+'</a><button id="se-th" class="se-th" onclick="cambiarTema()" title="'+t.tema+'">'
+      +'<a class="se-btn'+(activo==="records"?' on':'')+'" href="records.html">🏆 '+t.records+'</a>'
+      +(function(){ var u=null; try{u=localStorage.getItem("se_user");}catch(e){}
+        if(u===null) return '<a class="se-btn se-acc'+(activo==="cuenta"?' on':'')+'" href="cuenta.html">👤 '+t.entrar+'</a>';
+        u=String(u).replace(/[<>&"']/g,"").slice(0,16);
+        var h=["cuenta.html#espacio","cuenta.html#favoritos","cuenta.html#avisos","cuenta.html#ajustes","cuenta.html#salir"];
+        return '<div class="se-dd"><button class="se-btn se-acc" onclick="event.stopPropagation();this.parentNode.classList.toggle(\'abierto\')">👤 '+(u||t.micuenta)+' ▾</button>'
+          +'<div class="se-ddm">'+t.dd.map(function(x,i){ return '<a href="'+h[i]+'"'+(i===4?' class="sal"':'')+'>'+x+'</a>'; }).join("")+'</div></div>'; })()
+      +'<button id="se-th" class="se-th" onclick="cambiarTema()" title="'+t.tema+'">'
       +(document.documentElement.getAttribute("data-theme")==="light"?"🌙":"☀️")+'</button>'
       +'<div class="se-lang"><button class="'+(lang==="es"?"on":"")+'" onclick="setLang(\'es\')">ES</button>'
       +'<button class="'+(lang==="en"?"on":"")+'" onclick="setLang(\'en\')">EN</button></div></div></div><nav>'+n+'</nav>';
-    if(activo!=="guia"&&activo!=="aprender"&&activo!=="records"){ montarLados(); cargarNoticias(); if(activo!=="home") cargarPicks(); pintarLados(); }
+    if(activo!=="guia"&&activo!=="aprender"&&activo!=="records"&&activo!=="cuenta"){ montarLados(); cargarNoticias(); if(activo!=="home") cargarPicks(); pintarLados(); }
     montarBarra(); cargarPicks(); pintarBarra(); montarPie(); enlazarTerminos();
   };
 
