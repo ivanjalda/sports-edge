@@ -4,15 +4,21 @@
    dentro de su render(). Los botones ES/EN llaman a setLang() de cada pagina. */
 (function(){
   var TX={
-    es:{home:"Inicio",futbol:"Fútbol",tenis:"Tenis",baloncesto:"Baloncesto",hockey:"Hockey",americano:"Fútbol americano",mma:"MMA",beisbol:"Béisbol",voleibol:"Voleibol",rugby:"Rugby",motor:"Motor",golf:"Golf",directo:"En directo",stats:"Estadísticas",guia:"Guía",
+    es:{home:"Inicio",futbol:"Fútbol",tenis:"Tenis",baloncesto:"Baloncesto",hockey:"Hockey",americano:"Fútbol americano",mma:"MMA",beisbol:"Béisbol",voleibol:"Voleibol",rugby:"Rugby",motor:"Motor",golf:"Golf",directo:"En directo",stats:"Estadísticas",guia:"Guía",aprender:"Aprender",
+        tk_live:"EN DIRECTO",tk_pick:"Pronóstico",tk_today:"Hoy llevamos %a de %n acertados",tk_wait:"Cargando marcadores y pronósticos…",
+        ow_t:"Nuestras otras webs",ow_eq:"Análisis de acciones de bolsa y su valor intrínseco.",ow_nx:"Análisis y señales de trading en tiempo real.",ow_daz:"Ropa deportiva de calidad, marca registrada en EE. UU.",ow_val:"Academia de inversión: libros, guías y cursos.",ow_go:"Visitar →",
+        resp:"Solo para mayores de 18 años · Las probabilidades son estimaciones estadísticas, no garantías · Juega con responsabilidad",
         news:"Noticias",newsof:"Noticias de",more:"Más noticias",ago_h:"hace %d h",ago_m:"hace %d min",tema:"Modo día / noche",picks:"⭐ Nuestros pronósticos",pick:"Pronóstico",odds:"Mejor cuota",at:"en",nopicks:"No hay pronósticos para las próximas horas.",allpicks:"Ver todos en Inicio →",today:"hoy",tomorrow:"mañana",draw:"Empate"},
-    en:{home:"Home",futbol:"Football",tenis:"Tennis",baloncesto:"Basketball",hockey:"Hockey",americano:"American football",mma:"MMA",beisbol:"Baseball",voleibol:"Volleyball",rugby:"Rugby",motor:"Motorsport",golf:"Golf",directo:"Live",stats:"Statistics",guia:"Guide",
+    en:{home:"Home",futbol:"Football",tenis:"Tennis",baloncesto:"Basketball",hockey:"Hockey",americano:"American football",mma:"MMA",beisbol:"Baseball",voleibol:"Volleyball",rugby:"Rugby",motor:"Motorsport",golf:"Golf",directo:"Live",stats:"Statistics",guia:"Guide",aprender:"Learn",
+        tk_live:"LIVE",tk_pick:"Pick",tk_today:"Today: %a of %n correct",tk_wait:"Loading scores and picks…",
+        ow_t:"Our other websites",ow_eq:"Stock analysis and intrinsic value.",ow_nx:"Real-time trading analysis and signals.",ow_daz:"Quality sportswear, US registered brand.",ow_val:"Investing academy: books, guides and courses.",ow_go:"Visit →",
+        resp:"18+ only · Probabilities are statistical estimates, not guarantees · Please gamble responsibly",
         news:"News",newsof:"News:",more:"More news",ago_h:"%dh ago",ago_m:"%d min ago",tema:"Light / dark mode",picks:"⭐ Our top picks",pick:"Pick",odds:"Best odds",at:"at",nopicks:"No picks for the next hours.",allpicks:"See all on Home →",today:"today",tomorrow:"tomorrow",draw:"Draw"}
   };
   var ITEMS=[
     ["home","index.html","🏠"],["directo","directo.html","🔴"],["futbol","futbol.html","⚽"],["tenis","tenis.html","🎾"],
     ["baloncesto","equipos.html?dep=baloncesto","🏀"],["hockey","equipos.html?dep=hockey","🏒"],["americano","equipos.html?dep=americano","🏈"],["mma","equipos.html?dep=mma","🥋"],["beisbol","equipos.html?dep=beisbol","⚾"],["voleibol","equipos.html?dep=voleibol","🏐"],["rugby","equipos.html?dep=rugby","🏉"],["motor","carreras.html","🏁"],["golf","carreras.html?grupo=golf","⛳"],
-    ["stats","estadisticas.html","📊"],["guia","guia.html","📘"]
+    ["stats","estadisticas.html","📊"],["aprender","aprender.html","🎓"]
   ];
   var css=
     /* Modo dia: misma familia de colores que Equity Intelligence (gris claro, dorado y verde) */
@@ -33,7 +39,7 @@
     "#top .se-lang button{background:var(--card);color:var(--mut);border:1px solid var(--line);padding:6px 12px;cursor:pointer;font-weight:700;font-size:13px}"+
     "#top .se-lang button.on{color:var(--bg);background:var(--acc);border-color:var(--acc)}"+
     "#top nav{display:flex;gap:4px;flex-wrap:wrap;padding:0 22px}"+
-    "#top nav a{color:var(--mut);text-decoration:none;font-weight:600;font-size:14px;padding:10px 12px;border-bottom:3px solid transparent;white-space:nowrap}"+
+    "#top nav a{color:var(--mut);text-decoration:none;font-weight:600;font-size:13.5px;padding:10px 8px;border-bottom:3px solid transparent;white-space:nowrap}"+
     "#top nav a:hover{color:var(--txt)}"+
     "#top nav a.on{color:var(--txt);border-bottom-color:var(--acc)}"+
     /* Filtros de ligas: todos visibles, sin barra de desplazamiento */
@@ -69,7 +75,29 @@
     "@media(max-width:1340px){.se-left{display:none}}"+
     "@media(max-width:1060px){.se-wrap{display:block}.se-side{position:static;width:auto;max-height:none;overflow:visible;padding-top:10px}"+
       ".se-side .se-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}.se-side .se-n{margin-bottom:0}}"+
-    "@media(max-width:720px){#top .se-row{padding:10px 16px 4px}#top nav{padding:0 8px;gap:0}#top nav a{font-size:13px;padding:8px 8px}"+
+    /* Barra en movimiento */
+    ".se-tk{display:flex;align-items:center;overflow:hidden;background:var(--card2);border-bottom:1px solid var(--line);height:34px;font-size:13px;white-space:nowrap}"+
+    ".se-tk .tk-lab{flex:0 0 auto;background:var(--red);color:#fff;font-weight:800;font-size:11px;letter-spacing:1px;padding:0 12px;height:100%;display:flex;align-items:center;z-index:1}"+
+    ".se-tk .tk-vp{flex:1;overflow:hidden;position:relative;height:100%}"+
+    ".se-tk .tk-tr{display:inline-flex;align-items:center;height:100%;gap:0;animation:setk var(--d,60s) linear infinite;will-change:transform}"+
+    ".se-tk:hover .tk-tr{animation-play-state:paused}"+
+    ".se-tk .tk-it{display:inline-flex;align-items:center;gap:6px;padding:0 18px;border-right:1px solid var(--line);color:var(--txt);text-decoration:none}"+
+    ".se-tk .tk-it .tk-m{color:var(--mut)} .se-tk .tk-it b{font-weight:800} .se-tk .tk-it .tk-lv{color:var(--red);font-weight:700} .se-tk .tk-it .tk-g{color:var(--acc);font-weight:700}"+
+    "@keyframes setk{from{transform:translateX(0)}to{transform:translateX(-50%)}}"+
+    "@media(prefers-reduced-motion:reduce){.se-tk .tk-tr{animation:none}.se-tk .tk-vp{overflow-x:auto}}"+
+    /* Otras webs y pie comun */
+    ".se-ow{margin:34px 28px 0;padding:18px 0 0;border-top:1px solid var(--line)}"+
+    ".se-ow h3{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--blue);margin:0 0 10px}"+
+    ".se-ow .g{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}"+
+    ".se-ow a{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--txt)}"+
+    ".se-ow a:hover{border-color:var(--acc)}"+
+    ".se-ow a b{display:block;font-size:16px} .se-ow a span{display:block;font-size:13px;color:var(--mut);margin:3px 0 6px} .se-ow a i{font-style:normal;font-size:13px;font-weight:700;color:var(--acc)}"+
+    ".se-resp{text-align:center;font-size:12px;color:var(--mut);padding:14px 28px 4px}"+
+    /* Terminos del glosario enlazados */
+    "a.se-term{color:inherit;text-decoration:underline dotted;text-underline-offset:3px;text-decoration-color:var(--acc)}"+
+    "a.se-term:hover{color:var(--acc)}"+
+    "@media(max-width:720px){.se-ow{margin:26px 16px 0}.se-tk{font-size:12px}}"+
+    "@media(max-width:720px){#top .se-row{padding:10px 16px 4px}#top nav{padding:0 8px;gap:0;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}#top nav::-webkit-scrollbar{display:none}#top nav a{font-size:13px;padding:8px 8px}"+
       ".se-wrap{padding:0 16px}}";
   var st=document.createElement("style"); st.textContent=css; document.head.appendChild(st);
 
@@ -156,7 +184,7 @@
       var nc=3+lgs.length;
       [["f1",r[nc]],["motogp",r[nc+1]],["golf_pga",r[nc+2]],["golf_dp",r[nc+3]]].forEach(function(z){ var c=z[1], p=c&&c.proximo; if(!p||!p.pilotos||!p.pilotos.length||p.en_juego||!ok(p.fecha)) return;
         var f=p.pilotos[0]; out.push({dep:z[0].indexOf("golf")===0?"golf":"motor",comp:c.nombre,fecha:p.fecha,a:p.nombre,b:"",pick:f.n,prob:f.pw,c:null,casa:null,url:"carreras.html?serie="+z[0]}); });
-      PK=out; pintarLados();
+      PK=out; pintarLados(); pintarBarra();
     });
   }
   function cuando(iso,t,lang){ var d=new Date(iso), hoy=new Date(), man=new Date(Date.now()+86400000);
@@ -199,6 +227,96 @@
       +(document.documentElement.getAttribute("data-theme")==="light"?"🌙":"☀️")+'</button>'
       +'<div class="se-lang"><button class="'+(lang==="es"?"on":"")+'" onclick="setLang(\'es\')">ES</button>'
       +'<button class="'+(lang==="en"?"on":"")+'" onclick="setLang(\'en\')">EN</button></div></div></div><nav>'+n+'</nav>';
-    if(activo!=="guia"){ montarLados(); cargarNoticias(); if(activo!=="home") cargarPicks(); pintarLados(); }
+    if(activo!=="guia"&&activo!=="aprender"){ montarLados(); cargarNoticias(); if(activo!=="home") cargarPicks(); pintarLados(); }
+    montarBarra(); cargarPicks(); pintarBarra(); montarPie(); enlazarTerminos();
   };
+
+  /* ---------- barra en movimiento: partidos en juego, nuestros pronosticos y el acierto de hoy ---------- */
+  var TK_LIVE=[], TK_HOY=null, tkPedido=false, tkFirma="";
+  var TK_F=[["⚽","soccer/esp.1","LaLiga"],["⚽","soccer/eng.1","Premier"],["⚽","soccer/ita.1","Serie A"],["⚽","soccer/ger.1","Bundesliga"],
+    ["⚽","soccer/fra.1","Ligue 1"],["⚽","soccer/por.1","Portugal"],["⚽","soccer/uefa.champions","Champions"],["🏀","basketball/nba","NBA"],
+    ["🏀","basketball/mens-college-basketball","NCAA","groups=50&limit=300"],["🏒","hockey/nhl","NHL"],["🏈","football/nfl","NFL"],
+    ["🏈","football/college-football","NCAA","groups=80&limit=300"],["🏐","volleyball/womens-college-volleyball","NCAA","limit=300"]];
+  function montarBarra(){
+    if(document.getElementById("se-tk")) return;
+    var top=document.getElementById("top"); if(!top) return;
+    var d=document.createElement("div"); d.className="se-tk"; d.id="se-tk";
+    d.innerHTML='<div class="tk-lab" id="se-tk-lab"></div><div class="tk-vp"><div class="tk-tr" id="se-tk-tr"></div></div>';
+    top.parentNode.insertBefore(d,top.nextSibling);
+    if(!tkPedido){ tkPedido=true; cargarBarra(); setInterval(cargarBarra,60000); }
+  }
+  function cargarBarra(){
+    Promise.all(TK_F.map(function(f){
+      return fetch("https://site.api.espn.com/apis/site/v2/sports/"+f[1]+"/scoreboard"+(f[3]?"?"+f[3]:"")).then(function(r){ if(!r.ok) throw 0; return r.json(); })
+        .then(function(j){ var o=[]; ((j&&j.events)||[]).forEach(function(ev){ var c=(ev.competitions||[])[0]; if(!c) return; var st=(ev.status||c.status||{}).type||{};
+          if(st.state!=="in") return; var h=null,a=null; (c.competitors||[]).forEach(function(x){ if(x.homeAway==="home") h=x; else if(x.homeAway==="away") a=x; });
+          if(!h||!a) return; o.push({ic:f[0],lg:f[2],h:(h.team||{}).shortDisplayName||(h.team||{}).displayName,a:(a.team||{}).shortDisplayName||(a.team||{}).displayName,
+            gh:h.score,ga:a.score,det:st.shortDetail||""}); }); return o; }).catch(function(){ return []; });
+    })).then(function(ls){ TK_LIVE=[].concat.apply([],ls); pintarBarra(); });
+    jget("telegram_directo.json").then(function(t){ if(!t) return; var hoy=new Date().toLocaleDateString("sv-SE",{timeZone:"Europe/Madrid"}), a=0, n=0;
+      Object.keys(t.enviados||{}).forEach(function(k){ var v=t.enviados[k]; if(v.dia===hoy){ n++; if(v.ok) a++; } }); TK_HOY=n?{a:a,n:n}:null; pintarBarra(); });
+  }
+  function pintarBarra(){
+    var tr=document.getElementById("se-tk-tr"), lab=document.getElementById("se-tk-lab"); if(!tr) return;
+    var t=TX[ultimo.lang]||TX.es, it=[];
+    lab.textContent=TK_LIVE.length?"● "+t.tk_live:"⭐ SPORTS EDGE";
+    TK_LIVE.slice(0,40).forEach(function(x){ it.push('<a class="tk-it" href="directo.html"><span class="tk-lv">●</span>'+x.ic+' <span class="tk-m">'+esc(x.lg)+'</span> '+esc(x.h)+' <b>'+esc(x.gh)+'-'+esc(x.ga)+'</b> '+esc(x.a)+' <span class="tk-m">'+esc(x.det)+'</span></a>'); });
+    if(TK_HOY) it.push('<a class="tk-it" href="estadisticas.html"><span class="tk-g">📈 '+t.tk_today.replace("%a",TK_HOY.a).replace("%n",TK_HOY.n)+'</span></a>');
+    (PK||[]).slice().sort(function(a,b){ return b.prob-a.prob; }).slice(0,15).forEach(function(x){
+      it.push('<a class="tk-it" href="'+esc(x.url)+'">'+(ICO[x.dep]||"")+' <span class="tk-m">'+esc(x.comp||"")+'</span> '+esc(x.a)+(x.b?' – '+esc(x.b):'')+' · '+t.tk_pick+': <b>'+esc(x.pick==="X"?t.draw:x.pick)+'</b> <span class="tk-g">'+Math.round(x.prob*100)+'%</span></a>'); });
+    if(!it.length) it.push('<span class="tk-it tk-m">'+t.tk_wait+'</span>');
+    var html=it.join(""), firma=html.length+"|"+it.length;
+    if(firma===tkFirma) return; tkFirma=firma;
+    tr.innerHTML=html+html;
+    tr.style.setProperty("--d",Math.max(40,it.length*7)+"s");
+  }
+
+  /* ---------- pie comun: otras webs y aviso de juego responsable ---------- */
+  function montarPie(){
+    var t=TX[ultimo.lang]||TX.es, ex=document.getElementById("se-ow");
+    var html='<h3>'+t.ow_t+'</h3><div class="g">'
+      +'<a href="https://equityintrinsic.com/" target="_blank" rel="noopener"><b>📈 Equity Intrinsic</b><span>'+t.ow_eq+'</span><i>'+t.ow_go+'</i></a>'
+      +'<a href="https://nexusterminalalerts.com/" target="_blank" rel="noopener"><b>📊 Nexus Terminal Alerts</b><span>'+t.ow_nx+'</span><i>'+t.ow_go+'</i></a>'
+      +'<a href="https://dazpremiumfit.com/" target="_blank" rel="noopener"><b>👕 DAZ Premium Fit</b><span>'+t.ow_daz+'</span><i>'+t.ow_go+'</i></a>'
+      +'<a href="https://www.valmontco.com/" target="_blank" rel="noopener"><b>🎓 Valmont &amp; Co.</b><span>'+t.ow_val+'</span><i>'+t.ow_go+'</i></a></div>'
+      +'<div class="se-resp">🔞 '+t.resp+'</div>';
+    if(ex){ ex.innerHTML=html; return; }
+    var d=document.createElement("section"); d.className="se-ow"; d.id="se-ow"; d.innerHTML=html;
+    var f=document.querySelector("body > footer");
+    if(f) f.parentNode.insertBefore(d,f); else document.body.appendChild(d);
+  }
+
+  /* ---------- glosario: los terminos se enlazan solos a su explicacion en Aprender ---------- */
+  var TERMS=[
+    ["cuota","cuotas?|odds"],["implicita","probabilidad impl[ií]cita|implied probability"],["valor","apuestas? de valor|value bets?|VALOR"],
+    ["elo","Elo"],["logloss","logloss"],["brier","Brier"],["favorito","favoritos?|favourites?"],["empate","empates?|draws?"],
+    ["parrilla","parrilla de salida|starting grid"],["podio","podios?|podium"],["top10","top 10"],["corte","corte|the cut"],
+    ["abandono","abandonos?|retirements?"],["regla","regla sencilla|simple rule"],["prueba","partidos no vistos|carreras no vistas|torneos no vistos|unseen (?:games|races|tournaments)"],
+    ["banca","banca|bankroll"],["kelly","Kelly"],["forma","forma reciente|recent form"],["racha","racha|streak"]];
+  var termRe=null, termTimer=null, termOcupado=false;
+  function enlazarTerminos(){
+    if(ultimo.act==="aprender") return;
+    var main=document.querySelector("main"); if(!main) return;
+    if(!termRe){ try{ termRe=new RegExp("(^|[^\\p{L}])("+TERMS.map(function(x){return x[1];}).join("|")+")(?![\\p{L}])","iu"); }catch(e){ return; }
+      try{ new MutationObserver(function(){ if(termOcupado) return; clearTimeout(termTimer); termTimer=setTimeout(enlazarTerminos,400); }).observe(main,{childList:true,subtree:true}); }catch(e){} }
+    termOcupado=true;
+    try{
+      var usados={}, w=document.createTreeWalker(main,NodeFilter.SHOW_TEXT,{acceptNode:function(n){
+        for(var p=n.parentNode;p&&p!==main;p=p.parentNode){ var tg=p.nodeName; if(tg==="A"||tg==="BUTTON"||tg==="SCRIPT"||tg==="STYLE"||tg==="TH"||tg==="H1"||tg==="INPUT"||tg==="SELECT") return NodeFilter.FILTER_REJECT; }
+        return termRe.test(n.nodeValue)?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_SKIP; }});
+      var nodos=[]; while(w.nextNode()) nodos.push(w.currentNode);
+      document.querySelectorAll("main a.se-term").forEach(function(a){ usados[a.getAttribute("data-t")]=1; });
+      nodos.forEach(function(n){
+        var m=n.nodeValue.match(termRe); if(!m) return;
+        var palabra=m[2], id=null;
+        for(var i=0;i<TERMS.length;i++){ if(new RegExp("^(?:"+TERMS[i][1]+")$","i").test(palabra)){ id=TERMS[i][0]; break; } }
+        if(!id||usados[id]) return; usados[id]=1;
+        var ini=m.index+m[1].length, a=document.createElement("a");
+        a.className="se-term"; a.href="aprender.html#"+id; a.setAttribute("data-t",id); a.textContent=palabra;
+        a.title=ultimo.lang==="es"?"¿Qué es? Ver en Aprender":"What is it? See Learn";
+        var resto=n.splitText(ini); resto.nodeValue=resto.nodeValue.substr(palabra.length); n.parentNode.insertBefore(a,resto);
+      });
+    }catch(e){}
+    setTimeout(function(){ termOcupado=false; },0);
+  }
 })();
