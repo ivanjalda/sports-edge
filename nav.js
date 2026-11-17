@@ -4,12 +4,12 @@
    dentro de su render(). Los botones ES/EN llaman a setLang() de cada pagina. */
 (function(){
   var TX={
-    es:{home:"Inicio",futbol:"Fútbol",tenis:"Tenis",baloncesto:"Baloncesto",hockey:"Hockey",americano:"Fútbol americano",mma:"MMA",beisbol:"Béisbol",voleibol:"Voleibol",rugby:"Rugby",motor:"Motor",golf:"Golf",directo:"En directo",stats:"Estadísticas",guia:"Guía",aprender:"Aprender",
+    es:{home:"Inicio",futbol:"Fútbol",tenis:"Tenis",baloncesto:"Baloncesto",hockey:"Hockey",americano:"Fútbol americano",mma:"MMA",beisbol:"Béisbol",voleibol:"Voleibol",rugby:"Rugby",motor:"Motor",golf:"Golf",directo:"En directo",stats:"Estadísticas",guia:"Guía",aprender:"Aprender",records:"Récords",
         tk_live:"EN DIRECTO",tk_pick:"Pronóstico",tk_today:"Hoy llevamos %a de %n acertados",tk_wait:"Cargando marcadores y pronósticos…",
         ow_t:"Nuestras otras webs",ow_eq:"Análisis de acciones de bolsa y su valor intrínseco.",ow_nx:"Análisis y señales de trading en tiempo real.",ow_daz:"Ropa deportiva de calidad, marca registrada en EE. UU.",ow_val:"Academia de inversión: libros, guías y cursos.",ow_go:"Visitar →",
         resp:"Solo para mayores de 18 años · Las probabilidades son estimaciones estadísticas, no garantías · Juega con responsabilidad",
         news:"Noticias",newsof:"Noticias de",more:"Más noticias",ago_h:"hace %d h",ago_m:"hace %d min",tema:"Modo día / noche",picks:"⭐ Nuestros pronósticos",pick:"Pronóstico",odds:"Mejor cuota",at:"en",nopicks:"No hay pronósticos para las próximas horas.",allpicks:"Ver todos en Inicio →",today:"hoy",tomorrow:"mañana",draw:"Empate"},
-    en:{home:"Home",futbol:"Football",tenis:"Tennis",baloncesto:"Basketball",hockey:"Hockey",americano:"American football",mma:"MMA",beisbol:"Baseball",voleibol:"Volleyball",rugby:"Rugby",motor:"Motorsport",golf:"Golf",directo:"Live",stats:"Statistics",guia:"Guide",aprender:"Learn",
+    en:{home:"Home",futbol:"Football",tenis:"Tennis",baloncesto:"Basketball",hockey:"Hockey",americano:"American football",mma:"MMA",beisbol:"Baseball",voleibol:"Volleyball",rugby:"Rugby",motor:"Motorsport",golf:"Golf",directo:"Live",stats:"Statistics",guia:"Guide",aprender:"Learn",records:"Records",
         tk_live:"LIVE",tk_pick:"Pick",tk_today:"Today: %a of %n correct",tk_wait:"Loading scores and picks…",
         ow_t:"Our other websites",ow_eq:"Stock analysis and intrinsic value.",ow_nx:"Real-time trading analysis and signals.",ow_daz:"Quality sportswear, US registered brand.",ow_val:"Investing academy: books, guides and courses.",ow_go:"Visit →",
         resp:"18+ only · Probabilities are statistical estimates, not guarantees · Please gamble responsibly",
@@ -18,7 +18,7 @@
   var ITEMS=[
     ["home","index.html","🏠"],["directo","directo.html","🔴"],["futbol","futbol.html","⚽"],["tenis","tenis.html","🎾"],
     ["baloncesto","equipos.html?dep=baloncesto","🏀"],["hockey","equipos.html?dep=hockey","🏒"],["americano","equipos.html?dep=americano","🏈"],["mma","equipos.html?dep=mma","🥋"],["beisbol","equipos.html?dep=beisbol","⚾"],["voleibol","equipos.html?dep=voleibol","🏐"],["rugby","equipos.html?dep=rugby","🏉"],["motor","carreras.html","🏁"],["golf","carreras.html?grupo=golf","⛳"],
-    ["stats","estadisticas.html","📊"],["aprender","aprender.html","🎓"]
+    ["stats","estadisticas.html","📊"]
   ];
   var css=
     /* Modo dia: misma familia de colores que Equity Intelligence (gris claro, dorado y verde) */
@@ -34,7 +34,9 @@
     "#top .se-row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 28px 6px}"+
     "#top .se-logo{font-weight:800;font-size:20px;letter-spacing:.5px;color:var(--txt);text-decoration:none}"+
     "#top .se-logo span{color:var(--acc)}"+
-    "#top .se-r{display:flex;align-items:center;gap:10px}"+
+    "#top .se-r{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}"+
+    "#top .se-btn{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 12px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--txt);text-decoration:none;font-weight:700;font-size:13px;white-space:nowrap}"+
+    "#top .se-btn:hover,#top .se-btn.on{border-color:var(--acc);color:var(--acc)}"+
     "#top .se-th{background:var(--card);border:1px solid var(--line);color:var(--txt);height:32px;min-width:38px;border-radius:8px;cursor:pointer;font-size:16px;line-height:1}"+
     "#top .se-lang button{background:var(--card);color:var(--mut);border:1px solid var(--line);padding:6px 12px;cursor:pointer;font-weight:700;font-size:13px}"+
     "#top .se-lang button.on{color:var(--bg);background:var(--acc);border-color:var(--acc)}"+
@@ -89,14 +91,17 @@
     ".se-ow{margin:34px 28px 0;padding:18px 0 0;border-top:1px solid var(--line)}"+
     ".se-ow h3{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--blue);margin:0 0 10px}"+
     ".se-ow .g{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}"+
-    ".se-ow a{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--txt)}"+
+    ".se-ow a{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:var(--txt)}"+
+    ".se-ow a .im{display:block;height:150px;background:linear-gradient(135deg,#0f2a1d,#1e7a4c 60%,#8a6a00);background-size:cover;background-position:center}"+
+    ".se-ow a .im.ic{background-size:72px,cover;background-repeat:no-repeat,no-repeat;background-position:center,center}"+
+    ".se-ow a .tx{display:block;padding:12px 16px 14px}"+
     ".se-ow a:hover{border-color:var(--acc)}"+
     ".se-ow a b{display:block;font-size:16px} .se-ow a span{display:block;font-size:13px;color:var(--mut);margin:3px 0 6px} .se-ow a i{font-style:normal;font-size:13px;font-weight:700;color:var(--acc)}"+
     ".se-resp{text-align:center;font-size:12px;color:var(--mut);padding:14px 28px 4px}"+
     /* Terminos del glosario enlazados */
     "a.se-term{color:inherit;text-decoration:underline dotted;text-underline-offset:3px;text-decoration-color:var(--acc)}"+
     "a.se-term:hover{color:var(--acc)}"+
-    "@media(max-width:720px){.se-ow{margin:26px 16px 0}.se-tk{font-size:12px}}"+
+    "@media(max-width:720px){.se-ow{margin:26px 16px 0}.se-tk{font-size:12px}#top .se-btn{padding:0 8px;font-size:12px}#top .se-logo{font-size:17px}}"+
     "@media(max-width:720px){#top .se-row{padding:10px 16px 4px}#top nav{padding:0 8px;gap:0;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}#top nav::-webkit-scrollbar{display:none}#top nav a{font-size:13px;padding:8px 8px}"+
       ".se-wrap{padding:0 16px}}";
   var st=document.createElement("style"); st.textContent=css; document.head.appendChild(st);
@@ -223,11 +228,12 @@
     for(var i=0;i<ITEMS.length;i++){ var it=ITEMS[i];
       n+='<a href="'+it[1]+'"'+(it[0]===activo?' class="on"':'')+'>'+it[2]+' '+t[it[0]]+'</a>'; }
     el.innerHTML='<div class="se-row"><a class="se-logo" href="index.html">SPORTS<span>EDGE</span></a>'
-      +'<div class="se-r"><button id="se-th" class="se-th" onclick="cambiarTema()" title="'+t.tema+'">'
+      +'<div class="se-r"><a class="se-btn'+(activo==="aprender"?' on':'')+'" href="aprender.html">🎓 '+t.aprender+'</a>'
+      +'<a class="se-btn'+(activo==="records"?' on':'')+'" href="records.html">🏆 '+t.records+'</a><button id="se-th" class="se-th" onclick="cambiarTema()" title="'+t.tema+'">'
       +(document.documentElement.getAttribute("data-theme")==="light"?"🌙":"☀️")+'</button>'
       +'<div class="se-lang"><button class="'+(lang==="es"?"on":"")+'" onclick="setLang(\'es\')">ES</button>'
       +'<button class="'+(lang==="en"?"on":"")+'" onclick="setLang(\'en\')">EN</button></div></div></div><nav>'+n+'</nav>';
-    if(activo!=="guia"&&activo!=="aprender"){ montarLados(); cargarNoticias(); if(activo!=="home") cargarPicks(); pintarLados(); }
+    if(activo!=="guia"&&activo!=="aprender"&&activo!=="records"){ montarLados(); cargarNoticias(); if(activo!=="home") cargarPicks(); pintarLados(); }
     montarBarra(); cargarPicks(); pintarBarra(); montarPie(); enlazarTerminos();
   };
 
@@ -272,13 +278,17 @@
   }
 
   /* ---------- pie comun: otras webs y aviso de juego responsable ---------- */
+  /* imagenes oficiales de cada web (la que cada web publica para compartirse en redes) */
+  var WEBS=[
+    ["https://equityintrinsic.com/","https://equityintrinsic.com/icono-48.png",true,"📈 Equity Intrinsic","ow_eq"],
+    ["https://nexusterminalalerts.com/","https://nexusterminalalerts.com/og-image.jpg",false,"📊 Nexus Terminal Alerts","ow_nx"],
+    ["https://dazpremiumfit.com/","https://dazpremiumfit.com/cdn/shop/files/f8bc49e2-f715-4a8d-aab8-6fbea8d7f3d4_91f710a0-5d71-463a-b4b0-843f4b06fbf4.jpg?v=1740522264&width=800",false,"👕 DAZ Premium Fit","ow_daz"],
+    ["https://www.valmontco.com/","https://www.valmontco.com/cdn/shop/files/Gemini_Generated_Image_rn5qnprn5qnprn5q_332c8c1b-d38f-49f7-b964-fe5d442752d6.png?v=1783524650&width=800",false,"🎓 Valmont &amp; Co.","ow_val"]];
   function montarPie(){
     var t=TX[ultimo.lang]||TX.es, ex=document.getElementById("se-ow");
     var html='<h3>'+t.ow_t+'</h3><div class="g">'
-      +'<a href="https://equityintrinsic.com/" target="_blank" rel="noopener"><b>📈 Equity Intrinsic</b><span>'+t.ow_eq+'</span><i>'+t.ow_go+'</i></a>'
-      +'<a href="https://nexusterminalalerts.com/" target="_blank" rel="noopener"><b>📊 Nexus Terminal Alerts</b><span>'+t.ow_nx+'</span><i>'+t.ow_go+'</i></a>'
-      +'<a href="https://dazpremiumfit.com/" target="_blank" rel="noopener"><b>👕 DAZ Premium Fit</b><span>'+t.ow_daz+'</span><i>'+t.ow_go+'</i></a>'
-      +'<a href="https://www.valmontco.com/" target="_blank" rel="noopener"><b>🎓 Valmont &amp; Co.</b><span>'+t.ow_val+'</span><i>'+t.ow_go+'</i></a></div>'
+      +WEBS.map(function(w){ return '<a href="'+w[0]+'" target="_blank" rel="noopener"><span class="im'+(w[2]?' ic':'')+'" style="background-image:url(\''+w[1]+'\'),linear-gradient(135deg,#0f2a1d,#1e7a4c 60%,#8a6a00)"></span>'
+        +'<span class="tx"><b>'+w[3]+'</b><span>'+t[w[4]]+'</span><i>'+t.ow_go+'</i></span></a>'; }).join("")+'</div>'
       +'<div class="se-resp">🔞 '+t.resp+'</div>';
     if(ex){ ex.innerHTML=html; return; }
     var d=document.createElement("section"); d.className="se-ow"; d.id="se-ow"; d.innerHTML=html;
@@ -295,7 +305,7 @@
     ["banca","banca|bankroll"],["kelly","Kelly"],["forma","forma reciente|recent form"],["racha","racha|streak"]];
   var termRe=null, termTimer=null, termOcupado=false;
   function enlazarTerminos(){
-    if(ultimo.act==="aprender") return;
+    if(ultimo.act==="aprender"||ultimo.act==="records") return;
     var main=document.querySelector("main"); if(!main) return;
     if(!termRe){ try{ termRe=new RegExp("(^|[^\\p{L}])("+TERMS.map(function(x){return x[1];}).join("|")+")(?![\\p{L}])","iu"); }catch(e){ return; }
       try{ new MutationObserver(function(){ if(termOcupado) return; clearTimeout(termTimer); termTimer=setTimeout(enlazarTerminos,400); }).observe(main,{childList:true,subtree:true}); }catch(e){} }
