@@ -368,7 +368,7 @@
     termOcupado=true;
     try{
       var usados={}, w=document.createTreeWalker(main,NodeFilter.SHOW_TEXT,{acceptNode:function(n){
-        for(var p=n.parentNode;p&&p!==main;p=p.parentNode){ var tg=p.nodeName; if(tg==="A"||tg==="BUTTON"||tg==="SCRIPT"||tg==="STYLE"||tg==="TH"||tg==="H1"||tg==="INPUT"||tg==="SELECT") return NodeFilter.FILTER_REJECT; }
+        for(var p=n.parentNode;p&&p!==main;p=p.parentNode){ if(p.classList&&p.classList.contains("se-cta")) return NodeFilter.FILTER_REJECT; var tg=p.nodeName; if(tg==="A"||tg==="BUTTON"||tg==="SCRIPT"||tg==="STYLE"||tg==="TH"||tg==="H1"||tg==="INPUT"||tg==="SELECT") return NodeFilter.FILTER_REJECT; }
         return termRe.test(n.nodeValue)?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_SKIP; }});
       var nodos=[]; while(w.nextNode()) nodos.push(w.currentNode);
       document.querySelectorAll("main a.se-term").forEach(function(a){ usados[a.getAttribute("data-t")]=1; });
@@ -385,4 +385,73 @@
     }catch(e){}
     setTimeout(function(){ termOcupado=false; },0);
   }
+})();
+
+/* ---------- Contenido para usuarios registrados ----------
+   Sin cuenta se ve una parte de cada lista de pronosticos; con cuenta (gratis) se ve todo.
+   El resto aparece difuminado con un aviso para crear la cuenta. Directo, estadisticas y
+   récords se ven siempre completos (nuestro historial es publico). */
+(function(){
+  function dentro(){ try{ return localStorage.getItem("se_user")!==null; }catch(e){ return false; } }
+  function idioma(){ try{ return localStorage.getItem("lang")==="en"?"en":"es"; }catch(e){ return "es"; } }
+  var TXT={es:{t:"🔒 Crea tu cuenta gratis para ver todos los pronósticos",s:"Sin cuenta ves solo los primeros. Con tu cuenta gratis ves todos, eliges tus favoritos y recibes los avisos que quieras.",b:"Crear cuenta gratis",e:"Ya tengo cuenta",
+                v:"🔒 El valor detectado es solo para usuarios registrados"},
+           en:{t:"🔒 Create your free account to see every prediction",s:"Without an account you only see the first ones. With your free account you see them all, pick your favourites and get the alerts you want.",b:"Create free account",e:"I already have an account",
+                v:"🔒 Value picks are for registered users only"}};
+  var pag=(location.pathname.split("/").pop()||"index.html").toLowerCase();
+  /* Que se muestra gratis en cada pagina: contenedor, elementos y cuantos se ven sin cuenta */
+  var REGLAS={
+    "futbol.html":[{c:"#content",i:".row",n:4}],
+    "tenis.html":[{c:"#m",i:".m",n:4}],
+    "equipos.html":[{c:"#m",i:".m",n:4}],
+    "carreras.html":[{c:"#m",i:".gp ~ table tr",n:6}],
+    "index.html":[{c:"#top-list",i:".list > *",n:5},{c:"#val-list",i:".list > *",n:0,v:1}],
+    "":[{c:"#top-list",i:".list > *",n:5},{c:"#val-list",i:".list > *",n:0,v:1}]
+  };
+  var reglas=REGLAS[pag]; if(!reglas) return;
+  try{
+    var st=document.createElement("style");
+    st.textContent=".se-lock{filter:blur(5px);opacity:.55;pointer-events:none;user-select:none}"
+      +".se-cta{margin:14px 0;padding:18px 20px;border-radius:14px;border:1px solid var(--acc);background:linear-gradient(135deg,rgba(34,197,94,.13),rgba(56,189,248,.08));text-align:center}"
+      +".se-cta b{display:block;font-size:17px;margin-bottom:4px}.se-cta p{margin:0 0 12px;color:var(--mut);font-size:14px}"
+      +".se-cta a{display:inline-block;margin:4px;padding:10px 18px;border-radius:10px;font-weight:700;text-decoration:none;font-size:14px}"
+      +".se-cta a.p{background:var(--acc);color:#04130a}.se-cta a.s{border:1px solid var(--line);color:var(--txt)}";
+    document.head.appendChild(st);
+  }catch(e){}
+  function cta(v){
+    var t=TXT[idioma()], d=document.createElement("div"); d.className="se-cta";
+    d.innerHTML="<b>"+(v?t.v:t.t)+"</b><p>"+t.s+"</p><a class='p' href='cuenta.html'>"+t.b+"</a><a class='s' href='cuenta.html'>"+t.e+"</a>";
+    return d;
+  }
+  var ocupado=false;
+  function aplicar(){
+    if(ocupado) return; ocupado=true;
+    try{
+      var libre=dentro();
+      reglas.forEach(function(r){
+        var c=document.querySelector(r.c); if(!c) return;
+        var els=[].slice.call(c.querySelectorAll(r.i)).filter(function(x){ return !x.classList.contains("se-cta") && !(x.querySelector && x.querySelector("th")); });
+        c.querySelectorAll(".se-cta").forEach(function(x){ x.parentNode.removeChild(x); });
+        els.forEach(function(x,k){
+          var bloquear=!libre && k>=r.n;
+          x.classList.toggle("se-lock",bloquear);
+          var sig=x.nextElementSibling; /* el detalle desplegable del futbol va justo despues */
+          if(sig && sig.classList.contains("det")) sig.classList.toggle("se-lock",bloquear);
+        });
+        if(!libre && els.length>r.n){
+          var ancla=els[r.n]; if(ancla.nodeName==="TR"){ ancla=ancla.closest("table"); ancla.parentNode.insertBefore(cta(r.v),ancla.nextSibling); }
+          else ancla.parentNode.insertBefore(cta(r.v),ancla);
+        }
+      });
+    }catch(e){}
+    setTimeout(function(){ ocupado=false; },0);
+  }
+  var tm=null;
+  function vigilar(){
+    var main=document.querySelector("main")||document.body;
+    try{ new MutationObserver(function(){ if(ocupado) return; clearTimeout(tm); tm=setTimeout(aplicar,250); }).observe(main,{childList:true,subtree:true}); }catch(e){}
+    aplicar();
+  }
+  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",vigilar); else vigilar();
+  window.addEventListener("storage",function(){ aplicar(); });
 })();
