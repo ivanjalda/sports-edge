@@ -27,7 +27,7 @@ REMITENTE = {"name": "SportEVLab", "email": "pronosticos@sportevlab.com"}
 BREVO = os.environ.get("BREVO_API_KEY", "").strip()
 PRUEBA = os.environ.get("CORREO_PRUEBA", "").strip()
 VER = os.environ.get("CORREO_VER", "").strip()
-MAX_PICKS = 12
+MAX_PICKS = 24
 
 VERDE, OSCURO, GRIS, FONDO, LINEA = "#16a34a", "#0b0f17", "#6b7280", "#f3f4f6", "#e5e7eb"
 
@@ -46,11 +46,13 @@ WEBS = [
     ("https://dazpremiumfit.com/", "https://dazpremiumfit.com/cdn/shop/files/f8bc49e2-f715-4a8d-aab8-6fbea8d7f3d4_91f710a0-5d71-463a-b4b0-843f4b06fbf4.jpg?v=1740522264&width=800",
      u"\U0001F455 DAZ Premium Fit", u"Ropa deportiva de calidad, marca registrada en EE. UU.", "Quality sportswear, US registered brand."),
     ("https://www.valmontco.com/", "https://www.valmontco.com/cdn/shop/files/Gemini_Generated_Image_rn5qnprn5qnprn5q_332c8c1b-d38f-49f7-b964-fe5d442752d6.png?v=1783524650&width=800",
-     u"\U0001F393 Valmont & Co.", u"Academia de inversión: libros, guías y cursos.", "Investing academy: books, guides and courses.")]
+     u"\U0001F393 Valmont & Co.", u"Academia de inversión: libros, guías y cursos.", "Investing academy: books, guides and courses."),
+    ("https://dazmond.com/", "https://dazmond.com/cdn/shop/files/Gemini_Generated_Image_d07g62d07g62d07g.png?v=1785778922&width=800",
+     u"\U0001F48E DAZMOND", u"Ropa y complementos de lujo a precio de saldo.", "Luxury clothing and accessories at outlet prices.")]
 
 TX = {
     "es": {"asunto": u"\U0001F3AF Pronósticos de hoy · %s", "hola": "Hola", "intro": u"Tu resumen de hoy: pronósticos calculados con resultados reales, cómo nos fue ayer y lo más importante del día.",
-           "k_hoy": u"Partidos analizados hoy", "k_ayer": u"Acierto de ayer", "k_rec": u"Récord en directo", "k_pred": u"predicciones",
+           "k_hoy": u"Partidos analizados hoy", "k_deps": u"Deportes con pronóstico", "k_ayer": u"Acierto de ayer", "k_rec": u"Récord en directo", "k_pred": u"predicciones",
            "pick": u"⭐ Pick del día", "pick_s": u"El pronóstico más claro de hoy", "tus": u"\U0001F3AF Tus pronósticos de hoy", "top": u"\U0001F3AF Los pronósticos más claros de hoy",
            "nofav": u"Hoy no hay partidos de tus favoritos. Te dejamos los más claros de todos los deportes.",
            "elige": u"⭐ Elige tus deportes y equipos favoritos y te los pondremos primero cada mañana.", "elige_b": u"Elegir favoritos",
@@ -63,7 +65,7 @@ TX = {
            "porque": u"Recibes este correo porque activaste el correo diario en tu cuenta de SportEVLab.",
            "baja": u"Dejar de recibirlo o cambiar el idioma", "espacio": u"Mi espacio"},
     "en": {"asunto": u"\U0001F3AF Today's predictions · %s", "hola": "Hi", "intro": u"Your daily summary: predictions calculated from real results, how we did yesterday and the day's highlights.",
-           "k_hoy": u"Games analysed today", "k_ayer": u"Yesterday's accuracy", "k_rec": u"Live record", "k_pred": u"predictions",
+           "k_hoy": u"Games analysed today", "k_deps": u"Sports with predictions", "k_ayer": u"Yesterday's accuracy", "k_rec": u"Live record", "k_pred": u"predictions",
            "pick": u"⭐ Pick of the day", "pick_s": u"Today's clearest prediction", "tus": u"\U0001F3AF Your predictions for today", "top": u"\U0001F3AF Today's clearest predictions",
            "nofav": u"There are no games for your favourites today. Here are the clearest picks from every sport.",
            "elige": u"⭐ Choose your favourite sports and teams and we'll put them first every morning.", "elige_b": u"Choose favourites",
@@ -165,7 +167,7 @@ def elegir(picks, deportes, equipos):
     base, son_favs = (favs, True) if favs else (picks, False)
     base = sorted(base, key=lambda x: (0 if sigue(x) else 1, -x["prob"]))
     # reparto entre deportes para que no se lo coma uno solo (los equipos que sigue siempre entran)
-    tope = 3 if not son_favs else max(3, -(-MAX_PICKS // max(1, len(set(x["dep"] for x in base)))))
+    tope = 4 if not son_favs else max(3, -(-MAX_PICKS // max(1, len(set(x["dep"] for x in base)))))
     sel, n = [], {}
     for x in base:
         n[x["dep"]] = n.get(x["dep"], 0) + 1
@@ -174,9 +176,19 @@ def elegir(picks, deportes, equipos):
     return sel[:MAX_PICKS], son_favs
 
 
-def seccion(t, extra=""):
-    return (u'<tr><td style="padding:26px 28px 10px;font:800 14px Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:%s;'
-            u'border-top:1px solid %s">%s%s</td></tr>' % (OSCURO, LINEA, t, extra))
+def seccion(t):
+    return (u'<div style="padding:28px 6px 10px;font:800 15px Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:%s;'
+            u'border-top:1px solid %s;margin-top:18px">%s</div>' % (OSCURO, LINEA, t))
+
+
+def caja(ancho, dentro):
+    """Bloque que se coloca al lado de otros en pantallas anchas y debajo en el movil."""
+    return (u'<div style="display:inline-block;vertical-align:top;width:100%%;max-width:%dpx;font-size:14px">'
+            u'<div style="margin:6px;text-align:left">%s</div></div>' % (ancho, dentro))
+
+
+def fila(cajas):
+    return u'<div style="font-size:0;text-align:center">%s</div>' % "".join(cajas)
 
 
 def cuando(f, T, hoy):
@@ -195,156 +207,152 @@ def html_correo(u, C, ahora, lang):
     hoy = ahora.astimezone(tg.TZ).date()
     F = []
     nombre = (u.get("nombre") or "").split(" ")[0]
-    F.append(u'<tr><td style="padding:26px 28px 6px;font:700 20px Arial,sans-serif;color:%s">%s%s \U0001F44B</td></tr>'
-             u'<tr><td style="padding:0 28px 18px;font:15px Arial,sans-serif;color:%s;line-height:1.5">%s</td></tr>'
+    F.append(u'<div style="padding:4px 6px 14px"><div style="font:700 22px Arial,sans-serif;color:%s">%s%s \U0001F44B</div>'
+             u'<div style="font:15px Arial,sans-serif;color:%s;line-height:1.5;margin-top:4px">%s</div></div>'
              % (OSCURO, T["hola"], (" " + e(nombre)) if nombre else "", GRIS, T["intro"]))
 
     # Cifras del dia
     ay = C["ayer"]
     ta, tn = sum(v[0] for v in ay.values()), sum(v[1] for v in ay.values())
     kp = [(str(len(C["picks"])), T["k_hoy"]),
+          (str(len(set(x["dep"] for x in C["picks"]))), T["k_deps"]),
           (pc(ta / float(tn)) if tn else u"—", T["k_ayer"] + (u" · %d/%d" % (ta, tn) if tn else "")),
           (pc(C["record"][0]) if C["record"] else u"—", T["k_rec"] + (u" · %d %s" % (C["record"][1], T["k_pred"]) if C["record"] else ""))]
-    F.append(u'<tr><td style="padding:0 22px 22px"><table width="100%%" cellpadding="0" cellspacing="0"><tr>%s</tr></table></td></tr>' % "".join(
-        u'<td width="33%%" valign="top" style="padding:0 6px"><div style="background:%s;border-radius:12px;padding:14px 10px;text-align:center">'
-        u'<div style="font:800 24px Arial,sans-serif;color:%s">%s</div><div style="font:12px Arial,sans-serif;color:%s;margin-top:2px">%s</div></div></td>'
-        % (FONDO, VERDE, v, GRIS, k) for v, k in kp))
+    F.append(fila([caja(185, u'<div style="background:%s;border-radius:12px;padding:16px 10px;text-align:center">'
+                             u'<div style="font:800 28px Arial,sans-serif;color:%s">%s</div><div style="font:12px Arial,sans-serif;color:%s;margin-top:2px">%s</div></div>'
+                             % (FONDO, VERDE, v, GRIS, k)) for v, k in kp]))
 
-    # Pick del dia: el mas claro de su seleccion, mejor si tiene cuota
+    # Pick del dia + record + aprende (lado a lado en pantallas anchas)
+    arriba = []
     if sel:
         con_c = [x for x in sel if x.get("cuota")]
         p = max(con_c or sel, key=lambda x: x["prob"])
         pk = T["empate"] if p["pick"] == "Empate" else p["pick"]
-        F.append(u'<tr><td style="padding:0 28px 8px"><table width="100%%" cellpadding="0" cellspacing="0" style="background:%s;border-radius:14px">'
-                 u'<tr><td style="padding:18px 20px"><div style="font:800 13px Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:#eab308">%s</div>'
-                 u'<div style="font:12px Arial,sans-serif;color:#9ca3af;margin-top:2px">%s · %s %s · %s</div>'
-                 u'<div style="font:16px Arial,sans-serif;color:#fff;margin-top:10px">%s – %s</div>'
-                 u'<div style="font:800 22px Arial,sans-serif;color:#22c55e;margin-top:4px">\U0001F3AF %s</div>'
-                 u'<div style="font:13px Arial,sans-serif;color:#d1d5db;margin-top:4px">%s</div></td>'
-                 u'<td align="right" valign="middle" style="padding:18px 20px"><div style="font:800 40px Arial,sans-serif;color:#22c55e">%s</div></td></tr></table></td></tr>'
-                 % (OSCURO, T["pick"], T["pick_s"], DEP.get(p["dep"], ("",))[0], e(p["comp"]), cuando(p["fecha"], T, hoy),
-                    e(p["a"]), e(p["b"]), e(pk), cuota_de(p, T), pc(p["prob"])))
+        arriba.append(caja(600, u'<div style="background:%s;border-radius:14px;padding:18px 20px;min-height:120px">'
+                       u'<table width="100%%" cellpadding="0" cellspacing="0"><tr><td valign="top">'
+                       u'<div style="font:800 13px Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:#eab308">%s</div>'
+                       u'<div style="font:12px Arial,sans-serif;color:#9ca3af;margin-top:2px">%s · %s %s · %s</div>'
+                       u'<div style="font:16px Arial,sans-serif;color:#fff;margin-top:10px">%s – %s</div>'
+                       u'<div style="font:800 22px Arial,sans-serif;color:#22c55e;margin-top:4px">\U0001F3AF %s</div>'
+                       u'<div style="font:13px Arial,sans-serif;color:#d1d5db;margin-top:4px">%s</div></td>'
+                       u'<td align="right" valign="middle" style="padding-left:10px"><div style="font:800 40px Arial,sans-serif;color:#22c55e">%s</div></td></tr></table></div>'
+                       % (OSCURO, T["pick"], T["pick_s"], DEP.get(p["dep"], ("",))[0], e(p["comp"]), cuando(p["fecha"], T, hoy),
+                          e(p["a"]), e(p["b"]), e(pk), cuota_de(p, T), pc(p["prob"]))))
+    if C.get("rec_dia"):
+        c, txt = C["rec_dia"]
+        arriba.append(caja(450, u'<div style="background:%s;border-radius:14px;padding:18px;min-height:120px">'
+                      u'<div style="font:800 13px Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:%s">%s</div>'
+                      u'<div style="font:12px Arial,sans-serif;color:%s;margin-top:6px">%s %s</div><div style="font:14px Arial,sans-serif;color:#111;margin-top:4px;line-height:1.45">%s</div>'
+                      u'<a href="%srecords.html" style="display:inline-block;margin-top:8px;font:700 13px Arial,sans-serif;color:%s;text-decoration:none">%s</a></div>'
+                      % (FONDO, OSCURO, T["rec"], GRIS, DEP.get(c["dep"], ("",))[0], e(c.get("nombre")), txt[0] if lang == "es" else txt[1], WEB, VERDE, T["rec_b"])))
+    ap = C["aprende"]
+    arriba.append(caja(450, u'<div style="background:%s;border-radius:14px;padding:18px;min-height:120px">'
+                  u'<div style="font:800 13px Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:%s">%s</div>'
+                  u'<div style="font:700 14px Arial,sans-serif;color:#111;margin-top:6px">%s</div><div style="font:13px Arial,sans-serif;color:#374151;margin-top:4px;line-height:1.45">%s</div>'
+                  u'<a href="%saprender.html" style="display:inline-block;margin-top:8px;font:700 13px Arial,sans-serif;color:%s;text-decoration:none">%s</a></div>'
+                  % (FONDO, OSCURO, T["aprende"], ap[0] if lang == "es" else ap[2], ap[1] if lang == "es" else ap[3], WEB, VERDE, T["aprende_b"])))
+    F.append(fila(arriba))
 
-    # Pronosticos agrupados por deporte
+    # Pronosticos: un bloque por deporte, varios bloques por fila en pantallas anchas
     F.append(seccion(T["tus"] if son_favs else T["top"]))
     if (u.get("deportes") or u.get("equipos")) and not son_favs and sel:
-        F.append(u'<tr><td style="padding:0 28px 8px;font:13px Arial,sans-serif;color:%s">%s</td></tr>' % (GRIS, T["nofav"]))
+        F.append(u'<div style="padding:0 6px 8px;font:13px Arial,sans-serif;color:%s">%s</div>' % (GRIS, T["nofav"]))
     if not sel:
-        F.append(u'<tr><td style="padding:0 28px;font:14px Arial,sans-serif;color:%s">%s</td></tr>' % (GRIS, T["ninguno"]))
+        F.append(u'<div style="padding:0 6px;font:14px Arial,sans-serif;color:%s">%s</div>' % (GRIS, T["ninguno"]))
     orden = []
     for x in sel:
         if x["dep"] not in orden:
             orden.append(x["dep"])
+    bloques = []
     for d in orden:
         ic, es_, en_ = DEP.get(d, ("", d, d))
-        F.append(u'<tr><td style="padding:12px 28px 4px;font:700 14px Arial,sans-serif;color:%s">%s %s</td></tr>' % (OSCURO, ic, es_ if lang == "es" else en_))
         filas = []
         for x in [y for y in sel if y["dep"] == d]:
             pk = T["empate"] if x["pick"] == "Empate" else x["pick"]
             sig = x["a"] in eq or x["b"] in eq or x["pick"] in eq
             cu = cuota_de(x, T)
-            filas.append(u'<tr style="background:%s"><td width="62" valign="top" style="padding:10px 8px 10px 12px;font:12px Arial,sans-serif;color:%s;border-bottom:1px solid %s">%s</td>'
-                         u'<td valign="top" style="padding:10px 6px;font:14px Arial,sans-serif;color:#111;border-bottom:1px solid %s">'
+            filas.append(u'<tr style="background:%s"><td width="58" valign="top" style="padding:10px 6px 10px 12px;font:12px Arial,sans-serif;color:%s;border-top:1px solid %s">%s</td>'
+                         u'<td valign="top" style="padding:10px 6px;font:14px Arial,sans-serif;color:#111;border-top:1px solid %s">'
                          u'<div style="font-size:11px;color:%s">%s%s</div>%s – %s<br><b style="color:%s">\U0001F3AF %s</b>%s</td>'
-                         u'<td width="58" align="right" valign="middle" style="padding:10px 12px;font:800 18px Arial,sans-serif;color:%s;border-bottom:1px solid %s">%s</td></tr>'
+                         u'<td width="56" align="right" valign="middle" style="padding:10px 12px;font:800 18px Arial,sans-serif;color:%s;border-top:1px solid %s">%s</td></tr>'
                          % ("#f0fdf4" if sig else "#ffffff", GRIS, LINEA, cuando(x["fecha"], T, hoy).replace(" ", "<br>"), LINEA, GRIS, e(x["comp"]), u" · ⭐" if sig else "",
                             e(x["a"]), e(x["b"]), VERDE, e(pk), (u'<span style="font-size:12px;color:%s"> · %s</span>' % (GRIS, cu)) if cu else "", VERDE, LINEA, pc(x["prob"])))
-        F.append(u'<tr><td style="padding:0 28px"><table width="100%%" cellpadding="0" cellspacing="0" style="border:1px solid %s;border-radius:12px;border-collapse:separate;overflow:hidden">%s</table></td></tr>'
-                 % (LINEA, "".join(filas)))
+        bloques.append(caja(600, u'<div style="border:1px solid %s;border-radius:12px;overflow:hidden">'
+                                 u'<div style="background:%s;padding:10px 12px;font:700 14px Arial,sans-serif;color:%s">%s %s</div>'
+                                 u'<table width="100%%" cellpadding="0" cellspacing="0">%s</table></div>'
+                                 % (LINEA, FONDO, OSCURO, ic, es_ if lang == "es" else en_, "".join(filas))))
+    F.append(fila(bloques))
     if not (u.get("deportes") or u.get("equipos")):
-        F.append(u'<tr><td style="padding:14px 28px 0"><div style="background:#fefce8;border:1px solid #fde68a;border-radius:12px;padding:12px 14px;font:13px Arial,sans-serif;color:#713f12">'
-                 u'%s <a href="%scuenta.html#favoritos" style="color:%s;font-weight:700">%s →</a></div></td></tr>' % (T["elige"], WEB, VERDE, T["elige_b"]))
-    F.append(u'<tr><td align="center" style="padding:22px 28px 8px"><a href="%s" style="display:inline-block;background:%s;color:#fff;text-decoration:none;'
-             u'font:700 15px Arial,sans-serif;padding:14px 30px;border-radius:10px">%s</a>&nbsp;&nbsp;'
-             u'<a href="%sdirecto.html" style="display:inline-block;border:2px solid %s;color:%s;text-decoration:none;font:700 15px Arial,sans-serif;padding:12px 22px;border-radius:10px;margin-top:8px">\U0001F534 %s</a></td></tr>'
+        F.append(u'<div style="margin:12px 6px 0;background:#fefce8;border:1px solid #fde68a;border-radius:12px;padding:12px 14px;font:13px Arial,sans-serif;color:#713f12">'
+                 u'%s <a href="%scuenta.html#favoritos" style="color:%s;font-weight:700">%s →</a></div>' % (T["elige"], WEB, VERDE, T["elige_b"]))
+    F.append(u'<div style="text-align:center;padding:20px 6px 4px"><a href="%s" style="display:inline-block;background:%s;color:#fff;text-decoration:none;'
+             u'font:700 15px Arial,sans-serif;padding:14px 30px;border-radius:10px;margin:4px">%s</a>'
+             u'<a href="%sdirecto.html" style="display:inline-block;border:2px solid %s;color:%s;text-decoration:none;font:700 15px Arial,sans-serif;padding:12px 22px;border-radius:10px;margin:4px">\U0001F534 %s</a></div>'
              % (WEB, VERDE, T["boton"], WEB, VERDE, VERDE, T["directo"]))
 
-    # Carreras
+    # Carreras y ayer
     cs = [c for c in C["carreras"] if not u.get("deportes") or c["dep"] in u["deportes"]]
     if cs:
         F.append(seccion(T["carreras"]))
+        bl = []
         for c in cs:
             lin = []
             for i, p in enumerate(c["pilotos"]):
                 extra = (u"%s %s" % (T["top10"], pc(p.get("p10") or 0))) if c["golf"] else (u"%s %s" % (T["podio"], pc(p.get("pp"))))
                 lin.append(u"%s <b>%s</b> · %s %s · %s" % ([u"\U0001F947", u"\U0001F948", u"\U0001F949"][i], e(p["n"]), T["gana"], pc(p["pw"]), extra))
-            F.append(u'<tr><td style="padding:4px 28px 8px;font:14px Arial,sans-serif;color:#111;line-height:1.7"><b>%s %s · %s</b> '
-                     u'<span style="color:%s;font-size:12px">%s</span><br>%s</td></tr>'
-                     % (DEP[c["dep"]][0], e(c["comp"]), e(c["nombre"]), GRIS, cuando(c["fecha"], T, hoy), "<br>".join(lin)))
-
-    # Ayer
+            bl.append(caja(450, u'<div style="border:1px solid %s;border-radius:12px;padding:14px;font:14px Arial,sans-serif;color:#111;line-height:1.7">'
+                                u'<b>%s %s · %s</b><br><span style="color:%s;font-size:12px">%s</span><br>%s</div>'
+                                % (LINEA, DEP[c["dep"]][0], e(c["comp"]), e(c["nombre"]), GRIS, cuando(c["fecha"], T, hoy), "<br>".join(lin))))
+        F.append(fila(bl))
     if ay:
         F.append(seccion(T["ayer"]))
-        celdas = []
+        bl = []
         for d, (a, n) in sorted(ay.items(), key=lambda z: -z[1][1]):
             ic, es_, en_ = DEP.get(d, ("", d, d))
-            celdas.append(u'<td width="33%%" valign="top" style="padding:4px"><div style="border:1px solid %s;border-radius:10px;padding:10px;text-align:center;font:12px Arial,sans-serif;color:%s">'
-                          u'%s %s<div style="font:800 18px Arial,sans-serif;color:%s;margin-top:3px">%d/%d</div></div></td>'
-                          % (LINEA, GRIS, ic, es_ if lang == "es" else en_, OSCURO, a, n))
-        filas = "".join(u"<tr>%s</tr>" % "".join(celdas[i:i + 3]) for i in range(0, len(celdas), 3))
-        F.append(u'<tr><td style="padding:0 24px"><table width="100%%" cellpadding="0" cellspacing="0">%s</table></td></tr>' % filas)
+            bl.append(caja(200, u'<div style="border:1px solid %s;border-radius:10px;padding:12px;text-align:center;font:12px Arial,sans-serif;color:%s">'
+                                u'%s %s<div style="font:800 20px Arial,sans-serif;color:%s;margin-top:3px">%d/%d</div></div>'
+                                % (LINEA, GRIS, ic, es_ if lang == "es" else en_, OSCURO, a, n)))
+        F.append(fila(bl))
 
     # Noticias con foto
-    nots = (C["noticias"].get(lang) or [])[:6]
+    nots = (C["noticias"].get(lang) or [])[:8]
     if nots:
         F.append(seccion(T["noticias"]))
-        celdas = []
+        bl = []
         for n in nots:
-            img = (u'<img src="%s" width="268" alt="" style="width:100%%;max-width:268px;height:140px;object-fit:cover;border-radius:10px;display:block;background:%s">'
+            img = (u'<img src="%s" width="290" alt="" style="width:100%%;height:160px;object-fit:cover;border-radius:10px;display:block;background:%s">'
                    % (e(n["img"]), FONDO)) if n.get("img") else ""
-            celdas.append(u'<td width="50%%" valign="top" style="padding:6px"><a href="%s" style="text-decoration:none;color:#111">%s'
-                          u'<div style="font:700 14px Arial,sans-serif;line-height:1.35;margin-top:8px">%s</div>'
-                          u'<div style="font:12px Arial,sans-serif;color:%s;margin-top:4px">%s · <span style="color:%s;font-weight:700">%s</span></div></a></td>'
-                          % (e(n.get("url")), img, e(n.get("t")), GRIS, e(n.get("fuente")), VERDE, T["leer"]))
-        filas = "".join(u"<tr>%s</tr>" % "".join(celdas[i:i + 2]) for i in range(0, len(celdas), 2))
-        F.append(u'<tr><td style="padding:0 22px"><table width="100%%" cellpadding="0" cellspacing="0">%s</table></td></tr>' % filas)
-
-    # Record del dia y Aprende
-    bloques = []
-    if C.get("rec_dia"):
-        c, txt = C["rec_dia"]
-        bloques.append(u'<div style="font:800 13px Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:%s">%s</div>'
-                       u'<div style="font:12px Arial,sans-serif;color:%s;margin-top:6px">%s %s</div><div style="font:14px Arial,sans-serif;color:#111;margin-top:4px;line-height:1.45">%s</div>'
-                       u'<a href="%srecords.html" style="display:inline-block;margin-top:8px;font:700 13px Arial,sans-serif;color:%s;text-decoration:none">%s</a>'
-                       % (OSCURO, T["rec"], GRIS, DEP.get(c["dep"], ("",))[0], e(c.get("nombre")), txt[0] if lang == "es" else txt[1], WEB, VERDE, T["rec_b"]))
-    ap = C["aprende"]
-    bloques.append(u'<div style="font:800 13px Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:%s">%s</div>'
-                   u'<div style="font:700 14px Arial,sans-serif;color:#111;margin-top:6px">%s</div><div style="font:13px Arial,sans-serif;color:#374151;margin-top:4px;line-height:1.45">%s</div>'
-                   u'<a href="%saprender.html" style="display:inline-block;margin-top:8px;font:700 13px Arial,sans-serif;color:%s;text-decoration:none">%s</a>'
-                   % (OSCURO, T["aprende"], ap[0] if lang == "es" else ap[2], ap[1] if lang == "es" else ap[3], WEB, VERDE, T["aprende_b"]))
-    F.append(u'<tr><td style="padding:26px 22px 0;border-top:1px solid %s"><table width="100%%" cellpadding="0" cellspacing="0"><tr>%s</tr></table></td></tr>'
-             % (LINEA, "".join(u'<td width="%d%%" valign="top" style="padding:6px"><div style="background:%s;border-radius:12px;padding:16px">%s</div></td>'
-                                % (100 // len(bloques), FONDO, b) for b in bloques)))
+            bl.append(caja(300, u'<a href="%s" style="text-decoration:none;color:#111">%s'
+                                u'<div style="font:700 14px Arial,sans-serif;line-height:1.35;margin-top:8px">%s</div>'
+                                u'<div style="font:12px Arial,sans-serif;color:%s;margin-top:4px">%s · <span style="color:%s;font-weight:700">%s</span></div></a>'
+                                % (e(n.get("url")), img, e(n.get("t")), GRIS, e(n.get("fuente")), VERDE, T["leer"])))
+        F.append(fila(bl))
 
     # Otras webs (solo si lo acepto)
     if u.get("promo"):
         F.append(seccion(T["webs"]))
-        celdas = []
+        bl = []
         for url, img, nom, des, den in WEBS:
-            celdas.append(u'<td width="50%%" valign="top" style="padding:6px"><a href="%s" style="text-decoration:none;color:#111">'
-                          u'<img src="%s" width="268" alt="%s" style="width:100%%;max-width:268px;height:130px;object-fit:cover;border-radius:10px;display:block;background:%s">'
-                          u'<div style="font:700 14px Arial,sans-serif;margin-top:8px">%s</div><div style="font:12px Arial,sans-serif;color:%s">%s</div>'
-                          u'<div style="font:700 12px Arial,sans-serif;color:%s;margin-top:3px">%s</div></a></td>'
-                          % (url, e(img), e(nom), FONDO, e(nom), GRIS, des if lang == "es" else den, VERDE, T["visitar"]))
-        F.append(u'<tr><td style="padding:0 22px"><table width="100%%" cellpadding="0" cellspacing="0"><tr>%s</tr><tr>%s</tr></table></td></tr>'
-                 % ("".join(celdas[:2]), "".join(celdas[2:])))
+            bl.append(caja(300, u'<a href="%s" style="text-decoration:none;color:#111">'
+                                u'<img src="%s" width="290" alt="%s" style="width:100%%;height:150px;object-fit:cover;border-radius:10px;display:block;background:%s">'
+                                u'<div style="font:700 14px Arial,sans-serif;margin-top:8px">%s</div><div style="font:12px Arial,sans-serif;color:%s">%s</div>'
+                                u'<div style="font:700 12px Arial,sans-serif;color:%s;margin-top:3px">%s</div></a>'
+                                % (url, e(img), e(nom), FONDO, e(nom), GRIS, des if lang == "es" else den, VERDE, T["visitar"])))
+        F.append(fila(bl))
 
-    # Pie
-    F.append(u'<tr><td style="padding:26px 28px;font:12px Arial,sans-serif;color:%s;line-height:1.7;border-top:1px solid %s;text-align:center">'
-             u'<a href="%s" style="color:%s;font-weight:700;text-decoration:none">sportevlab.com</a> · <a href="%scuenta.html#espacio" style="color:%s;text-decoration:none">%s</a><br>'
-             u'\U0001F51E %s<br>%s<br><a href="%scuenta.html#avisos" style="color:%s">%s</a><br>SportEVLab · Community16 LLC · New Mexico, USA</td></tr>'
-             % (GRIS, LINEA, WEB, VERDE, WEB, VERDE, T["espacio"], T["aviso"], T["porque"], WEB, VERDE, T["baja"]))
-
-    cab = (u'<tr><td align="center" style="background:%s;padding:28px 16px 24px">'
-           u'<a href="%s"><img src="%simg/correo-logo.png" width="320" alt="SportEVLab" style="width:320px;max-width:80%%;height:auto;display:block;border:0;color:#ffffff;font:800 30px Arial,sans-serif"></a>'
-           u'<div style="font:13px Arial,sans-serif;color:#9ca3af;margin-top:10px;letter-spacing:.5px">%s</div></td></tr>'
+    pie = (u'<div style="padding:26px 16px;font:12px Arial,sans-serif;color:%s;line-height:1.7;text-align:center;background:%s">'
+           u'<a href="%s" style="color:%s;font-weight:700;text-decoration:none">sportevlab.com</a> · <a href="%scuenta.html#espacio" style="color:%s;text-decoration:none">%s</a><br>'
+           u'\U0001F51E %s<br>%s<br><a href="%scuenta.html#avisos" style="color:%s">%s</a><br>SportEVLab · Community16 LLC · New Mexico, USA</div>'
+           % (GRIS, FONDO, WEB, VERDE, WEB, VERDE, T["espacio"], T["aviso"], T["porque"], WEB, VERDE, T["baja"]))
+    cab = (u'<div style="background:%s;padding:26px 16px 22px;text-align:center">'
+           u'<a href="%s" style="display:inline-block"><img src="%simg/correo-logo.png" width="320" alt="SportEVLab" '
+           u'style="width:320px;max-width:80%%;height:auto;display:block;margin:0 auto;border:0;color:#ffffff;font:800 30px Arial,sans-serif"></a>'
+           u'<div style="font:13px Arial,sans-serif;color:#9ca3af;margin-top:10px;letter-spacing:.5px">%s</div></div>'
            % (OSCURO, WEB, WEB, ahora.astimezone(tg.TZ).strftime("%d/%m/%Y")))
     return (u'<!DOCTYPE html><html lang="%s"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-            u'<meta name="color-scheme" content="light"></head><body style="margin:0;padding:0;background:%s">'
-            u'<table width="100%%" cellpadding="0" cellspacing="0" style="background:%s">%s'
-            u'<tr><td align="center" style="padding:0 8px 24px;background:linear-gradient(%s 0,%s 60px,%s 60px)">'
-            u'<table width="640" cellpadding="0" cellspacing="0" style="max-width:640px;width:100%%;background:#fff;border-radius:16px;overflow:hidden">%s</table>'
-            u'</td></tr></table></body></html>' % (lang, FONDO, FONDO, cab, OSCURO, OSCURO, FONDO, "".join(F)))
+            u'<meta name="color-scheme" content="light"></head><body style="margin:0;padding:0;background:#ffffff">'
+            u'<div style="width:100%%;background:#ffffff">%s<div style="padding:16px 10px 10px">%s</div>%s</div></body></html>'
+            % (lang, cab, "".join(F), pie))
 
 
 # ------------------------------------------------------------- Brevo
