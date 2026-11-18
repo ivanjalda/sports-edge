@@ -1,130 +1,15 @@
 {
- "actualizado": "2026-11-17 16:51 UTC",
+ "actualizado": "2026-11-18 03:53 UTC",
  "liga": "Eurocup",
- "datos_hasta": "2026-11-12T19:00:00Z",
- "dias_desde_datos": 4,
+ "datos_hasta": "2026-11-17T19:30:00Z",
+ "dias_desde_datos": 0,
  "fuente": {
   "nombre": "Euroleague Basketball",
   "url": "https://www.euroleaguebasketball.net"
  },
  "con_cuotas": false,
- "proximo": "2026-11-17T17:00:00Z",
+ "proximo": "2026-11-18T16:30:00Z",
  "predicciones": [
-  {
-   "id": "U2026_117",
-   "fecha": "2026-11-17T16:30:00Z",
-   "local": "Turk Telekom Ankara",
-   "visitante": "La Laguna Tenerife",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.4797,
-   "pv": 0.5203,
-   "elo_l": 1565,
-   "elo_v": 1587,
-   "bal_l": [
-    3,
-    4
-   ],
-   "bal_v": [
-    6,
-    1
-   ],
-   "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "U2026_127",
-   "fecha": "2026-11-17T17:00:00Z",
-   "local": "Balkan Botevgrad",
-   "visitante": "ratiopharm ulm",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.4566,
-   "pv": 0.5434,
-   "elo_l": 1415,
-   "elo_v": 1453,
-   "bal_l": [
-    1,
-    6
-   ],
-   "bal_v": [
-    3,
-    4
-   ],
-   "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "U2026_128",
-   "fecha": "2026-11-17T19:00:00Z",
-   "local": "Roma Basketball",
-   "visitante": "Bahcesehir College Istanbul",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.2868,
-   "pv": 0.7132,
-   "elo_l": 1479,
-   "elo_v": 1618,
-   "bal_l": [
-    3,
-    4
-   ],
-   "bal_v": [
-    6,
-    1
-   ],
-   "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "U2026_114",
-   "fecha": "2026-11-17T19:00:00Z",
-   "local": "Rostock Seawolves",
-   "visitante": "Hapoel Midtown Jerusalem",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.2076,
-   "pv": 0.7924,
-   "elo_l": 1461,
-   "elo_v": 1662,
-   "bal_l": [
-    2,
-    5
-   ],
-   "bal_v": [
-    7,
-    0
-   ],
-   "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "U2026_120",
-   "fecha": "2026-11-17T19:30:00Z",
-   "local": "London Lions",
-   "visitante": "Siauliai Basketball",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6969,
-   "pv": 0.3031,
-   "elo_l": 1506,
-   "elo_v": 1472,
-   "bal_l": [
-    4,
-    3
-   ],
-   "bal_v": [
-    3,
-    4
-   ],
-   "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "U2026_115",
    "fecha": "2026-11-18T16:30:00Z",
@@ -381,6 +266,121 @@
  ],
  "recientes": [
   {
+   "id": "U2026_120",
+   "fecha": "2026-11-17T19:30:00Z",
+   "local": "London Lions",
+   "visitante": "Siauliai Basketball",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6969,
+   "pv": 0.3031,
+   "elo_l": 1506,
+   "elo_v": 1472,
+   "bal_l": [
+    4,
+    3
+   ],
+   "bal_v": [
+    3,
+    4
+   ],
+   "creada": "2026-11-16 02:26 UTC",
+   "resultado": "L",
+   "marcador": "68-55"
+  },
+  {
+   "id": "U2026_128",
+   "fecha": "2026-11-17T19:00:00Z",
+   "local": "Roma Basketball",
+   "visitante": "Bahcesehir College Istanbul",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.2868,
+   "pv": 0.7132,
+   "elo_l": 1479,
+   "elo_v": 1618,
+   "bal_l": [
+    3,
+    4
+   ],
+   "bal_v": [
+    6,
+    1
+   ],
+   "creada": "2026-11-16 02:26 UTC",
+   "resultado": "V",
+   "marcador": "70-92"
+  },
+  {
+   "id": "U2026_114",
+   "fecha": "2026-11-17T19:00:00Z",
+   "local": "Rostock Seawolves",
+   "visitante": "Hapoel Midtown Jerusalem",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.2076,
+   "pv": 0.7924,
+   "elo_l": 1461,
+   "elo_v": 1662,
+   "bal_l": [
+    2,
+    5
+   ],
+   "bal_v": [
+    7,
+    0
+   ],
+   "creada": "2026-11-16 02:26 UTC",
+   "resultado": "V",
+   "marcador": "80-91"
+  },
+  {
+   "id": "U2026_127",
+   "fecha": "2026-11-17T17:00:00Z",
+   "local": "Balkan Botevgrad",
+   "visitante": "ratiopharm ulm",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4566,
+   "pv": 0.5434,
+   "elo_l": 1415,
+   "elo_v": 1453,
+   "bal_l": [
+    1,
+    6
+   ],
+   "bal_v": [
+    3,
+    4
+   ],
+   "creada": "2026-11-16 02:26 UTC",
+   "resultado": "L",
+   "marcador": "86-78"
+  },
+  {
+   "id": "U2026_117",
+   "fecha": "2026-11-17T16:30:00Z",
+   "local": "Turk Telekom Ankara",
+   "visitante": "La Laguna Tenerife",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4797,
+   "pv": 0.5203,
+   "elo_l": 1565,
+   "elo_v": 1587,
+   "bal_l": [
+    3,
+    4
+   ],
+   "bal_v": [
+    6,
+    1
+   ],
+   "creada": "2026-11-16 02:26 UTC",
+   "resultado": "V",
+   "marcador": "88-91"
+  },
+  {
    "id": "U2026_103",
    "fecha": "2026-11-12T19:00:00Z",
    "local": "Skyliners Frankfurt",
@@ -567,14 +567,14 @@
  ],
  "directo": {
   "total": 24,
-  "resueltas": 8,
-  "aciertos": 5,
-  "acierto": 0.625,
+  "resueltas": 13,
+  "aciertos": 9,
+  "acierto": 0.6923,
   "ic": [
-   0.3057,
-   0.8632
+   0.4237,
+   0.8732
   ],
-  "brier": 0.1974,
+  "brier": 0.1786,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -582,14 +582,14 @@
  "ranking": [
   {
    "equipo": "Hapoel Midtown Jerusalem",
-   "elo": 1662,
-   "g": 7,
+   "elo": 1670,
+   "g": 8,
    "p": 0
   },
   {
    "equipo": "Bahcesehir College Istanbul",
-   "elo": 1618,
-   "g": 6,
+   "elo": 1636,
+   "g": 7,
    "p": 1
   },
   {
@@ -611,6 +611,12 @@
    "p": 0
   },
   {
+   "equipo": "La Laguna Tenerife",
+   "elo": 1596,
+   "g": 7,
+   "p": 1
+  },
+  {
    "equipo": "Besiktas GAIN Istanbul",
    "elo": 1595,
    "g": 0,
@@ -629,28 +635,22 @@
    "p": 0
   },
   {
-   "equipo": "La Laguna Tenerife",
-   "elo": 1587,
-   "g": 6,
-   "p": 1
-  },
-  {
    "equipo": "Tofas Bursa",
    "elo": 1570,
    "g": 6,
    "p": 1
   },
   {
-   "equipo": "Turk Telekom Ankara",
-   "elo": 1565,
-   "g": 3,
-   "p": 4
-  },
-  {
    "equipo": "Gran Canaria",
    "elo": 1557,
    "g": 0,
    "p": 0
+  },
+  {
+   "equipo": "Turk Telekom Ankara",
+   "elo": 1556,
+   "g": 3,
+   "p": 5
   },
   {
    "equipo": "Buducnost VOLI Podgorica",
@@ -732,8 +732,8 @@
   },
   {
    "equipo": "London Lions",
-   "elo": 1506,
-   "g": 4,
+   "elo": 1518,
+   "g": 5,
    "p": 3
   },
   {
@@ -815,27 +815,21 @@
    "p": 0
   },
   {
-   "equipo": "Roma Basketball",
-   "elo": 1479,
-   "g": 3,
-   "p": 4
-  },
-  {
    "equipo": "BOSNA BH Telecom Sarajevo",
    "elo": 1478,
    "g": 2,
    "p": 5
   },
   {
-   "equipo": "Siauliai Basketball",
-   "elo": 1472,
+   "equipo": "Roma Basketball",
+   "elo": 1461,
    "g": 3,
-   "p": 4
+   "p": 5
   },
   {
-   "equipo": "Rostock Seawolves",
-   "elo": 1461,
-   "g": 2,
+   "equipo": "Siauliai Basketball",
+   "elo": 1460,
+   "g": 3,
    "p": 5
   },
   {
@@ -851,10 +845,10 @@
    "p": 5
   },
   {
-   "equipo": "ratiopharm ulm",
-   "elo": 1453,
-   "g": 3,
-   "p": 4
+   "equipo": "Rostock Seawolves",
+   "elo": 1452,
+   "g": 2,
+   "p": 6
   },
   {
    "equipo": "Aris Thessaloniki Betsson",
@@ -869,6 +863,12 @@
    "p": 5
   },
   {
+   "equipo": "ratiopharm ulm",
+   "elo": 1441,
+   "g": 3,
+   "p": 5
+  },
+  {
    "equipo": "7Bet-Lietkabelis Panevezys",
    "elo": 1428,
    "g": 0,
@@ -879,6 +879,12 @@
    "elo": 1428,
    "g": 0,
    "p": 0
+  },
+  {
+   "equipo": "Balkan Botevgrad",
+   "elo": 1427,
+   "g": 2,
+   "p": 6
   },
   {
    "equipo": "Recoletas Salud San Pablo Burgos",
@@ -897,12 +903,6 @@
    "elo": 1422,
    "g": 3,
    "p": 4
-  },
-  {
-   "equipo": "Balkan Botevgrad",
-   "elo": 1415,
-   "g": 1,
-   "p": 6
   },
   {
    "equipo": "Aris Midea Thessaloniki",

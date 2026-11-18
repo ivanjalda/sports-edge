@@ -2418,8 +2418,8 @@
     6
    ],
    "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "102-111",
    "cuota": {
     "mejor": {
      "V": {
@@ -2470,8 +2470,8 @@
     3
    ],
    "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "106-105",
    "cuota": {
     "mejor": {
      "L": {
@@ -2522,8 +2522,8 @@
     4
    ],
    "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "93-105",
    "cuota": {
     "mejor": {
      "V": {
@@ -2933,7 +2933,99 @@
    "creada": "2026-11-17 04:48 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401910019",
+   "fecha": "2026-11-20T01:00:00Z",
+   "local": "Memphis Grizzlies",
+   "visitante": "Golden State Warriors",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5324,
+   "pv": 0.4676,
+   "elo_l": 1459,
+   "elo_v": 1504,
+   "bal_l": [
+    10,
+    4
+   ],
+   "bal_v": [
+    8,
+    6
+   ],
+   "creada": "2026-11-18 03:53 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401910020",
+   "fecha": "2026-11-20T01:00:00Z",
+   "local": "Milwaukee Bucks",
+   "visitante": "Portland Trail Blazers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.2943,
+   "pv": 0.7057,
+   "elo_l": 1349,
+   "elo_v": 1556,
+   "bal_l": [
+    1,
+    13
+   ],
+   "bal_v": [
+    9,
+    5
+   ],
+   "creada": "2026-11-18 03:53 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401910021",
+   "fecha": "2026-11-20T01:00:00Z",
+   "local": "Minnesota Timberwolves",
+   "visitante": "New York Knicks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4918,
+   "pv": 0.5082,
+   "elo_l": 1597,
+   "elo_v": 1664,
+   "bal_l": [
+    11,
+    4
+   ],
+   "bal_v": [
+    8,
+    6
+   ],
+   "creada": "2026-11-18 03:53 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401910022",
+   "fecha": "2026-11-20T01:00:00Z",
+   "local": "San Antonio Spurs",
+   "visitante": "LA Clippers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8129,
+   "pv": 0.1871,
+   "elo_l": 1690,
+   "elo_v": 1498,
+   "bal_l": [
+    12,
+    3
+   ],
+   "bal_v": [
+    4,
+    8
+   ],
+   "creada": "2026-11-18 03:53 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-17 16:51 UTC"
+ "actualizado": "2026-11-18 03:53 UTC"
 }

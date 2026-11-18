@@ -283,8 +283,8 @@
     6
    ],
    "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "80-75"
   },
   {
    "id": "E2026_113",
@@ -306,8 +306,8 @@
     3
    ],
    "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "95-97"
   },
   {
    "id": "E2026_117",
@@ -329,8 +329,8 @@
     7
    ],
    "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "115-81"
   },
   {
    "id": "E2026_112",
@@ -352,8 +352,8 @@
     8
    ],
    "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "117-114"
   },
   {
    "id": "E2026_116",
@@ -375,8 +375,8 @@
     6
    ],
    "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "86-89"
   },
   {
    "id": "E2026_115",
@@ -398,8 +398,8 @@
     4
    ],
    "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "91-77"
   },
   {
    "id": "E2026_114",
@@ -421,8 +421,8 @@
     5
    ],
    "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "82-85"
   },
   {
    "id": "E2026_118",
@@ -444,8 +444,8 @@
     3
    ],
    "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "64-76"
   },
   {
    "id": "E2026_119",
@@ -467,8 +467,8 @@
     3
    ],
    "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "84-79"
   },
   {
    "id": "E2026_120",
@@ -492,7 +492,145 @@
    "creada": "2026-11-16 18:27 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "E2026_122",
+   "fecha": "2026-11-19T17:15:00Z",
+   "local": "Maccabi Rapyd Tel Aviv",
+   "visitante": "Dubai Basketball",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4834,
+   "pv": 0.5166,
+   "elo_l": 1439,
+   "elo_v": 1551,
+   "bal_l": [
+    3,
+    9
+   ],
+   "bal_v": [
+    8,
+    4
+   ],
+   "creada": "2026-11-18 03:53 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_121",
+   "fecha": "2026-11-19T18:00:00Z",
+   "local": "Zalgiris Kaunas",
+   "visitante": "Panathinaikos AKTOR Athens",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6441,
+   "pv": 0.3559,
+   "elo_l": 1570,
+   "elo_v": 1567,
+   "bal_l": [
+    8,
+    4
+   ],
+   "bal_v": [
+    8,
+    4
+   ],
+   "creada": "2026-11-18 03:53 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_124",
+   "fecha": "2026-11-19T19:00:00Z",
+   "local": "FC Bayern Munich",
+   "visitante": "Kosner Baskonia Vitoria-Gasteiz",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7222,
+   "pv": 0.2778,
+   "elo_l": 1446,
+   "elo_v": 1380,
+   "bal_l": [
+    3,
+    9
+   ],
+   "bal_v": [
+    1,
+    11
+   ],
+   "creada": "2026-11-18 03:53 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_123",
+   "fecha": "2026-11-19T19:30:00Z",
+   "local": "Armani Olimpia Milan",
+   "visitante": "Fenerbahce Tarfin Istanbul",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4993,
+   "pv": 0.5007,
+   "elo_l": 1446,
+   "elo_v": 1546,
+   "bal_l": [
+    2,
+    10
+   ],
+   "bal_v": [
+    8,
+    4
+   ],
+   "creada": "2026-11-18 03:53 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_126",
+   "fecha": "2026-11-19T19:45:00Z",
+   "local": "Paris Basketball",
+   "visitante": "Hapoel IBI Tel Aviv",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5778,
+   "pv": 0.4222,
+   "elo_l": 1502,
+   "elo_v": 1547,
+   "bal_l": [
+    6,
+    6
+   ],
+   "bal_v": [
+    7,
+    5
+   ],
+   "creada": "2026-11-18 03:53 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_125",
+   "fecha": "2026-11-19T20:00:00Z",
+   "local": "Valencia Basket",
+   "visitante": "Virtus Bologna",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.847,
+   "pv": 0.153,
+   "elo_l": 1616,
+   "elo_v": 1418,
+   "bal_l": [
+    9,
+    3
+   ],
+   "bal_v": [
+    5,
+    7
+   ],
+   "creada": "2026-11-18 03:53 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-17 16:51 UTC"
+ "actualizado": "2026-11-18 03:53 UTC"
 }

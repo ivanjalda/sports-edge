@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-11-17 16:50 UTC",
+ "actualizado": "2026-11-18 03:53 UTC",
  "datos_hasta": 20261114,
- "dias_desde_datos": 3,
+ "dias_desde_datos": 4,
  "fuentes": {
   "ATP": {
    "nombre": "TennisMyLife",
@@ -19,100 +19,6 @@
  ],
  "sin_datos": [],
  "predicciones": [
-  {
-   "id": "b347b8bd2e85f10eca7dc7160026443b",
-   "torneo": "ATP Finals",
-   "tour": "ATP",
-   "sup": "Hard",
-   "fecha": "2026-11-17T13:00:00Z",
-   "j1": "Arthur Fils",
-   "j2": "Rafael Jodar",
-   "id1": "atp:F0F1",
-   "id2": "atp:J0DZ",
-   "p1": 0.519,
-   "p2": 0.481,
-   "n1": 195,
-   "n2": 67,
-   "creada": "2026-11-16 16:50 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "1": {
-      "c": 2.02,
-      "casa": "Betfair"
-     },
-     "2": {
-      "c": 1.96,
-      "casa": "Betfair"
-     }
-    },
-    "mercado": {
-     "1": 0.4976,
-     "2": 0.5024
-    },
-    "casas": 18,
-    "ev": {
-     "1": 0.0484,
-     "2": -0.0572
-    },
-    "valor": [],
-    "actualizado": "2026-11-17 01:35 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-16 16:50 UTC",
-    "valor": [],
-    "1": 2.02,
-    "2": 1.94
-   }
-  },
-  {
-   "id": "f0a6612a0e894025a58459b04ecd02c9",
-   "torneo": "ATP Finals",
-   "tour": "ATP",
-   "sup": "Hard",
-   "fecha": "2026-11-17T19:30:00Z",
-   "j1": "Alexander Zverev",
-   "j2": "Ben Shelton",
-   "id1": "atp:Z355",
-   "id2": "atp:S0S1",
-   "p1": 0.6223,
-   "p2": 0.3777,
-   "n1": 637,
-   "n2": 251,
-   "creada": "2026-11-16 16:50 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "1": {
-      "c": 1.54,
-      "casa": "1xBet"
-     },
-     "2": {
-      "c": 2.92,
-      "casa": "Betfair"
-     }
-    },
-    "mercado": {
-     "1": 0.6449,
-     "2": 0.3551
-    },
-    "casas": 20,
-    "ev": {
-     "1": -0.0417,
-     "2": 0.1029
-    },
-    "valor": [],
-    "actualizado": "2026-11-17 16:50 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-16 16:50 UTC",
-    "valor": [],
-    "1": 1.54,
-    "2": 2.82
-   }
-  },
   {
    "id": "a3e64105988f48f4c6447c9ca6de0030",
    "torneo": "ATP Finals",
@@ -210,9 +116,9 @@
  ],
  "directo": {
   "total": 18,
-  "resueltas": 13,
-  "acierto": 0.6154,
-  "brier": 0.2427,
+  "resueltas": 15,
+  "acierto": 0.6667,
+  "brier": 0.2353,
   "apuestas": 4,
   "roi": -0.47
  }

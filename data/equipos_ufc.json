@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-11-17 16:51 UTC",
+ "actualizado": "2026-11-18 03:53 UTC",
  "liga": "UFC",
  "datos_hasta": "2026-11-15T02:00:00Z",
- "dias_desde_datos": 2,
+ "dias_desde_datos": 3,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
@@ -113,6 +113,121 @@
     "L": 1.53,
     "V": 2.8
    }
+  },
+  {
+   "id": "401927851",
+   "fecha": "2026-11-21T18:00:00Z",
+   "local": "Jared Cannonier",
+   "visitante": "Ikram Aliskerov",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.3155,
+   "pv": 0.6845,
+   "elo_l": 1484,
+   "elo_v": 1588,
+   "bal_l": [
+    0,
+    1
+   ],
+   "bal_v": [
+    1,
+    0
+   ],
+   "creada": "2026-11-18 03:53 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401927855",
+   "fecha": "2026-11-21T18:00:00Z",
+   "local": "Kyoji Horiguchi",
+   "visitante": "Asu Almabayev",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.3668,
+   "pv": 0.6332,
+   "elo_l": 1535,
+   "elo_v": 1614,
+   "bal_l": [
+    1,
+    1
+   ],
+   "bal_v": [
+    1,
+    0
+   ],
+   "creada": "2026-11-18 03:53 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401922278",
+   "fecha": "2026-11-21T18:00:00Z",
+   "local": "Dan Hooker",
+   "visitante": "Brian Ortega",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.5488,
+   "pv": 0.4512,
+   "elo_l": 1518,
+   "elo_v": 1469,
+   "bal_l": [
+    0,
+    1
+   ],
+   "bal_v": [
+    0,
+    0
+   ],
+   "creada": "2026-11-18 03:53 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401927850",
+   "fecha": "2026-11-21T18:00:00Z",
+   "local": "Aljamain Sterling",
+   "visitante": "Kevin Vallejos",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.5043,
+   "pv": 0.4957,
+   "elo_l": 1570,
+   "elo_v": 1567,
+   "bal_l": [
+    1,
+    0
+   ],
+   "bal_v": [
+    1,
+    0
+   ],
+   "creada": "2026-11-18 03:53 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401922277",
+   "fecha": "2026-11-21T18:00:00Z",
+   "local": "Jiří Procházka",
+   "visitante": "Navajo Stirling",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.3396,
+   "pv": 0.6604,
+   "elo_l": 1529,
+   "elo_v": 1614,
+   "bal_l": [
+    0,
+    1
+   ],
+   "bal_v": [
+    3,
+    0
+   ],
+   "creada": "2026-11-18 03:53 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
  "recientes": [
@@ -534,7 +649,7 @@
   }
  ],
  "directo": {
-  "total": 11,
+  "total": 16,
   "resueltas": 8,
   "aciertos": 5,
   "acierto": 0.625,
@@ -3519,16 +3634,16 @@
    "p": 1
   },
   {
-   "equipo": "Ding Meng",
-   "elo": 1481,
-   "g": 0,
-   "p": 1
-  },
-  {
    "equipo": "Nick Maximov",
    "elo": 1481,
    "g": 0,
    "p": 0
+  },
+  {
+   "equipo": "Ding Meng",
+   "elo": 1481,
+   "g": 0,
+   "p": 1
   },
   {
    "equipo": "Blagoy Ivanov",
@@ -4761,12 +4876,6 @@
    "p": 0
   },
   {
-   "equipo": "Jay Perrin",
-   "elo": 1442,
-   "g": 0,
-   "p": 0
-  },
-  {
    "equipo": "David Dvorak",
    "elo": 1442,
    "g": 0,
@@ -4779,13 +4888,19 @@
    "p": 0
   },
   {
-   "equipo": "Jessica-Rose Clark",
+   "equipo": "Jay Perrin",
    "elo": 1442,
    "g": 0,
    "p": 0
   },
   {
    "equipo": "Ramona Pascual",
+   "elo": 1442,
+   "g": 0,
+   "p": 0
+  },
+  {
+   "equipo": "Jessica-Rose Clark",
    "elo": 1442,
    "g": 0,
    "p": 0
