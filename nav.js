@@ -2,6 +2,16 @@
    cabecera con menu, modo dia/noche, ancho de pagina y columnas laterales de noticias.
    Cada pagina pone <header id="top"></header>, carga este archivo y llama a navRender(lang, "seccion")
    dentro de su render(). Los botones ES/EN llaman a setLang() de cada pagina. */
+/* Estadisticas de visitas: Cloudflare Web Analytics (sin cookies, no sigue a nadie) */
+(function(){
+  try{
+    if(location.hostname.indexOf("sportevlab.com")<0 || document.querySelector("script[data-cf-beacon]")) return;
+    var b=document.createElement("script"); b.defer=true;
+    b.src="https://static.cloudflareinsights.com/beacon.min.js";
+    b.setAttribute("data-cf-beacon",'{"token": "153704af6eb349bd830a7e0f6535019e"}');
+    document.head.appendChild(b);
+  }catch(e){}
+})();
 (function(){
   var TX={
     es:{home:"Inicio",futbol:"Fútbol",tenis:"Tenis",baloncesto:"Baloncesto",hockey:"Hockey",americano:"Fútbol americano",mma:"MMA",beisbol:"Béisbol",voleibol:"Voleibol",rugby:"Rugby",motor:"Motor",golf:"Golf",directo:"En directo",stats:"Estadísticas",guia:"Guía",aprender:"Aprender",records:"Récords",entrar:"Entrar",micuenta:"Mi cuenta",dd:["🏠 Mi espacio","⭐ Mis favoritos","🔔 Mis avisos","⚙️ Ajustes","🚪 Cerrar sesión"],
