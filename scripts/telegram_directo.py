@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """SportEVLab - Telegram: resultados finalizados (cada 30 min) y balance del dia (por la noche).
+Se envia en espanol al canal @sportevlab y en ingles al canal @sportevlab_en.
 
 Solo libreria estandar. Nada se inventa:
 - Los marcadores finales salen del marcador publico de ESPN.
@@ -29,7 +30,8 @@ except Exception:
     TZ = timezone.utc
 
 TOKEN = os.environ.get("TELEGRAM_TOKEN", "").strip()
-CHAT = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
+CANALES = {"es": os.environ.get("TELEGRAM_CANAL_ES", "").strip() or "@sportevlab",
+           "en": os.environ.get("TELEGRAM_CANAL_EN", "").strip() or "@sportevlab_en"}
 PRUEBA = bool(os.environ.get("TELEGRAM_PRUEBA"))
 MODO = os.environ.get("MODO", "resultados").strip().lower()
 WEB = "https://sportevlab.com/"
@@ -70,6 +72,11 @@ NOMBRES = {"futbol": u"⚽ Fútbol", "tenis": u"\U0001F3BE Tenis", "baloncesto":
            "hockey": u"\U0001F3D2 Hockey", "americano": u"\U0001F3C8 Fútbol americano", "mma": u"\U0001F94B MMA",
            "beisbol": u"⚾ Béisbol", "voleibol": u"\U0001F3D0 Voleibol",
            "rugby": u"\U0001F3C9 Rugby", "motor": u"\U0001F3C1 Motor"}
+NOMBRES_EN = {"futbol": u"⚽ Football", "tenis": u"\U0001F3BE Tennis", "baloncesto": u"\U0001F3C0 Basketball",
+              "hockey": u"\U0001F3D2 Hockey", "americano": u"\U0001F3C8 American football", "mma": u"\U0001F94B MMA",
+              "beisbol": u"⚾ Baseball", "voleibol": u"\U0001F3D0 Volleyball",
+              "rugby": u"\U0001F3C9 Rugby", "motor": u"\U0001F3C1 Motorsport"}
+LIGA_EN = {"Seis Naciones": "Six Nations", "NCAA femenina": "NCAA Women"}
 ORDEN = ["futbol", "tenis", "baloncesto", "hockey", "americano", "mma", "beisbol", "voleibol", "rugby", "motor"]
 
 
@@ -125,9 +132,9 @@ def pedir(url):
         return json.loads(r.read().decode("utf-8"))
 
 
-def enviar(texto):
+def enviar(texto, chat):
     url = "https://api.telegram.org/bot%s/sendMessage" % TOKEN
-    datos = urllib.parse.urlencode({"chat_id": CHAT, "text": texto, "parse_mode": "HTML",
+    datos = urllib.parse.urlencode({"chat_id": chat, "text": texto, "parse_mode": "HTML",
                                     "disable_web_page_preview": "true"}).encode()
     with urllib.request.urlopen(urllib.request.Request(url, data=datos), timeout=30) as r:
         r.read()
@@ -224,19 +231,23 @@ def terminados(ahora):
 
 
 # ------------------------------------------------------------- mensajes
-def bloque_resultados(nuevos):
-    lin = [u"\U0001F3C1 <b>RESULTADOS FINALIZADOS</b>"]
+def bloque_resultados(nuevos, lang):
+    en = lang == "en"
+    lin = [u"\U0001F3C1 <b>%s</b>" % ("FINAL RESULTS" if en else "RESULTADOS FINALIZADOS")]
     grupos = {}
     for x in nuevos:
         grupos.setdefault((x["ic"], x["liga"]), []).append(x)
     for (ic, liga), xs in grupos.items():
-        lin.append(u"\n%s <b>%s</b>" % (ic, e(liga)))
+        lin.append(u"\n%s <b>%s</b>" % (ic, e(LIGA_EN.get(liga, liga) if en else liga)))
         for x in xs[:MAX_POR_LIGA]:
-            lin.append(u"%s %s <b>%d – %d</b> %s\n     Dijimos: %s %s" % (
-                u"✅" if x["ok"] else u"❌", e(x["local"]), x["gl"], x["gv"], e(x["visit"]), e(x["pick"]), pc(x["prob"])))
+            pk = "Draw" if (en and x["pick"] == "Empate") else x["pick"]
+            lin.append(u"%s %s <b>%d – %d</b> %s\n     %s: %s %s" % (
+                u"✅" if x["ok"] else u"❌", e(x["local"]), x["gl"], x["gv"], e(x["visit"]),
+                "Our pick" if en else "Dijimos", e(pk), pc(x["prob"])))
         if len(xs) > MAX_POR_LIGA:
             ok = sum(1 for x in xs[MAX_POR_LIGA:] if x["ok"])
-            lin.append(u"… y %d más (%d acertados). Todos en la web." % (len(xs) - MAX_POR_LIGA, ok))
+            lin.append((u"… and %d more (%d correct). All on the website." if en else
+                        u"… y %d más (%d acertados). Todos en la web.") % (len(xs) - MAX_POR_LIGA, ok))
     return "\n".join(lin)
 
 
@@ -277,7 +288,7 @@ def ciclo(estado, ahora, balance):
     print("[%s] Partidos terminados leidos: %d (fallos de lectura: %d). Con pronostico y sin avisar: %d" %
           (ahora.astimezone(TZ).strftime("%H:%M"), len(lista), fallos, len(nuevos)))
 
-    bloques = []
+    bloques = {"es": [], "en": []}
     # Carreras (F1 y MotoGP): resultado de la ultima carrera frente a nuestro favorito
     for serie, ic, nomb in (("f1", u"\U0001F3CE", u"Fórmula 1"), ("motogp", u"\U0001F3CD", u"MotoGP"),
                             ("golf_pga", u"\u26f3", u"PGA Tour"), ("golf_dp", u"\u26f3", u"DP World Tour")):
@@ -298,26 +309,36 @@ def ciclo(estado, ahora, balance):
             estado["enviados"][k] = {"dia": dia, "dep": "motor", "ok": bool(r["acierto"])}
             if not reciente or primera:
                 continue
-            bloques.append(u"%s <b>%s · %s</b>\n\U0001F3C6 Ganó <b>%s</b>%s\n%s Nuestro favorito: %s (%s de ganar)%s" % (
+            golf = serie.startswith("golf")
+            podio = ", ".join(e(x) for x in r.get("podio_n", [])[1:])
+            bloques["es"].append(u"%s <b>%s · %s</b>\n\U0001F3C6 Ganó <b>%s</b>%s\n%s Nuestro favorito: %s (%s de ganar)%s" % (
                 ic, nomb, e(p["nombre"]), e(r["ganador_n"]),
-                ((u" · top 3: " if serie.startswith("golf") else u" · podio: ") + ", ".join(e(x) for x in r.get("podio_n", [])[1:])) if r.get("podio_n") else "",
+                ((u" · top 3: " if golf else u" · podio: ") + podio) if r.get("podio_n") else "",
                 u"✅" if r["acierto"] else u"❌", e(p["fav"]["n"]), pc(p["fav"]["pw"]),
                 u"" if r["acierto"] else u" · al ganador le dábamos %s" % pc(r.get("p_ganador") or 0)))
+            bloques["en"].append(u"%s <b>%s · %s</b>\n\U0001F3C6 Winner: <b>%s</b>%s\n%s Our favourite: %s (%s to win)%s" % (
+                ic, nomb.replace(u"Fórmula 1", "Formula 1"), e(p["nombre"]), e(r["ganador_n"]),
+                ((u" · top 3: " if golf else u" · podium: ") + podio) if r.get("podio_n") else "",
+                u"✅" if r["acierto"] else u"❌", e(p["fav"]["n"]), pc(p["fav"]["pw"]),
+                u"" if r["acierto"] else u" · we gave the winner %s" % pc(r.get("p_ganador") or 0)))
     if nuevos:
         if primera:
             print("Primera ejecucion: se apuntan %d partidos ya terminados sin enviarlos." % len(nuevos))
         else:
-            bloques.append(bloque_resultados(nuevos))
+            for lang in ("es", "en"):
+                bloques[lang].append(bloque_resultados(nuevos, lang))
         for x in nuevos:
             estado["enviados"][x["k"]] = {"dia": dia, "dep": x["dep"], "ok": x["ok"]}
     estado["inicio"] = estado.get("inicio") or ahora.strftime("%Y-%m-%d %H:%M UTC")
 
     hoy = resumen_dia(estado, dia)
-    if bloques:
+    if bloques["es"]:
         a = sum(v[0] for v in hoy.values())
         n = sum(v[1] for v in hoy.values())
-        bloques.append(u"\U0001F4C8 Hoy llevamos <b>%d de %d</b> acertados (%s)\n\U0001F534 Partidos en directo: %sdirecto.html" %
-                       (a, n, pc(a / float(n)) if n else "-", WEB))
+        bloques["es"].append(u"\U0001F4C8 Hoy llevamos <b>%d de %d</b> acertados (%s)\n\U0001F534 Partidos en directo: %sdirecto.html" %
+                             (a, n, pc(a / float(n)) if n else "-", WEB))
+        bloques["en"].append(u"\U0001F4C8 Today so far: <b>%d of %d</b> correct (%s)\n\U0001F534 Live games: %sdirecto.html" %
+                             (a, n, pc(a / float(n)) if n else "-", WEB))
 
     if balance and estado.get("balance") != dia:
         fechatxt = ahora.astimezone(TZ).strftime("%d/%m/%Y")
@@ -326,37 +347,51 @@ def ciclo(estado, ahora, balance):
             n = sum(v[1] for v in hoy.values())
             lin = [u"\U0001F4CA <b>BALANCE DEL DÍA</b> · %s" % fechatxt,
                    u"Hoy acertamos <b>%d de %d</b> pronósticos (%s)\n" % (a, n, pc(a / float(n)))]
+            len_ = [u"\U0001F4CA <b>DAILY BALANCE</b> · %s" % fechatxt,
+                    u"Today we got <b>%d of %d</b> predictions right (%s)\n" % (a, n, pc(a / float(n)))]
             for d in ORDEN:
                 if d in hoy:
                     lin.append(u"%s: %d de %d (%s)" % (NOMBRES[d], hoy[d][0], hoy[d][1], pc(hoy[d][0] / float(hoy[d][1]))))
+                    len_.append(u"%s: %d of %d (%s)" % (NOMBRES_EN[d], hoy[d][0], hoy[d][1], pc(hoy[d][0] / float(hoy[d][1]))))
             lin.append(u"\nTodos los pronósticos se publican antes de cada partido y no se cambian nunca.")
             lin.append(u"\U0001F3AF Mañana por la mañana, los nuevos pronósticos.\n\U0001F310 %s" % WEB)
             lin.append(u"⚠ Solo +18. Juega con responsabilidad.")
-            bloques.append("\n".join(lin))
+            len_.append(u"\nEvery prediction is published before the game and never changed.")
+            len_.append(u"\U0001F3AF New predictions tomorrow morning.\n\U0001F310 %s" % WEB)
+            len_.append(u"⚠ 18+ only. Please gamble responsibly.")
+            bloques["es"].append("\n".join(lin))
+            bloques["en"].append("\n".join(len_))
         estado["balance"] = dia
 
     limite = (ahora - timedelta(days=4)).astimezone(TZ).strftime("%Y-%m-%d")
     estado["enviados"] = {k: v for k, v in estado["enviados"].items() if v.get("dia", "") >= limite}
-    return trocear(bloques)
+    return {lang: trocear(b) for lang, b in bloques.items()}
 
 
 def mandar(mensajes):
+    """mensajes = {"es": [...], "en": [...]}. Devuelve False solo si no se pudo enviar a ningun canal."""
     if PRUEBA:
-        print("\n\n=====\n".join(mensajes) if mensajes else "(no hay nada que enviar)")
+        for lang, ms in mensajes.items():
+            print(("\n===== %s =====\n" % lang) + ("\n\n-----\n".join(ms) if ms else "(no hay nada que enviar)"))
         return True
-    try:
-        for m in mensajes:
-            enviar(m)
-        print("Telegram: %d mensaje(s) enviado(s)." % len(mensajes))
-        return True
-    except Exception as ex:
-        print("ERROR enviando a Telegram: %s" % ex)
-        return False
+    hay = enviados = 0
+    for lang, ms in mensajes.items():
+        if not ms:
+            continue
+        hay += 1
+        try:
+            for m in ms:
+                enviar(m, CANALES[lang])
+            enviados += 1
+            print("Telegram %s (%s): %d mensaje(s) enviado(s)." % (lang, CANALES[lang], len(ms)))
+        except Exception as ex:
+            print("ERROR enviando a Telegram %s (%s): %s" % (lang, CANALES[lang], ex))
+    return enviados > 0 or hay == 0
 
 
 def main():
-    if not PRUEBA and (not TOKEN or not CHAT):
-        print("Telegram no configurado (faltan TELEGRAM_TOKEN o TELEGRAM_CHAT_ID). No se envia nada.")
+    if not PRUEBA and not TOKEN:
+        print("Telegram no configurado (falta TELEGRAM_TOKEN). No se envia nada.")
         return
     ahora = datetime.now(timezone.utc)
     estado = leer(ESTADO, {})
@@ -439,8 +474,8 @@ def bucle():
 
 
 if __name__ == "__main__":
-    if not PRUEBA and (not TOKEN or not CHAT):
-        print("Telegram no configurado (faltan TELEGRAM_TOKEN o TELEGRAM_CHAT_ID). No se envia nada.")
+    if not PRUEBA and not TOKEN:
+        print("Telegram no configurado (falta TELEGRAM_TOKEN). No se envia nada.")
     elif MODO == "bucle":
         bucle()
     else:

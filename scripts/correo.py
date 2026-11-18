@@ -202,7 +202,8 @@ def cuando(f, T, hoy):
 
 
 def cuota_de(x, T):
-    return x["cuota"].replace(u"cuota", T["cuota"]).lstrip(u" ·") if x.get("cuota") else ""
+    c = x.get("cuota_en") if T is TX["en"] else x.get("cuota")
+    return c.lstrip(u" ·") if c else ""
 
 
 def html_correo(u, C, ahora, lang):
