@@ -144,7 +144,7 @@ def revisar_predicciones(datos):
             comprobar_prob(d.get("liga", nom), ident, [p.get("pl"), p.get("pv")])
             proximo_pasado(d.get("liga", nom), ident, fecha(p.get("fecha")), 30)
             n += 1
-    for s in ("f1", "motogp"):
+    for s in ("f1", "motogp", "nascar"):
         d = datos.get("carreras_%s.json" % s) or {}
         pr = d.get("proximo")
         if pr:

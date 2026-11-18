@@ -109,7 +109,7 @@ def pc(x):
 # ------------------------------------------------------------- contenido comun (igual para todos)
 def carreras(ahora):
     out = []
-    for serie, dep in (("f1", "motor"), ("motogp", "motor"), ("golf_pga", "golf"), ("golf_dp", "golf")):
+    for serie, dep in (("f1", "motor"), ("motogp", "motor"), ("nascar", "motor"), ("golf_pga", "golf"), ("golf_dp", "golf")):
         c = tg.leer("carreras_%s.json" % serie, {})
         pr = c.get("proximo") or {}
         try:

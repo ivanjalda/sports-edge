@@ -286,7 +286,7 @@ def construir(px, ahora, lang):
             bloques.append("\n".join(lin))
 
     # Carreras (F1, MotoGP y golf) en las proximas 72 horas
-    for serie, ic in (("f1", u"\U0001F3CE"), ("motogp", u"\U0001F3CD"), ("golf_pga", u"⛳"), ("golf_dp", u"⛳")):
+    for serie, ic in (("f1", u"\U0001F3CE"), ("motogp", u"\U0001F3CD"), ("nascar", u"\U0001F3C1"), ("golf_pga", u"⛳"), ("golf_dp", u"⛳")):
         c = leer("carreras_%s.json" % serie, {})
         pr = c.get("proximo") or {}
         try:

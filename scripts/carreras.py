@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Sports Edge - Carreras: Formula 1 y MotoGP (solo libreria estandar).
+"""Sports Edge - Carreras: Formula 1, MotoGP, NASCAR y golf (solo libreria estandar).
 
 Datos reales:
   - Formula 1: API publica Jolpica (continuacion de Ergast): resultados, clasificaciones y sprints desde 2014.
   - MotoGP: resultados oficiales publicos de motogp.com (carrera, sprint y clasificacion) desde 2016.
+  - NASCAR Cup Series y golf (PGA Tour, DP World Tour): marcador publico de ESPN.
 Motor propio: motor_carreras.py (fuerza de piloto y equipo + parrilla + abandonos, probado en carreras no vistas).
 
 Salida:
@@ -12,6 +13,7 @@ Salida:
   data/carreras_{serie}_resultados.json cache de resultados reales
 """
 import json
+import re
 import os
 import sys
 import time
@@ -36,6 +38,10 @@ SERIES = {
     # (los que no pasan el corte quedan detras). No hay equipos ni parrilla.
     "golf_pga": {"nombre": "PGA Tour", "desde": 2019, "espn": "golf/pga"},
     "golf_dp": {"nombre": "DP World Tour", "desde": 2019, "espn": "golf/eur"},
+    # NASCAR Cup Series: marcador publico de ESPN. Posicion final = orden oficial de llegada.
+    # Se excluyen las carreras de exhibicion y de clasificacion (Clash, Duels, All-Star Open).
+    "nascar": {"nombre": "NASCAR Cup Series", "desde": 2016, "espn": "racing/nascar-premier",
+               "excluir": ("clash", "duel", "all-star open")},
 }
 ESPN = "https://site.api.espn.com/apis/site/v2/sports/"
 
@@ -449,9 +455,15 @@ def golf_calendario(ruta, y):
     cal = ((d.get("leagues") or [{}])[0].get("calendar")) or []
     out = []
     for c in cal:
-        if not isinstance(c, dict) or not c.get("id"):
+        if not isinstance(c, dict):
             continue
-        out.append({"id": str(c["id"]), "nombre": c.get("label", ""), "ini": c.get("startDate"), "fin": c.get("endDate")})
+        ident = c.get("id")
+        if not ident:   # NASCAR: el id va dentro del enlace del evento (.../events/202502024256?...)
+            m = re.search(r"/events/(\d+)", str((c.get("event") or {}).get("$ref", "")))
+            ident = m.group(1) if m else None
+        if not ident:
+            continue
+        out.append({"id": str(ident), "nombre": c.get("label", ""), "ini": c.get("startDate"), "fin": c.get("endDate")})
     return out
 
 
@@ -476,6 +488,25 @@ def golf_evento(ruta, ev_id, dia):
     return None, None
 
 
+def nascar_evento(ruta, ev_id, dia):
+    """Carrera de NASCAR terminada: posicion final = orden oficial de llegada."""
+    d = pedir("%s%s/scoreboard?dates=%s" % (ESPN, ruta, dia), pausa=0.3)
+    for ev in d.get("events") or []:
+        if str(ev.get("id")) != ev_id:
+            continue
+        estado = ((ev.get("status") or {}).get("type") or {})
+        if not (estado.get("completed") or estado.get("name") == "STATUS_FINAL"):
+            return None, ev
+        comp = (ev.get("competitions") or [{}])[0]
+        res = []
+        for c in comp.get("competitors") or []:
+            nombre = (c.get("athlete") or {}).get("displayName") or (c.get("athlete") or {}).get("fullName") or ""
+            if nombre:
+                res.append({"id": str(c.get("id")), "n": nombre, "eq": "-", "pos": a_int(c.get("order")), "grid": None})
+        return (res or None), ev
+    return None, None
+
+
 def descargar_golf(clave, cache, ahora):
     ruta = SERIES[clave]["espn"]
     t0 = time.time()
@@ -493,6 +524,8 @@ def descargar_golf(clave, cache, ahora):
         for c in cal:
             if c["id"] in hechos or not c.get("fin"):
                 continue
+            if any(x in (c.get("nombre") or "").lower() for x in SERIES[clave].get("excluir", ())):
+                continue
             fin = parse_iso(c["fin"])
             if fin > ahora - timedelta(hours=12):
                 continue
@@ -501,7 +534,8 @@ def descargar_golf(clave, cache, ahora):
                 cache["eventos_hechos"] = sorted(hechos)
                 return False
             try:
-                res, ev = golf_evento(ruta, c["id"], fin.strftime("%Y%m%d"))
+                evento = nascar_evento if clave == "nascar" else golf_evento
+                res, ev = evento(ruta, c["id"], fin.strftime("%Y%m%d"))
             except Exception as ex:
                 print("Aviso: torneo %s no disponible (%s)" % (c["nombre"], ex))
                 completo = False
@@ -530,6 +564,8 @@ def golf_proximo(clave, cache, ahora):
         ini, fin = parse_iso(c["ini"]), parse_iso(c["fin"])
         if fin < ahora:
             continue
+        if any(x in (c.get("nombre") or "").lower() for x in SERIES[clave].get("excluir", ())):
+            continue
         prox = {"id": "%s-%s" % (clave, c["id"]), "temporada": ini.year, "nombre": c["nombre"], "circuito": "",
                 "pais": "", "fecha": iso(ini), "clasif": None, "sprint": False, "parrilla": False, "pilotos": []}
         if ini <= ahora:
@@ -554,7 +590,7 @@ def procesar(clave, ahora, stamp):
     print("---- %s" % cfg["nombre"])
     cache = leer_json("carreras_%s_resultados.json" % clave, {"carreras": {}})
     cache.setdefault("carreras", {})
-    if clave.startswith("golf"):
+    if cfg.get("espn"):
         completo = descargar_golf(clave, cache, ahora)
     elif clave == "f1":
         completo = descargar_f1(cache, ahora)
@@ -587,7 +623,7 @@ def procesar(clave, ahora, stamp):
     principales = [c for c in carreras if not c.get("sprint")]
     ultima = principales[-1] if principales else None
     abandono = MC.tasa_abandono(carreras)
-    if clave.startswith("golf"):
+    if cfg.get("espn"):
         prox = golf_proximo(clave, cache, ahora)
     else:
         prox = f1_proxima(ahora, ultima) if clave == "f1" else motogp_proxima(cache, ahora, ultima)
@@ -661,7 +697,7 @@ def procesar(clave, ahora, stamp):
               "equipos": sorted([{"eq": k, "f": v} for k, v in equipos.items()], key=lambda x: -x["f"]),
               "directo": estadisticas(hist), "recientes": recientes[:12], "ultimas": ganadores,
               "fuentes": ("Jolpica (Ergast) · resultados oficiales F1" if clave == "f1" else
-                          "Marcador público de ESPN" if clave.startswith("golf") else "Resultados oficiales de motogp.com"),
+                          "Marcador público de ESPN" if cfg.get("espn") else "Resultados oficiales de motogp.com"),
               "tipo_serie": "golf" if clave.startswith("golf") else "motor"}
     guardar_json("carreras_%s.json" % clave, salida)
     print("%s: %d predicciones resueltas ahora. Guardado." % (cfg["nombre"], resueltas))

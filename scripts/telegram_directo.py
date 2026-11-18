@@ -290,7 +290,7 @@ def ciclo(estado, ahora, balance):
 
     bloques = {"es": [], "en": []}
     # Carreras (F1 y MotoGP): resultado de la ultima carrera frente a nuestro favorito
-    for serie, ic, nomb in (("f1", u"\U0001F3CE", u"Fórmula 1"), ("motogp", u"\U0001F3CD", u"MotoGP"),
+    for serie, ic, nomb in (("f1", u"\U0001F3CE", u"Fórmula 1"), ("motogp", u"\U0001F3CD", u"MotoGP"), ("nascar", u"\U0001F3C1", u"NASCAR"),
                             ("golf_pga", u"\u26f3", u"PGA Tour"), ("golf_dp", u"\u26f3", u"DP World Tour")):
         hist = leer("carreras_%s_historial.json" % serie, {}).get("predicciones", [])
         por = {}

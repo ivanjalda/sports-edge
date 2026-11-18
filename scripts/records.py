@@ -21,7 +21,7 @@ NOMBRE = {"nba": "NBA", "euroliga": "Euroliga", "eurocup": "Eurocup", "ncaab": "
           "nhl": "NHL", "ncaah": "NCAA hockey", "nfl": "NFL", "ncaaf": "NCAA fútbol americano", "ufc": "UFC", "mlb": "MLB",
           "voley": "NCAA voleibol femenino", "rug_6n": "Seis Naciones", "rug_prem": "Premiership", "rug_top14": "Top 14",
           "rug_urc": "United Rugby Championship", "rug_cc": "Champions Cup", "rug_super": "Super Rugby"}
-SERIES = {"f1": ("motor", "Fórmula 1", "podios"), "motogp": ("motor", "MotoGP", "podios"),
+SERIES = {"f1": ("motor", "Fórmula 1", "podios"), "motogp": ("motor", "MotoGP", "podios"), "nascar": ("motor", "NASCAR Cup Series", "podios"),
           "golf_pga": ("golf", "PGA Tour", "top 3"), "golf_dp": ("golf", "DP World Tour", "top 3")}
 
 
