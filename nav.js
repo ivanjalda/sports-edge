@@ -6,12 +6,12 @@
   var TX={
     es:{home:"Inicio",futbol:"Fútbol",tenis:"Tenis",baloncesto:"Baloncesto",hockey:"Hockey",americano:"Fútbol americano",mma:"MMA",beisbol:"Béisbol",voleibol:"Voleibol",rugby:"Rugby",motor:"Motor",golf:"Golf",directo:"En directo",stats:"Estadísticas",guia:"Guía",aprender:"Aprender",records:"Récords",entrar:"Entrar",micuenta:"Mi cuenta",dd:["🏠 Mi espacio","⭐ Mis favoritos","🔔 Mis avisos","⚙️ Ajustes","🚪 Cerrar sesión"],
         tk_live:"EN DIRECTO",tk_pick:"Pronóstico",tk_today:"Hoy llevamos %a de %n acertados",tk_wait:"Cargando marcadores y pronósticos…",
-        ow_t:"Nuestras otras webs",ow_eq:"Análisis de acciones de bolsa y su valor intrínseco.",ow_nx:"Análisis y señales de trading en tiempo real.",ow_daz:"Ropa deportiva de calidad, marca registrada en EE. UU.",ow_val:"Academia de inversión: libros, guías y cursos.",ow_go:"Visitar →",
+        ow_t:"Nuestras otras webs",ow_eq:"Análisis de acciones de bolsa y su valor intrínseco.",ow_nx:"Análisis y señales de trading en tiempo real.",ow_daz:"Ropa deportiva de calidad, marca registrada en EE. UU.",ow_val:"Academia de inversión: libros, guías y cursos.",ow_dzm:"Ropa y complementos de lujo a precio de saldo.",ow_go:"Visitar →",
         resp:"Solo para mayores de 18 años · Las probabilidades son estimaciones estadísticas, no garantías · Juega con responsabilidad",
         news:"Noticias",newsof:"Noticias de",more:"Más noticias",ago_h:"hace %d h",ago_m:"hace %d min",tema:"Modo día / noche",picks:"⭐ Nuestros pronósticos",pick:"Pronóstico",odds:"Mejor cuota",at:"en",nopicks:"No hay pronósticos para las próximas horas.",allpicks:"Ver todos en Inicio →",today:"hoy",tomorrow:"mañana",draw:"Empate"},
     en:{home:"Home",futbol:"Football",tenis:"Tennis",baloncesto:"Basketball",hockey:"Hockey",americano:"American football",mma:"MMA",beisbol:"Baseball",voleibol:"Volleyball",rugby:"Rugby",motor:"Motorsport",golf:"Golf",directo:"Live",stats:"Statistics",guia:"Guide",aprender:"Learn",records:"Records",entrar:"Log in",micuenta:"My account",dd:["🏠 My space","⭐ My favourites","🔔 My alerts","⚙️ Settings","🚪 Log out"],
         tk_live:"LIVE",tk_pick:"Pick",tk_today:"Today: %a of %n correct",tk_wait:"Loading scores and picks…",
-        ow_t:"Our other websites",ow_eq:"Stock analysis and intrinsic value.",ow_nx:"Real-time trading analysis and signals.",ow_daz:"Quality sportswear, US registered brand.",ow_val:"Investing academy: books, guides and courses.",ow_go:"Visit →",
+        ow_t:"Our other websites",ow_eq:"Stock analysis and intrinsic value.",ow_nx:"Real-time trading analysis and signals.",ow_daz:"Quality sportswear, US registered brand.",ow_val:"Investing academy: books, guides and courses.",ow_dzm:"Luxury clothing and accessories at outlet prices.",ow_go:"Visit →",
         resp:"18+ only · Probabilities are statistical estimates, not guarantees · Please gamble responsibly",
         news:"News",newsof:"News:",more:"More news",ago_h:"%dh ago",ago_m:"%d min ago",tema:"Light / dark mode",picks:"⭐ Our top picks",pick:"Pick",odds:"Best odds",at:"at",nopicks:"No picks for the next hours.",allpicks:"See all on Home →",today:"today",tomorrow:"tomorrow",draw:"Draw"}
   };
@@ -306,7 +306,8 @@
     ["https://equityintrinsic.com/","img/equity-intrinsic.jpg",false,"📈 Equity Intrinsic","ow_eq"],
     ["https://nexusterminalalerts.com/","https://nexusterminalalerts.com/og-image.jpg",false,"📊 Nexus Terminal Alerts","ow_nx"],
     ["https://dazpremiumfit.com/","https://dazpremiumfit.com/cdn/shop/files/f8bc49e2-f715-4a8d-aab8-6fbea8d7f3d4_91f710a0-5d71-463a-b4b0-843f4b06fbf4.jpg?v=1740522264&width=800",false,"👕 DAZ Premium Fit","ow_daz"],
-    ["https://www.valmontco.com/","https://www.valmontco.com/cdn/shop/files/Gemini_Generated_Image_rn5qnprn5qnprn5q_332c8c1b-d38f-49f7-b964-fe5d442752d6.png?v=1783524650&width=800",false,"🎓 Valmont &amp; Co.","ow_val"]];
+    ["https://www.valmontco.com/","https://www.valmontco.com/cdn/shop/files/Gemini_Generated_Image_rn5qnprn5qnprn5q_332c8c1b-d38f-49f7-b964-fe5d442752d6.png?v=1783524650&width=800",false,"🎓 Valmont &amp; Co.","ow_val"],
+    ["https://dazmond.com/","https://dazmond.com/cdn/shop/files/Gemini_Generated_Image_d07g62d07g62d07g.png?v=1785778922&width=800",false,"💎 DAZMOND","ow_dzm"]];
   function montarPie(){
     var t=TX[ultimo.lang]||TX.es, ex=document.getElementById("se-ow");
     if(!ORDEN_WEBS){ ORDEN_WEBS=WEBS.slice(); for(var i=ORDEN_WEBS.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)), x=ORDEN_WEBS[i]; ORDEN_WEBS[i]=ORDEN_WEBS[j]; ORDEN_WEBS[j]=x; } }
