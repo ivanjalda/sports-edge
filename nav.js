@@ -192,7 +192,7 @@
   function cargarPicks(){
     if(pkPedido) return; pkPedido=true;
     var lgs=Object.keys(LG_DEP);
-    Promise.all([jget("predicciones.json"),jget("cuotas.json"),jget("tenis.json")].concat(lgs.map(function(lg){ return jget("equipos_"+lg+".json"); })).concat([jget("carreras_f1.json"),jget("carreras_motogp.json"),jget("carreras_golf_pga.json"),jget("carreras_golf_dp.json")]))
+    Promise.all([jget("predicciones.json"),jget("cuotas.json"),jget("tenis.json")].concat(lgs.map(function(lg){ return jget("equipos_"+lg+".json"); })).concat([jget("carreras_f1.json"),jget("carreras_motogp.json"),jget("carreras_golf_pga.json"),jget("carreras_golf_dp.json"),jget("carreras_nascar.json")]))
     .then(function(r){
       var out=[], ahora=Date.now(), lim=ahora+36*3600*1000;
       function ok(f){ var x=Date.parse(f); return x>ahora && x<lim; }
@@ -212,7 +212,7 @@
           out.push({dep:dep,comp:d.liga||lg.toUpperCase(),fecha:e.fecha,a:e.local,b:e.visitante,pick:k==="L"?e.local:e.visitante,
             prob:Math.max(e.pl,e.pv),c:mj?mj.c:null,casa:mj?mj.casa:null,url:"equipos.html?dep="+dep+"&liga="+lg}); }); });
       var nc=3+lgs.length;
-      [["f1",r[nc]],["motogp",r[nc+1]],["golf_pga",r[nc+2]],["golf_dp",r[nc+3]]].forEach(function(z){ var c=z[1], p=c&&c.proximo; if(!p||!p.pilotos||!p.pilotos.length||p.en_juego||!ok(p.fecha)) return;
+      [["f1",r[nc]],["motogp",r[nc+1]],["golf_pga",r[nc+2]],["golf_dp",r[nc+3]],["nascar",r[nc+4]]].forEach(function(z){ var c=z[1], p=c&&c.proximo; if(!p||!p.pilotos||!p.pilotos.length||p.en_juego||!ok(p.fecha)) return;
         var f=p.pilotos[0]; out.push({dep:z[0].indexOf("golf")===0?"golf":"motor",comp:c.nombre,fecha:p.fecha,a:p.nombre,b:"",pick:f.n,prob:f.pw,c:null,casa:null,url:"carreras.html?serie="+z[0]}); });
       PK=out; window.SE_PICKS=out; try{ document.dispatchEvent(new Event("se-picks")); }catch(e){} pintarLados(); pintarBarra();
     });
