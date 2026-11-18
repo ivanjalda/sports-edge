@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SportEVLab · Legal</title>
+<meta name="description" content="Política de privacidad, política de cookies, aviso legal y juego responsable de SportEVLab (Community16 LLC).">
+<style>
+:root{--bg:#0b0f17;--card:#121826;--card2:#0f1522;--line:#1f2937;--txt:#e5e7eb;--mut:#8b95a7;--acc:#22c55e;--blue:#38bdf8;--red:#ef4444;--amb:#f59e0b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.65}
+main{padding:22px 28px}
+h1{font-size:26px;margin:6px 0}
+.lead{color:var(--mut);font-size:14px}
+.idx{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 18px}
+.idx a{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:7px 16px;color:var(--txt);text-decoration:none;font-size:14px;font-weight:600}
+.idx a:hover{border-color:var(--acc)}
+.idx a.on{background:var(--acc);border-color:var(--acc);color:#04130a}
+.doc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 28px;columns:2 520px;column-gap:44px}
+.doc h2{font-size:15px;text-transform:uppercase;letter-spacing:.8px;color:var(--blue);margin:22px 0 8px;break-after:avoid}
+.doc h2:first-child{margin-top:0}
+.doc p,.doc li{font-size:14.5px;color:var(--txt)}
+.doc p{margin:0 0 10px}
+.doc ul{margin:0 0 12px;padding-left:20px}
+.doc li{margin-bottom:5px}
+.doc .box{break-inside:avoid;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:0 0 12px}
+.doc a{color:var(--blue)}
+.doc b{color:#fff}
+:root[data-theme=light] .doc b{color:#111}
+.fecha{color:var(--mut);font-size:13px;margin-top:14px}
+.ayuda{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:0 0 16px}
+.ayuda div{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:14px}
+.ayuda b{display:block;font-size:15px}
+.ayuda span{font-size:22px;font-weight:800;color:var(--acc)}
+footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top:1px solid var(--line);margin-top:30px}
+@media(max-width:760px){main{padding:18px 16px}.doc{padding:18px}}
+</style>
+</head>
+<body>
+<header id="top"></header>
+<main>
+  <h1 id="h1"></h1>
+  <div class="lead" id="lead"></div>
+  <nav class="idx" id="idx"></nav>
+  <article class="doc" id="doc"></article>
+  <div class="fecha" id="fecha"></div>
+</main>
+<footer id="foot"></footer>
+<script src="nav.js"></script>
+<script>
+/* Datos de la empresa (los mismos en todas las paginas legales) */
+var EMPRESA="Community16 LLC", DIRECCION="500 4th St NW, Suite 102 #1327, Albuquerque, NM 87102, USA", CORREO="contacto@sportevlab.com", WEBN="sportevlab.com";
+var MAIL='<a href="mailto:'+CORREO+'">'+CORREO+'</a>';
+var SECS=["privacidad","cookies","aviso","juego"];
+var T={
+es:{h1:"⚖️ Información legal",lead:"Cómo tratamos tus datos, qué guardamos en tu navegador, quién está detrás de SportEVLab y cómo jugar con responsabilidad.",
+ tabs:["🔒 Privacidad","🍪 Cookies","📄 Aviso legal","🛟 Juego responsable"],fecha:"Última actualización: 18/11/2026",foot:"🔞 Solo para mayores de 18 años. Juega con responsabilidad.",
+ privacidad:
+ '<h2>Quién es el responsable</h2><div class="box"><b>'+EMPRESA+'</b><br>'+DIRECCION+'<br>Correo: '+MAIL+'<br>Web: '+WEBN+'</div>'
++'<p>'+EMPRESA+' es una sociedad de responsabilidad limitada de Nuevo México (Estados Unidos) y es la responsable de los datos que se tratan en SportEVLab.</p>'
++'<h2>Qué datos guardamos</h2><p>Solo si creas una cuenta. Sin cuenta puedes usar la web y no guardamos ningún dato tuyo.</p><ul>'
++'<li><b>Datos de la cuenta:</b> nombre, correo electrónico y, si entras con Google, la foto de tu perfil de Google. Si usas correo y contraseña, la contraseña la guarda Google Firebase cifrada: nosotros nunca la vemos.</li>'
++'<li><b>Tus preferencias:</b> idioma, deportes favoritos, equipos y deportistas que sigues, si quieres el correo diario, qué canal de Telegram eliges y si aceptas recibir novedades de nuestras otras webs.</li>'
++'<li><b>Registro técnico:</b> fecha de creación de la cuenta, fecha en que aceptaste esta política, última modificación y día del último correo diario enviado (para no mandarte dos el mismo día).</li></ul>'
++'<p>No pedimos datos bancarios, ni de salud, ni tu dirección, ni tu teléfono. No vendemos ni alquilamos tus datos a nadie.</p>'
++'<h2>Para qué los usamos y con qué base</h2><ul>'
++'<li><b>Darte tu cuenta y tu espacio</b> (favoritos, preferencias): porque lo pides al registrarte (ejecución del servicio).</li>'
++'<li><b>Enviarte el correo diario:</b> solo si lo activas tú en «Mis avisos» (consentimiento). Puedes quitarlo cuando quieras desde la misma pantalla o con el enlace que hay al final de cada correo.</li>'
++'<li><b>Novedades de nuestras otras webs</b> (Equity Intrinsic, Nexus Terminal Alerts, DAZ Premium Fit, Valmont &amp; Co. y DAZMOND, todas de la misma empresa): solo si marcas esa casilla (consentimiento, que puedes retirar en cualquier momento).</li></ul>'
++'<h2>Quién más interviene</h2><p>Usamos estos proveedores para que la web funcione. Solo reciben lo imprescindible:</p><ul>'
++'<li><b>Google Firebase</b> (Google LLC, EE. UU.): inicio de sesión y almacenamiento de tu cuenta y preferencias.</li>'
++'<li><b>Brevo</b> (Sendinblue SAS, Francia): envío del correo diario. Recibe tu correo, tu nombre y el contenido del correo.</li>'
++'<li><b>GitHub Pages</b> (GitHub Inc., EE. UU.): alojamiento de la web. Como cualquier servidor, registra datos técnicos de las visitas (por ejemplo, la dirección IP) por seguridad.</li>'
++'<li><b>Telegram:</b> si entras en nuestros canales, lo haces en Telegram con tu cuenta de Telegram. Nosotros no recibimos tus datos de Telegram.</li></ul>'
++'<p>Algunos de estos proveedores están en Estados Unidos. Las transferencias se hacen con las garantías que exige la ley (por ejemplo, el Marco de Privacidad de Datos UE-EE. UU. o cláusulas contractuales tipo).</p>'
++'<h2>Cuánto tiempo los guardamos</h2><p>Mientras tengas la cuenta. Si la borras, se eliminan al momento tu cuenta y tus preferencias. Los proveedores pueden conservar registros técnicos durante un tiempo limitado según sus propias políticas.</p>'
++'<h2>Tus derechos</h2><p>Puedes ver y cambiar tus datos en «Mi cuenta», y <b>borrar tu cuenta y todos tus datos</b> en «Mi cuenta → Ajustes». También puedes pedirnos acceso, rectificación, supresión, oposición, limitación o portabilidad escribiendo a '+MAIL+'. Te responderemos en un máximo de 30 días.</p>'
++'<p>Si vives en la Unión Europea, puedes reclamar ante la autoridad de protección de datos de tu país (en España, la Agencia Española de Protección de Datos, <a href="https://www.aepd.es" target="_blank" rel="noopener">aepd.es</a>). Si vives en California, tienes además los derechos de la CCPA: no vendemos ni compartimos tus datos con fines publicitarios.</p>'
++'<h2>Menores</h2><p>SportEVLab es solo para mayores de 18 años. Al registrarte confirmas que lo eres. Si sabemos que una cuenta es de un menor, la borramos.</p>'
++'<h2>Cambios</h2><p>Si cambiamos esta política, actualizaremos la fecha de abajo y, si el cambio es importante, te avisaremos por correo o en la web.</p>',
+ cookies:
+ '<h2>Resumen</h2><div class="box"><b>SportEVLab no usa cookies de publicidad ni de seguimiento.</b> No hay anuncios de terceros que te sigan, ni perfiles para venderte nada.</div>'
++'<h2>Lo que sí guardamos en tu navegador</h2><p>Unos pocos datos técnicos, en el almacenamiento local de tu navegador (no son cookies que viajen a otras webs), necesarios para que la web funcione como tú la dejaste:</p><ul>'
++'<li><b>lang:</b> el idioma que eliges (español o inglés).</li>'
++'<li><b>tema:</b> si prefieres la web clara u oscura.</li>'
++'<li><b>se_user:</b> tu nombre, para mostrarlo arriba en «Mi cuenta» cuando has entrado.</li>'
++'<li><b>directo_solo:</b> si en «En directo» quieres ver solo los partidos con nuestro pronóstico.</li>'
++'<li><b>Sesión de Firebase:</b> si entras en tu cuenta, Google Firebase guarda en tu navegador la sesión iniciada para que no tengas que entrar cada vez.</li></ul>'
++'<p>Todos son técnicos y necesarios, por eso no hace falta pedirte permiso para usarlos. Se borran al cerrar sesión o al borrar los datos de tu navegador.</p>'
++'<h2>Servicios de terceros</h2><ul>'
++'<li><b>Entrar con Google:</b> solo si pulsas ese botón, Google usa sus propias cookies en su ventana de inicio de sesión, según su política de privacidad.</li>'
++'<li><b>Imágenes y enlaces externos:</b> algunas noticias y nuestras otras webs muestran imágenes alojadas en sus propios sitios. Al cargarlas, esos sitios reciben los datos técnicos normales de cualquier visita (como la dirección IP).</li></ul>'
++'<h2>Cómo borrarlos</h2><p>Desde la configuración de tu navegador puedes borrar los datos de este sitio cuando quieras. La web seguirá funcionando; solo perderás tus preferencias de idioma y tema, y tendrás que volver a entrar en tu cuenta.</p>',
+ aviso:
+ '<h2>Titular de la web</h2><div class="box"><b>'+EMPRESA+'</b> (sociedad de responsabilidad limitada de Nuevo México, EE. UU.)<br>'+DIRECCION+'<br>Correo: '+MAIL+'<br>Web: '+WEBN+'</div>'
++'<h2>Qué es SportEVLab</h2><p>SportEVLab es una web de <b>información y estadística deportiva</b>. Publica probabilidades calculadas por nuestro propio motor a partir de resultados reales y públicos.</p>'
++'<p><b>SportEVLab no es una casa de apuestas:</b> no acepta apuestas, no gestiona dinero de nadie y no paga premios. Las cuotas que mostramos son las publicadas por las casas de apuestas y sirven solo como referencia.</p>'
++'<h2>Sin garantías</h2><p>Nuestras probabilidades son <b>estimaciones estadísticas, no garantías</b>. Cualquier resultado deportivo puede salir distinto. Lo que decidas apostar es responsabilidad tuya. Publicamos nuestro récord real de aciertos y fallos para que puedas juzgar por ti mismo.</p>'
++'<p>Hacemos lo posible para que los datos sean correctos y estén al día, pero pueden contener errores o retrasos de las fuentes. '+EMPRESA+' no se hace responsable de pérdidas derivadas del uso de la información de esta web.</p>'
++'<h2>Edad y legalidad</h2><p>La web es solo para mayores de 18 años (o la edad mínima legal para apostar en tu país, si es mayor). Comprueba que las apuestas son legales donde vives y usa solo operadores con licencia.</p>'
++'<h2>Propiedad intelectual</h2><p>El diseño, los textos, el logotipo, la marca SportEVLab y el motor de predicciones pertenecen a '+EMPRESA+'. Los nombres de equipos, competiciones y marcas citadas pertenecen a sus dueños y se usan solo para identificarlos. Las noticias enlazan a sus medios originales.</p>'
++'<h2>Enlaces a otras webs</h2><p>Enlazamos a medios de noticias, casas de apuestas y a nuestras otras webs. No controlamos el contenido de webs ajenas ni respondemos de él.</p>'
++'<h2>Ley aplicable</h2><p>Estas condiciones se rigen por las leyes del Estado de Nuevo México (EE. UU.), sin perjuicio de los derechos que te reconozca la ley de tu país como consumidor.</p>',
+ juego:
+ '<h2>Ayuda gratuita y confidencial</h2><div class="ayuda">'
++'<div><b>🇪🇸 España · FEJAR</b><span>900 200 225</span><br>Gratis · <a href="https://www.jugarbien.es" target="_blank" rel="noopener">jugarbien.es</a></div>'
++'<div><b>🇺🇸 Estados Unidos</b><span>1-800-GAMBLER</span><br>National Council on Problem Gambling · <a href="https://www.ncpgambling.org" target="_blank" rel="noopener">ncpgambling.org</a></div>'
++'<div><b>🇬🇧 Reino Unido · GamCare</b><span>0808 8020 133</span><br><a href="https://www.gamcare.org.uk" target="_blank" rel="noopener">gamcare.org.uk</a></div></div>'
++'<h2>Nuestro compromiso</h2><ul><li>Solo para <b>mayores de 18 años</b>.</li><li>Nuestras probabilidades son <b>estimaciones, no garantías</b>: incluso un 80 % falla 2 de cada 10 veces.</li><li>Publicamos <b>todos</b> nuestros aciertos y fallos, sin esconder nada.</li><li>Nunca te diremos que puedes ganar dinero seguro, porque no existe.</li></ul>'
++'<h2>Consejos para jugar con cabeza</h2><ul><li>Apuesta solo dinero que puedas perder sin que afecte a tu vida.</li><li>Decide antes un presupuesto y un tiempo, y respétalos.</li><li>No intentes recuperar lo perdido apostando más.</li><li>No apuestes bajo los efectos del alcohol ni cuando estés triste o enfadado.</li><li>Las apuestas son entretenimiento, no una forma de ganarse la vida.</li></ul>'
++'<h2>Señales de alarma</h2><ul><li>Apuestas más de lo que pensabas o más a menudo.</li><li>Mientes a tu familia sobre lo que juegas.</li><li>Pides dinero prestado para apostar.</li><li>Te sientes nervioso o irritable cuando no puedes jugar.</li></ul><p>Si te reconoces en alguna, para y pide ayuda: los teléfonos de arriba son gratuitos y confidenciales.</p>'
++'<h2>Herramientas que puedes usar</h2><ul><li>En España, el <b>Registro General de Interdicciones de Acceso al Juego (RGIAJ)</b> te permite prohibirte a ti mismo el acceso a todas las casas de apuestas con licencia (más información en jugarbien.es).</li><li>Las casas con licencia ofrecen límites de depósito, pausas y autoexclusión en su propia web.</li><li>Lee nuestra guía de gestión de banca en <a href="aprender.html#banca-resp">Aprender</a>.</li></ul>'},
+en:{h1:"⚖️ Legal information",lead:"How we handle your data, what we store in your browser, who is behind SportEVLab and how to gamble responsibly.",
+ tabs:["🔒 Privacy","🍪 Cookies","📄 Legal notice","🛟 Responsible gambling"],fecha:"Last updated: 18/11/2026",foot:"🔞 18+ only. Please gamble responsibly.",
+ privacidad:
+ '<h2>Who is responsible</h2><div class="box"><b>'+EMPRESA+'</b><br>'+DIRECCION+'<br>Email: '+MAIL+'<br>Website: '+WEBN+'</div>'
++'<p>'+EMPRESA+' is a New Mexico (USA) limited liability company and is the controller of the data processed on SportEVLab.</p>'
++'<h2>What data we keep</h2><p>Only if you create an account. Without an account you can use the website and we keep no data about you.</p><ul>'
++'<li><b>Account data:</b> name, email address and, if you sign in with Google, your Google profile picture. If you use email and password, the password is stored encrypted by Google Firebase: we never see it.</li>'
++'<li><b>Your preferences:</b> language, favourite sports, teams and athletes you follow, whether you want the daily email, which Telegram channel you choose and whether you agree to receive news from our other websites.</li>'
++'<li><b>Technical record:</b> account creation date, date you accepted this policy, last update and day of the last daily email sent (so you never get two on the same day).</li></ul>'
++'<p>We do not ask for bank details, health data, your address or your phone number. We never sell or rent your data.</p>'
++'<h2>Why we use it and on what basis</h2><ul>'
++'<li><b>To provide your account and your space</b> (favourites, preferences): because you request it when you sign up (performance of the service).</li>'
++'<li><b>To send the daily email:</b> only if you turn it on in “My alerts” (consent). You can turn it off any time on the same screen or with the link at the end of every email.</li>'
++'<li><b>News from our other websites</b> (Equity Intrinsic, Nexus Terminal Alerts, DAZ Premium Fit, Valmont &amp; Co. and DAZMOND, all owned by the same company): only if you tick that box (consent, which you can withdraw at any time).</li></ul>'
++'<h2>Who else is involved</h2><p>We use these providers to run the website. They only receive what is strictly needed:</p><ul>'
++'<li><b>Google Firebase</b> (Google LLC, USA): sign-in and storage of your account and preferences.</li>'
++'<li><b>Brevo</b> (Sendinblue SAS, France): sending the daily email. It receives your email address, your name and the content of the email.</li>'
++'<li><b>GitHub Pages</b> (GitHub Inc., USA): website hosting. Like any server, it logs technical visit data (such as the IP address) for security.</li>'
++'<li><b>Telegram:</b> if you join our channels, you do so on Telegram with your Telegram account. We do not receive your Telegram data.</li></ul>'
++'<p>Some of these providers are in the United States. Transfers are made with the safeguards required by law (for example, the EU-US Data Privacy Framework or standard contractual clauses).</p>'
++'<h2>How long we keep it</h2><p>For as long as you have an account. If you delete it, your account and preferences are removed immediately. Providers may keep technical logs for a limited time under their own policies.</p>'
++'<h2>Your rights</h2><p>You can view and change your data in “My account”, and <b>delete your account and all your data</b> in “My account → Settings”. You can also ask us for access, rectification, erasure, objection, restriction or portability by writing to '+MAIL+'. We will reply within 30 days.</p>'
++'<p>If you live in the European Union, you can complain to your country’s data protection authority (in Spain, the AEPD, <a href="https://www.aepd.es" target="_blank" rel="noopener">aepd.es</a>). If you live in California, you also have CCPA rights: we do not sell or share your data for advertising.</p>'
++'<h2>Minors</h2><p>SportEVLab is for people aged 18 or over only. By signing up you confirm you are. If we learn an account belongs to a minor, we delete it.</p>'
++'<h2>Changes</h2><p>If we change this policy, we will update the date below and, if the change is important, let you know by email or on the website.</p>',
+ cookies:
+ '<h2>Summary</h2><div class="box"><b>SportEVLab does not use advertising or tracking cookies.</b> There are no third-party ads following you and no profiles built to sell you anything.</div>'
++'<h2>What we do store in your browser</h2><p>A few technical items in your browser’s local storage (they are not cookies sent to other websites), needed so the website works the way you left it:</p><ul>'
++'<li><b>lang:</b> the language you choose (Spanish or English).</li>'
++'<li><b>tema:</b> whether you prefer the light or dark website.</li>'
++'<li><b>se_user:</b> your name, to show it at the top in “My account” when you are logged in.</li>'
++'<li><b>directo_solo:</b> whether you want “Live” to show only games with our prediction.</li>'
++'<li><b>Firebase session:</b> if you log in, Google Firebase keeps your session in your browser so you don’t have to log in every time.</li></ul>'
++'<p>All of them are technical and necessary, so no consent is required to use them. They are removed when you log out or clear your browser data.</p>'
++'<h2>Third-party services</h2><ul>'
++'<li><b>Sign in with Google:</b> only if you press that button, Google uses its own cookies in its sign-in window, under its own privacy policy.</li>'
++'<li><b>External images and links:</b> some news items and our other websites show images hosted on their own sites. When loaded, those sites receive the normal technical data of any visit (such as the IP address).</li></ul>'
++'<h2>How to delete them</h2><p>You can delete this site’s data from your browser settings at any time. The website will keep working; you will only lose your language and theme preferences and will need to log in again.</p>',
+ aviso:
+ '<h2>Website owner</h2><div class="box"><b>'+EMPRESA+'</b> (New Mexico limited liability company, USA)<br>'+DIRECCION+'<br>Email: '+MAIL+'<br>Website: '+WEBN+'</div>'
++'<h2>What SportEVLab is</h2><p>SportEVLab is a <b>sports information and statistics</b> website. It publishes probabilities calculated by our own engine from real, public results.</p>'
++'<p><b>SportEVLab is not a bookmaker:</b> it does not accept bets, does not handle anyone’s money and does not pay out winnings. The odds we show are those published by bookmakers and are for reference only.</p>'
++'<h2>No guarantees</h2><p>Our probabilities are <b>statistical estimates, not guarantees</b>. Any sports result can turn out differently. Whatever you decide to bet is your own responsibility. We publish our real record of hits and misses so you can judge for yourself.</p>'
++'<p>We do our best to keep the data correct and up to date, but it may contain errors or delays from the sources. '+EMPRESA+' is not liable for losses arising from the use of the information on this website.</p>'
++'<h2>Age and legality</h2><p>The website is for people aged 18 or over only (or the minimum legal gambling age in your country, if higher). Check that betting is legal where you live and only use licensed operators.</p>'
++'<h2>Intellectual property</h2><p>The design, texts, logo, the SportEVLab brand and the prediction engine belong to '+EMPRESA+'. Names of teams, competitions and brands mentioned belong to their owners and are used only to identify them. News items link to their original publishers.</p>'
++'<h2>Links to other websites</h2><p>We link to news outlets, bookmakers and our other websites. We do not control and are not responsible for the content of third-party websites.</p>'
++'<h2>Governing law</h2><p>These terms are governed by the laws of the State of New Mexico (USA), without prejudice to any consumer rights granted to you by the law of your country.</p>',
+ juego:
+ '<h2>Free and confidential help</h2><div class="ayuda">'
++'<div><b>🇺🇸 United States</b><span>1-800-GAMBLER</span><br>National Council on Problem Gambling · <a href="https://www.ncpgambling.org" target="_blank" rel="noopener">ncpgambling.org</a></div>'
++'<div><b>🇬🇧 United Kingdom · GamCare</b><span>0808 8020 133</span><br><a href="https://www.gamcare.org.uk" target="_blank" rel="noopener">gamcare.org.uk</a></div>'
++'<div><b>🇪🇸 Spain · FEJAR</b><span>900 200 225</span><br>Free · <a href="https://www.jugarbien.es" target="_blank" rel="noopener">jugarbien.es</a></div></div>'
++'<h2>Our commitment</h2><ul><li>For people aged <b>18 or over</b> only.</li><li>Our probabilities are <b>estimates, not guarantees</b>: even an 80% pick fails 2 times out of 10.</li><li>We publish <b>all</b> our hits and misses, hiding nothing.</li><li>We will never tell you that you can win money for sure, because that does not exist.</li></ul>'
++'<h2>Tips to gamble sensibly</h2><ul><li>Only bet money you can afford to lose without it affecting your life.</li><li>Set a budget and a time limit beforehand, and stick to them.</li><li>Never try to win back losses by betting more.</li><li>Don’t bet under the influence of alcohol or when you are sad or angry.</li><li>Betting is entertainment, not a way to make a living.</li></ul>'
++'<h2>Warning signs</h2><ul><li>You bet more than you planned, or more often.</li><li>You lie to your family about your gambling.</li><li>You borrow money to bet.</li><li>You feel nervous or irritable when you can’t gamble.</li></ul><p>If you recognise yourself in any of these, stop and ask for help: the numbers above are free and confidential.</p>'
++'<h2>Tools you can use</h2><ul><li>Licensed bookmakers offer deposit limits, time-outs and self-exclusion on their own websites.</li><li>In the UK, GAMSTOP lets you self-exclude from all licensed online operators; in Spain, the RGIAJ register does the same.</li><li>Read our bankroll management guide in <a href="aprender.html#banca-resp">Learn</a>.</li></ul>'}
+};
+var lang="es", SEC="privacidad";
+try{ lang=localStorage.getItem("lang")||(navigator.language.indexOf("es")==0?"es":"en"); }catch(e){}
+function leerHash(){ var h=location.hash.replace("#",""); if(SECS.indexOf(h)>=0) SEC=h; }
+leerHash();
+window.addEventListener("hashchange",function(){ leerHash(); render(); window.scrollTo(0,0); });
+function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
+function render(){
+  var t=T[lang]; document.documentElement.lang=lang;
+  if(window.navRender) navRender(lang,"legal");
+  document.getElementById("h1").textContent=t.h1;
+  document.getElementById("lead").textContent=t.lead;
+  document.getElementById("idx").innerHTML=t.tabs.map(function(x,i){ return '<a href="#'+SECS[i]+'"'+(SEC===SECS[i]?' class="on"':'')+'>'+x+'</a>'; }).join("");
+  document.getElementById("doc").innerHTML=t[SEC];
+  document.getElementById("fecha").textContent=t.fecha;
+  document.getElementById("foot").textContent=t.foot;
+}
+render();
+</script>
+</body>
+</html>
