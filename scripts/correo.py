@@ -49,22 +49,51 @@ WEBS = [
      u"\U0001F393 Valmont & Co.", u"Academia de inversión: libros, guías y cursos.", "Investing academy: books, guides and courses.")]
 
 TX = {
-    "es": {"asunto": u"\U0001F3AF Pronósticos de hoy · %s", "hola": "Hola", "intro": u"Estos son los pronósticos de hoy, calculados con resultados reales.",
-           "tus": u"Tus pronósticos de hoy", "top": u"Los más claros de hoy", "nofav": u"Hoy no hay partidos de tus favoritos. Te dejamos los más claros de todos los deportes.",
-           "ninguno": u"Hoy no hay partidos analizados en las próximas 24 horas.", "ayer": u"Cómo nos fue ayer", "acierto": u"acertados",
-           "carreras": u"Carreras y torneos", "gana": "gana", "podio": "podio", "top10": "top 10", "noticias": u"Noticias del día",
-           "webs": u"Nuestras otras webs", "visitar": u"Visitar →", "boton": u"Ver todos los pronósticos", "directo": u"Resultados en directo",
-           "empate": "Empate", "cuota": "cuota", "aviso": u"Probabilidades estadísticas: no garantizan resultados. Solo mayores de 18 años. Juega con responsabilidad.",
+    "es": {"asunto": u"\U0001F3AF Pronósticos de hoy · %s", "hola": "Hola", "intro": u"Tu resumen de hoy: pronósticos calculados con resultados reales, cómo nos fue ayer y lo más importante del día.",
+           "k_hoy": u"Partidos analizados hoy", "k_ayer": u"Acierto de ayer", "k_rec": u"Récord en directo", "k_pred": u"predicciones",
+           "pick": u"⭐ Pick del día", "pick_s": u"El pronóstico más claro de hoy", "tus": u"\U0001F3AF Tus pronósticos de hoy", "top": u"\U0001F3AF Los pronósticos más claros de hoy",
+           "nofav": u"Hoy no hay partidos de tus favoritos. Te dejamos los más claros de todos los deportes.",
+           "elige": u"⭐ Elige tus deportes y equipos favoritos y te los pondremos primero cada mañana.", "elige_b": u"Elegir favoritos",
+           "ninguno": u"Hoy no hay partidos analizados en las próximas 24 horas.", "ayer": u"\U0001F4CA Cómo nos fue ayer", "acierto": u"acertados",
+           "carreras": u"\U0001F3C1 Carreras y torneos", "gana": "gana", "podio": "podio", "top10": "top 10", "noticias": u"\U0001F4F0 Noticias del día",
+           "leer": u"Leer →", "webs": u"\U0001F310 Nuestras otras webs", "visitar": u"Visitar →", "boton": u"Ver todos los pronósticos", "directo": u"Resultados en directo",
+           "empate": "Empate", "cuota": "cuota", "hoy": "Hoy", "man": u"Mañana", "rec": u"\U0001F3C6 Récord del día", "rec_b": u"Ver todos los récords →",
+           "aprende": u"\U0001F393 Aprende en 1 minuto", "aprende_b": u"Más en Aprender →",
+           "aviso": u"Probabilidades estadísticas: no garantizan resultados. Solo mayores de 18 años. Juega con responsabilidad.",
            "porque": u"Recibes este correo porque activaste el correo diario en tu cuenta de SportEVLab.",
-           "baja": u"Dejar de recibirlo o cambiar el idioma", "hoy": "hoy", "favs": u"Tus favoritos"},
-    "en": {"asunto": u"\U0001F3AF Today's predictions · %s", "hola": "Hi", "intro": u"Here are today's predictions, calculated from real results.",
-           "tus": u"Your predictions for today", "top": u"Today's clearest picks", "nofav": u"There are no games for your favourites today. Here are the clearest picks from every sport.",
-           "ninguno": u"There are no analysed games in the next 24 hours.", "ayer": u"How we did yesterday", "acierto": u"correct",
-           "carreras": u"Races and tournaments", "gana": "win", "podio": "podium", "top10": "top 10", "noticias": u"Today's news",
-           "webs": u"Our other websites", "visitar": u"Visit →", "boton": u"See all predictions", "directo": u"Live results",
-           "empate": "Draw", "cuota": "odds", "aviso": u"Statistical probabilities: results are not guaranteed. 18+ only. Please gamble responsibly.",
+           "baja": u"Dejar de recibirlo o cambiar el idioma", "espacio": u"Mi espacio"},
+    "en": {"asunto": u"\U0001F3AF Today's predictions · %s", "hola": "Hi", "intro": u"Your daily summary: predictions calculated from real results, how we did yesterday and the day's highlights.",
+           "k_hoy": u"Games analysed today", "k_ayer": u"Yesterday's accuracy", "k_rec": u"Live record", "k_pred": u"predictions",
+           "pick": u"⭐ Pick of the day", "pick_s": u"Today's clearest prediction", "tus": u"\U0001F3AF Your predictions for today", "top": u"\U0001F3AF Today's clearest predictions",
+           "nofav": u"There are no games for your favourites today. Here are the clearest picks from every sport.",
+           "elige": u"⭐ Choose your favourite sports and teams and we'll put them first every morning.", "elige_b": u"Choose favourites",
+           "ninguno": u"There are no analysed games in the next 24 hours.", "ayer": u"\U0001F4CA How we did yesterday", "acierto": u"correct",
+           "carreras": u"\U0001F3C1 Races and tournaments", "gana": "win", "podio": "podium", "top10": "top 10", "noticias": u"\U0001F4F0 Today's news",
+           "leer": u"Read →", "webs": u"\U0001F310 Our other websites", "visitar": u"Visit →", "boton": u"See all predictions", "directo": u"Live results",
+           "empate": "Draw", "cuota": "odds", "hoy": "Today", "man": "Tomorrow", "rec": u"\U0001F3C6 Record of the day", "rec_b": u"See all records →",
+           "aprende": u"\U0001F393 Learn in 1 minute", "aprende_b": u"More in Learn →",
+           "aviso": u"Statistical probabilities: results are not guaranteed. 18+ only. Please gamble responsibly.",
            "porque": u"You get this email because you turned on the daily email in your SportEVLab account.",
-           "baja": u"Unsubscribe or change language", "hoy": "today", "favs": u"Your favourites"}}
+           "baja": u"Unsubscribe or change language", "espacio": u"My space"}}
+
+# Un concepto distinto cada dia (rota solo)
+APRENDE = [
+    (u"Probabilidad implícita", u"Es la probabilidad que esconde una cuota: 1 ÷ cuota. Una cuota de 2,00 equivale al 50 %. Si nuestra probabilidad es mayor, la cuota paga más de lo que debería.",
+     u"Implied probability", u"The probability hidden in the odds: 1 ÷ odds. Odds of 2.00 mean 50%. If our probability is higher, the odds pay more than they should."),
+    (u"Valor esperado (EV)", u"Probabilidad × cuota − 1. Si sale positivo, a la larga esa apuesta gana dinero; si sale negativo, lo pierde. Es la idea que da nombre a SportEVLab.",
+     u"Expected value (EV)", u"Probability × odds − 1. If it is positive, the bet wins money in the long run; if negative, it loses. It's the idea behind the name SportEVLab."),
+    (u"Gestión de banca", u"Decide un dinero solo para apostar y no arriesgues más del 1–2 % en cada apuesta. Así una mala racha no te deja sin nada.",
+     u"Bankroll management", u"Set aside money only for betting and never risk more than 1–2% on a single bet. That way a bad run won't wipe you out."),
+    (u"Margen de la casa", u"Si sumas las probabilidades implícitas de todas las opciones, pasan del 100 %. Ese exceso es lo que gana la casa. Por eso conviene comparar casas.",
+     u"Bookmaker margin", u"Add up the implied probabilities of every outcome and they exceed 100%. That extra is the bookmaker's cut. That's why comparing bookmakers matters."),
+    (u"Criterio de Kelly", u"Fórmula que dice cuánto apostar según tu ventaja. Es muy agresiva, así que se suele usar ¼ de Kelly. Pruébala en nuestra calculadora.",
+     u"Kelly criterion", u"A formula that says how much to stake based on your edge. It is very aggressive, so a quarter Kelly is usually used. Try it in our calculator."),
+    (u"Puntuación Elo", u"Cada equipo tiene una puntuación que sube al ganar y baja al perder, más o menos según la fuerza del rival. Es una de las bases de nuestro motor.",
+     u"Elo rating", u"Every team has a rating that goes up when it wins and down when it loses, more or less depending on the opponent. It's one of the foundations of our engine."),
+    (u"Rachas y varianza", u"Un 70 % de acierto también falla 3 de cada 10. Las rachas malas son normales: lo que cuenta son cientos de apuestas, no un día.",
+     u"Streaks and variance", u"A 70% pick still fails 3 times out of 10. Bad runs are normal: what counts is hundreds of bets, not a single day."),
+    (u"Comparar cuotas", u"La misma apuesta puede pagar 1,80 en una casa y 1,95 en otra. A la larga esa diferencia es enorme: busca siempre la mejor cuota.",
+     u"Shopping for odds", u"The same bet can pay 1.80 at one bookmaker and 1.95 at another. Over time that gap is huge: always look for the best odds.")]
 
 
 def e(s):
@@ -92,9 +121,37 @@ def carreras(ahora):
     return out
 
 
+def record_dia(dia_n):
+    """Un record real calculado con nuestros datos, distinto cada dia."""
+    comps = [c for c in tg.leer("records.json", {}).get("competiciones", []) if c.get("dep") in DEP]
+    if not comps:
+        return None
+    c = comps[dia_n % len(comps)]
+    tipo = (dia_n // len(comps)) % 3
+    for t in (tipo, (tipo + 1) % 3, (tipo + 2) % 3):
+        if t == 0 and c.get("racha"):
+            r = c["racha"]
+            return c, (u"Racha más larga: <b>%s</b>, %d victorias seguidas" % (e(r["quien"]), r["n"]),
+                       u"Longest winning streak: <b>%s</b>, %d wins in a row" % (e(r["quien"]), r["n"]))
+        if t == 1 and c.get("mayor_victoria"):
+            r = c["mayor_victoria"]
+            return c, (u"Mayor victoria: <b>%s</b> %s a %s (%s)" % (e(r["quien"]), e(r["marcador"]), e(r["rival"]), e(r["fecha"][:10])),
+                       u"Biggest win: <b>%s</b> %s against %s (%s)" % (e(r["quien"]), e(r["marcador"]), e(r["rival"]), e(r["fecha"][:10])))
+        if t == 2 and c.get("mejor_temporada") and c["mejor_temporada"].get("v") is not None:
+            r = c["mejor_temporada"]
+            return c, (u"Mejor temporada: <b>%s</b> en %s, %d–%d" % (e(r["quien"]), e(r["temporada"]), r["v"], r.get("d", 0)),
+                       u"Best season: <b>%s</b> in %s, %d–%d" % (e(r["quien"]), e(r["temporada"]), r["v"], r.get("d", 0)))
+    return None
+
+
 def contenido(ahora):
+    dia_n = ahora.astimezone(tg.TZ).timetuple().tm_yday
+    rc = tg.record()
+    h = sum((a or 0) * n for a, n in rc.values())
+    n = sum(n for _a, n in rc.values())
     return {"picks": tg.partidos(ahora), "ayer": tg.resultados(ahora), "carreras": carreras(ahora),
-            "noticias": tg.leer("noticias.json", {})}
+            "noticias": tg.leer("noticias.json", {}), "record": (h / float(n), n) if n else None,
+            "rec_dia": record_dia(dia_n), "aprende": APRENDE[dia_n % len(APRENDE)]}
 
 
 # ------------------------------------------------------------- correo de cada usuario
@@ -105,117 +162,189 @@ def elegir(picks, deportes, equipos):
         return x["a"] in eq or x["b"] in eq or x["pick"] in eq
 
     favs = [x for x in picks if x["dep"] in (deportes or []) or sigue(x)]
-    if favs:
-        # primero los equipos que sigue; luego reparto entre sus deportes para que no se lo coma uno solo
-        favs.sort(key=lambda x: (0 if sigue(x) else 1, -x["prob"]))
-        tope = max(3, -(-MAX_PICKS // max(1, len(set(x["dep"] for x in favs)))))
-        sel, n = [], {}
-        for x in favs:
-            n[x["dep"]] = n.get(x["dep"], 0) + 1
-            if sigue(x) or n[x["dep"]] <= tope:
-                sel.append(x)
-        return sel[:MAX_PICKS], True
-    top, n = [], {}
-    for x in sorted(picks, key=lambda y: -y["prob"]):
+    base, son_favs = (favs, True) if favs else (picks, False)
+    base = sorted(base, key=lambda x: (0 if sigue(x) else 1, -x["prob"]))
+    # reparto entre deportes para que no se lo coma uno solo (los equipos que sigue siempre entran)
+    tope = 3 if not son_favs else max(3, -(-MAX_PICKS // max(1, len(set(x["dep"] for x in base)))))
+    sel, n = [], {}
+    for x in base:
         n[x["dep"]] = n.get(x["dep"], 0) + 1
-        if n[x["dep"]] <= 3:
-            top.append(x)
-    return top[:MAX_PICKS], False
+        if sigue(x) or n[x["dep"]] <= tope:
+            sel.append(x)
+    return sel[:MAX_PICKS], son_favs
 
 
-def titulo(t):
-    return (u'<tr><td style="padding:22px 24px 8px;font:700 13px Arial,sans-serif;letter-spacing:1px;text-transform:uppercase;color:%s">%s</td></tr>'
-            % (VERDE, t))
+def seccion(t, extra=""):
+    return (u'<tr><td style="padding:26px 28px 10px;font:800 14px Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:%s;'
+            u'border-top:1px solid %s">%s%s</td></tr>' % (OSCURO, LINEA, t, extra))
+
+
+def cuando(f, T, hoy):
+    d = tg.fecha(f).astimezone(tg.TZ)
+    return (T["hoy"] if d.date() == hoy else T["man"] if d.date() == hoy + timedelta(days=1) else d.strftime("%d/%m")) + " " + d.strftime("%H:%M")
+
+
+def cuota_de(x, T):
+    return x["cuota"].replace(u"cuota", T["cuota"]).lstrip(u" ·") if x.get("cuota") else ""
 
 
 def html_correo(u, C, ahora, lang):
     T = TX[lang]
     sel, son_favs = elegir(C["picks"], u.get("deportes"), u.get("equipos"))
     eq = set(u.get("equipos") or [])
-    f_loc = ahora.astimezone(tg.TZ)
-    filas = []
-    # Cabecera
-    filas.append(u'<tr><td style="background:%s;padding:20px 24px"><a href="%s" style="text-decoration:none;font:800 24px Arial,sans-serif;color:#fff">'
-                 u'Sport<span style="color:#22c55e">EV</span><span style="color:#eab308">Lab</span></a>'
-                 u'<div style="font:13px Arial,sans-serif;color:#9ca3af;margin-top:4px">%s</div></td></tr>'
-                 % (OSCURO, WEB, f_loc.strftime("%d/%m/%Y")))
+    hoy = ahora.astimezone(tg.TZ).date()
+    F = []
     nombre = (u.get("nombre") or "").split(" ")[0]
-    filas.append(u'<tr><td style="padding:22px 24px 0;font:16px Arial,sans-serif;color:#111">%s%s,<br><span style="color:%s;font-size:14px">%s</span></td></tr>'
-                 % (T["hola"], (" " + e(nombre)) if nombre else "", GRIS, T["intro"]))
-    # Pronosticos
-    filas.append(titulo(T["tus"] if son_favs else T["top"]))
+    F.append(u'<tr><td style="padding:26px 28px 6px;font:700 20px Arial,sans-serif;color:%s">%s%s \U0001F44B</td></tr>'
+             u'<tr><td style="padding:0 28px 18px;font:15px Arial,sans-serif;color:%s;line-height:1.5">%s</td></tr>'
+             % (OSCURO, T["hola"], (" " + e(nombre)) if nombre else "", GRIS, T["intro"]))
+
+    # Cifras del dia
+    ay = C["ayer"]
+    ta, tn = sum(v[0] for v in ay.values()), sum(v[1] for v in ay.values())
+    kp = [(str(len(C["picks"])), T["k_hoy"]),
+          (pc(ta / float(tn)) if tn else u"—", T["k_ayer"] + (u" · %d/%d" % (ta, tn) if tn else "")),
+          (pc(C["record"][0]) if C["record"] else u"—", T["k_rec"] + (u" · %d %s" % (C["record"][1], T["k_pred"]) if C["record"] else ""))]
+    F.append(u'<tr><td style="padding:0 22px 22px"><table width="100%%" cellpadding="0" cellspacing="0"><tr>%s</tr></table></td></tr>' % "".join(
+        u'<td width="33%%" valign="top" style="padding:0 6px"><div style="background:%s;border-radius:12px;padding:14px 10px;text-align:center">'
+        u'<div style="font:800 24px Arial,sans-serif;color:%s">%s</div><div style="font:12px Arial,sans-serif;color:%s;margin-top:2px">%s</div></div></td>'
+        % (FONDO, VERDE, v, GRIS, k) for v, k in kp))
+
+    # Pick del dia: el mas claro de su seleccion, mejor si tiene cuota
+    if sel:
+        con_c = [x for x in sel if x.get("cuota")]
+        p = max(con_c or sel, key=lambda x: x["prob"])
+        pk = T["empate"] if p["pick"] == "Empate" else p["pick"]
+        F.append(u'<tr><td style="padding:0 28px 8px"><table width="100%%" cellpadding="0" cellspacing="0" style="background:%s;border-radius:14px">'
+                 u'<tr><td style="padding:18px 20px"><div style="font:800 13px Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:#eab308">%s</div>'
+                 u'<div style="font:12px Arial,sans-serif;color:#9ca3af;margin-top:2px">%s · %s %s · %s</div>'
+                 u'<div style="font:16px Arial,sans-serif;color:#fff;margin-top:10px">%s – %s</div>'
+                 u'<div style="font:800 22px Arial,sans-serif;color:#22c55e;margin-top:4px">\U0001F3AF %s</div>'
+                 u'<div style="font:13px Arial,sans-serif;color:#d1d5db;margin-top:4px">%s</div></td>'
+                 u'<td align="right" valign="middle" style="padding:18px 20px"><div style="font:800 40px Arial,sans-serif;color:#22c55e">%s</div></td></tr></table></td></tr>'
+                 % (OSCURO, T["pick"], T["pick_s"], DEP.get(p["dep"], ("",))[0], e(p["comp"]), cuando(p["fecha"], T, hoy),
+                    e(p["a"]), e(p["b"]), e(pk), cuota_de(p, T), pc(p["prob"])))
+
+    # Pronosticos agrupados por deporte
+    F.append(seccion(T["tus"] if son_favs else T["top"]))
     if (u.get("deportes") or u.get("equipos")) and not son_favs and sel:
-        filas.append(u'<tr><td style="padding:0 24px 6px;font:13px Arial,sans-serif;color:%s">%s</td></tr>' % (GRIS, T["nofav"]))
+        F.append(u'<tr><td style="padding:0 28px 8px;font:13px Arial,sans-serif;color:%s">%s</td></tr>' % (GRIS, T["nofav"]))
     if not sel:
-        filas.append(u'<tr><td style="padding:0 24px;font:14px Arial,sans-serif;color:%s">%s</td></tr>' % (GRIS, T["ninguno"]))
+        F.append(u'<tr><td style="padding:0 28px;font:14px Arial,sans-serif;color:%s">%s</td></tr>' % (GRIS, T["ninguno"]))
+    orden = []
     for x in sel:
-        pick = T["empate"] if x["pick"] == "Empate" else x["pick"]
-        sigue = x["a"] in eq or x["b"] in eq or x["pick"] in eq
-        cuota = x["cuota"].replace(u"cuota", T["cuota"]).lstrip(u" ·") if x["cuota"] else ""
-        filas.append(
-            u'<tr><td style="padding:4px 24px"><table width="100%%" cellpadding="0" cellspacing="0" style="border:1px solid %s;border-radius:10px;background:%s">'
-            u'<tr><td style="padding:10px 12px;font:12px Arial,sans-serif;color:%s">%s %s · %s %s%s</td>'
-            u'<td rowspan="2" align="right" style="padding:10px 12px;font:800 20px Arial,sans-serif;color:%s;white-space:nowrap">%s</td></tr>'
-            u'<tr><td style="padding:0 12px 10px;font:14px Arial,sans-serif;color:#111">%s – %s<br>\U0001F3AF <b style="color:%s">%s</b>'
-            u'<span style="color:%s;font-size:12px">%s</span></td></tr></table></td></tr>'
-            % (LINEA, "#f0fdf4" if sigue else "#fff", GRIS, DEP.get(x["dep"], ("", "", ""))[0], e(x["comp"]), T["hoy"] if tg.fecha(x["fecha"]).astimezone(tg.TZ).date() == f_loc.date() else "",
-               tg.hora(x["fecha"]), u" · ⭐" if sigue else "", VERDE, pc(x["prob"]), e(x["a"]), e(x["b"]), VERDE, e(pick), GRIS,
-               (u"<br>" + cuota) if cuota else ""))
+        if x["dep"] not in orden:
+            orden.append(x["dep"])
+    for d in orden:
+        ic, es_, en_ = DEP.get(d, ("", d, d))
+        F.append(u'<tr><td style="padding:12px 28px 4px;font:700 14px Arial,sans-serif;color:%s">%s %s</td></tr>' % (OSCURO, ic, es_ if lang == "es" else en_))
+        filas = []
+        for x in [y for y in sel if y["dep"] == d]:
+            pk = T["empate"] if x["pick"] == "Empate" else x["pick"]
+            sig = x["a"] in eq or x["b"] in eq or x["pick"] in eq
+            cu = cuota_de(x, T)
+            filas.append(u'<tr style="background:%s"><td width="62" valign="top" style="padding:10px 8px 10px 12px;font:12px Arial,sans-serif;color:%s;border-bottom:1px solid %s">%s</td>'
+                         u'<td valign="top" style="padding:10px 6px;font:14px Arial,sans-serif;color:#111;border-bottom:1px solid %s">'
+                         u'<div style="font-size:11px;color:%s">%s%s</div>%s – %s<br><b style="color:%s">\U0001F3AF %s</b>%s</td>'
+                         u'<td width="58" align="right" valign="middle" style="padding:10px 12px;font:800 18px Arial,sans-serif;color:%s;border-bottom:1px solid %s">%s</td></tr>'
+                         % ("#f0fdf4" if sig else "#ffffff", GRIS, LINEA, cuando(x["fecha"], T, hoy).replace(" ", "<br>"), LINEA, GRIS, e(x["comp"]), u" · ⭐" if sig else "",
+                            e(x["a"]), e(x["b"]), VERDE, e(pk), (u'<span style="font-size:12px;color:%s"> · %s</span>' % (GRIS, cu)) if cu else "", VERDE, LINEA, pc(x["prob"])))
+        F.append(u'<tr><td style="padding:0 28px"><table width="100%%" cellpadding="0" cellspacing="0" style="border:1px solid %s;border-radius:12px;border-collapse:separate;overflow:hidden">%s</table></td></tr>'
+                 % (LINEA, "".join(filas)))
+    if not (u.get("deportes") or u.get("equipos")):
+        F.append(u'<tr><td style="padding:14px 28px 0"><div style="background:#fefce8;border:1px solid #fde68a;border-radius:12px;padding:12px 14px;font:13px Arial,sans-serif;color:#713f12">'
+                 u'%s <a href="%scuenta.html#favoritos" style="color:%s;font-weight:700">%s →</a></div></td></tr>' % (T["elige"], WEB, VERDE, T["elige_b"]))
+    F.append(u'<tr><td align="center" style="padding:22px 28px 8px"><a href="%s" style="display:inline-block;background:%s;color:#fff;text-decoration:none;'
+             u'font:700 15px Arial,sans-serif;padding:14px 30px;border-radius:10px">%s</a>&nbsp;&nbsp;'
+             u'<a href="%sdirecto.html" style="display:inline-block;border:2px solid %s;color:%s;text-decoration:none;font:700 15px Arial,sans-serif;padding:12px 22px;border-radius:10px;margin-top:8px">\U0001F534 %s</a></td></tr>'
+             % (WEB, VERDE, T["boton"], WEB, VERDE, VERDE, T["directo"]))
+
     # Carreras
     cs = [c for c in C["carreras"] if not u.get("deportes") or c["dep"] in u["deportes"]]
     if cs:
-        filas.append(titulo(T["carreras"]))
+        F.append(seccion(T["carreras"]))
         for c in cs:
             lin = []
             for i, p in enumerate(c["pilotos"]):
                 extra = (u"%s %s" % (T["top10"], pc(p.get("p10") or 0))) if c["golf"] else (u"%s %s" % (T["podio"], pc(p.get("pp"))))
-                lin.append(u"%d. <b>%s</b> · %s %s · %s" % (i + 1, e(p["n"]), T["gana"], pc(p["pw"]), extra))
-            dia = tg.fecha(c["fecha"]).astimezone(tg.TZ)
-            filas.append(u'<tr><td style="padding:4px 24px;font:14px Arial,sans-serif;color:#111">%s <b>%s · %s</b> <span style="color:%s;font-size:12px">%s</span><br>%s</td></tr>'
-                         % (DEP[c["dep"]][0], e(c["comp"]), e(c["nombre"]), GRIS, dia.strftime("%d/%m %H:%M"), "<br>".join(lin)))
+                lin.append(u"%s <b>%s</b> · %s %s · %s" % ([u"\U0001F947", u"\U0001F948", u"\U0001F949"][i], e(p["n"]), T["gana"], pc(p["pw"]), extra))
+            F.append(u'<tr><td style="padding:4px 28px 8px;font:14px Arial,sans-serif;color:#111;line-height:1.7"><b>%s %s · %s</b> '
+                     u'<span style="color:%s;font-size:12px">%s</span><br>%s</td></tr>'
+                     % (DEP[c["dep"]][0], e(c["comp"]), e(c["nombre"]), GRIS, cuando(c["fecha"], T, hoy), "<br>".join(lin)))
+
     # Ayer
-    if C["ayer"]:
-        filas.append(titulo(T["ayer"]))
-        tot_a = sum(v[0] for v in C["ayer"].values())
-        tot_n = sum(v[1] for v in C["ayer"].values())
-        lin = [u"<b style='font-size:18px;color:%s'>%d / %d</b> %s (%s)" % (VERDE, tot_a, tot_n, T["acierto"], pc(tot_a / float(tot_n)) if tot_n else "")]
-        for d, (a, n) in sorted(C["ayer"].items(), key=lambda z: -z[1][1]):
-            ic, es, en = DEP.get(d, ("", d, d))
-            lin.append(u"%s %s: %d / %d" % (ic, es if lang == "es" else en, a, n))
-        filas.append(u'<tr><td style="padding:0 24px;font:14px Arial,sans-serif;color:#111;line-height:1.6">%s</td></tr>' % "<br>".join(lin))
-    # Boton
-    filas.append(u'<tr><td align="center" style="padding:22px 24px 6px"><a href="%s" style="display:inline-block;background:%s;color:#fff;text-decoration:none;'
-                 u'font:700 15px Arial,sans-serif;padding:13px 26px;border-radius:10px">%s</a>'
-                 u'<div style="margin-top:10px"><a href="%sdirecto.html" style="font:13px Arial,sans-serif;color:%s">\U0001F534 %s</a></div></td></tr>'
-                 % (WEB, VERDE, T["boton"], WEB, VERDE, T["directo"]))
-    # Noticias
-    nots = (C["noticias"].get(lang) or [])[:5]
+    if ay:
+        F.append(seccion(T["ayer"]))
+        celdas = []
+        for d, (a, n) in sorted(ay.items(), key=lambda z: -z[1][1]):
+            ic, es_, en_ = DEP.get(d, ("", d, d))
+            celdas.append(u'<td width="33%%" valign="top" style="padding:4px"><div style="border:1px solid %s;border-radius:10px;padding:10px;text-align:center;font:12px Arial,sans-serif;color:%s">'
+                          u'%s %s<div style="font:800 18px Arial,sans-serif;color:%s;margin-top:3px">%d/%d</div></div></td>'
+                          % (LINEA, GRIS, ic, es_ if lang == "es" else en_, OSCURO, a, n))
+        filas = "".join(u"<tr>%s</tr>" % "".join(celdas[i:i + 3]) for i in range(0, len(celdas), 3))
+        F.append(u'<tr><td style="padding:0 24px"><table width="100%%" cellpadding="0" cellspacing="0">%s</table></td></tr>' % filas)
+
+    # Noticias con foto
+    nots = (C["noticias"].get(lang) or [])[:6]
     if nots:
-        filas.append(titulo(T["noticias"]))
+        F.append(seccion(T["noticias"]))
+        celdas = []
         for n in nots:
-            filas.append(u'<tr><td style="padding:3px 24px;font:14px Arial,sans-serif"><a href="%s" style="color:#111;text-decoration:none">• %s</a> '
-                         u'<span style="color:%s;font-size:12px">%s</span></td></tr>' % (e(n.get("url")), e(n.get("t")), GRIS, e(n.get("fuente"))))
+            img = (u'<img src="%s" width="268" alt="" style="width:100%%;max-width:268px;height:140px;object-fit:cover;border-radius:10px;display:block;background:%s">'
+                   % (e(n["img"]), FONDO)) if n.get("img") else ""
+            celdas.append(u'<td width="50%%" valign="top" style="padding:6px"><a href="%s" style="text-decoration:none;color:#111">%s'
+                          u'<div style="font:700 14px Arial,sans-serif;line-height:1.35;margin-top:8px">%s</div>'
+                          u'<div style="font:12px Arial,sans-serif;color:%s;margin-top:4px">%s · <span style="color:%s;font-weight:700">%s</span></div></a></td>'
+                          % (e(n.get("url")), img, e(n.get("t")), GRIS, e(n.get("fuente")), VERDE, T["leer"]))
+        filas = "".join(u"<tr>%s</tr>" % "".join(celdas[i:i + 2]) for i in range(0, len(celdas), 2))
+        F.append(u'<tr><td style="padding:0 22px"><table width="100%%" cellpadding="0" cellspacing="0">%s</table></td></tr>' % filas)
+
+    # Record del dia y Aprende
+    bloques = []
+    if C.get("rec_dia"):
+        c, txt = C["rec_dia"]
+        bloques.append(u'<div style="font:800 13px Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:%s">%s</div>'
+                       u'<div style="font:12px Arial,sans-serif;color:%s;margin-top:6px">%s %s</div><div style="font:14px Arial,sans-serif;color:#111;margin-top:4px;line-height:1.45">%s</div>'
+                       u'<a href="%srecords.html" style="display:inline-block;margin-top:8px;font:700 13px Arial,sans-serif;color:%s;text-decoration:none">%s</a>'
+                       % (OSCURO, T["rec"], GRIS, DEP.get(c["dep"], ("",))[0], e(c.get("nombre")), txt[0] if lang == "es" else txt[1], WEB, VERDE, T["rec_b"]))
+    ap = C["aprende"]
+    bloques.append(u'<div style="font:800 13px Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:%s">%s</div>'
+                   u'<div style="font:700 14px Arial,sans-serif;color:#111;margin-top:6px">%s</div><div style="font:13px Arial,sans-serif;color:#374151;margin-top:4px;line-height:1.45">%s</div>'
+                   u'<a href="%saprender.html" style="display:inline-block;margin-top:8px;font:700 13px Arial,sans-serif;color:%s;text-decoration:none">%s</a>'
+                   % (OSCURO, T["aprende"], ap[0] if lang == "es" else ap[2], ap[1] if lang == "es" else ap[3], WEB, VERDE, T["aprende_b"]))
+    F.append(u'<tr><td style="padding:26px 22px 0;border-top:1px solid %s"><table width="100%%" cellpadding="0" cellspacing="0"><tr>%s</tr></table></td></tr>'
+             % (LINEA, "".join(u'<td width="%d%%" valign="top" style="padding:6px"><div style="background:%s;border-radius:12px;padding:16px">%s</div></td>'
+                                % (100 // len(bloques), FONDO, b) for b in bloques)))
+
     # Otras webs (solo si lo acepto)
     if u.get("promo"):
-        filas.append(titulo(T["webs"]))
+        F.append(seccion(T["webs"]))
         celdas = []
         for url, img, nom, des, den in WEBS:
             celdas.append(u'<td width="50%%" valign="top" style="padding:6px"><a href="%s" style="text-decoration:none;color:#111">'
-                          u'<img src="%s" width="250" alt="" style="width:100%%;max-width:250px;height:130px;object-fit:cover;border-radius:10px;display:block;background:%s">'
-                          u'<div style="font:700 14px Arial,sans-serif;margin-top:6px">%s</div><div style="font:12px Arial,sans-serif;color:%s">%s</div>'
+                          u'<img src="%s" width="268" alt="%s" style="width:100%%;max-width:268px;height:130px;object-fit:cover;border-radius:10px;display:block;background:%s">'
+                          u'<div style="font:700 14px Arial,sans-serif;margin-top:8px">%s</div><div style="font:12px Arial,sans-serif;color:%s">%s</div>'
                           u'<div style="font:700 12px Arial,sans-serif;color:%s;margin-top:3px">%s</div></a></td>'
-                          % (url, img, LINEA, e(nom), GRIS, des if lang == "es" else den, VERDE, T["visitar"]))
-        filas.append(u'<tr><td style="padding:0 18px"><table width="100%%" cellpadding="0" cellspacing="0"><tr>%s</tr><tr>%s</tr></table></td></tr>'
-                     % ("".join(celdas[:2]), "".join(celdas[2:])))
+                          % (url, e(img), e(nom), FONDO, e(nom), GRIS, des if lang == "es" else den, VERDE, T["visitar"]))
+        F.append(u'<tr><td style="padding:0 22px"><table width="100%%" cellpadding="0" cellspacing="0"><tr>%s</tr><tr>%s</tr></table></td></tr>'
+                 % ("".join(celdas[:2]), "".join(celdas[2:])))
+
     # Pie
-    filas.append(u'<tr><td style="padding:24px;font:12px Arial,sans-serif;color:%s;line-height:1.6;border-top:1px solid %s">\U0001F51E %s<br>%s<br>'
-                 u'<a href="%scuenta.html#avisos" style="color:%s">%s</a><br>SportEVLab · Community16 LLC · New Mexico, USA</td></tr>'
-                 % (GRIS, LINEA, T["aviso"], T["porque"], WEB, VERDE, T["baja"]))
-    cuerpo = u"".join(filas)
-    return (u'<!DOCTYPE html><html lang="%s"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>'
-            u'<body style="margin:0;background:%s"><table width="100%%" cellpadding="0" cellspacing="0" style="background:%s"><tr><td align="center" style="padding:16px 8px">'
-            u'<table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%%;background:#fff;border-radius:14px;overflow:hidden">%s</table>'
-            u'</td></tr></table></body></html>' % (lang, FONDO, FONDO, cuerpo))
+    F.append(u'<tr><td style="padding:26px 28px;font:12px Arial,sans-serif;color:%s;line-height:1.7;border-top:1px solid %s;text-align:center">'
+             u'<a href="%s" style="color:%s;font-weight:700;text-decoration:none">sportevlab.com</a> · <a href="%scuenta.html#espacio" style="color:%s;text-decoration:none">%s</a><br>'
+             u'\U0001F51E %s<br>%s<br><a href="%scuenta.html#avisos" style="color:%s">%s</a><br>SportEVLab · Community16 LLC · New Mexico, USA</td></tr>'
+             % (GRIS, LINEA, WEB, VERDE, WEB, VERDE, T["espacio"], T["aviso"], T["porque"], WEB, VERDE, T["baja"]))
+
+    cab = (u'<tr><td align="center" style="background:%s;padding:28px 16px 24px">'
+           u'<a href="%s"><img src="%simg/correo-logo.png" width="320" alt="SportEVLab" style="width:320px;max-width:80%%;height:auto;display:block;border:0;color:#ffffff;font:800 30px Arial,sans-serif"></a>'
+           u'<div style="font:13px Arial,sans-serif;color:#9ca3af;margin-top:10px;letter-spacing:.5px">%s</div></td></tr>'
+           % (OSCURO, WEB, WEB, ahora.astimezone(tg.TZ).strftime("%d/%m/%Y")))
+    return (u'<!DOCTYPE html><html lang="%s"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+            u'<meta name="color-scheme" content="light"></head><body style="margin:0;padding:0;background:%s">'
+            u'<table width="100%%" cellpadding="0" cellspacing="0" style="background:%s">%s'
+            u'<tr><td align="center" style="padding:0 8px 24px;background:linear-gradient(%s 0,%s 60px,%s 60px)">'
+            u'<table width="640" cellpadding="0" cellspacing="0" style="max-width:640px;width:100%%;background:#fff;border-radius:16px;overflow:hidden">%s</table>'
+            u'</td></tr></table></body></html>' % (lang, FONDO, FONDO, cab, OSCURO, OSCURO, FONDO, "".join(F)))
 
 
 # ------------------------------------------------------------- Brevo
