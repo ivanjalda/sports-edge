@@ -6,12 +6,12 @@
   var TX={
     es:{home:"Inicio",futbol:"Fútbol",tenis:"Tenis",baloncesto:"Baloncesto",hockey:"Hockey",americano:"Fútbol americano",mma:"MMA",beisbol:"Béisbol",voleibol:"Voleibol",rugby:"Rugby",motor:"Motor",golf:"Golf",directo:"En directo",stats:"Estadísticas",guia:"Guía",aprender:"Aprender",records:"Récords",entrar:"Entrar",micuenta:"Mi cuenta",dd:["🏠 Mi espacio","⭐ Mis favoritos","🔔 Mis avisos","⚙️ Ajustes","🚪 Cerrar sesión"],
         tk_live:"EN DIRECTO",tk_pick:"Pronóstico",tk_today:"Hoy llevamos %a de %n acertados",tk_wait:"Cargando marcadores y pronósticos…",
-        ow_t:"Nuestras otras webs",ow_eq:"Análisis de acciones de bolsa y su valor intrínseco.",ow_nx:"Análisis y señales de trading en tiempo real.",ow_daz:"Ropa deportiva de calidad, marca registrada en EE. UU.",ow_val:"Academia de inversión: libros, guías y cursos.",ow_dzm:"Ropa y complementos de lujo a precio de saldo.",ow_go:"Visitar →",
+        ow_t:"Nuestras otras webs",ow_eq:"Análisis de acciones de bolsa y su valor intrínseco.",ow_nx:"Análisis y señales de trading en tiempo real.",ow_daz:"Ropa deportiva de calidad, marca registrada en EE. UU.",ow_val:"Academia de inversión: libros, guías y cursos.",ow_dzm:"Ropa y complementos de lujo a precio de saldo.",leg:["Privacidad","Cookies","Aviso legal","Juego responsable"],ow_go:"Visitar →",
         resp:"Solo para mayores de 18 años · Las probabilidades son estimaciones estadísticas, no garantías · Juega con responsabilidad",
         news:"Noticias",newsof:"Noticias de",more:"Más noticias",ago_h:"hace %d h",ago_m:"hace %d min",tema:"Modo día / noche",picks:"⭐ Nuestros pronósticos",pick:"Pronóstico",odds:"Mejor cuota",at:"en",nopicks:"No hay pronósticos para las próximas horas.",allpicks:"Ver todos en Inicio →",today:"hoy",tomorrow:"mañana",draw:"Empate"},
     en:{home:"Home",futbol:"Football",tenis:"Tennis",baloncesto:"Basketball",hockey:"Hockey",americano:"American football",mma:"MMA",beisbol:"Baseball",voleibol:"Volleyball",rugby:"Rugby",motor:"Motorsport",golf:"Golf",directo:"Live",stats:"Statistics",guia:"Guide",aprender:"Learn",records:"Records",entrar:"Log in",micuenta:"My account",dd:["🏠 My space","⭐ My favourites","🔔 My alerts","⚙️ Settings","🚪 Log out"],
         tk_live:"LIVE",tk_pick:"Pick",tk_today:"Today: %a of %n correct",tk_wait:"Loading scores and picks…",
-        ow_t:"Our other websites",ow_eq:"Stock analysis and intrinsic value.",ow_nx:"Real-time trading analysis and signals.",ow_daz:"Quality sportswear, US registered brand.",ow_val:"Investing academy: books, guides and courses.",ow_dzm:"Luxury clothing and accessories at outlet prices.",ow_go:"Visit →",
+        ow_t:"Our other websites",ow_eq:"Stock analysis and intrinsic value.",ow_nx:"Real-time trading analysis and signals.",ow_daz:"Quality sportswear, US registered brand.",ow_val:"Investing academy: books, guides and courses.",ow_dzm:"Luxury clothing and accessories at outlet prices.",leg:["Privacy","Cookies","Legal notice","Responsible gambling"],ow_go:"Visit →",
         resp:"18+ only · Probabilities are statistical estimates, not guarantees · Please gamble responsibly",
         news:"News",newsof:"News:",more:"More news",ago_h:"%dh ago",ago_m:"%d min ago",tema:"Light / dark mode",picks:"⭐ Our top picks",pick:"Pick",odds:"Best odds",at:"at",nopicks:"No picks for the next hours.",allpicks:"See all on Home →",today:"today",tomorrow:"tomorrow",draw:"Draw"}
   };
@@ -92,6 +92,7 @@
     "@keyframes setk{from{transform:translateX(0)}to{transform:translateX(-50%)}}"+
     "@media(prefers-reduced-motion:reduce){.se-tk .tk-tr{animation:none}.se-tk .tk-vp{overflow-x:auto}}"+
     /* Otras webs y pie comun */
+    ".se-leg{text-align:center;font-size:12.5px;color:var(--mut);padding:4px 16px 18px}.se-ow .se-leg a{display:inline;background:none;border:0;border-radius:0;overflow:visible;color:var(--mut);text-decoration:none;margin:0 4px}.se-ow .se-leg a:hover{color:var(--acc)}.se-leg span{display:block;margin-top:4px;font-size:11.5px}"+
     ".se-ow{margin:34px 28px 0;padding:18px 0 0;border-top:1px solid var(--line)}"+
     ".se-ow h3{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--blue);margin:0 0 10px}"+
     ".se-ow .vp{overflow:hidden;border-radius:14px}"+
@@ -256,7 +257,7 @@
       +(document.documentElement.getAttribute("data-theme")==="light"?"🌙":"☀️")+'</button>'
       +'<div class="se-lang"><button class="'+(lang==="es"?"on":"")+'" onclick="setLang(\'es\')">ES</button>'
       +'<button class="'+(lang==="en"?"on":"")+'" onclick="setLang(\'en\')">EN</button></div></div></div><nav>'+n+'</nav>';
-    if(activo!=="guia"&&activo!=="aprender"&&activo!=="records"&&activo!=="cuenta"){ montarLados(); cargarNoticias(); if(activo!=="home") cargarPicks(); pintarLados(); }
+    if(activo!=="guia"&&activo!=="aprender"&&activo!=="records"&&activo!=="cuenta"&&activo!=="legal"){ montarLados(); cargarNoticias(); if(activo!=="home") cargarPicks(); pintarLados(); }
     montarBarra(); cargarPicks(); pintarBarra(); montarPie(); enlazarTerminos();
   };
 
@@ -315,7 +316,9 @@
       +ORDEN_WEBS.concat(ORDEN_WEBS.slice(0,2)).map(function(w){ return '<a href="'+w[0]+'" target="_blank" rel="noopener"><span class="im'+(w[2]?' ic':'')+'" style="background-image:url(\''+w[1]+'\'),linear-gradient(135deg,#0f2a1d,#1e7a4c 60%,#8a6a00)"></span>'
         +'<span class="tx"><b>'+w[3]+'</b><span>'+t[w[4]]+'</span><i>'+t.ow_go+'</i></span></a>'; }).join("")+'</div></div>'
       +'<div class="dots" id="se-ow-d">'+ORDEN_WEBS.map(function(w,i){ return '<button aria-label="'+(i+1)+'" onclick="seOwIr('+i+')"></button>'; }).join("")+'</div>'
-      +'<div class="se-resp">🔞 '+t.resp+'</div>';
+      +'<div class="se-resp">🔞 '+t.resp+'</div>'
+      +'<div class="se-leg">'+t.leg.map(function(x,i){ return '<a href="legal.html#'+["privacidad","cookies","aviso","juego"][i]+'">'+x+'</a>'; }).join(" · ")
+      +'<span>© '+new Date().getFullYear()+' SportEVLab · Community16 LLC</span></div>';
     if(ex){ ex.innerHTML=html; }
     else {
       var d=document.createElement("section"); d.className="se-ow"; d.id="se-ow"; d.innerHTML=html;
