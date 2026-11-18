@@ -181,14 +181,19 @@ def seccion(t):
             u'border-top:1px solid %s;margin-top:18px">%s</div>' % (OSCURO, LINEA, t))
 
 
-def caja(ancho, dentro):
-    """Bloque que se coloca al lado de otros en pantallas anchas y debajo en el movil."""
-    return (u'<div style="display:inline-block;vertical-align:top;width:100%%;max-width:%dpx;font-size:14px">'
-            u'<div style="margin:6px;text-align:left">%s</div></div>' % (ancho, dentro))
+def caja(pct, dentro, movil=100):
+    """Bloque que ocupa un porcentaje del ancho (toda la pantalla entre todos); en el movil se pone debajo."""
+    return (u'<div class="m%d" style="display:inline-block;vertical-align:top;width:%.4f%%;font-size:14px">'
+            u'<div style="margin:6px;text-align:left">%s</div></div>' % (movil, pct, dentro))
+
+
+def reparto(n, maximo):
+    """Porcentaje de cada bloque para llenar la fila: n bloques, como mucho 'maximo' por fila."""
+    return 100.0 / max(1, min(n, maximo))
 
 
 def fila(cajas):
-    return u'<div style="font-size:0;text-align:center">%s</div>' % "".join(cajas)
+    return u'<div style="font-size:0;text-align:left">%s</div>' % "".join(cajas)
 
 
 def cuando(f, T, hoy):
@@ -218,9 +223,9 @@ def html_correo(u, C, ahora, lang):
           (str(len(set(x["dep"] for x in C["picks"]))), T["k_deps"]),
           (pc(ta / float(tn)) if tn else u"—", T["k_ayer"] + (u" · %d/%d" % (ta, tn) if tn else "")),
           (pc(C["record"][0]) if C["record"] else u"—", T["k_rec"] + (u" · %d %s" % (C["record"][1], T["k_pred"]) if C["record"] else ""))]
-    F.append(fila([caja(185, u'<div style="background:%s;border-radius:12px;padding:16px 10px;text-align:center">'
+    F.append(fila([caja(25, u'<div style="background:%s;border-radius:12px;padding:16px 10px;text-align:center">'
                              u'<div style="font:800 28px Arial,sans-serif;color:%s">%s</div><div style="font:12px Arial,sans-serif;color:%s;margin-top:2px">%s</div></div>'
-                             % (FONDO, VERDE, v, GRIS, k)) for v, k in kp]))
+                             % (FONDO, VERDE, v, GRIS, k), 50) for v, k in kp]))
 
     # Pick del dia + record + aprende (lado a lado en pantallas anchas)
     arriba = []
@@ -228,7 +233,7 @@ def html_correo(u, C, ahora, lang):
         con_c = [x for x in sel if x.get("cuota")]
         p = max(con_c or sel, key=lambda x: x["prob"])
         pk = T["empate"] if p["pick"] == "Empate" else p["pick"]
-        arriba.append(caja(600, u'<div style="background:%s;border-radius:14px;padding:18px 20px;min-height:120px">'
+        arriba.append(caja(40, u'<div style="background:%s;border-radius:14px;padding:18px 20px;min-height:130px">'
                        u'<table width="100%%" cellpadding="0" cellspacing="0"><tr><td valign="top">'
                        u'<div style="font:800 13px Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:#eab308">%s</div>'
                        u'<div style="font:12px Arial,sans-serif;color:#9ca3af;margin-top:2px">%s · %s %s · %s</div>'
@@ -240,13 +245,13 @@ def html_correo(u, C, ahora, lang):
                           e(p["a"]), e(p["b"]), e(pk), cuota_de(p, T), pc(p["prob"]))))
     if C.get("rec_dia"):
         c, txt = C["rec_dia"]
-        arriba.append(caja(450, u'<div style="background:%s;border-radius:14px;padding:18px;min-height:120px">'
+        arriba.append(caja(30, u'<div style="background:%s;border-radius:14px;padding:18px;min-height:130px">'
                       u'<div style="font:800 13px Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:%s">%s</div>'
                       u'<div style="font:12px Arial,sans-serif;color:%s;margin-top:6px">%s %s</div><div style="font:14px Arial,sans-serif;color:#111;margin-top:4px;line-height:1.45">%s</div>'
                       u'<a href="%srecords.html" style="display:inline-block;margin-top:8px;font:700 13px Arial,sans-serif;color:%s;text-decoration:none">%s</a></div>'
                       % (FONDO, OSCURO, T["rec"], GRIS, DEP.get(c["dep"], ("",))[0], e(c.get("nombre")), txt[0] if lang == "es" else txt[1], WEB, VERDE, T["rec_b"])))
     ap = C["aprende"]
-    arriba.append(caja(450, u'<div style="background:%s;border-radius:14px;padding:18px;min-height:120px">'
+    arriba.append(caja(30, u'<div style="background:%s;border-radius:14px;padding:18px;min-height:130px">'
                   u'<div style="font:800 13px Arial,sans-serif;letter-spacing:.6px;text-transform:uppercase;color:%s">%s</div>'
                   u'<div style="font:700 14px Arial,sans-serif;color:#111;margin-top:6px">%s</div><div style="font:13px Arial,sans-serif;color:#374151;margin-top:4px;line-height:1.45">%s</div>'
                   u'<a href="%saprender.html" style="display:inline-block;margin-top:8px;font:700 13px Arial,sans-serif;color:%s;text-decoration:none">%s</a></div>'
@@ -277,7 +282,7 @@ def html_correo(u, C, ahora, lang):
                          u'<td width="56" align="right" valign="middle" style="padding:10px 12px;font:800 18px Arial,sans-serif;color:%s;border-top:1px solid %s">%s</td></tr>'
                          % ("#f0fdf4" if sig else "#ffffff", GRIS, LINEA, cuando(x["fecha"], T, hoy).replace(" ", "<br>"), LINEA, GRIS, e(x["comp"]), u" · ⭐" if sig else "",
                             e(x["a"]), e(x["b"]), VERDE, e(pk), (u'<span style="font-size:12px;color:%s"> · %s</span>' % (GRIS, cu)) if cu else "", VERDE, LINEA, pc(x["prob"])))
-        bloques.append(caja(600, u'<div style="border:1px solid %s;border-radius:12px;overflow:hidden">'
+        bloques.append(caja(reparto(len(orden), 3), u'<div style="border:1px solid %s;border-radius:12px;overflow:hidden">'
                                  u'<div style="background:%s;padding:10px 12px;font:700 14px Arial,sans-serif;color:%s">%s %s</div>'
                                  u'<table width="100%%" cellpadding="0" cellspacing="0">%s</table></div>'
                                  % (LINEA, FONDO, OSCURO, ic, es_ if lang == "es" else en_, "".join(filas))))
@@ -300,7 +305,7 @@ def html_correo(u, C, ahora, lang):
             for i, p in enumerate(c["pilotos"]):
                 extra = (u"%s %s" % (T["top10"], pc(p.get("p10") or 0))) if c["golf"] else (u"%s %s" % (T["podio"], pc(p.get("pp"))))
                 lin.append(u"%s <b>%s</b> · %s %s · %s" % ([u"\U0001F947", u"\U0001F948", u"\U0001F949"][i], e(p["n"]), T["gana"], pc(p["pw"]), extra))
-            bl.append(caja(450, u'<div style="border:1px solid %s;border-radius:12px;padding:14px;font:14px Arial,sans-serif;color:#111;line-height:1.7">'
+            bl.append(caja(reparto(len(cs), 4), u'<div style="border:1px solid %s;border-radius:12px;padding:14px;font:14px Arial,sans-serif;color:#111;line-height:1.7">'
                                 u'<b>%s %s · %s</b><br><span style="color:%s;font-size:12px">%s</span><br>%s</div>'
                                 % (LINEA, DEP[c["dep"]][0], e(c["comp"]), e(c["nombre"]), GRIS, cuando(c["fecha"], T, hoy), "<br>".join(lin))))
         F.append(fila(bl))
@@ -309,9 +314,9 @@ def html_correo(u, C, ahora, lang):
         bl = []
         for d, (a, n) in sorted(ay.items(), key=lambda z: -z[1][1]):
             ic, es_, en_ = DEP.get(d, ("", d, d))
-            bl.append(caja(200, u'<div style="border:1px solid %s;border-radius:10px;padding:12px;text-align:center;font:12px Arial,sans-serif;color:%s">'
+            bl.append(caja(reparto(len(ay), 8), u'<div style="border:1px solid %s;border-radius:10px;padding:12px;text-align:center;font:12px Arial,sans-serif;color:%s">'
                                 u'%s %s<div style="font:800 20px Arial,sans-serif;color:%s;margin-top:3px">%d/%d</div></div>'
-                                % (LINEA, GRIS, ic, es_ if lang == "es" else en_, OSCURO, a, n)))
+                                % (LINEA, GRIS, ic, es_ if lang == "es" else en_, OSCURO, a, n), 50))
         F.append(fila(bl))
 
     # Noticias con foto
@@ -320,9 +325,9 @@ def html_correo(u, C, ahora, lang):
         F.append(seccion(T["noticias"]))
         bl = []
         for n in nots:
-            img = (u'<img src="%s" width="290" alt="" style="width:100%%;height:160px;object-fit:cover;border-radius:10px;display:block;background:%s">'
+            img = (u'<img src="%s" width="290" alt="" style="width:100%%;height:190px;object-fit:cover;border-radius:10px;display:block;background:%s">'
                    % (e(n["img"]), FONDO)) if n.get("img") else ""
-            bl.append(caja(300, u'<a href="%s" style="text-decoration:none;color:#111">%s'
+            bl.append(caja(25, u'<a href="%s" style="text-decoration:none;color:#111">%s'
                                 u'<div style="font:700 14px Arial,sans-serif;line-height:1.35;margin-top:8px">%s</div>'
                                 u'<div style="font:12px Arial,sans-serif;color:%s;margin-top:4px">%s · <span style="color:%s;font-weight:700">%s</span></div></a>'
                                 % (e(n.get("url")), img, e(n.get("t")), GRIS, e(n.get("fuente")), VERDE, T["leer"])))
@@ -333,11 +338,11 @@ def html_correo(u, C, ahora, lang):
         F.append(seccion(T["webs"]))
         bl = []
         for url, img, nom, des, den in WEBS:
-            bl.append(caja(300, u'<a href="%s" style="text-decoration:none;color:#111">'
-                                u'<img src="%s" width="290" alt="%s" style="width:100%%;height:150px;object-fit:cover;border-radius:10px;display:block;background:%s">'
+            bl.append(caja(reparto(len(WEBS), 5), u'<a href="%s" style="text-decoration:none;color:#111">'
+                                u'<img src="%s" width="290" alt="%s" style="width:100%%;height:170px;object-fit:cover;border-radius:10px;display:block;background:%s">'
                                 u'<div style="font:700 14px Arial,sans-serif;margin-top:8px">%s</div><div style="font:12px Arial,sans-serif;color:%s">%s</div>'
                                 u'<div style="font:700 12px Arial,sans-serif;color:%s;margin-top:3px">%s</div></a>'
-                                % (url, e(img), e(nom), FONDO, e(nom), GRIS, des if lang == "es" else den, VERDE, T["visitar"])))
+                                % (url, e(img), e(nom), FONDO, e(nom), GRIS, des if lang == "es" else den, VERDE, T["visitar"]), 50))
         F.append(fila(bl))
 
     pie = (u'<div style="padding:26px 16px;font:12px Arial,sans-serif;color:%s;line-height:1.7;text-align:center;background:%s">'
@@ -350,7 +355,7 @@ def html_correo(u, C, ahora, lang):
            u'<div style="font:13px Arial,sans-serif;color:#9ca3af;margin-top:10px;letter-spacing:.5px">%s</div></div>'
            % (OSCURO, WEB, WEB, ahora.astimezone(tg.TZ).strftime("%d/%m/%Y")))
     return (u'<!DOCTYPE html><html lang="%s"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-            u'<meta name="color-scheme" content="light"></head><body style="margin:0;padding:0;background:#ffffff">'
+            u'<meta name="color-scheme" content="light"><style>@media only screen and (max-width:760px){.m100{width:100%%!important}.m50{width:50%%!important}}</style></head><body style="margin:0;padding:0;background:#ffffff">'
             u'<div style="width:100%%;background:#ffffff">%s<div style="padding:16px 10px 10px">%s</div>%s</div></body></html>'
             % (lang, cab, "".join(F), pie))
 
