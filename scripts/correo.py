@@ -348,8 +348,8 @@ def html_correo(u, C, ahora, lang):
 
     pie = (u'<div style="padding:26px 16px;font:12px Arial,sans-serif;color:%s;line-height:1.7;text-align:center;background:%s">'
            u'<a href="%s" style="color:%s;font-weight:700;text-decoration:none">sportevlab.com</a> · <a href="%scuenta.html#espacio" style="color:%s;text-decoration:none">%s</a><br>'
-           u'\U0001F51E %s<br>%s<br><a href="%scuenta.html#avisos" style="color:%s">%s</a><br>SportEVLab · Community16 LLC · New Mexico, USA</div>'
-           % (GRIS, FONDO, WEB, VERDE, WEB, VERDE, T["espacio"], T["aviso"], T["porque"], WEB, VERDE, T["baja"]))
+           u'\U0001F51E %s<br>%s<br><a href="%scuenta.html#avisos" style="color:%s">%s</a><br>SportEVLab · Community16 LLC · 500 4th St NW, Suite 102 #1327, Albuquerque, NM 87102, USA<br><a href="%slegal.html#privacidad" style="color:#6b7280">Privacidad / Privacy</a></div>'
+           % (GRIS, FONDO, WEB, VERDE, WEB, VERDE, T["espacio"], T["aviso"], T["porque"], WEB, VERDE, T["baja"], WEB))
     cab = (u'<div style="background:%s;padding:26px 16px 22px;text-align:center">'
            u'<a href="%s" style="display:inline-block"><img src="%simg/correo-logo.png" width="320" alt="SportEVLab" '
            u'style="width:320px;max-width:80%%;height:auto;display:block;margin:0 auto;border:0;color:#ffffff;font:800 30px Arial,sans-serif"></a>'
