@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-18 03:53 UTC",
+ "actualizado": "2026-11-18 16:16 UTC",
  "liga": "Euroliga",
  "datos_hasta": "2026-11-17T20:00:00Z",
  "dias_desde_datos": 0,
@@ -54,7 +54,36 @@
    ],
    "creada": "2026-11-18 03:53 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 1.53,
+      "casa": "1xBet"
+     },
+     "L": {
+      "c": 2.61,
+      "casa": "1xBet"
+     }
+    },
+    "mercado": {
+     "L": 0.3772,
+     "V": 0.6228
+    },
+    "casas": 17,
+    "ev": {
+     "L": 0.2617,
+     "V": -0.2096
+    },
+    "valor": [],
+    "actualizado": "2026-11-18 16:16 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-18 16:16 UTC",
+    "valor": [],
+    "L": 2.61,
+    "V": 1.53
+   }
   },
   {
    "id": "E2026_121",
@@ -146,7 +175,36 @@
    ],
    "creada": "2026-11-18 03:53 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.53,
+      "casa": "1xBet"
+     },
+     "V": {
+      "c": 2.61,
+      "casa": "1xBet"
+     }
+    },
+    "mercado": {
+     "L": 0.6228,
+     "V": 0.3772
+    },
+    "casas": 17,
+    "ev": {
+     "L": -0.116,
+     "V": 0.1019
+    },
+    "valor": [],
+    "actualizado": "2026-11-18 16:16 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-18 16:16 UTC",
+    "valor": [],
+    "L": 1.53,
+    "V": 2.61
+   }
   },
   {
    "id": "E2026_125",
@@ -169,7 +227,36 @@
    ],
    "creada": "2026-11-18 03:53 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.29,
+      "casa": "Unibet (SE)"
+     },
+     "V": {
+      "c": 4.3,
+      "casa": "Betsson"
+     }
+    },
+    "mercado": {
+     "L": 0.7419,
+     "V": 0.2581
+    },
+    "casas": 17,
+    "ev": {
+     "L": 0.0926,
+     "V": -0.3421
+    },
+    "valor": [],
+    "actualizado": "2026-11-18 16:16 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-18 16:16 UTC",
+    "valor": [],
+    "L": 1.29,
+    "V": 4.3
+   }
   }
  ],
  "recientes": [

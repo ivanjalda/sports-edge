@@ -1,119 +1,15 @@
 {
- "actualizado": "2026-11-18 03:53 UTC",
+ "actualizado": "2026-11-18 16:16 UTC",
  "liga": "NBA",
- "datos_hasta": "2026-11-18T01:00:00Z",
+ "datos_hasta": "2026-11-18T04:00:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": true,
- "proximo": "2026-11-18T04:00:00Z",
+ "proximo": "2026-11-19T00:00:00Z",
  "predicciones": [
-  {
-   "id": "401910006",
-   "fecha": "2026-11-18T03:30:00Z",
-   "local": "LA Clippers",
-   "visitante": "Utah Jazz",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8125,
-   "pv": 0.1875,
-   "elo_l": 1498,
-   "elo_v": 1313,
-   "bal_l": [
-    4,
-    8
-   ],
-   "bal_v": [
-    1,
-    13
-   ],
-   "creada": "2026-11-16 16:51 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "L": {
-      "c": 1.46,
-      "casa": "Betfair"
-     },
-     "V": {
-      "c": 3.1,
-      "casa": "Matchbook"
-     }
-    },
-    "mercado": {
-     "L": 0.6761,
-     "V": 0.3239
-    },
-    "casas": 25,
-    "ev": {
-     "L": 0.1863,
-     "V": -0.4187
-    },
-    "valor": [],
-    "actualizado": "2026-11-17 16:51 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-17 01:35 UTC",
-    "valor": [],
-    "L": 1.45,
-    "V": 2.9
-   }
-  },
-  {
-   "id": "401910005",
-   "fecha": "2026-11-18T04:00:00Z",
-   "local": "Los Angeles Lakers",
-   "visitante": "Charlotte Hornets",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7761,
-   "pv": 0.2239,
-   "elo_l": 1609,
-   "elo_v": 1488,
-   "bal_l": [
-    12,
-    2
-   ],
-   "bal_v": [
-    4,
-    9
-   ],
-   "creada": "2026-11-16 16:51 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 3.6,
-      "casa": "Unibet (SE)"
-     },
-     "L": {
-      "c": 1.37,
-      "casa": "Matchbook"
-     }
-    },
-    "mercado": {
-     "L": 0.7201,
-     "V": 0.2799
-    },
-    "casas": 25,
-    "ev": {
-     "L": 0.0633,
-     "V": -0.194
-    },
-    "valor": [],
-    "actualizado": "2026-11-17 16:51 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-17 01:35 UTC",
-    "valor": [],
-    "L": 1.29,
-    "V": 4.38
-   }
-  },
   {
    "id": "401910007",
    "fecha": "2026-11-19T00:00:00Z",
@@ -135,7 +31,36 @@
    ],
    "creada": "2026-11-17 01:35 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.56,
+      "casa": "Betfair"
+     },
+     "V": {
+      "c": 2.74,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "L": 0.635,
+     "V": 0.365
+    },
+    "casas": 25,
+    "ev": {
+     "L": 0.1232,
+     "V": -0.2328
+    },
+    "valor": [],
+    "actualizado": "2026-11-18 16:16 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-18 16:16 UTC",
+    "valor": [],
+    "L": 1.56,
+    "V": 2.74
+   }
   },
   {
    "id": "401910008",
@@ -158,7 +83,36 @@
    ],
    "creada": "2026-11-17 01:35 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 1.36,
+      "casa": "Betfair"
+     },
+     "L": {
+      "c": 3.65,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.2828,
+     "V": 0.7172
+    },
+    "casas": 25,
+    "ev": {
+     "L": -0.112,
+     "V": 0.0291
+    },
+    "valor": [],
+    "actualizado": "2026-11-18 16:16 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-18 16:16 UTC",
+    "valor": [],
+    "L": 3.65,
+    "V": 1.36
+   }
   },
   {
    "id": "401910009",
@@ -181,7 +135,36 @@
    ],
    "creada": "2026-11-17 01:35 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.16,
+      "casa": "Betfair"
+     },
+     "V": {
+      "c": 6.6,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "L": 0.8335,
+     "V": 0.1665
+    },
+    "casas": 25,
+    "ev": {
+     "L": -0.0428,
+     "V": 0.1537
+    },
+    "valor": [],
+    "actualizado": "2026-11-18 16:16 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-18 16:16 UTC",
+    "valor": [],
+    "L": 1.16,
+    "V": 6.6
+   }
   },
   {
    "id": "401910010",
@@ -204,7 +187,36 @@
    ],
    "creada": "2026-11-17 01:35 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 2.05,
+      "casa": "Winamax (DE)"
+     },
+     "V": {
+      "c": 1.94,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "L": 0.4773,
+     "V": 0.5227
+    },
+    "casas": 25,
+    "ev": {
+     "L": 0.0527,
+     "V": -0.0562
+    },
+    "valor": [],
+    "actualizado": "2026-11-18 16:16 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-18 16:16 UTC",
+    "valor": [],
+    "L": 2.05,
+    "V": 1.94
+   }
   },
   {
    "id": "401910011",
@@ -227,7 +239,36 @@
    ],
    "creada": "2026-11-17 01:35 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.76,
+      "casa": "Betfair"
+     },
+     "V": {
+      "c": 2.3,
+      "casa": "1xBet"
+     }
+    },
+    "mercado": {
+     "L": 0.5647,
+     "V": 0.4353
+    },
+    "casas": 25,
+    "ev": {
+     "L": -0.0788,
+     "V": 0.0962
+    },
+    "valor": [],
+    "actualizado": "2026-11-18 16:16 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-18 16:16 UTC",
+    "valor": [],
+    "L": 1.76,
+    "V": 2.3
+   }
   },
   {
    "id": "401910012",
@@ -250,7 +291,36 @@
    ],
    "creada": "2026-11-17 01:35 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.45,
+      "casa": "Betfair"
+     },
+     "V": {
+      "c": 3.17,
+      "casa": "Pinnacle"
+     }
+    },
+    "mercado": {
+     "L": 0.6806,
+     "V": 0.3194
+    },
+    "casas": 25,
+    "ev": {
+     "L": 0.1932,
+     "V": -0.4386
+    },
+    "valor": [],
+    "actualizado": "2026-11-18 16:16 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-18 16:16 UTC",
+    "valor": [],
+    "L": 1.45,
+    "V": 3.17
+   }
   },
   {
    "id": "401910013",
@@ -273,7 +343,36 @@
    ],
    "creada": "2026-11-17 01:35 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 1.42,
+      "casa": "Matchbook"
+     },
+     "L": {
+      "c": 3.35,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.3044,
+     "V": 0.6956
+    },
+    "casas": 25,
+    "ev": {
+     "L": -0.2436,
+     "V": 0.0994
+    },
+    "valor": [],
+    "actualizado": "2026-11-18 16:16 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-18 16:16 UTC",
+    "valor": [],
+    "L": 3.35,
+    "V": 1.42
+   }
   },
   {
    "id": "401910014",
@@ -296,7 +395,36 @@
    ],
    "creada": "2026-11-17 01:35 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 3.25,
+      "casa": "Matchbook"
+     },
+     "L": {
+      "c": 1.43,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.6845,
+     "V": 0.3155
+    },
+    "casas": 25,
+    "ev": {
+     "L": 0.0695,
+     "V": -0.1807
+    },
+    "valor": [],
+    "actualizado": "2026-11-18 16:16 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-18 16:16 UTC",
+    "valor": [],
+    "L": 1.43,
+    "V": 3.25
+   }
   },
   {
    "id": "401910016",
@@ -319,7 +447,36 @@
    ],
    "creada": "2026-11-17 01:35 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.57,
+      "casa": "Matchbook"
+     },
+     "V": {
+      "c": 2.74,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.6294,
+     "V": 0.3706
+    },
+    "casas": 25,
+    "ev": {
+     "L": -0.3236,
+     "V": 0.5596
+    },
+    "valor": [],
+    "actualizado": "2026-11-18 16:16 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-18 16:16 UTC",
+    "valor": [],
+    "L": 1.57,
+    "V": 2.74
+   }
   },
   {
    "id": "401910015",
@@ -342,7 +499,36 @@
    ],
    "creada": "2026-11-17 04:48 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 1.77,
+      "casa": "Betfair"
+     },
+     "L": {
+      "c": 2.26,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "L": 0.4384,
+     "V": 0.5616
+    },
+    "casas": 25,
+    "ev": {
+     "L": 0.026,
+     "V": -0.0336
+    },
+    "valor": [],
+    "actualizado": "2026-11-18 16:16 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-18 16:16 UTC",
+    "valor": [],
+    "L": 2.26,
+    "V": 1.77
+   }
   },
   {
    "id": "401910017",
@@ -365,7 +551,36 @@
    ],
    "creada": "2026-11-17 04:48 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.26,
+      "casa": "Betfair"
+     },
+     "V": {
+      "c": 4.6,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "L": 0.7815,
+     "V": 0.2185
+    },
+    "casas": 25,
+    "ev": {
+     "L": 0.1417,
+     "V": -0.5681
+    },
+    "valor": [],
+    "actualizado": "2026-11-18 16:16 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-18 16:16 UTC",
+    "valor": [],
+    "L": 1.26,
+    "V": 4.6
+   }
   },
   {
    "id": "401910018",
@@ -388,7 +603,36 @@
    ],
    "creada": "2026-11-17 04:48 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 1.42,
+      "casa": "Betfair"
+     },
+     "L": {
+      "c": 3.3,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "L": 0.311,
+     "V": 0.689
+    },
+    "casas": 25,
+    "ev": {
+     "L": 0.1596,
+     "V": -0.079
+    },
+    "valor": [],
+    "actualizado": "2026-11-18 16:16 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-18 16:16 UTC",
+    "valor": [],
+    "L": 3.3,
+    "V": 1.42
+   }
   },
   {
    "id": "401910019",
@@ -484,6 +728,110 @@
   }
  ],
  "recientes": [
+  {
+   "id": "401910005",
+   "fecha": "2026-11-18T04:00:00Z",
+   "local": "Los Angeles Lakers",
+   "visitante": "Charlotte Hornets",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7761,
+   "pv": 0.2239,
+   "elo_l": 1609,
+   "elo_v": 1488,
+   "bal_l": [
+    12,
+    2
+   ],
+   "bal_v": [
+    4,
+    9
+   ],
+   "creada": "2026-11-16 16:51 UTC",
+   "resultado": "L",
+   "marcador": "118-114",
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 3.6,
+      "casa": "Unibet (SE)"
+     },
+     "L": {
+      "c": 1.37,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.7201,
+     "V": 0.2799
+    },
+    "casas": 25,
+    "ev": {
+     "L": 0.0633,
+     "V": -0.194
+    },
+    "valor": [],
+    "actualizado": "2026-11-17 16:51 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-17 01:35 UTC",
+    "valor": [],
+    "L": 1.29,
+    "V": 4.38
+   }
+  },
+  {
+   "id": "401910006",
+   "fecha": "2026-11-18T03:30:00Z",
+   "local": "LA Clippers",
+   "visitante": "Utah Jazz",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8125,
+   "pv": 0.1875,
+   "elo_l": 1498,
+   "elo_v": 1313,
+   "bal_l": [
+    4,
+    8
+   ],
+   "bal_v": [
+    1,
+    13
+   ],
+   "creada": "2026-11-16 16:51 UTC",
+   "resultado": "V",
+   "marcador": "107-132",
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.46,
+      "casa": "Betfair"
+     },
+     "V": {
+      "c": 3.1,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.6761,
+     "V": 0.3239
+    },
+    "casas": 25,
+    "ev": {
+     "L": 0.1863,
+     "V": -0.4187
+    },
+    "valor": [],
+    "actualizado": "2026-11-17 16:51 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-17 01:35 UTC",
+    "valor": [],
+    "L": 1.45,
+    "V": 2.9
+   }
+  },
   {
    "id": "401910003",
    "fecha": "2026-11-18T01:00:00Z",
@@ -1419,122 +1767,18 @@
     "L": 1.98,
     "V": 2.02
    }
-  },
-  {
-   "id": "401909986",
-   "fecha": "2026-11-15T21:00:00Z",
-   "local": "Phoenix Suns",
-   "visitante": "Los Angeles Lakers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.3834,
-   "pv": 0.6166,
-   "elo_l": 1510,
-   "elo_v": 1604,
-   "bal_l": [
-    5,
-    6
-   ],
-   "bal_v": [
-    11,
-    2
-   ],
-   "creada": "2026-11-14 02:42 UTC",
-   "resultado": "V",
-   "marcador": "123-131",
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 1.72,
-      "casa": "Matchbook"
-     },
-     "L": {
-      "c": 2.38,
-      "casa": "Betfair"
-     }
-    },
-    "mercado": {
-     "L": 0.4202,
-     "V": 0.5798
-    },
-    "casas": 25,
-    "ev": {
-     "L": -0.0875,
-     "V": 0.0606
-    },
-    "valor": [],
-    "actualizado": "2026-11-15 14:36 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-15 14:36 UTC",
-    "valor": [],
-    "L": 2.38,
-    "V": 1.72
-   }
-  },
-  {
-   "id": "401909985",
-   "fecha": "2026-11-15T18:00:00Z",
-   "local": "Philadelphia 76ers",
-   "visitante": "Indiana Pacers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7532,
-   "pv": 0.2468,
-   "elo_l": 1547,
-   "elo_v": 1380,
-   "bal_l": [
-    10,
-    3
-   ],
-   "bal_v": [
-    4,
-    8
-   ],
-   "creada": "2026-11-13 19:24 UTC",
-   "resultado": "L",
-   "marcador": "131-124",
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 3.45,
-      "casa": "Matchbook"
-     },
-     "L": {
-      "c": 1.39,
-      "casa": "Matchbook"
-     }
-    },
-    "mercado": {
-     "L": 0.7032,
-     "V": 0.2968
-    },
-    "casas": 25,
-    "ev": {
-     "L": 0.0469,
-     "V": -0.1485
-    },
-    "valor": [],
-    "actualizado": "2026-11-15 14:36 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-15 14:36 UTC",
-    "valor": [],
-    "L": 1.39,
-    "V": 3.45
-   }
   }
  ],
  "directo": {
   "total": 66,
-  "resueltas": 48,
-  "aciertos": 34,
-  "acierto": 0.7083,
+  "resueltas": 50,
+  "aciertos": 35,
+  "acierto": 0.7,
   "ic": [
-   0.5682,
-   0.8176
+   0.5625,
+   0.809
   ],
-  "brier": 0.2039,
+  "brier": 0.21,
   "apuestas": 18,
   "ganadas": 7,
   "roi": -0.205
@@ -1572,8 +1816,8 @@
   },
   {
    "equipo": "Los Angeles Lakers",
-   "elo": 1609,
-   "g": 12,
+   "elo": 1612,
+   "g": 13,
    "p": 2
   },
   {
@@ -1649,14 +1893,14 @@
    "p": 6
   },
   {
-   "equipo": "LA Clippers",
-   "elo": 1498,
+   "equipo": "Charlotte Hornets",
+   "elo": 1486,
    "g": 4,
-   "p": 8
+   "p": 10
   },
   {
-   "equipo": "Charlotte Hornets",
-   "elo": 1488,
+   "equipo": "LA Clippers",
+   "elo": 1471,
    "g": 4,
    "p": 9
   },
@@ -1703,6 +1947,12 @@
    "p": 10
   },
   {
+   "equipo": "Utah Jazz",
+   "elo": 1340,
+   "g": 2,
+   "p": 13
+  },
+  {
    "equipo": "Sacramento Kings",
    "elo": 1339,
    "g": 1,
@@ -1713,12 +1963,6 @@
    "elo": 1315,
    "g": 4,
    "p": 11
-  },
-  {
-   "equipo": "Utah Jazz",
-   "elo": 1313,
-   "g": 1,
-   "p": 13
   }
  ]
 }

@@ -7012,8 +7012,8 @@
     0
    ],
    "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "61-46"
   },
   {
    "id": "401920426",
@@ -7035,8 +7035,8 @@
     0
    ],
    "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "85-65"
   },
   {
    "id": "401911521",
@@ -7058,8 +7058,8 @@
     1
    ],
    "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "68-75"
   },
   {
    "id": "401909787",
@@ -7081,8 +7081,8 @@
     0
    ],
    "creada": "2026-11-16 16:51 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "102-77"
   },
   {
    "id": "401921729",
@@ -7104,8 +7104,8 @@
     0
    ],
    "creada": "2026-11-16 16:51 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "65-61"
   },
   {
    "id": "401917533",
@@ -7127,8 +7127,8 @@
     2
    ],
    "creada": "2026-11-16 16:51 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "54-83"
   },
   {
    "id": "401925879",
@@ -7150,8 +7150,8 @@
     2
    ],
    "creada": "2026-11-16 16:51 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "74-62"
   },
   {
    "id": "401920512",
@@ -7173,8 +7173,8 @@
     0
    ],
    "creada": "2026-11-16 16:51 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "70-76"
   },
   {
    "id": "401909753",
@@ -9107,7 +9107,76 @@
    "creada": "2026-11-18 03:53 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401920515",
+   "fecha": "2026-11-19T00:30:00Z",
+   "local": "West Virginia Mountaineers",
+   "visitante": "Kansas Jayhawks",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.3327,
+   "pv": 0.6673,
+   "elo_l": 1643,
+   "elo_v": 1739,
+   "bal_l": [
+    4,
+    0
+   ],
+   "bal_v": [
+    4,
+    0
+   ],
+   "creada": "2026-11-18 16:16 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401920516",
+   "fecha": "2026-11-19T03:00:00Z",
+   "local": "Auburn Tigers",
+   "visitante": "UNLV Rebels",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.6597,
+   "pv": 0.3403,
+   "elo_l": 1660,
+   "elo_v": 1582,
+   "bal_l": [
+    2,
+    2
+   ],
+   "bal_v": [
+    3,
+    1
+   ],
+   "creada": "2026-11-18 16:16 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401926773",
+   "fecha": "2026-11-20T04:00:00Z",
+   "local": "USC Trojans",
+   "visitante": "Tarleton State Texans",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.9345,
+   "pv": 0.0655,
+   "elo_l": 1597,
+   "elo_v": 1434,
+   "bal_l": [
+    4,
+    0
+   ],
+   "bal_v": [
+    2,
+    1
+   ],
+   "creada": "2026-11-18 16:16 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-18 03:53 UTC"
+ "actualizado": "2026-11-18 16:16 UTC"
 }

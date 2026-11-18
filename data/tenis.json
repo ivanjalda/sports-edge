@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-18 03:53 UTC",
+ "actualizado": "2026-11-18 16:16 UTC",
  "datos_hasta": 20261114,
  "dias_desde_datos": 4,
  "fuentes": {
@@ -86,25 +86,25 @@
    "cuota": {
     "mejor": {
      "1": {
-      "c": 2.18,
+      "c": 2.3,
       "casa": "Betfair"
      },
      "2": {
-      "c": 1.79,
-      "casa": "Betfair"
+      "c": 1.76,
+      "casa": "1xBet"
      }
     },
     "mercado": {
-     "1": 0.451,
-     "2": 0.549
+     "1": 0.4423,
+     "2": 0.5577
     },
-    "casas": 19,
+    "casas": 20,
     "ev": {
-     "1": -0.128,
-     "2": 0.074
+     "1": -0.08,
+     "2": 0.056
     },
     "valor": [],
-    "actualizado": "2026-11-17 16:50 UTC"
+    "actualizado": "2026-11-18 16:16 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-17 01:35 UTC",
@@ -112,10 +112,104 @@
     "1": 2.02,
     "2": 1.89
    }
+  },
+  {
+   "id": "91d621e106bf38d41c61739852993840",
+   "torneo": "ATP Finals",
+   "tour": "ATP",
+   "sup": "Hard",
+   "fecha": "2026-11-19T13:00:00Z",
+   "j1": "Ben Shelton",
+   "j2": "Rafael Jodar",
+   "id1": "atp:S0S1",
+   "id2": "atp:J0DZ",
+   "p1": 0.5377,
+   "p2": 0.4623,
+   "n1": 251,
+   "n2": 67,
+   "creada": "2026-11-18 16:16 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "1": {
+      "c": 1.52,
+      "casa": "Betfair"
+     },
+     "2": {
+      "c": 2.88,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "1": 0.641,
+     "2": 0.359
+    },
+    "casas": 19,
+    "ev": {
+     "1": -0.1827,
+     "2": 0.3314
+    },
+    "valor": [],
+    "actualizado": "2026-11-18 16:16 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-18 16:16 UTC",
+    "valor": [],
+    "1": 1.52,
+    "2": 2.88
+   }
+  },
+  {
+   "id": "66cc3b98e9e67560a34198715ee78d75",
+   "torneo": "ATP Finals",
+   "tour": "ATP",
+   "sup": "Hard",
+   "fecha": "2026-11-19T19:30:00Z",
+   "j1": "Alexander Zverev",
+   "j2": "Arthur Fils",
+   "id1": "atp:Z355",
+   "id2": "atp:F0F1",
+   "p1": 0.6398,
+   "p2": 0.3602,
+   "n1": 637,
+   "n2": 195,
+   "creada": "2026-11-18 16:16 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "1": {
+      "c": 1.43,
+      "casa": "Pinnacle"
+     },
+     "2": {
+      "c": 3.3,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "1": 0.6871,
+     "2": 0.3129
+    },
+    "casas": 19,
+    "ev": {
+     "1": -0.0851,
+     "2": 0.1887
+    },
+    "valor": [],
+    "actualizado": "2026-11-18 16:16 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-18 16:16 UTC",
+    "valor": [],
+    "1": 1.43,
+    "2": 3.3
+   }
   }
  ],
  "directo": {
-  "total": 18,
+  "total": 20,
   "resueltas": 15,
   "acierto": 0.6667,
   "brier": 0.2353,
