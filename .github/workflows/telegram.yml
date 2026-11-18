@@ -1,0 +1,17 @@
+name: Telegram pronosticos
+
+# Envio manual de los pronosticos del dia a los dos canales (espanol @sportevlab e ingles @sportevlab_en).
+# El envio normal lo hace solo el vigilante (Resultados Telegram) cada manana a las 9:30.
+on:
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Enviar pronosticos a los canales
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+        run: python3 -u scripts/telegram.py
