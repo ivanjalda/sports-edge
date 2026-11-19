@@ -97,11 +97,16 @@ var SPORTS=[
  {id:"futbol",es:"Fútbol",en:"Football",ic:"⚽",on:true},
  {id:"tenis",es:"Tenis",en:"Tennis",ic:"🎾",on:true},
  {id:"baloncesto",es:"Baloncesto",en:"Basketball",ic:"🏀",on:true},
- {id:"voleibol",es:"Voleibol",en:"Volleyball",ic:"🏐",on:false},
  {id:"hockey",es:"Hockey",en:"Hockey",ic:"🏒",on:true},
- {id:"boxeo",es:"Boxeo",en:"Boxing",ic:"🥊",on:false},
- {id:"mma",es:"MMA",en:"MMA",ic:"🥋",on:false},
- {id:"caballos",es:"Caballos",en:"Horse racing",ic:"🏇",on:false}
+ {id:"americano",es:"Fútbol americano",en:"American football",ic:"🏈",on:true},
+ {id:"mma",es:"MMA",en:"MMA",ic:"🥋",on:true},
+ {id:"beisbol",es:"Béisbol",en:"Baseball",ic:"⚾",on:true},
+ {id:"voleibol",es:"Voleibol",en:"Volleyball",ic:"🏐",on:true},
+ {id:"rugby",es:"Rugby",en:"Rugby",ic:"🏉",on:true},
+ {id:"esports",es:"Esports",en:"Esports",ic:"🎮",on:true},
+ {id:"motor",es:"Motor",en:"Motorsport",ic:"🏁",on:true},
+ {id:"golf",es:"Golf",en:"Golf",ic:"⛳",on:true},
+ {id:"boxeo",es:"Boxeo",en:"Boxing",ic:"🥊",on:false}
 ];
 var SECS=["resumen","confianza","ligas","ejemplos","directo"];
 var T={
@@ -162,7 +167,7 @@ try{
 var D={bt:null,st:null,va:null};
 
 function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
-function go(s,x){ if(s==="tenis"){ location.href="tenis.html#stats"; return; } if(s==="baloncesto"){ location.href="equipos.html?dep=baloncesto#stats"; return; } if(s==="hockey"){ location.href="equipos.html?dep=hockey#stats"; return; } sport=s; sec=x||"resumen"; try{ location.hash=s+"-"+sec; }catch(e){} render(); }
+function go(s,x){ if(s==="tenis"){ location.href="tenis.html#stats"; return; } if(["baloncesto","hockey","americano","mma","beisbol","voleibol","rugby","esports"].indexOf(s)>=0){ location.href="equipos.html?dep="+s+"#stats"; return; } if(s==="motor"){ location.href="carreras.html"; return; } if(s==="golf"){ location.href="carreras.html?grupo=golf"; return; } sport=s; sec=x||"resumen"; try{ location.hash=s+"-"+sec; }catch(e){} render(); }
 function setEx(l){ exLiga=l; render(); }
 function t(k){ return T[lang][k]; }
 function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }

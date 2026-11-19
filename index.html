@@ -203,10 +203,11 @@ var DEP={
  voleibol:{es:"Voleibol",en:"Volleyball",ic:"🏐",url:"equipos.html?dep=voleibol",cm_es:"NCAA femenina",cm_en:"NCAA women's",n:1,ligas:["voley"]},
  golf:{es:"Golf",en:"Golf",ic:"⛳",url:"carreras.html?grupo=golf",cm_es:"PGA Tour · DP World Tour",cm_en:"PGA Tour · DP World Tour",n:2,series:["golf_pga","golf_dp"]},
  motor:{es:"Motor",en:"Motorsport",ic:"🏁",url:"carreras.html",cm_es:"Fórmula 1 · MotoGP · NASCAR",cm_en:"Formula 1 · MotoGP · NASCAR",n:3,series:["f1","motogp","nascar"]},
+ esports:{es:"Esports",en:"Esports",ic:"🎮",url:"equipos.html?dep=esports",cm_es:"League of Legends (LCK · LPL · LEC · LCS · Mundial…)",cm_en:"League of Legends (LCK · LPL · LEC · LCS · Worlds…)",n:1,ligas:["lol"]},
  rugby:{es:"Rugby",en:"Rugby",ic:"🏉",url:"equipos.html?dep=rugby",cm_es:"Seis Naciones · Premiership · Top 14 · URC · Champions Cup · Super Rugby",cm_en:"Six Nations · Premiership · Top 14 · URC · Champions Cup · Super Rugby",n:6,ligas:["rug_6n","rug_prem","rug_top14","rug_urc","rug_cc","rug_super"]}
 };
-var NOMBRE_LIGA={nba:"NBA",euroliga:"Euroliga",eurocup:"Eurocup",ncaab:"NCAA",wnba:"WNBA",nhl:"NHL",ncaah:"NCAA",nfl:"NFL",ncaaf:"NCAA",ufc:"UFC",mlb:"MLB",voley:"NCAA",rug_6n:"Seis Naciones",rug_prem:"Premiership",rug_top14:"Top 14",rug_urc:"URC",rug_cc:"Champions Cup",rug_super:"Super Rugby"};
-var SOON=[{ic:"🥊",es:"Boxeo",en:"Boxing"},{ic:"🏁",es:"NASCAR",en:"NASCAR"},{ic:"🚴",es:"Ciclismo",en:"Cycling"},{ic:"🎮",es:"LoL",en:"LoL"},{ic:"🤾",es:"Balonmano",en:"Handball"},{ic:"🏓",es:"Tenis de mesa",en:"Table tennis"},{ic:"🏸",es:"Bádminton",en:"Badminton"},{ic:"🎾",es:"Pádel",en:"Padel"},{ic:"🎱",es:"Snooker",en:"Snooker"},{ic:"⚽",es:"Fútbol sala",en:"Futsal"},{ic:"🏇",es:"Caballos",en:"Horse racing"},{ic:"🐕",es:"Galgos",en:"Greyhounds"}];
+var NOMBRE_LIGA={nba:"NBA",euroliga:"Euroliga",eurocup:"Eurocup",ncaab:"NCAA",wnba:"WNBA",nhl:"NHL",ncaah:"NCAA",nfl:"NFL",ncaaf:"NCAA",ufc:"UFC",mlb:"MLB",voley:"NCAA",rug_6n:"Seis Naciones",rug_prem:"Premiership",rug_top14:"Top 14",rug_urc:"URC",rug_cc:"Champions Cup",rug_super:"Super Rugby",lol:"League of Legends"};
+var SOON=[{ic:"🥊",es:"Boxeo",en:"Boxing"},{ic:"🚴",es:"Ciclismo",en:"Cycling"},{ic:"🤾",es:"Balonmano",en:"Handball"},{ic:"🏓",es:"Tenis de mesa",en:"Table tennis"},{ic:"🏸",es:"Bádminton",en:"Badminton"},{ic:"🎾",es:"Pádel",en:"Padel"},{ic:"🎱",es:"Snooker",en:"Snooker"},{ic:"⚽",es:"Fútbol sala",en:"Futsal"},{ic:"🏇",es:"Caballos",en:"Horse racing"},{ic:"🐕",es:"Galgos",en:"Greyhounds"}];
 var CLOCKS=[
  {tz:"Europe/Madrid",es:"Madrid",en:"Madrid",x_es:"LaLiga · Euroliga",x_en:"LaLiga · EuroLeague"},
  {tz:"Europe/London",es:"Londres",en:"London",x_es:"Premier · Wimbledon",x_en:"Premier · Wimbledon"},
@@ -370,7 +371,7 @@ var cargas=[load("predicciones.json","f_pred"),load("estadisticas.json","f_stats
             load("tenis.json","t"),load("tenis_backtest.json","t_bt"),load("noticias.json","news"),
             load("carreras_f1.json","c_f1"),load("carreras_motogp.json","c_motogp"),load("carreras_nascar.json","c_nascar"),
             load("carreras_golf_pga.json","c_golf_pga"),load("carreras_golf_dp.json","c_golf_dp")];
-["nba","euroliga","eurocup","ncaab","wnba","nhl","ncaah","nfl","ncaaf","ufc","mlb","voley","rug_6n","rug_prem","rug_top14","rug_urc","rug_cc","rug_super"].forEach(function(lg){
+["nba","euroliga","eurocup","ncaab","wnba","nhl","ncaah","nfl","ncaaf","ufc","mlb","voley","rug_6n","rug_prem","rug_top14","rug_urc","rug_cc","rug_super","lol"].forEach(function(lg){
   cargas.push(load("equipos_"+lg+".json","e_"+lg)); cargas.push(load("equipos_"+lg+"_backtest.json","b_"+lg)); });
 render();
 Promise.all(cargas).then(render);
