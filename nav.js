@@ -455,3 +455,77 @@
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",vigilar); else vigilar();
   window.addEventListener("storage",function(){ aplicar(); });
 })();
+
+/* ---------- Asistente virtual (chat) ----------
+   Boton abajo a la derecha en todas las paginas. Las respuestas las da nuestro asistente en Cloudflare
+   (asistente.sportevlab.com) con Gemini, usando solo los datos reales de la web. */
+(function(){
+  var URL_ASIST="https://asistente.sportevlab.com/chat";
+  function L(){ try{ return localStorage.getItem("lang")==="en"?"en":"es"; }catch(e){ return "es"; } }
+  var TX={es:{tit:"Asistente SportEVLab",sub:"Pregúntame por nuestros pronósticos",ph:"Escribe tu pregunta…",env:"Enviar",
+              hola:"👋 ¡Hola! Pregúntame por los pronósticos de hoy, cómo nos fue ayer o cualquier duda de la web.",
+              sug:["¿Qué partidos de fútbol hay hoy?","¿Cuál es el pronóstico más claro de hoy?","¿Cómo nos fue ayer?","¿Qué es el valor esperado?"],
+              pie:"🔞 Solo +18 · Probabilidades, no garantías",esc:"Escribiendo…",err:"No he podido conectar. Inténtalo de nuevo en un momento.",btn:"Asistente"},
+          en:{tit:"SportEVLab assistant",sub:"Ask me about our predictions",ph:"Type your question…",env:"Send",
+              hola:"👋 Hi! Ask me about today's predictions, how we did yesterday or anything about the website.",
+              sug:["Which football games are on today?","What's today's clearest prediction?","How did you do yesterday?","What is expected value?"],
+              pie:"🔞 18+ only · Probabilities, not guarantees",esc:"Typing…",err:"I couldn't connect. Please try again in a moment.",btn:"Assistant"}};
+  var hist=[], abierto=false, ocupado=false, caja, lista, campo;
+  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+  function formato(t){
+    var h=esc(t);
+    h=h.replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>");
+    h=h.replace(/(https?:\/\/[^\s<)]+|sportevlab\.com\/[A-Za-z0-9_.\-?=#&;\/]*)/g,function(u){ var href=u.indexOf("http")===0?u:"https://"+u; return '<a href="'+href.replace(/&amp;/g,"&")+'">'+u+"</a>"; });
+    h=h.replace(/(^|\n)\s*[\*\-•]\s+/g,"$1• ");
+    return h.replace(/\n/g,"<br>");
+  }
+  function burbuja(txt,quien){
+    var d=document.createElement("div"); d.className="se-cb "+(quien==="user"?"yo":"el");
+    d.innerHTML=quien==="user"?esc(txt):formato(txt); lista.appendChild(d); lista.scrollTop=lista.scrollHeight; return d;
+  }
+  function preguntar(q){
+    q=(q||campo.value||"").trim(); if(!q||ocupado) return;
+    campo.value=""; burbuja(q,"user"); ocupado=true;
+    var esp=burbuja(TX[L()].esc,"model"); esp.classList.add("esp");
+    var sug=caja.querySelector(".se-csug"); if(sug) sug.style.display="none";
+    fetch(URL_ASIST,{method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({pregunta:q,lang:L(),historial:hist.slice(-6),pagina:location.pathname})})
+    .then(function(r){ return r.json(); })
+    .then(function(d){ var t=d.respuesta||TX[L()].err; esp.classList.remove("esp"); esp.innerHTML=formato(t);
+      hist.push({r:"user",t:q}); hist.push({r:"model",t:t}); })
+    .catch(function(){ esp.classList.remove("esp"); esp.textContent=TX[L()].err; })
+    .then(function(){ ocupado=false; lista.scrollTop=lista.scrollHeight; });
+  }
+  function montar(){
+    if(document.getElementById("se-chat")) return;
+    var t=TX[L()];
+    var st=document.createElement("style");
+    st.textContent="#se-chatb{position:fixed;right:18px;bottom:18px;z-index:9998;border:0;border-radius:30px;padding:13px 18px;background:#22c55e;color:#04130a;font:700 15px system-ui,sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.35);cursor:pointer;display:flex;gap:8px;align-items:center}"
+     +"#se-chat{position:fixed;right:18px;bottom:80px;z-index:9999;width:380px;max-width:calc(100vw - 24px);height:560px;max-height:calc(100vh - 110px);display:none;flex-direction:column;background:#0f1522;color:#e5e7eb;border:1px solid #1f2937;border-radius:16px;box-shadow:0 18px 50px rgba(0,0,0,.5);overflow:hidden;font-family:system-ui,sans-serif}"
+     +"#se-chat.ab{display:flex}#se-chat .hd{background:#0b0f17;padding:14px 16px;border-bottom:1px solid #1f2937;display:flex;align-items:center;gap:10px}"
+     +"#se-chat .hd b{display:block;font-size:15px}#se-chat .hd span{font-size:12px;color:#8b95a7}#se-chat .hd button{margin-left:auto;background:none;border:0;color:#8b95a7;font-size:20px;cursor:pointer}"
+     +"#se-chat .ls{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px}"
+     +".se-cb{max-width:86%;padding:10px 13px;border-radius:14px;font-size:14px;line-height:1.5;word-wrap:break-word}.se-cb a{color:#38bdf8}"
+     +".se-cb.yo{align-self:flex-end;background:#22c55e;color:#04130a;border-bottom-right-radius:4px}.se-cb.el{align-self:flex-start;background:#1a2233;border-bottom-left-radius:4px}"
+     +".se-cb.esp{color:#8b95a7;font-style:italic}.se-csug{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px}"
+     +".se-csug button{background:#121826;border:1px solid #1f2937;color:#e5e7eb;border-radius:16px;padding:6px 11px;font-size:12.5px;cursor:pointer}.se-csug button:hover{border-color:#22c55e}"
+     +"#se-chat .ft{display:flex;gap:8px;padding:10px;border-top:1px solid #1f2937}#se-chat .ft input{flex:1;background:#0b0f17;border:1px solid #1f2937;color:#e5e7eb;border-radius:10px;padding:10px 12px;font-size:14px}"
+     +"#se-chat .ft button{background:#22c55e;border:0;color:#04130a;border-radius:10px;padding:0 14px;font-weight:700;cursor:pointer}#se-chat .pie{font-size:11px;color:#8b95a7;text-align:center;padding:0 0 8px}"
+     +"@media(max-width:600px){#se-chat{right:12px;left:12px;width:auto;bottom:76px}#se-chatb{right:12px;bottom:12px;padding:12px 15px}}";
+    document.head.appendChild(st);
+    var b=document.createElement("button"); b.id="se-chatb"; b.innerHTML="💬 <span>"+t.btn+"</span>";
+    caja=document.createElement("div"); caja.id="se-chat";
+    caja.innerHTML='<div class="hd"><img src="img/icono.svg" width="30" height="30" alt=""><div><b>'+t.tit+'</b><span>'+t.sub+'</span></div><button aria-label="cerrar">✕</button></div>'
+      +'<div class="ls"></div><div class="se-csug">'+t.sug.map(function(s){ return '<button>'+esc(s)+'</button>'; }).join("")+'</div>'
+      +'<div class="ft"><input type="text" maxlength="600" placeholder="'+t.ph+'"><button>'+t.env+'</button></div><div class="pie">'+t.pie+'</div>';
+    document.body.appendChild(caja); document.body.appendChild(b);
+    lista=caja.querySelector(".ls"); campo=caja.querySelector(".ft input");
+    burbuja(t.hola,"model");
+    b.onclick=function(){ abierto=!abierto; caja.classList.toggle("ab",abierto); if(abierto) setTimeout(function(){ campo.focus(); },50); };
+    caja.querySelector(".hd button").onclick=function(){ abierto=false; caja.classList.remove("ab"); };
+    caja.querySelector(".ft button").onclick=function(){ preguntar(); };
+    campo.addEventListener("keydown",function(e){ if(e.key==="Enter") preguntar(); });
+    [].forEach.call(caja.querySelectorAll(".se-csug button"),function(x){ x.onclick=function(){ preguntar(x.textContent); }; });
+  }
+  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",montar); else montar();
+})();
