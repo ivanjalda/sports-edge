@@ -427,6 +427,13 @@ def git(*args):
 
 
 def subir(msg):
+    # el asistente virtual se actualiza a la vez que los resultados
+    try:
+        import subprocess
+        subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "asistente_contexto.py")], timeout=120)
+        git("add", os.path.join(DATA, "asistente.json"))
+    except Exception as ex:
+        print("Aviso: asistente no actualizado: %s" % ex)
     git("add", os.path.join(DATA, ESTADO))
     if git("diff", "--cached", "--quiet"):
         return
