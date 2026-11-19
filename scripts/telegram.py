@@ -32,7 +32,8 @@ EQUIPOS = [("baloncesto", u"\U0001F3C0", "Baloncesto", [("nba", "NBA"), ("euroli
            ("voleibol", u"\U0001F3D0", "Voleibol", [("voley", "NCAA femenina")]),
            ("rugby", u"\U0001F3C9", "Rugby", [("rug_6n", "Seis Naciones"), ("rug_prem", "Premiership"), ("rug_top14", "Top 14"),
                                               ("rug_urc", "United Rugby Championship"), ("rug_cc", "Champions Cup"),
-                                              ("rug_super", "Super Rugby")])]
+                                              ("rug_super", "Super Rugby")]),
+           ("esports", u"\U0001F3AE", "Esports", [("lol", "League of Legends")])]
 MAX_POR_LIGA = 6   # para que el mensaje no sea interminable (la lista completa esta en la web)
 
 
@@ -188,10 +189,10 @@ def record():
 
 
 NOMBRES = {"futbol": u"⚽ Fútbol", "tenis": u"\U0001F3BE Tenis", "baloncesto": u"\U0001F3C0 Baloncesto",
-           "hockey": u"\U0001F3D2 Hockey", "americano": u"\U0001F3C8 Fútbol americano", "mma": u"\U0001F94B MMA", "beisbol": u"⚾ Béisbol", "voleibol": u"\U0001F3D0 Voleibol", "rugby": u"\U0001F3C9 Rugby"}
+           "hockey": u"\U0001F3D2 Hockey", "americano": u"\U0001F3C8 Fútbol americano", "mma": u"\U0001F94B MMA", "beisbol": u"⚾ Béisbol", "voleibol": u"\U0001F3D0 Voleibol", "rugby": u"\U0001F3C9 Rugby", "esports": u"\U0001F3AE Esports"}
 NOMBRES_EN = {"futbol": u"⚽ Football", "tenis": u"\U0001F3BE Tennis", "baloncesto": u"\U0001F3C0 Basketball",
-              "hockey": u"\U0001F3D2 Hockey", "americano": u"\U0001F3C8 American football", "mma": u"\U0001F94B MMA", "beisbol": u"⚾ Baseball", "voleibol": u"\U0001F3D0 Volleyball", "rugby": u"\U0001F3C9 Rugby"}
-ORDEN_DEP = ("futbol", "tenis", "baloncesto", "hockey", "americano", "mma", "beisbol", "voleibol", "rugby")
+              "hockey": u"\U0001F3D2 Hockey", "americano": u"\U0001F3C8 American football", "mma": u"\U0001F94B MMA", "beisbol": u"⚾ Baseball", "voleibol": u"\U0001F3D0 Volleyball", "rugby": u"\U0001F3C9 Rugby", "esports": u"\U0001F3AE Esports"}
+ORDEN_DEP = ("futbol", "tenis", "baloncesto", "hockey", "americano", "mma", "beisbol", "voleibol", "rugby", "esports")
 
 TX = {
     "es": {"titulo": u"\U0001F3AF <b>PRONÓSTICOS DEL DÍA</b> · %s\nSportEVLab · próximas 24 horas, calculados con resultados reales. Horas de Madrid.",

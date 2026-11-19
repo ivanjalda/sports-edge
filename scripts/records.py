@@ -16,11 +16,11 @@ DATA = "data"
 DEP = {"nba": "baloncesto", "euroliga": "baloncesto", "eurocup": "baloncesto", "ncaab": "baloncesto", "wnba": "baloncesto",
        "nhl": "hockey", "ncaah": "hockey", "nfl": "americano", "ncaaf": "americano", "ufc": "mma", "mlb": "beisbol",
        "voley": "voleibol", "rug_6n": "rugby", "rug_prem": "rugby", "rug_top14": "rugby", "rug_urc": "rugby",
-       "rug_cc": "rugby", "rug_super": "rugby"}
+       "rug_cc": "rugby", "rug_super": "rugby", "lol": "esports"}
 NOMBRE = {"nba": "NBA", "euroliga": "Euroliga", "eurocup": "Eurocup", "ncaab": "NCAA baloncesto", "wnba": "WNBA",
           "nhl": "NHL", "ncaah": "NCAA hockey", "nfl": "NFL", "ncaaf": "NCAA fútbol americano", "ufc": "UFC", "mlb": "MLB",
           "voley": "NCAA voleibol femenino", "rug_6n": "Seis Naciones", "rug_prem": "Premiership", "rug_top14": "Top 14",
-          "rug_urc": "United Rugby Championship", "rug_cc": "Champions Cup", "rug_super": "Super Rugby"}
+          "rug_urc": "United Rugby Championship", "rug_cc": "Champions Cup", "rug_super": "Super Rugby", "lol": "League of Legends"}
 SERIES = {"f1": ("motor", "Fórmula 1", "podios"), "motogp": ("motor", "MotoGP", "podios"), "nascar": ("motor", "NASCAR Cup Series", "podios"),
           "golf_pga": ("golf", "PGA Tour", "top 3"), "golf_dp": ("golf", "DP World Tour", "top 3")}
 

@@ -17,6 +17,7 @@ import sys
 import time
 import unicodedata
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone, timedelta
 
@@ -55,6 +56,8 @@ VOLEY = {"k": 20.0, "hca": 50.0, "revertir": 0.75, "mov": "nhl"}
 # Rugby: ESPN marca todas las fases con tipo 1, asi que se aceptan todos los tipos. Los empates (muy raros) no entrenan
 # el modelo y, si ocurren en un partido pronosticado, cuentan como fallo. max_dias es alto porque entre temporadas
 # (y entre ediciones del Seis Naciones) pasan meses sin partidos: los ultimos resultados reales siguen siendo validos.
+# League of Legends: no hay campo local (todos los partidos son en terreno neutral). La temporada es el ano.
+ESPORTS = {"k": 32.0, "hca": 0.0, "revertir": 0.80, "mov": "nhl", "tipos": (2,), "horas": 48}
 RUGBY = {"k": 20.0, "hca": 65.0, "revertir": 0.75, "mov": "nhl", "tipos": (1, 2, 3, 4, 5), "horas": 96}
 LIGAS = {
     "nba": dict(BALONCESTO, nombre="NBA", fuente="espn", ruta="basketball/nba", extra="",
@@ -106,6 +109,11 @@ LIGAS = {
     "rug_6n": dict(RUGBY, nombre="Seis Naciones", fuente="espn", ruta="rugby/180659", extra="",
                    odds="rugbyunion_six_nations", inicio="20150201", eval="20220201", min_eq=5, max_dias=400,
                    min_juegos=100, meses=(2, 3)),
+    # Fuente: Leaguepedia (lol.fandom.com), la enciclopedia abierta de LoL. Todas las ligas principales del mundo
+    # (LCK, LPL, LEC, LCS, CBLOL, LCP...) y los torneos internacionales (Mundial, MSI, First Stand) juntos,
+    # para que la fuerza de equipos de regiones distintas se pueda comparar.
+    "lol": dict(ESPORTS, nombre="League of Legends", fuente="lol", odds=None, inicio="20220101", eval="20250101",
+                min_eq=8, max_dias=120, min_juegos=300),
     "ncaah": dict(HOCKEY, nombre="NCAA", fuente="espn", ruta="hockey/mens-college-hockey", extra="",
                   odds=None, inicio="20231001", eval="20241001", min_eq=10, max_dias=12,
                   meses=(10, 11, 12, 1, 2, 3, 4)),
@@ -340,6 +348,87 @@ def descargar(ruta, desde, hasta, extra="", meses=None):
         d = fin + timedelta(days=1)
         time.sleep(0.2)
     return list(juegos.values()), errores, llegado
+
+
+# ---------------------------------------------------------------- League of Legends (Leaguepedia)
+LOL_API = "https://lol.fandom.com/api.php"
+LOL_UA = "SportEVLab/1.0 (https://sportevlab.com; contacto@sportevlab.com)"
+LOL_CAMPOS = ("MS.Team1=Team1,MS.Team2=Team2,MS.Winner=Winner,MS.Team1Score=S1,MS.Team2Score=S2,"
+              "MS.DateTime_UTC=Fecha,MS.OverviewPage=Pagina,MS.MatchId=Id,MS.BestOf=BestOf,T.League=Liga")
+# Ligas principales si la union con la tabla de torneos fallara
+LOL_RESPALDO = ("LCK/%", "LCK Cup/%", "LPL/%", "LEC/%", "LCS/%", "LTA North/%", "LTA South/%", "LTA/%", "CBLOL/%",
+                "LCP/%", "PCS/%", "VCS/%", "LJL/%", "%Season World Championship%", "%Mid-Season Invitational%", "First Stand/%")
+
+
+def lol_pedir(where, offset, union=True):
+    q = {"action": "cargoquery", "format": "json", "limit": "500", "offset": str(offset),
+         "order_by": "MS.DateTime_UTC ASC", "where": where}
+    if union:
+        q.update({"tables": "MatchSchedule=MS,Tournaments=T", "join_on": "MS.OverviewPage=T.OverviewPage", "fields": LOL_CAMPOS})
+    else:
+        q.update({"tables": "MatchSchedule=MS", "fields": LOL_CAMPOS.replace(",T.League=Liga", "")})
+    url = LOL_API + "?" + urllib.parse.urlencode(q)
+    for intento in range(4):
+        req = urllib.request.Request(url, headers={"User-Agent": LOL_UA, "Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            d = json.loads(resp.read().decode("utf-8", "replace"))
+        if "error" in d:
+            if "ratelimit" in json.dumps(d["error"]).lower():
+                time.sleep(10 * (intento + 1))
+                continue
+            raise RuntimeError(d["error"].get("info") if isinstance(d["error"], dict) else d["error"])
+        return [x.get("title", {}) for x in d.get("cargoquery", [])]
+    raise RuntimeError("Leaguepedia: limite de peticiones")
+
+
+def leer_lol(filas):
+    out = []
+    for f in filas:
+        try:
+            t1, t2, fecha = (f.get("Team1") or "").strip(), (f.get("Team2") or "").strip(), f.get("Fecha")
+            if not t1 or not t2 or not fecha or t1.upper() in ("TBD", "TBA") or t2.upper() in ("TBD", "TBA"):
+                continue
+            g = (f.get("Winner") or "").strip()
+            s1, s2 = f.get("S1"), f.get("S2")
+            s1 = int(s1) if str(s1 or "").isdigit() else None
+            s2 = int(s2) if str(s2 or "").isdigit() else None
+            if g in ("1", "2") and (s1 is None or s2 is None or s1 == s2):
+                s1, s2 = (1, 0) if g == "1" else (0, 1)
+            dt = parse_iso(fecha.replace(" ", "T") + "Z")
+            out.append({"id": "lol-" + (f.get("Id") or "%s-%s-%s" % (t1, t2, fecha)).replace(" ", "_"),
+                        "fecha": iso(dt), "temporada": dt.year, "tipo": 2, "terminado": g in ("1", "2"),
+                        "neutral": True, "local": t1, "visitante": t2,
+                        "pl": s1 if g in ("1", "2") else None, "pv": s2 if g in ("1", "2") else None,
+                        "liga": f.get("Liga") or (f.get("Pagina") or "").split("/")[0]})
+        except Exception:
+            continue
+    return out
+
+
+def descargar_lol(cfg, desde, hasta):
+    """Partidos de las ligas principales entre dos fechas (con resultado o programados)."""
+    a, b = desde.strftime("%Y-%m-%d"), hasta.strftime("%Y-%m-%d 23:59:59")
+    base = "MS.DateTime_UTC >= '%s' AND MS.DateTime_UTC <= '%s'" % (a, b)
+    variantes = [(base + " AND T.TournamentLevel='Primary' AND (T.IsQualifier IS NULL OR T.IsQualifier=0)", True),
+                 (base + " AND (" + " OR ".join("MS.OverviewPage LIKE '%s'" % x for x in LOL_RESPALDO) + ")", False)]
+    errores = 0
+    for where, union in variantes:
+        juegos, off, t0 = [], 0, time.time()
+        try:
+            while True:
+                filas = lol_pedir(where, off, union)
+                juegos.extend(leer_lol(filas))
+                if len(filas) < 500 or time.time() - t0 > 300:
+                    break
+                off += 500
+                time.sleep(1.5)
+            if juegos:
+                print("Leaguepedia (%s): %d partidos" % ("torneos principales" if union else "ligas principales", len(juegos)))
+                return juegos, errores
+        except Exception as ex:
+            errores += 1
+            print("Aviso: Leaguepedia (%s) no disponible: %s" % ("union" if union else "respaldo", str(ex)[:200]))
+    return [], errores
 
 
 # ---------------------------------------------------------------- modelo Elo
@@ -619,6 +708,10 @@ def procesar(clave, cfg, ahora, stamp, restantes):
     if cfg["fuente"] == "euro":
         nuevos, errores = descargar_euro(cfg, not juegos, ahora)
         origen = "Euroleague (oficial)"
+    elif cfg["fuente"] == "lol":
+        desde = (ahora - timedelta(days=21)) if juegos else datetime.strptime(cfg["inicio"], "%Y%m%d").replace(tzinfo=timezone.utc)
+        nuevos, errores = descargar_lol(cfg, desde, ahora + timedelta(days=10))
+        origen = "Leaguepedia"
     else:
         # Si la descarga historica quedo a medias, se continua desde donde se quedo
         hecho = cache.get("historico_hasta")

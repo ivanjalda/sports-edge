@@ -36,7 +36,7 @@ DEP = {
     "baloncesto": (u"\U0001F3C0", "Baloncesto", "Basketball"), "hockey": (u"\U0001F3D2", "Hockey", "Hockey"),
     "americano": (u"\U0001F3C8", u"Fútbol americano", "American football"), "mma": (u"\U0001F94B", "MMA", "MMA"),
     "beisbol": (u"⚾", u"Béisbol", "Baseball"), "voleibol": (u"\U0001F3D0", "Voleibol", "Volleyball"),
-    "rugby": (u"\U0001F3C9", "Rugby", "Rugby"), "motor": (u"\U0001F3C1", "Motor", "Motorsport"), "golf": (u"⛳", "Golf", "Golf")}
+    "rugby": (u"\U0001F3C9", "Rugby", "Rugby"), "esports": (u"\U0001F3AE", "Esports", "Esports"), "motor": (u"\U0001F3C1", "Motor", "Motorsport"), "golf": (u"⛳", "Golf", "Golf")}
 
 WEBS = [
     ("https://equityintrinsic.com/", WEB + "img/equity-intrinsic.jpg", u"\U0001F4C8 Equity Intrinsic",

@@ -4,6 +4,7 @@
 Lee los titulares publicos (RSS) de medios deportivos y guarda solo: titular, enlace, medio y fecha.
 No se copia el texto de las noticias: el usuario pulsa y lee la noticia en la web del medio.
 Si un medio falla, se usan los demas. Si fallan todos, se conservan las noticias anteriores."""
+import html
 import json
 import os
 import re
@@ -69,7 +70,7 @@ def clasificar(titulo):
 
 def limpiar(s):
     s = re.sub(r"<[^>]+>", " ", s or "")
-    s = s.replace("&nbsp;", " ").replace("&amp;", "&").replace("&quot;", '"').replace("&#39;", "'")
+    s = html.unescape(html.unescape(s.replace("&nbsp;", " ")))   # algunos medios codifican dos veces (&amp;#039;)
     return re.sub(r"\s+", " ", s).strip()
 
 

@@ -71,13 +71,13 @@ FUENTES = [
 NOMBRES = {"futbol": u"⚽ Fútbol", "tenis": u"\U0001F3BE Tenis", "baloncesto": u"\U0001F3C0 Baloncesto",
            "hockey": u"\U0001F3D2 Hockey", "americano": u"\U0001F3C8 Fútbol americano", "mma": u"\U0001F94B MMA",
            "beisbol": u"⚾ Béisbol", "voleibol": u"\U0001F3D0 Voleibol",
-           "rugby": u"\U0001F3C9 Rugby", "motor": u"\U0001F3C1 Motor"}
+           "rugby": u"\U0001F3C9 Rugby", "esports": u"\U0001F3AE Esports", "motor": u"\U0001F3C1 Motor"}
 NOMBRES_EN = {"futbol": u"⚽ Football", "tenis": u"\U0001F3BE Tennis", "baloncesto": u"\U0001F3C0 Basketball",
               "hockey": u"\U0001F3D2 Hockey", "americano": u"\U0001F3C8 American football", "mma": u"\U0001F94B MMA",
               "beisbol": u"⚾ Baseball", "voleibol": u"\U0001F3D0 Volleyball",
-              "rugby": u"\U0001F3C9 Rugby", "motor": u"\U0001F3C1 Motorsport"}
+              "rugby": u"\U0001F3C9 Rugby", "esports": u"\U0001F3AE Esports", "motor": u"\U0001F3C1 Motorsport"}
 LIGA_EN = {"Seis Naciones": "Six Nations", "NCAA femenina": "NCAA Women"}
-ORDEN = ["futbol", "tenis", "baloncesto", "hockey", "americano", "mma", "beisbol", "voleibol", "rugby", "motor"]
+ORDEN = ["futbol", "tenis", "baloncesto", "hockey", "americano", "mma", "beisbol", "voleibol", "rugby", "esports", "motor"]
 
 
 def leer(nombre, defecto):
@@ -158,6 +158,7 @@ def cargar_predicciones():
     for f in FUENTES:
         if f[5] != "futbol":
             pred[f[5]] = leer("equipos_%s_historial.json" % f[5], {}).get("predicciones", [])
+    pred["lol"] = leer("equipos_lol_historial.json", {}).get("predicciones", [])
     return pred
 
 
@@ -221,6 +222,15 @@ def terminados(ahora):
                 out.append({"dep": dep, "ic": ic, "liga": liga, "clave": clave, "id": str(ev.get("id")),
                             "fecha": ev.get("date"), "local": (h.get("team") or {}).get("displayName"),
                             "visit": (a.get("team") or {}).get("displayName"), "gl": int(gl), "gv": int(gv)})
+    # League of Legends: no esta en ESPN; los resultados los trae el motor desde Leaguepedia
+    for g in (leer("equipos_lol_resultados.json", {}).get("juegos") or {}).values():
+        try:
+            if g.get("pl") is None or g.get("pv") is None or fecha(g["fecha"]) < ahora - timedelta(hours=48):
+                continue
+        except Exception:
+            continue
+        out.append({"dep": "esports", "ic": u"\U0001F3AE", "liga": "League of Legends", "clave": "lol", "id": str(g["id"]),
+                    "fecha": g["fecha"], "local": g["local"], "visit": g["visitante"], "gl": int(g["pl"]), "gv": int(g["pv"])})
     vistos, unicos = set(), []
     for x in out:
         k = x["clave"] + ":" + x["id"]
