@@ -47,7 +47,7 @@ jobs:
           ODDS_FETCH: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '0 7 * * *' }}
         run: GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} python3 scripts/tenis.py
 
-      - name: Deportes de equipo (baloncesto, hockey, rugby...)
+      - name: Deportes de equipo (baloncesto, hockey, rugby, League of Legends...)
         continue-on-error: true
         timeout-minutes: 75
         env:
@@ -59,11 +59,6 @@ jobs:
         continue-on-error: true
         timeout-minutes: 35
         run: python3 -u scripts/carreras.py
-
-      - name: Prueba de datos de League of Legends
-        continue-on-error: true
-        timeout-minutes: 3
-        run: python3 -u scripts/prueba_lol.py
 
       - name: Records (con nuestros datos reales)
         continue-on-error: true
