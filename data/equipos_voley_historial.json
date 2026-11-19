@@ -6414,8 +6414,8 @@
     13
    ],
    "creada": "2026-11-17 01:35 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "3-2"
   },
   {
    "id": "401884445",
@@ -6437,8 +6437,8 @@
     19
    ],
    "creada": "2026-11-17 01:35 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "3-0"
   },
   {
    "id": "401901277",
@@ -6460,8 +6460,8 @@
     16
    ],
    "creada": "2026-11-17 01:35 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "1-3"
   },
   {
    "id": "401901684",
@@ -6483,8 +6483,8 @@
     3
    ],
    "creada": "2026-11-17 01:35 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "0-3"
   },
   {
    "id": "401903224",
@@ -6506,8 +6506,8 @@
     15
    ],
    "creada": "2026-11-17 01:35 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "1-3"
   },
   {
    "id": "401931793",
@@ -6529,8 +6529,8 @@
     8
    ],
    "creada": "2026-11-17 01:35 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "3-0"
   },
   {
    "id": "401891167",
@@ -6552,8 +6552,8 @@
     16
    ],
    "creada": "2026-11-17 01:35 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "3-1"
   },
   {
    "id": "401891251",
@@ -6575,8 +6575,8 @@
     10
    ],
    "creada": "2026-11-17 01:35 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "3-0"
   },
   {
    "id": "401901175",
@@ -6598,8 +6598,8 @@
     21
    ],
    "creada": "2026-11-17 01:35 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "3-0"
   },
   {
    "id": "401901219",
@@ -6621,8 +6621,8 @@
     4
    ],
    "creada": "2026-11-17 01:35 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "0-3"
   },
   {
    "id": "401891283",
@@ -6667,8 +6667,8 @@
     17
    ],
    "creada": "2026-11-17 04:48 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "3-0"
   },
   {
    "id": "401891269",
@@ -6690,8 +6690,8 @@
     12
    ],
    "creada": "2026-11-17 04:48 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "0-3"
   },
   {
    "id": "401901194",
@@ -8463,7 +8463,582 @@
    "creada": "2026-11-19 00:02 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401887005",
+   "fecha": "2026-11-21T00:30:00Z",
+   "local": "TCU Horned Frogs",
+   "visitante": "Arizona State Sun Devils",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.308,
+   "pv": 0.692,
+   "elo_l": 1776,
+   "elo_v": 1889,
+   "bal_l": [
+    19,
+    6
+   ],
+   "bal_v": [
+    21,
+    4
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401888839",
+   "fecha": "2026-11-21T00:30:00Z",
+   "local": "Houston Cougars",
+   "visitante": "Colorado Buffaloes",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.2577,
+   "pv": 0.7423,
+   "elo_l": 1542,
+   "elo_v": 1723,
+   "bal_l": [
+    13,
+    13
+   ],
+   "bal_v": [
+    17,
+    8
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401931872",
+   "fecha": "2026-11-21T00:30:00Z",
+   "local": "Auburn Tigers",
+   "visitante": "Alabama Crimson Tide",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.7346,
+   "pv": 0.2654,
+   "elo_l": 1619,
+   "elo_v": 1512,
+   "bal_l": [
+    15,
+    12
+   ],
+   "bal_v": [
+    10,
+    14
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401932325",
+   "fecha": "2026-11-21T00:30:00Z",
+   "local": "Alabama A&M Bulldogs",
+   "visitante": "Grambling Tigers",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.767,
+   "pv": 0.233,
+   "elo_l": 1470,
+   "elo_v": 1321,
+   "bal_l": [
+    19,
+    11
+   ],
+   "bal_v": [
+    12,
+    15
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401887116",
+   "fecha": "2026-11-21T01:00:00Z",
+   "local": "Baylor Bears",
+   "visitante": "Iowa State Cyclones",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7922,
+   "pv": 0.2078,
+   "elo_l": 1764,
+   "elo_v": 1643,
+   "bal_l": [
+    16,
+    8
+   ],
+   "bal_v": [
+    14,
+    11
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401891114",
+   "fecha": "2026-11-21T01:00:00Z",
+   "local": "Weber State Wildcats",
+   "visitante": "Eastern Washington Eagles",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8848,
+   "pv": 0.1152,
+   "elo_l": 1562,
+   "elo_v": 1333,
+   "bal_l": [
+    17,
+    10
+   ],
+   "bal_v": [
+    11,
+    18
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401891315",
+   "fecha": "2026-11-21T01:00:00Z",
+   "local": "Utah Tech Trailblazers",
+   "visitante": "Portland State Vikings",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8954,
+   "pv": 0.1046,
+   "elo_l": 1723,
+   "elo_v": 1478,
+   "bal_l": [
+    23,
+    4
+   ],
+   "bal_v": [
+    13,
+    14
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401931759",
+   "fecha": "2026-11-21T01:00:00Z",
+   "local": "Liberty Flames",
+   "visitante": "Sam Houston Bearkats",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.6328,
+   "pv": 0.3672,
+   "elo_l": 1569,
+   "elo_v": 1503,
+   "bal_l": [
+    17,
+    11
+   ],
+   "bal_v": [
+    17,
+    12
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401931789",
+   "fecha": "2026-11-21T01:00:00Z",
+   "local": "Morgan State Bears",
+   "visitante": "Norfolk State Spartans",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.7444,
+   "pv": 0.2556,
+   "elo_l": 1393,
+   "elo_v": 1280,
+   "bal_l": [
+    11,
+    15
+   ],
+   "bal_v": [
+    9,
+    17
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401931926",
+   "fecha": "2026-11-21T01:00:00Z",
+   "local": "Incarnate Word Cardinals",
+   "visitante": "Lamar Cardinals",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.874,
+   "pv": 0.126,
+   "elo_l": 1595,
+   "elo_v": 1361,
+   "bal_l": [
+    16,
+    9
+   ],
+   "bal_v": [
+    10,
+    19
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401931935",
+   "fecha": "2026-11-21T01:00:00Z",
+   "local": "App State Mountaineers",
+   "visitante": "Louisiana Ragin' Cajuns",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.4921,
+   "pv": 0.5079,
+   "elo_l": 1609,
+   "elo_v": 1570,
+   "bal_l": [
+    19,
+    11
+   ],
+   "bal_v": [
+    16,
+    13
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401932319",
+   "fecha": "2026-11-21T01:00:00Z",
+   "local": "Fairfield Stags",
+   "visitante": "Sacred Heart Pioneers",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.7416,
+   "pv": 0.2584,
+   "elo_l": 1674,
+   "elo_v": 1513,
+   "bal_l": [
+    24,
+    5
+   ],
+   "bal_v": [
+    21,
+    10
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401888890",
+   "fecha": "2026-11-21T01:30:00Z",
+   "local": "Kansas Jayhawks",
+   "visitante": "West Virginia Mountaineers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.9073,
+   "pv": 0.0927,
+   "elo_l": 1843,
+   "elo_v": 1583,
+   "bal_l": [
+    19,
+    6
+   ],
+   "bal_v": [
+    13,
+    11
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401903481",
+   "fecha": "2026-11-21T01:30:00Z",
+   "local": "Southern Utah Thunderbirds",
+   "visitante": "Northern Arizona Lumberjacks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.0609,
+   "pv": 0.9391,
+   "elo_l": 1168,
+   "elo_v": 1587,
+   "bal_l": [
+    1,
+    25
+   ],
+   "bal_v": [
+    18,
+    11
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401931059",
+   "fecha": "2026-11-21T01:30:00Z",
+   "local": "Tulsa Golden Hurricane",
+   "visitante": "East Carolina Pirates",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.8171,
+   "pv": 0.1829,
+   "elo_l": 1713,
+   "elo_v": 1543,
+   "bal_l": [
+    20,
+    7
+   ],
+   "bal_v": [
+    17,
+    11
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401891206",
+   "fecha": "2026-11-21T02:00:00Z",
+   "local": "Idaho State Bengals",
+   "visitante": "Idaho Vandals",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.9451,
+   "pv": 0.0549,
+   "elo_l": 1592,
+   "elo_v": 1307,
+   "bal_l": [
+    20,
+    9
+   ],
+   "bal_v": [
+    12,
+    17
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401891236",
+   "fecha": "2026-11-21T02:00:00Z",
+   "local": "Montana State Bobcats",
+   "visitante": "Montana Grizzlies",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7866,
+   "pv": 0.2134,
+   "elo_l": 1498,
+   "elo_v": 1357,
+   "bal_l": [
+    17,
+    11
+   ],
+   "bal_v": [
+    8,
+    20
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401896947",
+   "fecha": "2026-11-21T02:00:00Z",
+   "local": "UC Riverside Highlanders",
+   "visitante": "Cal Poly Mustangs",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.0208,
+   "pv": 0.9792,
+   "elo_l": 1236,
+   "elo_v": 1748,
+   "bal_l": [
+    4,
+    23
+   ],
+   "bal_v": [
+    19,
+    7
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401896970",
+   "fecha": "2026-11-21T02:00:00Z",
+   "local": "Cal State Bakersfield Roadrunners",
+   "visitante": "Sacramento State Hornets",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4018,
+   "pv": 0.5982,
+   "elo_l": 1397,
+   "elo_v": 1523,
+   "bal_l": [
+    13,
+    15
+   ],
+   "bal_v": [
+    14,
+    13
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401897009",
+   "fecha": "2026-11-21T02:00:00Z",
+   "local": "Cal State Fullerton Titans",
+   "visitante": "UC Irvine Anteaters",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.3203,
+   "pv": 0.6797,
+   "elo_l": 1278,
+   "elo_v": 1420,
+   "bal_l": [
+    8,
+    21
+   ],
+   "bal_v": [
+    10,
+    17
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401897082",
+   "fecha": "2026-11-21T02:00:00Z",
+   "local": "California Baptist Lancers",
+   "visitante": "UC Santa Barbara Gauchos",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.1464,
+   "pv": 0.8536,
+   "elo_l": 1316,
+   "elo_v": 1605,
+   "bal_l": [
+    7,
+    20
+   ],
+   "bal_v": [
+    15,
+    12
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401888080",
+   "fecha": "2026-11-21T03:00:00Z",
+   "local": "Stanford Cardinal",
+   "visitante": "Syracuse Orange",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.9705,
+   "pv": 0.0295,
+   "elo_l": 1783,
+   "elo_v": 1378,
+   "bal_l": [
+    17,
+    9
+   ],
+   "bal_v": [
+    7,
+    18
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401883802",
+   "fecha": "2026-11-21T03:00:00Z",
+   "local": "California Golden Bears",
+   "visitante": "Boston College Eagles",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8221,
+   "pv": 0.1779,
+   "elo_l": 1630,
+   "elo_v": 1464,
+   "bal_l": [
+    18,
+    9
+   ],
+   "bal_v": [
+    13,
+    14
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401897045",
+   "fecha": "2026-11-21T03:00:00Z",
+   "local": "Cal State Northridge Matadors",
+   "visitante": "Utah Valley Wolverines",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6332,
+   "pv": 0.3668,
+   "elo_l": 1476,
+   "elo_v": 1432,
+   "bal_l": [
+    12,
+    14
+   ],
+   "bal_v": [
+    9,
+    19
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401897095",
+   "fecha": "2026-11-21T03:00:00Z",
+   "local": "Long Beach State 49ers",
+   "visitante": "UC San Diego Tritons",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8875,
+   "pv": 0.1125,
+   "elo_l": 1730,
+   "elo_v": 1501,
+   "bal_l": [
+    22,
+    4
+   ],
+   "bal_v": [
+    13,
+    14
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-19 00:02 UTC"
+ "actualizado": "2026-11-19 03:51 UTC"
 }

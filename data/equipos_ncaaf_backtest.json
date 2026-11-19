@@ -1,46 +1,46 @@
 {
- "actualizado": "2026-11-19 00:02 UTC",
+ "actualizado": "2026-11-19 03:51 UTC",
  "liga": "NCAA",
  "desde": "20250823",
- "datos_hasta": "2026-11-18T00:00:00Z",
+ "datos_hasta": "2026-11-19T00:30:00Z",
  "total": {
-  "n": 1508,
-  "aciertos": 1074,
-  "acierto": 0.7122,
+  "n": 1510,
+  "aciertos": 1075,
+  "acierto": 0.7119,
   "ic": [
-   0.6888,
-   0.7345
+   0.6886,
+   0.7342
   ],
-  "brier": 0.1881
+  "brier": 0.1883
  },
  "base_local": {
-  "n": 1508,
-  "acierto": 0.6107
+  "n": 1510,
+  "acierto": 0.6106
  },
  "base_balance": {
-  "n": 672,
-  "acierto": 0.6637,
-  "nuestro": 0.6935
+  "n": 674,
+  "acierto": 0.6632,
+  "nuestro": 0.6929
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 1145,
-   "conf": 0.7761,
-   "acierto": 0.7642,
+   "n": 1147,
+   "conf": 0.776,
+   "acierto": 0.7637,
    "ic": [
-    0.7387,
-    0.7879
+    0.7383,
+    0.7874
    ]
   },
   {
    "min": 0.7,
-   "n": 810,
-   "conf": 0.8285,
-   "acierto": 0.821,
+   "n": 811,
+   "conf": 0.8284,
+   "acierto": 0.82,
    "ic": [
-    0.7931,
-    0.8459
+    0.792,
+    0.8449
    ]
   },
   {
@@ -65,16 +65,16 @@
   {
    "desde": 60,
    "hasta": 70,
-   "n": 335,
-   "prometido": 0.6496,
-   "real": 0.6269
+   "n": 336,
+   "prometido": 0.6497,
+   "real": 0.628
   },
   {
    "desde": 70,
    "hasta": 80,
-   "n": 336,
-   "prometido": 0.7503,
-   "real": 0.7649
+   "n": 337,
+   "prometido": 0.7502,
+   "real": 0.7626
   },
   {
    "desde": 80,
@@ -103,26 +103,26 @@
    "brier": 0.1823
   },
   "2026": {
-   "n": 659,
-   "aciertos": 464,
-   "acierto": 0.7041,
+   "n": 661,
+   "aciertos": 465,
+   "acierto": 0.7035,
    "ic": [
-    0.6681,
-    0.7377
+    0.6676,
+    0.737
    ],
-   "brier": 0.1956
+   "brier": 0.196
   }
  },
  "fases": {
   "regular": {
-   "n": 1462,
-   "aciertos": 1048,
-   "acierto": 0.7168,
+   "n": 1464,
+   "aciertos": 1049,
+   "acierto": 0.7165,
    "ic": [
-    0.6932,
-    0.7393
+    0.6929,
+    0.739
    ],
-   "brier": 0.1871
+   "brier": 0.1872
   },
   "playoff": {
    "n": 46,
@@ -137,14 +137,14 @@
  },
  "elige": {
   "local": {
-   "n": 975,
-   "aciertos": 731,
-   "acierto": 0.7497,
+   "n": 977,
+   "aciertos": 732,
+   "acierto": 0.7492,
    "ic": [
-    0.7216,
-    0.7759
+    0.7211,
+    0.7754
    ],
-   "brier": 0.1728
+   "brier": 0.1731
   },
   "visitante": {
    "n": 533,
@@ -158,6 +158,24 @@
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-19T00:30:00Z",
+   "local": "Buffalo Bulls",
+   "visitante": "Central Michigan Chippewas",
+   "marcador": "40-21",
+   "fav": "Buffalo Bulls",
+   "pp": 0.6699,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-19T00:00:00Z",
+   "local": "Massachusetts Minutemen",
+   "visitante": "Akron Zips",
+   "marcador": "33-34",
+   "fav": "Massachusetts Minutemen",
+   "pp": 0.7342,
+   "ok": false
+  },
   {
    "fecha": "2026-11-18T00:00:00Z",
    "local": "Kent State Golden Flashes",
@@ -245,7 +263,7 @@
    "visitante": "Texas Tech Red Raiders",
    "marcador": "27-52",
    "fav": "Texas Tech Red Raiders",
-   "pp": 0.5501,
+   "pp": 0.55,
    "ok": true
   },
   {
@@ -263,7 +281,7 @@
    "visitante": "South Carolina Gamecocks",
    "marcador": "34-6",
    "fav": "South Carolina Gamecocks",
-   "pp": 0.7869,
+   "pp": 0.787,
    "ok": false
   },
   {
@@ -353,7 +371,7 @@
    "visitante": "Baylor Bears",
    "marcador": "28-7",
    "fav": "BYU Cougars",
-   "pp": 0.6668,
+   "pp": 0.6667,
    "ok": true
   },
   {
@@ -364,24 +382,6 @@
    "fav": "Kentucky Wildcats",
    "pp": 0.7586,
    "ok": false
-  },
-  {
-   "fecha": "2026-11-14T23:00:00Z",
-   "local": "Marshall Thundering Herd",
-   "visitante": "App State Mountaineers",
-   "marcador": "16-20",
-   "fav": "Marshall Thundering Herd",
-   "pp": 0.6675,
-   "ok": false
-  },
-  {
-   "fecha": "2026-11-14T23:00:00Z",
-   "local": "Boise State Broncos",
-   "visitante": "Oregon State Beavers",
-   "marcador": "46-41",
-   "fav": "Boise State Broncos",
-   "pp": 0.9138,
-   "ok": true
   }
  ],
  "motor": {
@@ -394,18 +394,18 @@
    "c_micro": 30.0,
    "c_sede": 0.0
   },
-  "sd": 20.7,
+  "sd": 20.695,
   "motor": {
-   "n": 1508,
-   "acierto": 0.7122,
-   "brier": 0.1881,
-   "logloss": 0.5566
+   "n": 1510,
+   "acierto": 0.7119,
+   "brier": 0.1883,
+   "logloss": 0.557
   },
   "elo_basico": {
-   "n": 1508,
-   "acierto": 0.7062,
-   "brier": 0.1935,
-   "logloss": 0.571
+   "n": 1510,
+   "acierto": 0.706,
+   "brier": 0.1936,
+   "logloss": 0.5712
   },
   "escalas": {
    "temporada": true,
@@ -415,8 +415,8 @@
    "descanso": false
   },
   "local": {
-   "n": 1508,
-   "acierto": 0.6107
+   "n": 1510,
+   "acierto": 0.6106
   },
   "temporadas_prueba": [
    2025,

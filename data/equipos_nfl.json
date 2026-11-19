@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-11-19 00:02 UTC",
+ "actualizado": "2026-11-19 03:51 UTC",
  "liga": "NFL",
  "datos_hasta": "2026-11-17T01:15:00Z",
- "dias_desde_datos": 1,
+ "dias_desde_datos": 2,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
@@ -581,6 +581,29 @@
     "L": 3.35,
     "V": 1.42
    }
+  },
+  {
+   "id": "401873077",
+   "fecha": "2026-11-23T01:20:00Z",
+   "local": "San Francisco 49ers",
+   "visitante": "Minnesota Vikings",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.537,
+   "pv": 0.463,
+   "elo_l": 1676,
+   "elo_v": 1650,
+   "bal_l": [
+    8,
+    1
+   ],
+   "bal_v": [
+    7,
+    2
+   ],
+   "creada": "2026-11-19 03:51 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
  "recientes": [
@@ -1262,7 +1285,7 @@
   }
  ],
  "directo": {
-  "total": 24,
+  "total": 25,
   "resueltas": 13,
   "aciertos": 9,
   "acierto": 0.6923,

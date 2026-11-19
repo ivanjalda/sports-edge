@@ -1,61 +1,15 @@
 {
- "actualizado": "2026-11-19 00:02 UTC",
+ "actualizado": "2026-11-19 03:51 UTC",
  "liga": "NCAA",
- "datos_hasta": "2026-11-18T00:00:00Z",
- "dias_desde_datos": 1,
+ "datos_hasta": "2026-11-19T00:30:00Z",
+ "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
- "proximo": "2026-11-19T00:30:00Z",
+ "proximo": "2026-11-20T00:30:00Z",
  "predicciones": [
-  {
-   "id": "401866467",
-   "fecha": "2026-11-19T00:00:00Z",
-   "local": "Massachusetts Minutemen",
-   "visitante": "Akron Zips",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7341,
-   "pv": 0.2659,
-   "elo_l": 1290,
-   "elo_v": 1233,
-   "bal_l": [
-    3,
-    5
-   ],
-   "bal_v": [
-    0,
-    9
-   ],
-   "creada": "2026-11-15 02:08 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401866469",
-   "fecha": "2026-11-19T00:30:00Z",
-   "local": "Buffalo Bulls",
-   "visitante": "Central Michigan Chippewas",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6699,
-   "pv": 0.3301,
-   "elo_l": 1531,
-   "elo_v": 1471,
-   "bal_l": [
-    5,
-    3
-   ],
-   "bal_v": [
-    4,
-    5
-   ],
-   "creada": "2026-11-15 02:08 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "401862830",
    "fecha": "2026-11-20T00:30:00Z",
@@ -1462,6 +1416,52 @@
  ],
  "recientes": [
   {
+   "id": "401866469",
+   "fecha": "2026-11-19T00:30:00Z",
+   "local": "Buffalo Bulls",
+   "visitante": "Central Michigan Chippewas",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6699,
+   "pv": 0.3301,
+   "elo_l": 1531,
+   "elo_v": 1471,
+   "bal_l": [
+    5,
+    3
+   ],
+   "bal_v": [
+    4,
+    5
+   ],
+   "creada": "2026-11-15 02:08 UTC",
+   "resultado": "L",
+   "marcador": "40-21"
+  },
+  {
+   "id": "401866467",
+   "fecha": "2026-11-19T00:00:00Z",
+   "local": "Massachusetts Minutemen",
+   "visitante": "Akron Zips",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7341,
+   "pv": 0.2659,
+   "elo_l": 1290,
+   "elo_v": 1233,
+   "bal_l": [
+    3,
+    5
+   ],
+   "bal_v": [
+    0,
+    9
+   ],
+   "creada": "2026-11-15 02:08 UTC",
+   "resultado": "V",
+   "marcador": "33-34"
+  },
+  {
    "id": "401866464",
    "fecha": "2026-11-18T00:00:00Z",
    "local": "Ohio Bobcats",
@@ -1874,64 +1874,18 @@
    "creada": "2026-11-13 01:49 UTC",
    "resultado": "L",
    "marcador": "24-3"
-  },
-  {
-   "id": "401871100",
-   "fecha": "2026-11-15T00:00:00Z",
-   "local": "South Alabama Jaguars",
-   "visitante": "Troy Trojans",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6602,
-   "pv": 0.3398,
-   "elo_l": 1427,
-   "elo_v": 1398,
-   "bal_l": [
-    4,
-    5
-   ],
-   "bal_v": [
-    3,
-    5
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": "L",
-   "marcador": "27-14"
-  },
-  {
-   "id": "401856884",
-   "fecha": "2026-11-14T23:15:00Z",
-   "local": "Kentucky Wildcats",
-   "visitante": "Florida Gators",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7435,
-   "pv": 0.2565,
-   "elo_l": 1605,
-   "elo_v": 1491,
-   "bal_l": [
-    6,
-    2
-   ],
-   "bal_v": [
-    4,
-    4
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": "V",
-   "marcador": "14-21"
   }
  ],
  "directo": {
   "total": 126,
-  "resueltas": 63,
-  "aciertos": 44,
-  "acierto": 0.6984,
+  "resueltas": 65,
+  "aciertos": 45,
+  "acierto": 0.6923,
   "ic": [
-   0.5764,
-   0.7976
+   0.572,
+   0.7911
   ],
-  "brier": 0.2031,
+  "brier": 0.2069,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -2262,6 +2216,12 @@
    "p": 3
   },
   {
+   "equipo": "Buffalo Bulls",
+   "elo": 1557,
+   "g": 6,
+   "p": 3
+  },
+  {
    "equipo": "Fresno State Bulldogs",
    "elo": 1550,
    "g": 5,
@@ -2326,12 +2286,6 @@
    "elo": 1531,
    "g": 4,
    "p": 5
-  },
-  {
-   "equipo": "Buffalo Bulls",
-   "elo": 1531,
-   "g": 5,
-   "p": 3
   },
   {
    "equipo": "East Carolina Pirates",
@@ -2472,12 +2426,6 @@
    "p": 1
   },
   {
-   "equipo": "Central Michigan Chippewas",
-   "elo": 1471,
-   "g": 4,
-   "p": 5
-  },
-  {
    "equipo": "Tulane Green Wave",
    "elo": 1470,
    "g": 5,
@@ -2524,6 +2472,12 @@
    "elo": 1449,
    "g": 5,
    "p": 5
+  },
+  {
+   "equipo": "Central Michigan Chippewas",
+   "elo": 1445,
+   "g": 4,
+   "p": 6
   },
   {
    "equipo": "NC State Wolfpack",
@@ -2802,16 +2756,16 @@
    "p": 7
   },
   {
-   "equipo": "Massachusetts Minutemen",
-   "elo": 1290,
-   "g": 3,
-   "p": 5
-  },
-  {
    "equipo": "Ball State Cardinals",
    "elo": 1279,
    "g": 2,
    "p": 8
+  },
+  {
+   "equipo": "Massachusetts Minutemen",
+   "elo": 1277,
+   "g": 3,
+   "p": 6
   },
   {
    "equipo": "Sacramento State Hornets",
@@ -2844,6 +2798,12 @@
    "p": 9
   },
   {
+   "equipo": "Akron Zips",
+   "elo": 1247,
+   "g": 1,
+   "p": 9
+  },
+  {
    "equipo": "Charlotte 49ers",
    "elo": 1246,
    "g": 1,
@@ -2854,12 +2814,6 @@
    "elo": 1235,
    "g": 2,
    "p": 8
-  },
-  {
-   "equipo": "Akron Zips",
-   "elo": 1233,
-   "g": 0,
-   "p": 9
   },
   {
    "equipo": "Sam Houston Bearkats",
