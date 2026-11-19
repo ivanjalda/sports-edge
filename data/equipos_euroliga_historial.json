@@ -490,8 +490,8 @@
     4
    ],
    "creada": "2026-11-16 18:27 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "83-79"
   },
   {
    "id": "E2026_122",
@@ -518,25 +518,25 @@
    "cuota": {
     "mejor": {
      "V": {
-      "c": 1.53,
-      "casa": "1xBet"
+      "c": 1.67,
+      "casa": "Betfair"
      },
      "L": {
-      "c": 2.61,
+      "c": 2.43,
       "casa": "1xBet"
      }
     },
     "mercado": {
-     "L": 0.3772,
-     "V": 0.6228
+     "L": 0.404,
+     "V": 0.596
     },
-    "casas": 17,
+    "casas": 20,
     "ev": {
-     "L": 0.2617,
-     "V": -0.2096
+     "L": 0.1747,
+     "V": -0.1373
     },
     "valor": [],
-    "actualizado": "2026-11-18 16:16 UTC"
+    "actualizado": "2026-11-19 00:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-18 16:16 UTC",
@@ -639,25 +639,25 @@
    "cuota": {
     "mejor": {
      "L": {
-      "c": 1.53,
-      "casa": "1xBet"
+      "c": 1.67,
+      "casa": "Betfair"
      },
      "V": {
-      "c": 2.61,
+      "c": 2.43,
       "casa": "1xBet"
      }
     },
     "mercado": {
-     "L": 0.6228,
-     "V": 0.3772
+     "L": 0.596,
+     "V": 0.404
     },
-    "casas": 17,
+    "casas": 20,
     "ev": {
-     "L": -0.116,
-     "V": 0.1019
+     "L": -0.0351,
+     "V": 0.0259
     },
     "valor": [],
-    "actualizado": "2026-11-18 16:16 UTC"
+    "actualizado": "2026-11-19 00:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-18 16:16 UTC",
@@ -691,25 +691,25 @@
    "cuota": {
     "mejor": {
      "L": {
-      "c": 1.29,
-      "casa": "Unibet (SE)"
+      "c": 1.22,
+      "casa": "1xBet"
      },
      "V": {
-      "c": 4.3,
-      "casa": "Betsson"
+      "c": 5.6,
+      "casa": "Betfair"
      }
     },
     "mercado": {
-     "L": 0.7419,
-     "V": 0.2581
+     "L": 0.7992,
+     "V": 0.2008
     },
-    "casas": 17,
+    "casas": 19,
     "ev": {
-     "L": 0.0926,
-     "V": -0.3421
+     "L": 0.0333,
+     "V": -0.1432
     },
     "valor": [],
-    "actualizado": "2026-11-18 16:16 UTC"
+    "actualizado": "2026-11-19 00:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-18 16:16 UTC",
@@ -717,7 +717,99 @@
     "L": 1.29,
     "V": 4.3
    }
+  },
+  {
+   "id": "E2026_127",
+   "fecha": "2026-11-20T17:30:00Z",
+   "local": "Anadolu Efes Istanbul",
+   "visitante": "LDLC ASVEL Villeurbanne",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.778,
+   "pv": 0.222,
+   "elo_l": 1490,
+   "elo_v": 1372,
+   "bal_l": [
+    5,
+    7
+   ],
+   "bal_v": [
+    4,
+    8
+   ],
+   "creada": "2026-11-19 00:02 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_130",
+   "fecha": "2026-11-20T19:15:00Z",
+   "local": "Olympiacos Piraeus",
+   "visitante": "Real Madrid",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.713,
+   "pv": 0.287,
+   "elo_l": 1684,
+   "elo_v": 1626,
+   "bal_l": [
+    9,
+    3
+   ],
+   "bal_v": [
+    7,
+    5
+   ],
+   "creada": "2026-11-19 00:02 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_128",
+   "fecha": "2026-11-20T19:30:00Z",
+   "local": "FC Barcelona",
+   "visitante": "Crvena Zvezda Meridianbet Belgrade",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6509,
+   "pv": 0.3491,
+   "elo_l": 1558,
+   "elo_v": 1550,
+   "bal_l": [
+    8,
+    4
+   ],
+   "bal_v": [
+    7,
+    5
+   ],
+   "creada": "2026-11-19 00:02 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_129",
+   "fecha": "2026-11-20T19:45:00Z",
+   "local": "Partizan Mozzart Bet Belgrade",
+   "visitante": "Besiktas Istanbul",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6237,
+   "pv": 0.3763,
+   "elo_l": 1485,
+   "elo_v": 1497,
+   "bal_l": [
+    6,
+    6
+   ],
+   "bal_v": [
+    6,
+    6
+   ],
+   "creada": "2026-11-19 00:02 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-18 16:16 UTC"
+ "actualizado": "2026-11-19 00:02 UTC"
 }

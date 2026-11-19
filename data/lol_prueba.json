@@ -1,0 +1,128 @@
+{
+ "comprobado": "2026-11-19 00:08 UTC",
+ "pruebas": [
+  {
+   "liga": "LCK 2025",
+   "ok": true,
+   "partidos": 50,
+   "con_resultado": 50,
+   "ejemplo": [
+    {
+     "Team1": "Hanwha Life Esports",
+     "Team2": "Gen.G",
+     "Winner": "2",
+     "Team1Score": "1",
+     "Team2Score": "3",
+     "BestOf": "5",
+     "DateTime UTC": "2025-09-28 05:00:00",
+     "OverviewPage": "LCK/2025 Season/Season Playoffs",
+     "DateTime UTC__precision": "0"
+    },
+    {
+     "Team1": "KT Rolster",
+     "Team2": "Gen.G",
+     "Winner": "2",
+     "Team1Score": "0",
+     "Team2Score": "3",
+     "BestOf": "5",
+     "DateTime UTC": "2025-09-27 05:00:00",
+     "OverviewPage": "LCK/2025 Season/Season Playoffs",
+     "DateTime UTC__precision": "0"
+    },
+    {
+     "Team1": "Gen.G",
+     "Team2": "T1",
+     "Winner": "1",
+     "Team1Score": "3",
+     "Team2Score": "2",
+     "BestOf": "5",
+     "DateTime UTC": "2025-09-21 06:00:00",
+     "OverviewPage": "LCK/2025 Season/Season Playoffs",
+     "DateTime UTC__precision": "0"
+    }
+   ]
+  },
+  {
+   "liga": "LEC 2025",
+   "ok": true,
+   "partidos": 50,
+   "con_resultado": 50,
+   "ejemplo": [
+    {
+     "Team1": "G2 Esports",
+     "Team2": "Movistar KOI",
+     "Winner": "1",
+     "Team1Score": "3",
+     "Team2Score": "0",
+     "BestOf": "5",
+     "DateTime UTC": "2025-09-28 15:00:00",
+     "OverviewPage": "LEC/2025 Season/Summer Playoffs",
+     "DateTime UTC__precision": "0"
+    },
+    {
+     "Team1": "Movistar KOI",
+     "Team2": "Fnatic",
+     "Winner": "1",
+     "Team1Score": "3",
+     "Team2Score": "1",
+     "BestOf": "5",
+     "DateTime UTC": "2025-09-27 15:00:00",
+     "OverviewPage": "LEC/2025 Season/Summer Playoffs",
+     "DateTime UTC__precision": "0"
+    },
+    {
+     "Team1": "Fnatic",
+     "Team2": "Karmine Corp",
+     "Winner": "1",
+     "Team1Score": "3",
+     "Team2Score": "1",
+     "BestOf": "5",
+     "DateTime UTC": "2025-09-26 15:00:00",
+     "OverviewPage": "LEC/2025 Season/Summer Playoffs",
+     "DateTime UTC__precision": "0"
+    }
+   ]
+  },
+  {
+   "liga": "Worlds 2025",
+   "ok": true,
+   "partidos": 41,
+   "con_resultado": 41,
+   "ejemplo": [
+    {
+     "Team1": "T1",
+     "Team2": "KT Rolster",
+     "Winner": "1",
+     "Team1Score": "3",
+     "Team2Score": "2",
+     "BestOf": "5",
+     "DateTime UTC": "2025-11-09 07:00:00",
+     "OverviewPage": "2025 Season World Championship/Main Event",
+     "DateTime UTC__precision": "0"
+    },
+    {
+     "Team1": "T1",
+     "Team2": "Top Esports",
+     "Winner": "1",
+     "Team1Score": "3",
+     "Team2Score": "0",
+     "BestOf": "5",
+     "DateTime UTC": "2025-11-02 07:00:00",
+     "OverviewPage": "2025 Season World Championship/Main Event",
+     "DateTime UTC__precision": "0"
+    },
+    {
+     "Team1": "Gen.G",
+     "Team2": "KT Rolster",
+     "Winner": "2",
+     "Team1Score": "1",
+     "Team2Score": "3",
+     "BestOf": "5",
+     "DateTime UTC": "2025-11-01 07:00:00",
+     "OverviewPage": "2025 Season World Championship/Main Event",
+     "DateTime UTC__precision": "0"
+    }
+   ]
+  }
+ ]
+}

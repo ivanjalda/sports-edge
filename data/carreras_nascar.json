@@ -1,0 +1,332 @@
+{
+ "serie": "nascar",
+ "nombre": "NASCAR Cup Series",
+ "actualizado": "2026-11-19 00:04 UTC",
+ "proximo": null,
+ "descargando": false,
+ "abandono": 0.004,
+ "motor": {
+  "k": 4.0,
+  "w": 0.5,
+  "t": 30.0,
+  "t_grid": 30.0,
+  "c_grid": 0.0,
+  "prueba_previa": {
+   "carreras": 55,
+   "favorito_gana": 0.0545,
+   "logloss": 3.2374,
+   "podio": 0.2,
+   "pole_gana": null
+  },
+  "prueba_parrilla": null,
+  "azar_logloss": 3.6285,
+  "temporadas_prueba": [
+   2025,
+   2026
+  ]
+ },
+ "fuerzas": [
+  {
+   "n": "Denny Hamlin",
+   "eq": "-",
+   "piloto": 87.2,
+   "total": 87.2
+  },
+  {
+   "n": "William Byron",
+   "eq": "-",
+   "piloto": 66.9,
+   "total": 66.9
+  },
+  {
+   "n": "Christopher Bell",
+   "eq": "-",
+   "piloto": 66.3,
+   "total": 66.3
+  },
+  {
+   "n": "Kyle Larson",
+   "eq": "-",
+   "piloto": 64.9,
+   "total": 64.9
+  },
+  {
+   "n": "Ty Gibbs",
+   "eq": "-",
+   "piloto": 58.8,
+   "total": 58.8
+  },
+  {
+   "n": "Josh Berry",
+   "eq": "-",
+   "piloto": 52.4,
+   "total": 52.4
+  },
+  {
+   "n": "Tyler Reddick",
+   "eq": "-",
+   "piloto": 52.1,
+   "total": 52.1
+  },
+  {
+   "n": "Bubba Wallace",
+   "eq": "-",
+   "piloto": 49.7,
+   "total": 49.7
+  },
+  {
+   "n": "Ryan Blaney",
+   "eq": "-",
+   "piloto": 46.6,
+   "total": 46.6
+  },
+  {
+   "n": "Ross Chastain",
+   "eq": "-",
+   "piloto": 45.8,
+   "total": 45.8
+  },
+  {
+   "n": "Chase Elliott",
+   "eq": "-",
+   "piloto": 36.5,
+   "total": 36.5
+  },
+  {
+   "n": "Daniel Suarez",
+   "eq": "-",
+   "piloto": 35.9,
+   "total": 35.9
+  },
+  {
+   "n": "Joey Logano",
+   "eq": "-",
+   "piloto": 33.4,
+   "total": 33.4
+  },
+  {
+   "n": "Ryan Preece",
+   "eq": "-",
+   "piloto": 30.9,
+   "total": 30.9
+  },
+  {
+   "n": "Todd Gilliland",
+   "eq": "-",
+   "piloto": 30.7,
+   "total": 30.7
+  },
+  {
+   "n": "Corey Heim",
+   "eq": "-",
+   "piloto": 30.1,
+   "total": 30.1
+  },
+  {
+   "n": "Austin Cindric",
+   "eq": "-",
+   "piloto": 28.9,
+   "total": 28.9
+  },
+  {
+   "n": "Michael McDowell",
+   "eq": "-",
+   "piloto": 28.4,
+   "total": 28.4
+  },
+  {
+   "n": "Alex Bowman",
+   "eq": "-",
+   "piloto": 26.6,
+   "total": 26.6
+  },
+  {
+   "n": "Chase Briscoe",
+   "eq": "-",
+   "piloto": 24.8,
+   "total": 24.8
+  },
+  {
+   "n": "Zane Smith",
+   "eq": "-",
+   "piloto": 20.1,
+   "total": 20.1
+  },
+  {
+   "n": "Austin Dillon",
+   "eq": "-",
+   "piloto": 15.4,
+   "total": 15.4
+  },
+  {
+   "n": "Chris Buescher",
+   "eq": "-",
+   "piloto": 11.6,
+   "total": 11.6
+  },
+  {
+   "n": "Noah Gragson",
+   "eq": "-",
+   "piloto": 9.3,
+   "total": 9.3
+  },
+  {
+   "n": "Connor Zilisch",
+   "eq": "-",
+   "piloto": 7.7,
+   "total": 7.7
+  },
+  {
+   "n": "Shane van Gisbergen",
+   "eq": "-",
+   "piloto": 6.3,
+   "total": 6.3
+  },
+  {
+   "n": "Brad Keselowski",
+   "eq": "-",
+   "piloto": 4.1,
+   "total": 4.1
+  },
+  {
+   "n": "Austin Hill",
+   "eq": "-",
+   "piloto": 3.6,
+   "total": 3.6
+  },
+  {
+   "n": "Justin Haley",
+   "eq": "-",
+   "piloto": 2.9,
+   "total": 2.9
+  },
+  {
+   "n": "AJ Allmendinger",
+   "eq": "-",
+   "piloto": -0.2,
+   "total": -0.2
+  },
+  {
+   "n": "Erik Jones",
+   "eq": "-",
+   "piloto": -2.7,
+   "total": -2.7
+  },
+  {
+   "n": "Cole Custer",
+   "eq": "-",
+   "piloto": -8.8,
+   "total": -8.8
+  },
+  {
+   "n": "Ricky Stenhouse Jr.",
+   "eq": "-",
+   "piloto": -12.6,
+   "total": -12.6
+  },
+  {
+   "n": "Ty Dillon",
+   "eq": "-",
+   "piloto": -25.5,
+   "total": -25.5
+  },
+  {
+   "n": "John Hunter Nemechek",
+   "eq": "-",
+   "piloto": -31.4,
+   "total": -31.4
+  },
+  {
+   "n": "Riley Herbst",
+   "eq": "-",
+   "piloto": -32.9,
+   "total": -32.9
+  },
+  {
+   "n": "Cody Ware",
+   "eq": "-",
+   "piloto": -49.3,
+   "total": -49.3
+  },
+  {
+   "n": "J.J. Yeley",
+   "eq": "-",
+   "piloto": -58.7,
+   "total": -58.7
+  },
+  {
+   "n": "Chad Finchum",
+   "eq": "-",
+   "piloto": -59.6,
+   "total": -59.6
+  },
+  {
+   "n": "Casey Mears",
+   "eq": "-",
+   "piloto": -60.5,
+   "total": -60.5
+  }
+ ],
+ "equipos": [
+  {
+   "eq": "-",
+   "f": 0.0
+  }
+ ],
+ "directo": {
+  "carreras": 0
+ },
+ "recientes": [],
+ "ultimas": [
+  {
+   "nombre": "NASCAR Cup Series at Miami",
+   "fecha": "2026-11-08T23:00:00Z",
+   "ganador": "Ryan Blaney",
+   "equipo": "-"
+  },
+  {
+   "nombre": "NASCAR Cup Series at Martinsville",
+   "fecha": "2026-11-01T22:00:00Z",
+   "ganador": "William Byron",
+   "equipo": "-"
+  },
+  {
+   "nombre": "NASCAR Cup Series at Talladega",
+   "fecha": "2026-10-25T21:00:00Z",
+   "ganador": "Kyle Larson",
+   "equipo": "-"
+  },
+  {
+   "nombre": "NASCAR Cup Series at Phoenix",
+   "fecha": "2026-10-18T22:00:00Z",
+   "ganador": "Tyler Reddick",
+   "equipo": "-"
+  },
+  {
+   "nombre": "NASCAR Cup Series at Charlotte",
+   "fecha": "2026-10-11T22:00:00Z",
+   "ganador": "Chase Briscoe",
+   "equipo": "-"
+  },
+  {
+   "nombre": "NASCAR Cup Series at Kansas",
+   "fecha": "2026-09-27T22:00:00Z",
+   "ganador": "Kyle Larson",
+   "equipo": "-"
+  },
+  {
+   "nombre": "NASCAR Cup Series at World Wide Technology Raceway",
+   "fecha": "2026-09-13T22:00:00Z",
+   "ganador": "Kyle Larson",
+   "equipo": "-"
+  },
+  {
+   "nombre": "NASCAR Cup Series at New Hampshire",
+   "fecha": "2026-08-23T21:00:00Z",
+   "ganador": "Ryan Blaney",
+   "equipo": "-"
+  }
+ ],
+ "fuentes": "Marcador público de ESPN",
+ "tipo_serie": "motor"
+}

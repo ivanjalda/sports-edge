@@ -1,53 +1,53 @@
 {
- "actualizado": "2026-11-18 16:16 UTC",
+ "actualizado": "2026-11-19 00:02 UTC",
  "liga": "NCAA",
  "desde": "20250822",
- "datos_hasta": "2026-11-18T03:30:00Z",
+ "datos_hasta": "2026-11-18T22:00:00Z",
  "total": {
-  "n": 9746,
-  "aciertos": 7164,
+  "n": 9748,
+  "aciertos": 7166,
   "acierto": 0.7351,
   "ic": [
-   0.7262,
-   0.7437
+   0.7263,
+   0.7438
   ],
-  "brier": 0.1746
+  "brier": 0.1745
  },
  "base_local": {
-  "n": 9746,
+  "n": 9748,
   "acierto": 0.5722
  },
  "base_balance": {
-  "n": 7604,
-  "acierto": 0.699,
-  "nuestro": 0.7529
+  "n": 7606,
+  "acierto": 0.6991,
+  "nuestro": 0.753
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 7207,
+   "n": 7208,
    "conf": 0.7647,
    "acierto": 0.8005,
    "ic": [
     0.7911,
-    0.8095
+    0.8096
    ]
   },
   {
    "min": 0.7,
-   "n": 4929,
+   "n": 4930,
    "conf": 0.818,
    "acierto": 0.8586,
    "ic": [
     0.8486,
-    0.868
+    0.8681
    ]
   },
   {
    "min": 0.8,
-   "n": 2700,
-   "conf": 0.8745,
-   "acierto": 0.9159,
+   "n": 2701,
+   "conf": 0.8744,
+   "acierto": 0.916,
    "ic": [
     0.9049,
     0.9258
@@ -58,9 +58,9 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 2539,
+   "n": 2540,
    "prometido": 0.5502,
-   "real": 0.5494
+   "real": 0.5496
   },
   {
    "desde": 60,
@@ -79,7 +79,7 @@
   {
    "desde": 80,
    "hasta": 90,
-   "n": 1861,
+   "n": 1862,
    "prometido": 0.8469,
    "real": 0.8888
   },
@@ -103,51 +103,69 @@
    "brier": 0.1766
   },
   "2026": {
-   "n": 4670,
-   "aciertos": 3442,
-   "acierto": 0.737,
+   "n": 4672,
+   "aciertos": 3444,
+   "acierto": 0.7372,
    "ic": [
-    0.7242,
-    0.7495
+    0.7243,
+    0.7496
    ],
-   "brier": 0.1724
+   "brier": 0.1723
   }
  },
  "fases": {
   "regular": {
-   "n": 9746,
-   "aciertos": 7164,
+   "n": 9748,
+   "aciertos": 7166,
    "acierto": 0.7351,
    "ic": [
-    0.7262,
-    0.7437
+    0.7263,
+    0.7438
    ],
-   "brier": 0.1746
+   "brier": 0.1745
   }
  },
  "elige": {
   "local": {
-   "n": 5921,
-   "aciertos": 4458,
-   "acierto": 0.7529,
+   "n": 5922,
+   "aciertos": 4459,
+   "acierto": 0.753,
    "ic": [
     0.7418,
-    0.7637
+    0.7638
    ],
    "brier": 0.1662
   },
   "visitante": {
-   "n": 3825,
-   "aciertos": 2706,
+   "n": 3826,
+   "aciertos": 2707,
    "acierto": 0.7075,
    "ic": [
-    0.6928,
+    0.6929,
     0.7217
    ],
    "brier": 0.1875
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-18T22:00:00Z",
+   "local": "Southeast Missouri State Redhawks",
+   "visitante": "Eastern Illinois Panthers",
+   "marcador": "3-0",
+   "fav": "Southeast Missouri State Redhawks",
+   "pp": 0.8493,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-18T20:00:00Z",
+   "local": "New Mexico Lobos",
+   "visitante": "Wyoming Cowboys",
+   "marcador": "2-3",
+   "fav": "Wyoming Cowboys",
+   "pp": 0.5422,
+   "ok": true
+  },
   {
    "fecha": "2026-11-18T03:30:00Z",
    "local": "UCLA Bruins",
@@ -354,24 +372,6 @@
    "fav": "Iowa State Cyclones",
    "pp": 0.6509,
    "ok": true
-  },
-  {
-   "fecha": "2026-11-16T01:00:00Z",
-   "local": "Pittsburgh Panthers",
-   "visitante": "Louisville Cardinals",
-   "marcador": "3-0",
-   "fav": "Pittsburgh Panthers",
-   "pp": 0.698,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-16T00:00:00Z",
-   "local": "Creighton Bluejays",
-   "visitante": "Villanova Wildcats",
-   "marcador": "3-0",
-   "fav": "Creighton Bluejays",
-   "pp": 0.924,
-   "ok": true
   }
  ],
  "motor": {
@@ -386,14 +386,14 @@
   },
   "sd": 2.367,
   "motor": {
-   "n": 9746,
+   "n": 9748,
    "acierto": 0.7351,
-   "brier": 0.1746,
+   "brier": 0.1745,
    "logloss": 0.5218
   },
   "elo_basico": {
-   "n": 9746,
-   "acierto": 0.7292,
+   "n": 9748,
+   "acierto": 0.7293,
    "brier": 0.1889,
    "logloss": 0.5613
   },
@@ -405,7 +405,7 @@
    "descanso": false
   },
   "local": {
-   "n": 9746,
+   "n": 9748,
    "acierto": 0.5722
   },
   "temporadas_prueba": [

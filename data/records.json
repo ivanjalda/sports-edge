@@ -1,13 +1,13 @@
 {
- "actualizado": "2026-11-18 16:18 UTC",
+ "actualizado": "2026-11-19 00:08 UTC",
  "competiciones": [
   {
    "clave": "eurocup",
    "dep": "baloncesto",
    "nombre": "Eurocup",
    "desde": "2022-10-11",
-   "hasta": "2026-11-17",
-   "partidos": 898,
+   "hasta": "2026-11-18",
+   "partidos": 909,
    "mas_victorias": [
     {
      "quien": "Turk Telekom Ankara",
@@ -15,15 +15,15 @@
     },
     {
      "quien": "Buducnost VOLI Podgorica",
-     "n": 42
+     "n": 43
     },
     {
      "quien": "U-BT Cluj-Napoca",
-     "n": 41
+     "n": 42
     },
     {
      "quien": "Umana Reyer Venice",
-     "n": 41
+     "n": 42
     },
     {
      "quien": "Bahcesehir College Istanbul",
@@ -54,8 +54,8 @@
    "dep": "baloncesto",
    "nombre": "Euroliga",
    "desde": "2022-10-06",
-   "hasta": "2026-11-17",
-   "partidos": 1510,
+   "hasta": "2026-11-18",
+   "partidos": 1511,
    "mas_victorias": [
     {
      "quien": "Olympiacos Piraeus",
@@ -199,11 +199,11 @@
    "nombre": "NCAA baloncesto",
    "desde": "2023-11-06",
    "hasta": "2026-11-18",
-   "partidos": 19796,
+   "partidos": 19799,
    "mas_victorias": [
     {
      "quien": "Houston Cougars",
-     "n": 101
+     "n": 102
     },
     {
      "quien": "Duke Blue Devils",
@@ -750,7 +750,7 @@
    "nombre": "NCAA voleibol femenino",
    "desde": "2023-08-25",
    "hasta": "2026-11-18",
-   "partidos": 12397,
+   "partidos": 12399,
    "mas_victorias": [
     {
      "quien": "Nebraska Cornhuskers",
@@ -954,6 +954,64 @@
     "quien": "Marc Marquez",
     "temporada": 2019,
     "v": 12
+   }
+  },
+  {
+   "clave": "nascar",
+   "dep": "motor",
+   "nombre": "NASCAR Cup Series",
+   "desde": "2016-02-21",
+   "hasta": "2026-11-08",
+   "partidos": 306,
+   "etiqueta_podio": "podios",
+   "mas_victorias": [
+    {
+     "quien": "Kyle Larson",
+     "n": 30
+    },
+    {
+     "quien": "Denny Hamlin",
+     "n": 26
+    },
+    {
+     "quien": "Kevin Harvick",
+     "n": 25
+    },
+    {
+     "quien": "Joey Logano",
+     "n": 23
+    },
+    {
+     "quien": "Kyle Busch",
+     "n": 22
+    }
+   ],
+   "mas_podios": [
+    {
+     "quien": "Kyle Larson",
+     "n": 82
+    },
+    {
+     "quien": "Denny Hamlin",
+     "n": 70
+    },
+    {
+     "quien": "Kyle Busch",
+     "n": 69
+    },
+    {
+     "quien": "Martin Truex Jr.",
+     "n": 59
+    },
+    {
+     "quien": "Joey Logano",
+     "n": 58
+    }
+   ],
+   "mejor_temporada": {
+    "quien": "Kyle Larson",
+    "temporada": 2021,
+    "v": 8
    }
   },
   {

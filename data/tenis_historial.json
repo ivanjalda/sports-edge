@@ -796,8 +796,8 @@
    "n1": 392,
    "n2": 611,
    "creada": "2026-11-17 01:35 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "1",
+   "marcador": "6-2 6-4",
    "cuota": {
     "mejor": {
      "1": {
@@ -826,7 +826,8 @@
     "valor": [],
     "1": 1.29,
     "2": 4.4
-   }
+   },
+   "fuente_resultado": "ESPN"
   },
   {
    "id": "5f11f792535a031c557f8a33a8093f18",
@@ -895,25 +896,25 @@
    "cuota": {
     "mejor": {
      "1": {
-      "c": 1.52,
-      "casa": "Betfair"
+      "c": 1.5,
+      "casa": "1xBet"
      },
      "2": {
-      "c": 2.88,
+      "c": 3.05,
       "casa": "Betfair"
      }
     },
     "mercado": {
-     "1": 0.641,
-     "2": 0.359
+     "1": 0.6525,
+     "2": 0.3475
     },
     "casas": 19,
     "ev": {
-     "1": -0.1827,
-     "2": 0.3314
+     "1": -0.1935,
+     "2": 0.41
     },
     "valor": [],
-    "actualizado": "2026-11-18 16:16 UTC"
+    "actualizado": "2026-11-19 00:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-18 16:16 UTC",
@@ -942,8 +943,8 @@
    "cuota": {
     "mejor": {
      "1": {
-      "c": 1.43,
-      "casa": "Pinnacle"
+      "c": 1.42,
+      "casa": "Betfair"
      },
      "2": {
       "c": 3.3,
@@ -951,16 +952,16 @@
      }
     },
     "mercado": {
-     "1": 0.6871,
-     "2": 0.3129
+     "1": 0.6889,
+     "2": 0.3111
     },
     "casas": 19,
     "ev": {
-     "1": -0.0851,
+     "1": -0.0915,
      "2": 0.1887
     },
     "valor": [],
-    "actualizado": "2026-11-18 16:16 UTC"
+    "actualizado": "2026-11-19 00:02 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-18 16:16 UTC",
@@ -968,7 +969,101 @@
     "1": 1.43,
     "2": 3.3
    }
+  },
+  {
+   "id": "1cd25143408ea45a393e8267ccd3afeb",
+   "torneo": "ATP Finals",
+   "tour": "ATP",
+   "sup": "Hard",
+   "fecha": "2026-11-20T13:00:00Z",
+   "j1": "Carlos Alcaraz",
+   "j2": "Flavio Cobolli",
+   "id1": "atp:A0E2",
+   "id2": "atp:C0E9",
+   "p1": 0.9196,
+   "p2": 0.0804,
+   "n1": 392,
+   "n2": 200,
+   "creada": "2026-11-19 00:02 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "1": {
+      "c": 1.14,
+      "casa": "Betsson"
+     },
+     "2": {
+      "c": 6.47,
+      "casa": "1xBet"
+     }
+    },
+    "mercado": {
+     "1": 0.8348,
+     "2": 0.1652
+    },
+    "casas": 17,
+    "ev": {
+     "1": 0.0483,
+     "2": -0.4798
+    },
+    "valor": [],
+    "actualizado": "2026-11-19 00:02 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-19 00:02 UTC",
+    "valor": [],
+    "1": 1.14,
+    "2": 6.47
+   }
+  },
+  {
+   "id": "1acdb2047defbe0439ef3b1961a60010",
+   "torneo": "ATP Finals",
+   "tour": "ATP",
+   "sup": "Hard",
+   "fecha": "2026-11-20T19:30:00Z",
+   "j1": "Daniil Medvedev",
+   "j2": "Frances Tiafoe",
+   "id1": "atp:MM58",
+   "id2": "atp:TD51",
+   "p1": 0.6113,
+   "p2": 0.3887,
+   "n1": 611,
+   "n2": 476,
+   "creada": "2026-11-19 00:02 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "1": {
+      "c": 1.47,
+      "casa": "LeoVegas (SE)"
+     },
+     "2": {
+      "c": 3.15,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "1": 0.6653,
+     "2": 0.3347
+    },
+    "casas": 17,
+    "ev": {
+     "1": -0.1014,
+     "2": 0.2244
+    },
+    "valor": [],
+    "actualizado": "2026-11-19 00:02 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-19 00:02 UTC",
+    "valor": [],
+    "1": 1.47,
+    "2": 3.15
+   }
   }
  ],
- "actualizado": "2026-11-18 16:16 UTC"
+ "actualizado": "2026-11-19 00:02 UTC"
 }
