@@ -14,12 +14,12 @@
 })();
 (function(){
   var TX={
-    es:{home:"Inicio",futbol:"Fútbol",tenis:"Tenis",baloncesto:"Baloncesto",hockey:"Hockey",americano:"Fútbol americano",mma:"MMA",beisbol:"Béisbol",voleibol:"Voleibol",rugby:"Rugby",motor:"Motor",golf:"Golf",directo:"En directo",stats:"Estadísticas",guia:"Guía",aprender:"Aprender",records:"Récords",entrar:"Entrar",micuenta:"Mi cuenta",dd:["🏠 Mi espacio","⭐ Mis favoritos","🔔 Mis avisos","⚙️ Ajustes","🚪 Cerrar sesión"],
+    es:{home:"Inicio",futbol:"Fútbol",tenis:"Tenis",baloncesto:"Baloncesto",hockey:"Hockey",americano:"Fútbol americano",mma:"MMA",beisbol:"Béisbol",voleibol:"Voleibol",rugby:"Rugby",esports:"Esports",motor:"Motor",golf:"Golf",directo:"En directo",stats:"Estadísticas",guia:"Guía",aprender:"Aprender",records:"Récords",entrar:"Entrar",micuenta:"Mi cuenta",dd:["🏠 Mi espacio","⭐ Mis favoritos","🔔 Mis avisos","⚙️ Ajustes","🚪 Cerrar sesión"],
         tk_live:"EN DIRECTO",tk_pick:"Pronóstico",tk_today:"Hoy llevamos %a de %n acertados",tk_wait:"Cargando marcadores y pronósticos…",
         ow_t:"Nuestras otras webs",ow_eq:"Análisis de acciones de bolsa y su valor intrínseco.",ow_nx:"Análisis y señales de trading en tiempo real.",ow_daz:"Ropa deportiva de calidad, marca registrada en EE. UU.",ow_val:"Academia de inversión: libros, guías y cursos.",ow_dzm:"Ropa y complementos de lujo a precio de saldo.",leg:["Privacidad","Cookies","Aviso legal","Juego responsable"],ow_go:"Visitar →",
         resp:"Solo para mayores de 18 años · Las probabilidades son estimaciones estadísticas, no garantías · Juega con responsabilidad",
         news:"Noticias",newsof:"Noticias de",more:"Más noticias",ago_h:"hace %d h",ago_m:"hace %d min",tema:"Modo día / noche",picks:"⭐ Nuestros pronósticos",pick:"Pronóstico",odds:"Mejor cuota",at:"en",nopicks:"No hay pronósticos para las próximas horas.",allpicks:"Ver todos en Inicio →",today:"hoy",tomorrow:"mañana",draw:"Empate"},
-    en:{home:"Home",futbol:"Football",tenis:"Tennis",baloncesto:"Basketball",hockey:"Hockey",americano:"American football",mma:"MMA",beisbol:"Baseball",voleibol:"Volleyball",rugby:"Rugby",motor:"Motorsport",golf:"Golf",directo:"Live",stats:"Statistics",guia:"Guide",aprender:"Learn",records:"Records",entrar:"Log in",micuenta:"My account",dd:["🏠 My space","⭐ My favourites","🔔 My alerts","⚙️ Settings","🚪 Log out"],
+    en:{home:"Home",futbol:"Football",tenis:"Tennis",baloncesto:"Basketball",hockey:"Hockey",americano:"American football",mma:"MMA",beisbol:"Baseball",voleibol:"Volleyball",rugby:"Rugby",esports:"Esports",motor:"Motorsport",golf:"Golf",directo:"Live",stats:"Statistics",guia:"Guide",aprender:"Learn",records:"Records",entrar:"Log in",micuenta:"My account",dd:["🏠 My space","⭐ My favourites","🔔 My alerts","⚙️ Settings","🚪 Log out"],
         tk_live:"LIVE",tk_pick:"Pick",tk_today:"Today: %a of %n correct",tk_wait:"Loading scores and picks…",
         ow_t:"Our other websites",ow_eq:"Stock analysis and intrinsic value.",ow_nx:"Real-time trading analysis and signals.",ow_daz:"Quality sportswear, US registered brand.",ow_val:"Investing academy: books, guides and courses.",ow_dzm:"Luxury clothing and accessories at outlet prices.",leg:["Privacy","Cookies","Legal notice","Responsible gambling"],ow_go:"Visit →",
         resp:"18+ only · Probabilities are statistical estimates, not guarantees · Please gamble responsibly",
@@ -27,7 +27,7 @@
   };
   var ITEMS=[
     ["home","index.html","🏠"],["directo","directo.html","🔴"],["futbol","futbol.html","⚽"],["tenis","tenis.html","🎾"],
-    ["baloncesto","equipos.html?dep=baloncesto","🏀"],["hockey","equipos.html?dep=hockey","🏒"],["americano","equipos.html?dep=americano","🏈"],["mma","equipos.html?dep=mma","🥋"],["beisbol","equipos.html?dep=beisbol","⚾"],["voleibol","equipos.html?dep=voleibol","🏐"],["rugby","equipos.html?dep=rugby","🏉"],["motor","carreras.html","🏁"],["golf","carreras.html?grupo=golf","⛳"],
+    ["baloncesto","equipos.html?dep=baloncesto","🏀"],["hockey","equipos.html?dep=hockey","🏒"],["americano","equipos.html?dep=americano","🏈"],["mma","equipos.html?dep=mma","🥋"],["beisbol","equipos.html?dep=beisbol","⚾"],["voleibol","equipos.html?dep=voleibol","🏐"],["rugby","equipos.html?dep=rugby","🏉"],["esports","equipos.html?dep=esports","🎮"],["motor","carreras.html","🏁"],["golf","carreras.html?grupo=golf","⛳"],
     ["stats","estadisticas.html","📊"]
   ];
   var css=
@@ -186,8 +186,8 @@
   /* ---------- columna izquierda: pronosticos destacados (datos reales de data/) ---------- */
   var PK=null, pkPedido=false;
   var LG_DEP={nba:"baloncesto",euroliga:"baloncesto",eurocup:"baloncesto",ncaab:"baloncesto",wnba:"baloncesto",nhl:"hockey",ncaah:"hockey",
-              nfl:"americano",ncaaf:"americano",ufc:"mma",mlb:"beisbol",voley:"voleibol",rug_6n:"rugby",rug_prem:"rugby",rug_top14:"rugby",rug_urc:"rugby",rug_cc:"rugby",rug_super:"rugby"};
-  var ICO={futbol:"⚽",tenis:"🎾",baloncesto:"🏀",hockey:"🏒",americano:"🏈",mma:"🥋",beisbol:"⚾",voleibol:"🏐",rugby:"🏉",motor:"🏁",golf:"⛳"};
+              nfl:"americano",ncaaf:"americano",ufc:"mma",mlb:"beisbol",voley:"voleibol",rug_6n:"rugby",rug_prem:"rugby",rug_top14:"rugby",rug_urc:"rugby",rug_cc:"rugby",rug_super:"rugby",lol:"esports"};
+  var ICO={futbol:"⚽",tenis:"🎾",baloncesto:"🏀",hockey:"🏒",americano:"🏈",mma:"🥋",beisbol:"⚾",voleibol:"🏐",rugby:"🏉",esports:"🎮",motor:"🏁",golf:"⛳"};
   function jget(f){ return fetch("data/"+f+"?v="+Date.now()).then(function(r){ if(!r.ok) throw 0; return r.json(); }).catch(function(){ return null; }); }
   function cargarPicks(){
     if(pkPedido) return; pkPedido=true;
