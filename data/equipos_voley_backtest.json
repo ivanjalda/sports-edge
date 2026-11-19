@@ -1,12 +1,12 @@
 {
- "actualizado": "2026-11-19 04:15 UTC",
+ "actualizado": "2026-11-19 16:23 UTC",
  "liga": "NCAA",
  "desde": "20250822",
  "datos_hasta": "2026-11-19T02:00:00Z",
  "total": {
-  "n": 9761,
+  "n": 9762,
   "aciertos": 7177,
-  "acierto": 0.7353,
+  "acierto": 0.7352,
   "ic": [
    0.7264,
    0.7439
@@ -14,13 +14,13 @@
   "brier": 0.1745
  },
  "base_local": {
-  "n": 9761,
+  "n": 9762,
   "acierto": 0.5723
  },
  "base_balance": {
-  "n": 7619,
+  "n": 7620,
   "acierto": 0.699,
-  "nuestro": 0.7531
+  "nuestro": 0.753
  },
  "tramos": [
   {
@@ -58,9 +58,9 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 2543,
+   "n": 2544,
    "prometido": 0.5502,
-   "real": 0.5501
+   "real": 0.5499
   },
   {
    "desde": 60,
@@ -103,21 +103,21 @@
    "brier": 0.1766
   },
   "2026": {
-   "n": 4685,
+   "n": 4686,
    "aciertos": 3455,
-   "acierto": 0.7375,
+   "acierto": 0.7373,
    "ic": [
-    0.7247,
-    0.7499
+    0.7245,
+    0.7497
    ],
    "brier": 0.1723
   }
  },
  "fases": {
   "regular": {
-   "n": 9761,
+   "n": 9762,
    "aciertos": 7177,
-   "acierto": 0.7353,
+   "acierto": 0.7352,
    "ic": [
     0.7264,
     0.7439
@@ -137,17 +137,26 @@
    "brier": 0.1661
   },
   "visitante": {
-   "n": 3833,
+   "n": 3834,
    "aciertos": 2712,
-   "acierto": 0.7075,
+   "acierto": 0.7074,
    "ic": [
-    0.6929,
-    0.7217
+    0.6928,
+    0.7215
    ],
    "brier": 0.1876
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-19T02:00:00Z",
+   "local": "UC Davis Aggies",
+   "visitante": "Grand Canyon Lopes",
+   "marcador": "3-2",
+   "fav": "Grand Canyon Lopes",
+   "pp": 0.5049,
+   "ok": false
+  },
   {
    "fecha": "2026-11-19T02:00:00Z",
    "local": "Montana State Bobcats",
@@ -208,7 +217,7 @@
    "visitante": "Idaho Vandals",
    "marcador": "3-1",
    "fav": "Weber State Wildcats",
-   "pp": 0.9041,
+   "pp": 0.9042,
    "ok": true
   },
   {
@@ -262,7 +271,7 @@
    "visitante": "Southern Indiana Screaming Eagles",
    "marcador": "3-2",
    "fav": "Southern Indiana Screaming Eagles",
-   "pp": 0.7408,
+   "pp": 0.7409,
    "ok": false
   },
   {
@@ -363,15 +372,6 @@
    "fav": "Sacred Heart Pioneers",
    "pp": 0.6584,
    "ok": true
-  },
-  {
-   "fecha": "2026-11-18T00:00:00Z",
-   "local": "Army Black Knights",
-   "visitante": "Bucknell Bison",
-   "marcador": "1-3",
-   "fav": "Army Black Knights",
-   "pp": 0.677,
-   "ok": false
   }
  ],
  "motor": {
@@ -384,16 +384,16 @@
    "c_micro": 30.0,
    "c_sede": 15.0
   },
-  "sd": 2.368,
+  "sd": 2.367,
   "motor": {
-   "n": 9761,
-   "acierto": 0.7353,
+   "n": 9762,
+   "acierto": 0.7352,
    "brier": 0.1745,
    "logloss": 0.5218
   },
   "elo_basico": {
-   "n": 9761,
-   "acierto": 0.7294,
+   "n": 9762,
+   "acierto": 0.7295,
    "brier": 0.1889,
    "logloss": 0.5612
   },
@@ -405,7 +405,7 @@
    "descanso": false
   },
   "local": {
-   "n": 9761,
+   "n": 9762,
    "acierto": 0.5723
   },
   "temporadas_prueba": [

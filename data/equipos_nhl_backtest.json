@@ -1,26 +1,26 @@
 {
- "actualizado": "2026-11-19 04:15 UTC",
+ "actualizado": "2026-11-19 16:23 UTC",
  "liga": "NHL",
  "desde": "20251007",
- "datos_hasta": "2026-11-19T00:30:00Z",
+ "datos_hasta": "2026-11-19T03:00:00Z",
  "total": {
-  "n": 1731,
+  "n": 1732,
   "aciertos": 946,
-  "acierto": 0.5465,
+  "acierto": 0.5462,
   "ic": [
-   0.523,
-   0.5698
+   0.5227,
+   0.5695
   ],
-  "brier": 0.247
+  "brier": 0.2471
  },
  "base_local": {
-  "n": 1731,
-  "acierto": 0.5211
+  "n": 1732,
+  "acierto": 0.5214
  },
  "base_balance": {
-  "n": 1501,
-  "acierto": 0.5543,
-  "nuestro": 0.5443
+  "n": 1502,
+  "acierto": 0.5539,
+  "nuestro": 0.5439
  },
  "tramos": [
   {
@@ -58,9 +58,9 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 1068,
+   "n": 1069,
    "prometido": 0.5493,
-   "real": 0.5094
+   "real": 0.5089
   },
   {
    "desde": 60,
@@ -103,26 +103,26 @@
    "brier": 0.2492
   },
   "2027": {
-   "n": 337,
+   "n": 338,
    "aciertos": 198,
-   "acierto": 0.5875,
+   "acierto": 0.5858,
    "ic": [
-    0.5343,
-    0.6388
+    0.5326,
+    0.6371
    ],
-   "brier": 0.238
+   "brier": 0.2382
   }
  },
  "fases": {
   "regular": {
-   "n": 1649,
+   "n": 1650,
    "aciertos": 903,
-   "acierto": 0.5476,
+   "acierto": 0.5473,
    "ic": [
-    0.5235,
-    0.5715
+    0.5232,
+    0.5712
    ],
-   "brier": 0.247
+   "brier": 0.2471
   },
   "playoff": {
    "n": 82,
@@ -147,17 +147,26 @@
    "brier": 0.2483
   },
   "visitante": {
-   "n": 288,
+   "n": 289,
    "aciertos": 166,
-   "acierto": 0.5764,
+   "acierto": 0.5744,
    "ic": [
-    0.5187,
-    0.6321
+    0.5168,
+    0.6301
    ],
-   "brier": 0.2409
+   "brier": 0.2411
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-19T03:00:00Z",
+   "local": "Utah Mammoth",
+   "visitante": "Colorado Avalanche",
+   "marcador": "4-1",
+   "fav": "Colorado Avalanche",
+   "pp": 0.5559,
+   "ok": false
+  },
   {
    "fecha": "2026-11-19T00:30:00Z",
    "local": "New Jersey Devils",
@@ -373,15 +382,6 @@
    "fav": "Dallas Stars",
    "pp": 0.5888,
    "ok": true
-  },
-  {
-   "fecha": "2026-11-15T00:00:00Z",
-   "local": "St. Louis Blues",
-   "visitante": "Florida Panthers",
-   "marcador": "1-4",
-   "fav": "St. Louis Blues",
-   "pp": 0.5632,
-   "ok": false
   }
  ],
  "motor": {
@@ -396,14 +396,14 @@
   },
   "sd": 2.61,
   "motor": {
-   "n": 1731,
-   "acierto": 0.5465,
-   "brier": 0.247,
+   "n": 1732,
+   "acierto": 0.5462,
+   "brier": 0.2471,
    "logloss": 0.6873
   },
   "elo_basico": {
-   "n": 1731,
-   "acierto": 0.5477,
+   "n": 1732,
+   "acierto": 0.5473,
    "brier": 0.2474,
    "logloss": 0.6879
   },
@@ -415,8 +415,8 @@
    "descanso": true
   },
   "local": {
-   "n": 1731,
-   "acierto": 0.5211
+   "n": 1732,
+   "acierto": 0.5214
   },
   "temporadas_prueba": [
    2026,

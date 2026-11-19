@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-19 04:15 UTC",
+ "actualizado": "2026-11-19 16:23 UTC",
  "liga": "NCAA",
  "datos_hasta": "2026-11-19T02:00:00Z",
  "dias_desde_datos": 0,
@@ -10,29 +10,6 @@
  "con_cuotas": false,
  "proximo": "2026-11-19T19:00:00Z",
  "predicciones": [
-  {
-   "id": "401901194",
-   "fecha": "2026-11-19T02:00:00Z",
-   "local": "UC Davis Aggies",
-   "visitante": "Grand Canyon Lopes",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.4951,
-   "pv": 0.5049,
-   "elo_l": 1612,
-   "elo_v": 1610,
-   "bal_l": [
-    14,
-    13
-   ],
-   "bal_v": [
-    17,
-    10
-   ],
-   "creada": "2026-11-17 04:48 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "401896969",
    "fecha": "2026-11-19T19:00:00Z",
@@ -2405,6 +2382,29 @@
    "marcador": "0-3"
   },
   {
+   "id": "401901194",
+   "fecha": "2026-11-19T02:00:00Z",
+   "local": "UC Davis Aggies",
+   "visitante": "Grand Canyon Lopes",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4951,
+   "pv": 0.5049,
+   "elo_l": 1612,
+   "elo_v": 1610,
+   "bal_l": [
+    14,
+    13
+   ],
+   "bal_v": [
+    17,
+    10
+   ],
+   "creada": "2026-11-17 04:48 UTC",
+   "resultado": "L",
+   "marcador": "3-2"
+  },
+  {
    "id": "401891283",
    "fecha": "2026-11-19T01:30:00Z",
    "local": "Southern Utah Thunderbirds",
@@ -2794,41 +2794,18 @@
    "creada": "2026-11-16 02:26 UTC",
    "resultado": "V",
    "marcador": "0-3"
-  },
-  {
-   "id": "401885632",
-   "fecha": "2026-11-18T01:30:00Z",
-   "local": "Nebraska Cornhuskers",
-   "visitante": "Minnesota Golden Gophers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8708,
-   "pv": 0.1292,
-   "elo_l": 2045,
-   "elo_v": 1799,
-   "bal_l": [
-    27,
-    0
-   ],
-   "bal_v": [
-    17,
-    7
-   ],
-   "creada": "2026-11-16 02:26 UTC",
-   "resultado": "L",
-   "marcador": "3-1"
   }
  ],
  "directo": {
   "total": 393,
-  "resueltas": 288,
+  "resueltas": 289,
   "aciertos": 225,
-  "acierto": 0.7812,
+  "acierto": 0.7785,
   "ic": [
-   0.73,
-   0.8251
+   0.7272,
+   0.8226
   ],
-  "brier": 0.1469,
+  "brier": 0.1472,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -3315,6 +3292,12 @@
    "p": 16
   },
   {
+   "equipo": "UC Davis Aggies",
+   "elo": 1622,
+   "g": 15,
+   "p": 13
+  },
+  {
    "equipo": "Florida State Seminoles",
    "elo": 1621,
    "g": 15,
@@ -3345,22 +3328,10 @@
    "p": 10
   },
   {
-   "equipo": "UC Davis Aggies",
-   "elo": 1612,
-   "g": 14,
-   "p": 13
-  },
-  {
    "equipo": "Florida Gulf Coast Eagles",
    "elo": 1612,
    "g": 13,
    "p": 11
-  },
-  {
-   "equipo": "Grand Canyon Lopes",
-   "elo": 1610,
-   "g": 17,
-   "p": 10
   },
   {
    "equipo": "Northern Colorado Bears",
@@ -3403,6 +3374,12 @@
    "elo": 1602,
    "g": 18,
    "p": 10
+  },
+  {
+   "equipo": "Grand Canyon Lopes",
+   "elo": 1601,
+   "g": 17,
+   "p": 11
   },
   {
    "equipo": "Oregon State Beavers",

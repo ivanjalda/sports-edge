@@ -8185,8 +8185,8 @@
     0
    ],
    "creada": "2026-11-17 04:48 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "85-79"
   },
   {
    "id": "401921742",
@@ -8346,8 +8346,8 @@
     2
    ],
    "creada": "2026-11-17 04:48 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "74-77"
   },
   {
    "id": "401909494",
@@ -8392,8 +8392,8 @@
     1
    ],
    "creada": "2026-11-17 04:48 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "71-62"
   },
   {
    "id": "401929146",
@@ -8415,8 +8415,8 @@
     3
    ],
    "creada": "2026-11-17 04:48 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "97-51"
   },
   {
    "id": "401929004",
@@ -8438,8 +8438,8 @@
     3
    ],
    "creada": "2026-11-17 04:48 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "63-79"
   },
   {
    "id": "401921064",
@@ -8461,8 +8461,8 @@
     2
    ],
    "creada": "2026-11-17 04:48 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "77-56"
   },
   {
    "id": "401911456",
@@ -8484,8 +8484,8 @@
     2
    ],
    "creada": "2026-11-17 04:48 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "91-74"
   },
   {
    "id": "401920158",
@@ -8507,8 +8507,8 @@
     1
    ],
    "creada": "2026-11-17 04:48 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "75-71"
   },
   {
    "id": "401920513",
@@ -9151,8 +9151,8 @@
     1
    ],
    "creada": "2026-11-18 16:16 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "86-71"
   },
   {
    "id": "401926773",
@@ -10303,7 +10303,145 @@
    "creada": "2026-11-19 04:15 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401920517",
+   "fecha": "2026-11-19T19:30:00Z",
+   "local": "West Virginia Mountaineers",
+   "visitante": "Florida Gators",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.2645,
+   "pv": 0.7355,
+   "elo_l": 1637,
+   "elo_v": 1818,
+   "bal_l": [
+    4,
+    1
+   ],
+   "bal_v": [
+    5,
+    1
+   ],
+   "creada": "2026-11-19 16:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401920519",
+   "fecha": "2026-11-19T22:00:00Z",
+   "local": "Auburn Tigers",
+   "visitante": "Notre Dame Fighting Irish",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.6028,
+   "pv": 0.3972,
+   "elo_l": 1674,
+   "elo_v": 1548,
+   "bal_l": [
+    3,
+    2
+   ],
+   "bal_v": [
+    5,
+    1
+   ],
+   "creada": "2026-11-19 16:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401920520",
+   "fecha": "2026-11-20T01:30:00Z",
+   "local": "UNLV Rebels",
+   "visitante": "Rutgers Scarlet Knights",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.457,
+   "pv": 0.543,
+   "elo_l": 1568,
+   "elo_v": 1512,
+   "bal_l": [
+    3,
+    2
+   ],
+   "bal_v": [
+    3,
+    2
+   ],
+   "creada": "2026-11-19 16:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401920518",
+   "fecha": "2026-11-20T04:00:00Z",
+   "local": "Kansas Jayhawks",
+   "visitante": "Houston Cougars",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.3392,
+   "pv": 0.6608,
+   "elo_l": 1745,
+   "elo_v": 1834,
+   "bal_l": [
+    5,
+    0
+   ],
+   "bal_v": [
+    5,
+    0
+   ],
+   "creada": "2026-11-19 16:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401924884",
+   "fecha": "2026-11-21T16:00:00Z",
+   "local": "Bucknell Bison",
+   "visitante": "Siena Saints",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.2579,
+   "pv": 0.7421,
+   "elo_l": 1334,
+   "elo_v": 1579,
+   "bal_l": [
+    1,
+    4
+   ],
+   "bal_v": [
+    3,
+    2
+   ],
+   "creada": "2026-11-19 16:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401922284",
+   "fecha": "2026-11-21T16:00:00Z",
+   "local": "UNC Greensboro Spartans",
+   "visitante": "South Carolina Upstate Spartans",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8294,
+   "pv": 0.1706,
+   "elo_l": 1459,
+   "elo_v": 1329,
+   "bal_l": [
+    1,
+    2
+   ],
+   "bal_v": [
+    0,
+    5
+   ],
+   "creada": "2026-11-19 16:23 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-19 04:15 UTC"
+ "actualizado": "2026-11-19 16:23 UTC"
 }
