@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-19 03:51 UTC",
+ "actualizado": "2026-11-19 04:15 UTC",
  "liga": "NCAA",
  "datos_hasta": "2026-11-19T02:00:00Z",
  "dias_desde_datos": 0,
@@ -10,29 +10,6 @@
  "con_cuotas": false,
  "proximo": "2026-11-19T19:00:00Z",
  "predicciones": [
-  {
-   "id": "401891283",
-   "fecha": "2026-11-19T01:30:00Z",
-   "local": "Southern Utah Thunderbirds",
-   "visitante": "Portland State Vikings",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.1002,
-   "pv": 0.8998,
-   "elo_l": 1168,
-   "elo_v": 1478,
-   "bal_l": [
-    1,
-    25
-   ],
-   "bal_v": [
-    13,
-    14
-   ],
-   "creada": "2026-11-17 01:35 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "401901194",
    "fecha": "2026-11-19T02:00:00Z",
@@ -2428,6 +2405,29 @@
    "marcador": "0-3"
   },
   {
+   "id": "401891283",
+   "fecha": "2026-11-19T01:30:00Z",
+   "local": "Southern Utah Thunderbirds",
+   "visitante": "Portland State Vikings",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.1002,
+   "pv": 0.8998,
+   "elo_l": 1168,
+   "elo_v": 1478,
+   "bal_l": [
+    1,
+    25
+   ],
+   "bal_v": [
+    13,
+    14
+   ],
+   "creada": "2026-11-17 01:35 UTC",
+   "resultado": "L",
+   "marcador": "3-2"
+  },
+  {
    "id": "401891167",
    "fecha": "2026-11-19T01:00:00Z",
    "local": "Weber State Wildcats",
@@ -2817,41 +2817,18 @@
    "creada": "2026-11-16 02:26 UTC",
    "resultado": "L",
    "marcador": "3-1"
-  },
-  {
-   "id": "401884164",
-   "fecha": "2026-11-18T01:00:00Z",
-   "local": "Wisconsin Badgers",
-   "visitante": "Northwestern Wildcats",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.968,
-   "pv": 0.032,
-   "elo_l": 1888,
-   "elo_v": 1482,
-   "bal_l": [
-    19,
-    7
-   ],
-   "bal_v": [
-    8,
-    19
-   ],
-   "creada": "2026-11-16 02:26 UTC",
-   "resultado": "L",
-   "marcador": "3-0"
   }
  ],
  "directo": {
   "total": 393,
-  "resueltas": 287,
+  "resueltas": 288,
   "aciertos": 225,
-  "acierto": 0.784,
+  "acierto": 0.7812,
   "ic": [
-   0.7328,
-   0.8277
+   0.73,
+   0.8251
   ],
-  "brier": 0.1446,
+  "brier": 0.1469,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -4028,12 +4005,6 @@
    "p": 17
   },
   {
-   "equipo": "Portland State Vikings",
-   "elo": 1478,
-   "g": 13,
-   "p": 14
-  },
-  {
    "equipo": "Omaha Mavericks",
    "elo": 1478,
    "g": 13,
@@ -4164,6 +4135,12 @@
    "elo": 1458,
    "g": 13,
    "p": 17
+  },
+  {
+   "equipo": "Portland State Vikings",
+   "elo": 1457,
+   "g": 13,
+   "p": 15
   },
   {
    "equipo": "Siena Saints",
@@ -4856,6 +4833,12 @@
    "p": 23
   },
   {
+   "equipo": "Southern Utah Thunderbirds",
+   "elo": 1189,
+   "g": 2,
+   "p": 25
+  },
+  {
    "equipo": "Central Michigan Chippewas",
    "elo": 1186,
    "g": 0,
@@ -4872,12 +4855,6 @@
    "elo": 1176,
    "g": 4,
    "p": 24
-  },
-  {
-   "equipo": "Southern Utah Thunderbirds",
-   "elo": 1168,
-   "g": 1,
-   "p": 25
   },
   {
    "equipo": "LSU New Orleans Privateers",

@@ -3349,7 +3349,36 @@
    ],
    "creada": "2026-11-18 03:53 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 2.0,
+      "casa": "888sport"
+     },
+     "V": {
+      "c": 1.85,
+      "casa": "MyBookie.ag"
+     }
+    },
+    "mercado": {
+     "L": 0.4812,
+     "V": 0.5188
+    },
+    "casas": 6,
+    "ev": {
+     "L": -0.0164,
+     "V": -0.0598
+    },
+    "valor": [],
+    "actualizado": "2026-11-19 04:15 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-19 04:15 UTC",
+    "valor": [],
+    "L": 2.0,
+    "V": 1.85
+   }
   },
   {
    "id": "401910022",
@@ -3372,7 +3401,36 @@
    ],
    "creada": "2026-11-18 03:53 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 10.06,
+      "casa": "Pinnacle"
+     },
+     "L": {
+      "c": 1.1,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.8812,
+     "V": 0.1188
+    },
+    "casas": 22,
+    "ev": {
+     "L": -0.1058,
+     "V": 0.8822
+    },
+    "valor": [],
+    "actualizado": "2026-11-19 04:15 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-19 04:15 UTC",
+    "valor": [],
+    "L": 1.1,
+    "V": 10.06
+   }
   },
   {
    "id": "401909305",
@@ -3582,5 +3640,5 @@
    "marcador": null
   }
  ],
- "actualizado": "2026-11-19 03:51 UTC"
+ "actualizado": "2026-11-19 04:15 UTC"
 }

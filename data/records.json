@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-19 03:53 UTC",
+ "actualizado": "2026-11-19 04:20 UTC",
  "competiciones": [
   {
    "clave": "eurocup",
@@ -95,6 +95,54 @@
     "rival": "Virtus Segafredo Bologna",
     "marcador": "117-71",
     "fecha": "2022-12-09"
+   }
+  },
+  {
+   "clave": "lol",
+   "dep": "esports",
+   "nombre": "League of Legends",
+   "desde": "2022-01-10",
+   "hasta": "2026-11-14",
+   "partidos": 8135,
+   "mas_victorias": [
+    {
+     "quien": "Gen.G",
+     "n": 229
+    },
+    {
+     "quien": "T1",
+     "n": 227
+    },
+    {
+     "quien": "Bilibili Gaming",
+     "n": 214
+    },
+    {
+     "quien": "G2 Esports",
+     "n": 188
+    },
+    {
+     "quien": "Top Esports",
+     "n": 183
+    }
+   ],
+   "racha": {
+    "n": 27,
+    "quien": "Gen.G",
+    "hasta": "2025-07-23"
+   },
+   "mejor_temporada": {
+    "quien": "Chiefs Esports Club",
+    "temporada": 2022,
+    "v": 43,
+    "d": 3
+   },
+   "mayor_victoria": {
+    "dif": 3,
+    "quien": "Evil Geniuses.NA",
+    "rival": "Cloud9",
+    "marcador": "3-0",
+    "fecha": "2022-01-29"
    }
   },
   {
@@ -199,7 +247,7 @@
    "nombre": "NCAA baloncesto",
    "desde": "2023-11-06",
    "hasta": "2026-11-19",
-   "partidos": 19851,
+   "partidos": 19858,
    "mas_victorias": [
     {
      "quien": "Houston Cougars",
@@ -750,7 +798,7 @@
    "nombre": "NCAA voleibol femenino",
    "desde": "2023-08-25",
    "hasta": "2026-11-19",
-   "partidos": 12411,
+   "partidos": 12412,
    "mas_victorias": [
     {
      "quien": "Nebraska Cornhuskers",

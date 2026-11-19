@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-19 03:51 UTC",
+ "actualizado": "2026-11-19 04:15 UTC",
  "liga": "NCAA",
  "datos_hasta": "2026-11-15T01:00:00Z",
  "dias_desde_datos": 4,
@@ -607,6 +607,29 @@
    "creada": "2026-11-19 03:51 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401905070",
+   "fecha": "2026-11-21T04:07:00Z",
+   "local": "Alaska Bulldogs",
+   "visitante": "Alaska Anchorage Seawolves",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6801,
+   "pv": 0.3199,
+   "elo_l": 1469,
+   "elo_v": 1375,
+   "bal_l": [
+    2,
+    8
+   ],
+   "bal_v": [
+    1,
+    11
+   ],
+   "creada": "2026-11-19 04:15 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
  "recientes": [
@@ -1072,7 +1095,7 @@
   }
  ],
  "directo": {
-  "total": 78,
+  "total": 79,
   "resueltas": 52,
   "aciertos": 26,
   "acierto": 0.5,

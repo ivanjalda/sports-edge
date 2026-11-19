@@ -1,0 +1,417 @@
+{
+ "actualizado": "2026-11-19 04:15 UTC",
+ "liga": "League of Legends",
+ "desde": "20250112",
+ "datos_hasta": "2026-11-14T19:00:00Z",
+ "total": {
+  "n": 2173,
+  "aciertos": 1482,
+  "acierto": 0.682,
+  "ic": [
+   0.6621,
+   0.7013
+  ],
+  "brier": 0.2073
+ },
+ "base_local": {
+  "n": 2173,
+  "acierto": 0.5283
+ },
+ "base_balance": {
+  "n": 1782,
+  "acierto": 0.6717,
+  "nuestro": 0.6863
+ },
+ "tramos": [
+  {
+   "min": 0.6,
+   "n": 1499,
+   "conf": 0.7434,
+   "acierto": 0.7325,
+   "ic": [
+    0.7095,
+    0.7543
+   ]
+  },
+  {
+   "min": 0.7,
+   "n": 934,
+   "conf": 0.8006,
+   "acierto": 0.7805,
+   "ic": [
+    0.7528,
+    0.8059
+   ]
+  },
+  {
+   "min": 0.8,
+   "n": 422,
+   "conf": 0.8657,
+   "acierto": 0.8341,
+   "ic": [
+    0.7957,
+    0.8666
+   ]
+  }
+ ],
+ "calibracion": [
+  {
+   "desde": 50,
+   "hasta": 60,
+   "n": 674,
+   "prometido": 0.5478,
+   "real": 0.5697
+  },
+  {
+   "desde": 60,
+   "hasta": 70,
+   "n": 565,
+   "prometido": 0.649,
+   "real": 0.6531
+  },
+  {
+   "desde": 70,
+   "hasta": 80,
+   "n": 512,
+   "prometido": 0.7468,
+   "real": 0.7363
+  },
+  {
+   "desde": 80,
+   "hasta": 90,
+   "n": 333,
+   "prometido": 0.8475,
+   "real": 0.8228
+  },
+  {
+   "desde": 90,
+   "hasta": 100,
+   "n": 89,
+   "prometido": 0.9339,
+   "real": 0.8764
+  }
+ ],
+ "temporadas": {
+  "2025": {
+   "n": 1108,
+   "aciertos": 782,
+   "acierto": 0.7058,
+   "ic": [
+    0.6783,
+    0.7319
+   ],
+   "brier": 0.1984
+  },
+  "2026": {
+   "n": 1065,
+   "aciertos": 700,
+   "acierto": 0.6573,
+   "ic": [
+    0.6283,
+    0.6852
+   ],
+   "brier": 0.2166
+  }
+ },
+ "fases": {
+  "regular": {
+   "n": 2173,
+   "aciertos": 1482,
+   "acierto": 0.682,
+   "ic": [
+    0.6621,
+    0.7013
+   ],
+   "brier": 0.2073
+  }
+ },
+ "elige": {
+  "local": {
+   "n": 1123,
+   "aciertos": 790,
+   "acierto": 0.7035,
+   "ic": [
+    0.6761,
+    0.7295
+   ],
+   "brier": 0.1996
+  },
+  "visitante": {
+   "n": 1050,
+   "aciertos": 692,
+   "acierto": 0.659,
+   "ic": [
+    0.6298,
+    0.6871
+   ],
+   "brier": 0.2156
+  }
+ },
+ "ejemplos": [
+  {
+   "fecha": "2026-11-14T19:00:00Z",
+   "local": "Bilibili Gaming",
+   "visitante": "Gen.G",
+   "marcador": "3-1",
+   "fav": "Gen.G",
+   "pp": 0.5451,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-08T22:00:00Z",
+   "local": "Bilibili Gaming",
+   "visitante": "T1",
+   "marcador": "3-1",
+   "fav": "Bilibili Gaming",
+   "pp": 0.6604,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-07T22:00:00Z",
+   "local": "Invictus Gaming",
+   "visitante": "Gen.G",
+   "marcador": "0-3",
+   "fav": "Gen.G",
+   "pp": 0.7554,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-06T22:00:00Z",
+   "local": "Karmine Corp",
+   "visitante": "T1",
+   "marcador": "1-3",
+   "fav": "T1",
+   "pp": 0.5167,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-05T22:00:00Z",
+   "local": "Dplus Kia",
+   "visitante": "Bilibili Gaming",
+   "marcador": "0-3",
+   "fav": "Bilibili Gaming",
+   "pp": 0.6402,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-04T22:00:00Z",
+   "local": "Gen.G",
+   "visitante": "LYON (2024 American Team)",
+   "marcador": "3-0",
+   "fav": "Gen.G",
+   "pp": 0.7111,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-03T22:00:00Z",
+   "local": "Top Esports",
+   "visitante": "Invictus Gaming",
+   "marcador": "1-3",
+   "fav": "Invictus Gaming",
+   "pp": 0.5465,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-31T23:00:00Z",
+   "local": "Hanwha Life Esports",
+   "visitante": "Bilibili Gaming",
+   "marcador": "0-2",
+   "fav": "Bilibili Gaming",
+   "pp": 0.5807,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-31T20:00:00Z",
+   "local": "LØS",
+   "visitante": "LYON (2024 American Team)",
+   "marcador": "1-2",
+   "fav": "LYON (2024 American Team)",
+   "pp": 0.5589,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-31T17:00:00Z",
+   "local": "Karmine Corp",
+   "visitante": "Movistar KOI",
+   "marcador": "2-0",
+   "fav": "Karmine Corp",
+   "pp": 0.6426,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-30T23:00:00Z",
+   "local": "Hanwha Life Esports",
+   "visitante": "G2 Esports",
+   "marcador": "2-0",
+   "fav": "Hanwha Life Esports",
+   "pp": 0.5011,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-30T20:00:00Z",
+   "local": "Team Liquid",
+   "visitante": "LØS",
+   "marcador": "1-2",
+   "fav": "Team Liquid",
+   "pp": 0.6112,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-29T23:00:00Z",
+   "local": "Top Esports",
+   "visitante": "Bilibili Gaming",
+   "marcador": "2-1",
+   "fav": "Bilibili Gaming",
+   "pp": 0.8111,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-29T20:00:00Z",
+   "local": "Karmine Corp",
+   "visitante": "CTBC Flying Oyster",
+   "marcador": "2-0",
+   "fav": "Karmine Corp",
+   "pp": 0.5818,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-28T23:00:00Z",
+   "local": "Invictus Gaming",
+   "visitante": "LYON (2024 American Team)",
+   "marcador": "2-1",
+   "fav": "LYON (2024 American Team)",
+   "pp": 0.6334,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-28T20:00:00Z",
+   "local": "Movistar KOI",
+   "visitante": "T1",
+   "marcador": "0-2",
+   "fav": "T1",
+   "pp": 0.5969,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-26T22:00:00Z",
+   "local": "Team Liquid",
+   "visitante": "Anyone's Legend",
+   "marcador": "2-0",
+   "fav": "Team Liquid",
+   "pp": 0.6091,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-26T19:00:00Z",
+   "local": "LØS",
+   "visitante": "Team Secret Whales",
+   "marcador": "2-0",
+   "fav": "Team Secret Whales",
+   "pp": 0.6955,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-26T18:00:00Z",
+   "local": "Karmine Corp",
+   "visitante": "Bilibili Gaming",
+   "marcador": "0-1",
+   "fav": "Bilibili Gaming",
+   "pp": 0.7003,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-26T17:00:00Z",
+   "local": "T1",
+   "visitante": "CTBC Flying Oyster",
+   "marcador": "1-0",
+   "fav": "T1",
+   "pp": 0.5658,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-25T22:00:00Z",
+   "local": "Gen.G",
+   "visitante": "LYON (2024 American Team)",
+   "marcador": "2-1",
+   "fav": "Gen.G",
+   "pp": 0.6456,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-25T19:00:00Z",
+   "local": "Dplus Kia",
+   "visitante": "Movistar KOI",
+   "marcador": "2-0",
+   "fav": "Dplus Kia",
+   "pp": 0.6213,
+   "ok": true
+  },
+  {
+   "fecha": "2026-10-25T18:00:00Z",
+   "local": "Top Esports",
+   "visitante": "G2 Esports",
+   "marcador": "1-0",
+   "fav": "G2 Esports",
+   "pp": 0.7602,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-25T17:00:00Z",
+   "local": "Hanwha Life Esports",
+   "visitante": "Invictus Gaming",
+   "marcador": "0-1",
+   "fav": "Hanwha Life Esports",
+   "pp": 0.6704,
+   "ok": false
+  },
+  {
+   "fecha": "2026-10-25T00:00:00Z",
+   "local": "Team Liquid",
+   "visitante": "Bilibili Gaming",
+   "marcador": "0-1",
+   "fav": "Bilibili Gaming",
+   "pp": 0.6277,
+   "ok": true
+  }
+ ],
+ "motor": {
+  "activo": true,
+  "params": {
+   "kmul": 1.0,
+   "hmul": 0.6,
+   "c_desc": 0.0,
+   "c_forma": 60.0,
+   "c_micro": 0.0,
+   "c_sede": 0.0
+  },
+  "sd": 1.539,
+  "motor": {
+   "n": 2173,
+   "acierto": 0.682,
+   "brier": 0.2073,
+   "logloss": 0.6027
+  },
+  "elo_basico": {
+   "n": 2173,
+   "acierto": 0.6756,
+   "brier": 0.2083,
+   "logloss": 0.6046
+  },
+  "escalas": {
+   "temporada": true,
+   "ultimos10": true,
+   "ultimos3": false,
+   "casa_fuera": false,
+   "descanso": false
+  },
+  "local": {
+   "n": 2173,
+   "acierto": 0.5283
+  },
+  "temporadas_prueba": [
+   2025,
+   2026
+  ]
+ },
+ "valor_activo": false
+}
