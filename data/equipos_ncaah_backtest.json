@@ -1,52 +1,52 @@
 {
- "actualizado": "2026-11-19 16:23 UTC",
+ "actualizado": "2026-11-20 03:45 UTC",
  "liga": "NCAA",
  "desde": "20251003",
- "datos_hasta": "2026-11-15T01:00:00Z",
+ "datos_hasta": "2026-11-20T00:00:00Z",
  "total": {
-  "n": 1354,
-  "aciertos": 892,
-  "acierto": 0.6588,
+  "n": 1357,
+  "aciertos": 895,
+  "acierto": 0.6595,
   "ic": [
-   0.6331,
-   0.6836
+   0.6339,
+   0.6843
   ],
-  "brier": 0.2192
+  "brier": 0.219
  },
  "base_local": {
-  "n": 1354,
-  "acierto": 0.5628
+  "n": 1357,
+  "acierto": 0.5615
  },
  "base_balance": {
-  "n": 960,
-  "acierto": 0.6156,
-  "nuestro": 0.676
+  "n": 963,
+  "acierto": 0.6168,
+  "nuestro": 0.6771
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 886,
-   "conf": 0.7135,
-   "acierto": 0.7077,
+   "n": 888,
+   "conf": 0.7134,
+   "acierto": 0.7083,
    "ic": [
-    0.6769,
-    0.7367
+    0.6776,
+    0.7373
    ]
   },
   {
    "min": 0.7,
-   "n": 443,
-   "conf": 0.7786,
-   "acierto": 0.7314,
+   "n": 444,
+   "conf": 0.7784,
+   "acierto": 0.732,
    "ic": [
-    0.6882,
-    0.7705
+    0.6889,
+    0.7711
    ]
   },
   {
    "min": 0.8,
    "n": 145,
-   "conf": 0.8486,
+   "conf": 0.8485,
    "acierto": 0.8345,
    "ic": [
     0.7655,
@@ -58,36 +58,36 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 468,
+   "n": 469,
    "prometido": 0.5483,
-   "real": 0.5662
+   "real": 0.5672
   },
   {
    "desde": 60,
    "hasta": 70,
-   "n": 443,
-   "prometido": 0.6484,
-   "real": 0.684
+   "n": 444,
+   "prometido": 0.6485,
+   "real": 0.6847
   },
   {
    "desde": 70,
    "hasta": 80,
-   "n": 298,
-   "prometido": 0.7446,
-   "real": 0.6812
+   "n": 299,
+   "prometido": 0.7444,
+   "real": 0.6823
   },
   {
    "desde": 80,
    "hasta": 90,
    "n": 129,
-   "prometido": 0.8393,
+   "prometido": 0.8392,
    "real": 0.8217
   },
   {
    "desde": 90,
    "hasta": 100,
    "n": 16,
-   "prometido": 0.9236,
+   "prometido": 0.9235,
    "real": 0.9375
   }
  ],
@@ -103,26 +103,26 @@
    "brier": 0.2172
   },
   "2027": {
-   "n": 307,
-   "aciertos": 201,
-   "acierto": 0.6547,
+   "n": 310,
+   "aciertos": 204,
+   "acierto": 0.6581,
    "ic": [
-    0.5999,
-    0.7057
+    0.6036,
+    0.7086
    ],
-   "brier": 0.2261
+   "brier": 0.2253
   }
  },
  "fases": {
   "regular": {
-   "n": 1339,
-   "aciertos": 881,
-   "acierto": 0.658,
+   "n": 1342,
+   "aciertos": 884,
+   "acierto": 0.6587,
    "ic": [
-    0.6321,
-    0.6829
+    0.6329,
+    0.6836
    ],
-   "brier": 0.2191
+   "brier": 0.2189
   },
   "playoff": {
    "n": 15,
@@ -132,7 +132,7 @@
     0.4805,
     0.891
    ],
-   "brier": 0.2246
+   "brier": 0.2247
   }
  },
  "elige": {
@@ -147,24 +147,51 @@
    "brier": 0.2124
   },
   "visitante": {
-   "n": 514,
-   "aciertos": 322,
-   "acierto": 0.6265,
+   "n": 517,
+   "aciertos": 325,
+   "acierto": 0.6286,
    "ic": [
-    0.5838,
-    0.6672
+    0.5862,
+    0.6692
    ],
-   "brier": 0.2304
+   "brier": 0.2298
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-20T00:00:00Z",
+   "local": "UConn Huskies",
+   "visitante": "New Hampshire Wildcats",
+   "marcador": "3-6",
+   "fav": "New Hampshire Wildcats",
+   "pp": 0.5411,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-20T00:00:00Z",
+   "local": "Stonehill Stonehill",
+   "visitante": "Northeastern Huskies",
+   "marcador": "2-8",
+   "fav": "Northeastern Huskies",
+   "pp": 0.703,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-19T23:00:00Z",
+   "local": "Massachusetts Minutemen",
+   "visitante": "Providence Friars",
+   "marcador": "2-4",
+   "fav": "Providence Friars",
+   "pp": 0.6686,
+   "ok": true
+  },
   {
    "fecha": "2026-11-15T01:00:00Z",
    "local": "Denver Pioneers",
    "visitante": "Lindenwood Lions",
    "marcador": "7-1",
    "fav": "Denver Pioneers",
-   "pp": 0.8449,
+   "pp": 0.8448,
    "ok": true
   },
   {
@@ -182,7 +209,7 @@
    "visitante": "Ferris State Bulldogs",
    "marcador": "4-1",
    "fav": "Augustana (SD) Vikings",
-   "pp": 0.87,
+   "pp": 0.8699,
    "ok": true
   },
   {
@@ -191,7 +218,7 @@
    "visitante": "Ohio State Buckeyes",
    "marcador": "1-2",
    "fav": "Wisconsin Badgers",
-   "pp": 0.8163,
+   "pp": 0.8162,
    "ok": false
   },
   {
@@ -200,7 +227,7 @@
    "visitante": "Penn State Nittany Lions",
    "marcador": "8-3",
    "fav": "Michigan Wolverines",
-   "pp": 0.8255,
+   "pp": 0.8254,
    "ok": true
   },
   {
@@ -236,7 +263,7 @@
    "visitante": "Minnesota Duluth Bulldogs",
    "marcador": "0-4",
    "fav": "Minnesota Duluth Bulldogs",
-   "pp": 0.6721,
+   "pp": 0.672,
    "ok": true
   },
   {
@@ -281,7 +308,7 @@
    "visitante": "Sacred Heart Pioneers",
    "marcador": "3-1",
    "fav": "Army Black Knights",
-   "pp": 0.598,
+   "pp": 0.5979,
    "ok": true
   },
   {
@@ -299,7 +326,7 @@
    "visitante": "Bowling Green Falcons",
    "marcador": "5-3",
    "fav": "Bowling Green Falcons",
-   "pp": 0.7631,
+   "pp": 0.763,
    "ok": false
   },
   {
@@ -355,33 +382,6 @@
    "fav": "Maine Black Bears",
    "pp": 0.5489,
    "ok": true
-  },
-  {
-   "fecha": "2026-11-14T21:05:00Z",
-   "local": "UMass Lowell  River Hawks",
-   "visitante": "Rensselaer Engineers",
-   "marcador": "3-1",
-   "fav": "UMass Lowell  River Hawks",
-   "pp": 0.5316,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-14T20:00:00Z",
-   "local": "UConn Huskies",
-   "visitante": "Northeastern Huskies",
-   "marcador": "3-4",
-   "fav": "Northeastern Huskies",
-   "pp": 0.6447,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-14T02:05:00Z",
-   "local": "Air Force Falcons",
-   "visitante": "Bentley Falcons",
-   "marcador": "0-3",
-   "fav": "Air Force Falcons",
-   "pp": 0.509,
-   "ok": false
   }
  ],
  "motor": {
@@ -394,18 +394,18 @@
    "c_micro": 15.0,
    "c_sede": 15.0
   },
-  "sd": 2.879,
+  "sd": 2.881,
   "motor": {
-   "n": 1354,
-   "acierto": 0.6588,
-   "brier": 0.2192,
-   "logloss": 0.6287
+   "n": 1357,
+   "acierto": 0.6595,
+   "brier": 0.219,
+   "logloss": 0.6283
   },
   "elo_basico": {
-   "n": 1354,
-   "acierto": 0.6492,
-   "brier": 0.2242,
-   "logloss": 0.6396
+   "n": 1357,
+   "acierto": 0.6485,
+   "brier": 0.2243,
+   "logloss": 0.6398
   },
   "escalas": {
    "temporada": true,
@@ -415,8 +415,8 @@
    "descanso": true
   },
   "local": {
-   "n": 1354,
-   "acierto": 0.5628
+   "n": 1357,
+   "acierto": 0.5615
   },
   "temporadas_prueba": [
    2026,

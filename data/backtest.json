@@ -1,18 +1,18 @@
 {
- "actualizado": "2026-11-19 16:23 UTC",
+ "actualizado": "2026-11-20 03:45 UTC",
  "total": {
-  "n": 787,
-  "aciertos": 401,
-  "acierto": 0.5095,
+  "n": 790,
+  "aciertos": 402,
+  "acierto": 0.5089,
   "ic": [
-   0.4746,
-   0.5443
+   0.474,
+   0.5436
   ],
-  "brier": 0.6056,
+  "brier": 0.6055,
   "brier_azar": 0.6667,
-  "siempre_local": 0.4663,
-  "over25": 0.5388,
-  "btts": 0.5451
+  "siempre_local": 0.4671,
+  "over25": 0.538,
+  "btts": 0.5443
  },
  "ligas": {
   "Premier League": {
@@ -128,29 +128,29 @@
    "btts": 0.4917
   },
   "Brasileirão": {
-   "n": 294,
-   "aciertos": 152,
-   "acierto": 0.517,
+   "n": 297,
+   "aciertos": 153,
+   "acierto": 0.5152,
    "ic": [
-    0.46,
-    0.5735
+    0.4585,
+    0.5714
    ],
-   "brier": 0.6115,
+   "brier": 0.6113,
    "brier_azar": 0.6667,
-   "siempre_local": 0.4932,
-   "over25": 0.4966,
-   "btts": 0.5374
+   "siempre_local": 0.4949,
+   "over25": 0.4949,
+   "btts": 0.5354
   }
  },
  "tramos": [
   {
    "min": 0.45,
-   "n": 508,
-   "conf": 0.5688,
-   "acierto": 0.5512,
+   "n": 509,
+   "conf": 0.5686,
+   "acierto": 0.5521,
    "ic": [
-    0.5077,
-    0.5939
+    0.5086,
+    0.5947
    ]
   },
   {
@@ -192,23 +192,23 @@
   {
    "desde": 20,
    "hasta": 30,
-   "n": 944,
-   "prometido": 0.2485,
-   "real": 0.2479
+   "n": 948,
+   "prometido": 0.2486,
+   "real": 0.2468
   },
   {
    "desde": 30,
    "hasta": 40,
-   "n": 406,
-   "prometido": 0.3476,
-   "real": 0.3522
+   "n": 410,
+   "prometido": 0.3477,
+   "real": 0.3537
   },
   {
    "desde": 40,
    "hasta": 50,
-   "n": 314,
-   "prometido": 0.4485,
-   "real": 0.4554
+   "n": 315,
+   "prometido": 0.4486,
+   "real": 0.4571
   },
   {
    "desde": 50,
@@ -247,6 +247,36 @@
   }
  ],
  "ejemplos": [
+  {
+   "liga": "Brasileirão",
+   "fecha": "2026-11-20T00:30:00Z",
+   "local": "São Paulo FC",
+   "visitante": "Fluminense FC",
+   "marcador": "0-1",
+   "pick": "1",
+   "pp": 0.3845,
+   "res": "2"
+  },
+  {
+   "liga": "Brasileirão",
+   "fecha": "2026-11-19T22:30:00Z",
+   "local": "EC Vitória",
+   "visitante": "RB Bragantino",
+   "marcador": "2-1",
+   "pick": "2",
+   "pp": 0.395,
+   "res": "1"
+  },
+  {
+   "liga": "Brasileirão",
+   "fecha": "2026-11-19T22:30:00Z",
+   "local": "CR Vasco da Gama",
+   "visitante": "SC Internacional",
+   "marcador": "2-1",
+   "pick": "1",
+   "pp": 0.4575,
+   "res": "1"
+  },
   {
    "liga": "Brasileirão",
    "fecha": "2026-11-19T00:30:00Z",
@@ -466,36 +496,6 @@
    "pick": "2",
    "pp": 0.4463,
    "res": "2"
-  },
-  {
-   "liga": "Ligue 1",
-   "fecha": "2026-11-08T16:15:00Z",
-   "local": "Le Havre AC",
-   "visitante": "FC Lorient",
-   "marcador": "0-2",
-   "pick": "2",
-   "pp": 0.4137,
-   "res": "2"
-  },
-  {
-   "liga": "Ligue 1",
-   "fecha": "2026-11-08T16:15:00Z",
-   "local": "Stade Brestois 29",
-   "visitante": "Olympique Lyonnais",
-   "marcador": "2-0",
-   "pick": "2",
-   "pp": 0.3778,
-   "res": "1"
-  },
-  {
-   "liga": "Ligue 1",
-   "fecha": "2026-11-08T16:15:00Z",
-   "local": "Le Mans FC",
-   "visitante": "AS Monaco FC",
-   "marcador": "1-1",
-   "pick": "2",
-   "pp": 0.4399,
-   "res": "X"
   }
  ]
 }

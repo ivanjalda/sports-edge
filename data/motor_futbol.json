@@ -1,5 +1,5 @@
 {
- "ajustado": "2026-11-13 01:17 UTC",
+ "ajustado": "2026-11-20 03:39 UTC",
  "params": {
   "wa": 0.5,
   "wb": 0.25,
@@ -13,27 +13,27 @@
  "prueba": {
   "total": {
    "motor": {
-    "n": 6037,
+    "n": 6039,
     "acierto": 0.4968,
     "brier": 0.6076,
     "logloss": 1.0146
    },
    "anterior": {
-    "n": 6037,
+    "n": 6039,
     "acierto": 0.4757,
     "brier": 0.6233,
     "logloss": 1.0378
    },
    "mercado": {
-    "n": 6037,
+    "n": 6039,
     "acierto": 0.509,
     "brier": 0.5968,
     "logloss": 0.9982
    },
    "local": {
-    "n": 6037,
-    "acierto": 0.4393,
-    "brier": 1.1214,
+    "n": 6039,
+    "acierto": 0.4391,
+    "brier": 1.1217,
     "logloss": null
    }
   },
@@ -248,27 +248,27 @@
    },
    "Brasileirão": {
     "motor": {
-     "n": 667,
+     "n": 669,
      "acierto": 0.5202,
-     "brier": 0.5953,
-     "logloss": 0.9942
+     "brier": 0.5954,
+     "logloss": 0.9943
     },
     "anterior": {
-     "n": 667,
+     "n": 669,
      "acierto": 0.5082,
      "brier": 0.6057,
-     "logloss": 1.0093
+     "logloss": 1.0094
     },
     "mercado": {
-     "n": 667,
-     "acierto": 0.5352,
-     "brier": 0.5826,
-     "logloss": 0.9763
+     "n": 669,
+     "acierto": 0.5351,
+     "brier": 0.5823,
+     "logloss": 0.9759
     },
     "local": {
-     "n": 667,
-     "acierto": 0.4993,
-     "brier": 1.0015,
+     "n": 669,
+     "acierto": 0.4978,
+     "brier": 1.0045,
      "logloss": null
     }
    },
@@ -326,12 +326,12 @@
    }
   },
   "valor": {
-   "apuestas": 5393,
+   "apuestas": 5394,
    "ganadas": 1325,
-   "roi": -0.0898,
+   "roi": -0.09,
    "ic_roi": [
-    -0.1367,
-    -0.043
+    -0.1368,
+    -0.0432
    ]
   },
   "regla_valor": {
@@ -364,7 +364,7 @@
     ]
    }
   },
-  "segundos": 6
+  "segundos": 5
  },
  "ligas": [
   "Premier League",
@@ -379,5 +379,5 @@
   "Liga Profesional",
   "MLS"
  ],
- "actualizado": "2026-11-19 16:18 UTC"
+ "actualizado": "2026-11-20 03:39 UTC"
 }

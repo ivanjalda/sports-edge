@@ -1,14 +1,14 @@
 {
- "actualizado": "2026-11-19 16:23 UTC",
+ "actualizado": "2026-11-20 03:45 UTC",
  "liga": "NFL",
  "datos_hasta": "2026-11-17T01:15:00Z",
- "dias_desde_datos": 2,
+ "dias_desde_datos": 3,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": true,
- "proximo": "2026-11-20T01:15:00Z",
+ "proximo": "2026-11-22T18:00:00Z",
  "predicciones": [
   {
    "id": "401873066",
@@ -633,6 +633,29 @@
     "L": 1.66,
     "V": 2.45
    }
+  },
+  {
+   "id": "401873078",
+   "fecha": "2026-11-24T01:15:00Z",
+   "local": "Washington Commanders",
+   "visitante": "Cincinnati Bengals",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.2512,
+   "pv": 0.7488,
+   "elo_l": 1435,
+   "elo_v": 1654,
+   "bal_l": [
+    3,
+    5
+   ],
+   "bal_v": [
+    7,
+    2
+   ],
+   "creada": "2026-11-20 03:45 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
  "recientes": [
@@ -1314,7 +1337,7 @@
   }
  ],
  "directo": {
-  "total": 25,
+  "total": 26,
   "resueltas": 13,
   "aciertos": 9,
   "acierto": 0.6923,
