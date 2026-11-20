@@ -460,7 +460,7 @@
    Boton abajo a la derecha en todas las paginas. Las respuestas las da nuestro asistente en Cloudflare
    (asistente.sportevlab.com) con Gemini, usando solo los datos reales de la web. */
 (function(){
-  var URL_ASIST="https://asistente.sportevlab.com/chat";
+  var URL_ASIST="https://sportevlab-asistente.community16jalda.workers.dev/chat";
   function L(){ try{ return localStorage.getItem("lang")==="en"?"en":"es"; }catch(e){ return "es"; } }
   var TX={es:{tit:"Asistente SportEVLab",sub:"Pregúntame por nuestros pronósticos",ph:"Escribe tu pregunta…",env:"Enviar",
               hola:"👋 ¡Hola! Pregúntame por los pronósticos de hoy, cómo nos fue ayer o cualquier duda de la web.",
