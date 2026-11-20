@@ -1,36 +1,36 @@
 {
- "actualizado": "2026-11-20 03:45 UTC",
+ "actualizado": "2026-11-20 16:01 UTC",
  "liga": "NHL",
  "desde": "20251007",
- "datos_hasta": "2026-11-20T01:00:00Z",
+ "datos_hasta": "2026-11-20T03:00:00Z",
  "total": {
-  "n": 1741,
-  "aciertos": 950,
-  "acierto": 0.5457,
+  "n": 1744,
+  "aciertos": 952,
+  "acierto": 0.5459,
   "ic": [
-   0.5222,
-   0.5689
+   0.5224,
+   0.5691
   ],
-  "brier": 0.2473
+  "brier": 0.2472
  },
  "base_local": {
-  "n": 1741,
-  "acierto": 0.5198
+  "n": 1744,
+  "acierto": 0.5201
  },
  "base_balance": {
-  "n": 1510,
-  "acierto": 0.553,
-  "nuestro": 0.5437
+  "n": 1513,
+  "acierto": 0.5539,
+  "nuestro": 0.544
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 665,
+   "n": 667,
    "conf": 0.6503,
-   "acierto": 0.6045,
+   "acierto": 0.6057,
    "ic": [
-    0.5668,
-    0.641
+    0.5681,
+    0.6421
    ]
   },
   {
@@ -58,16 +58,16 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 1076,
+   "n": 1077,
    "prometido": 0.5494,
-   "real": 0.5093
+   "real": 0.5088
   },
   {
    "desde": 60,
    "hasta": 70,
-   "n": 586,
+   "n": 588,
    "prometido": 0.6396,
-   "real": 0.5939
+   "real": 0.5952
   },
   {
    "desde": 70,
@@ -103,26 +103,26 @@
    "brier": 0.2492
   },
   "2027": {
-   "n": 347,
-   "aciertos": 202,
-   "acierto": 0.5821,
+   "n": 350,
+   "aciertos": 204,
+   "acierto": 0.5829,
    "ic": [
-    0.5296,
-    0.6329
+    0.5306,
+    0.6333
    ],
-   "brier": 0.2397
+   "brier": 0.2392
   }
  },
  "fases": {
   "regular": {
-   "n": 1659,
-   "aciertos": 907,
-   "acierto": 0.5467,
+   "n": 1662,
+   "aciertos": 909,
+   "acierto": 0.5469,
    "ic": [
-    0.5227,
-    0.5705
+    0.5229,
+    0.5707
    ],
-   "brier": 0.2473
+   "brier": 0.2472
   },
   "playoff": {
    "n": 82,
@@ -137,14 +137,14 @@
  },
  "elige": {
   "local": {
-   "n": 1450,
-   "aciertos": 782,
-   "acierto": 0.5393,
+   "n": 1453,
+   "aciertos": 784,
+   "acierto": 0.5396,
    "ic": [
-    0.5136,
-    0.5648
+    0.5139,
+    0.5651
    ],
-   "brier": 0.2486
+   "brier": 0.2485
   },
   "visitante": {
    "n": 291,
@@ -158,6 +158,33 @@
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-20T03:00:00Z",
+   "local": "Vegas Golden Knights",
+   "visitante": "Dallas Stars",
+   "marcador": "3-4",
+   "fav": "Vegas Golden Knights",
+   "pp": 0.5581,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-20T02:40:00Z",
+   "local": "Seattle Kraken",
+   "visitante": "Vancouver Canucks",
+   "marcador": "5-1",
+   "fav": "Seattle Kraken",
+   "pp": 0.6608,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-20T02:00:00Z",
+   "local": "Colorado Avalanche",
+   "visitante": "Anaheim Ducks",
+   "marcador": "4-0",
+   "fav": "Colorado Avalanche",
+   "pp": 0.6533,
+   "ok": true
+  },
   {
    "fecha": "2026-11-20T01:00:00Z",
    "local": "Calgary Flames",
@@ -355,33 +382,6 @@
    "fav": "Florida Panthers",
    "pp": 0.5252,
    "ok": false
-  },
-  {
-   "fecha": "2026-11-18T00:00:00Z",
-   "local": "Boston Bruins",
-   "visitante": "Los Angeles Kings",
-   "marcador": "0-3",
-   "fav": "Boston Bruins",
-   "pp": 0.6553,
-   "ok": false
-  },
-  {
-   "fecha": "2026-11-17T02:30:00Z",
-   "local": "Utah Mammoth",
-   "visitante": "Vancouver Canucks",
-   "marcador": "2-3",
-   "fav": "Utah Mammoth",
-   "pp": 0.7321,
-   "ok": false
-  },
-  {
-   "fecha": "2026-11-17T00:30:00Z",
-   "local": "New York Rangers",
-   "visitante": "Montreal Canadiens",
-   "marcador": "3-1",
-   "fav": "New York Rangers",
-   "pp": 0.554,
-   "ok": true
   }
  ],
  "motor": {
@@ -396,16 +396,16 @@
   },
   "sd": 2.609,
   "motor": {
-   "n": 1741,
-   "acierto": 0.5457,
-   "brier": 0.2473,
-   "logloss": 0.6879
+   "n": 1744,
+   "acierto": 0.5459,
+   "brier": 0.2472,
+   "logloss": 0.6876
   },
   "elo_basico": {
-   "n": 1741,
-   "acierto": 0.5468,
-   "brier": 0.2476,
-   "logloss": 0.6883
+   "n": 1744,
+   "acierto": 0.547,
+   "brier": 0.2474,
+   "logloss": 0.6881
   },
   "escalas": {
    "temporada": true,
@@ -415,8 +415,8 @@
    "descanso": true
   },
   "local": {
-   "n": 1741,
-   "acierto": 0.5198
+   "n": 1744,
+   "acierto": 0.5201
   },
   "temporadas_prueba": [
    2026,

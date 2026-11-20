@@ -1,44 +1,6 @@
 {
- "actualizado": "2026-11-20 03:40 UTC",
+ "actualizado": "2026-11-20 15:56 UTC",
  "predicciones": [
-  {
-   "id": "espn-401933555",
-   "liga": "MLS",
-   "fecha": "2026-11-20T03:00:00Z",
-   "local": "Seattle Sounders FC",
-   "visitante": "Real Salt Lake",
-   "creada": "2026-11-13T04:15:24Z",
-   "resultado": null,
-   "marcador": null,
-   "p_local": 0.4716,
-   "p_empate": 0.277,
-   "p_visitante": 0.2515,
-   "xg_local": 1.56,
-   "xg_visitante": 1.08,
-   "n_partidos": 177,
-   "mercados": {
-    "over15": 0.7522,
-    "over25": 0.4914,
-    "over35": 0.2726,
-    "btts": 0.5337,
-    "marcador": "1-1",
-    "p_marcador": 0.1323,
-    "ht_local": null,
-    "ht_empate": null,
-    "ht_visitante": null,
-    "ht_gol": null
-   },
-   "modelo": "SE",
-   "cuota_guardada": {
-    "fecha": "2026-11-18 16:16 UTC",
-    "valor": [],
-    "1": 2.01,
-    "X": 4.2,
-    "2": 3.7
-   },
-   "razon_es": "Goles esperados: 1.56 - 1.08. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
-   "razon_en": "Expected goals: 1.56 - 1.08. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
-  },
   {
    "id": 565859,
    "liga": "Bundesliga",
@@ -5292,6 +5254,37 @@
    },
    "razon_es": "Goles esperados: 1.14 - 0.80. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.14 - 0.80. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": "espn-401933729",
+   "liga": "MLS",
+   "fecha": "2026-11-23T01:30:00Z",
+   "local": "Vancouver Whitecaps",
+   "visitante": "Real Salt Lake",
+   "creada": "2026-11-20T15:56:01Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.6255,
+   "p_empate": 0.221,
+   "p_visitante": 0.1535,
+   "xg_local": 2.09,
+   "xg_visitante": 0.95,
+   "n_partidos": 177,
+   "mercados": {
+    "over15": 0.8167,
+    "over25": 0.5864,
+    "over35": 0.3623,
+    "btts": 0.5482,
+    "marcador": "1-1",
+    "p_marcador": 0.1046,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "razon_es": "Goles esperados: 2.09 - 0.95. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 2.09 - 0.95. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
   {
    "id": 558519,

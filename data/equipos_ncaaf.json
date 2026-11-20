@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-11-20 03:45 UTC",
+ "actualizado": "2026-11-20 16:01 UTC",
  "liga": "NCAA",
- "datos_hasta": "2026-11-19T00:30:00Z",
- "dias_desde_datos": 1,
+ "datos_hasta": "2026-11-20T00:30:00Z",
+ "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
@@ -10,29 +10,6 @@
  "con_cuotas": false,
  "proximo": "2026-11-20T23:00:00Z",
  "predicciones": [
-  {
-   "id": "401862830",
-   "fecha": "2026-11-20T00:30:00Z",
-   "local": "Temple Owls",
-   "visitante": "Rice Owls",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6369,
-   "pv": 0.3631,
-   "elo_l": 1268,
-   "elo_v": 1256,
-   "bal_l": [
-    1,
-    8
-   ],
-   "bal_v": [
-    0,
-    9
-   ],
-   "creada": "2026-11-16 02:26 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "401856869",
    "fecha": "2026-11-20T23:00:00Z",
@@ -1416,6 +1393,29 @@
  ],
  "recientes": [
   {
+   "id": "401862830",
+   "fecha": "2026-11-20T00:30:00Z",
+   "local": "Temple Owls",
+   "visitante": "Rice Owls",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6369,
+   "pv": 0.3631,
+   "elo_l": 1268,
+   "elo_v": 1256,
+   "bal_l": [
+    1,
+    8
+   ],
+   "bal_v": [
+    0,
+    9
+   ],
+   "creada": "2026-11-16 02:26 UTC",
+   "resultado": "V",
+   "marcador": "27-31"
+  },
+  {
    "id": "401866469",
    "fecha": "2026-11-19T00:30:00Z",
    "local": "Buffalo Bulls",
@@ -1851,41 +1851,18 @@
    "creada": "2026-11-13 01:49 UTC",
    "resultado": "L",
    "marcador": "42-14"
-  },
-  {
-   "id": "401864538",
-   "fecha": "2026-11-15T00:00:00Z",
-   "local": "Air Force Falcons",
-   "visitante": "San José State Spartans",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8387,
-   "pv": 0.1613,
-   "elo_l": 1577,
-   "elo_v": 1385,
-   "bal_l": [
-    7,
-    2
-   ],
-   "bal_v": [
-    4,
-    5
-   ],
-   "creada": "2026-11-13 01:49 UTC",
-   "resultado": "L",
-   "marcador": "24-3"
   }
  ],
  "directo": {
   "total": 126,
-  "resueltas": 65,
+  "resueltas": 66,
   "aciertos": 45,
-  "acierto": 0.6923,
+  "acierto": 0.6818,
   "ic": [
-   0.572,
-   0.7911
+   0.5621,
+   0.7815
   ],
-  "brier": 0.2069,
+  "brier": 0.2099,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -2756,6 +2733,12 @@
    "p": 7
   },
   {
+   "equipo": "Rice Owls",
+   "elo": 1284,
+   "g": 1,
+   "p": 9
+  },
+  {
    "equipo": "Ball State Cardinals",
    "elo": 1279,
    "g": 2,
@@ -2786,18 +2769,6 @@
    "p": 8
   },
   {
-   "equipo": "Temple Owls",
-   "elo": 1268,
-   "g": 1,
-   "p": 8
-  },
-  {
-   "equipo": "Rice Owls",
-   "elo": 1256,
-   "g": 0,
-   "p": 9
-  },
-  {
    "equipo": "Akron Zips",
    "elo": 1247,
    "g": 1,
@@ -2808,6 +2779,12 @@
    "elo": 1246,
    "g": 1,
    "p": 8
+  },
+  {
+   "equipo": "Temple Owls",
+   "elo": 1240,
+   "g": 1,
+   "p": 9
   },
   {
    "equipo": "UL Monroe Warhawks",

@@ -1,36 +1,36 @@
 {
- "actualizado": "2026-11-20 03:45 UTC",
+ "actualizado": "2026-11-20 16:01 UTC",
  "liga": "NCAA",
  "desde": "20250823",
- "datos_hasta": "2026-11-19T00:30:00Z",
+ "datos_hasta": "2026-11-20T00:30:00Z",
  "total": {
-  "n": 1510,
+  "n": 1511,
   "aciertos": 1075,
-  "acierto": 0.7119,
+  "acierto": 0.7114,
   "ic": [
-   0.6886,
-   0.7342
+   0.6881,
+   0.7337
   ],
-  "brier": 0.1883
+  "brier": 0.1884
  },
  "base_local": {
-  "n": 1510,
-  "acierto": 0.6106
+  "n": 1511,
+  "acierto": 0.6102
  },
  "base_balance": {
-  "n": 674,
-  "acierto": 0.6632,
-  "nuestro": 0.6929
+  "n": 675,
+  "acierto": 0.6622,
+  "nuestro": 0.6919
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 1147,
-   "conf": 0.776,
-   "acierto": 0.7637,
+   "n": 1148,
+   "conf": 0.7759,
+   "acierto": 0.7631,
    "ic": [
-    0.7383,
-    0.7874
+    0.7376,
+    0.7868
    ]
   },
   {
@@ -65,9 +65,9 @@
   {
    "desde": 60,
    "hasta": 70,
-   "n": 336,
+   "n": 337,
    "prometido": 0.6497,
-   "real": 0.628
+   "real": 0.6261
   },
   {
    "desde": 70,
@@ -103,26 +103,26 @@
    "brier": 0.1823
   },
   "2026": {
-   "n": 661,
+   "n": 662,
    "aciertos": 465,
-   "acierto": 0.7035,
+   "acierto": 0.7024,
    "ic": [
-    0.6676,
-    0.737
+    0.6665,
+    0.736
    ],
-   "brier": 0.196
+   "brier": 0.1963
   }
  },
  "fases": {
   "regular": {
-   "n": 1464,
+   "n": 1465,
    "aciertos": 1049,
-   "acierto": 0.7165,
+   "acierto": 0.716,
    "ic": [
-    0.6929,
-    0.739
+    0.6924,
+    0.7385
    ],
-   "brier": 0.1872
+   "brier": 0.1874
   },
   "playoff": {
    "n": 46,
@@ -137,14 +137,14 @@
  },
  "elige": {
   "local": {
-   "n": 977,
+   "n": 978,
    "aciertos": 732,
-   "acierto": 0.7492,
+   "acierto": 0.7485,
    "ic": [
-    0.7211,
-    0.7754
+    0.7203,
+    0.7747
    ],
-   "brier": 0.1731
+   "brier": 0.1734
   },
   "visitante": {
    "n": 533,
@@ -158,6 +158,15 @@
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-20T00:30:00Z",
+   "local": "Temple Owls",
+   "visitante": "Rice Owls",
+   "marcador": "27-31",
+   "fav": "Temple Owls",
+   "pp": 0.6369,
+   "ok": false
+  },
   {
    "fecha": "2026-11-19T00:30:00Z",
    "local": "Buffalo Bulls",
@@ -373,15 +382,6 @@
    "fav": "BYU Cougars",
    "pp": 0.6667,
    "ok": true
-  },
-  {
-   "fecha": "2026-11-14T23:15:00Z",
-   "local": "Kentucky Wildcats",
-   "visitante": "Florida Gators",
-   "marcador": "14-21",
-   "fav": "Kentucky Wildcats",
-   "pp": 0.7586,
-   "ok": false
   }
  ],
  "motor": {
@@ -394,18 +394,18 @@
    "c_micro": 30.0,
    "c_sede": 0.0
   },
-  "sd": 20.695,
+  "sd": 20.693,
   "motor": {
-   "n": 1510,
-   "acierto": 0.7119,
-   "brier": 0.1883,
-   "logloss": 0.557
+   "n": 1511,
+   "acierto": 0.7114,
+   "brier": 0.1884,
+   "logloss": 0.5573
   },
   "elo_basico": {
-   "n": 1510,
-   "acierto": 0.706,
-   "brier": 0.1936,
-   "logloss": 0.5712
+   "n": 1511,
+   "acierto": 0.7055,
+   "brier": 0.1937,
+   "logloss": 0.5714
   },
   "escalas": {
    "temporada": true,
@@ -415,8 +415,8 @@
    "descanso": false
   },
   "local": {
-   "n": 1510,
-   "acierto": 0.6106
+   "n": 1511,
+   "acierto": 0.6102
   },
   "temporadas_prueba": [
    2025,

@@ -1,18 +1,18 @@
 {
- "actualizado": "2026-11-20 03:45 UTC",
+ "actualizado": "2026-11-20 16:00 UTC",
  "total": {
-  "n": 790,
+  "n": 789,
   "aciertos": 402,
-  "acierto": 0.5089,
+  "acierto": 0.5095,
   "ic": [
-   0.474,
-   0.5436
+   0.4747,
+   0.5443
   ],
   "brier": 0.6055,
   "brier_azar": 0.6667,
-  "siempre_local": 0.4671,
-  "over25": 0.538,
-  "btts": 0.5443
+  "siempre_local": 0.4677,
+  "over25": 0.5374,
+  "btts": 0.5437
  },
  "ligas": {
   "Premier League": {
@@ -128,18 +128,18 @@
    "btts": 0.4917
   },
   "Brasileirão": {
-   "n": 297,
+   "n": 296,
    "aciertos": 153,
-   "acierto": 0.5152,
+   "acierto": 0.5169,
    "ic": [
-    0.4585,
-    0.5714
+    0.4601,
+    0.5732
    ],
-   "brier": 0.6113,
+   "brier": 0.6112,
    "brier_azar": 0.6667,
-   "siempre_local": 0.4949,
-   "over25": 0.4949,
-   "btts": 0.5354
+   "siempre_local": 0.4966,
+   "over25": 0.4932,
+   "btts": 0.5338
   }
  },
  "tramos": [
@@ -192,16 +192,16 @@
   {
    "desde": 20,
    "hasta": 30,
-   "n": 948,
+   "n": 947,
    "prometido": 0.2486,
-   "real": 0.2468
+   "real": 0.2471
   },
   {
    "desde": 30,
    "hasta": 40,
-   "n": 410,
-   "prometido": 0.3477,
-   "real": 0.3537
+   "n": 408,
+   "prometido": 0.3476,
+   "real": 0.3529
   },
   {
    "desde": 40,
@@ -247,16 +247,6 @@
   }
  ],
  "ejemplos": [
-  {
-   "liga": "Brasileirão",
-   "fecha": "2026-11-20T00:30:00Z",
-   "local": "São Paulo FC",
-   "visitante": "Fluminense FC",
-   "marcador": "0-1",
-   "pick": "1",
-   "pp": 0.3845,
-   "res": "2"
-  },
   {
    "liga": "Brasileirão",
    "fecha": "2026-11-19T22:30:00Z",
@@ -495,6 +485,16 @@
    "marcador": "0-2",
    "pick": "2",
    "pp": 0.4463,
+   "res": "2"
+  },
+  {
+   "liga": "Ligue 1",
+   "fecha": "2026-11-08T16:15:00Z",
+   "local": "Le Havre AC",
+   "visitante": "FC Lorient",
+   "marcador": "0-2",
+   "pick": "2",
+   "pp": 0.4137,
    "res": "2"
   }
  ]

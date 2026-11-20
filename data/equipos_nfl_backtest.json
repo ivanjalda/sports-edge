@@ -1,46 +1,46 @@
 {
- "actualizado": "2026-11-20 03:45 UTC",
+ "actualizado": "2026-11-20 16:01 UTC",
  "liga": "NFL",
  "desde": "20250905",
- "datos_hasta": "2026-11-17T01:15:00Z",
+ "datos_hasta": "2026-11-20T01:15:00Z",
  "total": {
-  "n": 433,
-  "aciertos": 281,
-  "acierto": 0.649,
+  "n": 434,
+  "aciertos": 282,
+  "acierto": 0.6498,
   "ic": [
-   0.6029,
-   0.6924
+   0.6038,
+   0.6932
   ],
-  "brier": 0.2195
+  "brier": 0.2192
  },
  "base_local": {
-  "n": 433,
-  "acierto": 0.515
+  "n": 434,
+  "acierto": 0.5161
  },
  "base_balance": {
-  "n": 243,
-  "acierto": 0.6996,
-  "nuestro": 0.6831
+  "n": 244,
+  "acierto": 0.7008,
+  "nuestro": 0.6844
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 275,
-   "conf": 0.7348,
-   "acierto": 0.7018,
+   "n": 276,
+   "conf": 0.7347,
+   "acierto": 0.7029,
    "ic": [
-    0.6453,
-    0.7528
+    0.6465,
+    0.7537
    ]
   },
   {
    "min": 0.7,
-   "n": 164,
-   "conf": 0.791,
-   "acierto": 0.7683,
+   "n": 165,
+   "conf": 0.7905,
+   "acierto": 0.7697,
    "ic": [
-    0.698,
-    0.8263
+    0.6998,
+    0.8274
    ]
   },
   {
@@ -72,9 +72,9 @@
   {
    "desde": 70,
    "hasta": 80,
-   "n": 92,
-   "prometido": 0.7467,
-   "real": 0.75
+   "n": 93,
+   "prometido": 0.7465,
+   "real": 0.7527
   },
   {
    "desde": 80,
@@ -103,26 +103,26 @@
    "brier": 0.2211
   },
   "2026": {
-   "n": 149,
-   "aciertos": 95,
-   "acierto": 0.6376,
+   "n": 150,
+   "aciertos": 96,
+   "acierto": 0.64,
    "ic": [
-    0.5578,
-    0.7104
+    0.5606,
+    0.7124
    ],
-   "brier": 0.2166
+   "brier": 0.2157
   }
  },
  "fases": {
   "regular": {
-   "n": 420,
-   "aciertos": 272,
-   "acierto": 0.6476,
+   "n": 421,
+   "aciertos": 273,
+   "acierto": 0.6485,
    "ic": [
-    0.6008,
-    0.6918
+    0.6017,
+    0.6925
    ],
-   "brier": 0.2207
+   "brier": 0.2204
   },
   "playoff": {
    "n": 13,
@@ -137,14 +137,14 @@
  },
  "elige": {
   "local": {
-   "n": 243,
-   "aciertos": 157,
-   "acierto": 0.6461,
+   "n": 244,
+   "aciertos": 158,
+   "acierto": 0.6475,
    "ic": [
-    0.5841,
-    0.7035
+    0.5857,
+    0.7048
    ],
-   "brier": 0.218
+   "brier": 0.2174
   },
   "visitante": {
    "n": 190,
@@ -158,6 +158,15 @@
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-20T01:15:00Z",
+   "local": "Houston Texans",
+   "visitante": "Indianapolis Colts",
+   "marcador": "26-3",
+   "fav": "Houston Texans",
+   "pp": 0.7249,
+   "ok": true
+  },
   {
    "fecha": "2026-11-17T01:15:00Z",
    "local": "Baltimore Ravens",
@@ -373,15 +382,6 @@
    "fav": "Cleveland Browns",
    "pp": 0.5202,
    "ok": false
-  },
-  {
-   "fecha": "2026-11-08T18:00:00Z",
-   "local": "Miami Dolphins",
-   "visitante": "Detroit Lions",
-   "marcador": "9-19",
-   "fav": "Detroit Lions",
-   "pp": 0.7708,
-   "ok": true
   }
  ],
  "motor": {
@@ -394,18 +394,18 @@
    "c_micro": 0.0,
    "c_sede": 0.0
   },
-  "sd": 14.259,
+  "sd": 14.267,
   "motor": {
-   "n": 433,
-   "acierto": 0.649,
-   "brier": 0.2195,
-   "logloss": 0.6286
+   "n": 434,
+   "acierto": 0.6498,
+   "brier": 0.2192,
+   "logloss": 0.6279
   },
   "elo_basico": {
-   "n": 433,
-   "acierto": 0.6397,
-   "brier": 0.2217,
-   "logloss": 0.6329
+   "n": 434,
+   "acierto": 0.6406,
+   "brier": 0.2214,
+   "logloss": 0.6321
   },
   "escalas": {
    "temporada": true,
@@ -415,8 +415,8 @@
    "descanso": false
   },
   "local": {
-   "n": 433,
-   "acierto": 0.515
+   "n": 434,
+   "acierto": 0.5161
   },
   "temporadas_prueba": [
    2025,

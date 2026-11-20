@@ -8622,8 +8622,8 @@
     3
    ],
    "creada": "2026-11-18 03:53 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "100-103"
   },
   {
    "id": "401923304",
@@ -8944,8 +8944,8 @@
     1
    ],
    "creada": "2026-11-18 03:53 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "69-74"
   },
   {
    "id": "401930884",
@@ -8967,8 +8967,8 @@
     0
    ],
    "creada": "2026-11-18 03:53 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "71-82"
   },
   {
    "id": "401928354",
@@ -8990,8 +8990,8 @@
     0
    ],
    "creada": "2026-11-18 03:53 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "80-88"
   },
   {
    "id": "401925941",
@@ -9013,8 +9013,8 @@
     3
    ],
    "creada": "2026-11-18 03:53 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "82-69"
   },
   {
    "id": "401911534",
@@ -9036,8 +9036,8 @@
     1
    ],
    "creada": "2026-11-18 03:53 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "69-84"
   },
   {
    "id": "401920349",
@@ -9059,8 +9059,8 @@
     2
    ],
    "creada": "2026-11-18 03:53 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "78-65"
   },
   {
    "id": "401918056",
@@ -9082,8 +9082,8 @@
     2
    ],
    "creada": "2026-11-18 03:53 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "86-54"
   },
   {
    "id": "401917536",
@@ -9105,8 +9105,8 @@
     1
    ],
    "creada": "2026-11-18 03:53 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "77-83"
   },
   {
    "id": "401920515",
@@ -9174,8 +9174,8 @@
     1
    ],
    "creada": "2026-11-18 16:16 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "96-51"
   },
   {
    "id": "401909698",
@@ -10393,8 +10393,8 @@
     0
    ],
    "creada": "2026-11-19 16:23 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "83-92"
   },
   {
    "id": "401924884",
@@ -11522,7 +11522,76 @@
    "creada": "2026-11-20 03:45 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401921692",
+   "fecha": "2026-11-21T00:00:00Z",
+   "local": "Murray State Racers",
+   "visitante": "Wisconsin Badgers",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.4068,
+   "pv": 0.5932,
+   "elo_l": 1596,
+   "elo_v": 1697,
+   "bal_l": [
+    5,
+    1
+   ],
+   "bal_v": [
+    4,
+    1
+   ],
+   "creada": "2026-11-20 16:01 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401921691",
+   "fecha": "2026-11-21T02:30:00Z",
+   "local": "NC State Wolfpack",
+   "visitante": "Seton Hall Pirates",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.6885,
+   "pv": 0.3115,
+   "elo_l": 1662,
+   "elo_v": 1607,
+   "bal_l": [
+    5,
+    0
+   ],
+   "bal_v": [
+    4,
+    1
+   ],
+   "creada": "2026-11-20 16:01 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909567",
+   "fecha": "2026-11-22T04:00:00Z",
+   "local": "Duke Blue Devils",
+   "visitante": "Washington State Cougars",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.9294,
+   "pv": 0.0706,
+   "elo_l": 1826,
+   "elo_v": 1476,
+   "bal_l": [
+    3,
+    2
+   ],
+   "bal_v": [
+    1,
+    3
+   ],
+   "creada": "2026-11-20 16:01 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-20 03:45 UTC"
+ "actualizado": "2026-11-20 16:01 UTC"
 }
