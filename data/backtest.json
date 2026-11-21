@@ -1,47 +1,47 @@
 {
- "actualizado": "2026-11-20 16:00 UTC",
+ "actualizado": "2026-11-21 15:10 UTC",
  "total": {
-  "n": 789,
-  "aciertos": 402,
-  "acierto": 0.5095,
+  "n": 798,
+  "aciertos": 407,
+  "acierto": 0.51,
   "ic": [
-   0.4747,
-   0.5443
+   0.4754,
+   0.5446
   ],
-  "brier": 0.6055,
+  "brier": 0.6061,
   "brier_azar": 0.6667,
-  "siempre_local": 0.4677,
-  "over25": 0.5374,
-  "btts": 0.5437
+  "siempre_local": 0.4674,
+  "over25": 0.5351,
+  "btts": 0.5439
  },
  "ligas": {
   "Premier League": {
-   "n": 50,
+   "n": 51,
    "aciertos": 23,
-   "acierto": 0.46,
+   "acierto": 0.451,
    "ic": [
-    0.3297,
-    0.596
+    0.3227,
+    0.5862
    ],
-   "brier": 0.6436,
+   "brier": 0.6509,
    "brier_azar": 0.6667,
-   "siempre_local": 0.48,
-   "over25": 0.56,
-   "btts": 0.42
+   "siempre_local": 0.4706,
+   "over25": 0.549,
+   "btts": 0.4314
   },
   "LaLiga": {
-   "n": 68,
-   "aciertos": 36,
-   "acierto": 0.5294,
+   "n": 70,
+   "aciertos": 37,
+   "acierto": 0.5286,
    "ic": [
-    0.4124,
-    0.6433
+    0.4132,
+    0.641
    ],
-   "brier": 0.5846,
+   "brier": 0.5891,
    "brier_azar": 0.6667,
-   "siempre_local": 0.4265,
-   "over25": 0.6029,
-   "btts": 0.5588
+   "siempre_local": 0.4286,
+   "over25": 0.6,
+   "btts": 0.5571
   },
   "Serie A": {
    "n": 60,
@@ -58,32 +58,32 @@
    "btts": 0.5667
   },
   "Bundesliga": {
-   "n": 36,
+   "n": 37,
    "aciertos": 18,
-   "acierto": 0.5,
+   "acierto": 0.4865,
    "ic": [
-    0.3447,
-    0.6553
+    0.3345,
+    0.6411
    ],
-   "brier": 0.6045,
+   "brier": 0.6291,
    "brier_azar": 0.6667,
-   "siempre_local": 0.5,
-   "over25": 0.6111,
-   "btts": 0.5833
+   "siempre_local": 0.4865,
+   "over25": 0.5946,
+   "btts": 0.5676
   },
   "Ligue 1": {
-   "n": 45,
-   "aciertos": 24,
-   "acierto": 0.5333,
+   "n": 46,
+   "aciertos": 25,
+   "acierto": 0.5435,
    "ic": [
-    0.3908,
-    0.6707
+    0.4018,
+    0.6785
    ],
-   "brier": 0.572,
+   "brier": 0.5697,
    "brier_azar": 0.6667,
-   "siempre_local": 0.5333,
-   "over25": 0.6444,
-   "btts": 0.6667
+   "siempre_local": 0.5435,
+   "over25": 0.6304,
+   "btts": 0.6522
   },
   "Primeira Liga": {
    "n": 52,
@@ -114,63 +114,63 @@
    "btts": 0.629
   },
   "Championship": {
-   "n": 120,
-   "aciertos": 57,
-   "acierto": 0.475,
+   "n": 123,
+   "aciertos": 60,
+   "acierto": 0.4878,
    "ic": [
-    0.3878,
-    0.5637
+    0.4012,
+    0.5752
    ],
-   "brier": 0.6224,
+   "brier": 0.614,
    "brier_azar": 0.6667,
-   "siempre_local": 0.4417,
-   "over25": 0.5083,
-   "btts": 0.4917
+   "siempre_local": 0.4472,
+   "over25": 0.5041,
+   "btts": 0.4959
   },
   "Brasileirão": {
-   "n": 296,
+   "n": 297,
    "aciertos": 153,
-   "acierto": 0.5169,
+   "acierto": 0.5152,
    "ic": [
-    0.4601,
-    0.5732
+    0.4585,
+    0.5714
    ],
-   "brier": 0.6112,
+   "brier": 0.6113,
    "brier_azar": 0.6667,
-   "siempre_local": 0.4966,
-   "over25": 0.4932,
-   "btts": 0.5338
+   "siempre_local": 0.4949,
+   "over25": 0.4949,
+   "btts": 0.5354
   }
  },
  "tramos": [
   {
    "min": 0.45,
-   "n": 509,
-   "conf": 0.5686,
-   "acierto": 0.5521,
+   "n": 514,
+   "conf": 0.5695,
+   "acierto": 0.5506,
    "ic": [
-    0.5086,
-    0.5947
+    0.5074,
+    0.5931
    ]
   },
   {
    "min": 0.55,
-   "n": 248,
-   "conf": 0.6454,
-   "acierto": 0.6492,
+   "n": 252,
+   "conf": 0.6464,
+   "acierto": 0.6468,
    "ic": [
-    0.5879,
-    0.7059
+    0.586,
+    0.7032
    ]
   },
   {
    "min": 0.65,
-   "n": 91,
-   "conf": 0.7278,
-   "acierto": 0.6923,
+   "n": 93,
+   "conf": 0.7297,
+   "acierto": 0.6882,
    "ic": [
-    0.5913,
-    0.7777
+    0.5881,
+    0.7733
    ]
   }
  ],
@@ -178,65 +178,65 @@
   {
    "desde": 0,
    "hasta": 10,
-   "n": 37,
-   "prometido": 0.0768,
-   "real": 0.1081
+   "n": 39,
+   "prometido": 0.0761,
+   "real": 0.1026
   },
   {
    "desde": 10,
    "hasta": 20,
-   "n": 302,
-   "prometido": 0.1653,
-   "real": 0.1887
+   "n": 306,
+   "prometido": 0.1651,
+   "real": 0.1895
   },
   {
    "desde": 20,
    "hasta": 30,
-   "n": 947,
+   "n": 956,
    "prometido": 0.2486,
-   "real": 0.2471
+   "real": 0.2469
   },
   {
    "desde": 30,
    "hasta": 40,
-   "n": 408,
-   "prometido": 0.3476,
-   "real": 0.3529
+   "n": 413,
+   "prometido": 0.3477,
+   "real": 0.3535
   },
   {
    "desde": 40,
    "hasta": 50,
-   "n": 315,
+   "n": 318,
    "prometido": 0.4486,
-   "real": 0.4571
+   "real": 0.4591
   },
   {
    "desde": 50,
    "hasta": 60,
-   "n": 194,
-   "prometido": 0.5458,
-   "real": 0.4897
+   "n": 195,
+   "prometido": 0.546,
+   "real": 0.4923
   },
   {
    "desde": 60,
    "hasta": 70,
-   "n": 113,
-   "prometido": 0.6433,
-   "real": 0.6372
+   "n": 114,
+   "prometido": 0.6429,
+   "real": 0.6316
   },
   {
    "desde": 70,
    "hasta": 80,
-   "n": 38,
-   "prometido": 0.7467,
-   "real": 0.7632
+   "n": 39,
+   "prometido": 0.7477,
+   "real": 0.7692
   },
   {
    "desde": 80,
    "hasta": 90,
-   "n": 13,
-   "prometido": 0.8292,
-   "real": 0.7692
+   "n": 14,
+   "prometido": 0.8301,
+   "real": 0.7143
   },
   {
    "desde": 90,
@@ -247,6 +247,96 @@
   }
  ],
  "ejemplos": [
+  {
+   "liga": "LaLiga",
+   "fecha": "2026-11-21T13:00:00Z",
+   "local": "Deportivo Alavés",
+   "visitante": "RC Deportivo La Coruña",
+   "marcador": "3-1",
+   "pick": "1",
+   "pp": 0.3859,
+   "res": "1"
+  },
+  {
+   "liga": "Championship",
+   "fecha": "2026-11-21T12:30:00Z",
+   "local": "Millwall FC",
+   "visitante": "Queens Park Rangers FC",
+   "marcador": "0-1",
+   "pick": "2",
+   "pp": 0.4179,
+   "res": "2"
+  },
+  {
+   "liga": "Championship",
+   "fecha": "2026-11-21T12:30:00Z",
+   "local": "Norwich City FC",
+   "visitante": "Cardiff City FC",
+   "marcador": "2-1",
+   "pick": "1",
+   "pp": 0.5911,
+   "res": "1"
+  },
+  {
+   "liga": "Championship",
+   "fecha": "2026-11-21T12:30:00Z",
+   "local": "Southampton FC",
+   "visitante": "Derby County FC",
+   "marcador": "2-0",
+   "pick": "1",
+   "pp": 0.7885,
+   "res": "1"
+  },
+  {
+   "liga": "Premier League",
+   "fecha": "2026-11-21T12:30:00Z",
+   "local": "Manchester City FC",
+   "visitante": "Fulham FC",
+   "marcador": "1-1",
+   "pick": "1",
+   "pp": 0.6069,
+   "res": "X"
+  },
+  {
+   "liga": "LaLiga",
+   "fecha": "2026-11-20T20:00:00Z",
+   "local": "Athletic Club",
+   "visitante": "RCD Espanyol de Barcelona",
+   "marcador": "0-1",
+   "pick": "1",
+   "pp": 0.4891,
+   "res": "2"
+  },
+  {
+   "liga": "Ligue 1",
+   "fecha": "2026-11-20T19:45:00Z",
+   "local": "ES Troyes AC",
+   "visitante": "Le Havre AC",
+   "marcador": "3-1",
+   "pick": "1",
+   "pp": 0.4417,
+   "res": "1"
+  },
+  {
+   "liga": "Bundesliga",
+   "fecha": "2026-11-20T19:30:00Z",
+   "local": "FC Bayern München",
+   "visitante": "1. FC Köln",
+   "marcador": "1-1",
+   "pick": "1",
+   "pp": 0.8417,
+   "res": "X"
+  },
+  {
+   "liga": "Brasileirão",
+   "fecha": "2026-11-20T00:30:00Z",
+   "local": "São Paulo FC",
+   "visitante": "Fluminense FC",
+   "marcador": "0-1",
+   "pick": "1",
+   "pp": 0.3845,
+   "res": "2"
+  },
   {
    "liga": "Brasileirão",
    "fecha": "2026-11-19T22:30:00Z",
@@ -405,96 +495,6 @@
    "marcador": "2-3",
    "pick": "2",
    "pp": 0.542,
-   "res": "2"
-  },
-  {
-   "liga": "Bundesliga",
-   "fecha": "2026-11-08T18:30:00Z",
-   "local": "TSG 1899 Hoffenheim",
-   "visitante": "FC Schalke 04",
-   "marcador": "2-1",
-   "pick": "1",
-   "pp": 0.5742,
-   "res": "1"
-  },
-  {
-   "liga": "Primeira Liga",
-   "fecha": "2026-11-08T18:00:00Z",
-   "local": "Vitória SC",
-   "visitante": "FC Porto",
-   "marcador": "1-2",
-   "pick": "2",
-   "pp": 0.6915,
-   "res": "2"
-  },
-  {
-   "liga": "LaLiga",
-   "fecha": "2026-11-08T17:30:00Z",
-   "local": "Villarreal CF",
-   "visitante": "Getafe CF",
-   "marcador": "2-0",
-   "pick": "1",
-   "pp": 0.5557,
-   "res": "1"
-  },
-  {
-   "liga": "LaLiga",
-   "fecha": "2026-11-08T17:30:00Z",
-   "local": "RC Celta de Vigo",
-   "visitante": "Levante UD",
-   "marcador": "0-0",
-   "pick": "1",
-   "pp": 0.4895,
-   "res": "X"
-  },
-  {
-   "liga": "Serie A",
-   "fecha": "2026-11-08T17:00:00Z",
-   "local": "FC Internazionale Milano",
-   "visitante": "Como 1907",
-   "marcador": "2-0",
-   "pick": "1",
-   "pp": 0.3897,
-   "res": "1"
-  },
-  {
-   "liga": "Bundesliga",
-   "fecha": "2026-11-08T16:30:00Z",
-   "local": "SC Freiburg",
-   "visitante": "1. FC Union Berlin",
-   "marcador": "2-0",
-   "pick": "1",
-   "pp": 0.8372,
-   "res": "1"
-  },
-  {
-   "liga": "Premier League",
-   "fecha": "2026-11-08T16:30:00Z",
-   "local": "Manchester United FC",
-   "visitante": "Aston Villa FC",
-   "marcador": "4-4",
-   "pick": "1",
-   "pp": 0.4138,
-   "res": "X"
-  },
-  {
-   "liga": "Ligue 1",
-   "fecha": "2026-11-08T16:15:00Z",
-   "local": "Angers SCO",
-   "visitante": "OGC Nice",
-   "marcador": "0-2",
-   "pick": "2",
-   "pp": 0.4463,
-   "res": "2"
-  },
-  {
-   "liga": "Ligue 1",
-   "fecha": "2026-11-08T16:15:00Z",
-   "local": "Le Havre AC",
-   "visitante": "FC Lorient",
-   "marcador": "0-2",
-   "pick": "2",
-   "pp": 0.4137,
    "res": "2"
   }
  ]

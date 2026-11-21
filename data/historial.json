@@ -3329,8 +3329,8 @@
    "local": "FC Bayern München",
    "visitante": "1. FC Köln",
    "creada": "2026-11-13T19:47:41Z",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "X",
+   "marcador": "1-1",
    "p_local": 0.8446,
    "p_empate": 0.1029,
    "p_visitante": 0.0525,
@@ -3396,8 +3396,8 @@
    "local": "ES Troyes AC",
    "visitante": "Le Havre AC",
    "creada": "2026-11-13T19:47:41Z",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "1",
+   "marcador": "3-1",
    "p_local": 0.3999,
    "p_empate": 0.3027,
    "p_visitante": 0.2974,
@@ -3452,8 +3452,8 @@
    "local": "Athletic Club",
    "visitante": "RCD Espanyol de Barcelona",
    "creada": "2026-11-14T02:38:02Z",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "2",
+   "marcador": "0-1",
    "p_local": 0.5352,
    "p_empate": 0.2752,
    "p_visitante": 0.1896,
@@ -3514,8 +3514,8 @@
    "local": "Vélez Sarsfield",
    "visitante": "Belgrano (Córdoba)",
    "creada": "2026-11-14T02:38:02Z",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "X",
+   "marcador": "2-2",
    "p_local": 0.4489,
    "p_empate": 0.3188,
    "p_visitante": 0.2324,
@@ -3550,8 +3550,8 @@
    "local": "Manchester City FC",
    "visitante": "Fulham FC",
    "creada": "2026-11-14T13:58:09Z",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "X",
+   "marcador": "1-1",
    "p_local": 0.6478,
    "p_empate": 0.2174,
    "p_visitante": 0.1349,
@@ -3612,8 +3612,8 @@
    "local": "Deportivo Alavés",
    "visitante": "RC Deportivo La Coruña",
    "creada": "2026-11-14T13:58:09Z",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "1",
+   "marcador": "3-1",
    "p_local": 0.3961,
    "p_empate": 0.3059,
    "p_visitante": 0.298,
@@ -9813,6 +9813,13 @@
       "p": 0.1032
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 1.51,
+    "X": 4.0,
+    "2": 6.1
    }
   },
   {
@@ -9886,7 +9893,1812 @@
     "X": 5.0,
     "2": 6.0
    }
+  },
+  {
+   "id": 560658,
+   "liga": "Premier League",
+   "fecha": "2026-11-27T20:00:00Z",
+   "local": "Nottingham Forest FC",
+   "visitante": "Chelsea FC",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.3729,
+   "p_empate": 0.2765,
+   "p_visitante": 0.3505,
+   "xg_local": 1.42,
+   "xg_visitante": 1.38,
+   "n_partidos": 162,
+   "mercados": {
+    "over15": 0.7809,
+    "over25": 0.5306,
+    "over35": 0.3081,
+    "btts": 0.5794,
+    "marcador": "1-1",
+    "p_marcador": 0.1311,
+    "ht_local": 0.2989,
+    "ht_empate": 0.4159,
+    "ht_visitante": 0.2853,
+    "ht_gol": 0.7045
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Liam Delap",
+      "g": 3,
+      "p": 0.3771
+     },
+     {
+      "n": "Dan Ndoye",
+      "g": 2,
+      "p": 0.2706
+     }
+    ],
+    "visitante": [
+     {
+      "n": "João Pedro",
+      "g": 5,
+      "p": 0.3045
+     },
+     {
+      "n": "Morgan Rogers",
+      "g": 5,
+      "p": 0.3045
+     },
+     {
+      "n": "Cole Palmer",
+      "g": 3,
+      "p": 0.1958
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 2.9,
+    "X": 3.76,
+    "2": 2.58
+   }
+  },
+  {
+   "id": 560652,
+   "liga": "Premier League",
+   "fecha": "2026-11-28T15:00:00Z",
+   "local": "Leeds United FC",
+   "visitante": "Coventry City FC",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.5183,
+   "p_empate": 0.2703,
+   "p_visitante": 0.2114,
+   "xg_local": 1.63,
+   "xg_visitante": 0.97,
+   "n_partidos": 10,
+   "mercados": {
+    "over15": 0.7441,
+    "over25": 0.4813,
+    "over35": 0.2637,
+    "btts": 0.5101,
+    "marcador": "1-1",
+    "p_marcador": 0.129,
+    "ht_local": 0.3804,
+    "ht_empate": 0.4265,
+    "ht_visitante": 0.1932,
+    "ht_gol": 0.6774
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Dominic Calvert-Lewin",
+      "g": 3,
+      "p": 0.3868
+     },
+     {
+      "n": "Jayden Bogle",
+      "g": 2,
+      "p": 0.2782
+     },
+     {
+      "n": "Noah Okafor",
+      "g": 2,
+      "p": 0.2782
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Jack Rudoni",
+      "g": 3,
+      "p": 0.2525
+     },
+     {
+      "n": "Taiwo Awoniyi",
+      "g": 2,
+      "p": 0.1763
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 1.62,
+    "X": 4.42,
+    "2": 6.0
+   }
+  },
+  {
+   "id": 560655,
+   "liga": "Premier League",
+   "fecha": "2026-11-28T15:00:00Z",
+   "local": "Manchester United FC",
+   "visitante": "Brentford FC",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4582,
+   "p_empate": 0.2564,
+   "p_visitante": 0.2854,
+   "xg_local": 1.73,
+   "xg_visitante": 1.33,
+   "n_partidos": 162,
+   "mercados": {
+    "over15": 0.8217,
+    "over25": 0.5921,
+    "over35": 0.3682,
+    "btts": 0.6175,
+    "marcador": "1-1",
+    "p_marcador": 0.1183,
+    "ht_local": 0.3574,
+    "ht_empate": 0.3915,
+    "ht_visitante": 0.2511,
+    "ht_gol": 0.7371
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Bruno Fernandes",
+      "g": 4,
+      "p": 0.39
+     },
+     {
+      "n": "Bryan Mbeumo",
+      "g": 4,
+      "p": 0.39
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Kevin Schade",
+      "g": 3,
+      "p": 0.2207
+     },
+     {
+      "n": "Keane Lewis-Potter",
+      "g": 2,
+      "p": 0.1532
+     },
+     {
+      "n": "Vitaly Janelt",
+      "g": 2,
+      "p": 0.1532
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 2.02,
+    "X": 4.08,
+    "2": 3.7
+   }
+  },
+  {
+   "id": 564765,
+   "liga": "LaLiga",
+   "fecha": "2026-11-27T20:00:00Z",
+   "local": "Levante UD",
+   "visitante": "Real Racing Club de Santander",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.5334,
+   "p_empate": 0.2203,
+   "p_visitante": 0.2464,
+   "xg_local": 2.2,
+   "xg_visitante": 1.47,
+   "n_partidos": 12,
+   "mercados": {
+    "over15": 0.89,
+    "over25": 0.7107,
+    "over35": 0.5011,
+    "btts": 0.6941,
+    "marcador": "2-1",
+    "p_marcador": 0.0905,
+    "ht_local": 0.4173,
+    "ht_empate": 0.3461,
+    "ht_visitante": 0.2365,
+    "ht_gol": 0.7986
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Brugui",
+      "g": 5,
+      "p": 0.4972
+     },
+     {
+      "n": "Iván Romero",
+      "g": 3,
+      "p": 0.338
+     },
+     {
+      "n": "Adrián de la Fuente",
+      "g": 2,
+      "p": 0.2404
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Yassir Zabiri",
+      "g": 9,
+      "p": 0.5408
+     },
+     {
+      "n": "Pablo García",
+      "g": 2,
+      "p": 0.1588
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 2.19,
+    "X": 3.98,
+    "2": 3.3
+   }
+  },
+  {
+   "id": 564760,
+   "liga": "LaLiga",
+   "fecha": "2026-11-28T13:00:00Z",
+   "local": "Real Betis Balompié",
+   "visitante": "Rayo Vallecano de Madrid",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.5412,
+   "p_empate": 0.258,
+   "p_visitante": 0.2008,
+   "xg_local": 1.75,
+   "xg_visitante": 0.99,
+   "n_partidos": 163,
+   "mercados": {
+    "over15": 0.7685,
+    "over25": 0.5145,
+    "over35": 0.2932,
+    "btts": 0.529,
+    "marcador": "1-1",
+    "p_marcador": 0.1232,
+    "ht_local": 0.3989,
+    "ht_empate": 0.4118,
+    "ht_visitante": 0.1893,
+    "ht_gol": 0.696
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Rodrigo Riquelme",
+      "g": 3,
+      "p": 0.2309
+     },
+     {
+      "n": "Bartra",
+      "g": 3,
+      "p": 0.2309
+     },
+     {
+      "n": "Abdessamad Ezzalzouli",
+      "g": 3,
+      "p": 0.2309
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Sergio Camello",
+      "g": 7,
+      "p": 0.37
+     },
+     {
+      "n": "Álvaro García",
+      "g": 3,
+      "p": 0.1796
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 1.56,
+    "X": 4.72,
+    "2": 6.11
+   }
+  },
+  {
+   "id": 558515,
+   "liga": "Serie A",
+   "fecha": "2026-11-27T19:45:00Z",
+   "local": "Venezia FC",
+   "visitante": "Bologna FC 1909",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.2057,
+   "p_empate": 0.2771,
+   "p_visitante": 0.5172,
+   "xg_local": 0.91,
+   "xg_visitante": 1.57,
+   "n_partidos": 49,
+   "mercados": {
+    "over15": 0.721,
+    "over25": 0.4516,
+    "over35": 0.2386,
+    "btts": 0.4852,
+    "marcador": "1-1",
+    "p_marcador": 0.1314,
+    "ht_local": 0.1866,
+    "ht_empate": 0.4375,
+    "ht_visitante": 0.3759,
+    "ht_gol": 0.6611
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Akor Adams",
+      "g": 2,
+      "p": 0.2035
+     },
+     {
+      "n": "Antoine Hainaut",
+      "g": 2,
+      "p": 0.2035
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Federico Bernardeschi",
+      "g": 3,
+      "p": 0.255
+     },
+     {
+      "n": "Samuel Mbangula",
+      "g": 3,
+      "p": 0.255
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 3.85,
+    "X": 3.83,
+    "2": 2.1
+   }
+  },
+  {
+   "id": 558513,
+   "liga": "Serie A",
+   "fecha": "2026-11-28T14:00:00Z",
+   "local": "Frosinone Calcio",
+   "visitante": "Parma Calcio 1913",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.5697,
+   "p_empate": 0.2422,
+   "p_visitante": 0.1882,
+   "xg_local": 1.9,
+   "xg_visitante": 1.02,
+   "n_partidos": 49,
+   "mercados": {
+    "over15": 0.7989,
+    "over25": 0.5584,
+    "over35": 0.3346,
+    "btts": 0.5536,
+    "marcador": "1-1",
+    "p_marcador": 0.1149,
+    "ht_local": 0.4224,
+    "ht_empate": 0.393,
+    "ht_visitante": 0.1846,
+    "ht_gol": 0.7199
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Antonio Raimondo",
+      "g": 8,
+      "p": 0.4692
+     },
+     {
+      "n": "Giacomo Calò",
+      "g": 5,
+      "p": 0.3269
+     },
+     {
+      "n": "Giorgi Kvernadze",
+      "g": 3,
+      "p": 0.2114
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Simone Lontani",
+      "g": 3,
+      "p": 0.2882
+     },
+     {
+      "n": "José Romero",
+      "g": 2,
+      "p": 0.2028
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 1.57,
+    "X": 5.0,
+    "2": 6.1
+   }
+  },
+  {
+   "id": 565869,
+   "liga": "Bundesliga",
+   "fecha": "2026-11-27T19:30:00Z",
+   "local": "SV Werder Bremen",
+   "visitante": "Borussia Mönchengladbach",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.5093,
+   "p_empate": 0.244,
+   "p_visitante": 0.2468,
+   "xg_local": 1.9,
+   "xg_visitante": 1.28,
+   "n_partidos": 145,
+   "mercados": {
+    "over15": 0.8358,
+    "over25": 0.615,
+    "over35": 0.3921,
+    "btts": 0.6233,
+    "marcador": "1-1",
+    "p_marcador": 0.1114,
+    "ht_local": 0.3945,
+    "ht_empate": 0.3757,
+    "ht_visitante": 0.2298,
+    "ht_gol": 0.7557
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Niclas Füllkrug",
+      "g": 9,
+      "p": 0.6343
+     },
+     {
+      "n": "Eren Dinkci",
+      "g": 2,
+      "p": 0.2003
+     },
+     {
+      "n": "Marco Grüll",
+      "g": 2,
+      "p": 0.2003
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Joseph Scally",
+      "g": 4,
+      "p": 0.3473
+     },
+     {
+      "n": "Hugo Bolin",
+      "g": 2,
+      "p": 0.1921
+     },
+     {
+      "n": "Shuto Machino",
+      "g": 2,
+      "p": 0.1921
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 1.81,
+    "X": 4.4,
+    "2": 4.4
+   }
+  },
+  {
+   "id": 565866,
+   "liga": "Bundesliga",
+   "fecha": "2026-11-28T14:30:00Z",
+   "local": "1. FC Köln",
+   "visitante": "SV 07 Elversberg",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.3971,
+   "p_empate": 0.248,
+   "p_visitante": 0.355,
+   "xg_local": 1.72,
+   "xg_visitante": 1.62,
+   "n_partidos": 9,
+   "mercados": {
+    "over15": 0.8566,
+    "over25": 0.6494,
+    "over35": 0.4294,
+    "btts": 0.669,
+    "marcador": "1-1",
+    "p_marcador": 0.1084,
+    "ht_local": 0.3283,
+    "ht_empate": 0.3697,
+    "ht_visitante": 0.302,
+    "ht_gol": 0.7733
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Said El Mala",
+      "g": 3,
+      "p": 0.3744
+     },
+     {
+      "n": "Thijs Dallinga",
+      "g": 2,
+      "p": 0.2686
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Maurice Krattenmacher",
+      "g": 4,
+      "p": 0.3169
+     },
+     {
+      "n": "Lukas Petkov",
+      "g": 2,
+      "p": 0.1735
+     },
+     {
+      "n": "Cole Campbell",
+      "g": 2,
+      "p": 0.1735
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 2.04,
+    "X": 4.16,
+    "2": 3.67
+   }
+  },
+  {
+   "id": 565867,
+   "liga": "Bundesliga",
+   "fecha": "2026-11-28T14:30:00Z",
+   "local": "1. FSV Mainz 05",
+   "visitante": "1. FC Union Berlin",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.5311,
+   "p_empate": 0.2555,
+   "p_visitante": 0.2134,
+   "xg_local": 1.78,
+   "xg_visitante": 1.06,
+   "n_partidos": 145,
+   "mercados": {
+    "over15": 0.7853,
+    "over25": 0.538,
+    "over35": 0.315,
+    "btts": 0.5527,
+    "marcador": "1-1",
+    "p_marcador": 0.1216,
+    "ht_local": 0.3992,
+    "ht_empate": 0.3999,
+    "ht_visitante": 0.2009,
+    "ht_gol": 0.7153
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Phillip Tietz",
+      "g": 6,
+      "p": 0.4475
+     },
+     {
+      "n": "Anthony Caci",
+      "g": 3,
+      "p": 0.2567
+     },
+     {
+      "n": "Sheraldo Becker",
+      "g": 2,
+      "p": 0.1794
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Tim Skarke",
+      "g": 2,
+      "p": 0.2613
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 1.55,
+    "X": 4.83,
+    "2": 6.5
+   }
+  },
+  {
+   "id": 565868,
+   "liga": "Bundesliga",
+   "fecha": "2026-11-28T14:30:00Z",
+   "local": "SC Paderborn 07",
+   "visitante": "FC Schalke 04",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4751,
+   "p_empate": 0.31,
+   "p_visitante": 0.2148,
+   "xg_local": 1.32,
+   "xg_visitante": 0.8,
+   "n_partidos": 9,
+   "mercados": {
+    "over15": 0.6383,
+    "over25": 0.3558,
+    "over35": 0.1652,
+    "btts": 0.4167,
+    "marcador": "1-0",
+    "p_marcador": 0.1455,
+    "ht_local": 0.3403,
+    "ht_empate": 0.4759,
+    "ht_visitante": 0.1838,
+    "ht_gol": 0.6097
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Stefano Marino",
+      "g": 2,
+      "p": 0.2811
+     },
+     {
+      "n": "Steffen Tigges",
+      "g": 2,
+      "p": 0.2811
+     }
+    ],
+    "visitante": []
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 2.44,
+    "X": 3.7,
+    "2": 3.0
+   }
+  },
+  {
+   "id": 565874,
+   "liga": "Bundesliga",
+   "fecha": "2026-11-28T14:30:00Z",
+   "local": "Hamburger SV",
+   "visitante": "FC Bayern München",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.1094,
+   "p_empate": 0.1608,
+   "p_visitante": 0.7298,
+   "xg_local": 1.06,
+   "xg_visitante": 2.8,
+   "n_partidos": 43,
+   "mercados": {
+    "over15": 0.9037,
+    "over25": 0.7403,
+    "over35": 0.5379,
+    "btts": 0.619,
+    "marcador": "1-2",
+    "p_marcador": 0.0877,
+    "ht_local": 0.1397,
+    "ht_empate": 0.3018,
+    "ht_visitante": 0.5585,
+    "ht_gol": 0.8197
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Miro Muheim",
+      "g": 3,
+      "p": 0.2724
+     },
+     {
+      "n": "Yussuf Poulsen",
+      "g": 2,
+      "p": 0.191
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Michael Olise",
+      "g": 6,
+      "p": 0.4288
+     },
+     {
+      "n": "Luis Díaz",
+      "g": 4,
+      "p": 0.3116
+     },
+     {
+      "n": "Harry Kane",
+      "g": 4,
+      "p": 0.3116
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 11.0,
+    "X": 7.6,
+    "2": 1.27
+   }
+  },
+  {
+   "id": 559616,
+   "liga": "Ligue 1",
+   "fecha": "2026-11-27T19:45:00Z",
+   "local": "Stade Brestois 29",
+   "visitante": "Paris FC",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.3785,
+   "p_empate": 0.2797,
+   "p_visitante": 0.3417,
+   "xg_local": 1.41,
+   "xg_visitante": 1.33,
+   "n_partidos": 44,
+   "mercados": {
+    "over15": 0.7713,
+    "over25": 0.5171,
+    "over35": 0.2956,
+    "btts": 0.5688,
+    "marcador": "1-1",
+    "p_marcador": 0.1331,
+    "ht_local": 0.3007,
+    "ht_empate": 0.4209,
+    "ht_visitante": 0.2784,
+    "ht_gol": 0.697
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Ludovic Ajorque",
+      "g": 5,
+      "p": 0.3241
+     },
+     {
+      "n": "Kamory Doumbia",
+      "g": 4,
+      "p": 0.269
+     },
+     {
+      "n": "Pathé Mboup",
+      "g": 2,
+      "p": 0.145
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Lassine Sinayoko",
+      "g": 9,
+      "p": 0.5055
+     },
+     {
+      "n": "Pablo Pagis",
+      "g": 2,
+      "p": 0.1448
+     },
+     {
+      "n": "Maxime López",
+      "g": 2,
+      "p": 0.1448
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 3.21,
+    "X": 3.71,
+    "2": 2.3
+   }
+  },
+  {
+   "id": 567361,
+   "liga": "Primeira Liga",
+   "fecha": "2026-11-27T20:15:00Z",
+   "local": "CS Marítimo",
+   "visitante": "CD Nacional",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.3568,
+   "p_empate": 0.2846,
+   "p_visitante": 0.3586,
+   "xg_local": 1.33,
+   "xg_visitante": 1.34,
+   "n_partidos": 44,
+   "mercados": {
+    "over15": 0.758,
+    "over25": 0.4988,
+    "over35": 0.2791,
+    "btts": 0.5551,
+    "marcador": "1-1",
+    "p_marcador": 0.1358,
+    "ht_local": 0.2855,
+    "ht_empate": 0.4279,
+    "ht_visitante": 0.2866,
+    "ht_gol": 0.6869
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [],
+    "visitante": [
+     {
+      "n": "Miguel Baeza",
+      "g": 2,
+      "p": 0.2162
+     },
+     {
+      "n": "Matchoi Djaló",
+      "g": 2,
+      "p": 0.2162
+     },
+     {
+      "n": "Abdel Kader Njoya",
+      "g": 2,
+      "p": 0.2162
+     }
+    ]
+   }
+  },
+  {
+   "id": 558820,
+   "liga": "Eredivisie",
+   "fecha": "2026-11-27T19:00:00Z",
+   "local": "FC Groningen",
+   "visitante": "Willem II Tilburg",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.6918,
+   "p_empate": 0.1839,
+   "p_visitante": 0.1243,
+   "xg_local": 2.5,
+   "xg_visitante": 1.0,
+   "n_partidos": 46,
+   "mercados": {
+    "over15": 0.8713,
+    "over25": 0.6783,
+    "over35": 0.4622,
+    "btts": 0.5878,
+    "marcador": "2-1",
+    "p_marcador": 0.0945,
+    "ht_local": 0.523,
+    "ht_empate": 0.3294,
+    "ht_visitante": 0.1477,
+    "ht_gol": 0.7884
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Brynjolfur Darri Willumsson",
+      "g": 9,
+      "p": 0.5397
+     },
+     {
+      "n": "Thom van Bergen",
+      "g": 8,
+      "p": 0.4983
+     },
+     {
+      "n": "David van der Werff",
+      "g": 2,
+      "p": 0.1584
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Devin Haen",
+      "g": 3,
+      "p": 0.2387
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 1.29,
+    "X": 6.92,
+    "2": 12.0
+   }
+  },
+  {
+   "id": 561968,
+   "liga": "Championship",
+   "fecha": "2026-11-27T20:00:00Z",
+   "local": "Southampton FC",
+   "visitante": "Middlesbrough FC",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4721,
+   "p_empate": 0.2552,
+   "p_visitante": 0.2727,
+   "xg_local": 1.76,
+   "xg_visitante": 1.3,
+   "n_partidos": 107,
+   "mercados": {
+    "over15": 0.82,
+    "over25": 0.5895,
+    "over35": 0.3655,
+    "btts": 0.6125,
+    "marcador": "1-1",
+    "p_marcador": 0.1181,
+    "ht_local": 0.3757,
+    "ht_empate": 0.3765,
+    "ht_visitante": 0.2479,
+    "ht_gol": 0.758
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Cyle Larin",
+      "g": 8,
+      "p": 0.3846
+     },
+     {
+      "n": "Kuryu Matsuki",
+      "g": 4,
+      "p": 0.2155
+     },
+     {
+      "n": "Finn Azaz",
+      "g": 3,
+      "p": 0.1665
+     }
+    ],
+    "visitante": [
+     {
+      "n": "William Lankshear",
+      "g": 13,
+      "p": 0.4307
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 2.75,
+    "X": 3.85,
+    "2": 2.43
+   }
+  },
+  {
+   "id": 561969,
+   "liga": "Championship",
+   "fecha": "2026-11-28T12:30:00Z",
+   "local": "Blackburn Rovers FC",
+   "visitante": "Charlton Athletic FC",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4891,
+   "p_empate": 0.3024,
+   "p_visitante": 0.2085,
+   "xg_local": 1.37,
+   "xg_visitante": 0.81,
+   "n_partidos": 61,
+   "mercados": {
+    "over15": 0.6541,
+    "over25": 0.373,
+    "over35": 0.1775,
+    "btts": 0.4272,
+    "marcador": "1-0",
+    "p_marcador": 0.1421,
+    "ht_local": 0.3598,
+    "ht_empate": 0.4552,
+    "ht_visitante": 0.185,
+    "ht_gol": 0.6371
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Andri Guðjohnsen",
+      "g": 10,
+      "p": 0.4635
+     },
+     {
+      "n": "Oladapo Afolayan",
+      "g": 5,
+      "p": 0.2676
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Tyreece Campbell",
+      "g": 4,
+      "p": 0.2206
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 2.02,
+    "X": 3.55,
+    "2": 3.9
+   }
+  },
+  {
+   "id": 561972,
+   "liga": "Championship",
+   "fecha": "2026-11-28T12:30:00Z",
+   "local": "Lincoln City FC",
+   "visitante": "Wolverhampton Wanderers FC",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.258,
+   "p_empate": 0.2649,
+   "p_visitante": 0.4771,
+   "xg_local": 1.18,
+   "xg_visitante": 1.67,
+   "n_partidos": 15,
+   "mercados": {
+    "over15": 0.7881,
+    "over25": 0.5415,
+    "over35": 0.3184,
+    "btts": 0.573,
+    "marcador": "1-1",
+    "p_marcador": 0.1255,
+    "ht_local": 0.234,
+    "ht_empate": 0.3923,
+    "ht_visitante": 0.3737,
+    "ht_gol": 0.7331
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Mikkel Ladefoged",
+      "g": 3,
+      "p": 0.2102
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Fer López",
+      "g": 6,
+      "p": 0.3198
+     },
+     {
+      "n": "Adam Armstrong",
+      "g": 4,
+      "p": 0.2266
+     },
+     {
+      "n": "Raúl Jiménez",
+      "g": 3,
+      "p": 0.1753
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 4.6,
+    "X": 3.85,
+    "2": 1.8
+   }
+  },
+  {
+   "id": 561973,
+   "liga": "Championship",
+   "fecha": "2026-11-28T12:30:00Z",
+   "local": "Preston North End FC",
+   "visitante": "Norwich City FC",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.2689,
+   "p_empate": 0.2702,
+   "p_visitante": 0.4609,
+   "xg_local": 1.18,
+   "xg_visitante": 1.61,
+   "n_partidos": 199,
+   "mercados": {
+    "over15": 0.7789,
+    "over25": 0.5282,
+    "over35": 0.3058,
+    "btts": 0.5662,
+    "marcador": "1-1",
+    "p_marcador": 0.1284,
+    "ht_local": 0.2399,
+    "ht_empate": 0.3981,
+    "ht_visitante": 0.362,
+    "ht_gol": 0.7261
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Callum Lang",
+      "g": 4,
+      "p": 0.3045
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Mathias Kvistgaarden",
+      "g": 5,
+      "p": 0.2224
+     },
+     {
+      "n": "Mohamed Toure",
+      "g": 5,
+      "p": 0.2224
+     },
+     {
+      "n": "Edmond-Paris Maghoma",
+      "g": 5,
+      "p": 0.2224
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 4.25,
+    "X": 3.95,
+    "2": 1.83
+   }
+  },
+  {
+   "id": 561965,
+   "liga": "Championship",
+   "fecha": "2026-11-28T15:00:00Z",
+   "local": "Wrexham AFC",
+   "visitante": "Portsmouth FC",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4478,
+   "p_empate": 0.2804,
+   "p_visitante": 0.2718,
+   "xg_local": 1.51,
+   "xg_visitante": 1.13,
+   "n_partidos": 61,
+   "mercados": {
+    "over15": 0.7525,
+    "over25": 0.4917,
+    "over35": 0.2728,
+    "btts": 0.5397,
+    "marcador": "1-1",
+    "p_marcador": 0.1339,
+    "ht_local": 0.3496,
+    "ht_empate": 0.4119,
+    "ht_visitante": 0.2385,
+    "ht_gol": 0.7064
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Kieffer Moore",
+      "g": 5,
+      "p": 0.3426
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Terry Devlin",
+      "g": 4,
+      "p": 0.2023
+     },
+     {
+      "n": "Marko Milovanovic",
+      "g": 3,
+      "p": 0.1559
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 2.18,
+    "X": 3.45,
+    "2": 3.55
+   }
+  },
+  {
+   "id": 561966,
+   "liga": "Championship",
+   "fecha": "2026-11-28T15:00:00Z",
+   "local": "Queens Park Rangers FC",
+   "visitante": "Sheffield United FC",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.3874,
+   "p_empate": 0.2829,
+   "p_visitante": 0.3297,
+   "xg_local": 1.41,
+   "xg_visitante": 1.28,
+   "n_partidos": 153,
+   "mercados": {
+    "over15": 0.761,
+    "over25": 0.5029,
+    "over35": 0.2828,
+    "btts": 0.5573,
+    "marcador": "1-1",
+    "p_marcador": 0.1349,
+    "ht_local": 0.3131,
+    "ht_empate": 0.4102,
+    "ht_visitante": 0.2767,
+    "ht_gol": 0.7125
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Richard Kone",
+      "g": 5,
+      "p": 0.2545
+     },
+     {
+      "n": "Paul Smyth",
+      "g": 3,
+      "p": 0.1616
+     },
+     {
+      "n": "Jimmy Dunne",
+      "g": 3,
+      "p": 0.1616
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Patrick Bamford",
+      "g": 5,
+      "p": 0.2627
+     },
+     {
+      "n": "Sydie Peck",
+      "g": 4,
+      "p": 0.2164
+     },
+     {
+      "n": "Thomas Cannon",
+      "g": 3,
+      "p": 0.1671
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 2.24,
+    "X": 3.7,
+    "2": 3.45
+   }
+  },
+  {
+   "id": 561967,
+   "liga": "Championship",
+   "fecha": "2026-11-28T15:00:00Z",
+   "local": "Millwall FC",
+   "visitante": "Burnley FC",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.3917,
+   "p_empate": 0.2905,
+   "p_visitante": 0.3177,
+   "xg_local": 1.36,
+   "xg_visitante": 1.2,
+   "n_partidos": 107,
+   "mercados": {
+    "over15": 0.7375,
+    "over25": 0.4716,
+    "over35": 0.2554,
+    "btts": 0.5322,
+    "marcador": "1-1",
+    "p_marcador": 0.1388,
+    "ht_local": 0.3124,
+    "ht_empate": 0.4217,
+    "ht_visitante": 0.2659,
+    "ht_gol": 0.6953
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Lyndon Dykes",
+      "g": 4,
+      "p": 0.2106
+     },
+     {
+      "n": "Taïryk Arconte",
+      "g": 3,
+      "p": 0.1625
+     },
+     {
+      "n": "Camiel Neghli",
+      "g": 3,
+      "p": 0.1625
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Largie Ramazani",
+      "g": 4,
+      "p": 0.196
+     },
+     {
+      "n": "Zeki Amdouni",
+      "g": 3,
+      "p": 0.1509
+     }
+    ]
+   }
+  },
+  {
+   "id": 561970,
+   "liga": "Championship",
+   "fecha": "2026-11-28T15:00:00Z",
+   "local": "Birmingham City FC",
+   "visitante": "Bolton Wanderers FC",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.5984,
+   "p_empate": 0.2248,
+   "p_visitante": 0.1769,
+   "xg_local": 2.09,
+   "xg_visitante": 1.07,
+   "n_partidos": 15,
+   "mercados": {
+    "over15": 0.8323,
+    "over25": 0.6106,
+    "over35": 0.3874,
+    "btts": 0.5844,
+    "marcador": "1-1",
+    "p_marcador": 0.1045,
+    "ht_local": 0.4601,
+    "ht_empate": 0.3563,
+    "ht_visitante": 0.1836,
+    "ht_gol": 0.7688
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "August Priske",
+      "g": 6,
+      "p": 0.361
+     },
+     {
+      "n": "Jay Stansfield",
+      "g": 4,
+      "p": 0.2581
+     },
+     {
+      "n": "Liam Millar",
+      "g": 4,
+      "p": 0.2581
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Sam Dalby",
+      "g": 6,
+      "p": 0.2746
+     },
+     {
+      "n": "Thierry Gale",
+      "g": 3,
+      "p": 0.1483
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 1.56,
+    "X": 4.4,
+    "2": 5.8
+   }
+  },
+  {
+   "id": 561971,
+   "liga": "Championship",
+   "fecha": "2026-11-28T15:00:00Z",
+   "local": "Derby County FC",
+   "visitante": "Watford FC",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4383,
+   "p_empate": 0.2868,
+   "p_visitante": 0.2749,
+   "xg_local": 1.45,
+   "xg_visitante": 1.1,
+   "n_partidos": 107,
+   "mercados": {
+    "over15": 0.7357,
+    "over25": 0.4696,
+    "over35": 0.2537,
+    "btts": 0.5237,
+    "marcador": "1-1",
+    "p_marcador": 0.137,
+    "ht_local": 0.3411,
+    "ht_empate": 0.4206,
+    "ht_visitante": 0.2383,
+    "ht_gol": 0.6941
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Lars-Jörgen Salvesen",
+      "g": 4,
+      "p": 0.3392
+     },
+     {
+      "n": "Samuel Szmodics",
+      "g": 3,
+      "p": 0.2671
+     },
+     {
+      "n": "Bobby Clark",
+      "g": 3,
+      "p": 0.2671
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Amin Nabizada",
+      "g": 3,
+      "p": 0.2242
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 2.28,
+    "X": 3.55,
+    "2": 3.2
+   }
+  },
+  {
+   "id": 561974,
+   "liga": "Championship",
+   "fecha": "2026-11-28T15:00:00Z",
+   "local": "West Ham United FC",
+   "visitante": "Stoke City FC",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.585,
+   "p_empate": 0.2179,
+   "p_visitante": 0.1971,
+   "xg_local": 2.2,
+   "xg_visitante": 1.23,
+   "n_partidos": 15,
+   "mercados": {
+    "over15": 0.8659,
+    "over25": 0.6671,
+    "over35": 0.4494,
+    "btts": 0.6391,
+    "marcador": "2-1",
+    "p_marcador": 0.0964,
+    "ht_local": 0.4575,
+    "ht_empate": 0.3402,
+    "ht_visitante": 0.2023,
+    "ht_gol": 0.7971
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Jarrod Bowen",
+      "g": 7,
+      "p": 0.3405
+     },
+     {
+      "n": "Konstantinos Mavropanos",
+      "g": 5,
+      "p": 0.2572
+     },
+     {
+      "n": "Joël Piroe",
+      "g": 4,
+      "p": 0.2117
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Jack McGlynn",
+      "g": 5,
+      "p": 0.2261
+     },
+     {
+      "n": "Ethan Galbraith",
+      "g": 4,
+      "p": 0.1854
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 1.45,
+    "X": 4.8,
+    "2": 7.0
+   }
+  },
+  {
+   "id": 561975,
+   "liga": "Championship",
+   "fecha": "2026-11-28T15:00:00Z",
+   "local": "West Bromwich Albion FC",
+   "visitante": "Bristol City FC",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4937,
+   "p_empate": 0.291,
+   "p_visitante": 0.2153,
+   "xg_local": 1.46,
+   "xg_visitante": 0.88,
+   "n_partidos": 199,
+   "mercados": {
+    "over15": 0.6905,
+    "over25": 0.4144,
+    "over35": 0.2087,
+    "btts": 0.4619,
+    "marcador": "1-1",
+    "p_marcador": 0.1363,
+    "ht_local": 0.3685,
+    "ht_empate": 0.4378,
+    "ht_visitante": 0.1937,
+    "ht_gol": 0.6624
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Isaac Price",
+      "g": 7,
+      "p": 0.3588
+     },
+     {
+      "n": "Jimmy Morgan",
+      "g": 5,
+      "p": 0.272
+     },
+     {
+      "n": "Aune Heggebø",
+      "g": 3,
+      "p": 0.1734
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Scott Twine",
+      "g": 5,
+      "p": 0.2404
+     },
+     {
+      "n": "Dominic Ballard",
+      "g": 4,
+      "p": 0.1975
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 2.09,
+    "X": 3.55,
+    "2": 3.7
+   }
+  },
+  {
+   "id": 555105,
+   "liga": "Brasileirão",
+   "fecha": "2026-11-27T23:00:00Z",
+   "local": "Fluminense FC",
+   "visitante": "Cruzeiro EC",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4417,
+   "p_empate": 0.2894,
+   "p_visitante": 0.269,
+   "xg_local": 1.44,
+   "xg_visitante": 1.07,
+   "n_partidos": 149,
+   "mercados": {
+    "over15": 0.7263,
+    "over25": 0.4575,
+    "over35": 0.2435,
+    "btts": 0.5131,
+    "marcador": "1-1",
+    "p_marcador": 0.138,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "John Kennedy",
+      "g": 9,
+      "p": 0.2066
+     },
+     {
+      "n": "Hulk",
+      "g": 7,
+      "p": 0.1647
+     },
+     {
+      "n": "Jefferson Savarino",
+      "g": 7,
+      "p": 0.1647
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Kaio Jorge",
+      "g": 14,
+      "p": 0.2311
+     },
+     {
+      "n": "Matheus Pereira",
+      "g": 10,
+      "p": 0.1712
+     },
+     {
+      "n": "Christian",
+      "g": 5,
+      "p": 0.0896
+     }
+    ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 2.16,
+    "X": 3.35,
+    "2": 3.2
+   }
+  },
+  {
+   "id": "espn-401933727",
+   "liga": "MLS",
+   "fecha": "2026-11-28T01:00:00Z",
+   "local": "Columbus Crew",
+   "visitante": "Inter Miami CF",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4196,
+   "p_empate": 0.2252,
+   "p_visitante": 0.3552,
+   "xg_local": 2.03,
+   "xg_visitante": 1.86,
+   "n_partidos": 180,
+   "mercados": {
+    "over15": 0.9075,
+    "over25": 0.7447,
+    "over35": 0.5439,
+    "btts": 0.7408,
+    "marcador": "1-1",
+    "p_marcador": 0.0851,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 2.7,
+    "X": 4.0,
+    "2": 2.4
+   }
+  },
+  {
+   "id": "espn-401933725",
+   "liga": "MLS",
+   "fecha": "2026-11-28T03:00:00Z",
+   "local": "Real Salt Lake",
+   "visitante": "Vancouver Whitecaps",
+   "creada": "2026-11-21T15:06:42Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.2803,
+   "p_empate": 0.2677,
+   "p_visitante": 0.452,
+   "xg_local": 1.24,
+   "xg_visitante": 1.62,
+   "n_partidos": 177,
+   "mercados": {
+    "over15": 0.7902,
+    "over25": 0.5444,
+    "over35": 0.3211,
+    "btts": 0.5811,
+    "marcador": "1-1",
+    "p_marcador": 0.1265,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 3.05,
+    "X": 3.85,
+    "2": 2.25
+   }
   }
  ],
- "actualizado": "2026-11-20 15:56 UTC"
+ "actualizado": "2026-11-21 15:06 UTC"
 }

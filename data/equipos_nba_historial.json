@@ -3510,8 +3510,8 @@
     10
    ],
    "creada": "2026-11-19 00:02 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "111-97",
    "cuota": {
     "mejor": {
      "L": {
@@ -3562,8 +3562,8 @@
     8
    ],
    "creada": "2026-11-19 03:51 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "111-113",
    "cuota": {
     "mejor": {
      "L": {
@@ -3614,8 +3614,8 @@
     10
    ],
    "creada": "2026-11-19 03:51 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "128-119",
    "cuota": {
     "mejor": {
      "L": {
@@ -3666,8 +3666,8 @@
     10
    ],
    "creada": "2026-11-19 03:51 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "102-105",
    "cuota": {
     "mejor": {
      "L": {
@@ -3718,8 +3718,8 @@
     11
    ],
    "creada": "2026-11-19 03:51 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "94-98",
    "cuota": {
     "mejor": {
      "L": {
@@ -3770,8 +3770,8 @@
     11
    ],
    "creada": "2026-11-19 03:51 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "126-120",
    "cuota": {
     "mejor": {
      "V": {
@@ -3822,8 +3822,8 @@
     7
    ],
    "creada": "2026-11-19 03:51 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "101-111",
    "cuota": {
     "mejor": {
      "V": {
@@ -3874,8 +3874,8 @@
     4
    ],
    "creada": "2026-11-19 03:51 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "133-124",
    "cuota": {
     "mejor": {
      "L": {
@@ -3926,8 +3926,8 @@
     12
    ],
    "creada": "2026-11-19 03:51 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "106-104",
    "cuota": {
     "mejor": {
      "L": {
@@ -3979,7 +3979,36 @@
    ],
    "creada": "2026-11-20 03:45 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 5.5,
+      "casa": "Matchbook"
+     },
+     "L": {
+      "c": 1.22,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.8066,
+     "V": 0.1934
+    },
+    "casas": 25,
+    "ev": {
+     "L": 0.0681,
+     "V": -0.3153
+    },
+    "valor": [],
+    "actualizado": "2026-11-21 15:11 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:11 UTC",
+    "valor": [],
+    "L": 1.22,
+    "V": 5.5
+   }
   },
   {
    "id": "401910024",
@@ -4002,7 +4031,36 @@
    ],
    "creada": "2026-11-20 03:45 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.53,
+      "casa": "Matchbook"
+     },
+     "V": {
+      "c": 2.84,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "L": 0.6443,
+     "V": 0.3557
+    },
+    "casas": 25,
+    "ev": {
+     "L": 0.1255,
+     "V": -0.2491
+    },
+    "valor": [],
+    "actualizado": "2026-11-21 15:11 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:11 UTC",
+    "valor": [],
+    "L": 1.53,
+    "V": 2.84
+   }
   },
   {
    "id": "401910025",
@@ -4025,7 +4083,36 @@
    ],
    "creada": "2026-11-20 03:45 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.51,
+      "casa": "Matchbook"
+     },
+     "V": {
+      "c": 2.9,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.6523,
+     "V": 0.3477
+    },
+    "casas": 25,
+    "ev": {
+     "L": -0.0686,
+     "V": 0.1113
+    },
+    "valor": [],
+    "actualizado": "2026-11-21 15:11 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:11 UTC",
+    "valor": [],
+    "L": 1.51,
+    "V": 2.9
+   }
   },
   {
    "id": "401910026",
@@ -4048,7 +4135,36 @@
    ],
    "creada": "2026-11-20 03:45 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 3.05,
+      "casa": "Matchbook"
+     },
+     "L": {
+      "c": 1.47,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.6719,
+     "V": 0.3281
+    },
+    "casas": 25,
+    "ev": {
+     "L": 0.076,
+     "V": -0.1826
+    },
+    "valor": [],
+    "actualizado": "2026-11-21 15:11 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:11 UTC",
+    "valor": [],
+    "L": 1.47,
+    "V": 3.05
+   }
   },
   {
    "id": "401910027",
@@ -4071,7 +4187,36 @@
    ],
    "creada": "2026-11-20 03:45 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 11.25,
+      "casa": "Marathon Bet"
+     },
+     "L": {
+      "c": 1.09,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.8973,
+     "V": 0.1027
+    },
+    "casas": 25,
+    "ev": {
+     "L": -0.0174,
+     "V": 0.1081
+    },
+    "valor": [],
+    "actualizado": "2026-11-21 15:11 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:11 UTC",
+    "valor": [],
+    "L": 1.09,
+    "V": 11.25
+   }
   },
   {
    "id": "401910028",
@@ -4094,8 +4239,198 @@
    ],
    "creada": "2026-11-20 03:45 UTC",
    "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 1.16,
+      "casa": "Betfair"
+     },
+     "L": {
+      "c": 7.2,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.1515,
+     "V": 0.8485
+    },
+    "casas": 25,
+    "ev": {
+     "L": 0.1549,
+     "V": -0.0261
+    },
+    "valor": [],
+    "actualizado": "2026-11-21 15:11 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:11 UTC",
+    "valor": [],
+    "L": 7.2,
+    "V": 1.16
+   }
+  },
+  {
+   "id": "401910029",
+   "fecha": "2026-11-22T20:30:00Z",
+   "local": "Atlanta Hawks",
+   "visitante": "Detroit Pistons",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4543,
+   "pv": 0.5457,
+   "elo_l": 1543,
+   "elo_v": 1627,
+   "bal_l": [
+    10,
+    6
+   ],
+   "bal_v": [
+    10,
+    5
+   ],
+   "creada": "2026-11-21 15:11 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401910030",
+   "fecha": "2026-11-22T23:00:00Z",
+   "local": "Miami Heat",
+   "visitante": "Oklahoma City Thunder",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5261,
+   "pv": 0.4739,
+   "elo_l": 1535,
+   "elo_v": 1642,
+   "bal_l": [
+    9,
+    6
+   ],
+   "bal_v": [
+    10,
+    6
+   ],
+   "creada": "2026-11-21 15:11 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401910031",
+   "fecha": "2026-11-23T00:00:00Z",
+   "local": "Washington Wizards",
+   "visitante": "Orlando Magic",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.2999,
+   "pv": 0.7001,
+   "elo_l": 1331,
+   "elo_v": 1516,
+   "bal_l": [
+    6,
+    11
+   ],
+   "bal_v": [
+    7,
+    8
+   ],
+   "creada": "2026-11-21 15:11 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401910032",
+   "fecha": "2026-11-23T00:00:00Z",
+   "local": "Chicago Bulls",
+   "visitante": "Denver Nuggets",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.3221,
+   "pv": 0.6779,
+   "elo_l": 1405,
+   "elo_v": 1580,
+   "bal_l": [
+    4,
+    11
+   ],
+   "bal_v": [
+    9,
+    5
+   ],
+   "creada": "2026-11-21 15:11 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401910033",
+   "fecha": "2026-11-23T00:00:00Z",
+   "local": "Utah Jazz",
+   "visitante": "Dallas Mavericks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4006,
+   "pv": 0.5994,
+   "elo_l": 1354,
+   "elo_v": 1445,
+   "bal_l": [
+    3,
+    14
+   ],
+   "bal_v": [
+    8,
+    7
+   ],
+   "creada": "2026-11-21 15:11 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401910034",
+   "fecha": "2026-11-23T01:00:00Z",
+   "local": "New York Knicks",
+   "visitante": "Indiana Pacers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.9132,
+   "pv": 0.0868,
+   "elo_l": 1668,
+   "elo_v": 1378,
+   "bal_l": [
+    9,
+    6
+   ],
+   "bal_v": [
+    5,
+    11
+   ],
+   "creada": "2026-11-21 15:11 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401910035",
+   "fecha": "2026-11-23T01:30:00Z",
+   "local": "Golden State Warriors",
+   "visitante": "Boston Celtics",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.3313,
+   "pv": 0.6687,
+   "elo_l": 1479,
+   "elo_v": 1636,
+   "bal_l": [
+    8,
+    8
+   ],
+   "bal_v": [
+    11,
+    4
+   ],
+   "creada": "2026-11-21 15:11 UTC",
+   "resultado": null,
    "marcador": null
   }
  ],
- "actualizado": "2026-11-20 16:01 UTC"
+ "actualizado": "2026-11-21 15:11 UTC"
 }

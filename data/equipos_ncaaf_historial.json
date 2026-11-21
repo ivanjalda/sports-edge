@@ -1538,8 +1538,8 @@
     5
    ],
    "creada": "2026-11-17 01:35 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "48-17"
   },
   {
    "id": "401858303",
@@ -1561,8 +1561,8 @@
     4
    ],
    "creada": "2026-11-17 01:35 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "10-20"
   },
   {
    "id": "401866468",
@@ -1584,8 +1584,8 @@
     6
    ],
    "creada": "2026-11-17 01:35 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "19-0"
   },
   {
    "id": "401858529",
@@ -1607,8 +1607,8 @@
     3
    ],
    "creada": "2026-11-17 01:35 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "7-45"
   },
   {
    "id": "401864545",
@@ -1630,8 +1630,8 @@
     9
    ],
    "creada": "2026-11-17 01:35 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "52-3"
   },
   {
    "id": "401864542",
@@ -1653,8 +1653,8 @@
     2
    ],
    "creada": "2026-11-17 04:48 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "17-24"
   },
   {
    "id": "401856866",
@@ -2897,7 +2897,53 @@
    "creada": "2026-11-18 03:53 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401866470",
+   "fecha": "2026-11-25T00:00:00Z",
+   "local": "Eastern Michigan Eagles",
+   "visitante": "Kent State Golden Flashes",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7147,
+   "pv": 0.2853,
+   "elo_l": 1334,
+   "elo_v": 1269,
+   "bal_l": [
+    3,
+    7
+   ],
+   "bal_v": [
+    2,
+    8
+   ],
+   "creada": "2026-11-21 15:11 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401866471",
+   "fecha": "2026-11-25T00:00:00Z",
+   "local": "Western Michigan Broncos",
+   "visitante": "Miami (OH) RedHawks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7343,
+   "pv": 0.2657,
+   "elo_l": 1606,
+   "elo_v": 1522,
+   "bal_l": [
+    7,
+    3
+   ],
+   "bal_v": [
+    6,
+    4
+   ],
+   "creada": "2026-11-21 15:11 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-20 16:01 UTC"
+ "actualizado": "2026-11-21 15:11 UTC"
 }

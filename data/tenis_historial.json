@@ -988,8 +988,8 @@
    "n1": 392,
    "n2": 200,
    "creada": "2026-11-19 00:02 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "1",
+   "marcador": "6-4 6-1",
    "cuota": {
     "mejor": {
      "1": {
@@ -1018,7 +1018,8 @@
     "valor": [],
     "1": 1.14,
     "2": 6.47
-   }
+   },
+   "fuente_resultado": "ESPN"
   },
   {
    "id": "1acdb2047defbe0439ef3b1961a60010",
@@ -1035,8 +1036,8 @@
    "n1": 611,
    "n2": 476,
    "creada": "2026-11-19 00:02 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "1",
+   "marcador": "6-3 6-4",
    "cuota": {
     "mejor": {
      "1": {
@@ -1065,7 +1066,8 @@
     "valor": [],
     "1": 1.47,
     "2": 3.15
-   }
+   },
+   "fuente_resultado": "ESPN"
   },
   {
    "id": "81c3faeaadd3d42734cd831b32b32597",
@@ -1082,8 +1084,8 @@
    "n1": 392,
    "n2": 251,
    "creada": "2026-11-20 16:00 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "1",
+   "marcador": "7-6(5) 7-5",
    "cuota": {
     "mejor": {
      "2": {
@@ -1113,7 +1115,54 @@
     "1": 1.37,
     "2": 3.5
    }
+  },
+  {
+   "id": "32e23a0b745bed6c0a23f60fab451adb",
+   "torneo": "ATP Finals",
+   "tour": "ATP",
+   "sup": "Hard",
+   "fecha": "2026-11-21T19:30:00Z",
+   "j1": "Alexander Zverev",
+   "j2": "Daniil Medvedev",
+   "id1": "atp:Z355",
+   "id2": "atp:MM58",
+   "p1": 0.6146,
+   "p2": 0.3854,
+   "n1": 637,
+   "n2": 611,
+   "creada": "2026-11-21 15:10 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "1": {
+      "c": 1.65,
+      "casa": "Betfair"
+     },
+     "2": {
+      "c": 2.5,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "1": 0.6011,
+     "2": 0.3989
+    },
+    "casas": 18,
+    "ev": {
+     "1": 0.0141,
+     "2": -0.0365
+    },
+    "valor": [],
+    "actualizado": "2026-11-21 15:10 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-21 15:10 UTC",
+    "valor": [],
+    "1": 1.65,
+    "2": 2.5
+   }
   }
  ],
- "actualizado": "2026-11-20 16:00 UTC"
+ "actualizado": "2026-11-21 15:10 UTC"
 }

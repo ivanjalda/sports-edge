@@ -141,6 +141,176 @@
    ],
    "datos_completos": true,
    "resultado": null
+  },
+  {
+   "id": "f1-2026-21",
+   "nombre": "Las Vegas Grand Prix",
+   "fecha": "2026-11-22T04:00:00Z",
+   "tipo": "parrilla",
+   "creada": "2026-11-21 15:12 UTC",
+   "fav": {
+    "id": "antonelli",
+    "n": "Andrea Kimi Antonelli",
+    "pw": 0.4758
+   },
+   "pilotos": [
+    {
+     "id": "antonelli",
+     "n": "Andrea Kimi Antonelli",
+     "pw": 0.4758,
+     "pp": 0.8487,
+     "p10": 0.8717
+    },
+    {
+     "id": "max_verstappen",
+     "n": "Max Verstappen",
+     "pw": 0.3485,
+     "pp": 0.823,
+     "p10": 0.8733
+    },
+    {
+     "id": "norris",
+     "n": "Lando Norris",
+     "pw": 0.0538,
+     "pp": 0.3867,
+     "p10": 0.8752
+    },
+    {
+     "id": "russell",
+     "n": "George Russell",
+     "pw": 0.0505,
+     "pp": 0.3698,
+     "p10": 0.874
+    },
+    {
+     "id": "hadjar",
+     "n": "Isack Hadjar",
+     "pw": 0.0248,
+     "pp": 0.1955,
+     "p10": 0.8718
+    },
+    {
+     "id": "leclerc",
+     "n": "Charles Leclerc",
+     "pw": 0.0138,
+     "pp": 0.1137,
+     "p10": 0.8595
+    },
+    {
+     "id": "hamilton",
+     "n": "Lewis Hamilton",
+     "pw": 0.0095,
+     "pp": 0.0833,
+     "p10": 0.8485
+    },
+    {
+     "id": "piastri",
+     "n": "Oscar Piastri",
+     "pw": 0.0085,
+     "pp": 0.0578,
+     "p10": 0.798
+    },
+    {
+     "id": "lawson",
+     "n": "Liam Lawson",
+     "pw": 0.0072,
+     "pp": 0.0518,
+     "p10": 0.7575
+    },
+    {
+     "id": "arvid_lindblad",
+     "n": "Arvid Lindblad",
+     "pw": 0.003,
+     "pp": 0.0285,
+     "p10": 0.6767
+    },
+    {
+     "id": "gasly",
+     "n": "Pierre Gasly",
+     "pw": 0.0012,
+     "pp": 0.0087,
+     "p10": 0.33
+    },
+    {
+     "id": "hulkenberg",
+     "n": "Nico Hülkenberg",
+     "pw": 0.001,
+     "pp": 0.0078,
+     "p10": 0.3453
+    },
+    {
+     "id": "colapinto",
+     "n": "Franco Colapinto",
+     "pw": 0.0008,
+     "pp": 0.0077,
+     "p10": 0.2932
+    },
+    {
+     "id": "bortoleto",
+     "n": "Gabriel Bortoleto",
+     "pw": 0.0008,
+     "pp": 0.005,
+     "p10": 0.1928
+    },
+    {
+     "id": "rafael_camara",
+     "n": "Rafael Camara",
+     "pw": 0.0003,
+     "pp": 0.002,
+     "p10": 0.1048
+    },
+    {
+     "id": "bearman",
+     "n": "Oliver Bearman",
+     "pw": 0.0003,
+     "pp": 0.0018,
+     "p10": 0.0812
+    },
+    {
+     "id": "albon",
+     "n": "Alexander Albon",
+     "pw": 0.0,
+     "pp": 0.0023,
+     "p10": 0.0685
+    },
+    {
+     "id": "alonso",
+     "n": "Fernando Alonso",
+     "pw": 0.0,
+     "pp": 0.002,
+     "p10": 0.1008
+    },
+    {
+     "id": "stroll",
+     "n": "Lance Stroll",
+     "pw": 0.0,
+     "pp": 0.0018,
+     "p10": 0.0572
+    },
+    {
+     "id": "perez",
+     "n": "Sergio Pérez",
+     "pw": 0.0,
+     "pp": 0.001,
+     "p10": 0.024
+    },
+    {
+     "id": "sainz",
+     "n": "Carlos Sainz",
+     "pw": 0.0,
+     "pp": 0.0008,
+     "p10": 0.0843
+    },
+    {
+     "id": "bottas",
+     "n": "Valtteri Bottas",
+     "pw": 0.0,
+     "pp": 0.0002,
+     "p10": 0.0117
+    }
+   ],
+   "datos_completos": true,
+   "resultado": null
   }
  ]
 }

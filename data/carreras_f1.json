@@ -1,7 +1,7 @@
 {
  "serie": "f1",
  "nombre": "Fórmula 1",
- "actualizado": "2026-11-20 16:02 UTC",
+ "actualizado": "2026-11-21 15:12 UTC",
  "proximo": {
   "id": "f1-2026-21",
   "nombre": "Las Vegas Grand Prix",
@@ -10,217 +10,227 @@
   "fecha": "2026-11-22T04:00:00Z",
   "clasif": "2026-11-21T04:00:00Z",
   "sprint": false,
-  "tipo": "previa",
+  "tipo": "parrilla",
   "pilotos": [
-   {
-    "id": "max_verstappen",
-    "n": "Max Verstappen",
-    "eq": "Red Bull",
-    "grid": null,
-    "fuerza": 168.2,
-    "pw": 0.427,
-    "pp": 0.805,
-    "p10": 0.8823
-   },
    {
     "id": "antonelli",
     "n": "Andrea Kimi Antonelli",
     "eq": "Mercedes",
-    "grid": null,
+    "grid": 1,
     "fuerza": 138.3,
-    "pw": 0.1753,
-    "pp": 0.5715,
-    "p10": 0.8703
+    "pw": 0.4758,
+    "pp": 0.8487,
+    "p10": 0.8717
    },
    {
-    "id": "leclerc",
-    "n": "Charles Leclerc",
-    "eq": "Ferrari",
-    "grid": null,
-    "fuerza": 121.6,
-    "pw": 0.1058,
-    "pp": 0.399,
-    "p10": 0.878
+    "id": "max_verstappen",
+    "n": "Max Verstappen",
+    "eq": "Red Bull",
+    "grid": 2,
+    "fuerza": 168.2,
+    "pw": 0.3485,
+    "pp": 0.823,
+    "p10": 0.8733
    },
    {
     "id": "norris",
     "n": "Lando Norris",
     "eq": "McLaren",
-    "grid": null,
+    "grid": 4,
     "fuerza": 118.9,
-    "pw": 0.1023,
-    "pp": 0.384,
-    "p10": 0.8755
-   },
-   {
-    "id": "hamilton",
-    "n": "Lewis Hamilton",
-    "eq": "Ferrari",
-    "grid": null,
-    "fuerza": 114.4,
-    "pw": 0.0803,
-    "pp": 0.3263,
-    "p10": 0.8782
+    "pw": 0.0538,
+    "pp": 0.3867,
+    "p10": 0.8752
    },
    {
     "id": "russell",
     "n": "George Russell",
     "eq": "Mercedes",
-    "grid": null,
+    "grid": 3,
     "fuerza": 96.0,
-    "pw": 0.0407,
-    "pp": 0.1857,
-    "p10": 0.8617
+    "pw": 0.0505,
+    "pp": 0.3698,
+    "p10": 0.874
    },
    {
     "id": "hadjar",
     "n": "Isack Hadjar",
     "eq": "Red Bull",
-    "grid": null,
+    "grid": 5,
     "fuerza": 94.3,
-    "pw": 0.037,
-    "pp": 0.1822,
-    "p10": 0.8695
+    "pw": 0.0248,
+    "pp": 0.1955,
+    "p10": 0.8718
+   },
+   {
+    "id": "leclerc",
+    "n": "Charles Leclerc",
+    "eq": "Ferrari",
+    "grid": 11,
+    "fuerza": 121.6,
+    "pw": 0.0138,
+    "pp": 0.1137,
+    "p10": 0.8595
+   },
+   {
+    "id": "hamilton",
+    "n": "Lewis Hamilton",
+    "eq": "Ferrari",
+    "grid": 12,
+    "fuerza": 114.4,
+    "pw": 0.0095,
+    "pp": 0.0833,
+    "p10": 0.8485
    },
    {
     "id": "piastri",
     "n": "Oscar Piastri",
     "eq": "McLaren",
-    "grid": null,
+    "grid": 7,
     "fuerza": 54.5,
-    "pw": 0.0115,
-    "pp": 0.0502,
-    "p10": 0.8135
+    "pw": 0.0085,
+    "pp": 0.0578,
+    "p10": 0.798
    },
    {
     "id": "lawson",
     "n": "Liam Lawson",
     "eq": "RB F1 Team",
-    "grid": null,
+    "grid": 8,
     "fuerza": 53.3,
-    "pw": 0.01,
-    "pp": 0.0512,
-    "p10": 0.8155
+    "pw": 0.0072,
+    "pp": 0.0518,
+    "p10": 0.7575
    },
    {
     "id": "arvid_lindblad",
     "n": "Arvid Lindblad",
     "eq": "RB F1 Team",
-    "grid": null,
+    "grid": 6,
     "fuerza": 11.9,
-    "pw": 0.0035,
-    "pp": 0.0147,
-    "p10": 0.5238
-   },
-   {
-    "id": "hulkenberg",
-    "n": "Nico Hülkenberg",
-    "eq": "Audi",
-    "grid": null,
-    "fuerza": 5.6,
-    "pw": 0.0018,
-    "pp": 0.0088,
-    "p10": 0.4668
+    "pw": 0.003,
+    "pp": 0.0285,
+    "p10": 0.6767
    },
    {
     "id": "gasly",
     "n": "Pierre Gasly",
     "eq": "Alpine F1 Team",
-    "grid": null,
+    "grid": 9,
     "fuerza": -22.0,
-    "pw": 0.0017,
-    "pp": 0.0043,
-    "p10": 0.2407
+    "pw": 0.0012,
+    "pp": 0.0087,
+    "p10": 0.33
+   },
+   {
+    "id": "hulkenberg",
+    "n": "Nico Hülkenberg",
+    "eq": "Audi",
+    "grid": 13,
+    "fuerza": 5.6,
+    "pw": 0.001,
+    "pp": 0.0078,
+    "p10": 0.3453
    },
    {
     "id": "colapinto",
     "n": "Franco Colapinto",
     "eq": "Alpine F1 Team",
-    "grid": null,
+    "grid": 10,
     "fuerza": -23.9,
-    "pw": 0.0017,
-    "pp": 0.003,
-    "p10": 0.2215
+    "pw": 0.0008,
+    "pp": 0.0077,
+    "p10": 0.2932
    },
    {
     "id": "bortoleto",
     "n": "Gabriel Bortoleto",
     "eq": "Audi",
-    "grid": null,
+    "grid": 15,
     "fuerza": -22.1,
-    "pw": 0.0005,
-    "pp": 0.0047,
-    "p10": 0.236
+    "pw": 0.0008,
+    "pp": 0.005,
+    "p10": 0.1928
    },
    {
     "id": "rafael_camara",
     "n": "Rafael Camara",
     "eq": "Haas F1 Team",
-    "grid": null,
+    "grid": 17,
     "fuerza": -44.0,
     "pw": 0.0003,
-    "pp": 0.0025,
-    "p10": 0.1233
-   },
-   {
-    "id": "alonso",
-    "n": "Fernando Alonso",
-    "eq": "Aston Martin",
-    "grid": null,
-    "fuerza": -39.8,
-    "pw": 0.0002,
-    "pp": 0.0028,
-    "p10": 0.1453
-   },
-   {
-    "id": "stroll",
-    "n": "Lance Stroll",
-    "eq": "Aston Martin",
-    "grid": null,
-    "fuerza": -66.1,
-    "pw": 0.0002,
-    "pp": 0.0008,
-    "p10": 0.0595
-   },
-   {
-    "id": "albon",
-    "n": "Alexander Albon",
-    "eq": "Williams",
-    "grid": null,
-    "fuerza": -75.7,
-    "pw": 0.0002,
-    "pp": 0.0007,
-    "p10": 0.0403
+    "pp": 0.002,
+    "p10": 0.1048
    },
    {
     "id": "bearman",
     "n": "Oliver Bearman",
     "eq": "Haas F1 Team",
-    "grid": null,
+    "grid": 22,
     "fuerza": -39.1,
-    "pw": 0.0,
+    "pw": 0.0003,
     "pp": 0.0018,
-    "p10": 0.1398
+    "p10": 0.0812
    },
    {
-    "id": "sainz",
-    "n": "Carlos Sainz",
+    "id": "albon",
+    "n": "Alexander Albon",
     "eq": "Williams",
-    "grid": null,
-    "fuerza": -71.0,
+    "grid": 16,
+    "fuerza": -75.7,
     "pw": 0.0,
-    "pp": 0.0008,
-    "p10": 0.05
+    "pp": 0.0023,
+    "p10": 0.0685
+   },
+   {
+    "id": "alonso",
+    "n": "Fernando Alonso",
+    "eq": "Aston Martin",
+    "grid": 19,
+    "fuerza": -39.8,
+    "pw": 0.0,
+    "pp": 0.002,
+    "p10": 0.1008
+   },
+   {
+    "id": "stroll",
+    "n": "Lance Stroll",
+    "eq": "Aston Martin",
+    "grid": 20,
+    "fuerza": -66.1,
+    "pw": 0.0,
+    "pp": 0.0018,
+    "p10": 0.0572
    },
    {
     "id": "perez",
     "n": "Sergio Pérez",
     "eq": "Cadillac F1 Team",
-    "grid": null,
+    "grid": 18,
     "fuerza": -122.0,
     "pw": 0.0,
-    "pp": 0.0,
-    "p10": 0.0083
+    "pp": 0.001,
+    "p10": 0.024
+   },
+   {
+    "id": "sainz",
+    "n": "Carlos Sainz",
+    "eq": "Williams",
+    "grid": 14,
+    "fuerza": -71.0,
+    "pw": 0.0,
+    "pp": 0.0008,
+    "p10": 0.0843
+   },
+   {
+    "id": "bottas",
+    "n": "Valtteri Bottas",
+    "eq": "Cadillac F1 Team",
+    "grid": 21,
+    "fuerza": -143.1,
+    "pw": 0.0,
+    "pp": 0.0002,
+    "p10": 0.0117
    }
   ]
  },

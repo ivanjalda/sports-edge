@@ -1,62 +1,62 @@
 {
- "actualizado": "2026-11-20 15:56 UTC",
- "total": 161,
- "resueltas": 55,
- "acierto": 0.5636,
- "brier": 0.553,
+ "actualizado": "2026-11-21 15:06 UTC",
+ "total": 190,
+ "resueltas": 61,
+ "acierto": 0.541,
+ "brier": 0.5871,
  "ligas": {
   "Premier League": {
-   "total": 18,
-   "resueltas": 8,
-   "acierto": 0.5
+   "total": 21,
+   "resueltas": 9,
+   "acierto": 0.4444
   },
   "LaLiga": {
-   "total": 19,
-   "resueltas": 9,
-   "acierto": 0.5556
+   "total": 21,
+   "resueltas": 11,
+   "acierto": 0.5455
   },
   "Serie A": {
-   "total": 19,
+   "total": 21,
    "resueltas": 9,
    "acierto": 0.5556
   },
   "Bundesliga": {
-   "total": 17,
-   "resueltas": 8,
-   "acierto": 0.75
+   "total": 22,
+   "resueltas": 9,
+   "acierto": 0.6667
   },
   "Ligue 1": {
-   "total": 17,
-   "resueltas": 8,
-   "acierto": 0.625
+   "total": 18,
+   "resueltas": 9,
+   "acierto": 0.6667
   },
   "Primeira Liga": {
-   "total": 0,
+   "total": 1,
    "resueltas": 0,
    "acierto": null
   },
   "Eredivisie": {
-   "total": 9,
+   "total": 10,
    "resueltas": 0,
    "acierto": null
   },
   "Championship": {
-   "total": 24,
+   "total": 35,
    "resueltas": 0,
    "acierto": null
   },
   "Brasileirão": {
-   "total": 23,
+   "total": 24,
    "resueltas": 11,
    "acierto": 0.5455
   },
   "Liga Profesional": {
    "total": 6,
-   "resueltas": 0,
-   "acierto": null
+   "resueltas": 1,
+   "acierto": 0.0
   },
   "MLS": {
-   "total": 9,
+   "total": 11,
    "resueltas": 2,
    "acierto": 0.0
   }
