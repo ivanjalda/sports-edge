@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-11-21 15:10 UTC",
+ "actualizado": "2026-11-23 19:04 UTC",
  "desde": 20250101,
- "datos_hasta": 20261114,
- "dias_desde_datos": 7,
+ "datos_hasta": 20261122,
+ "dias_desde_datos": 1,
  "fuentes": {
   "ATP": {
    "nombre": "TennisMyLife",
@@ -16,48 +16,48 @@
   }
  },
  "total": {
-  "n": 9268,
-  "aciertos": 5925,
-  "acierto": 0.6393,
+  "n": 9275,
+  "aciertos": 5930,
+  "acierto": 0.6394,
   "ic": [
    0.6295,
-   0.649
+   0.6491
   ],
   "brier": 0.2198,
   "brier_azar": 0.25,
-  "n_ranking": 9254,
-  "acierto_mismo_grupo": 0.6394,
-  "mejor_ranking": 0.6325
+  "n_ranking": 9261,
+  "acierto_mismo_grupo": 0.6395,
+  "mejor_ranking": 0.6327
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 6455,
+   "n": 6460,
    "conf": 0.7385,
-   "acierto": 0.692,
+   "acierto": 0.6921,
    "ic": [
-    0.6806,
+    0.6807,
     0.7032
    ]
   },
   {
    "min": 0.7,
-   "n": 3810,
-   "conf": 0.8008,
-   "acierto": 0.7514,
+   "n": 3815,
+   "conf": 0.8007,
+   "acierto": 0.7515,
    "ic": [
     0.7375,
-    0.7649
+    0.765
    ]
   },
   {
    "min": 0.8,
-   "n": 1688,
+   "n": 1689,
    "conf": 0.8668,
-   "acierto": 0.8152,
+   "acierto": 0.8153,
    "ic": [
-    0.7959,
-    0.833
+    0.7961,
+    0.8331
    ]
   }
  ],
@@ -65,7 +65,7 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 2813,
+   "n": 2815,
    "prometido": 0.5494,
    "real": 0.5183
   },
@@ -73,14 +73,14 @@
    "desde": 60,
    "hasta": 70,
    "n": 2645,
-   "prometido": 0.6487,
+   "prometido": 0.6486,
    "real": 0.6064
   },
   {
    "desde": 70,
    "hasta": 80,
-   "n": 2122,
-   "prometido": 0.7483,
+   "n": 2126,
+   "prometido": 0.7482,
    "real": 0.7008
   },
   {
@@ -93,37 +93,37 @@
   {
    "desde": 90,
    "hasta": 100,
-   "n": 432,
-   "prometido": 0.9321,
-   "real": 0.8889
+   "n": 433,
+   "prometido": 0.9322,
+   "real": 0.8891
   }
  ],
  "superficies": {
   "Hard": {
-   "n": 5776,
-   "aciertos": 3719,
+   "n": 5780,
+   "aciertos": 3722,
    "acierto": 0.6439,
    "ic": [
-    0.6314,
-    0.6561
-   ],
-   "brier": 0.2192,
-   "brier_azar": 0.25,
-   "n_ranking": 5766,
-   "acierto_mismo_grupo": 0.6439,
-   "mejor_ranking": 0.6268
-  },
-  "Clay": {
-   "n": 2400,
-   "aciertos": 1532,
-   "acierto": 0.6383,
-   "ic": [
-    0.6189,
-    0.6573
+    0.6315,
+    0.6562
    ],
    "brier": 0.2191,
    "brier_azar": 0.25,
-   "n_ranking": 2396,
+   "n_ranking": 5770,
+   "acierto_mismo_grupo": 0.644,
+   "mejor_ranking": 0.627
+  },
+  "Clay": {
+   "n": 2403,
+   "aciertos": 1534,
+   "acierto": 0.6384,
+   "ic": [
+    0.619,
+    0.6573
+   ],
+   "brier": 0.2192,
+   "brier_azar": 0.25,
+   "n_ranking": 2399,
    "acierto_mismo_grupo": 0.6386,
    "mejor_ranking": 0.6469
   },
@@ -158,21 +158,105 @@
    "mejor_ranking": 0.6347
   },
   "WTA": {
-   "n": 4418,
-   "aciertos": 2846,
-   "acierto": 0.6442,
+   "n": 4425,
+   "aciertos": 2851,
+   "acierto": 0.6443,
    "ic": [
-    0.6299,
-    0.6582
+    0.6301,
+    0.6583
    ],
-   "brier": 0.2178,
+   "brier": 0.2177,
    "brier_azar": 0.25,
-   "n_ranking": 4406,
-   "acierto_mismo_grupo": 0.6446,
-   "mejor_ranking": 0.63
+   "n_ranking": 4413,
+   "acierto_mismo_grupo": 0.6447,
+   "mejor_ranking": 0.6304
   }
  },
  "ejemplos": [
+  {
+   "fecha": 20261122,
+   "tour": "WTA",
+   "torneo": "Billie Jean King Cup play-offs: Australia vs. France",
+   "sup": "Clay",
+   "ganador": "Maya Joint",
+   "perdedor": "Elsa Jacquemot",
+   "marcador": "6-1 6-3",
+   "fav": "Maya Joint",
+   "pp": 0.7042,
+   "ok": true
+  },
+  {
+   "fecha": 20261121,
+   "tour": "WTA",
+   "torneo": "Billie Jean King Cup play-offs: United States vs. Hungary",
+   "sup": "Hard",
+   "ganador": "Ann Li",
+   "perdedor": "Anna Bondar",
+   "marcador": "6-1 6-4",
+   "fav": "Ann Li",
+   "pp": 0.7583,
+   "ok": true
+  },
+  {
+   "fecha": 20261121,
+   "tour": "WTA",
+   "torneo": "Billie Jean King Cup play-offs: Switzerland vs. Thailand",
+   "sup": "Hard",
+   "ganador": "Lanlana Tararudee",
+   "perdedor": "Jil Teichmann",
+   "marcador": "1-6 6-4 6-4",
+   "fav": "Jil Teichmann",
+   "pp": 0.5231,
+   "ok": false
+  },
+  {
+   "fecha": 20261121,
+   "tour": "WTA",
+   "torneo": "Billie Jean King Cup play-offs: Australia vs. France",
+   "sup": "Clay",
+   "ganador": "Storm Hunter",
+   "perdedor": "Diane Parry",
+   "marcador": "6-3 6-4",
+   "fav": "Diane Parry",
+   "pp": 0.7174,
+   "ok": false
+  },
+  {
+   "fecha": 20261121,
+   "tour": "WTA",
+   "torneo": "Billie Jean King Cup play-offs: United States vs. Hungary",
+   "sup": "Hard",
+   "ganador": "Coco Gauff",
+   "perdedor": "Dalma Galfi",
+   "marcador": "6-1 6-1",
+   "fav": "Coco Gauff",
+   "pp": 0.9625,
+   "ok": true
+  },
+  {
+   "fecha": 20261121,
+   "tour": "WTA",
+   "torneo": "Billie Jean King Cup play-offs: Switzerland vs. Thailand",
+   "sup": "Hard",
+   "ganador": "Mananchaya Sawangkaew",
+   "perdedor": "Simona Waltert",
+   "marcador": "6-3 5-7 6-4",
+   "fav": "Mananchaya Sawangkaew",
+   "pp": 0.535,
+   "ok": true
+  },
+  {
+   "fecha": 20261121,
+   "tour": "WTA",
+   "torneo": "Billie Jean King Cup play-offs: Australia vs. France",
+   "sup": "Clay",
+   "ganador": "Talia Gibson",
+   "perdedor": "Clara Burel",
+   "marcador": "6-2 6-1",
+   "fav": "Talia Gibson",
+   "pp": 0.6143,
+   "ok": true
+  },
   {
    "fecha": 20261114,
    "tour": "ATP",
@@ -388,90 +472,6 @@
    "fav": "Toby Samuel",
    "pp": 0.6851,
    "ok": true
-  },
-  {
-   "fecha": 20261109,
-   "tour": "ATP",
-   "torneo": "Stockholm",
-   "sup": "Hard",
-   "ganador": "Cameron Norrie",
-   "perdedor": "James Duckworth",
-   "marcador": "7-5 6-0",
-   "fav": "Cameron Norrie",
-   "pp": 0.6579,
-   "ok": true
-  },
-  {
-   "fecha": 20261109,
-   "tour": "ATP",
-   "torneo": "Stockholm",
-   "sup": "Hard",
-   "ganador": "Alex Michelsen",
-   "perdedor": "Yannick Hanfmann",
-   "marcador": "6-2 6-3",
-   "fav": "Alex Michelsen",
-   "pp": 0.677,
-   "ok": true
-  },
-  {
-   "fecha": 20261109,
-   "tour": "ATP",
-   "torneo": "Stockholm",
-   "sup": "Hard",
-   "ganador": "Ugo Humbert",
-   "perdedor": "Adolfo Daniel Vallejo",
-   "marcador": "6-4 6-3",
-   "fav": "Ugo Humbert",
-   "pp": 0.5926,
-   "ok": true
-  },
-  {
-   "fecha": 20261109,
-   "tour": "ATP",
-   "torneo": "Stockholm",
-   "sup": "Hard",
-   "ganador": "Borna Gojo",
-   "perdedor": "Tomas Machac",
-   "marcador": "6-3 6-4",
-   "fav": "Tomas Machac",
-   "pp": 0.6039,
-   "ok": false
-  },
-  {
-   "fecha": 20261108,
-   "tour": "ATP",
-   "torneo": "Paris Masters",
-   "sup": "Hard",
-   "ganador": "Carlos Alcaraz",
-   "perdedor": "Ben Shelton",
-   "marcador": "7-6(5) 7-5",
-   "fav": "Carlos Alcaraz",
-   "pp": 0.8259,
-   "ok": true
-  },
-  {
-   "fecha": 20261108,
-   "tour": "WTA",
-   "torneo": "WTA Finals",
-   "sup": "Hard",
-   "ganador": "Mirra Andreeva",
-   "perdedor": "Elina Svitolina",
-   "marcador": "7-5 6-3",
-   "fav": "Mirra Andreeva",
-   "pp": 0.5711,
-   "ok": true
-  },
-  {
-   "fecha": 20261108,
-   "tour": "WTA",
-   "torneo": "WTA Finals",
-   "sup": "Hard",
-   "ganador": "Elina Svitolina",
-   "perdedor": "Linda Noskova",
-   "marcador": "6-2 6-1",
-   "fav": "Linda Noskova",
-   "pp": 0.529,
-   "ok": false
   }
  ],
  "motor": {
@@ -482,16 +482,16 @@
    "c_forma": 0.0
   },
   "motor": {
-   "n": 9268,
-   "acierto": 0.6393,
+   "n": 9275,
+   "acierto": 0.6394,
    "brier": 0.2198,
    "logloss": 0.6298
   },
   "elo_basico": {
-   "n": 9268,
-   "acierto": 0.6411,
-   "brier": 0.22,
-   "logloss": 0.6301
+   "n": 9275,
+   "acierto": 0.6412,
+   "brier": 0.2199,
+   "logloss": 0.63
   }
  }
 }

@@ -1,15 +1,177 @@
 {
- "actualizado": "2026-11-21 15:11 UTC",
+ "actualizado": "2026-11-23 19:04 UTC",
  "liga": "Euroliga",
  "datos_hasta": "2026-11-20T19:45:00Z",
- "dias_desde_datos": 0,
+ "dias_desde_datos": 2,
  "fuente": {
   "nombre": "Euroleague Basketball",
   "url": "https://www.euroleaguebasketball.net"
  },
  "con_cuotas": true,
  "proximo": "2026-11-24T17:00:00Z",
- "predicciones": [],
+ "predicciones": [
+  {
+   "id": "E2026_132",
+   "fecha": "2026-11-24T17:00:00Z",
+   "local": "Besiktas Fuzul Istanbul",
+   "visitante": "Paris Basketball",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6232,
+   "pv": 0.3768,
+   "elo_l": 1492,
+   "elo_v": 1505,
+   "bal_l": [
+    6,
+    7
+   ],
+   "bal_v": [
+    7,
+    6
+   ],
+   "creada": "2026-11-23 19:04 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_131",
+   "fecha": "2026-11-24T18:00:00Z",
+   "local": "Crvena Zvezda Meridianbet Belgrade",
+   "visitante": "Virtus Bologna",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8001,
+   "pv": 0.1999,
+   "elo_l": 1558,
+   "elo_v": 1417,
+   "bal_l": [
+    8,
+    5
+   ],
+   "bal_v": [
+    5,
+    8
+   ],
+   "creada": "2026-11-23 19:04 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_134",
+   "fecha": "2026-11-24T19:00:00Z",
+   "local": "FC Bayern Munich",
+   "visitante": "Maccabi Rapyd Tel Aviv",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6681,
+   "pv": 0.3319,
+   "elo_l": 1454,
+   "elo_v": 1432,
+   "bal_l": [
+    4,
+    9
+   ],
+   "bal_v": [
+    3,
+    10
+   ],
+   "creada": "2026-11-23 19:04 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_135",
+   "fecha": "2026-11-24T19:30:00Z",
+   "local": "Valencia Basket",
+   "visitante": "Panathinaikos AKTOR Athens",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6806,
+   "pv": 0.3194,
+   "elo_l": 1618,
+   "elo_v": 1586,
+   "bal_l": [
+    10,
+    3
+   ],
+   "bal_v": [
+    9,
+    4
+   ],
+   "creada": "2026-11-23 19:04 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_136",
+   "fecha": "2026-11-24T19:45:00Z",
+   "local": "LDLC ASVEL Villeurbanne",
+   "visitante": "Armani Olimpia Milan",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5143,
+   "pv": 0.4857,
+   "elo_l": 1365,
+   "elo_v": 1455,
+   "bal_l": [
+    4,
+    9
+   ],
+   "bal_v": [
+    3,
+    10
+   ],
+   "creada": "2026-11-23 19:04 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_133",
+   "fecha": "2026-11-24T20:00:00Z",
+   "local": "FC Barcelona",
+   "visitante": "Fenerbahce Tarfin Istanbul",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6569,
+   "pv": 0.3431,
+   "elo_l": 1550,
+   "elo_v": 1537,
+   "bal_l": [
+    8,
+    5
+   ],
+   "bal_v": [
+    8,
+    5
+   ],
+   "creada": "2026-11-23 19:04 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_137",
+   "fecha": "2026-11-25T16:00:00Z",
+   "local": "Dubai Basketball",
+   "visitante": "Partizan Mozzart Bet Belgrade",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7261,
+   "pv": 0.2739,
+   "elo_l": 1558,
+   "elo_v": 1489,
+   "bal_l": [
+    9,
+    4
+   ],
+   "bal_v": [
+    7,
+    6
+   ],
+   "creada": "2026-11-23 19:04 UTC",
+   "resultado": null,
+   "marcador": null
+  }
+ ],
  "recientes": [
   {
    "id": "E2026_129",
@@ -560,7 +722,7 @@
   }
  ],
  "directo": {
-  "total": 30,
+  "total": 37,
   "resueltas": 30,
   "aciertos": 20,
   "acierto": 0.6667,

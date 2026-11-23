@@ -1,119 +1,16 @@
 {
- "actualizado": "2026-11-21 15:11 UTC",
+ "actualizado": "2026-11-23 19:04 UTC",
  "liga": "UFC",
- "datos_hasta": "2026-11-15T02:00:00Z",
- "dias_desde_datos": 6,
+ "datos_hasta": "2026-11-21T18:00:00Z",
+ "dias_desde_datos": 2,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": true,
- "proximo": "2026-11-21T18:00:00Z",
- "predicciones": [
-  {
-   "id": "401927856",
-   "fecha": "2026-11-21T15:00:00Z",
-   "local": "Amir Albazi",
-   "visitante": "Alessandro Costa",
-   "neutral": true,
-   "playoff": false,
-   "pl": 0.3946,
-   "pv": 0.6054,
-   "elo_l": 1498,
-   "elo_v": 1542,
-   "bal_l": [
-    0,
-    1
-   ],
-   "bal_v": [
-    3,
-    0
-   ],
-   "creada": "2026-11-17 16:51 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 2.0,
-      "casa": "Betfair"
-     },
-     "L": {
-      "c": 1.97,
-      "casa": "Matchbook"
-     }
-    },
-    "mercado": {
-     "L": 0.5031,
-     "V": 0.4969
-    },
-    "casas": 11,
-    "ev": {
-     "L": -0.2226,
-     "V": 0.2108
-    },
-    "valor": [],
-    "actualizado": "2026-11-20 16:01 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-17 16:51 UTC",
-    "valor": [],
-    "L": 1.87,
-    "V": 2.04
-   }
-  },
-  {
-   "id": "401927852",
-   "fecha": "2026-11-21T15:00:00Z",
-   "local": "Shamil Gaziev",
-   "visitante": "Tallison Teixeira",
-   "neutral": true,
-   "playoff": false,
-   "pl": 0.5437,
-   "pv": 0.4563,
-   "elo_l": 1532,
-   "elo_v": 1502,
-   "bal_l": [
-    1,
-    1
-   ],
-   "bal_v": [
-    1,
-    1
-   ],
-   "creada": "2026-11-17 16:51 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "L": {
-      "c": 1.53,
-      "casa": "BetOnline.ag"
-     },
-     "V": {
-      "c": 2.84,
-      "casa": "Betfair"
-     }
-    },
-    "mercado": {
-     "L": 0.6448,
-     "V": 0.3552
-    },
-    "casas": 9,
-    "ev": {
-     "L": -0.1681,
-     "V": 0.2959
-    },
-    "valor": [],
-    "actualizado": "2026-11-20 16:01 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-17 16:51 UTC",
-    "valor": [],
-    "L": 1.53,
-    "V": 2.8
-   }
-  },
+ "proximo": null,
+ "predicciones": [],
+ "recientes": [
   {
    "id": "401927851",
    "fecha": "2026-11-21T18:00:00Z",
@@ -134,8 +31,8 @@
     0
    ],
    "creada": "2026-11-18 03:53 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "0-1",
    "cuota": {
     "mejor": {
      "V": {
@@ -186,8 +83,8 @@
     0
    ],
    "creada": "2026-11-18 03:53 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "1-0"
   },
   {
    "id": "401922278",
@@ -209,8 +106,8 @@
     0
    ],
    "creada": "2026-11-18 03:53 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "1-0",
    "cuota": {
     "mejor": {
      "V": {
@@ -261,8 +158,8 @@
     0
    ],
    "creada": "2026-11-18 03:53 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "0-1",
    "cuota": {
     "mejor": {
      "L": {
@@ -313,8 +210,8 @@
     0
    ],
    "creada": "2026-11-18 03:53 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "0-1",
    "cuota": {
     "mejor": {
      "L": {
@@ -344,9 +241,111 @@
     "L": 2.42,
     "V": 1.67
    }
-  }
- ],
- "recientes": [
+  },
+  {
+   "id": "401927856",
+   "fecha": "2026-11-21T15:00:00Z",
+   "local": "Amir Albazi",
+   "visitante": "Alessandro Costa",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.3946,
+   "pv": 0.6054,
+   "elo_l": 1498,
+   "elo_v": 1542,
+   "bal_l": [
+    0,
+    1
+   ],
+   "bal_v": [
+    3,
+    0
+   ],
+   "creada": "2026-11-17 16:51 UTC",
+   "resultado": "L",
+   "marcador": "1-0",
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 2.0,
+      "casa": "Betfair"
+     },
+     "L": {
+      "c": 1.97,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.5031,
+     "V": 0.4969
+    },
+    "casas": 11,
+    "ev": {
+     "L": -0.2226,
+     "V": 0.2108
+    },
+    "valor": [],
+    "actualizado": "2026-11-20 16:01 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-17 16:51 UTC",
+    "valor": [],
+    "L": 1.87,
+    "V": 2.04
+   }
+  },
+  {
+   "id": "401927852",
+   "fecha": "2026-11-21T15:00:00Z",
+   "local": "Shamil Gaziev",
+   "visitante": "Tallison Teixeira",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.5437,
+   "pv": 0.4563,
+   "elo_l": 1532,
+   "elo_v": 1502,
+   "bal_l": [
+    1,
+    1
+   ],
+   "bal_v": [
+    1,
+    1
+   ],
+   "creada": "2026-11-17 16:51 UTC",
+   "resultado": "V",
+   "marcador": "0-1",
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.53,
+      "casa": "BetOnline.ag"
+     },
+     "V": {
+      "c": 2.84,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "L": 0.6448,
+     "V": 0.3552
+    },
+    "casas": 9,
+    "ev": {
+     "L": -0.1681,
+     "V": 0.2959
+    },
+    "valor": [],
+    "actualizado": "2026-11-20 16:01 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-17 16:51 UTC",
+    "valor": [],
+    "L": 1.53,
+    "V": 2.8
+   }
+  },
   {
    "id": "401922639",
    "fecha": "2026-11-15T02:00:00Z",
@@ -766,14 +765,14 @@
  ],
  "directo": {
   "total": 16,
-  "resueltas": 8,
-  "aciertos": 5,
-  "acierto": 0.625,
+  "resueltas": 15,
+  "aciertos": 8,
+  "acierto": 0.5333,
   "ic": [
-   0.3057,
-   0.8632
+   0.3012,
+   0.7519
   ],
-  "brier": 0.2406,
+  "brier": 0.2441,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -843,6 +842,12 @@
    "equipo": "Gregory Rodrigues",
    "elo": 1631,
    "g": 2,
+   "p": 0
+  },
+  {
+   "equipo": "Navajo Stirling",
+   "elo": 1630,
+   "g": 4,
    "p": 0
   },
   {
@@ -930,21 +935,9 @@
    "p": 0
   },
   {
-   "equipo": "Asu Almabayev",
-   "elo": 1614,
-   "g": 1,
-   "p": 0
-  },
-  {
    "equipo": "Luana Santos",
    "elo": 1614,
    "g": 2,
-   "p": 0
-  },
-  {
-   "equipo": "Navajo Stirling",
-   "elo": 1614,
-   "g": 3,
    "p": 0
   },
   {
@@ -988,6 +981,12 @@
    "elo": 1605,
    "g": 0,
    "p": 1
+  },
+  {
+   "equipo": "Ikram Aliskerov",
+   "elo": 1604,
+   "g": 2,
+   "p": 0
   },
   {
    "equipo": "Bryan Battle",
@@ -1053,6 +1052,12 @@
    "equipo": "Magomed Ankalaev",
    "elo": 1596,
    "g": 1,
+   "p": 0
+  },
+  {
+   "equipo": "Abdul-Rakhman Yakhyaev",
+   "elo": 1596,
+   "g": 3,
    "p": 0
   },
   {
@@ -1146,6 +1151,12 @@
    "p": 0
   },
   {
+   "equipo": "Kevin Vallejos",
+   "elo": 1589,
+   "g": 2,
+   "p": 0
+  },
+  {
    "equipo": "Petr Yan",
    "elo": 1589,
    "g": 1,
@@ -1156,12 +1167,6 @@
    "elo": 1589,
    "g": 0,
    "p": 1
-  },
-  {
-   "equipo": "Ikram Aliskerov",
-   "elo": 1588,
-   "g": 1,
-   "p": 0
   },
   {
    "equipo": "Alexia Thainara",
@@ -1192,6 +1197,12 @@
    "elo": 1586,
    "g": 1,
    "p": 0
+  },
+  {
+   "equipo": "Asu Almabayev",
+   "elo": 1586,
+   "g": 1,
+   "p": 1
   },
   {
    "equipo": "Modestas Bukauskas",
@@ -1320,12 +1331,6 @@
    "p": 0
   },
   {
-   "equipo": "Abdul-Rakhman Yakhyaev",
-   "elo": 1579,
-   "g": 3,
-   "p": 0
-  },
-  {
    "equipo": "Tom Aspinall",
    "elo": 1579,
    "g": 0,
@@ -1428,12 +1433,6 @@
    "p": 1
   },
   {
-   "equipo": "Aljamain Sterling",
-   "elo": 1570,
-   "g": 1,
-   "p": 0
-  },
-  {
    "equipo": "Valentina Shevchenko",
    "elo": 1570,
    "g": 0,
@@ -1473,12 +1472,6 @@
    "equipo": "Zhang Weili",
    "elo": 1567,
    "g": 0,
-   "p": 0
-  },
-  {
-   "equipo": "Kevin Vallejos",
-   "elo": 1567,
-   "g": 1,
    "p": 0
   },
   {
@@ -1540,6 +1533,12 @@
    "elo": 1564,
    "g": 1,
    "p": 0
+  },
+  {
+   "equipo": "Kyoji Horiguchi",
+   "elo": 1563,
+   "g": 2,
+   "p": 1
   },
   {
    "equipo": "Sam Patterson",
@@ -1830,6 +1829,12 @@
    "p": 0
   },
   {
+   "equipo": "Aljamain Sterling",
+   "elo": 1547,
+   "g": 1,
+   "p": 1
+  },
+  {
    "equipo": "Ty Miller",
    "elo": 1547,
    "g": 2,
@@ -1866,15 +1871,15 @@
    "p": 1
   },
   {
-   "equipo": "Jean Matsumoto",
-   "elo": 1546,
-   "g": 1,
-   "p": 1
-  },
-  {
    "equipo": "Murtazali Magomedov",
    "elo": 1546,
    "g": 2,
+   "p": 0
+  },
+  {
+   "equipo": "Diyar Nurgozhay",
+   "elo": 1546,
+   "g": 3,
    "p": 0
   },
   {
@@ -1908,6 +1913,12 @@
    "p": 0
   },
   {
+   "equipo": "Jean Matsumoto",
+   "elo": 1545,
+   "g": 1,
+   "p": 1
+  },
+  {
    "equipo": "Ismail Naurdiev",
    "elo": 1545,
    "g": 1,
@@ -1938,6 +1949,12 @@
    "p": 1
   },
   {
+   "equipo": "Santiago Luna",
+   "elo": 1544,
+   "g": 2,
+   "p": 1
+  },
+  {
    "equipo": "Karine Silva",
    "elo": 1544,
    "g": 1,
@@ -1956,12 +1973,6 @@
    "p": 1
   },
   {
-   "equipo": "Colby Thicknesse",
-   "elo": 1544,
-   "g": 1,
-   "p": 0
-  },
-  {
    "equipo": "Miranda Maverick",
    "elo": 1543,
    "g": 0,
@@ -1977,12 +1988,6 @@
    "equipo": "JJ Aldrich",
    "elo": 1542,
    "g": 1,
-   "p": 0
-  },
-  {
-   "equipo": "Alessandro Costa",
-   "elo": 1542,
-   "g": 3,
    "p": 0
   },
   {
@@ -2076,6 +2081,12 @@
    "p": 1
   },
   {
+   "equipo": "Dan Hooker",
+   "elo": 1537,
+   "g": 1,
+   "p": 1
+  },
+  {
    "equipo": "Rongzhu",
    "elo": 1536,
    "g": 1,
@@ -2115,12 +2126,6 @@
    "equipo": "Alden Coria",
    "elo": 1535,
    "g": 2,
-   "p": 1
-  },
-  {
-   "equipo": "Kyoji Horiguchi",
-   "elo": 1535,
-   "g": 1,
    "p": 1
   },
   {
@@ -2190,12 +2195,6 @@
    "p": 0
   },
   {
-   "equipo": "Shamil Gaziev",
-   "elo": 1532,
-   "g": 1,
-   "p": 1
-  },
-  {
    "equipo": "Lucas Fernando",
    "elo": 1531,
    "g": 2,
@@ -2254,12 +2253,6 @@
    "elo": 1529,
    "g": 1,
    "p": 0
-  },
-  {
-   "equipo": "Jiří Procházka",
-   "elo": 1529,
-   "g": 0,
-   "p": 1
   },
   {
    "equipo": "Stephanie Luciano",
@@ -2328,16 +2321,16 @@
    "p": 1
   },
   {
-   "equipo": "Diyar Nurgozhay",
-   "elo": 1526,
-   "g": 2,
-   "p": 0
-  },
-  {
    "equipo": "Da'Mon Blackshear",
    "elo": 1526,
    "g": 0,
    "p": 0
+  },
+  {
+   "equipo": "Tallison Teixeira",
+   "elo": 1526,
+   "g": 2,
+   "p": 1
   },
   {
    "equipo": "Alice Pereira",
@@ -2422,6 +2415,24 @@
    "elo": 1524,
    "g": 0,
    "p": 2
+  },
+  {
+   "equipo": "Colby Thicknesse",
+   "elo": 1524,
+   "g": 1,
+   "p": 0
+  },
+  {
+   "equipo": "Amir Albazi",
+   "elo": 1524,
+   "g": 1,
+   "p": 1
+  },
+  {
+   "equipo": "Aleksandre Topuria",
+   "elo": 1524,
+   "g": 0,
+   "p": 1
   },
   {
    "equipo": "Eryk Anders",
@@ -2544,12 +2555,6 @@
    "p": 0
   },
   {
-   "equipo": "Santiago Luna",
-   "elo": 1519,
-   "g": 1,
-   "p": 1
-  },
-  {
    "equipo": "Jalin Turner",
    "elo": 1519,
    "g": 1,
@@ -2563,12 +2568,6 @@
   },
   {
    "equipo": "Marco Tulio",
-   "elo": 1518,
-   "g": 0,
-   "p": 1
-  },
-  {
-   "equipo": "Dan Hooker",
    "elo": 1518,
    "g": 0,
    "p": 1
@@ -2602,6 +2601,12 @@
    "elo": 1517,
    "g": 0,
    "p": 0
+  },
+  {
+   "equipo": "Alessandro Costa",
+   "elo": 1516,
+   "g": 3,
+   "p": 1
   },
   {
    "equipo": "Max Holloway",
@@ -2674,6 +2679,12 @@
    "elo": 1512,
    "g": 0,
    "p": 0
+  },
+  {
+   "equipo": "Jiří Procházka",
+   "elo": 1512,
+   "g": 0,
+   "p": 2
   },
   {
    "equipo": "Mitch Raposo",
@@ -2868,6 +2879,12 @@
    "p": 1
   },
   {
+   "equipo": "Shamil Gaziev",
+   "elo": 1507,
+   "g": 1,
+   "p": 2
+  },
+  {
    "equipo": "Jordan Leavitt",
    "elo": 1507,
    "g": 1,
@@ -2946,13 +2963,13 @@
    "p": 1
   },
   {
-   "equipo": "Luis Felipe Dias",
+   "equipo": "Anthony Wint",
    "elo": 1505,
    "g": 0,
    "p": 0
   },
   {
-   "equipo": "Anthony Wint",
+   "equipo": "Luis Felipe Dias",
    "elo": 1505,
    "g": 0,
    "p": 0
@@ -3000,10 +3017,22 @@
    "p": 1
   },
   {
+   "equipo": "Dom Mar Fan",
+   "elo": 1504,
+   "g": 1,
+   "p": 1
+  },
+  {
    "equipo": "Matheus Camilo",
    "elo": 1504,
    "g": 1,
    "p": 1
+  },
+  {
+   "equipo": "Kody Steele",
+   "elo": 1504,
+   "g": 1,
+   "p": 0
   },
   {
    "equipo": "Caolán Loughran",
@@ -3028,12 +3057,6 @@
    "elo": 1503,
    "g": 1,
    "p": 1
-  },
-  {
-   "equipo": "Josias Musasa",
-   "elo": 1503,
-   "g": 0,
-   "p": 0
   },
   {
    "equipo": "Stephen Thompson",
@@ -3120,10 +3143,10 @@
    "p": 0
   },
   {
-   "equipo": "Tallison Teixeira",
+   "equipo": "Josias Musasa",
    "elo": 1502,
-   "g": 1,
-   "p": 1
+   "g": 0,
+   "p": 0
   },
   {
    "equipo": "Michal Oleksiejczuk",
@@ -3205,12 +3228,6 @@
   },
   {
    "equipo": "Kelvin Gastelum",
-   "elo": 1498,
-   "g": 0,
-   "p": 1
-  },
-  {
-   "equipo": "Amir Albazi",
    "elo": 1498,
    "g": 0,
    "p": 1
@@ -3336,12 +3353,6 @@
    "p": 1
   },
   {
-   "equipo": "Nikolas Motta",
-   "elo": 1494,
-   "g": 0,
-   "p": 0
-  },
-  {
    "equipo": "Dustin Poirier",
    "elo": 1494,
    "g": 0,
@@ -3366,6 +3377,12 @@
    "p": 1
   },
   {
+   "equipo": "Brendson Ribeiro",
+   "elo": 1492,
+   "g": 1,
+   "p": 1
+  },
+  {
    "equipo": "Eric McConico",
    "elo": 1492,
    "g": 1,
@@ -3385,12 +3402,6 @@
   },
   {
    "equipo": "Cody Garbrandt",
-   "elo": 1491,
-   "g": 1,
-   "p": 1
-  },
-  {
-   "equipo": "Brendson Ribeiro",
    "elo": 1491,
    "g": 1,
    "p": 1
@@ -3450,12 +3461,6 @@
    "p": 0
   },
   {
-   "equipo": "Bekzat Almakhan",
-   "elo": 1488,
-   "g": 0,
-   "p": 1
-  },
-  {
    "equipo": "Adam Fugitt",
    "elo": 1488,
    "g": 0,
@@ -3490,6 +3495,12 @@
    "elo": 1486,
    "g": 0,
    "p": 0
+  },
+  {
+   "equipo": "Julius Walker",
+   "elo": 1486,
+   "g": 1,
+   "p": 2
   },
   {
    "equipo": "Melissa Mullins",
@@ -3534,12 +3545,6 @@
    "p": 0
   },
   {
-   "equipo": "Julius Walker",
-   "elo": 1485,
-   "g": 1,
-   "p": 2
-  },
-  {
    "equipo": "Lauren Murphy",
    "elo": 1484,
    "g": 0,
@@ -3553,12 +3558,6 @@
   },
   {
    "equipo": "Marwan Rahiki",
-   "elo": 1484,
-   "g": 0,
-   "p": 1
-  },
-  {
-   "equipo": "Jared Cannonier",
    "elo": 1484,
    "g": 0,
    "p": 1
@@ -3588,13 +3587,13 @@
    "p": 0
   },
   {
-   "equipo": "Silvana Gomez Juarez",
+   "equipo": "Holly Holm",
    "elo": 1484,
    "g": 0,
    "p": 0
   },
   {
-   "equipo": "Holly Holm",
+   "equipo": "Silvana Gomez Juarez",
    "elo": 1484,
    "g": 0,
    "p": 0
@@ -3732,6 +3731,12 @@
    "p": 0
   },
   {
+   "equipo": "Nikita Krylov",
+   "elo": 1481,
+   "g": 1,
+   "p": 2
+  },
+  {
    "equipo": "Armen Petrosyan",
    "elo": 1481,
    "g": 0,
@@ -3750,16 +3755,16 @@
    "p": 1
   },
   {
-   "equipo": "Nick Maximov",
-   "elo": 1481,
-   "g": 0,
-   "p": 0
-  },
-  {
    "equipo": "Ding Meng",
    "elo": 1481,
    "g": 0,
    "p": 1
+  },
+  {
+   "equipo": "Nick Maximov",
+   "elo": 1481,
+   "g": 0,
+   "p": 0
   },
   {
    "equipo": "Blagoy Ivanov",
@@ -3778,12 +3783,6 @@
    "elo": 1480,
    "g": 0,
    "p": 0
-  },
-  {
-   "equipo": "Nikita Krylov",
-   "elo": 1480,
-   "g": 1,
-   "p": 2
   },
   {
    "equipo": "Cody Brundage",
@@ -3829,12 +3828,6 @@
   },
   {
    "equipo": "Journey Newson",
-   "elo": 1479,
-   "g": 0,
-   "p": 0
-  },
-  {
-   "equipo": "Kody Steele",
    "elo": 1479,
    "g": 0,
    "p": 0
@@ -4074,6 +4067,12 @@
    "p": 2
   },
   {
+   "equipo": "Nikolas Motta",
+   "elo": 1470,
+   "g": 0,
+   "p": 1
+  },
+  {
    "equipo": "Ibo Aslan",
    "elo": 1470,
    "g": 0,
@@ -4092,16 +4091,16 @@
    "p": 0
   },
   {
-   "equipo": "Brian Ortega",
+   "equipo": "AJ Fletcher",
    "elo": 1469,
    "g": 0,
    "p": 0
   },
   {
-   "equipo": "AJ Fletcher",
+   "equipo": "Jared Cannonier",
    "elo": 1469,
    "g": 0,
-   "p": 0
+   "p": 2
   },
   {
    "equipo": "Abdul Razak Alhassan",
@@ -4114,6 +4113,12 @@
    "elo": 1468,
    "g": 0,
    "p": 2
+  },
+  {
+   "equipo": "Bekzat Almakhan",
+   "elo": 1468,
+   "g": 0,
+   "p": 1
   },
   {
    "equipo": "Nicolle Caliari",
@@ -4284,13 +4289,13 @@
    "p": 1
   },
   {
-   "equipo": "Victoria Leonardo",
+   "equipo": "Maria Oliveira",
    "elo": 1465,
    "g": 0,
    "p": 0
   },
   {
-   "equipo": "Maria Oliveira",
+   "equipo": "Victoria Leonardo",
    "elo": 1465,
    "g": 0,
    "p": 0
@@ -4342,6 +4347,12 @@
    "elo": 1463,
    "g": 1,
    "p": 0
+  },
+  {
+   "equipo": "Alik Lorenz",
+   "elo": 1463,
+   "g": 0,
+   "p": 1
   },
   {
    "equipo": "Ji Yeon Kim",
@@ -4782,6 +4793,12 @@
    "p": 1
   },
   {
+   "equipo": "Brian Ortega",
+   "elo": 1450,
+   "g": 0,
+   "p": 1
+  },
+  {
    "equipo": "Roosevelt Roberts",
    "elo": 1450,
    "g": 0,
@@ -4992,19 +5009,7 @@
    "p": 0
   },
   {
-   "equipo": "Jessica-Rose Clark",
-   "elo": 1442,
-   "g": 0,
-   "p": 0
-  },
-  {
-   "equipo": "Ramona Pascual",
-   "elo": 1442,
-   "g": 0,
-   "p": 0
-  },
-  {
-   "equipo": "David Dvorak",
+   "equipo": "Dan Argueta",
    "elo": 1442,
    "g": 0,
    "p": 0
@@ -5016,13 +5021,25 @@
    "p": 0
   },
   {
+   "equipo": "David Dvorak",
+   "elo": 1442,
+   "g": 0,
+   "p": 0
+  },
+  {
+   "equipo": "Jessica-Rose Clark",
+   "elo": 1442,
+   "g": 0,
+   "p": 0
+  },
+  {
    "equipo": "Denys Bondar",
    "elo": 1442,
    "g": 0,
    "p": 0
   },
   {
-   "equipo": "Dan Argueta",
+   "equipo": "Ramona Pascual",
    "elo": 1442,
    "g": 0,
    "p": 0
@@ -5160,13 +5177,13 @@
    "p": 1
   },
   {
-   "equipo": "Trevin Jones",
+   "equipo": "Dalcha Lungiambula",
    "elo": 1441,
    "g": 0,
    "p": 0
   },
   {
-   "equipo": "Dalcha Lungiambula",
+   "equipo": "Trevin Jones",
    "elo": 1441,
    "g": 0,
    "p": 0
@@ -5376,16 +5393,16 @@
    "p": 1
   },
   {
+   "equipo": "Raffael Cerqueira",
+   "elo": 1428,
+   "g": 0,
+   "p": 0
+  },
+  {
    "equipo": "Polyana Viana",
    "elo": 1428,
    "g": 0,
    "p": 1
-  },
-  {
-   "equipo": "Raffael Cerqueira",
-   "elo": 1427,
-   "g": 0,
-   "p": 0
   },
   {
    "equipo": "Fernie Garcia",
@@ -5557,7 +5574,7 @@
   },
   {
    "equipo": "Vince Morales",
-   "elo": 1396,
+   "elo": 1394,
    "g": 0,
    "p": 1
   },

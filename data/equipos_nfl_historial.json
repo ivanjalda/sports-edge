@@ -748,8 +748,8 @@
     8
    ],
    "creada": "2026-11-19 00:02 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "26-9",
    "cuota": {
     "mejor": {
      "L": {
@@ -800,8 +800,8 @@
     6
    ],
    "creada": "2026-11-19 00:02 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "21-13",
    "cuota": {
     "mejor": {
      "L": {
@@ -852,8 +852,8 @@
     8
    ],
    "creada": "2026-11-19 00:02 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "51-30",
    "cuota": {
     "mejor": {
      "L": {
@@ -904,8 +904,8 @@
     6
    ],
    "creada": "2026-11-19 00:02 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "31-21",
    "cuota": {
     "mejor": {
      "L": {
@@ -956,8 +956,8 @@
     7
    ],
    "creada": "2026-11-19 00:02 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "34-7",
    "cuota": {
     "mejor": {
      "V": {
@@ -1008,8 +1008,8 @@
     3
    ],
    "creada": "2026-11-19 00:02 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "19-16",
    "cuota": {
     "mejor": {
      "L": {
@@ -1060,8 +1060,8 @@
     6
    ],
    "creada": "2026-11-19 00:02 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "35-33",
    "cuota": {
     "mejor": {
      "V": {
@@ -1112,8 +1112,8 @@
     8
    ],
    "creada": "2026-11-19 00:02 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "24-27",
    "cuota": {
     "mejor": {
      "L": {
@@ -1164,8 +1164,8 @@
     6
    ],
    "creada": "2026-11-19 00:02 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "38-24",
    "cuota": {
     "mejor": {
      "L": {
@@ -1216,8 +1216,8 @@
     2
    ],
    "creada": "2026-11-19 00:02 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "23-18",
    "cuota": {
     "mejor": {
      "V": {
@@ -1268,8 +1268,8 @@
     2
    ],
    "creada": "2026-11-19 03:51 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "35-10",
    "cuota": {
     "mejor": {
      "V": {
@@ -1325,25 +1325,25 @@
    "cuota": {
     "mejor": {
      "V": {
-      "c": 1.39,
-      "casa": "Codere (IT)"
+      "c": 1.37,
+      "casa": "Betfair"
      },
      "L": {
       "c": 3.6,
-      "casa": "Betfair"
+      "casa": "Coolbet"
      }
     },
     "mercado": {
-     "L": 0.2911,
-     "V": 0.7089
+     "L": 0.2792,
+     "V": 0.7208
     },
     "casas": 21,
     "ev": {
      "L": -0.0957,
-     "V": 0.0408
+     "V": 0.0259
     },
     "valor": [],
-    "actualizado": "2026-11-21 15:11 UTC"
+    "actualizado": "2026-11-23 19:04 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-20 16:01 UTC",
@@ -1351,7 +1351,215 @@
     "L": 3.5,
     "V": 1.39
    }
+  },
+  {
+   "id": "401873079",
+   "fecha": "2026-11-26T01:00:00Z",
+   "local": "Los Angeles Rams",
+   "visitante": "Green Bay Packers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6464,
+   "pv": 0.3536,
+   "elo_l": 1631,
+   "elo_v": 1555,
+   "bal_l": [
+    6,
+    4
+   ],
+   "bal_v": [
+    6,
+    4
+   ],
+   "creada": "2026-11-23 19:04 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 2.26,
+      "casa": "Matchbook"
+     },
+     "L": {
+      "c": 1.77,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.5664,
+     "V": 0.4336
+    },
+    "casas": 21,
+    "ev": {
+     "L": 0.1441,
+     "V": -0.2009
+    },
+    "valor": [],
+    "actualizado": "2026-11-23 19:04 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-23 19:04 UTC",
+    "valor": [],
+    "L": 1.77,
+    "V": 2.26
+   }
+  },
+  {
+   "id": "401873081",
+   "fecha": "2026-11-26T18:00:00Z",
+   "local": "Detroit Lions",
+   "visitante": "Chicago Bears",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5212,
+   "pv": 0.4788,
+   "elo_l": 1662,
+   "elo_v": 1676,
+   "bal_l": [
+    8,
+    2
+   ],
+   "bal_v": [
+    8,
+    2
+   ],
+   "creada": "2026-11-23 19:04 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 1.8,
+      "casa": "Matchbook"
+     },
+     "L": {
+      "c": 2.25,
+      "casa": "Unibet (NL)"
+     }
+    },
+    "mercado": {
+     "L": 0.4394,
+     "V": 0.5606
+    },
+    "casas": 21,
+    "ev": {
+     "L": 0.1727,
+     "V": -0.1382
+    },
+    "valor": [],
+    "actualizado": "2026-11-23 19:04 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-23 19:04 UTC",
+    "valor": [],
+    "L": 2.25,
+    "V": 1.8
+   }
+  },
+  {
+   "id": "401873080",
+   "fecha": "2026-11-26T21:30:00Z",
+   "local": "Dallas Cowboys",
+   "visitante": "Philadelphia Eagles",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6571,
+   "pv": 0.3429,
+   "elo_l": 1458,
+   "elo_v": 1374,
+   "bal_l": [
+    5,
+    6
+   ],
+   "bal_v": [
+    3,
+    7
+   ],
+   "creada": "2026-11-23 19:04 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.26,
+      "casa": "Betfair"
+     },
+     "V": {
+      "c": 4.7,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.7805,
+     "V": 0.2195
+    },
+    "casas": 21,
+    "ev": {
+     "L": -0.1721,
+     "V": 0.6116
+    },
+    "valor": [],
+    "actualizado": "2026-11-23 19:04 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-23 19:04 UTC",
+    "valor": [],
+    "L": 1.26,
+    "V": 4.7
+   }
+  },
+  {
+   "id": "401873082",
+   "fecha": "2026-11-27T01:20:00Z",
+   "local": "Buffalo Bills",
+   "visitante": "Kansas City Chiefs",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7151,
+   "pv": 0.2849,
+   "elo_l": 1744,
+   "elo_v": 1613,
+   "bal_l": [
+    9,
+    1
+   ],
+   "bal_v": [
+    8,
+    2
+   ],
+   "creada": "2026-11-23 19:04 UTC",
+   "resultado": null,
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.68,
+      "casa": "Matchbook"
+     },
+     "V": {
+      "c": 2.4,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.5786,
+     "V": 0.4214
+    },
+    "casas": 21,
+    "ev": {
+     "L": 0.2014,
+     "V": -0.3162
+    },
+    "valor": [],
+    "actualizado": "2026-11-23 19:04 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-23 19:04 UTC",
+    "valor": [],
+    "L": 1.68,
+    "V": 2.4
+   }
   }
  ],
- "actualizado": "2026-11-21 15:11 UTC"
+ "actualizado": "2026-11-23 19:04 UTC"
 }
