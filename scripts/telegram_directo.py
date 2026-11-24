@@ -447,8 +447,10 @@ def subir(msg):
         return
     git("commit", "-q", "-m", msg)
     for _ in range(3):
-        if git("pull", "-q", "--rebase") and git("push", "-q"):
+        # si otra tarea ha cambiado los mismos archivos generados, gana la version recien calculada
+        if git("pull", "-q", "--rebase", "-X", "theirs") and git("push", "-q"):
             return
+        git("rebase", "--abort")
         time.sleep(15)
 
 
