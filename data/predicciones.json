@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-24 06:17 UTC",
+ "actualizado": "2026-11-24 18:40 UTC",
  "predicciones": [
   {
    "id": 561953,
@@ -4346,6 +4346,37 @@
    "razon_en": "Expected goals: 1.55 - 1.17. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
   {
+   "id": "espn-401933726",
+   "liga": "MLS",
+   "fecha": "2026-11-29T01:30:00Z",
+   "local": "LAFC",
+   "visitante": "St. Louis CITY SC",
+   "creada": "2026-11-24T18:40:18Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.509,
+   "p_empate": 0.2486,
+   "p_visitante": 0.2424,
+   "xg_local": 1.85,
+   "xg_visitante": 1.23,
+   "n_partidos": 139,
+   "mercados": {
+    "over15": 0.822,
+    "over25": 0.5929,
+    "over35": 0.3691,
+    "btts": 0.6055,
+    "marcador": "1-1",
+    "p_marcador": 0.1153,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "razon_es": "Goles esperados: 1.85 - 1.23. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.85 - 1.23. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
    "id": "espn-401933721",
    "liga": "MLS",
    "fecha": "2026-11-29T03:30:00Z",
@@ -6334,6 +6365,37 @@
    },
    "razon_es": "Goles esperados: 1.75 - 1.16. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.75 - 1.16. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": "espn-401936353",
+   "liga": "Liga Profesional",
+   "fecha": "2026-11-29T20:00:00Z",
+   "local": "Vélez Sarsfield",
+   "visitante": "Independiente",
+   "creada": "2026-11-24T18:40:18Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4412,
+   "p_empate": 0.317,
+   "p_visitante": 0.2418,
+   "xg_local": 1.25,
+   "xg_visitante": 0.86,
+   "n_partidos": 192,
+   "mercados": {
+    "over15": 0.6362,
+    "over25": 0.3533,
+    "over35": 0.1634,
+    "btts": 0.4246,
+    "marcador": "1-1",
+    "p_marcador": 0.1433,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "razon_es": "Goles esperados: 1.25 - 0.86. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.25 - 0.86. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
   {
    "id": 567358,

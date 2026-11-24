@@ -1,12 +1,12 @@
 {
- "actualizado": "2026-11-24 06:22 UTC",
+ "actualizado": "2026-11-24 18:45 UTC",
  "liga": "NCAA",
  "desde": "20250822",
  "datos_hasta": "2026-11-24T03:00:00Z",
  "total": {
-  "n": 9979,
-  "aciertos": 7344,
-  "acierto": 0.7359,
+  "n": 9980,
+  "aciertos": 7345,
+  "acierto": 0.736,
   "ic": [
    0.7272,
    0.7445
@@ -14,32 +14,32 @@
   "brier": 0.1742
  },
  "base_local": {
-  "n": 9979,
+  "n": 9980,
   "acierto": 0.574
  },
  "base_balance": {
-  "n": 7835,
-  "acierto": 0.6999,
+  "n": 7836,
+  "acierto": 0.7,
   "nuestro": 0.7534
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 7388,
+   "n": 7389,
    "conf": 0.7652,
    "acierto": 0.8009,
    "ic": [
-    0.7916,
-    0.8098
+    0.7917,
+    0.8099
    ]
   },
   {
    "min": 0.7,
-   "n": 5071,
+   "n": 5072,
    "conf": 0.8182,
    "acierto": 0.8588,
    "ic": [
-    0.8489,
+    0.849,
     0.8681
    ]
   },
@@ -72,9 +72,9 @@
   {
    "desde": 70,
    "hasta": 80,
-   "n": 2294,
+   "n": 2295,
    "prometido": 0.7496,
-   "real": 0.7899
+   "real": 0.79
   },
   {
    "desde": 80,
@@ -103,21 +103,21 @@
    "brier": 0.1766
   },
   "2026": {
-   "n": 4903,
-   "aciertos": 3622,
-   "acierto": 0.7387,
+   "n": 4904,
+   "aciertos": 3623,
+   "acierto": 0.7388,
    "ic": [
     0.7263,
-    0.7508
+    0.7509
    ],
    "brier": 0.1718
   }
  },
  "fases": {
   "regular": {
-   "n": 9979,
-   "aciertos": 7344,
-   "acierto": 0.7359,
+   "n": 9980,
+   "aciertos": 7345,
+   "acierto": 0.736,
    "ic": [
     0.7272,
     0.7445
@@ -127,12 +127,12 @@
  },
  "elige": {
   "local": {
-   "n": 6101,
-   "aciertos": 4597,
+   "n": 6102,
+   "aciertos": 4598,
    "acierto": 0.7535,
    "ic": [
-    0.7425,
-    0.7641
+    0.7426,
+    0.7642
    ],
    "brier": 0.166
   },
@@ -239,6 +239,15 @@
    "ok": true
   },
   {
+   "fecha": "2026-11-23T20:00:00Z",
+   "local": "Northern Colorado Bears",
+   "visitante": "Portland State Vikings",
+   "marcador": "3-2",
+   "fav": "Northern Colorado Bears",
+   "pp": 0.7924,
+   "ok": true
+  },
+  {
    "fecha": "2026-11-23T17:00:00Z",
    "local": "Idaho State Bengals",
    "visitante": "Montana State Bobcats",
@@ -253,7 +262,7 @@
    "visitante": "Michigan State Spartans",
    "marcador": "3-1",
    "fav": "Wisconsin Badgers",
-   "pp": 0.786,
+   "pp": 0.7861,
    "ok": true
   },
   {
@@ -363,15 +372,6 @@
    "fav": "California Golden Bears",
    "pp": 0.914,
    "ok": true
-  },
-  {
-   "fecha": "2026-11-22T20:30:00Z",
-   "local": "Florida A&M Rattlers",
-   "visitante": "Texas Southern Tigers",
-   "marcador": "3-1",
-   "fav": "Florida A&M Rattlers",
-   "pp": 0.7857,
-   "ok": true
   }
  ],
  "motor": {
@@ -386,14 +386,14 @@
   },
   "sd": 2.364,
   "motor": {
-   "n": 9979,
-   "acierto": 0.7359,
+   "n": 9980,
+   "acierto": 0.736,
    "brier": 0.1742,
    "logloss": 0.521
   },
   "elo_basico": {
-   "n": 9979,
-   "acierto": 0.7299,
+   "n": 9980,
+   "acierto": 0.73,
    "brier": 0.1885,
    "logloss": 0.5603
   },
@@ -405,7 +405,7 @@
    "descanso": false
   },
   "local": {
-   "n": 9979,
+   "n": 9980,
    "acierto": 0.574
   },
   "temporadas_prueba": [

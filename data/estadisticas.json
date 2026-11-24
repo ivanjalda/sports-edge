@@ -1,9 +1,9 @@
 {
- "actualizado": "2026-11-24 06:17 UTC",
- "total": 254,
- "resueltas": 144,
- "acierto": 0.5278,
- "brier": 0.5783,
+ "actualizado": "2026-11-24 18:40 UTC",
+ "total": 256,
+ "resueltas": 145,
+ "acierto": 0.5241,
+ "brier": 0.5807,
  "ligas": {
   "Premier League": {
    "total": 28,
@@ -47,16 +47,16 @@
   },
   "Brasileirão": {
    "total": 31,
-   "resueltas": 19,
-   "acierto": 0.5263
+   "resueltas": 20,
+   "acierto": 0.5
   },
   "Liga Profesional": {
-   "total": 6,
+   "total": 7,
    "resueltas": 6,
    "acierto": 0.6667
   },
   "MLS": {
-   "total": 16,
+   "total": 17,
    "resueltas": 8,
    "acierto": 0.25
   }

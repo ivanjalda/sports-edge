@@ -1,4 +1,120 @@
 {
- "predicciones": [],
- "actualizado": "2026-11-24 06:22 UTC"
+ "predicciones": [
+  {
+   "id": "604425",
+   "fecha": "2026-11-28T13:30:00Z",
+   "local": "Bordeaux Begles",
+   "visitante": "Montpellier Herault",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7189,
+   "pv": 0.2811,
+   "elo_l": 1568,
+   "elo_v": 1612,
+   "bal_l": [
+    6,
+    3
+   ],
+   "bal_v": [
+    6,
+    3
+   ],
+   "creada": "2026-11-24 18:45 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "604424",
+   "fecha": "2026-11-28T15:35:00Z",
+   "local": "Bayonne",
+   "visitante": "Castres Olympique",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7773,
+   "pv": 0.2227,
+   "elo_l": 1471,
+   "elo_v": 1451,
+   "bal_l": [
+    4,
+    5
+   ],
+   "bal_v": [
+    3,
+    6
+   ],
+   "creada": "2026-11-24 18:45 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "604427",
+   "fecha": "2026-11-28T15:35:00Z",
+   "local": "La Rochelle",
+   "visitante": "Perpignan",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8558,
+   "pv": 0.1442,
+   "elo_l": 1546,
+   "elo_v": 1419,
+   "bal_l": [
+    5,
+    4
+   ],
+   "bal_v": [
+    3,
+    6
+   ],
+   "creada": "2026-11-24 18:45 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "604429",
+   "fecha": "2026-11-28T15:35:00Z",
+   "local": "Stade Francais Paris",
+   "visitante": "Vannes",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8625,
+   "pv": 0.1375,
+   "elo_l": 1542,
+   "elo_v": 1412,
+   "bal_l": [
+    4,
+    5
+   ],
+   "bal_v": [
+    2,
+    7
+   ],
+   "creada": "2026-11-24 18:45 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "604430",
+   "fecha": "2026-11-28T15:35:00Z",
+   "local": "Racing 92",
+   "visitante": "Pau",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5549,
+   "pv": 0.4451,
+   "elo_l": 1516,
+   "elo_v": 1607,
+   "bal_l": [
+    3,
+    6
+   ],
+   "bal_v": [
+    7,
+    2
+   ],
+   "creada": "2026-11-24 18:45 UTC",
+   "resultado": null,
+   "marcador": null
+  }
+ ],
+ "actualizado": "2026-11-24 18:45 UTC"
 }
