@@ -3034,7 +3034,8 @@
    ],
    "creada": "2026-11-12 20:09 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "anulado": true
   },
   {
    "id": "401919004",
@@ -3655,7 +3656,8 @@
    ],
    "creada": "2026-11-13 00:58 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "anulado": true
   },
   {
    "id": "401911264",
@@ -4023,7 +4025,8 @@
    ],
    "creada": "2026-11-13 00:58 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "anulado": true
   },
   {
    "id": "401921063",
@@ -4207,7 +4210,8 @@
    ],
    "creada": "2026-11-13 00:58 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "anulado": true
   },
   {
    "id": "401920961",
@@ -5104,7 +5108,8 @@
    ],
    "creada": "2026-11-14 02:42 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "anulado": true
   },
   {
    "id": "401926733",
@@ -13222,8 +13227,8 @@
     1
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "87-64"
   },
   {
    "id": "401920819",
@@ -13245,8 +13250,8 @@
     4
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "60-70"
   },
   {
    "id": "401928358",
@@ -13268,8 +13273,8 @@
     3
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "81-66"
   },
   {
    "id": "401928859",
@@ -16168,7 +16173,53 @@
    "creada": "2026-11-24 18:45 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401921674",
+   "fecha": "2026-11-26T19:00:00Z",
+   "local": "Arizona State Sun Devils",
+   "visitante": "South Carolina Gamecocks",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.5856,
+   "pv": 0.4144,
+   "elo_l": 1606,
+   "elo_v": 1541,
+   "bal_l": [
+    5,
+    0
+   ],
+   "bal_v": [
+    5,
+    0
+   ],
+   "creada": "2026-11-24 20:20 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401906869",
+   "fecha": "2026-11-26T19:30:00Z",
+   "local": "Texas Longhorns",
+   "visitante": "Georgetown Hoyas",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.6768,
+   "pv": 0.3232,
+   "elo_l": 1671,
+   "elo_v": 1599,
+   "bal_l": [
+    6,
+    0
+   ],
+   "bal_v": [
+    6,
+    0
+   ],
+   "creada": "2026-11-24 20:20 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-24 18:45 UTC"
+ "actualizado": "2026-11-24 20:20 UTC"
 }

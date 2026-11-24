@@ -1,61 +1,15 @@
 {
- "actualizado": "2026-11-24 18:45 UTC",
+ "actualizado": "2026-11-24 20:20 UTC",
  "liga": "Euroliga",
- "datos_hasta": "2026-11-20T19:45:00Z",
- "dias_desde_datos": 3,
+ "datos_hasta": "2026-11-24T18:00:00Z",
+ "dias_desde_datos": 0,
  "fuente": {
   "nombre": "Euroleague Basketball",
   "url": "https://www.euroleaguebasketball.net"
  },
  "con_cuotas": true,
- "proximo": "2026-11-24T19:00:00Z",
+ "proximo": "2026-11-25T16:00:00Z",
  "predicciones": [
-  {
-   "id": "E2026_132",
-   "fecha": "2026-11-24T17:00:00Z",
-   "local": "Besiktas Fuzul Istanbul",
-   "visitante": "Paris Basketball",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6232,
-   "pv": 0.3768,
-   "elo_l": 1492,
-   "elo_v": 1505,
-   "bal_l": [
-    6,
-    7
-   ],
-   "bal_v": [
-    7,
-    6
-   ],
-   "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "E2026_131",
-   "fecha": "2026-11-24T18:00:00Z",
-   "local": "Crvena Zvezda Meridianbet Belgrade",
-   "visitante": "Virtus Bologna",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8001,
-   "pv": 0.1999,
-   "elo_l": 1558,
-   "elo_v": 1417,
-   "bal_l": [
-    8,
-    5
-   ],
-   "bal_v": [
-    5,
-    8
-   ],
-   "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "E2026_134",
    "fecha": "2026-11-24T19:00:00Z",
@@ -242,6 +196,52 @@
   }
  ],
  "recientes": [
+  {
+   "id": "E2026_131",
+   "fecha": "2026-11-24T18:00:00Z",
+   "local": "Crvena Zvezda Meridianbet Belgrade",
+   "visitante": "Virtus Bologna",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8001,
+   "pv": 0.1999,
+   "elo_l": 1558,
+   "elo_v": 1417,
+   "bal_l": [
+    8,
+    5
+   ],
+   "bal_v": [
+    5,
+    8
+   ],
+   "creada": "2026-11-23 19:04 UTC",
+   "resultado": "V",
+   "marcador": "84-108"
+  },
+  {
+   "id": "E2026_132",
+   "fecha": "2026-11-24T17:00:00Z",
+   "local": "Besiktas Fuzul Istanbul",
+   "visitante": "Paris Basketball",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6232,
+   "pv": 0.3768,
+   "elo_l": 1492,
+   "elo_v": 1505,
+   "bal_l": [
+    6,
+    7
+   ],
+   "bal_v": [
+    7,
+    6
+   ],
+   "creada": "2026-11-23 19:04 UTC",
+   "resultado": "V",
+   "marcador": "76-88"
+  },
   {
    "id": "E2026_129",
    "fecha": "2026-11-20T19:45:00Z",
@@ -742,64 +742,18 @@
    "creada": "2026-11-16 02:26 UTC",
    "resultado": "L",
    "marcador": "117-114"
-  },
-  {
-   "id": "E2026_113",
-   "fecha": "2026-11-17T17:00:00Z",
-   "local": "Maccabi Rapyd Tel Aviv",
-   "visitante": "Olympiacos Piraeus",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.3094,
-   "pv": 0.6906,
-   "elo_l": 1442,
-   "elo_v": 1682,
-   "bal_l": [
-    3,
-    8
-   ],
-   "bal_v": [
-    8,
-    3
-   ],
-   "creada": "2026-11-16 02:26 UTC",
-   "resultado": "V",
-   "marcador": "95-97"
-  },
-  {
-   "id": "E2026_111",
-   "fecha": "2026-11-17T16:00:00Z",
-   "local": "Dubai Basketball",
-   "visitante": "Anadolu Efes Istanbul",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7076,
-   "pv": 0.2924,
-   "elo_l": 1547,
-   "elo_v": 1494,
-   "bal_l": [
-    7,
-    4
-   ],
-   "bal_v": [
-    5,
-    6
-   ],
-   "creada": "2026-11-16 02:26 UTC",
-   "resultado": "L",
-   "marcador": "80-75"
   }
  ],
  "directo": {
   "total": 40,
-  "resueltas": 30,
+  "resueltas": 32,
   "aciertos": 20,
-  "acierto": 0.6667,
+  "acierto": 0.625,
   "ic": [
-   0.4878,
-   0.8077
+   0.4525,
+   0.7707
   ],
-  "brier": 0.1914,
+  "brier": 0.2116,
   "apuestas": 1,
   "ganadas": 1,
   "roi": 1.96
@@ -842,12 +796,6 @@
    "p": 4
   },
   {
-   "equipo": "Crvena Zvezda Meridianbet Belgrade",
-   "elo": 1558,
-   "g": 8,
-   "p": 5
-  },
-  {
    "equipo": "Zalgiris Kaunas",
    "elo": 1551,
    "g": 8,
@@ -878,26 +826,26 @@
    "p": 5
   },
   {
+   "equipo": "Crvena Zvezda Meridianbet Belgrade",
+   "elo": 1521,
+   "g": 8,
+   "p": 6
+  },
+  {
+   "equipo": "Paris Basketball",
+   "elo": 1521,
+   "g": 8,
+   "p": 6
+  },
+  {
    "equipo": "Cazoo Baskonia Vitoria-Gasteiz",
    "elo": 1511,
    "g": 0,
    "p": 0
   },
   {
-   "equipo": "Paris Basketball",
-   "elo": 1505,
-   "g": 7,
-   "p": 6
-  },
-  {
    "equipo": "Anadolu Efes Istanbul",
    "elo": 1498,
-   "g": 6,
-   "p": 7
-  },
-  {
-   "equipo": "Besiktas Fuzul Istanbul",
-   "elo": 1492,
    "g": 6,
    "p": 7
   },
@@ -926,6 +874,12 @@
    "p": 0
   },
   {
+   "equipo": "Besiktas Fuzul Istanbul",
+   "elo": 1477,
+   "g": 6,
+   "p": 8
+  },
+  {
    "equipo": "Maccabi Playtika Tel Aviv",
    "elo": 1474,
    "g": 0,
@@ -944,6 +898,12 @@
    "p": 0
   },
   {
+   "equipo": "Virtus Bologna",
+   "elo": 1454,
+   "g": 6,
+   "p": 8
+  },
+  {
    "equipo": "FC Bayern Munich",
    "elo": 1454,
    "g": 4,
@@ -954,12 +914,6 @@
    "elo": 1432,
    "g": 3,
    "p": 10
-  },
-  {
-   "equipo": "Virtus Bologna",
-   "elo": 1417,
-   "g": 5,
-   "p": 8
   },
   {
    "equipo": "Kosner Baskonia Vitoria-Gasteiz",

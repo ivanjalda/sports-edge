@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-24 18:40 UTC",
+ "actualizado": "2026-11-24 20:14 UTC",
  "predicciones": [
   {
    "id": 561953,
@@ -7021,6 +7021,63 @@
    },
    "razon_es": "Goles esperados: 2.09 - 0.75. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 2.09 - 0.75. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 560668,
+   "liga": "Premier League",
+   "fecha": "2026-12-01T20:00:00Z",
+   "local": "Coventry City FC",
+   "visitante": "Ipswich Town FC",
+   "creada": "2026-11-24T20:14:33Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.5129,
+   "p_empate": 0.2435,
+   "p_visitante": 0.2436,
+   "xg_local": 1.9,
+   "xg_visitante": 1.27,
+   "n_partidos": 11,
+   "mercados": {
+    "over15": 0.8352,
+    "over25": 0.6141,
+    "over35": 0.3911,
+    "btts": 0.6215,
+    "marcador": "1-1",
+    "p_marcador": 0.1113,
+    "ht_local": 0.394,
+    "ht_empate": 0.3794,
+    "ht_visitante": 0.2265,
+    "ht_gol": 0.7497
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Jack Rudoni",
+      "g": 3,
+      "p": 0.355
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Emersonn",
+      "g": 2,
+      "p": 0.1558
+     },
+     {
+      "n": "Jack Clarke",
+      "g": 2,
+      "p": 0.1558
+     },
+     {
+      "n": "Leif Davis",
+      "g": 2,
+      "p": 0.1558
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.90 - 1.27. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.90 - 1.27. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   }
  ]
 }

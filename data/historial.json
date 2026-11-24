@@ -15696,7 +15696,62 @@
     "ht_gol": null
    },
    "modelo": "SE"
+  },
+  {
+   "id": 560668,
+   "liga": "Premier League",
+   "fecha": "2026-12-01T20:00:00Z",
+   "local": "Coventry City FC",
+   "visitante": "Ipswich Town FC",
+   "creada": "2026-11-24T20:14:33Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.5129,
+   "p_empate": 0.2435,
+   "p_visitante": 0.2436,
+   "xg_local": 1.9,
+   "xg_visitante": 1.27,
+   "n_partidos": 11,
+   "mercados": {
+    "over15": 0.8352,
+    "over25": 0.6141,
+    "over35": 0.3911,
+    "btts": 0.6215,
+    "marcador": "1-1",
+    "p_marcador": 0.1113,
+    "ht_local": 0.394,
+    "ht_empate": 0.3794,
+    "ht_visitante": 0.2265,
+    "ht_gol": 0.7497
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Jack Rudoni",
+      "g": 3,
+      "p": 0.355
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Emersonn",
+      "g": 2,
+      "p": 0.1558
+     },
+     {
+      "n": "Jack Clarke",
+      "g": 2,
+      "p": 0.1558
+     },
+     {
+      "n": "Leif Davis",
+      "g": 2,
+      "p": 0.1558
+     }
+    ]
+   }
   }
  ],
- "actualizado": "2026-11-24 18:40 UTC"
+ "actualizado": "2026-11-24 20:14 UTC"
 }

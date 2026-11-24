@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-11-24 18:45 UTC",
+ "actualizado": "2026-11-24 20:20 UTC",
  "liga": "Top 14",
  "datos_hasta": "2026-11-08T20:05:00Z",
- "dias_desde_datos": 15,
+ "dias_desde_datos": 16,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
@@ -124,11 +124,34 @@
    "creada": "2026-11-24 18:45 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "604428",
+   "fecha": "2026-11-28T20:00:00Z",
+   "local": "Lyon",
+   "visitante": "Stade Toulousain",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4984,
+   "pv": 0.5016,
+   "elo_l": 1516,
+   "elo_v": 1659,
+   "bal_l": [
+    5,
+    4
+   ],
+   "bal_v": [
+    7,
+    2
+   ],
+   "creada": "2026-11-24 20:20 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
  "recientes": [],
  "directo": {
-  "total": 5,
+  "total": 6,
   "resueltas": 0,
   "aciertos": 0,
   "acierto": null,

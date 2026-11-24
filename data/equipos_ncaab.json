@@ -1,84 +1,15 @@
 {
- "actualizado": "2026-11-24 18:45 UTC",
+ "actualizado": "2026-11-24 20:20 UTC",
  "liga": "NCAA",
- "datos_hasta": "2026-11-24T16:00:00Z",
+ "datos_hasta": "2026-11-24T18:00:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
- "proximo": "2026-11-24T19:00:00Z",
+ "proximo": "2026-11-24T20:30:00Z",
  "predicciones": [
-  {
-   "id": "401928835",
-   "fecha": "2026-11-24T17:30:00Z",
-   "local": "Akron Zips",
-   "visitante": "Belmont Bruins",
-   "neutral": true,
-   "playoff": false,
-   "pl": 0.5392,
-   "pv": 0.4608,
-   "elo_l": 1679,
-   "elo_v": 1647,
-   "bal_l": [
-    2,
-    1
-   ],
-   "bal_v": [
-    2,
-    1
-   ],
-   "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401920819",
-   "fecha": "2026-11-24T17:30:00Z",
-   "local": "Northern Colorado Bears",
-   "visitante": "SE Louisiana Lions",
-   "neutral": true,
-   "playoff": false,
-   "pl": 0.7735,
-   "pv": 0.2265,
-   "elo_l": 1517,
-   "elo_v": 1392,
-   "bal_l": [
-    1,
-    3
-   ],
-   "bal_v": [
-    1,
-    4
-   ],
-   "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401928358",
-   "fecha": "2026-11-24T18:00:00Z",
-   "local": "Florida International Panthers",
-   "visitante": "Southern Utah Thunderbirds",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7858,
-   "pv": 0.2142,
-   "elo_l": 1490,
-   "elo_v": 1411,
-   "bal_l": [
-    1,
-    1
-   ],
-   "bal_v": [
-    1,
-    3
-   ],
-   "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "401928859",
    "fecha": "2026-11-24T18:30:00Z",
@@ -2976,9 +2907,124 @@
    "creada": "2026-11-24 18:45 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401921674",
+   "fecha": "2026-11-26T19:00:00Z",
+   "local": "Arizona State Sun Devils",
+   "visitante": "South Carolina Gamecocks",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.5856,
+   "pv": 0.4144,
+   "elo_l": 1606,
+   "elo_v": 1541,
+   "bal_l": [
+    5,
+    0
+   ],
+   "bal_v": [
+    5,
+    0
+   ],
+   "creada": "2026-11-24 20:20 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401906869",
+   "fecha": "2026-11-26T19:30:00Z",
+   "local": "Texas Longhorns",
+   "visitante": "Georgetown Hoyas",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.6768,
+   "pv": 0.3232,
+   "elo_l": 1671,
+   "elo_v": 1599,
+   "bal_l": [
+    6,
+    0
+   ],
+   "bal_v": [
+    6,
+    0
+   ],
+   "creada": "2026-11-24 20:20 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
  "recientes": [
+  {
+   "id": "401928358",
+   "fecha": "2026-11-24T18:00:00Z",
+   "local": "Florida International Panthers",
+   "visitante": "Southern Utah Thunderbirds",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7858,
+   "pv": 0.2142,
+   "elo_l": 1490,
+   "elo_v": 1411,
+   "bal_l": [
+    1,
+    1
+   ],
+   "bal_v": [
+    1,
+    3
+   ],
+   "creada": "2026-11-23 19:04 UTC",
+   "resultado": "L",
+   "marcador": "81-66"
+  },
+  {
+   "id": "401928835",
+   "fecha": "2026-11-24T17:30:00Z",
+   "local": "Akron Zips",
+   "visitante": "Belmont Bruins",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.5392,
+   "pv": 0.4608,
+   "elo_l": 1679,
+   "elo_v": 1647,
+   "bal_l": [
+    2,
+    1
+   ],
+   "bal_v": [
+    2,
+    1
+   ],
+   "creada": "2026-11-23 19:04 UTC",
+   "resultado": "L",
+   "marcador": "87-64"
+  },
+  {
+   "id": "401920819",
+   "fecha": "2026-11-24T17:30:00Z",
+   "local": "Northern Colorado Bears",
+   "visitante": "SE Louisiana Lions",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.7735,
+   "pv": 0.2265,
+   "elo_l": 1517,
+   "elo_v": 1392,
+   "bal_l": [
+    1,
+    3
+   ],
+   "bal_v": [
+    1,
+    4
+   ],
+   "creada": "2026-11-23 19:04 UTC",
+   "resultado": "V",
+   "marcador": "60-70"
+  },
   {
    "id": "401928791",
    "fecha": "2026-11-24T16:00:00Z",
@@ -3369,87 +3415,18 @@
    "creada": "2026-11-23 19:04 UTC",
    "resultado": "V",
    "marcador": "79-84"
-  },
-  {
-   "id": "401919761",
-   "fecha": "2026-11-24T00:00:00Z",
-   "local": "Iona Gaels",
-   "visitante": "Fairleigh Dickinson Knights",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8529,
-   "pv": 0.1471,
-   "elo_l": 1481,
-   "elo_v": 1374,
-   "bal_l": [
-    3,
-    4
-   ],
-   "bal_v": [
-    2,
-    3
-   ],
-   "creada": "2026-11-23 19:04 UTC",
-   "resultado": "V",
-   "marcador": "46-49"
-  },
-  {
-   "id": "401917919",
-   "fecha": "2026-11-24T00:00:00Z",
-   "local": "North Florida Ospreys",
-   "visitante": "Central Arkansas Bears",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.3109,
-   "pv": 0.6891,
-   "elo_l": 1374,
-   "elo_v": 1553,
-   "bal_l": [
-    2,
-    3
-   ],
-   "bal_v": [
-    3,
-    3
-   ],
-   "creada": "2026-11-23 19:04 UTC",
-   "resultado": "V",
-   "marcador": "66-80"
-  },
-  {
-   "id": "401917543",
-   "fecha": "2026-11-24T00:00:00Z",
-   "local": "Santa Clara Broncos",
-   "visitante": "Illinois State Redbirds",
-   "neutral": true,
-   "playoff": false,
-   "pl": 0.7086,
-   "pv": 0.2914,
-   "elo_l": 1703,
-   "elo_v": 1588,
-   "bal_l": [
-    5,
-    1
-   ],
-   "bal_v": [
-    1,
-    3
-   ],
-   "creada": "2026-11-23 19:04 UTC",
-   "resultado": "V",
-   "marcador": "99-102"
   }
  ],
  "directo": {
-  "total": 703,
-  "resueltas": 569,
-  "aciertos": 411,
-  "acierto": 0.7223,
+  "total": 705,
+  "resueltas": 572,
+  "aciertos": 413,
+  "acierto": 0.722,
   "ic": [
-   0.6841,
-   0.7575
+   0.6839,
+   0.7572
   ],
-  "brier": 0.1783,
+  "brier": 0.1789,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -3630,6 +3607,12 @@
    "p": 0
   },
   {
+   "equipo": "Akron Zips",
+   "elo": 1695,
+   "g": 3,
+   "p": 2
+  },
+  {
    "equipo": "San Diego State Aztecs",
    "elo": 1692,
    "g": 5,
@@ -3675,12 +3658,6 @@
    "equipo": "Ohio State Buckeyes",
    "elo": 1673,
    "g": 4,
-   "p": 2
-  },
-  {
-   "equipo": "Akron Zips",
-   "elo": 1671,
-   "g": 2,
    "p": 2
   },
   {
@@ -3730,12 +3707,6 @@
    "elo": 1660,
    "g": 3,
    "p": 3
-  },
-  {
-   "equipo": "Belmont Bruins",
-   "elo": 1658,
-   "g": 3,
-   "p": 1
   },
   {
    "equipo": "Indiana Hoosiers",
@@ -3796,6 +3767,12 @@
    "elo": 1636,
    "g": 5,
    "p": 0
+  },
+  {
+   "equipo": "Belmont Bruins",
+   "elo": 1634,
+   "g": 3,
+   "p": 2
   },
   {
    "equipo": "UNC Wilmington Seahawks",
@@ -4512,12 +4489,6 @@
    "p": 3
   },
   {
-   "equipo": "Northern Colorado Bears",
-   "elo": 1517,
-   "g": 1,
-   "p": 3
-  },
-  {
    "equipo": "Quinnipiac Bobcats",
    "elo": 1514,
    "g": 2,
@@ -4590,6 +4561,12 @@
    "p": 3
   },
   {
+   "equipo": "Florida International Panthers",
+   "elo": 1502,
+   "g": 3,
+   "p": 1
+  },
+  {
    "equipo": "Mercer Bears",
    "elo": 1502,
    "g": 2,
@@ -4656,6 +4633,12 @@
    "p": 1
   },
   {
+   "equipo": "Northern Colorado Bears",
+   "elo": 1495,
+   "g": 1,
+   "p": 4
+  },
+  {
    "equipo": "Richmond Spiders",
    "elo": 1494,
    "g": 3,
@@ -4665,12 +4648,6 @@
    "equipo": "Penn State Nittany Lions",
    "elo": 1494,
    "g": 5,
-   "p": 1
-  },
-  {
-   "equipo": "Florida International Panthers",
-   "elo": 1494,
-   "g": 2,
    "p": 1
   },
   {
@@ -5190,6 +5167,12 @@
    "p": 4
   },
   {
+   "equipo": "SE Louisiana Lions",
+   "elo": 1413,
+   "g": 2,
+   "p": 4
+  },
+  {
    "equipo": "Georgia State Panthers",
    "elo": 1410,
    "g": 2,
@@ -5212,12 +5195,6 @@
    "elo": 1407,
    "g": 4,
    "p": 3
-  },
-  {
-   "equipo": "Southern Utah Thunderbirds",
-   "elo": 1407,
-   "g": 1,
-   "p": 4
   },
   {
    "equipo": "Mount St. Mary's Mountaineers",
@@ -5266,6 +5243,12 @@
    "elo": 1399,
    "g": 1,
    "p": 4
+  },
+  {
+   "equipo": "Southern Utah Thunderbirds",
+   "elo": 1399,
+   "g": 1,
+   "p": 5
   },
   {
    "equipo": "South Dakota Coyotes",
@@ -5319,12 +5302,6 @@
    "equipo": "South Carolina State Bulldogs",
    "elo": 1393,
    "g": 2,
-   "p": 4
-  },
-  {
-   "equipo": "SE Louisiana Lions",
-   "elo": 1392,
-   "g": 1,
    "p": 4
   },
   {
