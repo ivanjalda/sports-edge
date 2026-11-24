@@ -191,7 +191,7 @@ en:{h1:"⚖️ Legal information",lead:"How we handle your data, what we store i
 +'<h2>Tools you can use</h2><ul><li>Licensed bookmakers offer deposit limits, time-outs and self-exclusion on their own websites.</li><li>In the UK, GAMSTOP lets you self-exclude from all licensed online operators; in Spain, the RGIAJ register does the same.</li><li>Read our bankroll management guide in <a href="aprender.html#banca-resp">Learn</a>.</li></ul>'}
 };
 var lang="es", SEC="privacidad";
-try{ lang=localStorage.getItem("lang")||(navigator.language.indexOf("es")==0?"es":"en"); }catch(e){}
+try{ lang=localStorage.getItem("lang")||((navigator.language.indexOf("es")==0||/bot|crawl|spider|slurp/i.test(navigator.userAgent))?"es":"en"); }catch(e){}
 function leerHash(){ var h=location.hash.replace("#",""); if(SECS.indexOf(h)>=0) SEC=h; }
 leerHash();
 window.addEventListener("hashchange",function(){ leerHash(); render(); window.scrollTo(0,0); });

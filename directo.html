@@ -147,7 +147,7 @@ en:{h1:"🔴 Live",lead:"Today's scores, refreshing by themselves every minute, 
  dep:{futbol:"Football",baloncesto:"Basketball",hockey:"Hockey",americano:"American football",beisbol:"Baseball",voleibol:"Volleyball",rugby:"Rugby"}}
 };
 var lang="es", filtro="todos", soloP=false, EV=[], PRED={}, CUOTAS={}, ultima=null, fallos=0;
-try{ lang=localStorage.getItem("lang")||(navigator.language.indexOf("es")==0?"es":"en"); }catch(e){}
+try{ lang=localStorage.getItem("lang")||((navigator.language.indexOf("es")==0||/bot|crawl|spider|slurp/i.test(navigator.userAgent))?"es":"en"); }catch(e){}
 try{ soloP=localStorage.getItem("directo_solo")==="1"; }catch(e){}
 function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
 function t(k){ return T[lang][k]; }

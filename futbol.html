@@ -219,7 +219,7 @@ var T = {
       foot:"18+ only. Probabilities are statistical estimates and fair odds are 1 divided by the probability. They do not guarantee results. Please gamble responsibly."}
 };
 var lang="es";
-try{ lang = localStorage.getItem("lang") || (navigator.language.indexOf("es")==0 ? "es" : "en"); }catch(e){}
+try{ lang = localStorage.getItem("lang") || ((navigator.language.indexOf("es")==0||/bot|crawl|spider|slurp/i.test(navigator.userAgent)) ? "es" : "en"); }catch(e){}
 var DATA={pred:null,stats:null,hist:null,cuotas:null,valor:null};
 var sport="futbol", cur="all";
 

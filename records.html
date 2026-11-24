@@ -123,7 +123,7 @@ en:{h1:"🏆 Records",lead:"Honours and records of each sport. Above, the great 
  big:"Biggest win",pods:"Most %s",ws:"Most wins in a season",src:"Source",nod:"No computed records for this sport yet.",season:"Season",until:"until",vs:"vs"}
 };
 var lang="es", dep="futbol", R=null;
-try{ lang=localStorage.getItem("lang")||(navigator.language.indexOf("es")==0?"es":"en"); }catch(e){}
+try{ lang=localStorage.getItem("lang")||((navigator.language.indexOf("es")==0||/bot|crawl|spider|slurp/i.test(navigator.userAgent))?"es":"en"); }catch(e){}
 try{ var q=new URLSearchParams(location.search); if(q.get("dep")) dep=q.get("dep"); }catch(e){}
 function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
 function t(k){ return T[lang][k]; }

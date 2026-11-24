@@ -158,7 +158,7 @@ function secDeHash(){ var h=(location.hash||"").substr(1); if(!h) return;
   if(SECS.some(function(x){return x[0]===h;})) sec=h; else if(T.es.glos.some(function(g){return g[0]===h;})) sec="glosario"; }
 window.addEventListener("hashchange",function(){ secDeHash(); render(); });
 secDeHash();
-try{ lang=localStorage.getItem("lang")||(navigator.language.indexOf("es")==0?"es":"en"); }catch(e){}
+try{ lang=localStorage.getItem("lang")||((navigator.language.indexOf("es")==0||/bot|crawl|spider|slurp/i.test(navigator.userAgent))?"es":"en"); }catch(e){}
 function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
 function t(k){ return T[lang][k]; }
 function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }

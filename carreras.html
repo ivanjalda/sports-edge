@@ -146,7 +146,7 @@ en:{h1:"🏁 Motorsport",lead:"Win, podium and points probability for every driv
  foot:"18+ only. Probabilities are statistical estimates and do not guarantee results. Please gamble responsibly."}
 };
 var lang="es", serie=SERIES[0].id, tab="pred", D={};
-try{ lang=localStorage.getItem("lang")||(navigator.language.indexOf("es")==0?"es":"en"); }catch(e){}
+try{ lang=localStorage.getItem("lang")||((navigator.language.indexOf("es")==0||/bot|crawl|spider|slurp/i.test(navigator.userAgent))?"es":"en"); }catch(e){}
 try{ var q=new URLSearchParams(location.search); if(q.get("serie")) serie=q.get("serie"); if(q.get("tab")) tab=q.get("tab"); }catch(e){}
 function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
 function t(k){ if(grupo==="golf"&&GOLF[lang][k]!=null) return GOLF[lang][k]; return T[lang][k]; }

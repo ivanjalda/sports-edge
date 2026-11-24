@@ -262,7 +262,7 @@ en:{nodata:"No data",all:"All",dep_baloncesto:"Basketball",dep_hockey:"Hockey",d
  empty:"No data yet. It is generated when the engine runs."}
 };
 var lang="es", tab="pred", dep="baloncesto", liga="todas";
-try{ lang=localStorage.getItem("lang")||(navigator.language.indexOf("es")==0?"es":"en"); }catch(e){}
+try{ lang=localStorage.getItem("lang")||((navigator.language.indexOf("es")==0||/bot|crawl|spider|slurp/i.test(navigator.userAgent))?"es":"en"); }catch(e){}
 function ligaDe(id){ for(var i=0;i<LIGAS.length;i++) if(LIGAS[i].id===id) return LIGAS[i]; return null; }
 try{
   var qd=(location.search.match(/dep=([a-z]+)/)||[])[1], ql=(location.search.match(/liga=([a-z]+)/)||[])[1];

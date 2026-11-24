@@ -315,7 +315,7 @@ var ADMIN="community16jalda@gmail.com";
 function esAdmin(){ return !!(U&&U.email&&U.email.toLowerCase()===ADMIN&&U.emailVerified); }
 var lang="es", M="reg", U=null, LISTO=false, ACCION=null, SEC="espacio";
 var P={idioma:"es",email_diario:false,telegram:"no",promo:false,deportes:[],equipos:[],nombre:""};
-try{ lang=localStorage.getItem("lang")||(navigator.language.indexOf("es")==0?"es":"en"); }catch(e){}
+try{ lang=localStorage.getItem("lang")||((navigator.language.indexOf("es")==0||/bot|crawl|spider|slurp/i.test(navigator.userAgent))?"es":"en"); }catch(e){}
 P.idioma=lang;
 (function(){ var h=location.hash.replace("#",""); if(SECS.indexOf(h)>=0) SEC=h; })();
 window.addEventListener("hashchange",function(){ var h=location.hash.replace("#",""); if(SECS.indexOf(h)>=0){ SEC=h; render(); window.scrollTo(0,0); } else if(h==="salir"&&window.salir) salir(); });

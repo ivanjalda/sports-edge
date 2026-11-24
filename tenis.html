@@ -158,7 +158,7 @@ en:{nodata:"No data",l1:"← Football",l2:"Guide",l3:"Statistics",title:"Tennis"
  empty:"No data yet. It is generated when the engine runs."}
 };
 var lang="es", tab="pred";
-try{ lang=localStorage.getItem("lang")||(navigator.language.indexOf("es")==0?"es":"en"); }catch(e){}
+try{ lang=localStorage.getItem("lang")||((navigator.language.indexOf("es")==0||/bot|crawl|spider|slurp/i.test(navigator.userAgent))?"es":"en"); }catch(e){}
 try{ if((location.hash||"")==="#stats") tab="stats"; }catch(e){}
 var D={t:null,b:null};
 

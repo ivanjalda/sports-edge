@@ -124,7 +124,7 @@ en:{
  ]}
 };
 var lang="es";
-try{ lang = localStorage.getItem("lang") || (navigator.language.indexOf("es")==0 ? "es" : "en"); }catch(e){}
+try{ lang = localStorage.getItem("lang") || ((navigator.language.indexOf("es")==0||/bot|crawl|spider|slurp/i.test(navigator.userAgent)) ? "es" : "en"); }catch(e){}
 function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
 function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
 function render(){
