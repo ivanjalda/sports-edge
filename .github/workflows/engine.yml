@@ -77,7 +77,13 @@ jobs:
 
       - name: Panel del administrador
         continue-on-error: true
-        run: python3 -u scripts/panel_admin.py
+        env:
+          FIREBASE_CUENTA: ${{ secrets.FIREBASE_CUENTA }}
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+        run: |
+          pip install -q firebase-admin || true
+          python3 -u scripts/panel_admin.py
 
       - name: Guardar datos
         run: |
