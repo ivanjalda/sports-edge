@@ -87,6 +87,38 @@ input[type=email],input[type=password],input[type=text]{width:100%;background:va
 .bien h1{font-size:28px}
 .bien p{color:var(--mut)}
 .hide{display:none!important}
+.adm-on main{max-width:none}
+.pn-top{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.pn-top h2{margin:0;font-size:22px} .pn-top .nota{margin:0}
+.pn-k{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:16px}
+.pn-k .kpi{cursor:default} .pn-k .kpi:hover{border-color:var(--line)}
+.pn-k .v small{font-size:13px;color:var(--mut);font-weight:600}
+.pn-g{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:16px}
+.pn-g .box{margin:0!important}
+.pn-l{list-style:none;margin:0;padding:0}
+.pn-l li{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}
+.pn-l li:last-child{border-bottom:0} .pn-l li span:last-child{color:var(--mut);text-align:right;white-space:nowrap}
+.sem{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px;vertical-align:0}
+.sem.v{background:var(--acc)} .sem.a{background:var(--amb)} .sem.r{background:var(--red)} .sem.g{background:#4b5563}
+.bdg{display:inline-block;padding:2px 9px;border-radius:12px;font-size:12px;font-weight:700;white-space:nowrap}
+.bdg.v{background:rgba(34,197,94,.15);color:var(--acc)} .bdg.a{background:rgba(245,158,11,.15);color:var(--amb)}
+.bdg.r{background:rgba(239,68,68,.15);color:var(--red)} .bdg.g{background:rgba(139,149,167,.15);color:var(--mut)}
+.pn-t{width:100%;border-collapse:collapse;font-size:13.5px}
+.pn-t th{text-align:left;color:var(--mut);font-size:11.5px;text-transform:uppercase;letter-spacing:.5px;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+.pn-t td{padding:9px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+.pn-t tr:hover td{background:rgba(255,255,255,.02)}
+.pn-t .n{text-align:right;font-variant-numeric:tabular-nums}
+.pn-t .mej{color:var(--acc);font-weight:700} .pn-t .peor{color:var(--amb)}
+.pn-w{overflow-x:auto}
+.pn-bar{height:6px;border-radius:3px;background:var(--line);overflow:hidden;margin-top:6px}
+.pn-bar i{display:block;height:100%;background:var(--acc)}
+.pn-acc{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.pn-acc a{display:block;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--card2);color:var(--txt);text-decoration:none;font-weight:700;font-size:13.5px}
+.pn-acc a:hover{border-color:var(--acc)} .pn-acc a small{display:block;color:var(--mut);font-weight:500;font-size:12px}
+.pn-err li{font-size:13px;padding:6px 0;border-bottom:1px solid var(--line);list-style:none}
+.pn-err{margin:0;padding:0}
+@media(max-width:1200px){ .pn-k{grid-template-columns:repeat(3,1fr)} .pn-g{grid-template-columns:1fr 1fr} .pn-acc{grid-template-columns:1fr 1fr} }
+@media(max-width:760px){ .pn-k{grid-template-columns:1fr 1fr} .pn-g{grid-template-columns:1fr} .pn-acc{grid-template-columns:1fr} }
 @media(max-width:860px){ .cols{grid-template-columns:1fr} main{padding:18px 16px} .kpis{grid-template-columns:1fr} .tab{flex:1 1 40%} }
 footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top:1px solid var(--line);margin-top:30px}
 </style>
@@ -155,6 +187,33 @@ footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top
       </div>
       <button class="btn pri" onclick="guardarAvisos()" id="b-guardar"></button>
       <div class="msg" id="m-av"></div>
+    </section>
+
+    <!-- Panel del dueno: solo se muestra al administrador -->
+    <section id="s-panel" class="hide">
+      <div class="pn-top"><h2>🛠 Panel de control</h2><div class="nota" id="pn-act"></div></div>
+      <div class="pn-k" id="pn-k"></div>
+      <div class="pn-g">
+        <div class="box"><h2>⚙️ Automático · hoy</h2><ul class="pn-l" id="pn-auto"></ul></div>
+        <div class="box"><h2>👥 Usuarios y audiencia</h2><ul class="pn-l" id="pn-us"></ul><div class="nota" id="pn-us-n"></div></div>
+        <div class="box"><h2>💶 ¿Gana dinero el motor?</h2><ul class="pn-l" id="pn-din"></ul><div class="nota">Pruebas con cuotas reales. Si el resultado es negativo, apostar con dinero real perdería.</div></div>
+      </div>
+      <div class="box"><h2>🧠 Motores · cómo van</h2><div class="nota" style="margin-bottom:10px">«Prueba»: partidos pasados que el motor no había visto. «Referencia»: lo que acertaría el método simple (o las casas de apuestas en fútbol). «En directo»: predicciones publicadas y ya resueltas.</div><div class="pn-w" id="pn-mot"></div></div>
+      <div class="pn-g" style="margin-top:16px">
+        <div class="box"><h2>🔁 Tareas automáticas (GitHub)</h2><ul class="pn-l" id="pn-gh"></ul></div>
+        <div class="box"><h2>🩺 Revisión diaria</h2><div id="pn-rev"></div></div>
+        <div class="box"><h2>🏆 Deportes favoritos de los usuarios</h2><ul class="pn-l" id="pn-deps"></ul></div>
+      </div>
+      <div class="box"><h2>🔗 Accesos rápidos</h2><div class="pn-acc">
+        <a href="https://github.com/ivanjalda/sports-edge/actions" target="_blank" rel="noopener">GitHub Actions<small>Tareas automáticas</small></a>
+        <a href="https://dash.cloudflare.com/?to=/:account/web-analytics" target="_blank" rel="noopener">Cloudflare<small>Visitas de la web</small></a>
+        <a href="https://search.google.com/search-console?resource_id=sc-domain:sportevlab.com" target="_blank" rel="noopener">Google Search Console<small>Cómo salimos en Google</small></a>
+        <a href="https://console.firebase.google.com/project/sportevlab/authentication/users" target="_blank" rel="noopener">Firebase<small>Usuarios registrados</small></a>
+        <a href="https://app.brevo.com/" target="_blank" rel="noopener">Brevo<small>Correos enviados</small></a>
+        <a href="https://t.me/sportevlab" target="_blank" rel="noopener">Telegram ES<small>@sportevlab</small></a>
+        <a href="https://t.me/sportevlab_en" target="_blank" rel="noopener">Telegram EN<small>@sportevlab_en</small></a>
+        <a href="https://dash.cloudflare.com/" target="_blank" rel="noopener">Asistente virtual<small>Cloudflare · Workers</small></a>
+      </div></div>
     </section>
 
     <section id="s-ajustes">
@@ -251,7 +310,9 @@ en:{h1:"👤 My account",lead:"Create your free account and get your own space: 
   "auth/popup-closed-by-user":"You closed the Google window before finishing.","auth/too-many-requests":"Too many attempts. Wait a few minutes.","auth/requires-recent-login":"For security, log out, log in again and repeat."},
  hoy:"Today",man:"Tomorrow",foot:"🔞 18+ only. Please gamble responsibly."}
 };
-var SECS=["espacio","favoritos","avisos","ajustes"];
+var SECS=["espacio","favoritos","avisos","ajustes","panel"];
+var ADMIN="community16jalda@gmail.com";
+function esAdmin(){ return !!(U&&U.email&&U.email.toLowerCase()===ADMIN&&U.emailVerified); }
 var lang="es", M="reg", U=null, LISTO=false, ACCION=null, SEC="espacio";
 var P={idioma:"es",email_diario:false,telegram:"no",promo:false,deportes:[],equipos:[],nombre:""};
 try{ lang=localStorage.getItem("lang")||(navigator.language.indexOf("es")==0?"es":"en"); }catch(e){}
@@ -326,8 +387,12 @@ function render(){
   var nover=conPass&&!U.emailVerified;
   if(nover&&$("m-ver").className.indexOf("ok")<0) msg("m-ver",t("ver")+' <a href="#" onclick="reenviar();return false">'+t("reenviar")+'</a>',"aviso");
   else if(!nover) msg("m-ver","","ok");
-  $("tabs").innerHTML=t("tabs").map(function(x,i){ return '<div class="tab'+(SEC===SECS[i]?' on':'')+'" onclick="ir(\''+SECS[i]+'\')">'+x+'</div>'; }).join("");
+  var adm=esAdmin(); if(SEC==="panel"&&!adm) SEC="espacio";
+  var nt=t("tabs").concat(adm?["🛠 Panel"]:[]);
+  $("tabs").innerHTML=nt.map(function(x,i){ return '<div class="tab'+(SEC===SECS[i]?' on':'')+'" onclick="ir(\''+SECS[i]+'\')">'+x+'</div>'; }).join("");
   SECS.forEach(function(s){ $("s-"+s).className=SEC===s?"":"hide"; });
+  document.body.classList.toggle("adm-on",adm&&SEC==="panel");
+  if(adm&&SEC==="panel") cargarPanel();
   /* Mi espacio */
   var nd=P.deportes.length, ne=P.equipos.length, na=(P.email_diario?1:0)+(P.telegram!=="no"?1:0);
   $("kpis").innerHTML=
@@ -358,6 +423,90 @@ function render(){
   $("o-widioma").innerHTML=[["es","🇪🇸 Español"],["en","🇬🇧 English"]].map(function(x){ return '<div class="opt'+(lang===x[0]?' on':'')+'" onclick="setLang(\''+x[0]+'\')">'+x[1]+'</div>'; }).join("");
   $("b-gdatos").textContent=t("gdatos"); $("h-seg").textContent=t("h_seg"); $("b-pass").textContent=t("b_pass");
   $("b-salir").textContent=t("salir"); $("l-borrar").textContent=t("borrar");
+}
+
+/* ---------- Panel del dueno (solo administrador). Todo se actualiza solo: lo escriben las tareas automaticas. ---------- */
+var PANEL=null, GH=null, PANEL_T=0;
+function pc(x){ return x==null?"—":(x*100).toFixed(1).replace(".",",")+" %"; }
+function nf(x){ return x==null?"—":Number(x).toLocaleString("es-ES"); }
+function hace(s){ if(!s) return "—"; var d=new Date(String(s).replace(" UTC","Z").replace(" ","T")); if(isNaN(d)) return esc(s);
+  var m=Math.round((Date.now()-d)/60000); if(m<1) return "ahora"; if(m<60) return "hace "+m+" min"; var h=Math.round(m/60); if(h<48) return "hace "+h+" h"; return "hace "+Math.round(h/24)+" días"; }
+function cargarPanel(){
+  if(Date.now()-PANEL_T<120000&&PANEL){ pintarPanel(); return; }
+  PANEL_T=Date.now();
+  fetch("data/panel.json?v="+Date.now()).then(function(r){ return r.json(); }).then(function(d){ PANEL=d; pintarPanel(); }).catch(function(){ PANEL={}; pintarPanel(); });
+  fetch("https://api.github.com/repos/ivanjalda/sports-edge/actions/runs?per_page=60").then(function(r){ return r.json(); })
+    .then(function(d){ GH=d.workflow_runs||[]; pintarPanel(); }).catch(function(){ GH=[]; pintarPanel(); });
+}
+function pintarPanel(){
+  if(!esAdmin()||!PANEL) { $("pn-k").innerHTML='<div class="vacio">Cargando…</div>'; return; }
+  var D=PANEL, tt=D.totales||{}, pb=D.publicaciones||{}, pv=P.panel_privado||{}, us=pv.usuarios||{}, tg=pv.telegram||{};
+  $("pn-act").textContent="Motores: "+hace(D.actualizado)+(pv.actualizado?" · Usuarios: "+hace(pv.actualizado):"")+" · se actualiza solo";
+  var dir=(D.motores||[]).filter(function(m){ return m.directo&&m.directo.resueltas&&m.directo.acierto!=null&&m.dep!=="motor"&&m.dep!=="golf"; });
+  var res=0, ac=0; dir.forEach(function(m){ res+=m.directo.resueltas; ac+=m.directo.resueltas*m.directo.acierto; });
+  var rev=D.revision||{}, revc=rev.estado==="ok"?"v":(rev.estado==="error"?"r":"a");
+  function K(k,v,s){ return '<div class="kpi"><div class="k">'+k+'</div><div class="v">'+v+'</div><div class="s">'+s+'</div></div>'; }
+  $("pn-k").innerHTML=K("Motores",(tt.activos||0)+' <small>/ '+(tt.motores||0)+'</small>',"activos ahora · "+(tt.deportes||0)+" deportes")
+    +K("Partidos de prueba",nf(tt.partidos_prueba),"usados para medir los motores")
+    +K("Próximos pronósticos",nf(tt.proximos),"partidos con predicción publicada")
+    +K("Acierto en directo",res?pc(ac/res):"—",nf(res)+" predicciones ya resueltas")
+    +K("Usuarios",us.total!=null?nf(us.total):"—",us.total!=null?(us.nuevos_7d||0)+" nuevos en 7 días":"se calcula en el próximo turno")
+    +K("Revisión diaria",'<span class="sem '+revc+'"></span>'+(rev.estado==="ok"?"Todo bien":(rev.estado==="error"?(rev.errores||[]).length+" errores":"Avisos")),hace(rev.fecha));
+  function L(ok,txt,det){ var c=ok===true?"v":(ok===false?"r":(ok==="g"?"g":"a")); return '<li><span><span class="sem '+c+'"></span>'+txt+'</span><span>'+det+'</span></li>'; }
+  var hoy=pb.hoy, ayer=pb.ayer, h=new Date().getHours()+new Date().getMinutes()/60;
+  $("pn-auto").innerHTML=
+     L(pb.telegram_manana===hoy?true:(h<9.6?"g":false),"Telegram · pronósticos de la mañana",pb.telegram_manana===hoy?"enviado hoy":(h<9.6?"a las 9:30":"no enviado"))
+    +L(pb.correo===hoy?true:(h<9.6?"g":false),"Correo diario a suscriptores",pb.correo===hoy?"enviado hoy":(h<9.6?"a las 9:30":"no enviado"))
+    +L(pb.resultados_hoy>0?true:"g","Telegram · resultados al terminar",nf(pb.resultados_hoy)+" hoy · "+nf(pb.resultados_ayer)+" ayer")
+    +L(pb.balance===ayer||pb.balance===hoy,"Telegram · balance de la noche",pb.balance===hoy?"enviado hoy":(pb.balance===ayer?"anoche":"último: "+esc(pb.balance||"—")))
+    +L(true,"Motores y pronósticos",hace(pb.motor))
+    +L(true,"Cuotas de las casas",hace(pb.cuotas))
+    +L(true,"Noticias",hace(pb.noticias))
+    +L(true,"Asistente virtual (datos)",hace(pb.asistente));
+  if(us.total!=null){
+    $("pn-us").innerHTML=L(true,"Registrados",nf(us.total)+" · "+nf(us.verificados)+" con correo confirmado")
+      +L(true,"Nuevos",nf(us.nuevos_hoy)+" hoy · "+nf(us.nuevos_7d)+" en 7 días")
+      +L(true,"Correo diario activado",nf(us.correo)+" ("+nf(us.correo_es)+" ES · "+nf(us.correo_en)+" EN)")
+      +L(true,"Telegram elegido en su cuenta",nf(us.telegram_es)+" ES · "+nf(us.telegram_en)+" EN")
+      +L(true,"Miembros de los canales",(tg.es!=null?nf(tg.es):"—")+" ES · "+(tg.en!=null?nf(tg.en):"—")+" EN")
+      +L(true,"Aceptan publicidad de tus webs",nf(us.promo))
+      +L(pv.brevo_quedan_hoy==null?"g":pv.brevo_quedan_hoy>50,"Correos que quedan hoy (Brevo)",pv.brevo_quedan_hoy==null?"—":nf(pv.brevo_quedan_hoy)+" de 300");
+    $("pn-us-n").textContent="Solo tú ves estos datos.";
+    var dp=us.deportes||{}, ks=Object.keys(dp).sort(function(a,b){ return dp[b]-dp[a]; }), mx=ks.length?dp[ks[0]]:1;
+    $("pn-deps").innerHTML=ks.length?ks.map(function(k){ var nm=(DEPS.filter(function(d){return d[0]===k;})[0]||[k,"🎯",k])[2]; return '<li style="display:block"><div style="display:flex;justify-content:space-between"><span>'+(ICO[k]||"🎯")+" "+esc(nm)+'</span><span>'+dp[k]+'</span></div><div class="pn-bar"><i style="width:'+Math.round(dp[k]/mx*100)+'%"></i></div></li>'; }).join(""):'<div class="vacio">Aún ningún usuario ha elegido deportes.</div>';
+  } else {
+    $("pn-us").innerHTML='<div class="vacio">Los datos de usuarios aparecerán en menos de media hora (los calcula la tarea automática).</div>'; $("pn-us-n").textContent=""; $("pn-deps").innerHTML='<div class="vacio">—</div>';
+  }
+  var R=D.rentabilidad||{}, vp=R.futbol_valor_prueba||{}, rg=R.futbol_regla||{}, rp=rg.prueba||{}, pub=R.valor_publico||{};
+  function roi(x){ return x==null?"—":(x>0?"+":"")+(x*100).toFixed(1).replace(".",",")+" %"; }
+  var mf=(D.motores||[])[0]||{};
+  $("pn-din").innerHTML=L(mf.prueba&&mf.prueba.acierto>=mf.prueba.ref_acierto,"Fútbol: motor vs casas de apuestas",pc(mf.prueba&&mf.prueba.acierto)+" vs "+pc(mf.prueba&&mf.prueba.ref_acierto))
+    +L(vp.roi>0,"Fútbol: todas las apuestas de valor (prueba)",nf(vp.apuestas)+" apuestas · "+roi(vp.roi))
+    +L(rp.roi>0,"Fútbol: mejor filtro encontrado",nf(rp.apuestas)+" apuestas · "+roi(rp.roi)+(rg.activa?"":" · desactivado"))
+    +L(pub.roi>0,"Valor publicado en la web (real)",nf(pub.apuestas)+" apuestas · "+roi(pub.roi))
+    +(D.motores||[]).filter(function(m){ return m.directo&&m.directo.apuestas; }).map(function(m){ return L(m.directo.roi>0,esc(m.nombre)+": valor en directo",nf(m.directo.apuestas)+" apuestas · "+roi(m.directo.roi)); }).join("");
+  var EST={activo:["v","Activo"],espera:["g","Sin partidos ahora"],retraso:["a","Datos con retraso"],temporada:["g","Fuera de temporada"]};
+  var ms=(D.motores||[]).slice().sort(function(a,b){ var o={activo:0,retraso:1,espera:2,temporada:3}; return o[a.estado]-o[b.estado]||(b.prueba.n||0)-(a.prueba.n||0); });
+  $("pn-mot").innerHTML='<table class="pn-t"><thead><tr><th>Motor</th><th>Estado</th><th class="n">Prueba</th><th class="n">Acierto</th><th class="n">Referencia</th><th class="n">En directo</th><th class="n">Próximos</th><th>Actualizado</th></tr></thead><tbody>'
+    +ms.map(function(m){ var e=EST[m.estado]||["g",m.estado], p=m.prueba||{}, d=m.directo||{}, car=p.unidad==="carreras";
+      var mej=p.acierto!=null&&p.ref_acierto!=null?(p.acierto>=p.ref_acierto?"mej":"peor"):"";
+      return '<tr><td>'+(ICO[m.dep]||"🎯")+' <b>'+esc(m.nombre)+'</b>'+(m.proximo?'<br><span class="nota">Próximo: '+esc(m.proximo)+'</span>':'')+'</td>'
+        +'<td><span class="bdg '+e[0]+'">'+e[1]+'</span></td>'
+        +'<td class="n">'+nf(p.n)+(car?" carreras":"")+'</td>'
+        +'<td class="n '+(car?"":mej)+'">'+pc(p.acierto)+(car?'<br><span class="nota">gana el favorito</span>':'')+'</td>'
+        +'<td class="n">'+pc(p.ref_acierto)+'<br><span class="nota">'+esc(p.ref||"")+'</span></td>'
+        +'<td class="n">'+(d.resueltas?pc(d.acierto)+'<br><span class="nota">'+nf(d.resueltas)+' resueltas</span>':'—')+'</td>'
+        +'<td class="n">'+nf(m.proximos)+'</td><td>'+hace(m.actualizado)+'</td></tr>'; }).join("")+'</tbody></table>';
+  var NOM={"Motor":"Motor (pronósticos)","Resultados Telegram":"Telegram y correo","Revision diaria":"Revisión diaria"};
+  if(GH==null) $("pn-gh").innerHTML='<div class="vacio">Cargando…</div>';
+  else { var vis={}, lst=[]; GH.forEach(function(r){ if(!vis[r.name]){ vis[r.name]=1; lst.push(r); } });
+    $("pn-gh").innerHTML=lst.length?lst.map(function(r){ var en=r.status!=="completed", ok=r.conclusion==="success";
+      return '<li><span><span class="sem '+(en?"v":(ok?"v":(r.conclusion==="cancelled"?"g":"r")))+'"></span><a href="'+esc(r.html_url)+'" target="_blank" rel="noopener" style="color:var(--txt)">'+esc(NOM[r.name]||r.name)+'</a></span><span>'+(en?"en marcha":(ok?"bien":(r.conclusion==="cancelled"?"cancelada":"falló")))+" · "+hace(r.updated_at)+'</span></li>'; }).join("")
+      :'<div class="vacio">No se ha podido consultar GitHub ahora.</div>'; }
+  var er=rev.errores||[], av=rev.avisos||[];
+  $("pn-rev").innerHTML='<div style="margin-bottom:8px"><span class="bdg '+revc+'">'+(rev.estado==="ok"?"Todo bien":(rev.estado==="error"?"Hay errores":"Hay avisos"))+'</span> <span class="nota">'+hace(rev.fecha)+'</span></div>'
+    +((er.length||av.length)?'<ul class="pn-err">'+er.slice(0,8).map(function(x){ return '<li>🔴 '+esc(x)+'</li>'; }).join("")+av.slice(0,6).map(function(x){ return '<li>🟡 '+esc(x)+'</li>'; }).join("")+'</ul>':'')
+    +'<ul class="pn-l" style="margin-top:6px">'+(rev.bien||[]).map(function(x){ return '<li><span>✅ '+esc(x)+'</span><span></span></li>'; }).join("")+'</ul>';
 }
 
 /* Pantalla que se ve al pulsar el enlace del correo (confirmar cuenta, cambiar contrasena...) */
@@ -425,6 +574,7 @@ async function cargarPerfil(u) {
       P.nombre = d.nombre || ""; P.idioma = d.idioma || P.idioma; P.email_diario = d.email_diario === true;
       P.telegram = (d.telegram === "es" || d.telegram === "en") ? d.telegram : "no"; P.promo = d.promo === true;
       P.deportes = Array.isArray(d.deportes) ? d.deportes : []; P.equipos = Array.isArray(d.equipos) ? d.equipos : [];
+      P.panel_privado = d.panel_privado || null;
     } else { P.nombre = P.nombre || u.displayName || ""; await guardar({}, true); }
   } catch (e) { console.log(e); }
 }
@@ -435,7 +585,8 @@ async function guardar(campos, nuevo) {
     promo: false, deportes: [], equipos: [], creado: serverTimestamp(), acepta_privacidad: serverTimestamp(), idioma_registro: lang });
   await setDoc(doc(db, "usuarios", u.uid), datos, { merge: true });
 }
-function recordarNombre(u) { try { if (u) localStorage.setItem("se_user", (P.nombre || u.displayName || (u.email || "").split("@")[0]).split(" ")[0]); else localStorage.removeItem("se_user"); } catch (e) {} }
+function recordarNombre(u) { try { if (u) localStorage.setItem("se_user", (P.nombre || u.displayName || (u.email || "").split("@")[0]).split(" ")[0]); else localStorage.removeItem("se_user");
+  if (u && (u.email || "").toLowerCase() === ADMIN && u.emailVerified) localStorage.setItem("se_admin", "1"); else localStorage.removeItem("se_admin"); } catch (e) {} }
 
 onAuthStateChanged(auth, async (u) => {
   U = u;
@@ -489,7 +640,7 @@ window.cambiarPass = async function () {
   if (!u.providerData.some(p => p.providerId === "password")) { msg("m-seg", t("no_pass"), "aviso"); return; }
   try { auth.languageCode = lang; await sendPasswordResetEmail(auth, u.email, VUELTA); msg("m-seg", t("ok_pass"), "ok"); } catch (e) { msg("m-seg", errTxt(e)); }
 };
-window.salir = async function () { await signOut(auth); try { localStorage.removeItem("se_user"); } catch (e) {} location.href = "index.html"; };
+window.salir = async function () { await signOut(auth); try { localStorage.removeItem("se_user"); localStorage.removeItem("se_admin"); } catch (e) {} location.href = "index.html"; };
 window.borrarCuenta = async function () {
   if (!confirm(t("e_conf"))) return;
   try { const u = auth.currentUser; await deleteDoc(doc(db, "usuarios", u.uid)); await deleteUser(u); try { localStorage.removeItem("se_user"); } catch (e) {} location.href = "index.html"; } catch (e) { msg("m-seg", errTxt(e)); }

@@ -262,7 +262,9 @@
         u=String(u).replace(/[<>&"']/g,"").slice(0,16);
         var h=["cuenta.html#espacio","cuenta.html#favoritos","cuenta.html#avisos","cuenta.html#ajustes","cuenta.html#salir"];
         return '<div class="se-dd"><button class="se-btn se-acc" onclick="event.stopPropagation();this.parentNode.classList.toggle(\'abierto\')">👤 '+(u||t.micuenta)+' ▾</button>'
-          +'<div class="se-ddm">'+t.dd.map(function(x,i){ return '<a href="'+h[i]+'"'+(i===4?' class="sal"':'')+'>'+x+'</a>'; }).join("")+'</div></div>'; })()
+          +'<div class="se-ddm">'+(function(){ var ad=false; try{ ad=localStorage.getItem("se_admin")==="1"; }catch(e){}
+              return ad?'<a href="cuenta.html#panel">🛠 Panel de control</a>':''; })()
+          +t.dd.map(function(x,i){ return '<a href="'+h[i]+'"'+(i===4?' class="sal"':'')+'>'+x+'</a>'; }).join("")+'</div></div>'; })()
       +'<button id="se-th" class="se-th" onclick="cambiarTema()" title="'+t.tema+'">'
       +(document.documentElement.getAttribute("data-theme")==="light"?"🌙":"☀️")+'</button>'
       +'<div class="se-lang"><button class="'+(lang==="es"?"on":"")+'" onclick="setLang(\'es\')">ES</button>'
