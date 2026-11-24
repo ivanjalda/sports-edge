@@ -475,7 +475,7 @@ function pintarPanel(){
     var dp=us.deportes||{}, ks=Object.keys(dp).sort(function(a,b){ return dp[b]-dp[a]; }), mx=ks.length?dp[ks[0]]:1;
     $("pn-deps").innerHTML=ks.length?ks.map(function(k){ var nm=(DEPS.filter(function(d){return d[0]===k;})[0]||[k,"🎯",k])[2]; return '<li style="display:block"><div style="display:flex;justify-content:space-between"><span>'+(ICO[k]||"🎯")+" "+esc(nm)+'</span><span>'+dp[k]+'</span></div><div class="pn-bar"><i style="width:'+Math.round(dp[k]/mx*100)+'%"></i></div></li>'; }).join(""):'<div class="vacio">Aún ningún usuario ha elegido deportes.</div>';
   } else {
-    $("pn-us").innerHTML='<div class="vacio">Los datos de usuarios aparecerán en menos de media hora (los calcula la tarea automática).</div>'; $("pn-us-n").textContent=""; $("pn-deps").innerHTML='<div class="vacio">—</div>';
+    $("pn-us").innerHTML='<div class="vacio">Los datos de usuarios aparecerán en cuanto termine la próxima tarea automática (Motor o Telegram).</div>'; $("pn-us-n").textContent=""; $("pn-deps").innerHTML='<div class="vacio">—</div>';
   }
   var R=D.rentabilidad||{}, vp=R.futbol_valor_prueba||{}, rg=R.futbol_regla||{}, rp=rg.prueba||{}, pub=R.valor_publico||{};
   function roi(x){ return x==null?"—":(x>0?"+":"")+(x*100).toFixed(1).replace(".",",")+" %"; }
