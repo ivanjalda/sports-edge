@@ -1043,7 +1043,18 @@
     }
    ],
    "datos_completos": true,
-   "resultado": null
+   "resultado": {
+    "ganador": "4585549",
+    "ganador_n": "Marco Penge",
+    "podio_n": [
+     "Marco Penge",
+     "Michael Thorbjornsen",
+     "Haotong Li"
+    ],
+    "acierto": false,
+    "p_ganador": 0.0037,
+    "podio_acertados": 0
+   }
   }
  ]
 }

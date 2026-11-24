@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-11-23 19:04 UTC",
+ "actualizado": "2026-11-24 06:22 UTC",
  "liga": "Euroliga",
  "datos_hasta": "2026-11-20T19:45:00Z",
- "dias_desde_datos": 2,
+ "dias_desde_datos": 3,
  "fuente": {
   "nombre": "Euroleague Basketball",
   "url": "https://www.euroleaguebasketball.net"
@@ -168,6 +168,75 @@
     6
    ],
    "creada": "2026-11-23 19:04 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_140",
+   "fecha": "2026-11-25T19:15:00Z",
+   "local": "Olympiacos Piraeus",
+   "visitante": "Hapoel IBI Tel Aviv",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8061,
+   "pv": 0.1939,
+   "elo_l": 1691,
+   "elo_v": 1544,
+   "bal_l": [
+    10,
+    3
+   ],
+   "bal_v": [
+    7,
+    6
+   ],
+   "creada": "2026-11-24 06:22 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_138",
+   "fecha": "2026-11-25T19:30:00Z",
+   "local": "Kosner Baskonia Vitoria-Gasteiz",
+   "visitante": "Anadolu Efes Istanbul",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4634,
+   "pv": 0.5366,
+   "elo_l": 1372,
+   "elo_v": 1498,
+   "bal_l": [
+    1,
+    12
+   ],
+   "bal_v": [
+    6,
+    7
+   ],
+   "creada": "2026-11-24 06:22 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "E2026_139",
+   "fecha": "2026-11-25T19:45:00Z",
+   "local": "Real Madrid",
+   "visitante": "Zalgiris Kaunas",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7242,
+   "pv": 0.2758,
+   "elo_l": 1619,
+   "elo_v": 1551,
+   "bal_l": [
+    7,
+    6
+   ],
+   "bal_v": [
+    8,
+    5
+   ],
+   "creada": "2026-11-24 06:22 UTC",
    "resultado": null,
    "marcador": null
   }
@@ -722,7 +791,7 @@
   }
  ],
  "directo": {
-  "total": 37,
+  "total": 40,
   "resueltas": 30,
   "aciertos": 20,
   "acierto": 0.6667,

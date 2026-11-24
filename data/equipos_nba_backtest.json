@@ -1,56 +1,56 @@
 {
- "actualizado": "2026-11-23 19:04 UTC",
+ "actualizado": "2026-11-24 06:22 UTC",
  "liga": "NBA",
  "desde": "20251021",
- "datos_hasta": "2026-11-23T01:30:00Z",
+ "datos_hasta": "2026-11-24T03:00:00Z",
  "total": {
-  "n": 1570,
-  "aciertos": 1076,
-  "acierto": 0.6854,
+  "n": 1580,
+  "aciertos": 1081,
+  "acierto": 0.6842,
   "ic": [
-   0.662,
-   0.7078
+   0.6608,
+   0.7066
   ],
-  "brier": 0.2075
+  "brier": 0.2079
  },
  "base_local": {
-  "n": 1570,
-  "acierto": 0.5497
+  "n": 1580,
+  "acierto": 0.5494
  },
  "base_balance": {
-  "n": 1388,
-  "acierto": 0.6715,
-  "nuestro": 0.6924
+  "n": 1398,
+  "acierto": 0.671,
+  "nuestro": 0.691
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 1109,
-   "conf": 0.7339,
-   "acierto": 0.7259,
+   "n": 1118,
+   "conf": 0.7344,
+   "acierto": 0.7245,
    "ic": [
-    0.6989,
-    0.7513
+    0.6976,
+    0.7499
    ]
   },
   {
    "min": 0.7,
-   "n": 645,
-   "conf": 0.7942,
-   "acierto": 0.7736,
+   "n": 653,
+   "conf": 0.7945,
+   "acierto": 0.7718,
    "ic": [
-    0.7398,
-    0.8043
+    0.7381,
+    0.8024
    ]
   },
   {
    "min": 0.8,
-   "n": 271,
-   "conf": 0.8582,
-   "acierto": 0.8487,
+   "n": 276,
+   "conf": 0.8581,
+   "acierto": 0.8478,
    "ic": [
-    0.8012,
-    0.8865
+    0.8007,
+    0.8854
    ]
   }
  ],
@@ -58,37 +58,37 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 461,
-   "prometido": 0.5471,
-   "real": 0.5879
+   "n": 462,
+   "prometido": 0.5472,
+   "real": 0.5866
   },
   {
    "desde": 60,
    "hasta": 70,
-   "n": 464,
-   "prometido": 0.65,
-   "real": 0.6595
+   "n": 465,
+   "prometido": 0.6499,
+   "real": 0.6581
   },
   {
    "desde": 70,
    "hasta": 80,
-   "n": 374,
+   "n": 377,
    "prometido": 0.7479,
-   "real": 0.7193
+   "real": 0.7162
   },
   {
    "desde": 80,
    "hasta": 90,
-   "n": 225,
-   "prometido": 0.8456,
-   "real": 0.8311
+   "n": 229,
+   "prometido": 0.8455,
+   "real": 0.8297
   },
   {
    "desde": 90,
    "hasta": 100,
-   "n": 46,
-   "prometido": 0.9198,
-   "real": 0.9348
+   "n": 47,
+   "prometido": 0.9195,
+   "real": 0.9362
   }
  ],
  "temporadas": {
@@ -103,26 +103,26 @@
    "brier": 0.2068
   },
   "2027": {
-   "n": 248,
-   "aciertos": 169,
-   "acierto": 0.6815,
+   "n": 258,
+   "aciertos": 174,
+   "acierto": 0.6744,
    "ic": [
-    0.6211,
-    0.7363
+    0.615,
+    0.7287
    ],
-   "brier": 0.211
+   "brier": 0.2135
   }
  },
  "fases": {
   "regular": {
-   "n": 1485,
-   "aciertos": 1022,
-   "acierto": 0.6882,
+   "n": 1495,
+   "aciertos": 1027,
+   "acierto": 0.687,
    "ic": [
-    0.6642,
-    0.7113
+    0.663,
+    0.71
    ],
-   "brier": 0.2066
+   "brier": 0.2071
   },
   "playoff": {
    "n": 85,
@@ -137,27 +137,117 @@
  },
  "elige": {
   "local": {
-   "n": 991,
-   "aciertos": 680,
-   "acierto": 0.6862,
+   "n": 997,
+   "aciertos": 683,
+   "acierto": 0.6851,
    "ic": [
-    0.6566,
-    0.7143
+    0.6556,
+    0.7131
    ],
-   "brier": 0.2082
+   "brier": 0.2084
   },
   "visitante": {
-   "n": 579,
-   "aciertos": 396,
-   "acierto": 0.6839,
+   "n": 583,
+   "aciertos": 398,
+   "acierto": 0.6827,
    "ic": [
-    0.645,
-    0.7205
+    0.6438,
+    0.7192
    ],
-   "brier": 0.2062
+   "brier": 0.207
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-24T03:00:00Z",
+   "local": "Sacramento Kings",
+   "visitante": "San Antonio Spurs",
+   "marcador": "107-123",
+   "fav": "San Antonio Spurs",
+   "pp": 0.8754,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-24T03:00:00Z",
+   "local": "Los Angeles Lakers",
+   "visitante": "Utah Jazz",
+   "marcador": "109-94",
+   "fav": "Los Angeles Lakers",
+   "pp": 0.905,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-24T01:30:00Z",
+   "local": "Houston Rockets",
+   "visitante": "LA Clippers",
+   "marcador": "116-104",
+   "fav": "Houston Rockets",
+   "pp": 0.8125,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-24T01:00:00Z",
+   "local": "New Orleans Pelicans",
+   "visitante": "Phoenix Suns",
+   "marcador": "119-123",
+   "fav": "Phoenix Suns",
+   "pp": 0.719,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-24T01:00:00Z",
+   "local": "Chicago Bulls",
+   "visitante": "Cleveland Cavaliers",
+   "marcador": "122-108",
+   "fav": "Cleveland Cavaliers",
+   "pp": 0.7417,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-24T00:30:00Z",
+   "local": "Minnesota Timberwolves",
+   "visitante": "Brooklyn Nets",
+   "marcador": "142-116",
+   "fav": "Minnesota Timberwolves",
+   "pp": 0.8655,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-24T00:30:00Z",
+   "local": "Toronto Raptors",
+   "visitante": "Milwaukee Bucks",
+   "marcador": "111-116",
+   "fav": "Toronto Raptors",
+   "pp": 0.7981,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-24T00:30:00Z",
+   "local": "Indiana Pacers",
+   "visitante": "Oklahoma City Thunder",
+   "marcador": "125-120",
+   "fav": "Oklahoma City Thunder",
+   "pp": 0.8089,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-24T00:00:00Z",
+   "local": "Philadelphia 76ers",
+   "visitante": "Portland Trail Blazers",
+   "marcador": "111-128",
+   "fav": "Philadelphia 76ers",
+   "pp": 0.6344,
+   "ok": false
+  },
+  {
+   "fecha": "2026-11-24T00:00:00Z",
+   "local": "Charlotte Hornets",
+   "visitante": "Memphis Grizzlies",
+   "marcador": "111-117",
+   "fav": "Charlotte Hornets",
+   "pp": 0.5932,
+   "ok": false
+  },
   {
    "fecha": "2026-11-23T01:30:00Z",
    "local": "Golden State Warriors",
@@ -254,7 +344,7 @@
    "visitante": "LA Clippers",
    "marcador": "110-100",
    "fav": "Dallas Mavericks",
-   "pp": 0.6168,
+   "pp": 0.6169,
    "ok": true
   },
   {
@@ -292,96 +382,6 @@
    "fav": "Denver Nuggets",
    "pp": 0.5285,
    "ok": true
-  },
-  {
-   "fecha": "2026-11-21T02:30:00Z",
-   "local": "Utah Jazz",
-   "visitante": "Phoenix Suns",
-   "marcador": "101-111",
-   "fav": "Phoenix Suns",
-   "pp": 0.6667,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-21T01:00:00Z",
-   "local": "Oklahoma City Thunder",
-   "visitante": "New Orleans Pelicans",
-   "marcador": "126-120",
-   "fav": "Oklahoma City Thunder",
-   "pp": 0.8835,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-21T01:00:00Z",
-   "local": "Chicago Bulls",
-   "visitante": "Washington Wizards",
-   "marcador": "94-98",
-   "fav": "Chicago Bulls",
-   "pp": 0.7178,
-   "ok": false
-  },
-  {
-   "fecha": "2026-11-21T00:30:00Z",
-   "local": "Detroit Pistons",
-   "visitante": "Toronto Raptors",
-   "marcador": "102-105",
-   "fav": "Detroit Pistons",
-   "pp": 0.7766,
-   "ok": false
-  },
-  {
-   "fecha": "2026-11-21T00:30:00Z",
-   "local": "Cleveland Cavaliers",
-   "visitante": "Indiana Pacers",
-   "marcador": "128-119",
-   "fav": "Cleveland Cavaliers",
-   "pp": 0.8114,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-21T00:30:00Z",
-   "local": "Brooklyn Nets",
-   "visitante": "Orlando Magic",
-   "marcador": "111-113",
-   "fav": "Orlando Magic",
-   "pp": 0.6919,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-21T00:00:00Z",
-   "local": "Atlanta Hawks",
-   "visitante": "Charlotte Hornets",
-   "marcador": "111-97",
-   "fav": "Atlanta Hawks",
-   "pp": 0.6384,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-20T01:00:00Z",
-   "local": "San Antonio Spurs",
-   "visitante": "LA Clippers",
-   "marcador": "124-112",
-   "fav": "San Antonio Spurs",
-   "pp": 0.8635,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-20T01:00:00Z",
-   "local": "Minnesota Timberwolves",
-   "visitante": "New York Knicks",
-   "marcador": "99-102",
-   "fav": "New York Knicks",
-   "pp": 0.5082,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-20T01:00:00Z",
-   "local": "Milwaukee Bucks",
-   "visitante": "Portland Trail Blazers",
-   "marcador": "114-124",
-   "fav": "Portland Trail Blazers",
-   "pp": 0.7794,
-   "ok": true
   }
  ],
  "motor": {
@@ -394,18 +394,18 @@
    "c_micro": 0.0,
    "c_sede": 0.0
   },
-  "sd": 16.052,
+  "sd": 16.047,
   "motor": {
-   "n": 1570,
-   "acierto": 0.6854,
-   "brier": 0.2075,
-   "logloss": 0.6025
+   "n": 1580,
+   "acierto": 0.6842,
+   "brier": 0.2079,
+   "logloss": 0.6034
   },
   "elo_basico": {
-   "n": 1570,
-   "acierto": 0.6713,
-   "brier": 0.212,
-   "logloss": 0.6144
+   "n": 1580,
+   "acierto": 0.6703,
+   "brier": 0.2124,
+   "logloss": 0.615
   },
   "escalas": {
    "temporada": true,
@@ -415,8 +415,8 @@
    "descanso": true
   },
   "local": {
-   "n": 1570,
-   "acierto": 0.5497
+   "n": 1580,
+   "acierto": 0.5494
   },
   "temporadas_prueba": [
    2026,

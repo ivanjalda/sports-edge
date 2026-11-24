@@ -8390,8 +8390,8 @@
    "local": "Brentford FC",
    "visitante": "Everton FC",
    "creada": "2026-11-17T01:29:34Z",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "1",
+   "marcador": "4-0",
    "p_local": 0.4497,
    "p_empate": 0.2838,
    "p_visitante": 0.2665,
@@ -8457,8 +8457,8 @@
    "local": "Levante UD",
    "visitante": "Elche CF",
    "creada": "2026-11-17T01:29:34Z",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "X",
+   "marcador": "1-1",
    "p_local": 0.4592,
    "p_empate": 0.2648,
    "p_visitante": 0.276,
@@ -8524,8 +8524,8 @@
    "local": "AC Monza",
    "visitante": "ACF Fiorentina",
    "creada": "2026-11-17T01:29:34Z",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "1",
+   "marcador": "3-0",
    "p_local": 0.2933,
    "p_empate": 0.2601,
    "p_visitante": 0.4466,
@@ -8591,8 +8591,8 @@
    "local": "SC Internacional",
    "visitante": "EC Vitória",
    "creada": "2026-11-17T01:29:34Z",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "2",
+   "marcador": "2-5",
    "p_local": 0.5272,
    "p_empate": 0.2792,
    "p_visitante": 0.1936,
@@ -8663,8 +8663,8 @@
    "local": "Botafogo FR",
    "visitante": "São Paulo FC",
    "creada": "2026-11-17T01:29:34Z",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "X",
+   "marcador": "1-1",
    "p_local": 0.483,
    "p_empate": 0.2872,
    "p_visitante": 0.2298,
@@ -8797,8 +8797,8 @@
    "local": "Gimnasia La Plata",
    "visitante": "Newell's Old Boys",
    "creada": "2026-11-17T01:29:34Z",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "1",
+   "marcador": "4-2",
    "p_local": 0.4925,
    "p_empate": 0.2993,
    "p_visitante": 0.2081,
@@ -15418,7 +15418,227 @@
     "X": 4.1,
     "2": 3.25
    }
+  },
+  {
+   "id": 564763,
+   "liga": "LaLiga",
+   "fecha": "2026-11-30T20:00:00Z",
+   "local": "RCD Espanyol de Barcelona",
+   "visitante": "Getafe CF",
+   "creada": "2026-11-24T06:17:36Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4407,
+   "p_empate": 0.3271,
+   "p_visitante": 0.2322,
+   "xg_local": 1.19,
+   "xg_visitante": 0.79,
+   "n_partidos": 127,
+   "mercados": {
+    "over15": 0.6035,
+    "over25": 0.3198,
+    "over35": 0.1406,
+    "btts": 0.3947,
+    "marcador": "1-0",
+    "p_marcador": 0.1507,
+    "ht_local": 0.3113,
+    "ht_empate": 0.4998,
+    "ht_visitante": 0.1889,
+    "ht_gol": 0.5794
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Roberto Fernández",
+      "g": 7,
+      "p": 0.4484
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Martin Satriano",
+      "g": 3,
+      "p": 0.2564
+     },
+     {
+      "n": "Enes Ünal",
+      "g": 2,
+      "p": 0.1792
+     }
+    ]
+   }
+  },
+  {
+   "id": 558510,
+   "liga": "Serie A",
+   "fecha": "2026-11-30T19:45:00Z",
+   "local": "Cagliari Calcio",
+   "visitante": "AC Milan",
+   "creada": "2026-11-24T06:17:36Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.2084,
+   "p_empate": 0.2657,
+   "p_visitante": 0.5259,
+   "xg_local": 0.98,
+   "xg_visitante": 1.68,
+   "n_partidos": 126,
+   "mercados": {
+    "over15": 0.7541,
+    "over25": 0.4946,
+    "over35": 0.2754,
+    "btts": 0.5184,
+    "marcador": "1-1",
+    "p_marcador": 0.1269,
+    "ht_local": 0.1922,
+    "ht_empate": 0.4219,
+    "ht_visitante": 0.386,
+    "ht_gol": 0.6833
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Daniel Maldini",
+      "g": 5,
+      "p": 0.3874
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Alphadjo Cisse",
+      "g": 6,
+      "p": 0.3023
+     },
+     {
+      "n": "Adrien Rabiot",
+      "g": 5,
+      "p": 0.2592
+     },
+     {
+      "n": "Christian Pulisic",
+      "g": 5,
+      "p": 0.2592
+     }
+    ]
+   }
+  },
+  {
+   "id": 567359,
+   "liga": "Primeira Liga",
+   "fecha": "2026-11-30T20:15:00Z",
+   "local": "Casa Pia AC",
+   "visitante": "Sporting Clube de Braga",
+   "creada": "2026-11-24T06:17:36Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.178,
+   "p_empate": 0.2607,
+   "p_visitante": 0.5613,
+   "xg_local": 0.87,
+   "xg_visitante": 1.71,
+   "n_partidos": 147,
+   "mercados": {
+    "over15": 0.7396,
+    "over25": 0.4759,
+    "over35": 0.2591,
+    "btts": 0.4867,
+    "marcador": "1-1",
+    "p_marcador": 0.124,
+    "ht_local": 0.1703,
+    "ht_empate": 0.424,
+    "ht_visitante": 0.4057,
+    "ht_gol": 0.6742
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Silvi",
+      "g": 2,
+      "p": 0.2517
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Pau Victor Delgado",
+      "g": 5,
+      "p": 0.482
+     },
+     {
+      "n": "Ricardo Horta",
+      "g": 2,
+      "p": 0.2313
+     }
+    ]
+   }
+  },
+  {
+   "id": 567360,
+   "liga": "Primeira Liga",
+   "fecha": "2026-11-30T20:15:00Z",
+   "local": "Sport Lisboa e Benfica",
+   "visitante": "FC Famalicão",
+   "creada": "2026-11-24T06:17:36Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.6757,
+   "p_empate": 0.211,
+   "p_visitante": 0.1133,
+   "xg_local": 2.09,
+   "xg_visitante": 0.75,
+   "n_partidos": 147,
+   "mercados": {
+    "over15": 0.785,
+    "over25": 0.5402,
+    "over35": 0.3171,
+    "btts": 0.4716,
+    "marcador": "2-0",
+    "p_marcador": 0.1276,
+    "ht_local": 0.488,
+    "ht_empate": 0.3834,
+    "ht_visitante": 0.1286,
+    "ht_gol": 0.7095
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Vangelis Pavlidis",
+      "g": 11,
+      "p": 0.5353
+     },
+     {
+      "n": "Gianluca Prestianni",
+      "g": 7,
+      "p": 0.3859
+     },
+     {
+      "n": "Leandro Barreiro Martins",
+      "g": 2,
+      "p": 0.1301
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Georgios Koutsias",
+      "g": 5,
+      "p": 0.2212
+     },
+     {
+      "n": "Marcos Vinicios",
+      "g": 2,
+      "p": 0.0952
+     },
+     {
+      "n": "Óscar Aranda",
+      "g": 2,
+      "p": 0.0952
+     }
+    ]
+   }
   }
  ],
- "actualizado": "2026-11-23 18:59 UTC"
+ "actualizado": "2026-11-24 06:17 UTC"
 }

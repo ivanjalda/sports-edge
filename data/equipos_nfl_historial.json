@@ -1320,8 +1320,8 @@
     2
    ],
    "creada": "2026-11-20 03:45 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "22-20",
    "cuota": {
     "mejor": {
      "V": {
@@ -1559,7 +1559,30 @@
     "L": 1.68,
     "V": 2.4
    }
+  },
+  {
+   "id": "401873083",
+   "fecha": "2026-11-27T20:00:00Z",
+   "local": "Pittsburgh Steelers",
+   "visitante": "Denver Broncos",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.3316,
+   "pv": 0.6684,
+   "elo_l": 1533,
+   "elo_v": 1684,
+   "bal_l": [
+    6,
+    4
+   ],
+   "bal_v": [
+    8,
+    2
+   ],
+   "creada": "2026-11-24 06:22 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-23 19:04 UTC"
+ "actualizado": "2026-11-24 06:22 UTC"
 }

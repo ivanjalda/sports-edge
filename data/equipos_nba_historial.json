@@ -4451,8 +4451,8 @@
     5
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "111-117",
    "cuota": {
     "mejor": {
      "L": {
@@ -4503,8 +4503,8 @@
     6
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "111-128",
    "cuota": {
     "mejor": {
      "L": {
@@ -4555,8 +4555,8 @@
     7
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "125-120",
    "cuota": {
     "mejor": {
      "L": {
@@ -4607,8 +4607,8 @@
     16
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "111-116",
    "cuota": {
     "mejor": {
      "V": {
@@ -4659,8 +4659,8 @@
     12
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "142-116",
    "cuota": {
     "mejor": {
      "V": {
@@ -4711,8 +4711,8 @@
     8
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "122-108",
    "cuota": {
     "mejor": {
      "L": {
@@ -4763,8 +4763,8 @@
     7
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "119-123",
    "cuota": {
     "mejor": {
      "L": {
@@ -4815,8 +4815,8 @@
     11
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "116-104",
    "cuota": {
     "mejor": {
      "L": {
@@ -4867,8 +4867,8 @@
     15
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "109-94",
    "cuota": {
     "mejor": {
      "L": {
@@ -4919,8 +4919,8 @@
     3
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "107-123",
    "cuota": {
     "mejor": {
      "L": {
@@ -5019,7 +5019,214 @@
    "creada": "2026-11-23 19:04 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401909317",
+   "fecha": "2026-11-25T22:00:00Z",
+   "local": "Philadelphia 76ers",
+   "visitante": "Miami Heat",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4762,
+   "pv": 0.5238,
+   "elo_l": 1547,
+   "elo_v": 1544,
+   "bal_l": [
+    14,
+    4
+   ],
+   "bal_v": [
+    10,
+    6
+   ],
+   "creada": "2026-11-24 06:22 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909318",
+   "fecha": "2026-11-26T00:00:00Z",
+   "local": "Charlotte Hornets",
+   "visitante": "Chicago Bulls",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6373,
+   "pv": 0.3627,
+   "elo_l": 1473,
+   "elo_v": 1414,
+   "bal_l": [
+    4,
+    12
+   ],
+   "bal_v": [
+    5,
+    12
+   ],
+   "creada": "2026-11-24 06:22 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909319",
+   "fecha": "2026-11-26T00:30:00Z",
+   "local": "New York Knicks",
+   "visitante": "Cleveland Cavaliers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7866,
+   "pv": 0.2134,
+   "elo_l": 1670,
+   "elo_v": 1553,
+   "bal_l": [
+    11,
+    6
+   ],
+   "bal_v": [
+    9,
+    9
+   ],
+   "creada": "2026-11-24 06:22 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909320",
+   "fecha": "2026-11-26T00:30:00Z",
+   "local": "Oklahoma City Thunder",
+   "visitante": "Minnesota Timberwolves",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6071,
+   "pv": 0.3929,
+   "elo_l": 1625,
+   "elo_v": 1600,
+   "bal_l": [
+    10,
+    8
+   ],
+   "bal_v": [
+    13,
+    5
+   ],
+   "creada": "2026-11-24 06:22 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909321",
+   "fecha": "2026-11-26T01:00:00Z",
+   "local": "Memphis Grizzlies",
+   "visitante": "LA Clippers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6516,
+   "pv": 0.3484,
+   "elo_l": 1482,
+   "elo_v": 1459,
+   "bal_l": [
+    13,
+    5
+   ],
+   "bal_v": [
+    4,
+    12
+   ],
+   "creada": "2026-11-24 06:22 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909322",
+   "fecha": "2026-11-26T01:00:00Z",
+   "local": "Milwaukee Bucks",
+   "visitante": "Brooklyn Nets",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.622,
+   "pv": 0.378,
+   "elo_l": 1352,
+   "elo_v": 1324,
+   "bal_l": [
+    2,
+    16
+   ],
+   "bal_v": [
+    3,
+    13
+   ],
+   "creada": "2026-11-24 06:22 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909323",
+   "fecha": "2026-11-26T01:30:00Z",
+   "local": "Houston Rockets",
+   "visitante": "Phoenix Suns",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6787,
+   "pv": 0.3213,
+   "elo_l": 1605,
+   "elo_v": 1532,
+   "bal_l": [
+    13,
+    5
+   ],
+   "bal_v": [
+    9,
+    7
+   ],
+   "creada": "2026-11-24 06:22 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909324",
+   "fecha": "2026-11-26T03:00:00Z",
+   "local": "Golden State Warriors",
+   "visitante": "Sacramento Kings",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8152,
+   "pv": 0.1848,
+   "elo_l": 1483,
+   "elo_v": 1335,
+   "bal_l": [
+    9,
+    8
+   ],
+   "bal_v": [
+    2,
+    15
+   ],
+   "creada": "2026-11-24 06:22 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909325",
+   "fecha": "2026-11-26T03:00:00Z",
+   "local": "Portland Trail Blazers",
+   "visitante": "San Antonio Spurs",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.3752,
+   "pv": 0.6248,
+   "elo_l": 1571,
+   "elo_v": 1697,
+   "bal_l": [
+    11,
+    6
+   ],
+   "bal_v": [
+    15,
+    3
+   ],
+   "creada": "2026-11-24 06:22 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-23 19:04 UTC"
+ "actualizado": "2026-11-24 06:22 UTC"
 }
