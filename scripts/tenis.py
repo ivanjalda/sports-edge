@@ -712,6 +712,13 @@ def main():
         sin_datos, torneos, consultado = captar(elo, idx, lista, ahora, stamp)
     liq = liquidar(lista, rows, ahora)
     liq += liquidar_espn(lista, ahora)
+    # Partidos que nunca tuvieron resultado oficial (aplazados, retirados antes de empezar...):
+    # tras 7 dias se marcan como "sin resultado" y no cuentan ni como acierto ni como fallo.
+    for p in lista:
+        if p.get("resultado") is None and not p.get("anulado") and parse_iso(p["fecha"]) < ahora - timedelta(days=7):
+            p["anulado"] = True
+        elif p.get("resultado") is not None and p.get("anulado"):
+            p.pop("anulado", None)   # si al final llego el resultado oficial, cuenta normal
     if liq:
         print("Resultados de tenis anotados: %d" % liq)
     hist["predicciones"] = lista

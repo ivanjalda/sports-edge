@@ -190,7 +190,7 @@ def revisar_historial(datos):
         if cambiadas:
             error("%s: se han modificado %d predicciones ya resueltas (ej. %s). El historial no se puede tocar." % (nom, len(cambiadas), cambiadas[0]))
         for k, p in ids.items():
-            if p.get("resultado"):
+            if p.get("resultado") or p.get("anulado"):
                 continue
             f = fecha(p.get("fecha"))
             if f is None:
@@ -241,6 +241,8 @@ def revisar_web():
     usados = set()
     for pg in paginas:
         txt = open(pg, encoding="utf-8").read()
+        if 'http-equiv="refresh"' in txt or "http-equiv='refresh'" in txt:
+            continue   # pagina que solo redirige a otra (por ejemplo privacidad.html -> legal.html)
         for f in re.findall(r'data/([a-z0-9_]+\.json)', txt):
             usados.add(f)
             if not os.path.exists(os.path.join(DATA, f)):

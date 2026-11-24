@@ -434,6 +434,14 @@ def subir(msg):
         git("add", os.path.join(DATA, "asistente.json"))
     except Exception as ex:
         print("Aviso: asistente no actualizado: %s" % ex)
+    # panel privado del administrador ("Mi cuenta"): como mucho cada 30 minutos
+    try:
+        import subprocess
+        subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "panel_admin.py")],
+                       timeout=180, env=dict(os.environ, PANEL_CADA_MIN="30"))
+        git("add", os.path.join(DATA, "panel.json"))
+    except Exception as ex:
+        print("Aviso: panel no actualizado: %s" % ex)
     git("add", os.path.join(DATA, ESTADO))
     if git("diff", "--cached", "--quiet"):
         return
