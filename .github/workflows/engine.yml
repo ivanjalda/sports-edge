@@ -92,7 +92,7 @@ jobs:
           git add data
           git diff --cached --quiet && exit 0
           git commit -m "Actualizar datos"
-          for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 10; done
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; git rebase --abort 2>/dev/null; sleep 10; done
           exit 1
 
       # Los mensajes de Telegram (pronosticos, resultados y balance) los manda el vigilante
