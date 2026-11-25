@@ -9406,8 +9406,8 @@
    "local": "San Jose Earthquakes",
    "visitante": "Houston Dynamo FC",
    "creada": "2026-11-18T03:49:11Z",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "1",
+   "marcador": "2-1",
    "p_local": 0.4254,
    "p_empate": 0.2777,
    "p_visitante": 0.2969,
@@ -15751,7 +15751,65 @@
      }
     ]
    }
+  },
+  {
+   "id": "espn-401936413",
+   "liga": "Liga Profesional",
+   "fecha": "2026-11-29T20:00:00Z",
+   "local": "Instituto (Córdoba)",
+   "visitante": "River Plate",
+   "creada": "2026-11-25T17:49:36Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.3143,
+   "p_empate": 0.3061,
+   "p_visitante": 0.3796,
+   "xg_local": 1.1,
+   "xg_visitante": 1.24,
+   "n_partidos": 148,
+   "mercados": {
+    "over15": 0.6919,
+    "over25": 0.4152,
+    "over35": 0.2093,
+    "btts": 0.4879,
+    "marcador": "1-1",
+    "p_marcador": 0.1445,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE"
+  },
+  {
+   "id": "espn-401936373",
+   "liga": "Liga Profesional",
+   "fecha": "2026-11-29T20:00:00Z",
+   "local": "Rosario Central",
+   "visitante": "Barracas Central",
+   "creada": "2026-11-25T17:49:36Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.5436,
+   "p_empate": 0.2925,
+   "p_visitante": 0.1639,
+   "xg_local": 1.44,
+   "xg_visitante": 0.68,
+   "n_partidos": 192,
+   "mercados": {
+    "over15": 0.6385,
+    "over25": 0.3571,
+    "over35": 0.1661,
+    "btts": 0.389,
+    "marcador": "1-0",
+    "p_marcador": 0.1608,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE"
   }
  ],
- "actualizado": "2026-11-25 04:59 UTC"
+ "actualizado": "2026-11-25 17:49 UTC"
 }

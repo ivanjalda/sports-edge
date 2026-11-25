@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-11-25 05:04 UTC",
+ "actualizado": "2026-11-25 17:54 UTC",
  "liga": "NBA",
- "datos_hasta": "2026-11-25T01:00:00Z",
+ "datos_hasta": "2026-11-25T03:00:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
@@ -10,58 +10,6 @@
  "con_cuotas": true,
  "proximo": "2026-11-25T22:00:00Z",
  "predicciones": [
-  {
-   "id": "401909316",
-   "fecha": "2026-11-25T03:00:00Z",
-   "local": "Denver Nuggets",
-   "visitante": "Dallas Mavericks",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.755,
-   "pv": 0.245,
-   "elo_l": 1584,
-   "elo_v": 1455,
-   "bal_l": [
-    10,
-    5
-   ],
-   "bal_v": [
-    10,
-    7
-   ],
-   "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 3.6,
-      "casa": "Everygame"
-     },
-     "L": {
-      "c": 1.38,
-      "casa": "Betfair"
-     }
-    },
-    "mercado": {
-     "L": 0.72,
-     "V": 0.28
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.0419,
-     "V": -0.118
-    },
-    "valor": [],
-    "actualizado": "2026-11-24 20:20 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-24 18:45 UTC",
-    "valor": [],
-    "L": 1.37,
-    "V": 3.6
-   }
-  },
   {
    "id": "401909317",
    "fecha": "2026-11-25T22:00:00Z",
@@ -87,25 +35,25 @@
    "cuota": {
     "mejor": {
      "V": {
-      "c": 2.3,
-      "casa": "Marathon Bet"
+      "c": 2.08,
+      "casa": "Betfair"
      },
      "L": {
-      "c": 1.69,
+      "c": 1.9,
       "casa": "Betfair"
      }
     },
     "mercado": {
-     "L": 0.5704,
-     "V": 0.4296
+     "L": 0.5241,
+     "V": 0.4759
     },
-    "casas": 18,
+    "casas": 22,
     "ev": {
-     "L": -0.1952,
-     "V": 0.2047
+     "L": -0.0952,
+     "V": 0.0895
     },
     "valor": [],
-    "actualizado": "2026-11-24 20:20 UTC"
+    "actualizado": "2026-11-25 17:54 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-24 18:45 UTC",
@@ -135,7 +83,36 @@
    ],
    "creada": "2026-11-24 06:22 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.67,
+      "casa": "Betfair"
+     },
+     "V": {
+      "c": 2.45,
+      "casa": "Everygame"
+     }
+    },
+    "mercado": {
+     "L": 0.5914,
+     "V": 0.4086
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.0643,
+     "V": -0.1114
+    },
+    "valor": [],
+    "actualizado": "2026-11-25 17:54 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-25 17:54 UTC",
+    "valor": [],
+    "L": 1.67,
+    "V": 2.45
+   }
   },
   {
    "id": "401909319",
@@ -162,25 +139,25 @@
    "cuota": {
     "mejor": {
      "V": {
-      "c": 2.88,
-      "casa": "1xBet"
+      "c": 2.35,
+      "casa": "Everygame"
      },
      "L": {
-      "c": 1.48,
-      "casa": "Betfair"
+      "c": 1.85,
+      "casa": "Unibet (NL)"
      }
     },
     "mercado": {
-     "L": 0.6531,
-     "V": 0.3469
+     "L": 0.5434,
+     "V": 0.4566
     },
-    "casas": 17,
+    "casas": 23,
     "ev": {
-     "L": 0.1642,
-     "V": -0.3854
+     "L": 0.4552,
+     "V": -0.4985
     },
     "valor": [],
-    "actualizado": "2026-11-24 20:20 UTC"
+    "actualizado": "2026-11-25 17:54 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-24 18:45 UTC",
@@ -214,25 +191,25 @@
    "cuota": {
     "mejor": {
      "V": {
-      "c": 2.17,
-      "casa": "Unibet (NL)"
+      "c": 2.16,
+      "casa": "Betfair"
      },
      "L": {
-      "c": 1.75,
-      "casa": "1xBet"
+      "c": 1.84,
+      "casa": "Betfair"
      }
     },
     "mercado": {
-     "L": 0.5574,
-     "V": 0.4426
+     "L": 0.5312,
+     "V": 0.4688
     },
-    "casas": 17,
+    "casas": 23,
     "ev": {
-     "L": 0.0624,
-     "V": -0.1474
+     "L": 0.1171,
+     "V": -0.1513
     },
     "valor": [],
-    "actualizado": "2026-11-24 20:20 UTC"
+    "actualizado": "2026-11-25 17:54 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-24 18:45 UTC",
@@ -262,7 +239,36 @@
    ],
    "creada": "2026-11-24 06:22 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 3.3,
+      "casa": "Pinnacle"
+     },
+     "L": {
+      "c": 1.42,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "L": 0.6978,
+     "V": 0.3022
+    },
+    "casas": 23,
+    "ev": {
+     "L": -0.0747,
+     "V": 0.1497
+    },
+    "valor": [],
+    "actualizado": "2026-11-25 17:54 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-25 17:54 UTC",
+    "valor": [],
+    "L": 1.42,
+    "V": 3.3
+   }
   },
   {
    "id": "401909322",
@@ -285,7 +291,36 @@
    ],
    "creada": "2026-11-24 06:22 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 2.09,
+      "casa": "Marathon Bet"
+     },
+     "L": {
+      "c": 1.89,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "L": 0.5228,
+     "V": 0.4772
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.1756,
+     "V": -0.21
+    },
+    "valor": [],
+    "actualizado": "2026-11-25 17:54 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-25 17:54 UTC",
+    "valor": [],
+    "L": 1.89,
+    "V": 2.09
+   }
   },
   {
    "id": "401909323",
@@ -312,25 +347,25 @@
    "cuota": {
     "mejor": {
      "L": {
-      "c": 1.26,
+      "c": 1.29,
       "casa": "Betfair"
      },
      "V": {
-      "c": 4.35,
-      "casa": "GTbets"
+      "c": 4.34,
+      "casa": "1xBet"
      }
     },
     "mercado": {
-     "L": 0.763,
-     "V": 0.237
+     "L": 0.7607,
+     "V": 0.2393
     },
-    "casas": 17,
+    "casas": 23,
     "ev": {
-     "L": -0.1448,
-     "V": 0.3977
+     "L": -0.1245,
+     "V": 0.3944
     },
     "valor": [],
-    "actualizado": "2026-11-24 20:20 UTC"
+    "actualizado": "2026-11-25 17:54 UTC"
    },
    "cuota_guardada": {
     "fecha": "2026-11-24 18:45 UTC",
@@ -360,7 +395,36 @@
    ],
    "creada": "2026-11-24 06:22 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 1.41,
+      "casa": "Unibet (SE)"
+     },
+     "V": {
+      "c": 3.3,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "L": 0.6915,
+     "V": 0.3085
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.1494,
+     "V": -0.3902
+    },
+    "valor": [],
+    "actualizado": "2026-11-25 17:54 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-25 17:54 UTC",
+    "valor": [],
+    "L": 1.41,
+    "V": 3.3
+   }
   },
   {
    "id": "401909325",
@@ -383,10 +447,91 @@
    ],
    "creada": "2026-11-24 06:22 UTC",
    "resultado": null,
-   "marcador": null
+   "marcador": null,
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 2.38,
+      "casa": "Betfair"
+     },
+     "V": {
+      "c": 1.72,
+      "casa": "Winamax (DE)"
+     }
+    },
+    "mercado": {
+     "L": 0.4322,
+     "V": 0.5678
+    },
+    "casas": 23,
+    "ev": {
+     "L": -0.107,
+     "V": 0.0747
+    },
+    "valor": [],
+    "actualizado": "2026-11-25 17:54 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-25 17:54 UTC",
+    "valor": [],
+    "L": 2.38,
+    "V": 1.72
+   }
   }
  ],
  "recientes": [
+  {
+   "id": "401909316",
+   "fecha": "2026-11-25T03:00:00Z",
+   "local": "Denver Nuggets",
+   "visitante": "Dallas Mavericks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.755,
+   "pv": 0.245,
+   "elo_l": 1584,
+   "elo_v": 1455,
+   "bal_l": [
+    10,
+    5
+   ],
+   "bal_v": [
+    10,
+    7
+   ],
+   "creada": "2026-11-23 19:04 UTC",
+   "resultado": "V",
+   "marcador": "101-120",
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 3.6,
+      "casa": "Everygame"
+     },
+     "L": {
+      "c": 1.38,
+      "casa": "Betfair"
+     }
+    },
+    "mercado": {
+     "L": 0.72,
+     "V": 0.28
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.0419,
+     "V": -0.118
+    },
+    "valor": [],
+    "actualizado": "2026-11-24 20:20 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-24 18:45 UTC",
+    "valor": [],
+    "L": 1.37,
+    "V": 3.6
+   }
+  },
   {
    "id": "401909315",
    "fecha": "2026-11-25T01:00:00Z",
@@ -1171,70 +1316,18 @@
    "creada": "2026-11-21 15:11 UTC",
    "resultado": "L",
    "marcador": "107-97"
-  },
-  {
-   "id": "401910028",
-   "fecha": "2026-11-22T03:00:00Z",
-   "local": "Sacramento Kings",
-   "visitante": "Boston Celtics",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.1604,
-   "pv": 0.8396,
-   "elo_l": 1332,
-   "elo_v": 1636,
-   "bal_l": [
-    1,
-    13
-   ],
-   "bal_v": [
-    11,
-    4
-   ],
-   "creada": "2026-11-20 03:45 UTC",
-   "resultado": "L",
-   "marcador": "97-96",
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 1.16,
-      "casa": "Betfair"
-     },
-     "L": {
-      "c": 7.2,
-      "casa": "Matchbook"
-     }
-    },
-    "mercado": {
-     "L": 0.1515,
-     "V": 0.8485
-    },
-    "casas": 25,
-    "ev": {
-     "L": 0.1549,
-     "V": -0.0261
-    },
-    "valor": [],
-    "actualizado": "2026-11-21 15:11 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-21 15:11 UTC",
-    "valor": [],
-    "L": 7.2,
-    "V": 1.16
-   }
   }
  ],
  "directo": {
   "total": 110,
-  "resueltas": 100,
+  "resueltas": 101,
   "aciertos": 66,
-  "acierto": 0.66,
+  "acierto": 0.6535,
   "ic": [
-   0.5628,
-   0.7454
+   0.5566,
+   0.7391
   ],
-  "brier": 0.2242,
+  "brier": 0.2276,
   "apuestas": 18,
   "ganadas": 7,
   "roi": -0.205
@@ -1289,15 +1382,15 @@
    "p": 3
   },
   {
-   "equipo": "Denver Nuggets",
-   "elo": 1584,
-   "g": 10,
-   "p": 5
-  },
-  {
    "equipo": "Portland Trail Blazers",
    "elo": 1571,
    "g": 11,
+   "p": 6
+  },
+  {
+   "equipo": "Denver Nuggets",
+   "elo": 1564,
+   "g": 10,
    "p": 6
   },
   {
@@ -1355,6 +1448,12 @@
    "p": 5
   },
   {
+   "equipo": "Dallas Mavericks",
+   "elo": 1474,
+   "g": 11,
+   "p": 7
+  },
+  {
    "equipo": "Charlotte Hornets",
    "elo": 1473,
    "g": 4,
@@ -1365,12 +1464,6 @@
    "elo": 1459,
    "g": 4,
    "p": 12
-  },
-  {
-   "equipo": "Dallas Mavericks",
-   "elo": 1455,
-   "g": 10,
-   "p": 7
   },
   {
    "equipo": "Chicago Bulls",
