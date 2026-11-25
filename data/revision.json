@@ -1,12 +1,14 @@
 {
- "fecha": "2026-11-25 05:06 UTC",
- "estado": "ok",
+ "fecha": "2026-11-25 17:57 UTC",
+ "estado": "aviso",
  "errores": [],
- "avisos": [],
+ "avisos": [
+  "carreras_motogp_historial.json: Grand Prix of Portugal -  se jugo hace 3 dias y aun no tiene resultado."
+ ],
  "bien": [
   "109 archivos de datos leidos sin problemas",
-  "349 probabilidades publicadas revisadas",
-  "1852 predicciones resueltas del historial publico comprobadas (ninguna borrada ni cambiada)",
+  "353 probabilidades publicadas revisadas",
+  "1861 predicciones resueltas del historial publico comprobadas (ninguna borrada ni cambiada)",
   "vigilante de Telegram revisado",
   "web publicada respondiendo",
   "13 paginas, el menu y los archivos que usan revisados",
