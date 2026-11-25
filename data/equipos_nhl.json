@@ -1,67 +1,15 @@
 {
- "actualizado": "2026-11-24 20:20 UTC",
+ "actualizado": "2026-11-25 05:04 UTC",
  "liga": "NHL",
- "datos_hasta": "2026-11-24T03:00:00Z",
+ "datos_hasta": "2026-11-25T01:00:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": true,
- "proximo": "2026-11-25T01:00:00Z",
+ "proximo": "2026-11-26T00:00:00Z",
  "predicciones": [
-  {
-   "id": "401892780",
-   "fecha": "2026-11-25T01:00:00Z",
-   "local": "Edmonton Oilers",
-   "visitante": "Vegas Golden Knights",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5661,
-   "pv": 0.4339,
-   "elo_l": 1547,
-   "elo_v": 1530,
-   "bal_l": [
-    17,
-    8
-   ],
-   "bal_v": [
-    13,
-    11
-   ],
-   "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "L": {
-      "c": 2.6,
-      "casa": "1xBet"
-     },
-     "V": {
-      "c": 2.43,
-      "casa": "LeoVegas (SE)"
-     }
-    },
-    "mercado": {
-     "L": 0.4791,
-     "V": 0.5209
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.4719,
-     "V": 0.0544
-    },
-    "valor": [],
-    "actualizado": "2026-11-24 20:20 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-23 19:04 UTC",
-    "valor": [],
-    "L": 2.6,
-    "V": 2.48
-   }
-  },
   {
    "id": "401892781",
    "fecha": "2026-11-26T00:00:00Z",
@@ -792,6 +740,58 @@
   }
  ],
  "recientes": [
+  {
+   "id": "401892780",
+   "fecha": "2026-11-25T01:00:00Z",
+   "local": "Edmonton Oilers",
+   "visitante": "Vegas Golden Knights",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5661,
+   "pv": 0.4339,
+   "elo_l": 1547,
+   "elo_v": 1530,
+   "bal_l": [
+    17,
+    8
+   ],
+   "bal_v": [
+    13,
+    11
+   ],
+   "creada": "2026-11-23 19:04 UTC",
+   "resultado": "V",
+   "marcador": "3-5",
+   "cuota": {
+    "mejor": {
+     "L": {
+      "c": 2.6,
+      "casa": "1xBet"
+     },
+     "V": {
+      "c": 2.43,
+      "casa": "LeoVegas (SE)"
+     }
+    },
+    "mercado": {
+     "L": 0.4791,
+     "V": 0.5209
+    },
+    "casas": 23,
+    "ev": {
+     "L": 0.4719,
+     "V": 0.0544
+    },
+    "valor": [],
+    "actualizado": "2026-11-24 20:20 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-23 19:04 UTC",
+    "valor": [],
+    "L": 2.6,
+    "V": 2.48
+   }
+  },
   {
    "id": "401892779",
    "fecha": "2026-11-24T03:00:00Z",
@@ -1634,70 +1634,18 @@
     "L": 2.13,
     "V": 3.06
    }
-  },
-  {
-   "id": "401892762",
-   "fecha": "2026-11-22T00:00:00Z",
-   "local": "Detroit Red Wings",
-   "visitante": "New York Islanders",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5752,
-   "pv": 0.4248,
-   "elo_l": 1481,
-   "elo_v": 1498,
-   "bal_l": [
-    8,
-    14
-   ],
-   "bal_v": [
-    10,
-    10
-   ],
-   "creada": "2026-11-20 03:45 UTC",
-   "resultado": "V",
-   "marcador": "2-3",
-   "cuota": {
-    "mejor": {
-     "L": {
-      "c": 2.75,
-      "casa": "LeoVegas (SE)"
-     },
-     "V": {
-      "c": 2.35,
-      "casa": "Coolbet"
-     }
-    },
-    "mercado": {
-     "L": 0.4671,
-     "V": 0.5329
-    },
-    "casas": 23,
-    "ev": {
-     "L": 0.5818,
-     "V": -0.0017
-    },
-    "valor": [],
-    "actualizado": "2026-11-21 15:11 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-20 16:01 UTC",
-    "valor": [],
-    "L": 2.65,
-    "V": 2.51
-   }
   }
  ],
  "directo": {
   "total": 107,
-  "resueltas": 92,
+  "resueltas": 93,
   "aciertos": 45,
-  "acierto": 0.4891,
+  "acierto": 0.4839,
   "ic": [
-   0.3895,
-   0.5896
+   0.385,
+   0.584
   ],
-  "brier": 0.2615,
+  "brier": 0.2621,
   "apuestas": 17,
   "ganadas": 5,
   "roi": -0.2582
@@ -1728,16 +1676,16 @@
    "p": 8
   },
   {
-   "equipo": "Edmonton Oilers",
-   "elo": 1547,
-   "g": 17,
-   "p": 8
-  },
-  {
    "equipo": "Dallas Stars",
    "elo": 1544,
    "g": 15,
    "p": 8
+  },
+  {
+   "equipo": "Edmonton Oilers",
+   "elo": 1542,
+   "g": 17,
+   "p": 9
   },
   {
    "equipo": "Ottawa Senators",
@@ -1746,14 +1694,14 @@
    "p": 9
   },
   {
-   "equipo": "Montreal Canadiens",
+   "equipo": "Vegas Golden Knights",
    "elo": 1535,
-   "g": 13,
+   "g": 14,
    "p": 11
   },
   {
-   "equipo": "Vegas Golden Knights",
-   "elo": 1530,
+   "equipo": "Montreal Canadiens",
+   "elo": 1535,
    "g": 13,
    "p": 11
   },

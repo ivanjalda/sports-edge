@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-11-24 20:19 UTC",
+ "actualizado": "2026-11-25 05:04 UTC",
  "desde": 20250101,
  "datos_hasta": 20261122,
- "dias_desde_datos": 2,
+ "dias_desde_datos": 3,
  "fuentes": {
   "ATP": {
    "nombre": "TennisMyLife",
@@ -16,48 +16,48 @@
   }
  },
  "total": {
-  "n": 9275,
-  "aciertos": 5930,
-  "acierto": 0.6394,
+  "n": 9290,
+  "aciertos": 5945,
+  "acierto": 0.6399,
   "ic": [
-   0.6295,
-   0.6491
+   0.6301,
+   0.6496
   ],
-  "brier": 0.2198,
+  "brier": 0.2196,
   "brier_azar": 0.25,
-  "n_ranking": 9261,
-  "acierto_mismo_grupo": 0.6395,
-  "mejor_ranking": 0.6327
+  "n_ranking": 9276,
+  "acierto_mismo_grupo": 0.64,
+  "mejor_ranking": 0.633
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 6460,
-   "conf": 0.7385,
-   "acierto": 0.6921,
+   "n": 6472,
+   "conf": 0.7384,
+   "acierto": 0.6927,
    "ic": [
-    0.6807,
-    0.7032
+    0.6813,
+    0.7038
    ]
   },
   {
    "min": 0.7,
-   "n": 3815,
-   "conf": 0.8007,
-   "acierto": 0.7515,
+   "n": 3821,
+   "conf": 0.8008,
+   "acierto": 0.7519,
    "ic": [
-    0.7375,
-    0.765
+    0.738,
+    0.7653
    ]
   },
   {
    "min": 0.8,
-   "n": 1689,
+   "n": 1693,
    "conf": 0.8668,
-   "acierto": 0.8153,
+   "acierto": 0.8157,
    "ic": [
-    0.7961,
-    0.8331
+    0.7965,
+    0.8335
    ]
   }
  ],
@@ -65,53 +65,53 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 2815,
+   "n": 2818,
    "prometido": 0.5494,
-   "real": 0.5183
+   "real": 0.5188
   },
   {
    "desde": 60,
    "hasta": 70,
-   "n": 2645,
+   "n": 2651,
    "prometido": 0.6486,
-   "real": 0.6064
+   "real": 0.6073
   },
   {
    "desde": 70,
    "hasta": 80,
-   "n": 2126,
+   "n": 2128,
    "prometido": 0.7482,
-   "real": 0.7008
+   "real": 0.7011
   },
   {
    "desde": 80,
    "hasta": 90,
-   "n": 1256,
+   "n": 1259,
    "prometido": 0.8443,
-   "real": 0.7898
+   "real": 0.7903
   },
   {
    "desde": 90,
    "hasta": 100,
-   "n": 433,
+   "n": 434,
    "prometido": 0.9322,
-   "real": 0.8891
+   "real": 0.8894
   }
  ],
  "superficies": {
   "Hard": {
-   "n": 5780,
-   "aciertos": 3722,
-   "acierto": 0.6439,
+   "n": 5795,
+   "aciertos": 3737,
+   "acierto": 0.6449,
    "ic": [
-    0.6315,
-    0.6562
+    0.6325,
+    0.6571
    ],
-   "brier": 0.2191,
+   "brier": 0.2189,
    "brier_azar": 0.25,
-   "n_ranking": 5770,
-   "acierto_mismo_grupo": 0.644,
-   "mejor_ranking": 0.627
+   "n_ranking": 5785,
+   "acierto_mismo_grupo": 0.6449,
+   "mejor_ranking": 0.6277
   },
   "Clay": {
    "n": 2403,
@@ -144,18 +144,18 @@
  },
  "circuitos": {
   "ATP": {
-   "n": 4850,
-   "aciertos": 3079,
-   "acierto": 0.6348,
+   "n": 4865,
+   "aciertos": 3094,
+   "acierto": 0.636,
    "ic": [
-    0.6212,
-    0.6483
+    0.6223,
+    0.6494
    ],
-   "brier": 0.2217,
+   "brier": 0.2213,
    "brier_azar": 0.25,
-   "n_ranking": 4848,
-   "acierto_mismo_grupo": 0.6347,
-   "mejor_ranking": 0.6347
+   "n_ranking": 4863,
+   "acierto_mismo_grupo": 0.6358,
+   "mejor_ranking": 0.6354
   },
   "WTA": {
    "n": 4425,
@@ -175,6 +175,18 @@
  "ejemplos": [
   {
    "fecha": 20261122,
+   "tour": "ATP",
+   "torneo": "ATP Finals",
+   "sup": "Hard",
+   "ganador": "Carlos Alcaraz",
+   "perdedor": "Alexander Zverev",
+   "marcador": "6-2 7-6(7)",
+   "fav": "Carlos Alcaraz",
+   "pp": 0.735,
+   "ok": true
+  },
+  {
+   "fecha": 20261122,
    "tour": "WTA",
    "torneo": "Billie Jean King Cup play-offs: Australia vs. France",
    "sup": "Clay",
@@ -183,6 +195,30 @@
    "marcador": "6-1 6-3",
    "fav": "Maya Joint",
    "pp": 0.7042,
+   "ok": true
+  },
+  {
+   "fecha": 20261121,
+   "tour": "ATP",
+   "torneo": "ATP Finals",
+   "sup": "Hard",
+   "ganador": "Alexander Zverev",
+   "perdedor": "Daniil Medvedev",
+   "marcador": "7-6(0) 6-4",
+   "fav": "Alexander Zverev",
+   "pp": 0.6299,
+   "ok": true
+  },
+  {
+   "fecha": 20261121,
+   "tour": "ATP",
+   "torneo": "ATP Finals",
+   "sup": "Hard",
+   "ganador": "Carlos Alcaraz",
+   "perdedor": "Ben Shelton",
+   "marcador": "3-6 6-3 7-6(1)",
+   "fav": "Carlos Alcaraz",
+   "pp": 0.8295,
    "ok": true
   },
   {
@@ -258,6 +294,150 @@
    "ok": true
   },
   {
+   "fecha": 20261120,
+   "tour": "ATP",
+   "torneo": "ATP Finals",
+   "sup": "Hard",
+   "ganador": "Daniil Medvedev",
+   "perdedor": "Frances Tiafoe",
+   "marcador": "6-3 6-4",
+   "fav": "Daniil Medvedev",
+   "pp": 0.6063,
+   "ok": true
+  },
+  {
+   "fecha": 20261120,
+   "tour": "ATP",
+   "torneo": "ATP Finals",
+   "sup": "Hard",
+   "ganador": "Carlos Alcaraz",
+   "perdedor": "Flavio Cobolli",
+   "marcador": "6-4 6-1",
+   "fav": "Carlos Alcaraz",
+   "pp": 0.9311,
+   "ok": true
+  },
+  {
+   "fecha": 20261119,
+   "tour": "ATP",
+   "torneo": "ATP Finals",
+   "sup": "Hard",
+   "ganador": "Alexander Zverev",
+   "perdedor": "Arthur Fils",
+   "marcador": "6-4 7-6(6)",
+   "fav": "Alexander Zverev",
+   "pp": 0.6591,
+   "ok": true
+  },
+  {
+   "fecha": 20261119,
+   "tour": "ATP",
+   "torneo": "ATP Finals",
+   "sup": "Hard",
+   "ganador": "Ben Shelton",
+   "perdedor": "Rafael Jodar",
+   "marcador": "7-6(8) 7-5",
+   "fav": "Ben Shelton",
+   "pp": 0.5967,
+   "ok": true
+  },
+  {
+   "fecha": 20261118,
+   "tour": "ATP",
+   "torneo": "ATP Finals",
+   "sup": "Hard",
+   "ganador": "Frances Tiafoe",
+   "perdedor": "Flavio Cobolli",
+   "marcador": "7-6(6) 6-0",
+   "fav": "Frances Tiafoe",
+   "pp": 0.6095,
+   "ok": true
+  },
+  {
+   "fecha": 20261118,
+   "tour": "ATP",
+   "torneo": "ATP Finals",
+   "sup": "Hard",
+   "ganador": "Carlos Alcaraz",
+   "perdedor": "Daniil Medvedev",
+   "marcador": "6-2 6-4",
+   "fav": "Carlos Alcaraz",
+   "pp": 0.8265,
+   "ok": true
+  },
+  {
+   "fecha": 20261117,
+   "tour": "ATP",
+   "torneo": "ATP Finals",
+   "sup": "Hard",
+   "ganador": "Alexander Zverev",
+   "perdedor": "Ben Shelton",
+   "marcador": "6-2 7-6(4)",
+   "fav": "Alexander Zverev",
+   "pp": 0.6131,
+   "ok": true
+  },
+  {
+   "fecha": 20261117,
+   "tour": "ATP",
+   "torneo": "ATP Finals",
+   "sup": "Hard",
+   "ganador": "Arthur Fils",
+   "perdedor": "Rafael Jodar",
+   "marcador": "4-6 6-2 6-2",
+   "fav": "Arthur Fils",
+   "pp": 0.5208,
+   "ok": true
+  },
+  {
+   "fecha": 20261116,
+   "tour": "ATP",
+   "torneo": "ATP Finals",
+   "sup": "Hard",
+   "ganador": "Daniil Medvedev",
+   "perdedor": "Flavio Cobolli",
+   "marcador": "7-6(4) 6-3",
+   "fav": "Daniil Medvedev",
+   "pp": 0.7023,
+   "ok": true
+  },
+  {
+   "fecha": 20261116,
+   "tour": "ATP",
+   "torneo": "ATP Finals",
+   "sup": "Hard",
+   "ganador": "Carlos Alcaraz",
+   "perdedor": "Frances Tiafoe",
+   "marcador": "6-2 6-2",
+   "fav": "Carlos Alcaraz",
+   "pp": 0.884,
+   "ok": true
+  },
+  {
+   "fecha": 20261115,
+   "tour": "ATP",
+   "torneo": "ATP Finals",
+   "sup": "Hard",
+   "ganador": "Ben Shelton",
+   "perdedor": "Arthur Fils",
+   "marcador": "6-2 3-6 6-3",
+   "fav": "Ben Shelton",
+   "pp": 0.5188,
+   "ok": true
+  },
+  {
+   "fecha": 20261115,
+   "tour": "ATP",
+   "torneo": "ATP Finals",
+   "sup": "Hard",
+   "ganador": "Alexander Zverev",
+   "perdedor": "Rafael Jodar",
+   "marcador": "6-4 6-4",
+   "fav": "Alexander Zverev",
+   "pp": 0.6572,
+   "ok": true
+  },
+  {
    "fecha": 20261114,
    "tour": "ATP",
    "torneo": "Stockholm",
@@ -292,186 +472,6 @@
    "fav": "Thiago Agustin Tirante",
    "pp": 0.5431,
    "ok": true
-  },
-  {
-   "fecha": 20261112,
-   "tour": "ATP",
-   "torneo": "Stockholm",
-   "sup": "Hard",
-   "ganador": "Lorenzo Musetti",
-   "perdedor": "Ugo Humbert",
-   "marcador": "7-6(5) 3-6 6-4",
-   "fav": "Lorenzo Musetti",
-   "pp": 0.6814,
-   "ok": true
-  },
-  {
-   "fecha": 20261112,
-   "tour": "ATP",
-   "torneo": "Stockholm",
-   "sup": "Hard",
-   "ganador": "Thiago Agustin Tirante",
-   "perdedor": "Alexander Shevchenko",
-   "marcador": "7-6(5) 6-7(5) 6-3",
-   "fav": "Thiago Agustin Tirante",
-   "pp": 0.6194,
-   "ok": true
-  },
-  {
-   "fecha": 20261112,
-   "tour": "ATP",
-   "torneo": "Stockholm",
-   "sup": "Hard",
-   "ganador": "Alejandro Tabilo",
-   "perdedor": "Alex Michelsen",
-   "marcador": "7-5 7-6(2)",
-   "fav": "Alex Michelsen",
-   "pp": 0.688,
-   "ok": false
-  },
-  {
-   "fecha": 20261111,
-   "tour": "ATP",
-   "torneo": "Stockholm",
-   "sup": "Hard",
-   "ganador": "Holger Rune",
-   "perdedor": "Miomir Kecmanovic",
-   "marcador": "2-6 6-1 6-4",
-   "fav": "Holger Rune",
-   "pp": 0.7503,
-   "ok": true
-  },
-  {
-   "fecha": 20261111,
-   "tour": "ATP",
-   "torneo": "Stockholm",
-   "sup": "Hard",
-   "ganador": "Alexander Shevchenko",
-   "perdedor": "Casper Ruud",
-   "marcador": "6-7(5) 6-4 6-3",
-   "fav": "Casper Ruud",
-   "pp": 0.8105,
-   "ok": false
-  },
-  {
-   "fecha": 20261111,
-   "tour": "ATP",
-   "torneo": "Stockholm",
-   "sup": "Hard",
-   "ganador": "Taylor Fritz",
-   "perdedor": "Cameron Norrie",
-   "marcador": "7-5 6-3",
-   "fav": "Taylor Fritz",
-   "pp": 0.7302,
-   "ok": true
-  },
-  {
-   "fecha": 20261111,
-   "tour": "ATP",
-   "torneo": "Stockholm",
-   "sup": "Hard",
-   "ganador": "Ugo Humbert",
-   "perdedor": "Borna Gojo",
-   "marcador": "6-2 6-4",
-   "fav": "Ugo Humbert",
-   "pp": 0.639,
-   "ok": true
-  },
-  {
-   "fecha": 20261111,
-   "tour": "ATP",
-   "torneo": "Stockholm",
-   "sup": "Hard",
-   "ganador": "Alejandro Tabilo",
-   "perdedor": "Lorenzo Sonego",
-   "marcador": "7-6(2) 6-7(7) 7-5",
-   "fav": "Alejandro Tabilo",
-   "pp": 0.5623,
-   "ok": true
-  },
-  {
-   "fecha": 20261110,
-   "tour": "ATP",
-   "torneo": "Stockholm",
-   "sup": "Hard",
-   "ganador": "Lorenzo Musetti",
-   "perdedor": "Toby Samuel",
-   "marcador": "6-1 6-4",
-   "fav": "Lorenzo Musetti",
-   "pp": 0.8026,
-   "ok": true
-  },
-  {
-   "fecha": 20261110,
-   "tour": "ATP",
-   "torneo": "Stockholm",
-   "sup": "Hard",
-   "ganador": "Alex Michelsen",
-   "perdedor": "Juan Manuel Cerundolo",
-   "marcador": "6-3 6-2",
-   "fav": "Alex Michelsen",
-   "pp": 0.7518,
-   "ok": true
-  },
-  {
-   "fecha": 20261110,
-   "tour": "ATP",
-   "torneo": "Stockholm",
-   "sup": "Hard",
-   "ganador": "Holger Rune",
-   "perdedor": "Zizou Bergs",
-   "marcador": "6-3 6-4",
-   "fav": "Holger Rune",
-   "pp": 0.6279,
-   "ok": true
-  },
-  {
-   "fecha": 20261110,
-   "tour": "ATP",
-   "torneo": "Stockholm",
-   "sup": "Hard",
-   "ganador": "Miomir Kecmanovic",
-   "perdedor": "Arthur Rinderknech",
-   "marcador": "7-6(4) 4-6 6-4",
-   "fav": "Arthur Rinderknech",
-   "pp": 0.6438,
-   "ok": false
-  },
-  {
-   "fecha": 20261110,
-   "tour": "ATP",
-   "torneo": "Stockholm",
-   "sup": "Hard",
-   "ganador": "Lorenzo Sonego",
-   "perdedor": "Quentin Halys",
-   "marcador": "6-4 7-6(4)",
-   "fav": "Quentin Halys",
-   "pp": 0.6614,
-   "ok": false
-  },
-  {
-   "fecha": 20261110,
-   "tour": "ATP",
-   "torneo": "Stockholm",
-   "sup": "Hard",
-   "ganador": "Alexander Shevchenko",
-   "perdedor": "Adrian Mannarino",
-   "marcador": "6-1 6-3",
-   "fav": "Adrian Mannarino",
-   "pp": 0.6368,
-   "ok": false
-  },
-  {
-   "fecha": 20261109,
-   "tour": "ATP",
-   "torneo": "Stockholm",
-   "sup": "Hard",
-   "ganador": "Toby Samuel",
-   "perdedor": "Leo Borg",
-   "marcador": "6-3 6-2",
-   "fav": "Toby Samuel",
-   "pp": 0.6851,
-   "ok": true
   }
  ],
  "motor": {
@@ -482,16 +482,16 @@
    "c_forma": 0.0
   },
   "motor": {
-   "n": 9275,
-   "acierto": 0.6394,
-   "brier": 0.2198,
-   "logloss": 0.6298
+   "n": 9290,
+   "acierto": 0.6399,
+   "brier": 0.2196,
+   "logloss": 0.6294
   },
   "elo_basico": {
-   "n": 9275,
-   "acierto": 0.6412,
-   "brier": 0.2199,
-   "logloss": 0.63
+   "n": 9290,
+   "acierto": 0.6418,
+   "brier": 0.2198,
+   "logloss": 0.6296
   }
  }
 }

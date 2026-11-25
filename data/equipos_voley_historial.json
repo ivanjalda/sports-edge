@@ -11270,8 +11270,8 @@
     14
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "0-3"
   },
   {
    "id": "401931823",
@@ -11293,8 +11293,8 @@
     16
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "3-0"
   },
   {
    "id": "401931743",
@@ -11316,8 +11316,8 @@
     8
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "3-1"
   },
   {
    "id": "401884339",
@@ -11339,8 +11339,8 @@
     1
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "2-3"
   },
   {
    "id": "401931817",
@@ -11362,8 +11362,8 @@
     12
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "0-3"
   },
   {
    "id": "401931824",
@@ -11385,8 +11385,8 @@
     14
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "3-0"
   },
   {
    "id": "401931744",
@@ -11408,8 +11408,8 @@
     7
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "1-3"
   },
   {
    "id": "401887147",
@@ -11592,8 +11592,8 @@
     11
    ],
    "creada": "2026-11-24 06:22 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "3-1"
   },
   {
    "id": "401931724",
@@ -11615,8 +11615,8 @@
     9
    ],
    "creada": "2026-11-24 06:22 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "3-2"
   },
   {
    "id": "401931883",
@@ -11638,8 +11638,8 @@
     10
    ],
    "creada": "2026-11-24 06:22 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "3-0"
   },
   {
    "id": "401931858",
@@ -11661,8 +11661,8 @@
     14
    ],
    "creada": "2026-11-24 06:22 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "3-0"
   },
   {
    "id": "401932333",
@@ -11684,8 +11684,8 @@
     10
    ],
    "creada": "2026-11-24 06:22 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "1-3"
   },
   {
    "id": "401931860",
@@ -11707,8 +11707,8 @@
     13
    ],
    "creada": "2026-11-24 06:22 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "3-0"
   },
   {
    "id": "401931725",
@@ -11730,8 +11730,8 @@
     10
    ],
    "creada": "2026-11-24 06:22 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "3-0"
   },
   {
    "id": "401902193",
@@ -12031,7 +12031,99 @@
    "creada": "2026-11-24 06:22 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401931825",
+   "fecha": "2026-11-25T22:00:00Z",
+   "local": "Hawai'i Rainbow Warriors",
+   "visitante": "Grand Canyon Lopes",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.6468,
+   "pv": 0.3532,
+   "elo_l": 1732,
+   "elo_v": 1647,
+   "bal_l": [
+    26,
+    4
+   ],
+   "bal_v": [
+    19,
+    11
+   ],
+   "creada": "2026-11-25 05:04 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401931745",
+   "fecha": "2026-11-26T01:00:00Z",
+   "local": "Nebraska Cornhuskers",
+   "visitante": "Wisconsin Badgers",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.7154,
+   "pv": 0.2846,
+   "elo_l": 2062,
+   "elo_v": 1917,
+   "bal_l": [
+    30,
+    0
+   ],
+   "bal_v": [
+    22,
+    7
+   ],
+   "creada": "2026-11-25 05:04 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401931726",
+   "fecha": "2026-11-26T01:00:00Z",
+   "local": "Utah Tech Trailblazers",
+   "visitante": "Northern Colorado Bears",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.6872,
+   "pv": 0.3128,
+   "elo_l": 1743,
+   "elo_v": 1627,
+   "bal_l": [
+    26,
+    4
+   ],
+   "bal_v": [
+    19,
+    12
+   ],
+   "creada": "2026-11-25 05:04 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401931861",
+   "fecha": "2026-11-26T01:00:00Z",
+   "local": "Colorado State Rams",
+   "visitante": "San Diego State Aztecs",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8969,
+   "pv": 0.1031,
+   "elo_l": 1823,
+   "elo_v": 1609,
+   "bal_l": [
+    24,
+    3
+   ],
+   "bal_v": [
+    17,
+    10
+   ],
+   "creada": "2026-11-25 05:04 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-24 20:20 UTC"
+ "actualizado": "2026-11-25 05:04 UTC"
 }
