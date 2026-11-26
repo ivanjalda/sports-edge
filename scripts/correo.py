@@ -401,8 +401,16 @@ def usuarios():
     firebase_admin.initialize_app(credentials.Certificate(json.loads(os.environ["FIREBASE_CUENTA"])))
     db = firestore.client()
     out = []
+    # Con Premium activado (data/premium.json), el correo diario es solo para los socios Premium
+    try:
+        solo_premium = bool(json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                                                         "data", "premium.json"), encoding="utf-8")).get("activo"))
+    except Exception:
+        solo_premium = False
     for d in db.collection("usuarios").where("email_diario", "==", True).stream():
         u = d.to_dict()
+        if solo_premium and u.get("premium") is not True:
+            continue
         u["_ref"] = d.reference
         try:
             cu = auth.get_user(d.id)

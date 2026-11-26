@@ -83,8 +83,51 @@ def pick(nombre, lang):
     return "Draw" if (lang == "en" and nombre == "Empate") else nombre
 
 
-def enviar(texto, chat):
-    url = "https://api.telegram.org/bot%s/sendMessage" % TOKEN
+def premium_cfg():
+    """Canales privados Premium. Solo se usan cuando la suscripcion esta activada en data/premium.json."""
+    c = leer("premium.json", {}) or {}
+    tok = os.environ.get("TELEGRAM_PREMIUM_TOKEN", "").strip()
+    if c.get("activo") and tok and c.get("canal_es") and c.get("canal_en"):
+        return {"token": tok, "es": c["canal_es"], "en": c["canal_en"], "precio": c.get("precio", "5 \u20ac"),
+                "precio_en": c.get("precio_en", "\u20ac5")}
+    return None
+
+
+TX_PUB = {
+    "es": {"titulo": u"\U0001F3AF <b>PRONÓSTICOS DE HOY</b> · %s\nSportEVLab · calculados con resultados reales.",
+           "top": u"⭐ <b>Los 3 más claros de hoy</b> (gratis)",
+           "premium": u"\U0001F48E <b>SportEVLab Premium</b> · %s/mes\nHoy hay <b>%d partidos</b> analizados. En Premium los recibes todos:\n"
+                      u"• Todos los pronósticos del día, deporte por deporte\n• Valor detectado y carreras\n"
+                      u"• Resultados en directo cada 30 minutos\n• Correo diario con todo el análisis\n"
+                      u"\U0001F449 Hazte Premium: %spremium.html",
+           "fin": u"\U0001F310 %s\n⚠ Probabilidades estadísticas, no garantías. Solo +18. Juega con responsabilidad."},
+    "en": {"titulo": u"\U0001F3AF <b>TODAY'S PREDICTIONS</b> · %s\nSportEVLab · calculated from real results.",
+           "top": u"⭐ <b>Today's 3 clearest picks</b> (free)",
+           "premium": u"\U0001F48E <b>SportEVLab Premium</b> · %s/month\nToday we analyse <b>%d games</b>. With Premium you get them all:\n"
+                      u"• Every prediction of the day, sport by sport\n• Value picks and races\n"
+                      u"• Live results every 30 minutes\n• Daily email with the full analysis\n"
+                      u"\U0001F449 Go Premium: %spremium.html",
+           "fin": u"\U0001F310 %s\n⚠ Statistical probabilities, not guarantees. 18+ only. Please gamble responsibly."}}
+
+
+def construir_publico(px, ahora, lang, prem):
+    """Mensaje gratis del canal publico: los 3 favoritos mas claros e invitacion a Premium."""
+    T = TX_PUB[lang]
+    cuota = (lambda x: x["cuota"]) if lang == "es" else (lambda x: x.get("cuota_en", ""))
+    lin = [T["titulo"] % ahora.astimezone(TZ).strftime("%d/%m/%Y")]
+    if px:
+        top = [T["top"]]
+        for x in sorted(px, key=lambda y: -y["prob"])[:3]:
+            top.append(u"%s %s %s · %s – %s\n   ➡ <b>%s</b> %s%s" % (
+                x["ic"], hora(x["fecha"]), e(comp(x["comp"], lang)), e(x["a"]), e(x["b"]), e(pick(x["pick"], lang)), pc(x["prob"]), cuota(x)))
+        lin.append("\n".join(top))
+    lin.append(T["premium"] % (prem["precio" if lang == "es" else "precio_en"], len(px), WEB))
+    lin.append(T["fin"] % WEB)
+    return ["\n\n".join(lin)]
+
+
+def enviar(texto, chat, token=None):
+    url = "https://api.telegram.org/bot%s/sendMessage" % (token or TOKEN)
     datos = urllib.parse.urlencode({"chat_id": chat, "text": texto, "parse_mode": "HTML",
                                     "disable_web_page_preview": "true"}).encode()
     with urllib.request.urlopen(urllib.request.Request(url, data=datos), timeout=30) as r:
@@ -334,20 +377,27 @@ def main():
         return
     ahora = datetime.now(timezone.utc)
     px = partidos(ahora)
+    prem = premium_cfg()
     enviados = fallos = 0
     for lang in ("es", "en"):
         mensajes = construir(px, ahora, lang)
+        # con Premium activado: todo al canal privado y un adelanto gratis al canal publico
+        destinos = [(mensajes, CANALES[lang], None)]
+        if prem:
+            destinos = [(mensajes, prem[lang], prem["token"]), (construir_publico(px, ahora, lang, prem), CANALES[lang], None)]
         if os.environ.get("TELEGRAM_PRUEBA"):
-            print(("\n\n===== %s =====\n" % lang) + "\n\n-----\n".join(mensajes))
+            for ms, canal, _ in destinos:
+                print(("\n\n===== %s -> %s =====\n" % (lang, canal)) + "\n\n-----\n".join(ms))
             continue
-        try:
-            for m in mensajes:
-                enviar(m, CANALES[lang])
-            enviados += 1
-            print("Telegram %s (%s): %d mensaje(s) con %d partidos" % (lang, CANALES[lang], len(mensajes), len(px)))
-        except Exception as ex:
-            fallos += 1
-            print("ERROR enviando a Telegram %s (%s): %s" % (lang, CANALES[lang], ex))
+        for ms, canal, tok in destinos:
+            try:
+                for m in ms:
+                    enviar(m, canal, tok)
+                enviados += 1
+                print("Telegram %s (%s): %d mensaje(s) con %d partidos" % (lang, canal, len(ms), len(px)))
+            except Exception as ex:
+                fallos += 1
+                print("ERROR enviando a Telegram %s (%s): %s" % (lang, canal, ex))
     if fallos and not enviados:
         sys.exit(1)
 

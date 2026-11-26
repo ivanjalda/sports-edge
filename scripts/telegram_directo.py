@@ -132,8 +132,17 @@ def pedir(url):
         return json.loads(r.read().decode("utf-8"))
 
 
-def enviar(texto, chat):
-    url = "https://api.telegram.org/bot%s/sendMessage" % TOKEN
+def premium_cfg():
+    """Canales privados Premium (solo si la suscripcion esta activada en data/premium.json)."""
+    c = leer("premium.json", {}) or {}
+    tok = os.environ.get("TELEGRAM_PREMIUM_TOKEN", "").strip()
+    if c.get("activo") and tok and c.get("canal_es") and c.get("canal_en"):
+        return {"token": tok, "es": c["canal_es"], "en": c["canal_en"]}
+    return None
+
+
+def enviar(texto, chat, token=None):
+    url = "https://api.telegram.org/bot%s/sendMessage" % (token or TOKEN)
     datos = urllib.parse.urlencode({"chat_id": chat, "text": texto, "parse_mode": "HTML",
                                     "disable_web_page_preview": "true"}).encode()
     with urllib.request.urlopen(urllib.request.Request(url, data=datos), timeout=30) as r:
@@ -299,6 +308,7 @@ def ciclo(estado, ahora, balance):
           (ahora.astimezone(TZ).strftime("%H:%M"), len(lista), fallos, len(nuevos)))
 
     bloques = {"es": [], "en": []}
+    publico = {"es": [], "en": []}   # lo que va al canal gratis cuando Premium esta activado (el balance)
     # Carreras (F1 y MotoGP): resultado de la ultima carrera frente a nuestro favorito
     for serie, ic, nomb in (("f1", u"\U0001F3CE", u"Fórmula 1"), ("motogp", u"\U0001F3CD", u"MotoGP"), ("nascar", u"\U0001F3C1", u"NASCAR"),
                             ("golf_pga", u"\u26f3", u"PGA Tour"), ("golf_dp", u"\u26f3", u"DP World Tour")):
@@ -371,31 +381,46 @@ def ciclo(estado, ahora, balance):
             len_.append(u"⚠ 18+ only. Please gamble responsibly.")
             bloques["es"].append("\n".join(lin))
             bloques["en"].append("\n".join(len_))
+            publico["es"].append("\n".join(lin) + u"\n\U0001F48E Resultados en directo y todos los pronósticos en Premium: %spremium.html" % WEB)
+            publico["en"].append("\n".join(len_) + u"\n\U0001F48E Live results and every prediction with Premium: %spremium.html" % WEB)
         estado["balance"] = dia
 
     limite = (ahora - timedelta(days=4)).astimezone(TZ).strftime("%Y-%m-%d")
     estado["enviados"] = {k: v for k, v in estado["enviados"].items() if v.get("dia", "") >= limite}
-    return {lang: trocear(b) for lang, b in bloques.items()}
+    out = {lang: trocear(b) for lang, b in bloques.items()}
+    out["publico"] = {lang: trocear(b) for lang, b in publico.items()}
+    return out
 
 
 def mandar(mensajes):
     """mensajes = {"es": [...], "en": [...]}. Devuelve False solo si no se pudo enviar a ningun canal."""
+    prem = premium_cfg()
+    publico = mensajes.get("publico") or {}
+    envios = []   # (idioma, mensajes, canal, token)
+    for lang in ("es", "en"):
+        ms = mensajes.get(lang) or []
+        if prem:
+            # Premium activado: todo al canal privado; al canal gratis solo el balance de la noche
+            envios.append((lang, ms, prem[lang], prem["token"]))
+            envios.append((lang, publico.get(lang) or [], CANALES[lang], None))
+        else:
+            envios.append((lang, ms, CANALES[lang], None))
     if PRUEBA:
-        for lang, ms in mensajes.items():
-            print(("\n===== %s =====\n" % lang) + ("\n\n-----\n".join(ms) if ms else "(no hay nada que enviar)"))
+        for lang, ms, canal, _ in envios:
+            print(("\n===== %s -> %s =====\n" % (lang, canal)) + ("\n\n-----\n".join(ms) if ms else "(no hay nada que enviar)"))
         return True
     hay = enviados = 0
-    for lang, ms in mensajes.items():
+    for lang, ms, canal, tok in envios:
         if not ms:
             continue
         hay += 1
         try:
             for m in ms:
-                enviar(m, CANALES[lang])
+                enviar(m, canal, tok)
             enviados += 1
-            print("Telegram %s (%s): %d mensaje(s) enviado(s)." % (lang, CANALES[lang], len(ms)))
+            print("Telegram %s (%s): %d mensaje(s) enviado(s)." % (lang, canal, len(ms)))
         except Exception as ex:
-            print("ERROR enviando a Telegram %s (%s): %s" % (lang, CANALES[lang], ex))
+            print("ERROR enviando a Telegram %s (%s): %s" % (lang, canal, ex))
     return enviados > 0 or hay == 0
 
 
@@ -440,6 +465,7 @@ def subir(msg):
         subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "panel_admin.py")],
                        timeout=180, env=dict(os.environ, PANEL_CADA_MIN="30"))
         git("add", os.path.join(DATA, "panel.json"))
+        git("add", os.path.join(DATA, "premium.json"))
     except Exception as ex:
         print("Aviso: panel no actualizado: %s" % ex)
     git("add", os.path.join(DATA, ESTADO))
@@ -483,6 +509,13 @@ def bucle():
                 r = subprocess.run([sys.executable, "-u", os.path.join("scripts", "correo.py")])
                 if r.returncode == 0 or intentos[dia] >= 3:
                     estado["correo"] = dia
+            # 0) Premium: pagos de Stripe -> cuentas y canales privados (cada 10 minutos)
+            if os.environ.get("STRIPE_KEY") or os.environ.get("TELEGRAM_PREMIUM_TOKEN"):
+                subprocess.run([sys.executable, "-u", os.path.join("scripts", "premium.py")], timeout=240)
+                cambio = subprocess.run(["git", "status", "--porcelain", os.path.join(DATA, "premium.json")],
+                                        capture_output=True, text=True).stdout.strip()
+                if cambio and not PRUEBA:
+                    subir("Premium: suscripciones revisadas")
             # 2) resultados y 3) balance
             balance = (loc.hour, loc.minute) >= HORA_BALANCE
             mensajes = ciclo(estado, ahora, balance)
