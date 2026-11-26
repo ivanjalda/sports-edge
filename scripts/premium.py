@@ -78,6 +78,31 @@ def leer_telegram(cfg, uniones):
                 uniones[link[2:]] = nuevo.get("user", {}).get("id")
 
 
+def poner_logo(cfg):
+    """Pone el logo de SportEVLab como foto de los canales privados (solo la primera vez)."""
+    import uuid
+    ruta = os.path.join(os.path.dirname(DATA), "img", "favicon-512.png")
+    if not os.path.exists(ruta):
+        return
+    for lang in ("es", "en"):
+        canal = cfg.get("canal_" + lang)
+        if not canal or cfg.get("logo_" + lang):
+            continue
+        try:
+            borde = uuid.uuid4().hex
+            cuerpo = ("--%s\r\nContent-Disposition: form-data; name=\"chat_id\"\r\n\r\n%s\r\n" % (borde, canal)).encode()
+            cuerpo += ("--%s\r\nContent-Disposition: form-data; name=\"photo\"; filename=\"logo.png\"\r\n"
+                       "Content-Type: image/png\r\n\r\n" % borde).encode() + open(ruta, "rb").read() + ("\r\n--%s--\r\n" % borde).encode()
+            req = urllib.request.Request("https://api.telegram.org/bot%s/setChatPhoto" % TGP, data=cuerpo,
+                                         headers={"Content-Type": "multipart/form-data; boundary=" + borde})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                if json.loads(r.read().decode()).get("ok"):
+                    cfg["logo_" + lang] = True
+                    print("Premium: logo puesto en el canal %s" % lang.upper())
+        except Exception as ex:
+            print("Premium: no se pudo poner el logo (%s)" % ex)
+
+
 def sacar(canal, tg_id):
     try:
         tg("banChatMember", chat_id=canal, user_id=tg_id)
@@ -147,6 +172,7 @@ def main():
     uniones = {}
     if TGP:
         leer_telegram(cfg, uniones)
+        poner_logo(cfg)
     if not os.environ.get("FIREBASE_CUENTA"):
         print("Premium: falta FIREBASE_CUENTA; solo se han revisado los canales.")
     else:
