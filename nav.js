@@ -48,6 +48,7 @@
     "#top .se-r{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}"+
     "#top .se-btn{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 12px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--txt);text-decoration:none;font-weight:700;font-size:13px;white-space:nowrap}"+
     "#top .se-btn:hover,#top .se-btn.on{border-color:var(--acc);color:var(--acc)}"+
+    "#top .se-prem{border-color:rgba(233,185,73,.55)!important;color:#e9b949!important}#top .se-prem:hover,#top .se-prem.on{background:rgba(233,185,73,.14)!important}"+
     "#top .se-dd{position:relative}#top .se-ddm{display:none;position:absolute;right:0;top:38px;min-width:200px;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.35);padding:6px;z-index:60}"+
     "#top .se-dd.abierto .se-ddm{display:block}#top .se-ddm a{display:block;padding:9px 12px;border-radius:8px;color:var(--txt);text-decoration:none;font-weight:600;font-size:14px;white-space:nowrap}#top .se-ddm a:hover{background:var(--card2)}#top .se-ddm a.sal{border-top:1px solid var(--line);margin-top:4px;color:var(--mut)}"+
     "#top .se-acc{background:var(--acc);border-color:var(--acc);color:#04130a}#top .se-acc:hover,#top .se-acc.on{color:#04130a;filter:brightness(1.1)}"+
@@ -255,7 +256,8 @@
     for(var i=0;i<ITEMS.length;i++){ var it=ITEMS[i];
       n+='<a href="'+it[1]+'"'+(it[0]===activo?' class="on"':'')+'>'+it[2]+' '+t[it[0]]+'</a>'; }
     el.innerHTML='<div class="se-row"><a class="se-logo" href="index.html"><img src="img/icono.svg" alt="" width="34" height="34"><i style="font-style:normal">Sport<span>EV</span><b>Lab</b></i></a>'
-      +'<div class="se-r"><a class="se-btn'+(activo==="aprender"?' on':'')+'" href="aprender.html">🎓 '+t.aprender+'</a>'
+      +'<div class="se-r"><a class="se-btn se-prem'+(activo==="premium"?' on':'')+'" href="premium.html">💎 Premium</a>'
+      +'<a class="se-btn'+(activo==="aprender"?' on':'')+'" href="aprender.html">🎓 '+t.aprender+'</a>'
       +'<a class="se-btn'+(activo==="records"?' on':'')+'" href="records.html">🏆 '+t.records+'</a>'
       +(function(){ var u=null; try{u=localStorage.getItem("se_user");}catch(e){}
         if(u===null) return '<a class="se-btn se-acc'+(activo==="cuenta"?' on':'')+'" href="cuenta.html">👤 '+t.entrar+'</a>';
@@ -269,7 +271,7 @@
       +(document.documentElement.getAttribute("data-theme")==="light"?"🌙":"☀️")+'</button>'
       +'<div class="se-lang"><button class="'+(lang==="es"?"on":"")+'" onclick="setLang(\'es\')">ES</button>'
       +'<button class="'+(lang==="en"?"on":"")+'" onclick="setLang(\'en\')">EN</button></div></div></div><nav>'+n+'</nav>';
-    if(activo!=="guia"&&activo!=="aprender"&&activo!=="records"&&activo!=="cuenta"&&activo!=="legal"){ montarLados(); cargarNoticias(); if(activo!=="home") cargarPicks(); pintarLados(); }
+    if(activo!=="guia"&&activo!=="aprender"&&activo!=="records"&&activo!=="cuenta"&&activo!=="legal"&&activo!=="premium"){ montarLados(); cargarNoticias(); if(activo!=="home") cargarPicks(); pintarLados(); }
     montarBarra(); cargarPicks(); pintarBarra(); montarPie(); enlazarTerminos();
   };
 

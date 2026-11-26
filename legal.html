@@ -67,10 +67,10 @@ footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top
 /* Datos de la empresa (los mismos en todas las paginas legales) */
 var EMPRESA="Community16 LLC", DIRECCION="500 4th St NW, Suite 102 #1327, Albuquerque, NM 87102, USA", CORREO="contacto@sportevlab.com", WEBN="sportevlab.com";
 var MAIL='<a href="mailto:'+CORREO+'">'+CORREO+'</a>';
-var SECS=["privacidad","cookies","aviso","juego"];
+var SECS=["privacidad","cookies","aviso","premium","juego"];
 var T={
 es:{h1:"⚖️ Información legal",lead:"Cómo tratamos tus datos, qué guardamos en tu navegador, quién está detrás de SportEVLab y cómo jugar con responsabilidad.",
- tabs:["🔒 Privacidad","🍪 Cookies","📄 Aviso legal","🛟 Juego responsable"],fecha:"Última actualización: 18/11/2026",foot:"🔞 Solo para mayores de 18 años. Juega con responsabilidad.",
+ tabs:["🔒 Privacidad","🍪 Cookies","📄 Aviso legal","💎 Suscripción Premium","🛟 Juego responsable"],fecha:"Última actualización: 26/11/2026",foot:"🔞 Solo para mayores de 18 años. Juega con responsabilidad.",
  privacidad:
  '<h2>Quién es el responsable</h2><div class="box"><b>'+EMPRESA+'</b><br>'+DIRECCION+'<br>Correo: '+MAIL+'<br>Web: '+WEBN+'</div>'
 +'<p>'+EMPRESA+' es una sociedad de responsabilidad limitada de Nuevo México (Estados Unidos) y es la responsable de los datos que se tratan en SportEVLab.</p>'
@@ -87,6 +87,7 @@ es:{h1:"⚖️ Información legal",lead:"Cómo tratamos tus datos, qué guardamo
 +'<li><b>Google Firebase</b> (Google LLC, EE. UU.): inicio de sesión y almacenamiento de tu cuenta y preferencias.</li>'
 +'<li><b>Brevo</b> (Sendinblue SAS, Francia): envío del correo diario. Recibe tu correo, tu nombre y el contenido del correo.</li>'
 +'<li><b>GitHub Pages</b> (GitHub Inc., EE. UU.): alojamiento de la web. Como cualquier servidor, registra datos técnicos de las visitas (por ejemplo, la dirección IP) por seguridad.</li>'
++'<li><b>Stripe</b> (Stripe Inc., EE. UU.): cobra la suscripción Premium si la contratas. Tus datos de pago los trata Stripe directamente; nosotros solo recibimos si el pago está al día.</li>'
 +'<li><b>Cloudflare Web Analytics</b> (Cloudflare Inc., EE. UU.): cuenta las visitas de forma anónima (páginas vistas, país, tipo de navegador). No usa cookies, no guarda tu IP ni crea perfiles.</li>'
 +'<li><b>Asistente virtual</b> (Cloudflare Workers y Google Gemini): las preguntas que escribes en el chat de la web o al bot de Telegram se envían a Google Gemini para generar la respuesta. No guardamos tus preguntas ni las asociamos a tu cuenta. Google puede usarlas para mejorar sus servicios, así que <b>no escribas datos personales</b> en el chat.</li>'
 +'<li><b>Telegram:</b> si entras en nuestros canales, lo haces en Telegram con tu cuenta de Telegram. Nosotros no recibimos tus datos de Telegram.</li></ul>'
@@ -120,6 +121,14 @@ es:{h1:"⚖️ Información legal",lead:"Cómo tratamos tus datos, qué guardamo
 +'<h2>Propiedad intelectual</h2><p>El diseño, los textos, el logotipo, la marca SportEVLab y el motor de predicciones pertenecen a '+EMPRESA+'. Los nombres de equipos, competiciones y marcas citadas pertenecen a sus dueños y se usan solo para identificarlos. Las noticias enlazan a sus medios originales.</p>'
 +'<h2>Enlaces a otras webs</h2><p>Enlazamos a medios de noticias, casas de apuestas y a nuestras otras webs. No controlamos el contenido de webs ajenas ni respondemos de él.</p>'
 +'<h2>Ley aplicable</h2><p>Estas condiciones se rigen por las leyes del Estado de Nuevo México (EE. UU.), sin perjuicio de los derechos que te reconozca la ley de tu país como consumidor.</p>',
+ premium:
+ '<h2>Qué es SportEVLab Premium</h2><p>Una suscripción mensual que da acceso a: todos los pronósticos del día en nuestro canal privado de Telegram (en español o inglés), los resultados en directo cada 30 minutos, el balance diario y el correo diario con todo el análisis. La web, el asistente virtual y el canal público de Telegram siguen siendo gratis.</p>'
++'<h2>Precio y renovación</h2><p>El precio se muestra antes de pagar, impuestos incluidos cuando correspondan. La suscripción se <b>renueva sola cada mes</b> en la misma fecha hasta que la canceles. El pago lo gestiona <b>Stripe</b> (Stripe Inc.): nosotros nunca vemos ni guardamos los datos de tu tarjeta. En el extracto del banco aparecerá como <b>COMMUNITY16</b>.</p>'
++'<h2>Cancelar cuando quieras</h2><p>Puedes cancelar en cualquier momento desde «Mi cuenta → Mis avisos → Gestionar mi suscripción», o escribiendo a '+MAIL+'. Al cancelar no se te vuelve a cobrar y sigues teniendo Premium hasta el final del mes ya pagado. Después se cierra tu acceso al canal privado y al correo diario.</p>'
++'<h2>Derecho de desistimiento</h2><p>Si vives en la Unión Europea tienes 14 días para desistir. Como el servicio digital empieza al instante, al pagar nos pides que empiece ya y aceptas que, una vez empezado, pierdes ese derecho para el periodo en curso. Aun así, si en los primeros 14 días no estás contento, escríbenos a '+MAIL+' y te devolveremos el primer pago.</p>'
++'<h2>Lo que ofrecemos y lo que no</h2><p>Premium da <b>información estadística</b>: probabilidades calculadas con resultados reales, nunca garantías de acierto ni de ganancia. No somos casa de apuestas, no aceptamos apuestas ni gestionamos dinero de juego. Solo para <b>mayores de 18 años</b>.</p>'
++'<h2>Enlace personal</h2><p>Tu enlace al canal privado es personal y de un solo uso. Si lo compartes o se detecta un uso indebido podemos cerrar el acceso.</p>'
++'<h2>Datos</h2><p>Para gestionar la suscripción guardamos en tu cuenta si eres Premium, la fecha de renovación y tu usuario de Telegram del canal privado. Más detalles en la pestaña Privacidad.</p>',
  juego:
  '<h2>Ayuda gratuita y confidencial</h2><div class="ayuda">'
 +'<div><b>🇪🇸 España · FEJAR</b><span>900 200 225</span><br>Gratis · <a href="https://www.jugarbien.es" target="_blank" rel="noopener">jugarbien.es</a></div>'
@@ -130,7 +139,7 @@ es:{h1:"⚖️ Información legal",lead:"Cómo tratamos tus datos, qué guardamo
 +'<h2>Señales de alarma</h2><ul><li>Apuestas más de lo que pensabas o más a menudo.</li><li>Mientes a tu familia sobre lo que juegas.</li><li>Pides dinero prestado para apostar.</li><li>Te sientes nervioso o irritable cuando no puedes jugar.</li></ul><p>Si te reconoces en alguna, para y pide ayuda: los teléfonos de arriba son gratuitos y confidenciales.</p>'
 +'<h2>Herramientas que puedes usar</h2><ul><li>En España, el <b>Registro General de Interdicciones de Acceso al Juego (RGIAJ)</b> te permite prohibirte a ti mismo el acceso a todas las casas de apuestas con licencia (más información en jugarbien.es).</li><li>Las casas con licencia ofrecen límites de depósito, pausas y autoexclusión en su propia web.</li><li>Lee nuestra guía de gestión de banca en <a href="aprender.html#banca-resp">Aprender</a>.</li></ul>'},
 en:{h1:"⚖️ Legal information",lead:"How we handle your data, what we store in your browser, who is behind SportEVLab and how to gamble responsibly.",
- tabs:["🔒 Privacy","🍪 Cookies","📄 Legal notice","🛟 Responsible gambling"],fecha:"Last updated: 18/11/2026",foot:"🔞 18+ only. Please gamble responsibly.",
+ tabs:["🔒 Privacy","🍪 Cookies","📄 Legal notice","💎 Premium subscription","🛟 Responsible gambling"],fecha:"Last updated: 26/11/2026",foot:"🔞 18+ only. Please gamble responsibly.",
  privacidad:
  '<h2>Who is responsible</h2><div class="box"><b>'+EMPRESA+'</b><br>'+DIRECCION+'<br>Email: '+MAIL+'<br>Website: '+WEBN+'</div>'
 +'<p>'+EMPRESA+' is a New Mexico (USA) limited liability company and is the controller of the data processed on SportEVLab.</p>'
@@ -147,6 +156,7 @@ en:{h1:"⚖️ Legal information",lead:"How we handle your data, what we store i
 +'<li><b>Google Firebase</b> (Google LLC, USA): sign-in and storage of your account and preferences.</li>'
 +'<li><b>Brevo</b> (Sendinblue SAS, France): sending the daily email. It receives your email address, your name and the content of the email.</li>'
 +'<li><b>GitHub Pages</b> (GitHub Inc., USA): website hosting. Like any server, it logs technical visit data (such as the IP address) for security.</li>'
++'<li><b>Stripe</b> (Stripe Inc., USA): charges the Premium subscription if you take it. Stripe handles your payment details directly; we only learn whether your payment is up to date.</li>'
 +'<li><b>Cloudflare Web Analytics</b> (Cloudflare Inc., USA): counts visits anonymously (pages viewed, country, browser type). It uses no cookies, does not store your IP and builds no profiles.</li>'
 +'<li><b>Virtual assistant</b> (Cloudflare Workers and Google Gemini): the questions you type in the website chat or send to the Telegram bot are sent to Google Gemini to generate the answer. We do not store your questions or link them to your account. Google may use them to improve its services, so <b>do not type personal data</b> in the chat.</li>'
 +'<li><b>Telegram:</b> if you join our channels, you do so on Telegram with your Telegram account. We do not receive your Telegram data.</li></ul>'
@@ -180,6 +190,14 @@ en:{h1:"⚖️ Legal information",lead:"How we handle your data, what we store i
 +'<h2>Intellectual property</h2><p>The design, texts, logo, the SportEVLab brand and the prediction engine belong to '+EMPRESA+'. Names of teams, competitions and brands mentioned belong to their owners and are used only to identify them. News items link to their original publishers.</p>'
 +'<h2>Links to other websites</h2><p>We link to news outlets, bookmakers and our other websites. We do not control and are not responsible for the content of third-party websites.</p>'
 +'<h2>Governing law</h2><p>These terms are governed by the laws of the State of New Mexico (USA), without prejudice to any consumer rights granted to you by the law of your country.</p>',
+ premium:
+ '<h2>What SportEVLab Premium is</h2><p>A monthly subscription that gives you: every prediction of the day in our private Telegram channel (Spanish or English), live results every 30 minutes, the daily balance and the daily email with the full analysis. The website, the virtual assistant and the public Telegram channel remain free.</p>'
++'<h2>Price and renewal</h2><p>The price is shown before you pay, including taxes where applicable. The subscription <b>renews automatically every month</b> on the same date until you cancel. Payments are handled by <b>Stripe</b> (Stripe Inc.): we never see or store your card details. Your bank statement will show <b>COMMUNITY16</b>.</p>'
++'<h2>Cancel any time</h2><p>You can cancel at any time from “My account → My alerts → Manage my subscription”, or by writing to '+MAIL+'. Once cancelled you will not be charged again and you keep Premium until the end of the month already paid. After that, access to the private channel and the daily email ends.</p>'
++'<h2>Right of withdrawal</h2><p>If you live in the European Union you have 14 days to withdraw. As the digital service starts immediately, by paying you ask us to start right away and accept that, once started, you lose that right for the current period. Even so, if you are not happy within the first 14 days, write to '+MAIL+' and we will refund your first payment.</p>'
++'<h2>What we offer and what we do not</h2><p>Premium provides <b>statistical information</b>: probabilities calculated from real results, never guarantees of winning or profit. We are not a bookmaker, we do not take bets or handle gambling money. <b>18+ only</b>.</p>'
++'<h2>Personal link</h2><p>Your link to the private channel is personal and single-use. If it is shared or misused we may close access.</p>'
++'<h2>Data</h2><p>To manage the subscription we store in your account whether you are Premium, the renewal date and your Telegram user in the private channel. More details in the Privacy tab.</p>',
  juego:
  '<h2>Free and confidential help</h2><div class="ayuda">'
 +'<div><b>🇺🇸 United States</b><span>1-800-GAMBLER</span><br>National Council on Problem Gambling · <a href="https://www.ncpgambling.org" target="_blank" rel="noopener">ncpgambling.org</a></div>'

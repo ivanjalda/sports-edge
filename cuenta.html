@@ -87,6 +87,11 @@ input[type=email],input[type=password],input[type=text]{width:100%;background:va
 .bien h1{font-size:28px}
 .bien p{color:var(--mut)}
 .hide{display:none!important}
+.prem{border-color:rgba(233,185,73,.45)!important;background:radial-gradient(700px 220px at 0% 0%,rgba(233,185,73,.10),transparent 60%),var(--card)!important}
+.prem h2{color:#e9b949!important} .prem .pp{font-size:34px;font-weight:900;margin:6px 0} .prem .pp small{font-size:15px;color:var(--mut)}
+.prem ul{margin:10px 0 14px;padding-left:20px} .prem li{margin:4px 0}
+.prem .bprem{display:inline-block;background:#e9b949;color:#1a1200;font-weight:800;border-radius:10px;padding:12px 22px;text-decoration:none}
+.prem .bsec{display:inline-block;margin-left:10px;color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:11px 18px;text-decoration:none}
 .adm-on main{max-width:none}
 .pn-top{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:14px}
 .pn-top h2{margin:0;font-size:22px} .pn-top .nota{margin:0}
@@ -169,6 +174,7 @@ footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top
     </section>
 
     <section id="s-avisos">
+      <div class="box prem hide" id="premium-box"></div>
       <div class="box">
         <h2 id="h-email"></h2>
         <div class="nota" id="n-email"></div>
@@ -244,6 +250,38 @@ var DEPS=[["futbol","⚽","Fútbol","Football"],["tenis","🎾","Tenis","Tennis"
 var ICO={}; DEPS.forEach(function(d){ ICO[d[0]]=d[1]; });
 /* Canales de Telegram: se rellenan cuando esten creados */
 var TELEGRAM={es:"https://t.me/sportevlab",en:"https://t.me/sportevlab_en"};
+var PREM={activo:false,precio:"5 €",precio_en:"€5"};
+fetch("data/premium.json?v="+Date.now()).then(function(r){ return r.json(); }).then(function(d){ PREM=d; if(typeof render==="function") render(); }).catch(function(){});
+var TP={es:{h:"💎 SportEVLab Premium",mes:"/mes",oferta:"Recibe todos los pronósticos del día en tu Telegram privado y en tu correo.",
+  lista:["📲 Canal privado de Telegram con todos los pronósticos","🔴 Resultados en directo cada 30 minutos","📊 Balance de cada noche","📧 Correo diario con todo el análisis"],
+  b:"Hazte Premium",mas:"Ver qué incluye",nota:"Pago seguro con Stripe. Cancelas cuando quieras. En tu banco aparece como COMMUNITY16.",
+  si:"💎 Eres Premium",renueva:"Se renueva el %s",termina:"Termina el %s (no se renovará)",tg:"📲 Entrar en mi canal privado de Telegram",
+  tgesp:"Tu enlace personal al canal privado aparecerá aquí en unos minutos.",tgnota:"Enlace personal y de un solo uso: no lo compartas.",gest:"Gestionar o cancelar mi suscripción",
+  ok:"✅ ¡Pago recibido! Tu Premium se activa en unos minutos (recarga esta página).",solo:"El correo diario es para socios Premium."},
+ en:{h:"💎 SportEVLab Premium",mes:"/month",oferta:"Get every prediction of the day in your private Telegram and your inbox.",
+  lista:["📲 Private Telegram channel with every prediction","🔴 Live results every 30 minutes","📊 Nightly balance","📧 Daily email with the full analysis"],
+  b:"Go Premium",mas:"See what's included",nota:"Secure payment with Stripe. Cancel any time. Your bank shows COMMUNITY16.",
+  si:"💎 You are Premium",renueva:"Renews on %s",termina:"Ends on %s (will not renew)",tg:"📲 Join my private Telegram channel",
+  tgesp:"Your personal link to the private channel will appear here in a few minutes.",tgnota:"Personal single-use link: do not share it.",gest:"Manage or cancel my subscription",
+  ok:"✅ Payment received! Your Premium activates in a few minutes (reload this page).",solo:"The daily email is for Premium members."}};
+function pintarPremium(){
+  var bx=document.getElementById("premium-box"); if(!bx) return;
+  if(!PREM.activo||!U){ bx.className="box prem hide"; return; }
+  var tp=TP[lang]||TP.es; bx.className="box prem"; var h;
+  if(P.premium){
+    var f=P.premium_hasta?P.premium_hasta.toLocaleDateString(lang==="es"?"es-ES":"en-GB"):"";
+    h='<h2>'+tp.si+'</h2>'+(f?'<div class="nota">'+(P.premium_renueva===false?tp.termina:tp.renueva).replace("%s",f)+'</div>':'')
+      +'<div style="margin-top:14px">'+(P.tg_link_premium?'<a class="bprem" href="'+esc(P.tg_link_premium)+'" target="_blank" rel="noopener">'+tp.tg+'</a><div class="nota" style="margin-top:8px">'+tp.tgnota+'</div>':'<div class="nota">'+tp.tgesp+'</div>')+'</div>'
+      +(PREM.portal&&P.premium_estado!=="admin"?'<div style="margin-top:14px"><a class="bsec" style="margin-left:0" href="'+esc(PREM.portal)+'?prefilled_email='+encodeURIComponent(U.email||"")+'" target="_blank" rel="noopener">'+tp.gest+'</a></div>':'');
+  } else {
+    var pago=PREM.enlace_pago?PREM.enlace_pago+'?client_reference_id='+encodeURIComponent(U.uid)+'&prefilled_email='+encodeURIComponent(U.email||"")+'&locale='+(lang==="es"?"es":"en"):"premium.html";
+    h=(location.search.indexOf("premium=ok")>=0?'<div class="msg ok" style="display:block;margin-bottom:12px">'+tp.ok+'</div>':'')
+      +'<h2>'+tp.h+'</h2><div class="pp">'+(lang==="es"?PREM.precio:PREM.precio_en)+'<small>'+tp.mes+'</small></div><div>'+tp.oferta+'</div>'
+      +'<ul>'+tp.lista.map(function(x){ return '<li>'+x+'</li>'; }).join("")+'</ul>'
+      +'<a class="bprem" href="'+esc(pago)+'">'+tp.b+'</a><a class="bsec" href="premium.html">'+tp.mas+'</a><div class="nota" style="margin-top:10px">'+tp.nota+'</div>';
+  }
+  bx.innerHTML=h;
+}
 var T={
 es:{h1:"👤 Mi cuenta",lead:"Crea tu cuenta gratis y ten tu propio espacio: tus deportes y equipos favoritos, tus pronósticos y, si quieres, avisos por correo o Telegram.",
  b_tit:"Lo que tienes con tu cuenta",ben:["🏠 Tu espacio con los pronósticos de tus deportes y equipos","⭐ Sigue a tus equipos y deportistas favoritos","📧 Correo diario con pronósticos, resultados y noticias (si lo eliges)","📲 Canal de Telegram en español o en inglés (si lo eliges)","🌍 Todo en tu idioma: español o inglés","🔒 Tus datos son solo tuyos: puedes cambiarlos o borrar tu cuenta cuando quieras"],
@@ -408,7 +446,10 @@ function render(){
   /* Avisos: nada activado por defecto; solo si el usuario lo elige */
   $("h-email").textContent=t("h_email"); $("l-pemail").textContent=t("pemail");
   $("n-email").innerHTML=esc(t("n_email"))+(nover?'<br><span style="color:var(--amb)">'+esc(t("e_nover"))+'</span>':'');
-  $("p-email").checked=!!P.email_diario; $("p-email").disabled=nover;
+  var soloPrem=PREM.activo&&!P.premium;
+  $("p-email").checked=!!P.email_diario; $("p-email").disabled=nover||soloPrem;
+  if(soloPrem) $("n-email").innerHTML+='<br><span style="color:#e9b949">💎 '+esc((TP[lang]||TP.es).solo)+'</span>';
+  pintarPremium();
   $("email-idioma").className=P.email_diario?"":"hide"; $("l-eidioma").textContent=t("eidioma");
   $("o-eidioma").innerHTML=[["es","🇪🇸 Español"],["en","🇬🇧 English"]].map(function(x){ return '<div class="opt'+(P.idioma===x[0]?' on':'')+'" onclick="P.idioma=\''+x[0]+'\';render()">'+x[1]+'</div>'; }).join("");
   $("h-tg").textContent=t("h_tg"); $("n-tg").textContent=t("n_tg");
@@ -575,6 +616,9 @@ async function cargarPerfil(u) {
       P.telegram = (d.telegram === "es" || d.telegram === "en") ? d.telegram : "no"; P.promo = d.promo === true;
       P.deportes = Array.isArray(d.deportes) ? d.deportes : []; P.equipos = Array.isArray(d.equipos) ? d.equipos : [];
       P.panel_privado = d.panel_privado || null;
+      P.premium = d.premium === true; P.premium_estado = d.premium_estado || ""; P.premium_renueva = d.premium_renueva;
+      P.premium_hasta = d.premium_hasta && d.premium_hasta.toDate ? d.premium_hasta.toDate() : null;
+      P.tg_link_premium = d.tg_link_premium || "";
     } else { P.nombre = P.nombre || u.displayName || ""; await guardar({}, true); }
   } catch (e) { console.log(e); }
 }

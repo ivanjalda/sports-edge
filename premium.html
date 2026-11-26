@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SportEVLab Premium · Todos los pronósticos en Telegram y correo</title>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="/img/icono.svg">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/favicon-192.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<meta name="theme-color" content="#0b0f17">
+<link rel="canonical" href="https://sportevlab.com/premium.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SportEVLab">
+<meta property="og:title" content="SportEVLab Premium · Todos los pronósticos en Telegram y correo">
+<meta property="og:description" content="Todos los pronósticos del día de 12 deportes, resultados en directo y correo diario. Calculados con resultados reales y con todos los aciertos y fallos publicados.">
+<meta property="og:url" content="https://sportevlab.com/premium.html">
+<meta property="og:image" content="https://sportevlab.com/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="SportEVLab Premium: todos los pronósticos del día de 12 deportes en Telegram, resultados en directo y correo diario. Calculados con resultados reales.">
+<style>
+:root{--bg:#0b0f17;--card:#121826;--card2:#0f1522;--line:#1f2937;--txt:#e5e7eb;--mut:#8b95a7;--acc:#22c55e;--blue:#38bdf8;--red:#ef4444;--amb:#f59e0b;--gold:#e9b949}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6}
+main{padding:22px 28px 10px}
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:28px;align-items:center;background:radial-gradient(1200px 400px at 0% 0%,rgba(34,197,94,.13),transparent 60%),radial-gradient(900px 400px at 100% 100%,rgba(233,185,73,.12),transparent 60%),var(--card);border:1px solid var(--line);border-radius:18px;padding:34px 38px}
+.tag{display:inline-block;background:rgba(233,185,73,.15);color:var(--gold);border:1px solid rgba(233,185,73,.35);border-radius:20px;padding:4px 12px;font-size:12.5px;font-weight:800;letter-spacing:.6px;text-transform:uppercase}
+h1{font-size:40px;line-height:1.12;margin:14px 0 10px;letter-spacing:-.5px}
+h1 em{font-style:normal;color:var(--acc)}
+.lead{color:var(--mut);font-size:17px;margin:0 0 20px;max-width:720px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-block;border:0;border-radius:12px;padding:14px 24px;font-weight:800;font-size:16px;text-decoration:none;cursor:pointer}
+.btn.pri{background:var(--acc);color:#04130a}
+.btn.pri:hover{filter:brightness(1.08)}
+.btn.sec{background:transparent;color:var(--txt);border:1px solid var(--line)}
+.btn.sec:hover{border-color:var(--acc)}
+.mini{color:var(--mut);font-size:13px;margin-top:10px}
+.precio{background:var(--card2);border:1px solid rgba(233,185,73,.35);border-radius:16px;padding:26px;text-align:center}
+.precio .p{font-size:56px;font-weight:900;color:#fff;line-height:1}
+.precio .p small{font-size:18px;color:var(--mut);font-weight:700}
+.precio ul{list-style:none;padding:0;margin:18px 0 0;text-align:left}
+.precio li{padding:7px 0;border-bottom:1px solid var(--line);font-size:15px}
+.precio li:last-child{border-bottom:0}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.kpi .v{font-size:30px;font-weight:900}
+.kpi .k{color:var(--mut);font-size:13px}
+h2{font-size:15px;text-transform:uppercase;letter-spacing:.8px;color:var(--blue);margin:30px 0 12px}
+.cmp{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.cmp th,.cmp td{padding:13px 18px;border-bottom:1px solid var(--line);text-align:left;font-size:15px}
+.cmp th{background:var(--card2);color:var(--mut);font-size:12.5px;text-transform:uppercase;letter-spacing:.6px}
+.cmp tr:last-child td{border-bottom:0}
+.cmp td.c{text-align:center;width:18%;font-size:18px}
+.cmp th.c{text-align:center}
+.cmp th.g{color:var(--gold)}
+.pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.paso{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.paso b{display:block;font-size:16px;margin-bottom:4px}
+.paso span{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--acc);color:#04130a;font-weight:900;margin-bottom:8px}
+.paso p{margin:0;color:var(--mut);font-size:14px}
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.faq div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.faq b{display:block;margin-bottom:4px}
+.faq p{margin:0;color:var(--mut);font-size:14.5px}
+.aviso{margin:26px 0 8px;background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:14px 18px;color:var(--mut);font-size:13.5px}
+.pronto{background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.35);color:var(--txt);border-radius:12px;padding:12px 16px;font-size:14.5px;margin-top:14px}
+footer{color:var(--mut);font-size:12px;padding:24px;text-align:center;border-top:1px solid var(--line);margin-top:30px}
+@media(max-width:1000px){.hero{grid-template-columns:1fr;padding:26px}.kpis{grid-template-columns:1fr 1fr}.pasos{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){main{padding:16px}h1{font-size:30px}.faq{grid-template-columns:1fr}.pasos{grid-template-columns:1fr}.cmp th,.cmp td{padding:10px 10px;font-size:13.5px}}
+</style>
+</head>
+<body>
+<header id="top"></header>
+<main>
+  <section class="hero">
+    <div>
+      <span class="tag">💎 SportEVLab Premium</span>
+      <h1 id="h1"></h1>
+      <p class="lead" id="lead"></p>
+      <div class="cta"><a class="btn pri" id="b1" href="cuenta.html#avisos"></a><a class="btn sec" id="b2" href="records.html"></a></div>
+      <div class="mini" id="mini"></div>
+      <div class="pronto hide" id="pronto"></div>
+    </div>
+    <div class="precio">
+      <div class="p" id="precio"></div>
+      <ul id="incl"></ul>
+    </div>
+  </section>
+
+  <div class="kpis" id="kpis"></div>
+
+  <h2 id="h-cmp"></h2>
+  <table class="cmp" id="cmp"></table>
+
+  <h2 id="h-pasos"></h2>
+  <div class="pasos" id="pasos"></div>
+
+  <h2 id="h-faq"></h2>
+  <div class="faq" id="faq"></div>
+
+  <div class="aviso" id="aviso"></div>
+</main>
+<footer id="foot"></footer>
+<script src="nav.js"></script>
+<script>
+var CFG={activo:false,precio:"5 €",precio_en:"€5"}, PANEL=null;
+var T={
+es:{h1:'Todos los pronósticos del día, <em>sin perderte ninguno</em>',
+ lead:"Cada mañana, todos los partidos que analiza nuestro motor en 12 deportes, directamente en tu Telegram y en tu correo. Resultados en directo cada 30 minutos y el balance de cada noche. Calculado solo con resultados reales y con cada acierto y fallo publicado.",
+ b1:"💎 Hazte Premium", b1n:"📝 Crear cuenta gratis", b2:"🏆 Ver nuestros resultados", mini:"Cancelas cuando quieras, en dos clics. Pago seguro con Stripe.",
+ pronto:"🚀 Premium abre muy pronto. Crea tu cuenta gratis ahora y te avisaremos el primer día.",
+ mes:"/mes",
+ incl:["📲 Canal privado de Telegram (ES o EN)","🎯 Todos los pronósticos del día, deporte por deporte","💎 Apuestas de valor y carreras (F1, MotoGP, NASCAR, golf)","🔴 Resultados en directo cada 30 min","📊 Balance de cada noche","📧 Correo diario con todo el análisis"],
+ k:["motores propios","partidos usados para probarlos","acierto real de lo publicado","deportes"],
+ hcmp:"Gratis o Premium", cols:["","Gratis","Premium"],
+ filas:[["Pronósticos en la web y estadísticas","✅","✅"],["Asistente virtual 24 h","✅","✅"],["Tu espacio con favoritos","✅","✅"],["Canal público de Telegram: los 3 más claros y el balance","✅","✅"],["Canal privado con todos los pronósticos del día","—","✅"],["Resultados en directo cada 30 minutos","—","✅"],["Correo diario con todo el análisis","—","✅"]],
+ hpasos:"Cómo funciona",
+ pasos:[["Crea tu cuenta","Gratis, con Google o con tu correo."],["Elige Premium","En «Mi cuenta → Mis avisos». Pagas con tarjeta en la página segura de Stripe."],["Recibe tu enlace","Al momento aparece tu enlace personal al canal privado de Telegram."],["Activa el correo","Elige idioma y recibe cada mañana el análisis completo."]],
+ hfaq:"Preguntas frecuentes",
+ faq:[["¿Me garantizáis ganar dinero?","No. Damos probabilidades calculadas con resultados reales, no garantías. Por eso publicamos todos nuestros aciertos y fallos en la web."],["¿Puedo cancelar cuando quiera?","Sí, desde «Mi cuenta» en dos clics. No se te vuelve a cobrar y sigues teniendo Premium hasta el final del mes pagado."],["¿Qué aparece en mi banco?","El cargo sale como COMMUNITY16, la empresa propietaria de SportEVLab."],["¿Sois una casa de apuestas?","No. No aceptamos apuestas ni tocamos tu dinero de juego: solo damos información estadística."]],
+ aviso:"🔞 Solo para mayores de 18 años. Probabilidades estadísticas, no garantías. Juega con responsabilidad. Condiciones completas en ", leg:"Legal → Suscripción Premium", foot:"🔞 Solo para mayores de 18 años. Juega con responsabilidad."},
+en:{h1:'Every prediction of the day, <em>never miss one</em>',
+ lead:"Every morning, every game our engine analyses across 12 sports, straight to your Telegram and your inbox. Live results every 30 minutes and a balance every night. Calculated only from real results, with every hit and miss published.",
+ b1:"💎 Go Premium", b1n:"📝 Create a free account", b2:"🏆 See our results", mini:"Cancel any time in two clicks. Secure payment with Stripe.",
+ pronto:"🚀 Premium opens very soon. Create your free account now and we will let you know on day one.",
+ mes:"/month",
+ incl:["📲 Private Telegram channel (ES or EN)","🎯 Every prediction of the day, sport by sport","💎 Value picks and races (F1, MotoGP, NASCAR, golf)","🔴 Live results every 30 min","📊 Nightly balance","📧 Daily email with the full analysis"],
+ k:["in-house engines","games used to test them","real accuracy of what we publish","sports"],
+ hcmp:"Free or Premium", cols:["","Free","Premium"],
+ filas:[["Predictions and statistics on the website","✅","✅"],["24/7 virtual assistant","✅","✅"],["Your space with favourites","✅","✅"],["Public Telegram channel: top 3 picks and the balance","✅","✅"],["Private channel with every prediction of the day","—","✅"],["Live results every 30 minutes","—","✅"],["Daily email with the full analysis","—","✅"]],
+ hpasos:"How it works",
+ pasos:[["Create your account","Free, with Google or your email."],["Choose Premium","In “My account → My alerts”. Pay by card on Stripe's secure page."],["Get your link","Your personal link to the private Telegram channel appears instantly."],["Turn on the email","Choose your language and get the full analysis every morning."]],
+ hfaq:"FAQ",
+ faq:[["Do you guarantee I'll win money?","No. We give probabilities calculated from real results, not guarantees. That's why we publish all our hits and misses on the website."],["Can I cancel any time?","Yes, from “My account” in two clicks. You won't be charged again and you keep Premium until the end of the paid month."],["What shows on my bank statement?","The charge appears as COMMUNITY16, the company that owns SportEVLab."],["Are you a bookmaker?","No. We don't take bets or touch your gambling money: we only provide statistical information."]],
+ aviso:"🔞 18+ only. Statistical probabilities, not guarantees. Please gamble responsibly. Full terms in ", leg:"Legal → Premium subscription", foot:"🔞 18+ only. Please gamble responsibly."}};
+var lang="es";
+try{ lang=localStorage.getItem("lang")||((navigator.language.indexOf("es")==0||/bot|crawl|spider|slurp/i.test(navigator.userAgent))?"es":"en"); }catch(e){}
+function setLang(l){ lang=l; try{localStorage.setItem("lang",l)}catch(e){} render(); }
+function $(i){ return document.getElementById(i); }
+function render(){
+  var t=T[lang]; document.documentElement.lang=lang;
+  if(window.navRender) navRender(lang,"premium");
+  var dentro=false; try{ dentro=localStorage.getItem("se_user")!==null; }catch(e){}
+  var abierto=CFG.activo&&CFG.enlace_pago;
+  $("h1").innerHTML=t.h1; $("lead").textContent=t.lead;
+  $("b1").textContent=abierto?(dentro?t.b1:t.b1n):t.b1n; $("b1").href=abierto&&dentro?"cuenta.html#avisos":"cuenta.html";
+  $("b2").textContent=t.b2; $("mini").textContent=abierto?t.mini:"";
+  $("pronto").textContent=t.pronto; $("pronto").className="pronto"+(abierto?" hide":"");
+  $("precio").innerHTML=(lang==="es"?CFG.precio:CFG.precio_en)+'<small>'+t.mes+'</small>';
+  $("incl").innerHTML=t.incl.map(function(x){ return "<li>"+x+"</li>"; }).join("");
+  var tt=(PANEL&&PANEL.totales)||{}, res=0, ac=0;
+  ((PANEL&&PANEL.motores)||[]).forEach(function(m){ var d=m.directo||{}; if(d.resueltas&&d.acierto!=null&&m.dep!=="motor"&&m.dep!=="golf"){ res+=d.resueltas; ac+=d.resueltas*d.acierto; } });
+  var v=[tt.motores||"26",(tt.partidos_prueba||49317).toLocaleString(lang==="es"?"es-ES":"en-GB"),res?(ac/res*100).toFixed(1).replace(".",lang==="es"?",":".")+" %":"—",tt.deportes||"12"];
+  $("kpis").innerHTML=t.k.map(function(k,i){ return '<div class="kpi"><div class="v">'+v[i]+'</div><div class="k">'+k+'</div></div>'; }).join("");
+  $("h-cmp").textContent=t.hcmp;
+  $("cmp").innerHTML='<tr><th>'+t.cols[0]+'</th><th class="c">'+t.cols[1]+'</th><th class="c g">💎 '+t.cols[2]+'</th></tr>'+t.filas.map(function(f){ return '<tr><td>'+f[0]+'</td><td class="c">'+f[1]+'</td><td class="c">'+f[2]+'</td></tr>'; }).join("");
+  $("h-pasos").textContent=t.hpasos;
+  $("pasos").innerHTML=t.pasos.map(function(p,i){ return '<div class="paso"><span>'+(i+1)+'</span><b>'+p[0]+'</b><p>'+p[1]+'</p></div>'; }).join("");
+  $("h-faq").textContent=t.hfaq;
+  $("faq").innerHTML=t.faq.map(function(f){ return '<div><b>'+f[0]+'</b><p>'+f[1]+'</p></div>'; }).join("");
+  $("aviso").innerHTML=t.aviso+'<a href="legal.html#premium" style="color:var(--blue)">'+t.leg+'</a>.';
+  $("foot").textContent=t.foot;
+}
+var st=document.createElement("style"); st.textContent=".hide{display:none!important}"; document.head.appendChild(st);
+render();
+fetch("data/premium.json?v="+Date.now()).then(function(r){ return r.json(); }).then(function(d){ CFG=d; render(); }).catch(function(){});
+fetch("data/panel.json?v="+Date.now()).then(function(r){ return r.json(); }).then(function(d){ PANEL=d; render(); }).catch(function(){});
+</script>
+</body>
+</html>
