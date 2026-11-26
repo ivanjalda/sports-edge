@@ -1,21 +1,21 @@
 {
- "actualizado": "2026-11-26 04:23 UTC",
+ "actualizado": "2026-11-26 17:37 UTC",
  "liga": "NFL",
  "desde": "20250905",
- "datos_hasta": "2026-11-24T01:15:00Z",
+ "datos_hasta": "2026-11-26T01:00:00Z",
  "total": {
-  "n": 446,
-  "aciertos": 290,
-  "acierto": 0.6502,
+  "n": 447,
+  "aciertos": 291,
+  "acierto": 0.651,
   "ic": [
-   0.6049,
-   0.693
+   0.6057,
+   0.6937
   ],
-  "brier": 0.2194
+  "brier": 0.2192
  },
  "base_local": {
-  "n": 446,
-  "acierto": 0.5269
+  "n": 447,
+  "acierto": 0.528
  },
  "base_balance": {
   "n": 256,
@@ -25,12 +25,12 @@
  "tramos": [
   {
    "min": 0.6,
-   "n": 286,
-   "conf": 0.7363,
-   "acierto": 0.6993,
+   "n": 287,
+   "conf": 0.736,
+   "acierto": 0.7003,
    "ic": [
-    0.6438,
-    0.7495
+    0.645,
+    0.7504
    ]
   },
   {
@@ -65,9 +65,9 @@
   {
    "desde": 60,
    "hasta": 70,
-   "n": 112,
+   "n": 113,
    "prometido": 0.6515,
-   "real": 0.5982
+   "real": 0.6018
   },
   {
    "desde": 70,
@@ -103,26 +103,26 @@
    "brier": 0.2211
   },
   "2026": {
-   "n": 162,
-   "aciertos": 104,
-   "acierto": 0.642,
+   "n": 163,
+   "aciertos": 105,
+   "acierto": 0.6442,
    "ic": [
-    0.5656,
-    0.7117
+    0.5681,
+    0.7136
    ],
-   "brier": 0.2164
+   "brier": 0.2159
   }
  },
  "fases": {
   "regular": {
-   "n": 433,
-   "aciertos": 281,
-   "acierto": 0.649,
+   "n": 434,
+   "aciertos": 282,
+   "acierto": 0.6498,
    "ic": [
-    0.6029,
-    0.6924
+    0.6038,
+    0.6932
    ],
-   "brier": 0.2205
+   "brier": 0.2203
   },
   "playoff": {
    "n": 13,
@@ -137,14 +137,14 @@
  },
  "elige": {
   "local": {
-   "n": 253,
-   "aciertos": 166,
-   "acierto": 0.6561,
+   "n": 254,
+   "aciertos": 167,
+   "acierto": 0.6575,
    "ic": [
-    0.5957,
-    0.7119
+    0.5972,
+    0.7131
    ],
-   "brier": 0.2137
+   "brier": 0.2133
   },
   "visitante": {
    "n": 193,
@@ -158,6 +158,15 @@
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-26T01:00:00Z",
+   "local": "Los Angeles Rams",
+   "visitante": "Green Bay Packers",
+   "marcador": "26-13",
+   "fav": "Los Angeles Rams",
+   "pp": 0.6464,
+   "ok": true
+  },
   {
    "fecha": "2026-11-24T01:15:00Z",
    "local": "Washington Commanders",
@@ -373,15 +382,6 @@
    "fav": "Houston Texans",
    "pp": 0.5884,
    "ok": false
-  },
-  {
-   "fecha": "2026-11-15T18:00:00Z",
-   "local": "Atlanta Falcons",
-   "visitante": "Kansas City Chiefs",
-   "marcador": "13-35",
-   "fav": "Kansas City Chiefs",
-   "pp": 0.639,
-   "ok": true
   }
  ],
  "motor": {
@@ -394,18 +394,18 @@
    "c_micro": 0.0,
    "c_sede": 0.0
   },
-  "sd": 14.252,
+  "sd": 14.249,
   "motor": {
-   "n": 446,
-   "acierto": 0.6502,
-   "brier": 0.2194,
-   "logloss": 0.6279
+   "n": 447,
+   "acierto": 0.651,
+   "brier": 0.2192,
+   "logloss": 0.6275
   },
   "elo_basico": {
-   "n": 446,
-   "acierto": 0.6413,
-   "brier": 0.2209,
-   "logloss": 0.6305
+   "n": 447,
+   "acierto": 0.6421,
+   "brier": 0.2206,
+   "logloss": 0.63
   },
   "escalas": {
    "temporada": true,
@@ -415,8 +415,8 @@
    "descanso": false
   },
   "local": {
-   "n": 446,
-   "acierto": 0.5269
+   "n": 447,
+   "acierto": 0.528
   },
   "temporadas_prueba": [
    2025,

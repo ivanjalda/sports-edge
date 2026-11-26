@@ -15872,8 +15872,8 @@
     1
    ],
    "creada": "2026-11-24 06:22 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "71-78"
   },
   {
    "id": "401920138",
@@ -16010,8 +16010,8 @@
     1
    ],
    "creada": "2026-11-24 06:22 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "83-76"
   },
   {
    "id": "401929005",
@@ -16033,8 +16033,8 @@
     5
    ],
    "creada": "2026-11-24 06:22 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "83-81"
   },
   {
    "id": "401921710",
@@ -16631,8 +16631,8 @@
     0
    ],
    "creada": "2026-11-25 17:54 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "73-79"
   },
   {
    "id": "401921713",
@@ -16654,8 +16654,8 @@
     1
    ],
    "creada": "2026-11-25 17:54 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "80-78"
   },
   {
    "id": "401921672",
@@ -16677,8 +16677,8 @@
     2
    ],
    "creada": "2026-11-25 17:54 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "66-64"
   },
   {
    "id": "401921714",
@@ -16700,8 +16700,8 @@
     3
    ],
    "creada": "2026-11-25 17:54 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "77-75"
   },
   {
    "id": "401920530",
@@ -17645,7 +17645,122 @@
    "creada": "2026-11-26 04:23 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401929288",
+   "fecha": "2026-11-27T18:30:00Z",
+   "local": "Memphis Tigers",
+   "visitante": "Wake Forest Demon Deacons",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.4348,
+   "pv": 0.5652,
+   "elo_l": 1584,
+   "elo_v": 1606,
+   "bal_l": [
+    5,
+    1
+   ],
+   "bal_v": [
+    6,
+    1
+   ],
+   "creada": "2026-11-26 17:37 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401929289",
+   "fecha": "2026-11-28T00:30:00Z",
+   "local": "Mississippi State Bulldogs",
+   "visitante": "Penn State Nittany Lions",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.6055,
+   "pv": 0.3945,
+   "elo_l": 1560,
+   "elo_v": 1481,
+   "bal_l": [
+    5,
+    2
+   ],
+   "bal_v": [
+    5,
+    2
+   ],
+   "creada": "2026-11-26 17:37 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401920890",
+   "fecha": "2026-11-28T17:00:00Z",
+   "local": "Seton Hall Pirates",
+   "visitante": "Siena Saints",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.805,
+   "pv": 0.195,
+   "elo_l": 1629,
+   "elo_v": 1593,
+   "bal_l": [
+    6,
+    1
+   ],
+   "bal_v": [
+    5,
+    2
+   ],
+   "creada": "2026-11-26 17:37 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401920849",
+   "fecha": "2026-11-28T17:00:00Z",
+   "local": "St. Thomas Tommies",
+   "visitante": "Princeton Tigers",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.6662,
+   "pv": 0.3338,
+   "elo_l": 1611,
+   "elo_v": 1498,
+   "bal_l": [
+    4,
+    4
+   ],
+   "bal_v": [
+    4,
+    2
+   ],
+   "creada": "2026-11-26 17:37 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401918961",
+   "fecha": "2026-11-28T17:00:00Z",
+   "local": "NC State Wolfpack",
+   "visitante": "Elon Phoenix",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.9044,
+   "pv": 0.0956,
+   "elo_l": 1654,
+   "elo_v": 1458,
+   "bal_l": [
+    6,
+    1
+   ],
+   "bal_v": [
+    3,
+    4
+   ],
+   "creada": "2026-11-26 17:37 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-26 04:23 UTC"
+ "actualizado": "2026-11-26 17:37 UTC"
 }
