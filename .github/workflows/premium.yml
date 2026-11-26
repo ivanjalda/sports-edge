@@ -1,0 +1,43 @@
+name: Premium
+
+# Revisa los pagos de Stripe y los canales privados de Telegram (SportEVLab Premium).
+# El vigilante de Telegram ya lo hace cada 10 minutos; esta tarea sirve para lanzarlo a mano
+# y como reserva cada hora por si el vigilante esta parado.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "41 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: premium
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Preparar
+        run: pip install -q firebase-admin || true
+
+      - name: Revisar suscripciones Premium
+        env:
+          STRIPE_KEY: ${{ secrets.STRIPE_KEY }}
+          TELEGRAM_PREMIUM_TOKEN: ${{ secrets.TELEGRAM_PREMIUM_TOKEN }}
+          FIREBASE_CUENTA: ${{ secrets.FIREBASE_CUENTA }}
+        run: python3 -u scripts/premium.py
+
+      - name: Guardar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/premium.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Premium: suscripciones revisadas"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; git rebase --abort 2>/dev/null; sleep 10; done
+          exit 1
