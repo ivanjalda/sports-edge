@@ -5127,8 +5127,8 @@
     6
    ],
    "creada": "2026-11-24 06:22 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "111-104",
    "cuota": {
     "mejor": {
      "V": {
@@ -5179,8 +5179,8 @@
     12
    ],
    "creada": "2026-11-24 06:22 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "105-107",
    "cuota": {
     "mejor": {
      "L": {
@@ -5231,8 +5231,8 @@
     9
    ],
    "creada": "2026-11-24 06:22 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "121-102",
    "cuota": {
     "mejor": {
      "V": {
@@ -5283,8 +5283,8 @@
     5
    ],
    "creada": "2026-11-24 06:22 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "106-113",
    "cuota": {
     "mejor": {
      "V": {
@@ -5335,8 +5335,8 @@
     12
    ],
    "creada": "2026-11-24 06:22 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "115-97",
    "cuota": {
     "mejor": {
      "V": {
@@ -5387,8 +5387,8 @@
     13
    ],
    "creada": "2026-11-24 06:22 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "97-104",
    "cuota": {
     "mejor": {
      "V": {
@@ -5439,8 +5439,8 @@
     7
    ],
    "creada": "2026-11-24 06:22 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "116-104",
    "cuota": {
     "mejor": {
      "L": {
@@ -5574,7 +5574,260 @@
     "L": 2.38,
     "V": 1.72
    }
+  },
+  {
+   "id": "401909326",
+   "fecha": "2026-11-28T00:00:00Z",
+   "local": "New York Knicks",
+   "visitante": "Miami Heat",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7216,
+   "pv": 0.2784,
+   "elo_l": 1675,
+   "elo_v": 1539,
+   "bal_l": [
+    12,
+    6
+   ],
+   "bal_v": [
+    10,
+    7
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909327",
+   "fecha": "2026-11-28T00:30:00Z",
+   "local": "Detroit Pistons",
+   "visitante": "Milwaukee Bucks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.9092,
+   "pv": 0.0908,
+   "elo_l": 1628,
+   "elo_v": 1344,
+   "bal_l": [
+    11,
+    6
+   ],
+   "bal_v": [
+    2,
+    17
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909328",
+   "fecha": "2026-11-28T00:30:00Z",
+   "local": "Indiana Pacers",
+   "visitante": "Philadelphia 76ers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.3474,
+   "pv": 0.6526,
+   "elo_l": 1385,
+   "elo_v": 1552,
+   "bal_l": [
+    6,
+    12
+   ],
+   "bal_v": [
+    15,
+    4
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909329",
+   "fecha": "2026-11-28T00:30:00Z",
+   "local": "Toronto Raptors",
+   "visitante": "Brooklyn Nets",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8216,
+   "pv": 0.1784,
+   "elo_l": 1498,
+   "elo_v": 1331,
+   "bal_l": [
+    6,
+    11
+   ],
+   "bal_v": [
+    4,
+    13
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909330",
+   "fecha": "2026-11-28T01:00:00Z",
+   "local": "Boston Celtics",
+   "visitante": "Atlanta Hawks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7069,
+   "pv": 0.2931,
+   "elo_l": 1630,
+   "elo_v": 1551,
+   "bal_l": [
+    12,
+    6
+   ],
+   "bal_v": [
+    11,
+    6
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909331",
+   "fecha": "2026-11-28T01:30:00Z",
+   "local": "Minnesota Timberwolves",
+   "visitante": "Memphis Grizzlies",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7306,
+   "pv": 0.2694,
+   "elo_l": 1607,
+   "elo_v": 1489,
+   "bal_l": [
+    14,
+    5
+   ],
+   "bal_v": [
+    14,
+    5
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909332",
+   "fecha": "2026-11-28T02:00:00Z",
+   "local": "Phoenix Suns",
+   "visitante": "Dallas Mavericks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6138,
+   "pv": 0.3862,
+   "elo_l": 1527,
+   "elo_v": 1474,
+   "bal_l": [
+    9,
+    8
+   ],
+   "bal_v": [
+    11,
+    7
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909333",
+   "fecha": "2026-11-28T02:30:00Z",
+   "local": "San Antonio Spurs",
+   "visitante": "Los Angeles Lakers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7366,
+   "pv": 0.2634,
+   "elo_l": 1697,
+   "elo_v": 1595,
+   "bal_l": [
+    15,
+    3
+   ],
+   "bal_v": [
+    15,
+    3
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909334",
+   "fecha": "2026-11-28T02:30:00Z",
+   "local": "Utah Jazz",
+   "visitante": "Denver Nuggets",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.2765,
+   "pv": 0.7235,
+   "elo_l": 1349,
+   "elo_v": 1564,
+   "bal_l": [
+    3,
+    16
+   ],
+   "bal_v": [
+    10,
+    6
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909335",
+   "fecha": "2026-11-28T02:30:00Z",
+   "local": "LA Clippers",
+   "visitante": "New Orleans Pelicans",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6618,
+   "pv": 0.3382,
+   "elo_l": 1451,
+   "elo_v": 1376,
+   "bal_l": [
+    4,
+    13
+   ],
+   "bal_v": [
+    5,
+    14
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401909336",
+   "fecha": "2026-11-28T02:30:00Z",
+   "local": "Portland Trail Blazers",
+   "visitante": "Golden State Warriors",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7161,
+   "pv": 0.2839,
+   "elo_l": 1571,
+   "elo_v": 1483,
+   "bal_l": [
+    11,
+    6
+   ],
+   "bal_v": [
+    9,
+    8
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-25 17:54 UTC"
+ "actualizado": "2026-11-26 04:23 UTC"
 }

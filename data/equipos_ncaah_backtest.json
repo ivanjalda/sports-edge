@@ -1,26 +1,26 @@
 {
- "actualizado": "2026-11-25 17:54 UTC",
+ "actualizado": "2026-11-26 04:23 UTC",
  "liga": "NCAA",
  "desde": "20251003",
- "datos_hasta": "2026-11-25T00:00:00Z",
+ "datos_hasta": "2026-11-26T00:07:00Z",
  "total": {
-  "n": 1409,
-  "aciertos": 924,
-  "acierto": 0.6558,
+  "n": 1410,
+  "aciertos": 925,
+  "acierto": 0.656,
   "ic": [
-   0.6306,
-   0.6801
+   0.6308,
+   0.6804
   ],
   "brier": 0.22
  },
  "base_local": {
-  "n": 1409,
-  "acierto": 0.5593
+  "n": 1410,
+  "acierto": 0.5589
  },
  "base_balance": {
-  "n": 1012,
-  "acierto": 0.6186,
-  "nuestro": 0.6719
+  "n": 1013,
+  "acierto": 0.619,
+  "nuestro": 0.6723
  },
  "tramos": [
   {
@@ -58,9 +58,9 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 491,
-   "prometido": 0.548,
-   "real": 0.5662
+   "n": 492,
+   "prometido": 0.5481,
+   "real": 0.5671
   },
   {
    "desde": 60,
@@ -103,24 +103,24 @@
    "brier": 0.2172
   },
   "2027": {
-   "n": 362,
-   "aciertos": 233,
-   "acierto": 0.6436,
+   "n": 363,
+   "aciertos": 234,
+   "acierto": 0.6446,
    "ic": [
-    0.593,
-    0.6912
+    0.5941,
+    0.6921
    ],
-   "brier": 0.2284
+   "brier": 0.2282
   }
  },
  "fases": {
   "regular": {
-   "n": 1394,
-   "aciertos": 913,
-   "acierto": 0.6549,
+   "n": 1395,
+   "aciertos": 914,
+   "acierto": 0.6552,
    "ic": [
-    0.6296,
-    0.6794
+    0.6299,
+    0.6797
    ],
    "brier": 0.22
   },
@@ -147,17 +147,26 @@
    "brier": 0.2131
   },
   "visitante": {
-   "n": 532,
-   "aciertos": 334,
-   "acierto": 0.6278,
+   "n": 533,
+   "aciertos": 335,
+   "acierto": 0.6285,
    "ic": [
-    0.586,
-    0.6678
+    0.5867,
+    0.6685
    ],
-   "brier": 0.2314
+   "brier": 0.2313
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-26T00:07:00Z",
+   "local": "Bemidji State Beavers",
+   "visitante": "St. Thomas Tommies",
+   "marcador": "2-4",
+   "fav": "St. Thomas Tommies",
+   "pp": 0.5744,
+   "ok": true
+  },
   {
    "fecha": "2026-11-25T00:00:00Z",
    "local": "Brown Bears",
@@ -173,7 +182,7 @@
    "visitante": "Canisius Golden Griffins",
    "marcador": "6-5",
    "fav": "Niagara Purple Eagles",
-   "pp": 0.6021,
+   "pp": 0.6022,
    "ok": true
   },
   {
@@ -373,15 +382,6 @@
    "fav": "Michigan Wolverines",
    "pp": 0.5657,
    "ok": false
-  },
-  {
-   "fecha": "2026-11-21T23:00:00Z",
-   "local": "Boston University Terriers",
-   "visitante": "Merrimack Warriors",
-   "marcador": "5-1",
-   "fav": "Boston University Terriers",
-   "pp": 0.5587,
-   "ok": true
   }
  ],
  "motor": {
@@ -396,16 +396,16 @@
   },
   "sd": 2.881,
   "motor": {
-   "n": 1409,
-   "acierto": 0.6558,
+   "n": 1410,
+   "acierto": 0.656,
    "brier": 0.22,
    "logloss": 0.6304
   },
   "elo_basico": {
-   "n": 1409,
-   "acierto": 0.6409,
+   "n": 1410,
+   "acierto": 0.6404,
    "brier": 0.2255,
-   "logloss": 0.6422
+   "logloss": 0.6423
   },
   "escalas": {
    "temporada": true,
@@ -415,8 +415,8 @@
    "descanso": true
   },
   "local": {
-   "n": 1409,
-   "acierto": 0.5593
+   "n": 1410,
+   "acierto": 0.5589
   },
   "temporadas_prueba": [
    2026,

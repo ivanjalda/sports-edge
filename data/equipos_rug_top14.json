@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-11-25 17:54 UTC",
+ "actualizado": "2026-11-26 04:23 UTC",
  "liga": "Top 14",
  "datos_hasta": "2026-11-08T20:05:00Z",
- "dias_desde_datos": 16,
+ "dias_desde_datos": 17,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
@@ -147,11 +147,34 @@
    "creada": "2026-11-24 20:20 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "604426",
+   "fecha": "2026-11-29T20:05:00Z",
+   "local": "Clermont Auvergne",
+   "visitante": "Toulon",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6808,
+   "pv": 0.3192,
+   "elo_l": 1514,
+   "elo_v": 1527,
+   "bal_l": [
+    3,
+    6
+   ],
+   "bal_v": [
+    5,
+    4
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
  "recientes": [],
  "directo": {
-  "total": 6,
+  "total": 7,
   "resueltas": 0,
   "aciertos": 0,
   "acierto": null,

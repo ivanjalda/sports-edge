@@ -1,336 +1,6 @@
 {
- "actualizado": "2026-11-25 17:49 UTC",
+ "actualizado": "2026-11-26 04:18 UTC",
  "predicciones": [
-  {
-   "id": 561961,
-   "liga": "Championship",
-   "fecha": "2026-11-25T19:45:00Z",
-   "local": "Watford FC",
-   "visitante": "Blackburn Rovers FC",
-   "creada": "2026-11-18T23:56:49Z",
-   "resultado": null,
-   "marcador": null,
-   "p_local": 0.3755,
-   "p_empate": 0.308,
-   "p_visitante": 0.3165,
-   "xg_local": 1.22,
-   "xg_visitante": 1.1,
-   "n_partidos": 199,
-   "mercados": {
-    "over15": 0.6869,
-    "over25": 0.4092,
-    "over35": 0.2047,
-    "btts": 0.4833,
-    "marcador": "1-1",
-    "p_marcador": 0.1451,
-    "ht_local": 0.2951,
-    "ht_empate": 0.4466,
-    "ht_visitante": 0.2584,
-    "ht_gol": 0.6593
-   },
-   "modelo": "SE",
-   "goleadores": {
-    "local": [
-     {
-      "n": "Amin Nabizada",
-      "g": 3,
-      "p": 0.2454
-     }
-    ],
-    "visitante": [
-     {
-      "n": "Andri Guðjohnsen",
-      "g": 10,
-      "p": 0.3935
-     },
-     {
-      "n": "Oladapo Afolayan",
-      "g": 5,
-      "p": 0.2212
-     }
-    ]
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-19 16:23 UTC",
-    "valor": [],
-    "1": 2.51,
-    "X": 3.45,
-    "2": 2.9
-   },
-   "razon_es": "Goles esperados: 1.22 - 1.10. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
-   "razon_en": "Expected goals: 1.22 - 1.10. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
-  },
-  {
-   "id": 561963,
-   "liga": "Championship",
-   "fecha": "2026-11-25T19:45:00Z",
-   "local": "Bolton Wanderers FC",
-   "visitante": "West Bromwich Albion FC",
-   "creada": "2026-11-18T23:56:49Z",
-   "resultado": null,
-   "marcador": null,
-   "p_local": 0.3122,
-   "p_empate": 0.2742,
-   "p_visitante": 0.4136,
-   "xg_local": 1.29,
-   "xg_visitante": 1.52,
-   "n_partidos": 15,
-   "mercados": {
-    "over15": 0.7821,
-    "over25": 0.5325,
-    "over35": 0.3098,
-    "btts": 0.5778,
-    "marcador": "1-1",
-    "p_marcador": 0.13,
-    "ht_local": 0.2684,
-    "ht_empate": 0.3989,
-    "ht_visitante": 0.3327,
-    "ht_gol": 0.7284
-   },
-   "modelo": "SE",
-   "goleadores": {
-    "local": [
-     {
-      "n": "Sam Dalby",
-      "g": 6,
-      "p": 0.3209
-     },
-     {
-      "n": "Thierry Gale",
-      "g": 3,
-      "p": 0.1759
-     }
-    ],
-    "visitante": [
-     {
-      "n": "Isaac Price",
-      "g": 6,
-      "p": 0.3273
-     },
-     {
-      "n": "Jimmy Morgan",
-      "g": 5,
-      "p": 0.2814
-     },
-     {
-      "n": "Aune Heggebø",
-      "g": 3,
-      "p": 0.1798
-     }
-    ]
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-19 16:23 UTC",
-    "valor": [],
-    "1": 3.3,
-    "X": 3.65,
-    "2": 2.21
-   },
-   "razon_es": "Goles esperados: 1.29 - 1.52. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
-   "razon_en": "Expected goals: 1.29 - 1.52. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
-  },
-  {
-   "id": 561964,
-   "liga": "Championship",
-   "fecha": "2026-11-25T19:45:00Z",
-   "local": "Burnley FC",
-   "visitante": "Birmingham City FC",
-   "creada": "2026-11-18T23:56:49Z",
-   "resultado": null,
-   "marcador": null,
-   "p_local": 0.423,
-   "p_empate": 0.2852,
-   "p_visitante": 0.2919,
-   "xg_local": 1.44,
-   "xg_visitante": 1.16,
-   "n_partidos": 107,
-   "mercados": {
-    "over15": 0.7464,
-    "over25": 0.4834,
-    "over35": 0.2656,
-    "btts": 0.5377,
-    "marcador": "1-1",
-    "p_marcador": 0.1362,
-    "ht_local": 0.3331,
-    "ht_empate": 0.4162,
-    "ht_visitante": 0.2506,
-    "ht_gol": 0.7018
-   },
-   "modelo": "SE",
-   "goleadores": {
-    "local": [
-     {
-      "n": "Largie Ramazani",
-      "g": 4,
-      "p": 0.2303
-     },
-     {
-      "n": "Zeki Amdouni",
-      "g": 3,
-      "p": 0.1783
-     }
-    ],
-    "visitante": [
-     {
-      "n": "August Priske",
-      "g": 6,
-      "p": 0.2201
-     },
-     {
-      "n": "Jay Stansfield",
-      "g": 4,
-      "p": 0.1527
-     },
-     {
-      "n": "Liam Millar",
-      "g": 4,
-      "p": 0.1527
-     }
-    ]
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-19 16:23 UTC",
-    "valor": [],
-    "1": 2.65,
-    "X": 3.55,
-    "2": 2.65
-   },
-   "razon_es": "Goles esperados: 1.44 - 1.16. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
-   "razon_en": "Expected goals: 1.44 - 1.16. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
-  },
-  {
-   "id": 561962,
-   "liga": "Championship",
-   "fecha": "2026-11-25T20:00:00Z",
-   "local": "Stoke City FC",
-   "visitante": "Millwall FC",
-   "creada": "2026-11-18T23:56:49Z",
-   "resultado": null,
-   "marcador": null,
-   "p_local": 0.3859,
-   "p_empate": 0.3045,
-   "p_visitante": 0.3096,
-   "xg_local": 1.26,
-   "xg_visitante": 1.1,
-   "n_partidos": 199,
-   "mercados": {
-    "over15": 0.6957,
-    "over25": 0.4197,
-    "over35": 0.2128,
-    "btts": 0.491,
-    "marcador": "1-1",
-    "p_marcador": 0.144,
-    "ht_local": 0.3027,
-    "ht_empate": 0.4421,
-    "ht_visitante": 0.2552,
-    "ht_gol": 0.6655
-   },
-   "modelo": "SE",
-   "goleadores": {
-    "local": [
-     {
-      "n": "Jack McGlynn",
-      "g": 5,
-      "p": 0.2309
-     },
-     {
-      "n": "Ethan Galbraith",
-      "g": 4,
-      "p": 0.1894
-     }
-    ],
-    "visitante": [
-     {
-      "n": "Lyndon Dykes",
-      "g": 4,
-      "p": 0.1741
-     },
-     {
-      "n": "Taïryk Arconte",
-      "g": 3,
-      "p": 0.1337
-     },
-     {
-      "n": "Camiel Neghli",
-      "g": 3,
-      "p": 0.1337
-     }
-    ]
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-19 16:23 UTC",
-    "valor": [],
-    "1": 2.48,
-    "X": 3.4,
-    "2": 3.0
-   },
-   "razon_es": "Goles esperados: 1.26 - 1.10. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
-   "razon_en": "Expected goals: 1.26 - 1.10. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
-  },
-  {
-   "id": 555091,
-   "liga": "Brasileirão",
-   "fecha": "2026-11-25T23:00:00Z",
-   "local": "CA Mineiro",
-   "visitante": "SC Corinthians Paulista",
-   "creada": "2026-11-18T23:56:49Z",
-   "resultado": null,
-   "marcador": null,
-   "p_local": 0.4914,
-   "p_empate": 0.2968,
-   "p_visitante": 0.2118,
-   "xg_local": 1.41,
-   "xg_visitante": 0.84,
-   "n_partidos": 186,
-   "mercados": {
-    "over15": 0.6719,
-    "over25": 0.3928,
-    "over35": 0.1922,
-    "btts": 0.4439,
-    "marcador": "1-1",
-    "p_marcador": 0.1373,
-    "ht_local": null,
-    "ht_empate": null,
-    "ht_visitante": null,
-    "ht_gol": null
-   },
-   "modelo": "SE",
-   "goleadores": {
-    "local": [
-     {
-      "n": "Tomás Cuello",
-      "g": 5,
-      "p": 0.148
-     },
-     {
-      "n": "Bernard",
-      "g": 5,
-      "p": 0.148
-     },
-     {
-      "n": "Victor Hugo Gomes",
-      "g": 4,
-      "p": 0.1203
-     }
-    ],
-    "visitante": [
-     {
-      "n": "Bidu",
-      "g": 5,
-      "p": 0.1101
-     }
-    ]
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-19 00:02 UTC",
-    "valor": [],
-    "1": 2.4,
-    "X": 3.15,
-    "2": 3.0
-   },
-   "razon_es": "Goles esperados: 1.41 - 0.84. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
-   "razon_en": "Expected goals: 1.41 - 0.84. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
-  },
   {
    "id": 555108,
    "liga": "Brasileirão",
@@ -6511,6 +6181,1509 @@
    },
    "razon_es": "Goles esperados: 1.90 - 1.27. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.90 - 1.27. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 564855,
+   "liga": "LaLiga",
+   "fecha": "2026-12-02T18:00:00Z",
+   "local": "Real Sociedad de Fútbol",
+   "visitante": "Real Madrid CF",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.2149,
+   "p_empate": 0.2395,
+   "p_visitante": 0.5456,
+   "xg_local": 1.17,
+   "xg_visitante": 1.95,
+   "n_partidos": 165,
+   "mercados": {
+    "over15": 0.8275,
+    "over25": 0.6021,
+    "over35": 0.3785,
+    "btts": 0.6005,
+    "marcador": "1-1",
+    "p_marcador": 0.1109,
+    "ht_local": 0.2065,
+    "ht_empate": 0.3809,
+    "ht_visitante": 0.4126,
+    "ht_gol": 0.7427
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Luka Sučić",
+      "g": 4,
+      "p": 0.1841
+     },
+     {
+      "n": "Orri Oskarsson",
+      "g": 4,
+      "p": 0.1841
+     },
+     {
+      "n": "Gonçalo Guedes",
+      "g": 3,
+      "p": 0.1415
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Kylian Mbappé",
+      "g": 13,
+      "p": 0.5361
+     },
+     {
+      "n": "Jude Bellingham",
+      "g": 5,
+      "p": 0.2558
+     },
+     {
+      "n": "Carlos Espí",
+      "g": 3,
+      "p": 0.1624
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.17 - 1.95. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.17 - 1.95. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 560663,
+   "liga": "Premier League",
+   "fecha": "2026-12-02T19:30:00Z",
+   "local": "Liverpool FC",
+   "visitante": "Sunderland AFC",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.6356,
+   "p_empate": 0.2292,
+   "p_visitante": 0.1352,
+   "xg_local": 1.96,
+   "xg_visitante": 0.8,
+   "n_partidos": 49,
+   "mercados": {
+    "over15": 0.7712,
+    "over25": 0.5198,
+    "over35": 0.2981,
+    "btts": 0.4825,
+    "marcador": "2-0",
+    "p_marcador": 0.1217,
+    "ht_local": 0.4596,
+    "ht_empate": 0.3966,
+    "ht_visitante": 0.1439,
+    "ht_gol": 0.6998
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Alexander Isak",
+      "g": 7,
+      "p": 0.5334
+     },
+     {
+      "n": "Víctor Muñoz",
+      "g": 3,
+      "p": 0.2787
+     },
+     {
+      "n": "Dominik Szoboszlai",
+      "g": 2,
+      "p": 0.1957
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Enzo Le Fée",
+      "g": 3,
+      "p": 0.2592
+     },
+     {
+      "n": "Brian Brobbey",
+      "g": 3,
+      "p": 0.2592
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.96 - 0.80. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.96 - 0.80. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 560664,
+   "liga": "Premier League",
+   "fecha": "2026-12-02T19:30:00Z",
+   "local": "Hull City AFC",
+   "visitante": "Nottingham Forest FC",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4107,
+   "p_empate": 0.3043,
+   "p_visitante": 0.285,
+   "xg_local": 1.3,
+   "xg_visitante": 1.04,
+   "n_partidos": 11,
+   "mercados": {
+    "over15": 0.69,
+    "over25": 0.413,
+    "over35": 0.2077,
+    "btts": 0.4823,
+    "marcador": "1-1",
+    "p_marcador": 0.1434,
+    "ht_local": 0.3078,
+    "ht_empate": 0.4595,
+    "ht_visitante": 0.2327,
+    "ht_gol": 0.6392
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Oliver McBurnie",
+      "g": 4,
+      "p": 0.3297
+     },
+     {
+      "n": "Mohamed Belloumi",
+      "g": 3,
+      "p": 0.2592
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Liam Delap",
+      "g": 3,
+      "p": 0.293
+     },
+     {
+      "n": "Dan Ndoye",
+      "g": 2,
+      "p": 0.2063
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.30 - 1.04. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.30 - 1.04. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 560665,
+   "liga": "Premier League",
+   "fecha": "2026-12-02T19:30:00Z",
+   "local": "Chelsea FC",
+   "visitante": "Crystal Palace FC",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.5538,
+   "p_empate": 0.2393,
+   "p_visitante": 0.2069,
+   "xg_local": 1.95,
+   "xg_visitante": 1.13,
+   "n_partidos": 163,
+   "mercados": {
+    "over15": 0.822,
+    "over25": 0.5936,
+    "over35": 0.3697,
+    "btts": 0.5902,
+    "marcador": "1-1",
+    "p_marcador": 0.1116,
+    "ht_local": 0.4172,
+    "ht_empate": 0.3824,
+    "ht_visitante": 0.2005,
+    "ht_gol": 0.739
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "João Pedro",
+      "g": 5,
+      "p": 0.3858
+     },
+     {
+      "n": "Morgan Rogers",
+      "g": 5,
+      "p": 0.3858
+     },
+     {
+      "n": "Cole Palmer",
+      "g": 3,
+      "p": 0.2536
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Tyrick Mitchell",
+      "g": 2,
+      "p": 0.1717
+     },
+     {
+      "n": "Jørgen Strand Larsen",
+      "g": 2,
+      "p": 0.1717
+     },
+     {
+      "n": "Yeremi Pino",
+      "g": 2,
+      "p": 0.1717
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.95 - 1.13. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.95 - 1.13. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 560669,
+   "liga": "Premier League",
+   "fecha": "2026-12-02T19:30:00Z",
+   "local": "Manchester City FC",
+   "visitante": "Leeds United FC",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.6263,
+   "p_empate": 0.226,
+   "p_visitante": 0.1477,
+   "xg_local": 2.02,
+   "xg_visitante": 0.89,
+   "n_partidos": 87,
+   "mercados": {
+    "over15": 0.7967,
+    "over25": 0.5562,
+    "over35": 0.3324,
+    "btts": 0.5211,
+    "marcador": "2-0",
+    "p_marcador": 0.1111,
+    "ht_local": 0.4586,
+    "ht_empate": 0.3854,
+    "ht_visitante": 0.156,
+    "ht_gol": 0.7194
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Erling Haaland",
+      "g": 9,
+      "p": 0.5624
+     },
+     {
+      "n": "Rayan Cherki",
+      "g": 5,
+      "p": 0.3681
+     },
+     {
+      "n": "Antoine Semenyo",
+      "g": 2,
+      "p": 0.1678
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Dominic Calvert-Lewin",
+      "g": 4,
+      "p": 0.2245
+     },
+     {
+      "n": "Noah Okafor",
+      "g": 4,
+      "p": 0.2245
+     },
+     {
+      "n": "Jayden Bogle",
+      "g": 2,
+      "p": 0.1194
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 2.02 - 0.89. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 2.02 - 0.89. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 560666,
+   "liga": "Premier League",
+   "fecha": "2026-12-02T20:15:00Z",
+   "local": "Aston Villa FC",
+   "visitante": "Everton FC",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4765,
+   "p_empate": 0.2775,
+   "p_visitante": 0.246,
+   "xg_local": 1.56,
+   "xg_visitante": 1.06,
+   "n_partidos": 163,
+   "mercados": {
+    "over15": 0.7477,
+    "over25": 0.4856,
+    "over35": 0.2675,
+    "btts": 0.5275,
+    "marcador": "1-1",
+    "p_marcador": 0.1326,
+    "ht_local": 0.3563,
+    "ht_empate": 0.4275,
+    "ht_visitante": 0.2162,
+    "ht_gol": 0.681
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Nicolas Jackson",
+      "g": 6,
+      "p": 0.4876
+     },
+     {
+      "n": "Alysson",
+      "g": 2,
+      "p": 0.1998
+     },
+     {
+      "n": "Johan Manzambi",
+      "g": 2,
+      "p": 0.1998
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Thierno Barry",
+      "g": 6,
+      "p": 0.4114
+     },
+     {
+      "n": "Kiernan Dewsbury Hall",
+      "g": 3,
+      "p": 0.2328
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.56 - 1.06. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.56 - 1.06. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 560667,
+   "liga": "Premier League",
+   "fecha": "2026-12-02T20:15:00Z",
+   "local": "Brentford FC",
+   "visitante": "Arsenal FC",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.2287,
+   "p_empate": 0.2803,
+   "p_visitante": 0.491,
+   "xg_local": 0.98,
+   "xg_visitante": 1.54,
+   "n_partidos": 163,
+   "mercados": {
+    "over15": 0.7293,
+    "over25": 0.4618,
+    "over35": 0.2471,
+    "btts": 0.5033,
+    "marcador": "1-1",
+    "p_marcador": 0.1335,
+    "ht_local": 0.2027,
+    "ht_empate": 0.4354,
+    "ht_visitante": 0.3619,
+    "ht_gol": 0.6676
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Keane Lewis-Potter",
+      "g": 4,
+      "p": 0.178
+     },
+     {
+      "n": "Vitaly Janelt",
+      "g": 3,
+      "p": 0.1367
+     },
+     {
+      "n": "Kevin Schade",
+      "g": 3,
+      "p": 0.1367
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Kai Havertz",
+      "g": 3,
+      "p": 0.238
+     },
+     {
+      "n": "Bukayo Saka",
+      "g": 3,
+      "p": 0.238
+     },
+     {
+      "n": "Martin Ødegaard",
+      "g": 3,
+      "p": 0.238
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 0.98 - 1.54. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 0.98 - 1.54. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 560670,
+   "liga": "Premier League",
+   "fecha": "2026-12-02T20:15:00Z",
+   "local": "Newcastle United FC",
+   "visitante": "Manchester United FC",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4385,
+   "p_empate": 0.2519,
+   "p_visitante": 0.3096,
+   "xg_local": 1.75,
+   "xg_visitante": 1.45,
+   "n_partidos": 163,
+   "mercados": {
+    "over15": 0.84,
+    "over25": 0.6215,
+    "over35": 0.3989,
+    "btts": 0.6437,
+    "marcador": "1-1",
+    "p_marcador": 0.1135,
+    "ht_local": 0.349,
+    "ht_empate": 0.3816,
+    "ht_visitante": 0.2694,
+    "ht_gol": 0.7535
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Harvey Barnes",
+      "g": 3,
+      "p": 0.2953
+     },
+     {
+      "n": "Anthony Elanga",
+      "g": 2,
+      "p": 0.2081
+     },
+     {
+      "n": "Joe Willock",
+      "g": 2,
+      "p": 0.2081
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Bruno Fernandes",
+      "g": 4,
+      "p": 0.3392
+     },
+     {
+      "n": "Bryan Mbeumo",
+      "g": 4,
+      "p": 0.3392
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.75 - 1.45. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.75 - 1.45. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 560671,
+   "liga": "Premier League",
+   "fecha": "2026-12-02T20:15:00Z",
+   "local": "AFC Bournemouth",
+   "visitante": "Brighton & Hove Albion FC",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.395,
+   "p_empate": 0.2698,
+   "p_visitante": 0.3352,
+   "xg_local": 1.52,
+   "xg_visitante": 1.39,
+   "n_partidos": 163,
+   "mercados": {
+    "over15": 0.798,
+    "over25": 0.5556,
+    "over35": 0.3319,
+    "btts": 0.5976,
+    "marcador": "1-1",
+    "p_marcador": 0.1267,
+    "ht_local": 0.3153,
+    "ht_empate": 0.4058,
+    "ht_visitante": 0.2789,
+    "ht_gol": 0.719
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Evanilson",
+      "g": 6,
+      "p": 0.3975
+     },
+     {
+      "n": "Marcus Tavernier",
+      "g": 5,
+      "p": 0.3444
+     },
+     {
+      "n": "Justin Kluivert",
+      "g": 2,
+      "p": 0.1554
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Pascal Groß",
+      "g": 4,
+      "p": 0.1925
+     },
+     {
+      "n": "Jack Hinshelwood",
+      "g": 3,
+      "p": 0.1482
+     },
+     {
+      "n": "Charalampos Kostoulas",
+      "g": 3,
+      "p": 0.1482
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.52 - 1.39. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.52 - 1.39. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 564857,
+   "liga": "LaLiga",
+   "fecha": "2026-12-02T20:30:00Z",
+   "local": "FC Barcelona",
+   "visitante": "Club Atlético de Madrid",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.6084,
+   "p_empate": 0.2155,
+   "p_visitante": 0.1761,
+   "xg_local": 2.2,
+   "xg_visitante": 1.13,
+   "n_partidos": 165,
+   "mercados": {
+    "over15": 0.854,
+    "over25": 0.6467,
+    "over35": 0.4263,
+    "btts": 0.6105,
+    "marcador": "2-1",
+    "p_marcador": 0.0979,
+    "ht_local": 0.4581,
+    "ht_empate": 0.3584,
+    "ht_visitante": 0.1834,
+    "ht_gol": 0.7659
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Raphinha",
+      "g": 15,
+      "p": 0.4764
+     },
+     {
+      "n": "Lamine Yamal",
+      "g": 10,
+      "p": 0.3504
+     },
+     {
+      "n": "Fermín López",
+      "g": 8,
+      "p": 0.2918
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Álex Baena",
+      "g": 6,
+      "p": 0.2295
+     },
+     {
+      "n": "Alejandro Grimaldo",
+      "g": 5,
+      "p": 0.1953
+     },
+     {
+      "n": "Giuliano Simeone",
+      "g": 4,
+      "p": 0.1596
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 2.20 - 1.13. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 2.20 - 1.13. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": "espn-401933719",
+   "liga": "MLS",
+   "fecha": "2026-12-03T00:00:00Z",
+   "local": "New England Revolution",
+   "visitante": "Philadelphia Union",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.3548,
+   "p_empate": 0.2655,
+   "p_visitante": 0.3797,
+   "xg_local": 1.47,
+   "xg_visitante": 1.53,
+   "n_partidos": 173,
+   "mercados": {
+    "over15": 0.8115,
+    "over25": 0.576,
+    "over35": 0.3519,
+    "btts": 0.6139,
+    "marcador": "1-1",
+    "p_marcador": 0.1233,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "razon_es": "Goles esperados: 1.47 - 1.53. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.47 - 1.53. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 555110,
+   "liga": "Brasileirão",
+   "fecha": "2026-12-03T00:30:00Z",
+   "local": "CA Paranaense",
+   "visitante": "São Paulo FC",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.491,
+   "p_empate": 0.2812,
+   "p_visitante": 0.2278,
+   "xg_local": 1.53,
+   "xg_visitante": 0.97,
+   "n_partidos": 150,
+   "mercados": {
+    "over15": 0.7264,
+    "over25": 0.4581,
+    "over35": 0.244,
+    "btts": 0.5002,
+    "marcador": "1-1",
+    "p_marcador": 0.1338,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Kevin Viveros",
+      "g": 21,
+      "p": 0.4366
+     },
+     {
+      "n": "Stiven Mendoza",
+      "g": 7,
+      "p": 0.1741
+     },
+     {
+      "n": "Leozinho",
+      "g": 6,
+      "p": 0.1512
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Jonathan Calleri",
+      "g": 10,
+      "p": 0.2153
+     },
+     {
+      "n": "Luciano",
+      "g": 9,
+      "p": 0.1961
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.53 - 0.97. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.53 - 0.97. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 555111,
+   "liga": "Brasileirão",
+   "fecha": "2026-12-03T00:30:00Z",
+   "local": "EC Bahia",
+   "visitante": "CA Mineiro",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4415,
+   "p_empate": 0.2948,
+   "p_visitante": 0.2637,
+   "xg_local": 1.4,
+   "xg_visitante": 1.03,
+   "n_partidos": 150,
+   "mercados": {
+    "over15": 0.7087,
+    "over25": 0.4356,
+    "over35": 0.2255,
+    "btts": 0.4951,
+    "marcador": "1-1",
+    "p_marcador": 0.1399,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Luciano Juba",
+      "g": 11,
+      "p": 0.2651
+     },
+     {
+      "n": "Jean Lucas",
+      "g": 4,
+      "p": 0.106
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Tomás Cuello",
+      "g": 6,
+      "p": 0.1283
+     },
+     {
+      "n": "Bernard",
+      "g": 5,
+      "p": 0.1081
+     },
+     {
+      "n": "Victor Hugo Gomes",
+      "g": 4,
+      "p": 0.0875
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.40 - 1.03. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.40 - 1.03. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 555112,
+   "liga": "Brasileirão",
+   "fecha": "2026-12-03T00:30:00Z",
+   "local": "RB Bragantino",
+   "visitante": "Fluminense FC",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.3545,
+   "p_empate": 0.304,
+   "p_visitante": 0.3416,
+   "xg_local": 1.2,
+   "xg_visitante": 1.18,
+   "n_partidos": 188,
+   "mercados": {
+    "over15": 0.7009,
+    "over25": 0.4258,
+    "over35": 0.2177,
+    "btts": 0.4978,
+    "marcador": "1-1",
+    "p_marcador": 0.1441,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Lucas Barbosa",
+      "g": 7,
+      "p": 0.1669
+     },
+     {
+      "n": "Isidro Pitta",
+      "g": 6,
+      "p": 0.1449
+     }
+    ],
+    "visitante": [
+     {
+      "n": "John Kennedy",
+      "g": 9,
+      "p": 0.17
+     },
+     {
+      "n": "Hulk",
+      "g": 7,
+      "p": 0.1349
+     },
+     {
+      "n": "Jefferson Savarino",
+      "g": 7,
+      "p": 0.1349
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.20 - 1.18. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.20 - 1.18. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 555113,
+   "liga": "Brasileirão",
+   "fecha": "2026-12-03T00:30:00Z",
+   "local": "Cruzeiro EC",
+   "visitante": "SC Internacional",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.6031,
+   "p_empate": 0.2436,
+   "p_visitante": 0.1533,
+   "xg_local": 1.84,
+   "xg_visitante": 0.83,
+   "n_partidos": 150,
+   "mercados": {
+    "over15": 0.7572,
+    "over25": 0.5,
+    "over35": 0.2802,
+    "btts": 0.4853,
+    "marcador": "2-0",
+    "p_marcador": 0.1173,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Kaio Jorge",
+      "g": 14,
+      "p": 0.3538
+     },
+     {
+      "n": "Matheus Pereira",
+      "g": 11,
+      "p": 0.2904
+     },
+     {
+      "n": "Christian",
+      "g": 5,
+      "p": 0.1444
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Johan Carbonero",
+      "g": 7,
+      "p": 0.1321
+     },
+     {
+      "n": "Alan Patrick",
+      "g": 6,
+      "p": 0.1144
+     },
+     {
+      "n": "Alerrandro",
+      "g": 5,
+      "p": 0.0963
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.84 - 0.83. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.84 - 0.83. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 555114,
+   "liga": "Brasileirão",
+   "fecha": "2026-12-03T00:30:00Z",
+   "local": "CR Flamengo",
+   "visitante": "Chapecoense AF",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.888,
+   "p_empate": 0.0844,
+   "p_visitante": 0.0276,
+   "xg_local": 3.41,
+   "xg_visitante": 0.56,
+   "n_partidos": 36,
+   "mercados": {
+    "over15": 0.9093,
+    "over25": 0.7558,
+    "over35": 0.5575,
+    "btts": 0.4197,
+    "marcador": "3-0",
+    "p_marcador": 0.1254,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Pedro",
+      "g": 20,
+      "p": 0.6021
+     },
+     {
+      "n": "Samuel Lino",
+      "g": 13,
+      "p": 0.4507
+     },
+     {
+      "n": "Jorge Carrascal",
+      "g": 8,
+      "p": 0.3083
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Marcinho",
+      "g": 5,
+      "p": 0.0729
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 3.41 - 0.56. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 3.41 - 0.56. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 555115,
+   "liga": "Brasileirão",
+   "fecha": "2026-12-03T00:30:00Z",
+   "local": "Grêmio FBPA",
+   "visitante": "Mirassol FC",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4152,
+   "p_empate": 0.2966,
+   "p_visitante": 0.2881,
+   "xg_local": 1.35,
+   "xg_visitante": 1.09,
+   "n_partidos": 74,
+   "mercados": {
+    "over15": 0.713,
+    "over25": 0.4407,
+    "over35": 0.2296,
+    "btts": 0.5043,
+    "marcador": "1-1",
+    "p_marcador": 0.141,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Carlos Vinícius",
+      "g": 11,
+      "p": 0.3101
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Carlos Eduardo",
+      "g": 7,
+      "p": 0.1777
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.35 - 1.09. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.35 - 1.09. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 555116,
+   "liga": "Brasileirão",
+   "fecha": "2026-12-03T00:30:00Z",
+   "local": "SE Palmeiras",
+   "visitante": "Coritiba FBC",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.7604,
+   "p_empate": 0.1716,
+   "p_visitante": 0.068,
+   "xg_local": 2.33,
+   "xg_visitante": 0.58,
+   "n_partidos": 112,
+   "mercados": {
+    "over15": 0.795,
+    "over25": 0.5572,
+    "over35": 0.3333,
+    "btts": 0.4056,
+    "marcador": "2-0",
+    "p_marcador": 0.1477,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "José Manuel López",
+      "g": 10,
+      "p": 0.3052
+     },
+     {
+      "n": "Mauricio",
+      "g": 10,
+      "p": 0.3052
+     },
+     {
+      "n": "Jhon Arias",
+      "g": 7,
+      "p": 0.225
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Breno Lopes",
+      "g": 9,
+      "p": 0.1195
+     },
+     {
+      "n": "Pedro Rocha",
+      "g": 9,
+      "p": 0.1195
+     },
+     {
+      "n": "Joaquín Lavega",
+      "g": 5,
+      "p": 0.0683
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 2.33 - 0.58. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 2.33 - 0.58. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 555117,
+   "liga": "Brasileirão",
+   "fecha": "2026-12-03T00:30:00Z",
+   "local": "Clube do Remo",
+   "visitante": "SC Corinthians Paulista",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.3478,
+   "p_empate": 0.2897,
+   "p_visitante": 0.3626,
+   "xg_local": 1.28,
+   "xg_visitante": 1.31,
+   "n_partidos": 36,
+   "mercados": {
+    "over15": 0.7432,
+    "over25": 0.4789,
+    "over35": 0.2617,
+    "btts": 0.5396,
+    "marcador": "1-1",
+    "p_marcador": 0.1384,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Jája Silva",
+      "g": 8,
+      "p": 0.221
+     },
+     {
+      "n": "Alef Manga",
+      "g": 5,
+      "p": 0.1445
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Kaio César",
+      "g": 7,
+      "p": 0.2004
+     },
+     {
+      "n": "Bidu",
+      "g": 5,
+      "p": 0.1476
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.28 - 1.31. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.28 - 1.31. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 555118,
+   "liga": "Brasileirão",
+   "fecha": "2026-12-03T00:30:00Z",
+   "local": "Santos FC",
+   "visitante": "Botafogo FR",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4482,
+   "p_empate": 0.2765,
+   "p_visitante": 0.2753,
+   "xg_local": 1.54,
+   "xg_visitante": 1.16,
+   "n_partidos": 150,
+   "mercados": {
+    "over15": 0.7645,
+    "over25": 0.508,
+    "over35": 0.2874,
+    "btts": 0.5528,
+    "marcador": "1-1",
+    "p_marcador": 0.1319,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Gabriel Barbosa",
+      "g": 16,
+      "p": 0.3832
+     },
+     {
+      "n": "Neymar",
+      "g": 8,
+      "p": 0.2146
+     },
+     {
+      "n": "Álvaro Barreal",
+      "g": 5,
+      "p": 0.1401
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Danilo dos Santos de Oliveira",
+      "g": 10,
+      "p": 0.2187
+     },
+     {
+      "n": "Arthur Cabral",
+      "g": 7,
+      "p": 0.1587
+     },
+     {
+      "n": "Edenilson",
+      "g": 6,
+      "p": 0.1376
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.54 - 1.16. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.54 - 1.16. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 555119,
+   "liga": "Brasileirão",
+   "fecha": "2026-12-03T00:30:00Z",
+   "local": "CR Vasco da Gama",
+   "visitante": "EC Vitória",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.509,
+   "p_empate": 0.2634,
+   "p_visitante": 0.2276,
+   "xg_local": 1.7,
+   "xg_visitante": 1.07,
+   "n_partidos": 112,
+   "mercados": {
+    "over15": 0.7744,
+    "over25": 0.5223,
+    "over35": 0.3004,
+    "btts": 0.5477,
+    "marcador": "1-1",
+    "p_marcador": 0.1256,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Thiago Mendes",
+      "g": 5,
+      "p": 0.1654
+     },
+     {
+      "n": "Carlos Gómez",
+      "g": 5,
+      "p": 0.1654
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Carlos Renê",
+      "g": 11,
+      "p": 0.2444
+     },
+     {
+      "n": "Renato Kayzer",
+      "g": 6,
+      "p": 0.1417
+     },
+     {
+      "n": "Matheuzinho",
+      "g": 6,
+      "p": 0.1417
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.70 - 1.07. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.70 - 1.07. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": "espn-401933720",
+   "liga": "MLS",
+   "fecha": "2026-12-03T00:30:00Z",
+   "local": "Inter Miami CF",
+   "visitante": "Columbus Crew",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.5081,
+   "p_empate": 0.2159,
+   "p_visitante": 0.2759,
+   "xg_local": 2.26,
+   "xg_visitante": 1.66,
+   "n_partidos": 181,
+   "mercados": {
+    "over15": 0.91,
+    "over25": 0.7503,
+    "over35": 0.5511,
+    "btts": 0.7329,
+    "marcador": "2-1",
+    "p_marcador": 0.0842,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "razon_es": "Goles esperados: 2.26 - 1.66. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 2.26 - 1.66. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": "espn-401933718",
+   "liga": "MLS",
+   "fecha": "2026-12-03T01:00:00Z",
+   "local": "Chicago Fire FC",
+   "visitante": "Charlotte FC",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4101,
+   "p_empate": 0.2469,
+   "p_visitante": 0.343,
+   "xg_local": 1.76,
+   "xg_visitante": 1.6,
+   "n_partidos": 174,
+   "mercados": {
+    "over15": 0.8582,
+    "over25": 0.6522,
+    "over35": 0.4325,
+    "btts": 0.6704,
+    "marcador": "1-1",
+    "p_marcador": 0.1077,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "razon_es": "Goles esperados: 1.76 - 1.60. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.76 - 1.60. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": "espn-401933716",
+   "liga": "MLS",
+   "fecha": "2026-12-03T01:00:00Z",
+   "local": "FC Dallas",
+   "visitante": "Portland Timbers",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.537,
+   "p_empate": 0.2316,
+   "p_visitante": 0.2314,
+   "xg_local": 2.05,
+   "xg_visitante": 1.3,
+   "n_partidos": 176,
+   "mercados": {
+    "over15": 0.8571,
+    "over25": 0.6511,
+    "over35": 0.4313,
+    "btts": 0.644,
+    "marcador": "1-1",
+    "p_marcador": 0.1028,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "razon_es": "Goles esperados: 2.05 - 1.30. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 2.05 - 1.30. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": "espn-401933736",
+   "liga": "MLS",
+   "fecha": "2026-12-03T01:00:00Z",
+   "local": "Nashville SC",
+   "visitante": "FC Cincinnati",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.5993,
+   "p_empate": 0.2249,
+   "p_visitante": 0.1758,
+   "xg_local": 2.08,
+   "xg_visitante": 1.06,
+   "n_partidos": 177,
+   "mercados": {
+    "over15": 0.8311,
+    "over25": 0.6086,
+    "over35": 0.3852,
+    "btts": 0.5821,
+    "marcador": "1-1",
+    "p_marcador": 0.1047,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "razon_es": "Goles esperados: 2.08 - 1.06. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 2.08 - 1.06. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": "espn-401933735",
+   "liga": "MLS",
+   "fecha": "2026-12-03T01:00:00Z",
+   "local": "St. Louis CITY SC",
+   "visitante": "LAFC",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.3978,
+   "p_empate": 0.2658,
+   "p_visitante": 0.3364,
+   "xg_local": 1.56,
+   "xg_visitante": 1.42,
+   "n_partidos": 139,
+   "mercados": {
+    "over15": 0.8092,
+    "over25": 0.5725,
+    "over35": 0.3485,
+    "btts": 0.6104,
+    "marcador": "1-1",
+    "p_marcador": 0.1237,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "razon_es": "Goles esperados: 1.56 - 1.42. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.56 - 1.42. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": "espn-401933717",
+   "liga": "MLS",
+   "fecha": "2026-12-03T02:00:00Z",
+   "local": "Vancouver Whitecaps",
+   "visitante": "Real Salt Lake",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.6363,
+   "p_empate": 0.2188,
+   "p_visitante": 0.1448,
+   "xg_local": 2.1,
+   "xg_visitante": 0.91,
+   "n_partidos": 179,
+   "mercados": {
+    "over15": 0.8117,
+    "over25": 0.5789,
+    "over35": 0.3548,
+    "btts": 0.5349,
+    "marcador": "2-0",
+    "p_marcador": 0.1083,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "razon_es": "Goles esperados: 2.10 - 0.91. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 2.10 - 0.91. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": "espn-401933715",
+   "liga": "MLS",
+   "fecha": "2026-12-03T03:00:00Z",
+   "local": "San Jose Earthquakes",
+   "visitante": "Houston Dynamo FC",
+   "creada": "2026-11-26T04:18:44Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.4252,
+   "p_empate": 0.2775,
+   "p_visitante": 0.2974,
+   "xg_local": 1.51,
+   "xg_visitante": 1.23,
+   "n_partidos": 171,
+   "mercados": {
+    "over15": 0.7694,
+    "over25": 0.5146,
+    "over35": 0.2933,
+    "btts": 0.5622,
+    "marcador": "1-1",
+    "p_marcador": 0.1321,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "razon_es": "Goles esperados: 1.51 - 1.23. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.51 - 1.23. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   }
  ]
 }

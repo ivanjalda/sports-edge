@@ -1611,7 +1611,237 @@
     "L": 2.38,
     "V": 1.71
    }
+  },
+  {
+   "id": "401873087",
+   "fecha": "2026-11-29T18:00:00Z",
+   "local": "Cincinnati Bengals",
+   "visitante": "New Orleans Saints",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8236,
+   "pv": 0.1764,
+   "elo_l": 1628,
+   "elo_v": 1389,
+   "bal_l": [
+    7,
+    3
+   ],
+   "bal_v": [
+    3,
+    7
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401873088",
+   "fecha": "2026-11-29T18:00:00Z",
+   "local": "Indianapolis Colts",
+   "visitante": "New York Giants",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.3152,
+   "pv": 0.6848,
+   "elo_l": 1347,
+   "elo_v": 1511,
+   "bal_l": [
+    3,
+    8
+   ],
+   "bal_v": [
+    6,
+    3
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401873089",
+   "fecha": "2026-11-29T18:00:00Z",
+   "local": "Miami Dolphins",
+   "visitante": "New York Jets",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.528,
+   "pv": 0.472,
+   "elo_l": 1319,
+   "elo_v": 1328,
+   "bal_l": [
+    1,
+    9
+   ],
+   "bal_v": [
+    3,
+    8
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401873084",
+   "fecha": "2026-11-29T18:00:00Z",
+   "local": "Minnesota Vikings",
+   "visitante": "Atlanta Falcons",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7876,
+   "pv": 0.2124,
+   "elo_l": 1608,
+   "elo_v": 1409,
+   "bal_l": [
+    7,
+    3
+   ],
+   "bal_v": [
+    3,
+    7
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401873090",
+   "fecha": "2026-11-29T18:00:00Z",
+   "local": "Jacksonville Jaguars",
+   "visitante": "Tennessee Titans",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.9164,
+   "pv": 0.0836,
+   "elo_l": 1648,
+   "elo_v": 1260,
+   "bal_l": [
+    7,
+    3
+   ],
+   "bal_v": [
+    1,
+    9
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401873085",
+   "fecha": "2026-11-29T18:00:00Z",
+   "local": "Houston Texans",
+   "visitante": "Baltimore Ravens",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6992,
+   "pv": 0.3008,
+   "elo_l": 1532,
+   "elo_v": 1414,
+   "bal_l": [
+    4,
+    6
+   ],
+   "bal_v": [
+    4,
+    7
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401873093",
+   "fecha": "2026-11-29T21:05:00Z",
+   "local": "Los Angeles Chargers",
+   "visitante": "New England Patriots",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.2775,
+   "pv": 0.7225,
+   "elo_l": 1336,
+   "elo_v": 1531,
+   "bal_l": [
+    1,
+    9
+   ],
+   "bal_v": [
+    5,
+    5
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401873092",
+   "fecha": "2026-11-29T21:25:00Z",
+   "local": "Arizona Cardinals",
+   "visitante": "Washington Commanders",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.377,
+   "pv": 0.623,
+   "elo_l": 1344,
+   "elo_v": 1460,
+   "bal_l": [
+    3,
+    8
+   ],
+   "bal_v": [
+    4,
+    5
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401873091",
+   "fecha": "2026-11-29T21:25:00Z",
+   "local": "San Francisco 49ers",
+   "visitante": "Seattle Seahawks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6128,
+   "pv": 0.3872,
+   "elo_l": 1717,
+   "elo_v": 1666,
+   "bal_l": [
+    9,
+    1
+   ],
+   "bal_v": [
+    6,
+    4
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401873086",
+   "fecha": "2026-11-30T01:20:00Z",
+   "local": "Cleveland Browns",
+   "visitante": "Las Vegas Raiders",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6542,
+   "pv": 0.3458,
+   "elo_l": 1465,
+   "elo_v": 1383,
+   "bal_l": [
+    6,
+    4
+   ],
+   "bal_v": [
+    4,
+    7
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-25 17:54 UTC"
+ "actualizado": "2026-11-26 04:23 UTC"
 }
