@@ -1,26 +1,26 @@
 {
- "actualizado": "2026-11-27 04:31 UTC",
+ "actualizado": "2026-11-27 17:20 UTC",
  "liga": "NCAA",
  "desde": "20251003",
- "datos_hasta": "2026-11-26T00:07:00Z",
+ "datos_hasta": "2026-11-27T14:00:00Z",
  "total": {
-  "n": 1410,
-  "aciertos": 925,
-  "acierto": 0.656,
+  "n": 1411,
+  "aciertos": 926,
+  "acierto": 0.6563,
   "ic": [
-   0.6308,
-   0.6804
+   0.6311,
+   0.6806
   ],
   "brier": 0.22
  },
  "base_local": {
-  "n": 1410,
-  "acierto": 0.5589
+  "n": 1411,
+  "acierto": 0.5592
  },
  "base_balance": {
-  "n": 1013,
-  "acierto": 0.619,
-  "nuestro": 0.6723
+  "n": 1014,
+  "acierto": 0.6193,
+  "nuestro": 0.6726
  },
  "tramos": [
   {
@@ -58,9 +58,9 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 492,
+   "n": 493,
    "prometido": 0.5481,
-   "real": 0.5671
+   "real": 0.568
   },
   {
    "desde": 60,
@@ -103,26 +103,26 @@
    "brier": 0.2172
   },
   "2027": {
-   "n": 363,
-   "aciertos": 234,
-   "acierto": 0.6446,
+   "n": 364,
+   "aciertos": 235,
+   "acierto": 0.6456,
    "ic": [
-    0.5941,
-    0.6921
+    0.5952,
+    0.693
    ],
-   "brier": 0.2282
+   "brier": 0.2281
   }
  },
  "fases": {
   "regular": {
-   "n": 1395,
-   "aciertos": 914,
-   "acierto": 0.6552,
+   "n": 1396,
+   "aciertos": 915,
+   "acierto": 0.6554,
    "ic": [
-    0.6299,
-    0.6797
+    0.6301,
+    0.6799
    ],
-   "brier": 0.22
+   "brier": 0.2199
   },
   "playoff": {
    "n": 15,
@@ -137,12 +137,12 @@
  },
  "elige": {
   "local": {
-   "n": 877,
-   "aciertos": 590,
-   "acierto": 0.6727,
+   "n": 878,
+   "aciertos": 591,
+   "acierto": 0.6731,
    "ic": [
-    0.641,
-    0.703
+    0.6414,
+    0.7033
    ],
    "brier": 0.2131
   },
@@ -158,6 +158,15 @@
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-27T14:00:00Z",
+   "local": "Providence Friars",
+   "visitante": "Minnesota Duluth Bulldogs",
+   "marcador": "4-1",
+   "fav": "Providence Friars",
+   "pp": 0.5688,
+   "ok": true
+  },
   {
    "fecha": "2026-11-26T00:07:00Z",
    "local": "Bemidji State Beavers",
@@ -373,15 +382,6 @@
    "fav": "Vermont Catamounts",
    "pp": 0.5476,
    "ok": true
-  },
-  {
-   "fecha": "2026-11-21T23:00:00Z",
-   "local": "Michigan State Spartans",
-   "visitante": "Michigan Wolverines",
-   "marcador": "2-0",
-   "fav": "Michigan Wolverines",
-   "pp": 0.5657,
-   "ok": false
   }
  ],
  "motor": {
@@ -396,14 +396,14 @@
   },
   "sd": 2.881,
   "motor": {
-   "n": 1410,
-   "acierto": 0.656,
+   "n": 1411,
+   "acierto": 0.6563,
    "brier": 0.22,
-   "logloss": 0.6304
+   "logloss": 0.6303
   },
   "elo_basico": {
-   "n": 1410,
-   "acierto": 0.6404,
+   "n": 1411,
+   "acierto": 0.6407,
    "brier": 0.2255,
    "logloss": 0.6423
   },
@@ -415,8 +415,8 @@
    "descanso": true
   },
   "local": {
-   "n": 1410,
-   "acierto": 0.5589
+   "n": 1411,
+   "acierto": 0.5592
   },
   "temporadas_prueba": [
    2026,

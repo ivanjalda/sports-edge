@@ -17592,8 +17592,44 @@
       "p": 0.1931
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-27 17:19 UTC",
+    "valor": [],
+    "1": 1.89,
+    "X": 3.96,
+    "2": 4.4
    }
+  },
+  {
+   "id": "espn-401936657",
+   "liga": "Liga Profesional",
+   "fecha": "2026-11-29T23:30:00Z",
+   "local": "Boca Juniors",
+   "visitante": "Gimnasia La Plata",
+   "creada": "2026-11-27T17:15:03Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.604,
+   "p_empate": 0.2567,
+   "p_visitante": 0.1393,
+   "xg_local": 1.7,
+   "xg_visitante": 0.7,
+   "n_partidos": 194,
+   "mercados": {
+    "over15": 0.7026,
+    "over25": 0.4306,
+    "over35": 0.2215,
+    "btts": 0.4223,
+    "marcador": "1-0",
+    "p_marcador": 0.1434,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE"
   }
  ],
- "actualizado": "2026-11-27 04:27 UTC"
+ "actualizado": "2026-11-27 17:15 UTC"
 }

@@ -16608,8 +16608,8 @@
     1
    ],
    "creada": "2026-11-25 05:04 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "62-71"
   },
   {
    "id": "401921671",
@@ -16769,8 +16769,8 @@
     1
    ],
    "creada": "2026-11-25 17:54 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "V",
+   "marcador": "59-62"
   },
   {
    "id": "401920540",
@@ -16792,8 +16792,8 @@
     1
    ],
    "creada": "2026-11-25 17:54 UTC",
-   "resultado": null,
-   "marcador": null
+   "resultado": "L",
+   "marcador": "72-64"
   },
   {
    "id": "401920429",
@@ -19255,7 +19255,237 @@
    "creada": "2026-11-27 04:31 UTC",
    "resultado": null,
    "marcador": null
+  },
+  {
+   "id": "401920533",
+   "fecha": "2026-11-27T18:00:00Z",
+   "local": "St. John's Red Storm",
+   "visitante": "Iowa State Cyclones",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.6008,
+   "pv": 0.3992,
+   "elo_l": 1798,
+   "elo_v": 1750,
+   "bal_l": [
+    6,
+    1
+   ],
+   "bal_v": [
+    4,
+    2
+   ],
+   "creada": "2026-11-27 17:20 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401920542",
+   "fecha": "2026-11-27T20:00:00Z",
+   "local": "Baylor Bears",
+   "visitante": "TCU Horned Frogs",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.497,
+   "pv": 0.503,
+   "elo_l": 1640,
+   "elo_v": 1657,
+   "bal_l": [
+    5,
+    2
+   ],
+   "bal_v": [
+    5,
+    2
+   ],
+   "creada": "2026-11-27 17:20 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401920532",
+   "fecha": "2026-11-27T20:30:00Z",
+   "local": "Oregon Ducks",
+   "visitante": "Maryland Terrapins",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.4588,
+   "pv": 0.5412,
+   "elo_l": 1533,
+   "elo_v": 1524,
+   "bal_l": [
+    3,
+    3
+   ],
+   "bal_v": [
+    3,
+    4
+   ],
+   "creada": "2026-11-27 17:20 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401920541",
+   "fecha": "2026-11-27T22:30:00Z",
+   "local": "Kansas State Wildcats",
+   "visitante": "Michigan Wolverines",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.1534,
+   "pv": 0.8466,
+   "elo_l": 1487,
+   "elo_v": 1759,
+   "bal_l": [
+    3,
+    4
+   ],
+   "bal_v": [
+    3,
+    4
+   ],
+   "creada": "2026-11-27 17:20 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401920543",
+   "fecha": "2026-11-28T01:30:00Z",
+   "local": "Alabama Crimson Tide",
+   "visitante": "Miami Hurricanes",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.5048,
+   "pv": 0.4952,
+   "elo_l": 1768,
+   "elo_v": 1693,
+   "bal_l": [
+    6,
+    1
+   ],
+   "bal_v": [
+    6,
+    2
+   ],
+   "creada": "2026-11-27 17:20 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401920534",
+   "fecha": "2026-11-28T02:00:00Z",
+   "local": "Louisville Cardinals",
+   "visitante": "Tennessee Volunteers",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.3314,
+   "pv": 0.6686,
+   "elo_l": 1713,
+   "elo_v": 1788,
+   "bal_l": [
+    5,
+    1
+   ],
+   "bal_v": [
+    7,
+    0
+   ],
+   "creada": "2026-11-27 17:20 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401920544",
+   "fecha": "2026-11-28T04:00:00Z",
+   "local": "Gonzaga Bulldogs",
+   "visitante": "Creighton Bluejays",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.6856,
+   "pv": 0.3144,
+   "elo_l": 1796,
+   "elo_v": 1657,
+   "bal_l": [
+    5,
+    1
+   ],
+   "bal_v": [
+    6,
+    1
+   ],
+   "creada": "2026-11-27 17:20 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401920535",
+   "fecha": "2026-11-28T04:30:00Z",
+   "local": "Texas Tech Red Raiders",
+   "visitante": "San Diego State Aztecs",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.5625,
+   "pv": 0.4375,
+   "elo_l": 1718,
+   "elo_v": 1683,
+   "bal_l": [
+    6,
+    1
+   ],
+   "bal_v": [
+    6,
+    1
+   ],
+   "creada": "2026-11-27 17:20 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401923306",
+   "fecha": "2026-11-29T17:00:00Z",
+   "local": "Maine Black Bears",
+   "visitante": "Niagara Purple Eagles",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.5451,
+   "pv": 0.4549,
+   "elo_l": 1348,
+   "elo_v": 1341,
+   "bal_l": [
+    2,
+    5
+   ],
+   "bal_v": [
+    1,
+    4
+   ],
+   "creada": "2026-11-27 17:20 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401920776",
+   "fecha": "2026-11-29T17:00:00Z",
+   "local": "Colgate Raiders",
+   "visitante": "Merrimack Warriors",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.3391,
+   "pv": 0.6609,
+   "elo_l": 1451,
+   "elo_v": 1544,
+   "bal_l": [
+    0,
+    4
+   ],
+   "bal_v": [
+    1,
+    4
+   ],
+   "creada": "2026-11-27 17:20 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-27 04:31 UTC"
+ "actualizado": "2026-11-27 17:20 UTC"
 }

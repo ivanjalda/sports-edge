@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-27 04:27 UTC",
+ "actualizado": "2026-11-27 17:15 UTC",
  "predicciones": [
   {
    "id": 558820,
@@ -5940,6 +5940,37 @@
    },
    "razon_es": "Goles esperados: 1.63 - 1.01. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.63 - 1.01. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": "espn-401936657",
+   "liga": "Liga Profesional",
+   "fecha": "2026-11-29T23:30:00Z",
+   "local": "Boca Juniors",
+   "visitante": "Gimnasia La Plata",
+   "creada": "2026-11-27T17:15:03Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.604,
+   "p_empate": 0.2567,
+   "p_visitante": 0.1393,
+   "xg_local": 1.7,
+   "xg_visitante": 0.7,
+   "n_partidos": 194,
+   "mercados": {
+    "over15": 0.7026,
+    "over25": 0.4306,
+    "over35": 0.2215,
+    "btts": 0.4223,
+    "marcador": "1-0",
+    "p_marcador": 0.1434,
+    "ht_local": null,
+    "ht_empate": null,
+    "ht_visitante": null,
+    "ht_gol": null
+   },
+   "modelo": "SE",
+   "razon_es": "Goles esperados: 1.70 - 0.70. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.70 - 0.70. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
   {
    "id": 558516,

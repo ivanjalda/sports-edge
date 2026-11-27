@@ -1,38 +1,15 @@
 {
- "actualizado": "2026-11-27 04:31 UTC",
+ "actualizado": "2026-11-27 17:20 UTC",
  "liga": "NCAA",
- "datos_hasta": "2026-11-26T00:07:00Z",
- "dias_desde_datos": 1,
+ "datos_hasta": "2026-11-27T14:00:00Z",
+ "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
- "proximo": "2026-11-27T14:00:00Z",
+ "proximo": "2026-11-27T19:00:00Z",
  "predicciones": [
-  {
-   "id": "401904828",
-   "fecha": "2026-11-27T14:00:00Z",
-   "local": "Providence Friars",
-   "visitante": "Minnesota Duluth Bulldogs",
-   "neutral": true,
-   "playoff": false,
-   "pl": 0.5688,
-   "pv": 0.4312,
-   "elo_l": 1604,
-   "elo_v": 1575,
-   "bal_l": [
-    10,
-    2
-   ],
-   "bal_v": [
-    11,
-    3
-   ],
-   "creada": "2026-11-25 17:54 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "401905162",
    "fecha": "2026-11-27T19:00:00Z",
@@ -933,6 +910,29 @@
  ],
  "recientes": [
   {
+   "id": "401904828",
+   "fecha": "2026-11-27T14:00:00Z",
+   "local": "Providence Friars",
+   "visitante": "Minnesota Duluth Bulldogs",
+   "neutral": true,
+   "playoff": false,
+   "pl": 0.5688,
+   "pv": 0.4312,
+   "elo_l": 1604,
+   "elo_v": 1575,
+   "bal_l": [
+    10,
+    2
+   ],
+   "bal_v": [
+    11,
+    3
+   ],
+   "creada": "2026-11-25 17:54 UTC",
+   "resultado": "L",
+   "marcador": "4-1"
+  },
+  {
    "id": "401904562",
    "fecha": "2026-11-26T00:07:00Z",
    "local": "Bemidji State Beavers",
@@ -1368,41 +1368,18 @@
    "creada": "2026-11-20 03:45 UTC",
    "resultado": "L",
    "marcador": "5-2"
-  },
-  {
-   "id": "401923164",
-   "fecha": "2026-11-22T00:00:00Z",
-   "local": "Wisconsin Badgers",
-   "visitante": "Penn State Nittany Lions",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8369,
-   "pv": 0.1631,
-   "elo_l": 1582,
-   "elo_v": 1499,
-   "bal_l": [
-    8,
-    1
-   ],
-   "bal_v": [
-    2,
-    9
-   ],
-   "creada": "2026-11-20 03:45 UTC",
-   "resultado": "L",
-   "marcador": "3-2"
   }
  ],
  "directo": {
   "total": 152,
-  "resueltas": 112,
-  "aciertos": 58,
-  "acierto": 0.5179,
+  "resueltas": 113,
+  "aciertos": 59,
+  "acierto": 0.5221,
   "ic": [
-   0.4263,
-   0.6083
+   0.4308,
+   0.612
   ],
-  "brier": 0.2235,
+  "brier": 0.2232,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -1417,6 +1394,12 @@
   {
    "equipo": "Michigan Wolverines",
    "elo": 1620,
+   "g": 11,
+   "p": 2
+  },
+  {
+   "equipo": "Providence Friars",
+   "elo": 1610,
    "g": 11,
    "p": 2
   },
@@ -1445,12 +1428,6 @@
    "p": 3
   },
   {
-   "equipo": "Providence Friars",
-   "elo": 1604,
-   "g": 10,
-   "p": 2
-  },
-  {
    "equipo": "Dartmouth Big Green",
    "elo": 1591,
    "g": 6,
@@ -1464,9 +1441,9 @@
   },
   {
    "equipo": "Minnesota Duluth Bulldogs",
-   "elo": 1575,
+   "elo": 1569,
    "g": 11,
-   "p": 3
+   "p": 4
   },
   {
    "equipo": "Boston College Eagles",
