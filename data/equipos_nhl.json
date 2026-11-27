@@ -1,8 +1,8 @@
 {
- "actualizado": "2026-11-26 17:37 UTC",
+ "actualizado": "2026-11-27 04:31 UTC",
  "liga": "NHL",
  "datos_hasta": "2026-11-26T03:00:00Z",
- "dias_desde_datos": 0,
+ "dias_desde_datos": 1,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
@@ -789,6 +789,305 @@
     "L": 1.83,
     "V": 4.1
    }
+  },
+  {
+   "id": "401892810",
+   "fecha": "2026-11-28T21:00:00Z",
+   "local": "Vegas Golden Knights",
+   "visitante": "Montreal Canadiens",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6057,
+   "pv": 0.3943,
+   "elo_l": 1535,
+   "elo_v": 1530,
+   "bal_l": [
+    14,
+    11
+   ],
+   "bal_v": [
+    13,
+    12
+   ],
+   "creada": "2026-11-27 04:31 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892811",
+   "fecha": "2026-11-28T23:00:00Z",
+   "local": "Florida Panthers",
+   "visitante": "Tampa Bay Lightning",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5164,
+   "pv": 0.4836,
+   "elo_l": 1518,
+   "elo_v": 1557,
+   "bal_l": [
+    13,
+    11
+   ],
+   "bal_v": [
+    15,
+    9
+   ],
+   "creada": "2026-11-27 04:31 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892812",
+   "fecha": "2026-11-29T00:00:00Z",
+   "local": "Detroit Red Wings",
+   "visitante": "Nashville Predators",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5366,
+   "pv": 0.4634,
+   "elo_l": 1481,
+   "elo_v": 1506,
+   "bal_l": [
+    9,
+    15
+   ],
+   "bal_v": [
+    13,
+    11
+   ],
+   "creada": "2026-11-27 04:31 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892813",
+   "fecha": "2026-11-29T00:00:00Z",
+   "local": "New Jersey Devils",
+   "visitante": "Winnipeg Jets",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6066,
+   "pv": 0.3934,
+   "elo_l": 1526,
+   "elo_v": 1501,
+   "bal_l": [
+    17,
+    8
+   ],
+   "bal_v": [
+    13,
+    13
+   ],
+   "creada": "2026-11-27 04:31 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892814",
+   "fecha": "2026-11-29T00:00:00Z",
+   "local": "New York Rangers",
+   "visitante": "Calgary Flames",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.626,
+   "pv": 0.374,
+   "elo_l": 1502,
+   "elo_v": 1463,
+   "bal_l": [
+    13,
+    10
+   ],
+   "bal_v": [
+    11,
+    15
+   ],
+   "creada": "2026-11-27 04:31 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892815",
+   "fecha": "2026-11-29T00:00:00Z",
+   "local": "Pittsburgh Penguins",
+   "visitante": "Toronto Maple Leafs",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5842,
+   "pv": 0.4158,
+   "elo_l": 1470,
+   "elo_v": 1461,
+   "bal_l": [
+    6,
+    17
+   ],
+   "bal_v": [
+    8,
+    16
+   ],
+   "creada": "2026-11-27 04:31 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892816",
+   "fecha": "2026-11-29T00:00:00Z",
+   "local": "Carolina Hurricanes",
+   "visitante": "Ottawa Senators",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6821,
+   "pv": 0.3179,
+   "elo_l": 1615,
+   "elo_v": 1533,
+   "bal_l": [
+    19,
+    5
+   ],
+   "bal_v": [
+    16,
+    10
+   ],
+   "creada": "2026-11-27 04:31 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892817",
+   "fecha": "2026-11-29T00:00:00Z",
+   "local": "St. Louis Blues",
+   "visitante": "Washington Capitals",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5775,
+   "pv": 0.4225,
+   "elo_l": 1515,
+   "elo_v": 1511,
+   "bal_l": [
+    13,
+    12
+   ],
+   "bal_v": [
+    11,
+    11
+   ],
+   "creada": "2026-11-27 04:31 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892818",
+   "fecha": "2026-11-29T00:30:00Z",
+   "local": "Philadelphia Flyers",
+   "visitante": "New York Islanders",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5558,
+   "pv": 0.4442,
+   "elo_l": 1487,
+   "elo_v": 1498,
+   "bal_l": [
+    9,
+    17
+   ],
+   "bal_v": [
+    12,
+    11
+   ],
+   "creada": "2026-11-27 04:31 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892819",
+   "fecha": "2026-11-29T01:00:00Z",
+   "local": "Dallas Stars",
+   "visitante": "Utah Mammoth",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.615,
+   "pv": 0.385,
+   "elo_l": 1539,
+   "elo_v": 1508,
+   "bal_l": [
+    15,
+    9
+   ],
+   "bal_v": [
+    13,
+    13
+   ],
+   "creada": "2026-11-27 04:31 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892820",
+   "fecha": "2026-11-29T02:00:00Z",
+   "local": "Colorado Avalanche",
+   "visitante": "San Jose Sharks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7421,
+   "pv": 0.2579,
+   "elo_l": 1573,
+   "elo_v": 1439,
+   "bal_l": [
+    13,
+    10
+   ],
+   "bal_v": [
+    11,
+    16
+   ],
+   "creada": "2026-11-27 04:31 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892821",
+   "fecha": "2026-11-29T02:00:00Z",
+   "local": "Los Angeles Kings",
+   "visitante": "Anaheim Ducks",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5601,
+   "pv": 0.4399,
+   "elo_l": 1475,
+   "elo_v": 1483,
+   "bal_l": [
+    8,
+    13
+   ],
+   "bal_v": [
+    12,
+    14
+   ],
+   "creada": "2026-11-27 04:31 UTC",
+   "resultado": null,
+   "marcador": null
+  },
+  {
+   "id": "401892822",
+   "fecha": "2026-11-29T03:00:00Z",
+   "local": "Seattle Kraken",
+   "visitante": "Edmonton Oilers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.4654,
+   "pv": 0.5346,
+   "elo_l": 1468,
+   "elo_v": 1542,
+   "bal_l": [
+    11,
+    11
+   ],
+   "bal_v": [
+    17,
+    9
+   ],
+   "creada": "2026-11-27 04:31 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
  "recientes": [
@@ -1834,7 +2133,7 @@
   }
  ],
  "directo": {
-  "total": 122,
+  "total": 135,
   "resueltas": 107,
   "aciertos": 53,
   "acierto": 0.4953,

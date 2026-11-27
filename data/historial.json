@@ -9762,8 +9762,8 @@
    "local": "São Paulo FC",
    "visitante": "Clube do Remo",
    "creada": "2026-11-20T03:40:53Z",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "1",
+   "marcador": "3-1",
    "p_local": 0.5724,
    "p_empate": 0.2574,
    "p_visitante": 0.1702,
@@ -17543,7 +17543,57 @@
     "ht_gol": null
    },
    "modelo": "SE"
+  },
+  {
+   "id": 560662,
+   "liga": "Premier League",
+   "fecha": "2026-12-03T20:00:00Z",
+   "local": "Tottenham Hotspur FC",
+   "visitante": "Fulham FC",
+   "creada": "2026-11-27T04:27:07Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.428,
+   "p_empate": 0.2818,
+   "p_visitante": 0.2901,
+   "xg_local": 1.48,
+   "xg_visitante": 1.18,
+   "n_partidos": 163,
+   "mercados": {
+    "over15": 0.7551,
+    "over25": 0.4951,
+    "over35": 0.2758,
+    "btts": 0.5462,
+    "marcador": "1-1",
+    "p_marcador": 0.1346,
+    "ht_local": 0.3284,
+    "ht_empate": 0.4268,
+    "ht_visitante": 0.2448,
+    "ht_gol": 0.6862
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Jan Paul van Hecke",
+      "g": 2,
+      "p": 0.2186
+     },
+     {
+      "n": "Dominic Solanke",
+      "g": 2,
+      "p": 0.2186
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Joshua King",
+      "g": 2,
+      "p": 0.1931
+     }
+    ]
+   }
   }
  ],
- "actualizado": "2026-11-26 17:32 UTC"
+ "actualizado": "2026-11-27 04:27 UTC"
 }

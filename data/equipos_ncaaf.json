@@ -1,38 +1,15 @@
 {
- "actualizado": "2026-11-26 17:37 UTC",
+ "actualizado": "2026-11-27 04:31 UTC",
  "liga": "NCAA",
- "datos_hasta": "2026-11-25T00:00:00Z",
- "dias_desde_datos": 1,
+ "datos_hasta": "2026-11-27T01:00:00Z",
+ "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
- "proximo": "2026-11-27T01:00:00Z",
+ "proximo": "2026-11-27T17:00:00Z",
  "predicciones": [
-  {
-   "id": "401856879",
-   "fecha": "2026-11-27T01:00:00Z",
-   "local": "Texas Tech Red Raiders",
-   "visitante": "TCU Horned Frogs",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8867,
-   "pv": 0.1133,
-   "elo_l": 1782,
-   "elo_v": 1554,
-   "bal_l": [
-    9,
-    1
-   ],
-   "bal_v": [
-    4,
-    6
-   ],
-   "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "401858536",
    "fecha": "2026-11-27T17:00:00Z",
@@ -1554,6 +1531,29 @@
  ],
  "recientes": [
   {
+   "id": "401856879",
+   "fecha": "2026-11-27T01:00:00Z",
+   "local": "Texas Tech Red Raiders",
+   "visitante": "TCU Horned Frogs",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.8867,
+   "pv": 0.1133,
+   "elo_l": 1782,
+   "elo_v": 1554,
+   "bal_l": [
+    9,
+    1
+   ],
+   "bal_v": [
+    4,
+    6
+   ],
+   "creada": "2026-11-23 19:04 UTC",
+   "resultado": "L",
+   "marcador": "48-27"
+  },
+  {
    "id": "401866470",
    "fecha": "2026-11-25T00:00:00Z",
    "local": "Eastern Michigan Eagles",
@@ -1989,41 +1989,18 @@
    "creada": "2026-11-18 03:53 UTC",
    "resultado": "L",
    "marcador": "35-21"
-  },
-  {
-   "id": "401860920",
-   "fecha": "2026-11-21T23:00:00Z",
-   "local": "Texas State Bobcats",
-   "visitante": "Washington State Cougars",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.8202,
-   "pv": 0.1798,
-   "elo_l": 1607,
-   "elo_v": 1412,
-   "bal_l": [
-    5,
-    4
-   ],
-   "bal_v": [
-    2,
-    8
-   ],
-   "creada": "2026-11-18 03:53 UTC",
-   "resultado": "L",
-   "marcador": "42-14"
   }
  ],
  "directo": {
   "total": 195,
-  "resueltas": 128,
-  "aciertos": 92,
-  "acierto": 0.7188,
+  "resueltas": 129,
+  "aciertos": 93,
+  "acierto": 0.7209,
   "ic": [
-   0.6354,
-   0.7894
+   0.638,
+   0.7911
   ],
-  "brier": 0.1938,
+  "brier": 0.1924,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -2066,6 +2043,12 @@
    "p": 2
   },
   {
+   "equipo": "Texas Tech Red Raiders",
+   "elo": 1794,
+   "g": 10,
+   "p": 1
+  },
+  {
    "equipo": "Alabama Crimson Tide",
    "elo": 1789,
    "g": 8,
@@ -2076,12 +2059,6 @@
    "elo": 1788,
    "g": 8,
    "p": 3
-  },
-  {
-   "equipo": "Texas Tech Red Raiders",
-   "elo": 1782,
-   "g": 9,
-   "p": 1
   },
   {
    "equipo": "Iowa Hawkeyes",
@@ -2378,12 +2355,6 @@
    "p": 4
   },
   {
-   "equipo": "TCU Horned Frogs",
-   "elo": 1554,
-   "g": 4,
-   "p": 6
-  },
-  {
    "equipo": "South Carolina Gamecocks",
    "elo": 1552,
    "g": 5,
@@ -2412,6 +2383,12 @@
    "elo": 1545,
    "g": 0,
    "p": 0
+  },
+  {
+   "equipo": "TCU Horned Frogs",
+   "elo": 1542,
+   "g": 4,
+   "p": 7
   },
   {
    "equipo": "UConn Huskies",

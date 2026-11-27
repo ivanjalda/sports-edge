@@ -1424,8 +1424,8 @@
     2
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "35-39",
    "cuota": {
     "mejor": {
      "V": {
@@ -1476,8 +1476,8 @@
     7
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "V",
+   "marcador": "38-39",
    "cuota": {
     "mejor": {
      "L": {
@@ -1528,8 +1528,8 @@
     2
    ],
    "creada": "2026-11-23 19:04 UTC",
-   "resultado": null,
-   "marcador": null,
+   "resultado": "L",
+   "marcador": "13-10",
    "cuota": {
     "mejor": {
      "L": {
@@ -2131,7 +2131,30 @@
     "L": 1.45,
     "V": 3.1
    }
+  },
+  {
+   "id": "401873094",
+   "fecha": "2026-12-01T01:15:00Z",
+   "local": "Tampa Bay Buccaneers",
+   "visitante": "Carolina Panthers",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.5939,
+   "pv": 0.4061,
+   "elo_l": 1486,
+   "elo_v": 1449,
+   "bal_l": [
+    3,
+    7
+   ],
+   "bal_v": [
+    5,
+    5
+   ],
+   "creada": "2026-11-27 04:31 UTC",
+   "resultado": null,
+   "marcador": null
   }
  ],
- "actualizado": "2026-11-26 17:37 UTC"
+ "actualizado": "2026-11-27 04:31 UTC"
 }

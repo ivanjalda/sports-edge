@@ -1,5 +1,5 @@
 {
- "ajustado": "2026-11-20 03:39 UTC",
+ "ajustado": "2026-11-27 04:26 UTC",
  "params": {
   "wa": 0.5,
   "wb": 0.25,
@@ -13,158 +13,158 @@
  "prueba": {
   "total": {
    "motor": {
-    "n": 6039,
-    "acierto": 0.4968,
-    "brier": 0.6076,
-    "logloss": 1.0146
+    "n": 6154,
+    "acierto": 0.4966,
+    "brier": 0.6075,
+    "logloss": 1.0145
    },
    "anterior": {
-    "n": 6039,
-    "acierto": 0.4757,
-    "brier": 0.6233,
-    "logloss": 1.0378
+    "n": 6154,
+    "acierto": 0.4776,
+    "brier": 0.6222,
+    "logloss": 1.0363
    },
    "mercado": {
-    "n": 6039,
-    "acierto": 0.509,
-    "brier": 0.5968,
+    "n": 6154,
+    "acierto": 0.5088,
+    "brier": 0.5967,
     "logloss": 0.9982
    },
    "local": {
-    "n": 6039,
-    "acierto": 0.4391,
-    "brier": 1.1217,
+    "n": 6154,
+    "acierto": 0.4396,
+    "brier": 1.1209,
     "logloss": null
    }
   },
   "ligas": {
    "Premier League": {
     "motor": {
-     "n": 431,
-     "acierto": 0.4919,
-     "brier": 0.614,
-     "logloss": 1.0225
+     "n": 441,
+     "acierto": 0.4921,
+     "brier": 0.6148,
+     "logloss": 1.0232
     },
     "anterior": {
-     "n": 431,
-     "acierto": 0.4733,
-     "brier": 0.6378,
-     "logloss": 1.0564
+     "n": 441,
+     "acierto": 0.4739,
+     "brier": 0.6376,
+     "logloss": 1.0561
     },
     "mercado": {
-     "n": 431,
-     "acierto": 0.4896,
-     "brier": 0.6089,
-     "logloss": 1.0138
+     "n": 441,
+     "acierto": 0.4898,
+     "brier": 0.6113,
+     "logloss": 1.017
     },
     "local": {
-     "n": 431,
-     "acierto": 0.42,
-     "brier": 1.1601,
+     "n": 441,
+     "acierto": 0.424,
+     "brier": 1.1519,
      "logloss": null
     }
    },
    "LaLiga": {
     "motor": {
-     "n": 444,
-     "acierto": 0.5383,
+     "n": 454,
+     "acierto": 0.5374,
      "brier": 0.5752,
-     "logloss": 0.9719
+     "logloss": 0.972
     },
     "anterior": {
-     "n": 444,
-     "acierto": 0.5045,
-     "brier": 0.5983,
-     "logloss": 1.0035
+     "n": 454,
+     "acierto": 0.5044,
+     "brier": 0.5981,
+     "logloss": 1.0032
     },
     "mercado": {
-     "n": 444,
-     "acierto": 0.5541,
+     "n": 454,
+     "acierto": 0.5529,
      "brier": 0.5613,
-     "logloss": 0.949
+     "logloss": 0.9492
     },
     "local": {
-     "n": 444,
-     "acierto": 0.4775,
-     "brier": 1.045,
+     "n": 454,
+     "acierto": 0.478,
+     "brier": 1.0441,
      "logloss": null
     }
    },
    "Serie A": {
     "motor": {
-     "n": 447,
-     "acierto": 0.5391,
-     "brier": 0.5842,
-     "logloss": 0.9815
+     "n": 457,
+     "acierto": 0.5405,
+     "brier": 0.5815,
+     "logloss": 0.9775
     },
     "anterior": {
-     "n": 447,
-     "acierto": 0.5213,
-     "brier": 0.5958,
-     "logloss": 0.9967
+     "n": 457,
+     "acierto": 0.5274,
+     "brier": 0.5931,
+     "logloss": 0.9927
     },
     "mercado": {
-     "n": 447,
-     "acierto": 0.5548,
-     "brier": 0.5743,
-     "logloss": 0.9673
+     "n": 457,
+     "acierto": 0.5558,
+     "brier": 0.5715,
+     "logloss": 0.9631
     },
     "local": {
-     "n": 447,
-     "acierto": 0.4072,
-     "brier": 1.1857,
+     "n": 457,
+     "acierto": 0.4114,
+     "brier": 1.1772,
      "logloss": null
     }
    },
    "Bundesliga": {
     "motor": {
-     "n": 338,
-     "acierto": 0.568,
-     "brier": 0.5707,
-     "logloss": 0.9637
+     "n": 347,
+     "acierto": 0.5706,
+     "brier": 0.571,
+     "logloss": 0.9639
     },
     "anterior": {
-     "n": 338,
-     "acierto": 0.5296,
-     "brier": 0.5952,
-     "logloss": 1.0031
+     "n": 347,
+     "acierto": 0.536,
+     "brier": 0.5918,
+     "logloss": 0.9982
     },
     "mercado": {
-     "n": 338,
-     "acierto": 0.574,
-     "brier": 0.5643,
-     "logloss": 0.9544
+     "n": 347,
+     "acierto": 0.5764,
+     "brier": 0.5642,
+     "logloss": 0.9545
     },
     "local": {
-     "n": 338,
+     "n": 347,
      "acierto": 0.4467,
-     "brier": 1.1065,
+     "brier": 1.1066,
      "logloss": null
     }
    },
    "Ligue 1": {
     "motor": {
-     "n": 350,
-     "acierto": 0.5171,
-     "brier": 0.5928,
-     "logloss": 0.9917
+     "n": 359,
+     "acierto": 0.5125,
+     "brier": 0.596,
+     "logloss": 0.9963
     },
     "anterior": {
-     "n": 350,
-     "acierto": 0.4829,
-     "brier": 0.6146,
-     "logloss": 1.0226
+     "n": 359,
+     "acierto": 0.4819,
+     "brier": 0.617,
+     "logloss": 1.0262
     },
     "mercado": {
-     "n": 350,
-     "acierto": 0.5457,
-     "brier": 0.5796,
-     "logloss": 0.9729
+     "n": 359,
+     "acierto": 0.5404,
+     "brier": 0.5824,
+     "logloss": 0.9767
     },
     "local": {
-     "n": 350,
-     "acierto": 0.46,
-     "brier": 1.08,
+     "n": 359,
+     "acierto": 0.454,
+     "brier": 1.0919,
      "logloss": null
     }
    },
@@ -196,129 +196,129 @@
    },
    "Eredivisie": {
     "motor": {
-     "n": 368,
-     "acierto": 0.5054,
-     "brier": 0.5887,
-     "logloss": 0.9863
+     "n": 377,
+     "acierto": 0.504,
+     "brier": 0.589,
+     "logloss": 0.9872
     },
     "anterior": {
-     "n": 368,
-     "acierto": 0.4946,
-     "brier": 0.6138,
-     "logloss": 1.0264
+     "n": 377,
+     "acierto": 0.5013,
+     "brier": 0.6084,
+     "logloss": 1.0188
     },
     "mercado": {
-     "n": 368,
-     "acierto": 0.5217,
-     "brier": 0.5891,
-     "logloss": 0.9873
+     "n": 377,
+     "acierto": 0.5225,
+     "brier": 0.589,
+     "logloss": 0.9875
     },
     "local": {
-     "n": 368,
-     "acierto": 0.4212,
-     "brier": 1.1576,
+     "n": 377,
+     "acierto": 0.4164,
+     "brier": 1.1671,
      "logloss": null
     }
    },
    "Championship": {
     "motor": {
-     "n": 675,
-     "acierto": 0.4385,
-     "brier": 0.6419,
-     "logloss": 1.0627
+     "n": 699,
+     "acierto": 0.4392,
+     "brier": 0.6405,
+     "logloss": 1.0608
     },
     "anterior": {
-     "n": 675,
-     "acierto": 0.4311,
-     "brier": 0.6439,
-     "logloss": 1.0652
+     "n": 699,
+     "acierto": 0.4363,
+     "brier": 0.6407,
+     "logloss": 1.0611
     },
     "mercado": {
-     "n": 675,
-     "acierto": 0.48,
-     "brier": 0.6239,
-     "logloss": 1.0353
+     "n": 699,
+     "acierto": 0.4807,
+     "brier": 0.6227,
+     "logloss": 1.0338
     },
     "local": {
-     "n": 675,
-     "acierto": 0.4267,
-     "brier": 1.1467,
+     "n": 699,
+     "acierto": 0.4278,
+     "brier": 1.1445,
      "logloss": null
     }
    },
    "Brasileirão": {
     "motor": {
-     "n": 669,
-     "acierto": 0.5202,
-     "brier": 0.5954,
-     "logloss": 0.9943
+     "n": 687,
+     "acierto": 0.5197,
+     "brier": 0.5953,
+     "logloss": 0.9946
     },
     "anterior": {
-     "n": 669,
-     "acierto": 0.5082,
-     "brier": 0.6057,
-     "logloss": 1.0094
+     "n": 687,
+     "acierto": 0.5066,
+     "brier": 0.6053,
+     "logloss": 1.0091
     },
     "mercado": {
-     "n": 669,
-     "acierto": 0.5351,
-     "brier": 0.5823,
-     "logloss": 0.9759
+     "n": 687,
+     "acierto": 0.5342,
+     "brier": 0.5816,
+     "logloss": 0.9753
     },
     "local": {
-     "n": 669,
+     "n": 687,
      "acierto": 0.4978,
-     "brier": 1.0045,
+     "brier": 1.0044,
      "logloss": null
     }
    },
    "Liga Profesional": {
     "motor": {
-     "n": 954,
-     "acierto": 0.4382,
-     "brier": 0.6402,
-     "logloss": 1.0619
+     "n": 961,
+     "acierto": 0.4391,
+     "brier": 0.6399,
+     "logloss": 1.0614
     },
     "anterior": {
-     "n": 954,
-     "acierto": 0.4004,
-     "brier": 0.6557,
-     "logloss": 1.0844
+     "n": 961,
+     "acierto": 0.4017,
+     "brier": 0.6552,
+     "logloss": 1.0837
     },
     "mercado": {
-     "n": 954,
-     "acierto": 0.4266,
-     "brier": 0.634,
-     "logloss": 1.0519
+     "n": 961,
+     "acierto": 0.4277,
+     "brier": 0.6335,
+     "logloss": 1.0512
     },
     "local": {
-     "n": 954,
-     "acierto": 0.414,
-     "brier": 1.1719,
+     "n": 961,
+     "acierto": 0.4152,
+     "brier": 1.1696,
      "logloss": null
     }
    },
    "MLS": {
     "motor": {
-     "n": 1006,
-     "acierto": 0.4791,
-     "brier": 0.6292,
-     "logloss": 1.0477
+     "n": 1015,
+     "acierto": 0.4778,
+     "brier": 0.6297,
+     "logloss": 1.0482
     },
     "anterior": {
-     "n": 1006,
-     "acierto": 0.4692,
-     "brier": 0.6435,
-     "logloss": 1.071
+     "n": 1015,
+     "acierto": 0.469,
+     "brier": 0.6438,
+     "logloss": 1.0715
     },
     "mercado": {
-     "n": 1006,
-     "acierto": 0.497,
-     "brier": 0.6136,
-     "logloss": 1.0242
+     "n": 1015,
+     "acierto": 0.4946,
+     "brier": 0.6146,
+     "logloss": 1.0257
     },
     "local": {
-     "n": 1006,
+     "n": 1015,
      "acierto": 0.4433,
      "brier": 1.1133,
      "logloss": null
@@ -326,12 +326,12 @@
    }
   },
   "valor": {
-   "apuestas": 5394,
-   "ganadas": 1325,
-   "roi": -0.09,
+   "apuestas": 5524,
+   "ganadas": 1354,
+   "roi": -0.0857,
    "ic_roi": [
-    -0.1368,
-    -0.0432
+    -0.1324,
+    -0.0389
    ]
   },
   "regla_valor": {
@@ -355,16 +355,16 @@
     "roi": -0.0118
    },
    "prueba": {
-    "apuestas": 333,
-    "roi": -0.0121,
+    "apuestas": 336,
+    "roi": -0.021,
     "ganadas": 106,
     "ic_roi": [
-     -0.1691,
-     0.1448
+     -0.1768,
+     0.1349
     ]
    }
   },
-  "segundos": 5
+  "segundos": 6
  },
  "ligas": [
   "Premier League",
@@ -379,5 +379,5 @@
   "Liga Profesional",
   "MLS"
  ],
- "actualizado": "2026-11-26 17:32 UTC"
+ "actualizado": "2026-11-27 04:26 UTC"
 }

@@ -1,75 +1,6 @@
 {
- "actualizado": "2026-11-26 17:32 UTC",
+ "actualizado": "2026-11-27 04:27 UTC",
  "predicciones": [
-  {
-   "id": 555108,
-   "liga": "Brasileirão",
-   "fecha": "2026-11-26T23:00:00Z",
-   "local": "São Paulo FC",
-   "visitante": "Clube do Remo",
-   "creada": "2026-11-20T03:40:53Z",
-   "resultado": null,
-   "marcador": null,
-   "p_local": 0.5724,
-   "p_empate": 0.2574,
-   "p_visitante": 0.1702,
-   "xg_local": 1.73,
-   "xg_visitante": 0.85,
-   "n_partidos": 34,
-   "mercados": {
-    "over15": 0.7401,
-    "over25": 0.4768,
-    "over35": 0.2599,
-    "btts": 0.4819,
-    "marcador": "1-1",
-    "p_marcador": 0.1224,
-    "ht_local": null,
-    "ht_empate": null,
-    "ht_visitante": null,
-    "ht_gol": null
-   },
-   "modelo": "SE",
-   "goleadores": {
-    "local": [
-     {
-      "n": "Jonathan Calleri",
-      "g": 10,
-      "p": 0.3583
-     },
-     {
-      "n": "Luciano",
-      "g": 9,
-      "p": 0.3292
-     },
-     {
-      "n": "Artur Guimaraes",
-      "g": 4,
-      "p": 0.1626
-     }
-    ],
-    "visitante": [
-     {
-      "n": "Jája Silva",
-      "g": 8,
-      "p": 0.16
-     },
-     {
-      "n": "Alef Manga",
-      "g": 5,
-      "p": 0.1032
-     }
-    ]
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-21 15:10 UTC",
-    "valor": [],
-    "1": 1.51,
-    "X": 4.0,
-    "2": 6.1
-   },
-   "razon_es": "Goles esperados: 1.73 - 0.85. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
-   "razon_en": "Expected goals: 1.73 - 0.85. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
-  },
   {
    "id": 558820,
    "liga": "Eredivisie",
@@ -595,6 +526,13 @@
       "p": 0.2162
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 2.22,
+    "X": 3.5,
+    "2": 3.65
    },
    "razon_es": "Goles esperados: 1.33 - 1.34. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.33 - 1.34. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
@@ -2073,6 +2011,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 3.25,
+    "X": 3.2,
+    "2": 2.48
+   },
    "razon_es": "Goles esperados: 1.03 - 1.08. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.03 - 1.08. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -2129,6 +2074,13 @@
       "p": 0.2811
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 1.7,
+    "X": 3.9,
+    "2": 5.5
    },
    "razon_es": "Goles esperados: 1.78 - 0.99. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.78 - 0.99. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
@@ -2197,6 +2149,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 2.04,
+    "X": 3.9,
+    "2": 3.75
+   },
    "razon_es": "Goles esperados: 1.69 - 1.56. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.69 - 1.56. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -2258,6 +2217,13 @@
       "p": 0.1767
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 5.02,
+    "X": 4.36,
+    "2": 1.72
    },
    "razon_es": "Goles esperados: 0.88 - 1.75. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 0.88 - 1.75. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
@@ -2533,6 +2499,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 1.81,
+    "X": 4.8,
+    "2": 4.16
+   },
    "razon_es": "Goles esperados: 2.23 - 1.39. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 2.23 - 1.39. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -2638,6 +2611,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 1.25,
+    "X": 8.0,
+    "2": 11.5
+   },
    "razon_es": "Goles esperados: 3.11 - 1.15. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 3.11 - 1.15. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -2704,6 +2684,13 @@
       "p": 0.1417
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 2.66,
+    "X": 3.25,
+    "2": 3.0
    },
    "razon_es": "Goles esperados: 1.53 - 1.07. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.53 - 1.07. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
@@ -2869,6 +2856,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 3.95,
+    "X": 3.65,
+    "2": 2.1
+   },
    "razon_es": "Goles esperados: 1.09 - 1.61. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.09 - 1.61. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -2930,6 +2924,13 @@
       "p": 0.1813
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 1.72,
+    "X": 4.31,
+    "2": 5.18
    },
    "razon_es": "Goles esperados: 1.72 - 1.00. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.72 - 1.00. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
@@ -2998,6 +2999,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 3.3,
+    "X": 3.85,
+    "2": 2.3
+   },
    "razon_es": "Goles esperados: 1.28 - 1.60. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.28 - 1.60. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -3054,6 +3062,13 @@
       "p": 0.1479
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 1.25,
+    "X": 7.95,
+    "2": 15.0
    },
    "razon_es": "Goles esperados: 2.34 - 0.80. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 2.34 - 0.80. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
@@ -3181,6 +3196,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 2.25,
+    "X": 4.1,
+    "2": 3.05
+   },
    "razon_es": "Goles esperados: 2.17 - 1.59. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 2.17 - 1.59. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -3237,6 +3259,13 @@
       "p": 0.2022
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 1.72,
+    "X": 4.0,
+    "2": 5.1
    },
    "razon_es": "Goles esperados: 1.64 - 0.96. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.64 - 0.96. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
@@ -3513,6 +3542,13 @@
       "p": 0.2776
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 2.88,
+    "X": 3.85,
+    "2": 2.48
    },
    "razon_es": "Goles esperados: 1.50 - 1.87. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.50 - 1.87. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
@@ -3842,6 +3878,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 3.8,
+    "X": 4.0,
+    "2": 1.97
+   },
    "razon_es": "Goles esperados: 1.40 - 1.60. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.40 - 1.60. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -3908,6 +3951,13 @@
       "p": 0.1894
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 2.28,
+    "X": 4.1,
+    "2": 3.09
    },
    "razon_es": "Goles esperados: 1.85 - 1.47. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.85 - 1.47. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
@@ -4049,6 +4099,13 @@
       "p": 0.1995
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 4.0,
+    "X": 4.2,
+    "2": 1.95
    },
    "razon_es": "Goles esperados: 1.32 - 1.78. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.32 - 1.78. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
@@ -4388,6 +4445,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 2.9,
+    "X": 4.05,
+    "2": 2.48
+   },
    "razon_es": "Goles esperados: 1.57 - 1.66. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.57 - 1.66. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -4519,6 +4583,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 6.25,
+    "X": 4.8,
+    "2": 1.57
+   },
    "razon_es": "Goles esperados: 1.18 - 1.92. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.18 - 1.92. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -4585,6 +4656,13 @@
       "p": 0.2289
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 2.64,
+    "X": 3.85,
+    "2": 2.7
    },
    "razon_es": "Goles esperados: 1.61 - 1.43. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.61 - 1.43. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
@@ -4726,6 +4804,13 @@
       "p": 0.1154
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 1.78,
+    "X": 4.9,
+    "2": 4.3
    },
    "razon_es": "Goles esperados: 2.03 - 1.41. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 2.03 - 1.41. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
@@ -4922,6 +5007,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 1.86,
+    "X": 3.77,
+    "2": 4.6
+   },
    "razon_es": "Goles esperados: 1.63 - 0.97. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.63 - 0.97. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -4989,6 +5081,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 2.19,
+    "X": 4.1,
+    "2": 3.3
+   },
    "razon_es": "Goles esperados: 1.89 - 1.27. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.89 - 1.27. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -5050,6 +5149,13 @@
       "p": 0.1513
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 3.9,
+    "X": 4.4,
+    "2": 1.89
    },
    "razon_es": "Goles esperados: 1.44 - 1.75. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.44 - 1.75. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
@@ -5334,6 +5440,13 @@
       "p": 0.2431
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 2.5,
+    "X": 3.65,
+    "2": 3.15
    },
    "razon_es": "Goles esperados: 1.70 - 1.30. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.70 - 1.30. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
@@ -5951,6 +6064,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 5.4,
+    "X": 4.03,
+    "2": 1.77
+   },
    "razon_es": "Goles esperados: 0.98 - 1.68. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 0.98 - 1.68. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -6003,6 +6123,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 2.1,
+    "X": 3.37,
+    "2": 4.3
+   },
    "razon_es": "Goles esperados: 1.19 - 0.79. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.19 - 0.79. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -6054,6 +6181,13 @@
       "p": 0.2313
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 7.8,
+    "X": 4.4,
+    "2": 1.49
    },
    "razon_es": "Goles esperados: 0.87 - 1.71. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 0.87 - 1.71. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
@@ -6122,6 +6256,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 1.18,
+    "X": 8.0,
+    "2": 17.0
+   },
    "razon_es": "Goles esperados: 2.09 - 0.75. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 2.09 - 0.75. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -6178,6 +6319,13 @@
       "p": 0.1558
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 2.33,
+    "X": 3.75,
+    "2": 3.15
    },
    "razon_es": "Goles esperados: 1.90 - 1.27. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.90 - 1.27. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
@@ -6246,6 +6394,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 7.0,
+    "X": 5.6,
+    "2": 1.5
+   },
    "razon_es": "Goles esperados: 1.17 - 1.95. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.17 - 1.95. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -6308,6 +6463,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 1.5,
+    "X": 5.0,
+    "2": 7.0
+   },
    "razon_es": "Goles esperados: 1.96 - 0.80. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.96 - 0.80. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -6364,6 +6526,13 @@
       "p": 0.2063
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 4.31,
+    "X": 3.73,
+    "2": 1.96
    },
    "razon_es": "Goles esperados: 1.30 - 1.04. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.30 - 1.04. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
@@ -6432,6 +6601,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 1.69,
+    "X": 4.6,
+    "2": 4.92
+   },
    "razon_es": "Goles esperados: 1.95 - 1.13. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.95 - 1.13. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -6499,6 +6675,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 1.61,
+    "X": 4.52,
+    "2": 5.86
+   },
    "razon_es": "Goles esperados: 2.02 - 0.89. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 2.02 - 0.89. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -6560,6 +6743,13 @@
       "p": 0.2328
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 2.06,
+    "X": 3.87,
+    "2": 3.84
    },
    "razon_es": "Goles esperados: 1.56 - 1.06. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.56 - 1.06. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
@@ -6628,6 +6818,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 4.6,
+    "X": 3.94,
+    "2": 1.85
+   },
    "razon_es": "Goles esperados: 0.98 - 1.54. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 0.98 - 1.54. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -6689,6 +6886,13 @@
       "p": 0.3392
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 2.76,
+    "X": 4.0,
+    "2": 2.58
    },
    "razon_es": "Goles esperados: 1.75 - 1.45. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.75 - 1.45. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
@@ -6757,6 +6961,13 @@
      }
     ]
    },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 2.58,
+    "X": 3.7,
+    "2": 2.82
+   },
    "razon_es": "Goles esperados: 1.52 - 1.39. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.52 - 1.39. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   },
@@ -6823,6 +7034,13 @@
       "p": 0.1596
      }
     ]
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-26 17:36 UTC",
+    "valor": [],
+    "1": 1.47,
+    "X": 6.0,
+    "2": 7.6
    },
    "razon_es": "Goles esperados: 2.20 - 1.13. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 2.20 - 1.13. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
@@ -7684,6 +7902,58 @@
    "modelo": "SE",
    "razon_es": "Goles esperados: 1.51 - 1.23. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
    "razon_en": "Expected goals: 1.51 - 1.23. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
+  },
+  {
+   "id": 560662,
+   "liga": "Premier League",
+   "fecha": "2026-12-03T20:00:00Z",
+   "local": "Tottenham Hotspur FC",
+   "visitante": "Fulham FC",
+   "creada": "2026-11-27T04:27:07Z",
+   "resultado": null,
+   "marcador": null,
+   "p_local": 0.428,
+   "p_empate": 0.2818,
+   "p_visitante": 0.2901,
+   "xg_local": 1.48,
+   "xg_visitante": 1.18,
+   "n_partidos": 163,
+   "mercados": {
+    "over15": 0.7551,
+    "over25": 0.4951,
+    "over35": 0.2758,
+    "btts": 0.5462,
+    "marcador": "1-1",
+    "p_marcador": 0.1346,
+    "ht_local": 0.3284,
+    "ht_empate": 0.4268,
+    "ht_visitante": 0.2448,
+    "ht_gol": 0.6862
+   },
+   "modelo": "SE",
+   "goleadores": {
+    "local": [
+     {
+      "n": "Jan Paul van Hecke",
+      "g": 2,
+      "p": 0.2186
+     },
+     {
+      "n": "Dominic Solanke",
+      "g": 2,
+      "p": 0.2186
+     }
+    ],
+    "visitante": [
+     {
+      "n": "Joshua King",
+      "g": 2,
+      "p": 0.1931
+     }
+    ]
+   },
+   "razon_es": "Goles esperados: 1.48 - 1.18. Motor propio SportEVLab: combina la fuerza en goles de cada equipo (con mas peso a lo reciente), la calidad de sus ocasiones (tiros a puerta) y su rating Elo, ajustado con temporadas pasadas y comprobado con partidos que no habia visto.",
+   "razon_en": "Expected goals: 1.48 - 1.18. SportEVLab's own engine: it blends each team's goal strength (weighted towards recent games), the quality of its chances (shots on target) and its Elo rating, tuned on past seasons and checked on games it had not seen."
   }
  ]
 }

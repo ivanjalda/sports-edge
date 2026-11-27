@@ -1,56 +1,56 @@
 {
- "actualizado": "2026-11-26 17:37 UTC",
+ "actualizado": "2026-11-27 04:31 UTC",
  "liga": "NCAA",
  "desde": "20250823",
- "datos_hasta": "2026-11-25T00:00:00Z",
+ "datos_hasta": "2026-11-27T01:00:00Z",
  "total": {
-  "n": 1573,
-  "aciertos": 1122,
-  "acierto": 0.7133,
+  "n": 1574,
+  "aciertos": 1123,
+  "acierto": 0.7135,
   "ic": [
-   0.6904,
-   0.7351
+   0.6906,
+   0.7353
   ],
-  "brier": 0.188
+  "brier": 0.1879
  },
  "base_local": {
-  "n": 1573,
-  "acierto": 0.6097
+  "n": 1574,
+  "acierto": 0.6099
  },
  "base_balance": {
-  "n": 733,
-  "acierto": 0.6712,
-  "nuestro": 0.6985
+  "n": 734,
+  "acierto": 0.6717,
+  "nuestro": 0.6989
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 1206,
-   "conf": 0.7759,
-   "acierto": 0.7629,
+   "n": 1207,
+   "conf": 0.776,
+   "acierto": 0.763,
    "ic": [
-    0.738,
-    0.786
+    0.7382,
+    0.7862
    ]
   },
   {
    "min": 0.7,
-   "n": 853,
+   "n": 854,
    "conf": 0.8283,
-   "acierto": 0.8195,
+   "acierto": 0.8197,
    "ic": [
-    0.7922,
-    0.8438
+    0.7925,
+    0.844
    ]
   },
   {
    "min": 0.8,
-   "n": 498,
-   "conf": 0.8843,
-   "acierto": 0.8614,
+   "n": 500,
+   "conf": 0.8841,
+   "acierto": 0.862,
    "ic": [
-    0.8283,
-    0.889
+    0.829,
+    0.8895
    ]
   }
  ],
@@ -72,16 +72,16 @@
   {
    "desde": 70,
    "hasta": 80,
-   "n": 355,
-   "prometido": 0.7497,
-   "real": 0.7606
+   "n": 354,
+   "prometido": 0.7496,
+   "real": 0.7599
   },
   {
    "desde": 80,
    "hasta": 90,
-   "n": 303,
-   "prometido": 0.8508,
-   "real": 0.835
+   "n": 305,
+   "prometido": 0.8507,
+   "real": 0.8361
   },
   {
    "desde": 90,
@@ -103,26 +103,26 @@
    "brier": 0.1823
   },
   "2026": {
-   "n": 724,
-   "aciertos": 512,
-   "acierto": 0.7072,
+   "n": 725,
+   "aciertos": 513,
+   "acierto": 0.7076,
    "ic": [
-    0.673,
-    0.7392
+    0.6735,
+    0.7395
    ],
-   "brier": 0.1946
+   "brier": 0.1944
   }
  },
  "fases": {
   "regular": {
-   "n": 1527,
-   "aciertos": 1096,
-   "acierto": 0.7177,
+   "n": 1528,
+   "aciertos": 1097,
+   "acierto": 0.7179,
    "ic": [
-    0.6946,
-    0.7398
+    0.6948,
+    0.7399
    ],
-   "brier": 0.187
+   "brier": 0.1869
   },
   "playoff": {
    "n": 46,
@@ -137,14 +137,14 @@
  },
  "elige": {
   "local": {
-   "n": 1014,
-   "aciertos": 761,
-   "acierto": 0.7505,
+   "n": 1015,
+   "aciertos": 762,
+   "acierto": 0.7507,
    "ic": [
-    0.7229,
-    0.7761
+    0.7232,
+    0.7764
    ],
-   "brier": 0.1731
+   "brier": 0.1729
   },
   "visitante": {
    "n": 559,
@@ -158,6 +158,15 @@
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-27T01:00:00Z",
+   "local": "Texas Tech Red Raiders",
+   "visitante": "TCU Horned Frogs",
+   "marcador": "48-27",
+   "fav": "Texas Tech Red Raiders",
+   "pp": 0.8867,
+   "ok": true
+  },
   {
    "fecha": "2026-11-25T00:00:00Z",
    "local": "Western Michigan Broncos",
@@ -290,7 +299,7 @@
    "visitante": "Arkansas State Red Wolves",
    "marcador": "48-3",
    "fav": "Louisiana Tech Bulldogs",
-   "pp": 0.8876,
+   "pp": 0.8877,
    "ok": true
   },
   {
@@ -373,15 +382,6 @@
    "fav": "North Dakota State Bison",
    "pp": 0.9831,
    "ok": true
-  },
-  {
-   "fecha": "2026-11-21T20:45:00Z",
-   "local": "Oklahoma Sooners",
-   "visitante": "Texas A&M Aggies",
-   "marcador": "28-7",
-   "fav": "Oklahoma Sooners",
-   "pp": 0.7833,
-   "ok": true
   }
  ],
  "motor": {
@@ -394,18 +394,18 @@
    "c_micro": 30.0,
    "c_sede": 0.0
   },
-  "sd": 20.647,
+  "sd": 20.646,
   "motor": {
-   "n": 1573,
-   "acierto": 0.7133,
-   "brier": 0.188,
-   "logloss": 0.5566
+   "n": 1574,
+   "acierto": 0.7135,
+   "brier": 0.1879,
+   "logloss": 0.5563
   },
   "elo_basico": {
-   "n": 1573,
-   "acierto": 0.7076,
-   "brier": 0.1931,
-   "logloss": 0.5701
+   "n": 1574,
+   "acierto": 0.7078,
+   "brier": 0.193,
+   "logloss": 0.5699
   },
   "escalas": {
    "temporada": true,
@@ -415,8 +415,8 @@
    "descanso": false
   },
   "local": {
-   "n": 1573,
-   "acierto": 0.6097
+   "n": 1574,
+   "acierto": 0.6099
   },
   "temporadas_prueba": [
    2025,

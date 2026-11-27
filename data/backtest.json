@@ -1,18 +1,18 @@
 {
- "actualizado": "2026-11-26 17:36 UTC",
+ "actualizado": "2026-11-27 04:31 UTC",
  "total": {
-  "n": 882,
-  "aciertos": 456,
-  "acierto": 0.517,
+  "n": 883,
+  "aciertos": 457,
+  "acierto": 0.5176,
   "ic": [
-   0.484,
-   0.5498
+   0.4846,
+   0.5504
   ],
-  "brier": 0.6013,
+  "brier": 0.6009,
   "brier_azar": 0.6667,
-  "siempre_local": 0.4637,
-  "over25": 0.542,
-  "btts": 0.5476
+  "siempre_local": 0.4643,
+  "over25": 0.5413,
+  "btts": 0.547
  },
  "ligas": {
   "Premier League": {
@@ -128,39 +128,39 @@
    "btts": 0.5069
   },
   "Brasileirão": {
-   "n": 308,
-   "aciertos": 157,
-   "acierto": 0.5097,
+   "n": 309,
+   "aciertos": 158,
+   "acierto": 0.5113,
    "ic": [
-    0.4541,
-    0.5651
+    0.4558,
+    0.5666
    ],
-   "brier": 0.6147,
+   "brier": 0.6137,
    "brier_azar": 0.6667,
-   "siempre_local": 0.4903,
-   "over25": 0.5032,
-   "btts": 0.5325
+   "siempre_local": 0.4919,
+   "over25": 0.5016,
+   "btts": 0.5307
   }
  },
  "tramos": [
   {
    "min": 0.45,
-   "n": 577,
+   "n": 578,
    "conf": 0.5725,
-   "acierto": 0.5615,
+   "acierto": 0.5623,
    "ic": [
-    0.5208,
-    0.6015
+    0.5216,
+    0.6022
    ]
   },
   {
    "min": 0.55,
-   "n": 292,
-   "conf": 0.6475,
-   "acierto": 0.6541,
+   "n": 293,
+   "conf": 0.6471,
+   "acierto": 0.6553,
    "ic": [
-    0.5979,
-    0.7063
+    0.5992,
+    0.7074
    ]
   },
   {
@@ -185,16 +185,16 @@
   {
    "desde": 10,
    "hasta": 20,
-   "n": 354,
-   "prometido": 0.1646,
-   "real": 0.1864
+   "n": 355,
+   "prometido": 0.1647,
+   "real": 0.1859
   },
   {
    "desde": 20,
    "hasta": 30,
-   "n": 1047,
+   "n": 1048,
    "prometido": 0.2483,
-   "real": 0.2464
+   "real": 0.2462
   },
   {
    "desde": 30,
@@ -213,9 +213,9 @@
   {
    "desde": 50,
    "hasta": 60,
-   "n": 215,
+   "n": 216,
    "prometido": 0.5466,
-   "real": 0.507
+   "real": 0.5093
   },
   {
    "desde": 60,
@@ -247,6 +247,16 @@
   }
  ],
  "ejemplos": [
+  {
+   "liga": "Brasileirão",
+   "fecha": "2026-11-26T23:00:00Z",
+   "local": "São Paulo FC",
+   "visitante": "Clube do Remo",
+   "marcador": "3-1",
+   "pick": "1",
+   "pp": 0.5556,
+   "res": "1"
+  },
   {
    "liga": "Brasileirão",
    "fecha": "2026-11-25T23:00:00Z",
@@ -486,16 +496,6 @@
    "pick": "1",
    "pp": 0.7071,
    "res": "2"
-  },
-  {
-   "liga": "Serie A",
-   "fecha": "2026-11-22T19:45:00Z",
-   "local": "Atalanta BC",
-   "visitante": "FC Internazionale Milano",
-   "marcador": "4-4",
-   "pick": "2",
-   "pp": 0.6162,
-   "res": "X"
   }
  ]
 }
