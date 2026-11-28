@@ -1,61 +1,15 @@
 {
- "actualizado": "2026-11-28 04:13 UTC",
+ "actualizado": "2026-11-28 16:03 UTC",
  "liga": "NCAA",
- "datos_hasta": "2026-11-28T01:07:00Z",
+ "datos_hasta": "2026-11-28T02:00:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
- "proximo": "2026-11-28T15:00:00Z",
+ "proximo": "2026-11-28T17:00:00Z",
  "predicciones": [
-  {
-   "id": "401904900",
-   "fecha": "2026-11-28T02:00:00Z",
-   "local": "Colorado College Tigers",
-   "visitante": "Alaska Bulldogs",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.6664,
-   "pv": 0.3336,
-   "elo_l": 1526,
-   "elo_v": 1476,
-   "bal_l": [
-    7,
-    6
-   ],
-   "bal_v": [
-    4,
-    8
-   ],
-   "creada": "2026-11-26 04:23 UTC",
-   "resultado": null,
-   "marcador": null
-  },
-  {
-   "id": "401904922",
-   "fecha": "2026-11-28T02:00:00Z",
-   "local": "Arizona State Sun Devils",
-   "visitante": "Alaska Anchorage Seawolves",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7649,
-   "pv": 0.2351,
-   "elo_l": 1499,
-   "elo_v": 1367,
-   "bal_l": [
-    5,
-    7
-   ],
-   "bal_v": [
-    1,
-    13
-   ],
-   "creada": "2026-11-26 04:23 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "401915714",
    "fecha": "2026-11-28T15:00:00Z",
@@ -680,6 +634,52 @@
  ],
  "recientes": [
   {
+   "id": "401904900",
+   "fecha": "2026-11-28T02:00:00Z",
+   "local": "Colorado College Tigers",
+   "visitante": "Alaska Bulldogs",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.6664,
+   "pv": 0.3336,
+   "elo_l": 1526,
+   "elo_v": 1476,
+   "bal_l": [
+    7,
+    6
+   ],
+   "bal_v": [
+    4,
+    8
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": "V",
+   "marcador": "1-2"
+  },
+  {
+   "id": "401904922",
+   "fecha": "2026-11-28T02:00:00Z",
+   "local": "Arizona State Sun Devils",
+   "visitante": "Alaska Anchorage Seawolves",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7649,
+   "pv": 0.2351,
+   "elo_l": 1499,
+   "elo_v": 1367,
+   "bal_l": [
+    5,
+    7
+   ],
+   "bal_v": [
+    1,
+    13
+   ],
+   "creada": "2026-11-26 04:23 UTC",
+   "resultado": "L",
+   "marcador": "8-7"
+  },
+  {
    "id": "401905015",
    "fecha": "2026-11-28T01:07:00Z",
    "local": "North Dakota Fighting Hawks",
@@ -1092,64 +1092,18 @@
    "creada": "2026-11-25 17:54 UTC",
    "resultado": "L",
    "marcador": "4-1"
-  },
-  {
-   "id": "401904562",
-   "fecha": "2026-11-26T00:07:00Z",
-   "local": "Bemidji State Beavers",
-   "visitante": "St. Thomas Tommies",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.4256,
-   "pv": 0.5744,
-   "elo_l": 1453,
-   "elo_v": 1499,
-   "bal_l": [
-    2,
-    8
-   ],
-   "bal_v": [
-    5,
-    6
-   ],
-   "creada": "2026-11-24 06:22 UTC",
-   "resultado": "V",
-   "marcador": "2-4"
-  },
-  {
-   "id": "401904381",
-   "fecha": "2026-11-25T00:00:00Z",
-   "local": "Harvard Crimson",
-   "visitante": "Bentley Falcons",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.5108,
-   "pv": 0.4892,
-   "elo_l": 1495,
-   "elo_v": 1528,
-   "bal_l": [
-    4,
-    3
-   ],
-   "bal_v": [
-    6,
-    6
-   ],
-   "creada": "2026-11-23 19:04 UTC",
-   "resultado": "V",
-   "marcador": "0-3"
   }
  ],
  "directo": {
   "total": 159,
-  "resueltas": 130,
-  "aciertos": 71,
-  "acierto": 0.5462,
+  "resueltas": 132,
+  "aciertos": 72,
+  "acierto": 0.5455,
   "ic": [
-   0.4605,
-   0.6292
+   0.4604,
+   0.6279
   ],
-  "brier": 0.2213,
+  "brier": 0.2218,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -1288,12 +1242,6 @@
    "p": 0
   },
   {
-   "equipo": "Colorado College Tigers",
-   "elo": 1526,
-   "g": 7,
-   "p": 6
-  },
-  {
    "equipo": "Union Dutchmen",
    "elo": 1526,
    "g": 7,
@@ -1310,6 +1258,12 @@
    "elo": 1522,
    "g": 5,
    "p": 9
+  },
+  {
+   "equipo": "Colorado College Tigers",
+   "elo": 1522,
+   "g": 7,
+   "p": 7
   },
   {
    "equipo": "Minnesota State Mavericks",
@@ -1373,8 +1327,8 @@
   },
   {
    "equipo": "Arizona State Sun Devils",
-   "elo": 1499,
-   "g": 5,
+   "elo": 1501,
+   "g": 6,
    "p": 7
   },
   {
@@ -1420,16 +1374,16 @@
    "p": 5
   },
   {
+   "equipo": "Alaska Bulldogs",
+   "elo": 1481,
+   "g": 5,
+   "p": 8
+  },
+  {
    "equipo": "Niagara Purple Eagles",
    "elo": 1477,
    "g": 9,
    "p": 5
-  },
-  {
-   "equipo": "Alaska Bulldogs",
-   "elo": 1476,
-   "g": 4,
-   "p": 8
   },
   {
    "equipo": "Robert Morris Colonials",
@@ -1553,9 +1507,9 @@
   },
   {
    "equipo": "Alaska Anchorage Seawolves",
-   "elo": 1367,
+   "elo": 1365,
    "g": 1,
-   "p": 13
+   "p": 14
   }
  ]
 }

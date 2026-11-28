@@ -1,21 +1,21 @@
 {
- "actualizado": "2026-11-28 04:13 UTC",
+ "actualizado": "2026-11-28 16:03 UTC",
  "liga": "Top 14",
  "desde": "20250906",
- "datos_hasta": "2026-11-08T20:05:00Z",
+ "datos_hasta": "2026-11-28T13:30:00Z",
  "total": {
-  "n": 247,
-  "aciertos": 193,
-  "acierto": 0.7814,
+  "n": 248,
+  "aciertos": 194,
+  "acierto": 0.7823,
   "ic": [
-   0.7257,
-   0.8284
+   0.7268,
+   0.8291
   ],
-  "brier": 0.166
+  "brier": 0.1656
  },
  "base_local": {
-  "n": 247,
-  "acierto": 0.7328
+  "n": 248,
+  "acierto": 0.7339
  },
  "base_balance": {
   "n": 154,
@@ -25,22 +25,22 @@
  "tramos": [
   {
    "min": 0.6,
-   "n": 203,
-   "conf": 0.7652,
-   "acierto": 0.8128,
+   "n": 204,
+   "conf": 0.765,
+   "acierto": 0.8137,
    "ic": [
-    0.7535,
-    0.8605
+    0.7547,
+    0.8612
    ]
   },
   {
    "min": 0.7,
-   "n": 149,
-   "conf": 0.8053,
-   "acierto": 0.8389,
+   "n": 150,
+   "conf": 0.8047,
+   "acierto": 0.84,
    "ic": [
-    0.7715,
-    0.8893
+    0.773,
+    0.8901
    ]
   },
   {
@@ -72,22 +72,22 @@
   {
    "desde": 70,
    "hasta": 80,
-   "n": 79,
-   "prometido": 0.747,
-   "real": 0.7722
+   "n": 80,
+   "prometido": 0.7466,
+   "real": 0.775
   },
   {
    "desde": 80,
    "hasta": 90,
    "n": 50,
-   "prometido": 0.8489,
+   "prometido": 0.8488,
    "real": 0.88
   },
   {
    "desde": 90,
    "hasta": 100,
    "n": 20,
-   "prometido": 0.9268,
+   "prometido": 0.9267,
    "real": 1.0
   }
  ],
@@ -103,38 +103,38 @@
    "brier": 0.1609
   },
   "2027": {
-   "n": 63,
-   "aciertos": 51,
-   "acierto": 0.8095,
+   "n": 64,
+   "aciertos": 52,
+   "acierto": 0.8125,
    "ic": [
-    0.6959,
-    0.8875
+    0.7003,
+    0.8894
    ],
-   "brier": 0.1807
+   "brier": 0.1791
   }
  },
  "fases": {
   "regular": {
-   "n": 247,
-   "aciertos": 193,
-   "acierto": 0.7814,
+   "n": 248,
+   "aciertos": 194,
+   "acierto": 0.7823,
    "ic": [
-    0.7257,
-    0.8284
+    0.7268,
+    0.8291
    ],
-   "brier": 0.166
+   "brier": 0.1656
   }
  },
  "elige": {
   "local": {
-   "n": 213,
-   "aciertos": 170,
-   "acierto": 0.7981,
+   "n": 214,
+   "aciertos": 171,
+   "acierto": 0.7991,
    "ic": [
-    0.7392,
-    0.8465
+    0.7403,
+    0.8473
    ],
-   "brier": 0.1564
+   "brier": 0.156
   },
   "visitante": {
    "n": 34,
@@ -148,6 +148,15 @@
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-28T13:30:00Z",
+   "local": "Bordeaux Begles",
+   "visitante": "Montpellier Herault",
+   "marcador": "40-10",
+   "fav": "Bordeaux Begles",
+   "pp": 0.7189,
+   "ok": true
+  },
   {
    "fecha": "2026-11-08T20:05:00Z",
    "local": "La Rochelle",
@@ -190,7 +199,7 @@
    "visitante": "Lyon",
    "marcador": "21-19",
    "fav": "Montpellier Herault",
-   "pp": 0.8519,
+   "pp": 0.8518,
    "ok": true
   },
   {
@@ -217,7 +226,7 @@
    "visitante": "Stade Toulousain",
    "marcador": "34-14",
    "fav": "Pau",
-   "pp": 0.6155,
+   "pp": 0.6154,
    "ok": true
   },
   {
@@ -262,7 +271,7 @@
    "visitante": "Bayonne",
    "marcador": "19-14",
    "fav": "Bordeaux Begles",
-   "pp": 0.9018,
+   "pp": 0.9017,
    "ok": true
   },
   {
@@ -271,7 +280,7 @@
    "visitante": "Racing 92",
    "marcador": "37-30",
    "fav": "Clermont Auvergne",
-   "pp": 0.7454,
+   "pp": 0.7453,
    "ok": true
   },
   {
@@ -352,7 +361,7 @@
    "visitante": "Bordeaux Begles",
    "marcador": "22-23",
    "fav": "Clermont Auvergne",
-   "pp": 0.7442,
+   "pp": 0.7441,
    "ok": false
   },
   {
@@ -362,15 +371,6 @@
    "marcador": "29-15",
    "fav": "Toulon",
    "pp": 0.6769,
-   "ok": true
-  },
-  {
-   "fecha": "2026-10-10T14:35:00Z",
-   "local": "Pau",
-   "visitante": "Castres Olympique",
-   "marcador": "35-26",
-   "fav": "Pau",
-   "pp": 0.905,
    "ok": true
   }
  ],
@@ -384,18 +384,18 @@
    "c_micro": 0.0,
    "c_sede": 60.0
   },
-  "sd": 16.704,
+  "sd": 16.708,
   "motor": {
-   "n": 247,
-   "acierto": 0.7814,
-   "brier": 0.166,
-   "logloss": 0.506
+   "n": 248,
+   "acierto": 0.7823,
+   "brier": 0.1656,
+   "logloss": 0.5053
   },
   "elo_basico": {
-   "n": 247,
-   "acierto": 0.7247,
-   "brier": 0.1881,
-   "logloss": 0.5593
+   "n": 248,
+   "acierto": 0.7258,
+   "brier": 0.1884,
+   "logloss": 0.5598
   },
   "escalas": {
    "temporada": true,
@@ -405,8 +405,8 @@
    "descanso": false
   },
   "local": {
-   "n": 247,
-   "acierto": 0.7328
+   "n": 248,
+   "acierto": 0.7339
   },
   "temporadas_prueba": [
    2026,

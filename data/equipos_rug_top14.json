@@ -1,38 +1,15 @@
 {
- "actualizado": "2026-11-28 04:13 UTC",
+ "actualizado": "2026-11-28 16:03 UTC",
  "liga": "Top 14",
- "datos_hasta": "2026-11-08T20:05:00Z",
- "dias_desde_datos": 19,
+ "datos_hasta": "2026-11-28T13:30:00Z",
+ "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": false,
- "proximo": "2026-11-28T13:30:00Z",
+ "proximo": "2026-11-28T20:00:00Z",
  "predicciones": [
-  {
-   "id": "604425",
-   "fecha": "2026-11-28T13:30:00Z",
-   "local": "Bordeaux Begles",
-   "visitante": "Montpellier Herault",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.7189,
-   "pv": 0.2811,
-   "elo_l": 1568,
-   "elo_v": 1612,
-   "bal_l": [
-    6,
-    3
-   ],
-   "bal_v": [
-    6,
-    3
-   ],
-   "creada": "2026-11-24 18:45 UTC",
-   "resultado": null,
-   "marcador": null
-  },
   {
    "id": "604424",
    "fecha": "2026-11-28T15:35:00Z",
@@ -172,14 +149,41 @@
    "marcador": null
   }
  ],
- "recientes": [],
+ "recientes": [
+  {
+   "id": "604425",
+   "fecha": "2026-11-28T13:30:00Z",
+   "local": "Bordeaux Begles",
+   "visitante": "Montpellier Herault",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.7189,
+   "pv": 0.2811,
+   "elo_l": 1568,
+   "elo_v": 1612,
+   "bal_l": [
+    6,
+    3
+   ],
+   "bal_v": [
+    6,
+    3
+   ],
+   "creada": "2026-11-24 18:45 UTC",
+   "resultado": "L",
+   "marcador": "40-10"
+  }
+ ],
  "directo": {
   "total": 7,
-  "resueltas": 0,
-  "aciertos": 0,
-  "acierto": null,
-  "ic": null,
-  "brier": null,
+  "resueltas": 1,
+  "aciertos": 1,
+  "acierto": 1.0,
+  "ic": [
+   0.2065,
+   1.0
+  ],
+  "brier": 0.079,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -192,21 +196,21 @@
    "p": 2
   },
   {
-   "equipo": "Montpellier Herault",
-   "elo": 1612,
-   "g": 6,
-   "p": 3
-  },
-  {
    "equipo": "Pau",
    "elo": 1607,
    "g": 7,
    "p": 2
   },
   {
-   "equipo": "Bordeaux Begles",
-   "elo": 1568,
+   "equipo": "Montpellier Herault",
+   "elo": 1594,
    "g": 6,
+   "p": 4
+  },
+  {
+   "equipo": "Bordeaux Begles",
+   "elo": 1586,
+   "g": 7,
    "p": 3
   },
   {

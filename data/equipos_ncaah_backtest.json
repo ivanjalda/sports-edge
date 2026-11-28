@@ -1,46 +1,46 @@
 {
- "actualizado": "2026-11-28 04:13 UTC",
+ "actualizado": "2026-11-28 16:03 UTC",
  "liga": "NCAA",
  "desde": "20251003",
- "datos_hasta": "2026-11-28T01:07:00Z",
+ "datos_hasta": "2026-11-28T02:00:00Z",
  "total": {
-  "n": 1427,
-  "aciertos": 939,
-  "acierto": 0.658,
+  "n": 1429,
+  "aciertos": 940,
+  "acierto": 0.6578,
   "ic": [
-   0.633,
-   0.6822
+   0.6328,
+   0.6819
   ],
   "brier": 0.2198
  },
  "base_local": {
-  "n": 1427,
-  "acierto": 0.5571
+  "n": 1429,
+  "acierto": 0.557
  },
  "base_balance": {
-  "n": 1030,
-  "acierto": 0.6214,
-  "nuestro": 0.6748
+  "n": 1032,
+  "acierto": 0.6211,
+  "nuestro": 0.6744
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 928,
-   "conf": 0.713,
-   "acierto": 0.7047,
+   "n": 930,
+   "conf": 0.7131,
+   "acierto": 0.7043,
    "ic": [
-    0.6746,
-    0.7332
+    0.6742,
+    0.7327
    ]
   },
   {
    "min": 0.7,
-   "n": 463,
+   "n": 464,
    "conf": 0.7783,
-   "acierto": 0.7322,
+   "acierto": 0.7328,
    "ic": [
-    0.6901,
-    0.7705
+    0.6907,
+    0.771
    ]
   },
   {
@@ -65,16 +65,16 @@
   {
    "desde": 60,
    "hasta": 70,
-   "n": 465,
-   "prometido": 0.648,
-   "real": 0.6774
+   "n": 466,
+   "prometido": 0.6481,
+   "real": 0.676
   },
   {
    "desde": 70,
    "hasta": 80,
-   "n": 311,
-   "prometido": 0.7441,
-   "real": 0.6849
+   "n": 312,
+   "prometido": 0.7442,
+   "real": 0.6859
   },
   {
    "desde": 80,
@@ -87,7 +87,7 @@
    "desde": 90,
    "hasta": 100,
    "n": 17,
-   "prometido": 0.9225,
+   "prometido": 0.9226,
    "real": 0.9412
   }
  ],
@@ -103,24 +103,24 @@
    "brier": 0.2172
   },
   "2027": {
-   "n": 380,
-   "aciertos": 248,
-   "acierto": 0.6526,
+   "n": 382,
+   "aciertos": 249,
+   "acierto": 0.6518,
    "ic": [
-    0.6034,
-    0.6988
+    0.6028,
+    0.6979
    ],
-   "brier": 0.2271
+   "brier": 0.2272
   }
  },
  "fases": {
   "regular": {
-   "n": 1412,
-   "aciertos": 928,
-   "acierto": 0.6572,
+   "n": 1414,
+   "aciertos": 929,
+   "acierto": 0.657,
    "ic": [
-    0.6321,
-    0.6815
+    0.6319,
+    0.6813
    ],
    "brier": 0.2198
   },
@@ -137,14 +137,14 @@
  },
  "elige": {
   "local": {
-   "n": 887,
-   "aciertos": 597,
-   "acierto": 0.6731,
+   "n": 889,
+   "aciertos": 598,
+   "acierto": 0.6727,
    "ic": [
-    0.6415,
-    0.7031
+    0.6411,
+    0.7027
    ],
-   "brier": 0.2136
+   "brier": 0.2137
   },
   "visitante": {
    "n": 540,
@@ -158,6 +158,24 @@
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-28T02:00:00Z",
+   "local": "Arizona State Sun Devils",
+   "visitante": "Alaska Anchorage Seawolves",
+   "marcador": "8-7",
+   "fav": "Arizona State Sun Devils",
+   "pp": 0.7649,
+   "ok": true
+  },
+  {
+   "fecha": "2026-11-28T02:00:00Z",
+   "local": "Colorado College Tigers",
+   "visitante": "Alaska Bulldogs",
+   "marcador": "1-2",
+   "fav": "Colorado College Tigers",
+   "pp": 0.6664,
+   "ok": false
+  },
   {
    "fecha": "2026-11-28T01:07:00Z",
    "local": "North Dakota Fighting Hawks",
@@ -218,7 +236,7 @@
    "visitante": "St. Cloud State Huskies",
    "marcador": "3-2",
    "fav": "Vermont Catamounts",
-   "pp": 0.6491,
+   "pp": 0.6492,
    "ok": true
   },
   {
@@ -335,7 +353,7 @@
    "visitante": "Canisius Golden Griffins",
    "marcador": "6-5",
    "fav": "Niagara Purple Eagles",
-   "pp": 0.6021,
+   "pp": 0.6022,
    "ok": true
   },
   {
@@ -364,24 +382,6 @@
    "fav": "Princeton Tigers",
    "pp": 0.611,
    "ok": true
-  },
-  {
-   "fecha": "2026-11-22T04:07:00Z",
-   "local": "Alaska Bulldogs",
-   "visitante": "Alaska Anchorage Seawolves",
-   "marcador": "3-0",
-   "fav": "Alaska Bulldogs",
-   "pp": 0.7136,
-   "ok": true
-  },
-  {
-   "fecha": "2026-11-22T01:00:00Z",
-   "local": "Lindenwood Lions",
-   "visitante": "Long Island University Long Island University",
-   "marcador": "4-6",
-   "fav": "Lindenwood Lions",
-   "pp": 0.547,
-   "ok": false
   }
  ],
  "motor": {
@@ -396,14 +396,14 @@
   },
   "sd": 2.881,
   "motor": {
-   "n": 1427,
-   "acierto": 0.658,
+   "n": 1429,
+   "acierto": 0.6578,
    "brier": 0.2198,
-   "logloss": 0.6301
+   "logloss": 0.6302
   },
   "elo_basico": {
-   "n": 1427,
-   "acierto": 0.6419,
+   "n": 1429,
+   "acierto": 0.6417,
    "brier": 0.2255,
    "logloss": 0.6424
   },
@@ -415,8 +415,8 @@
    "descanso": true
   },
   "local": {
-   "n": 1427,
-   "acierto": 0.5571
+   "n": 1429,
+   "acierto": 0.557
   },
   "temporadas_prueba": [
    2026,
