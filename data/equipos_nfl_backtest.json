@@ -1,36 +1,36 @@
 {
- "actualizado": "2026-11-27 17:20 UTC",
+ "actualizado": "2026-11-28 04:13 UTC",
  "liga": "NFL",
  "desde": "20250905",
- "datos_hasta": "2026-11-27T01:20:00Z",
+ "datos_hasta": "2026-11-27T20:00:00Z",
  "total": {
-  "n": 450,
+  "n": 451,
   "aciertos": 292,
-  "acierto": 0.6489,
+  "acierto": 0.6475,
   "ic": [
-   0.6037,
-   0.6916
+   0.6023,
+   0.6901
   ],
-  "brier": 0.2195
+  "brier": 0.22
  },
  "base_local": {
-  "n": 450,
-  "acierto": 0.5267
+  "n": 451,
+  "acierto": 0.5277
  },
  "base_balance": {
-  "n": 258,
-  "acierto": 0.7016,
-  "nuestro": 0.6822
+  "n": 259,
+  "acierto": 0.6988,
+  "nuestro": 0.6795
  },
  "tramos": [
   {
    "min": 0.6,
-   "n": 289,
-   "conf": 0.7357,
-   "acierto": 0.699,
+   "n": 290,
+   "conf": 0.7354,
+   "acierto": 0.6966,
    "ic": [
-    0.6437,
-    0.749
+    0.6414,
+    0.7466
    ]
   },
   {
@@ -65,9 +65,9 @@
   {
    "desde": 60,
    "hasta": 70,
-   "n": 114,
-   "prometido": 0.6515,
-   "real": 0.5965
+   "n": 115,
+   "prometido": 0.6517,
+   "real": 0.5913
   },
   {
    "desde": 70,
@@ -103,26 +103,26 @@
    "brier": 0.2211
   },
   "2026": {
-   "n": 166,
+   "n": 167,
    "aciertos": 106,
-   "acierto": 0.6386,
+   "acierto": 0.6347,
    "ic": [
-    0.5631,
-    0.7077
+    0.5594,
+    0.704
    ],
-   "brier": 0.2167
+   "brier": 0.2181
   }
  },
  "fases": {
   "regular": {
-   "n": 437,
+   "n": 438,
    "aciertos": 283,
-   "acierto": 0.6476,
+   "acierto": 0.6461,
    "ic": [
-    0.6017,
-    0.6909
+    0.6002,
+    0.6895
    ],
-   "brier": 0.2206
+   "brier": 0.2211
   },
   "playoff": {
    "n": 13,
@@ -147,17 +147,26 @@
    "brier": 0.2139
   },
   "visitante": {
-   "n": 193,
+   "n": 194,
    "aciertos": 124,
-   "acierto": 0.6425,
+   "acierto": 0.6392,
    "ic": [
-    0.5727,
-    0.7067
+    0.5695,
+    0.7034
    ],
-   "brier": 0.2269
+   "brier": 0.228
   }
  },
  "ejemplos": [
+  {
+   "fecha": "2026-11-27T20:00:00Z",
+   "local": "Pittsburgh Steelers",
+   "visitante": "Denver Broncos",
+   "marcador": "27-5",
+   "fav": "Denver Broncos",
+   "pp": 0.6684,
+   "ok": false
+  },
   {
    "fecha": "2026-11-27T01:20:00Z",
    "local": "Buffalo Bills",
@@ -373,15 +382,6 @@
    "fav": "New Orleans Saints",
    "pp": 0.549,
    "ok": false
-  },
-  {
-   "fecha": "2026-11-15T18:00:00Z",
-   "local": "Indianapolis Colts",
-   "visitante": "Miami Dolphins",
-   "marcador": "24-22",
-   "fav": "Indianapolis Colts",
-   "pp": 0.5703,
-   "ok": true
   }
  ],
  "motor": {
@@ -394,18 +394,18 @@
    "c_micro": 0.0,
    "c_sede": 0.0
   },
-  "sd": 14.23,
+  "sd": 14.237,
   "motor": {
-   "n": 450,
-   "acierto": 0.6489,
-   "brier": 0.2195,
-   "logloss": 0.6281
+   "n": 451,
+   "acierto": 0.6475,
+   "brier": 0.22,
+   "logloss": 0.6291
   },
   "elo_basico": {
-   "n": 450,
-   "acierto": 0.64,
-   "brier": 0.2209,
-   "logloss": 0.6307
+   "n": 451,
+   "acierto": 0.6386,
+   "brier": 0.2213,
+   "logloss": 0.6313
   },
   "escalas": {
    "temporada": true,
@@ -415,8 +415,8 @@
    "descanso": false
   },
   "local": {
-   "n": 450,
-   "acierto": 0.5267
+   "n": 451,
+   "acierto": 0.5277
   },
   "temporadas_prueba": [
    2025,

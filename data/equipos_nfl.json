@@ -1,67 +1,15 @@
 {
- "actualizado": "2026-11-27 17:20 UTC",
+ "actualizado": "2026-11-28 04:13 UTC",
  "liga": "NFL",
- "datos_hasta": "2026-11-27T01:20:00Z",
+ "datos_hasta": "2026-11-27T20:00:00Z",
  "dias_desde_datos": 0,
  "fuente": {
   "nombre": "ESPN",
   "url": "https://www.espn.com"
  },
  "con_cuotas": true,
- "proximo": "2026-11-27T20:00:00Z",
+ "proximo": "2026-11-29T18:00:00Z",
  "predicciones": [
-  {
-   "id": "401873083",
-   "fecha": "2026-11-27T20:00:00Z",
-   "local": "Pittsburgh Steelers",
-   "visitante": "Denver Broncos",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.3316,
-   "pv": 0.6684,
-   "elo_l": 1533,
-   "elo_v": 1684,
-   "bal_l": [
-    6,
-    4
-   ],
-   "bal_v": [
-    8,
-    2
-   ],
-   "creada": "2026-11-24 06:22 UTC",
-   "resultado": null,
-   "marcador": null,
-   "cuota": {
-    "mejor": {
-     "V": {
-      "c": 1.45,
-      "casa": "Matchbook"
-     },
-     "L": {
-      "c": 3.2,
-      "casa": "Matchbook"
-     }
-    },
-    "mercado": {
-     "L": 0.3166,
-     "V": 0.6834
-    },
-    "casas": 21,
-    "ev": {
-     "L": 0.0611,
-     "V": -0.0308
-    },
-    "valor": [],
-    "actualizado": "2026-11-27 17:20 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-24 18:45 UTC",
-    "valor": [],
-    "L": 2.38,
-    "V": 1.71
-   }
-  },
   {
    "id": "401873087",
    "fecha": "2026-11-29T18:00:00Z",
@@ -636,6 +584,58 @@
   }
  ],
  "recientes": [
+  {
+   "id": "401873083",
+   "fecha": "2026-11-27T20:00:00Z",
+   "local": "Pittsburgh Steelers",
+   "visitante": "Denver Broncos",
+   "neutral": false,
+   "playoff": false,
+   "pl": 0.3316,
+   "pv": 0.6684,
+   "elo_l": 1533,
+   "elo_v": 1684,
+   "bal_l": [
+    6,
+    4
+   ],
+   "bal_v": [
+    8,
+    2
+   ],
+   "creada": "2026-11-24 06:22 UTC",
+   "resultado": "L",
+   "marcador": "27-5",
+   "cuota": {
+    "mejor": {
+     "V": {
+      "c": 1.45,
+      "casa": "Matchbook"
+     },
+     "L": {
+      "c": 3.2,
+      "casa": "Matchbook"
+     }
+    },
+    "mercado": {
+     "L": 0.3166,
+     "V": 0.6834
+    },
+    "casas": 21,
+    "ev": {
+     "L": 0.0611,
+     "V": -0.0308
+    },
+    "valor": [],
+    "actualizado": "2026-11-27 17:20 UTC"
+   },
+   "cuota_guardada": {
+    "fecha": "2026-11-24 18:45 UTC",
+    "valor": [],
+    "L": 2.38,
+    "V": 1.71
+   }
+  },
   {
    "id": "401873082",
    "fecha": "2026-11-27T01:20:00Z",
@@ -1623,70 +1623,18 @@
     "L": 1.58,
     "V": 2.68
    }
-  },
-  {
-   "id": "401873063",
-   "fecha": "2026-11-15T21:25:00Z",
-   "local": "Dallas Cowboys",
-   "visitante": "San Francisco 49ers",
-   "neutral": false,
-   "playoff": false,
-   "pl": 0.2584,
-   "pv": 0.7416,
-   "elo_l": 1451,
-   "elo_v": 1663,
-   "bal_l": [
-    4,
-    5
-   ],
-   "bal_v": [
-    7,
-    1
-   ],
-   "creada": "2026-11-13 02:59 UTC",
-   "resultado": "V",
-   "marcador": "40-46",
-   "cuota": {
-    "mejor": {
-     "L": {
-      "c": 2.86,
-      "casa": "Matchbook"
-     },
-     "V": {
-      "c": 1.52,
-      "casa": "Matchbook"
-     }
-    },
-    "mercado": {
-     "L": 0.3478,
-     "V": 0.6522
-    },
-    "casas": 21,
-    "ev": {
-     "L": -0.261,
-     "V": 0.1272
-    },
-    "valor": [],
-    "actualizado": "2026-11-15 14:36 UTC"
-   },
-   "cuota_guardada": {
-    "fecha": "2026-11-13 02:59 UTC",
-    "valor": [],
-    "L": 2.92,
-    "V": 1.51
-   }
   }
  ],
  "directo": {
   "total": 42,
-  "resueltas": 30,
+  "resueltas": 31,
   "aciertos": 20,
-  "acierto": 0.6667,
+  "acierto": 0.6452,
   "ic": [
-   0.4878,
-   0.8077
+   0.4695,
+   0.7888
   ],
-  "brier": 0.2014,
+  "brier": 0.2093,
   "apuestas": 0,
   "ganadas": 0,
   "roi": null
@@ -1708,12 +1656,6 @@
    "equipo": "Chicago Bears",
    "elo": 1699,
    "g": 9,
-   "p": 2
-  },
-  {
-   "equipo": "Denver Broncos",
-   "elo": 1684,
-   "g": 8,
    "p": 2
   },
   {
@@ -1747,6 +1689,12 @@
    "p": 3
   },
   {
+   "equipo": "Denver Broncos",
+   "elo": 1621,
+   "g": 8,
+   "p": 3
+  },
+  {
    "equipo": "Minnesota Vikings",
    "elo": 1608,
    "g": 7,
@@ -1760,8 +1708,8 @@
   },
   {
    "equipo": "Pittsburgh Steelers",
-   "elo": 1533,
-   "g": 6,
+   "elo": 1595,
+   "g": 7,
    "p": 4
   },
   {
